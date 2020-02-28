@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--13.04.2018 16:22:52-->
+<!--13.04.2018 16:41:08-->
+<!--13.04.2018 16:47:59-->
+<!--13.04.2018 16:49:52-->
+<!--04.05.2018 11:57:08-->
+<!--04.05.2018 14:00:53-->
+<!--04.05.2018 17:37:14-->
+<type access-modifier="private" name="KeyPad" display-name="KeyPad" uuid="29968eb8-bc14-44b3-aea5-5ee1d2016dbf" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="0.7" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="241" ver="1"/>
+	<designed target="Height" value="320" ver="1"/>
+	<designed target="PenColor" value="0xff000000" ver="1"/>
+	<designed target="PenStyle" value="0" ver="1"/>
+	<designed target="PenWidth" value="1" ver="1"/>
+	<designed target="BrushColor" value="0xfff0f0f0" ver="1"/>
+	<designed target="BrushStyle" value="1" ver="1"/>
+	<designed target="WindowX" value="400" ver="1"/>
+	<designed target="WindowY" value="150" ver="1"/>
+	<designed target="WindowWidth" value="241" ver="1"/>
+	<designed target="WindowHeight" value="320" ver="1"/>
+	<designed target="WindowCaption" value="Введите число" ver="1"/>
+	<designed target="ShowWindowCaption" value="true" ver="1"/>
+	<designed target="ShowWindowMinimize" value="false" ver="1"/>
+	<designed target="ShowWindowMaximize" value="false" ver="1"/>
+	<designed target="ShowWindowClose" value="true" ver="1"/>
+	<designed target="WindowSizeMode" value="1" ver="1"/>
+	<designed target="WindowScalingMode" value="0" ver="1"/>
+	<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="5797d95b-08e9-401b-a56a-f7ebb2e38f57" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="61" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" ver="1" value=""/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="1" ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" event="ButtonPressed" ver="1">
+			<body kind="javascript">
+				<![CDATA[if(Pressed)
+{
+	TextEdit.Text += "1";
+}
+else
+{
+	TextEdit.Text = "1";
+	Pressed = true;
+}]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="TextEdit" display-name="TextEdit" uuid="88445714-84c7-4c2b-b749-c5056a0c23c2" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="7" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" ver="1" value=""/>
+		<designed target="Width" value="231" ver="1"/>
+		<designed target="Height" value="37" ver="1"/>
+		<designed target="Text" ver="1" value=""/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="2e8409cb-9d0f-414f-b687-8f8b931b2f11" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0" ver="1"/>
+			<designed target="Y" value="0" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="false" ver="1"/>
+			<designed target="Tooltip" ver="1" value=""/>
+			<designed target="Width" value="231" ver="1"/>
+			<designed target="Height" value="37" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="0xff000000" ver="1"/>
+			<designed target="PenStyle" value="1" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xff000000" ver="1"/>
+			<designed target="BrushStyle" value="0" ver="1"/>
+		</object>
+		<object access-modifier="private" name="OutFormat" display-name="OutFormat" uuid="9349cc47-da7e-456b-9dfb-e6c8b33a3582" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+			<designed target="InValue" ver="1"/>
+			<init target="Format" ver="1">
+				<object access-modifier="private" uuid="90e08c28-4387-42dc-829a-f9e579818a13" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="1"/>
+			</init>
+			<do-on access-modifier="private" name="New_handler" display-name="New_handler" event="ValueChanged" ver="1">
+				<body kind="om">
+					<![CDATA[XX: int4 = Str.IndexOf(TextEdit.Text, ",");
+TextEdit.Text= Str.Remove(TextEdit.Text, XX, 1);
+TextEdit.Text=Str.Insert(TextEdit, XX, ".");]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="InValue" ver="1">
+				<body>
+					<![CDATA[Preset]]>
+				</body>
+			</do-trace>
+		</object>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[OutFormat]]>
+			</body>
+		</do-trace>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_2" display-name="Button_2" uuid="9945ffe2-4ef9-40f8-bed5-19060659ba95" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="65" ver="1"/>
+		<designed target="Y" value="61" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" ver="1" value=""/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="2" ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" event="ButtonPressed" ver="1">
+			<body kind="javascript">
+				<![CDATA[if(Pressed)
+{
+	TextEdit.Text += "2";
+}
+else
+{
+	TextEdit.Text = "2";
+	Pressed = true;
+}]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_3" display-name="Button_3" uuid="9d423e60-0888-4c2c-b224-9aa2762a445d" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="125" ver="1"/>
+		<designed target="Y" value="61" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" ver="1" value=""/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="3" ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" event="ButtonPressed" ver="1">
+			<body kind="javascript">
+				<![CDATA[if(Pressed)
+{
+	TextEdit.Text += "3";
+}
+else
+{
+	TextEdit.Text = "3";
+	Pressed = true;
+}]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_4" display-name="Button_4" uuid="1c9a991a-0a0d-465b-a3fd-2822bc51d8cf" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="111" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" ver="1" value=""/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="4" ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" event="ButtonPressed" ver="1">
+			<body kind="javascript">
+				<![CDATA[if(Pressed)
+{
+	TextEdit.Text += "4";
+}
+else
+{
+	TextEdit.Text = "4";
+	Pressed = true;
+}]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_5" display-name="Button_5" uuid="7c1ab5f9-1a04-40c6-bb34-df427485be78" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="65" ver="1"/>
+		<designed target="Y" value="111" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" ver="1" value=""/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="5" ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" event="ButtonPressed" ver="1">
+			<body kind="javascript">
+				<![CDATA[if(Pressed)
+{
+	TextEdit.Text += "5";
+}
+else
+{
+	TextEdit.Text = "5";
+	Pressed = true;
+}]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_6" display-name="Button_6" uuid="e926307f-e258-4f80-9fbe-6edcb2c56f18" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="125" ver="1"/>
+		<designed target="Y" value="111" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" ver="1" value=""/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="6" ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" event="ButtonPressed" ver="1">
+			<body kind="javascript">
+				<![CDATA[if(Pressed)
+{
+	TextEdit.Text += "6";
+}
+else
+{
+	TextEdit.Text = "6";
+	Pressed = true;
+}]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_7" display-name="Button_7" uuid="7bfc2e42-3e75-4fa2-9068-1ef90460a39b" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="161" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" ver="1" value=""/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="7" ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" event="ButtonPressed" ver="1">
+			<body kind="javascript">
+				<![CDATA[if(Pressed)
+{
+	TextEdit.Text += "7";
+}
+else
+{
+	TextEdit.Text = "7";
+	Pressed = true;
+}]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_8" display-name="Button_8" uuid="ce51f99a-60dd-4593-a6a7-69c3a2c89cdc" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="65" ver="1"/>
+		<designed target="Y" value="161" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" ver="1" value=""/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="8" ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" event="ButtonPressed" ver="1">
+			<body kind="javascript">
+				<![CDATA[if(Pressed)
+{
+	TextEdit.Text += "8";
+}
+else
+{
+	TextEdit.Text = "8";
+	Pressed = true;
+}]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_9" display-name="Button_9" uuid="07b41519-84fb-489e-b752-1ba76caa9658" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="125" ver="1"/>
+		<designed target="Y" value="161" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" ver="1" value=""/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="9" ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" event="ButtonPressed" ver="1">
+			<body kind="javascript">
+				<![CDATA[if(Pressed)
+{
+	TextEdit.Text += "9";
+}
+else
+{
+	TextEdit.Text = "9";
+	Pressed = true;
+}]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_0" display-name="Button_0" uuid="2bd480fc-1739-41e9-9d06-4b37d23d79e4" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="65" ver="1"/>
+		<designed target="Y" value="211" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" ver="1" value=""/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="0" ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" event="ButtonPressed" ver="1">
+			<body kind="javascript">
+				<![CDATA[if(Pressed)
+{
+	TextEdit.Text += "0";
+}
+else
+{
+	TextEdit.Text = "0";
+	Pressed = true;
+}]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_minus" display-name="Button_minus" uuid="d066884c-f4b0-4cd1-8f9f-bcc509514afd" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="211" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" ver="1" value=""/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="−" ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" event="ButtonPressed" ver="1">
+			<body kind="om">
+				<![CDATA[val: string = TextEdit.Text;
+if(Pressed)
+{
+	if(Str.StartsWith(val,"-"))
+	{
+		val = Str.Remove(val, 0, 1);
+	}
+	else
+	{
+		val = Str.Concat("-", val);
+	}
+}
+else
+{
+	val = "-";
+	Pressed = true;
+}
+
+TextEdit.Text = val;]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_dot" display-name="Button_dot" uuid="55395daa-3c8d-4e23-9e88-a7e76cf9158b" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="125" ver="1"/>
+		<designed target="Y" value="211" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" ver="1" value=""/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="." ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" event="ButtonPressed" ver="1">
+			<body kind="javascript">
+				<![CDATA[if(Pressed)
+{
+	TextEdit.Text +=  ".";
+}
+else
+{
+	TextEdit.Text =  "0.";
+	Pressed = true;
+}]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_back" display-name="Button_back" uuid="fb8a5de5-5a14-47eb-b796-d9bff99eebb3" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="185" ver="1"/>
+		<designed target="Y" value="61" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" ver="1" value=""/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="←" ver="1"/>
+		<designed target="Font" value="Sans Serif,22,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" event="ButtonPressed" ver="1">
+			<body kind="om">
+				<![CDATA[val: string = TextEdit.Text;
+if(Str.Length(val) > 0)
+{
+	val = Str.Remove(val, Str.Length(val) - 1, 1);
+}
+Pressed = true;
+TextEdit.Text = val;]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_clear" display-name="Button_clear" uuid="4db813ed-f988-4a67-bf6d-d5c5c360736d" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="185" ver="1"/>
+		<designed target="Y" value="111" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="C" ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" event="ButtonPressed" ver="1">
+			<body kind="om">
+				<![CDATA[TextEdit.Text = "";
+Pressed = true;]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_OK" display-name="Button_OK" uuid="378a0fb5-9051-4a7d-a8b5-f08dfd6a31c5" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="15" ver="1"/>
+		<designed target="Y" value="271" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" ver="1" value=""/>
+		<designed target="Width" value="100" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="OK" ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<do-on access-modifier="private" name="SendCommand" display-name="SendCommand" event="ButtonPressed" ver="1">
+			<body kind="javascript">
+				<![CDATA[Confirm.Invoke();]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_Cancel" display-name="Button_Cancel" uuid="62558822-45db-4477-b2e1-699a38e2d218" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="125" ver="1"/>
+		<designed target="Y" value="271" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" ver="1" value=""/>
+		<designed target="Width" value="100" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="Отмена" ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" form-action="close" event="ButtonPressed" ver="1"/>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<param access-modifier="private" name="_OpcSource" display-name="_OpcSource" uuid="27469306-0c8e-41ac-b6ee-ea7a54f0d412" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="1"/>
+	<object access-modifier="private" name="OpcSource" display-name="OpcSource" uuid="f312c141-dc40-4678-bd22-3e43112fae65" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="1">
+		<designed target="Active" value="true" ver="1"/>
+		<init target="ParentSource" ref="here._OpcSource" ver="1"/>
+	</object>
+	<object access-modifier="private" name="TimerStartup" display-name="TimerStartup" uuid="1585169c-f19d-4180-96bf-aee64e17c764" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="1">
+		<designed target="Period" value="100" ver="1"/>
+		<designed target="Active" value="true" ver="1"/>
+	</object>
+	<object access-modifier="private" name="TimerClose" display-name="TimerClose" uuid="bc3c88aa-2a1b-4e4f-888b-f904b2d87266" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="1">
+		<designed target="Period" value="50" ver="1"/>
+		<designed target="Active" value="false" ver="1"/>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" event="OnTimer" ver="1">
+			<body kind="om">
+				<![CDATA[TimerClose.Active = false;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" form-action="close" event="OnTimer" ver="1"/>
+	</object>
+	<param access-modifier="private" name="_Tag" display-name="_Tag" uuid="bb26c159-fb22-4122-a55f-e0cc7366b0bd" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="AlarmTag" display-name="AlarmTag" uuid="16b7292d-c3c0-44c6-9dad-1757868e12bc" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Value" ver="1"/>
+		<init target="Path" value="OperatorCommands.GenSource" ver="1"/>
+		<init target="Source" ref="here._OpcSource.ParentSource.ParentSource" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Pressed" display-name="Pressed" uuid="c2e66ba6-8dd5-4e16-89a9-09516c85a8e3" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="1"/>
+	<init target="Pressed" value="false" ver="1"/>
+	<object access-modifier="private" name="koef" display-name="koef" uuid="013fa113-1d16-4dd4-8db7-75a503cbc14f" base-type="float32" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="1"/>
+	<param access-modifier="private" name="_ObjName" display-name="_ObjName" uuid="320441a9-c7ed-429c-8a38-c03d36f9bd81" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" base-const="true" base-ref="true" ver="1"/>
+	<object access-modifier="private" name="ObjName" display-name="ObjName" uuid="7aecb3ed-0919-44d6-ae08-8798a77cdac4" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Value" ver="1"/>
+		<init target="Source" ref="here._ObjName.Source" ver="1"/>
+		<init target="Path" ref="here._ObjName.Path" ver="1"/>
+	</object>
+	<object access-modifier="private" name="EUnit" display-name="EUnit" uuid="50214b68-0bad-4ccf-bcf0-f70c81d91885" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<init target="koef" value="1" ver="1"/>
+	<object access-modifier="private" name="InputValue" display-name="InputValue" uuid="f056e5a5-5481-429d-b42c-030b6510e79e" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="OldValue" display-name="OldValue" uuid="0a4fc4f3-ae3a-4a37-a4b4-a391bf6ac6cd" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="msg" display-name="msg" uuid="7be686b6-5fc8-48b1-964a-ac56765e8daf" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="alarm" display-name="alarm" uuid="5eed4567-eb3a-43eb-8fab-b58fd6bca981" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<init target="alarm" value='"&lt;Subcondition Message=&apos;~&apos; Value=&apos;&apos; Sound=&apos;&apos; Severity=&apos;3&apos; Enabled=&apos;1&apos; SoundEnabled=&apos;0&apos; /&gt;"' ver="1"/>
+	<object access-modifier="private" name="MsgCom" display-name="MsgCom" uuid="f47c861e-d497-4514-a926-62f56285207d" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Value" ver="1"/>
+		<init target="Source" ref="OpcSource" ver="1"/>
+		<init target="Path" value="Msg" ver="1"/>
+	</object>
+	<designed target="WindowCloseMode" value="0" ver="1"/>
+	<object access-modifier="private" name="wValue" display-name="wValue" uuid="b8ec6657-7bac-41b2-9c80-ec4a4f84c879" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" base-const="true" base-ref="true" ver="1"/>
+	<object access-modifier="private" name="Preset" display-name="Preset" uuid="000bf558-3abf-4c80-9472-eb866462490a" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" base-const="true" base-ref="true" ver="1"/>
+	<designed target="WindowBorderStyle" value="2" ver="1"/>
+	<designed target="AlwaysOnTop" value="false" ver="1"/>
+	<designed target="WindowState" value="0" ver="1"/>
+	<designed target="MonitorNumber" value="0" ver="1"/>
+	<designed target="WindowPosition" value="2" ver="1"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="WindowPosChanged">
+		<body kind="om">
+			<![CDATA[/*SetBoundingRegion (unit.WindowsLimit.one,unit.WindowsLimit.two,unit.WindowsLimit.three,unit.WindowsLimit.four);*/]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="1" event="Opened">
+		<body kind="javascript">
+			<![CDATA[Text_2 = Keypad_X;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Confirm" display-name="Confirm" uuid="2d3d831a-beaa-48c6-ba7f-73e96d942020" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="1">
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="InvokeTrigger" value="false" ver="1"/>
+	</object>
+	<object access-modifier="private" name="SendCommand" display-name="SendCommand" uuid="8a21f020-bfff-49ff-bc79-8c8ea90f4f61" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="1">
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="InvokeTrigger" value="false" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="Invoked">
+			<body kind="javascript">
+				<![CDATA[
+InputValue = TextEdit.Text;
+wValue.Value = InputValue * koef;
+
+if (MsgCom.AdviseState ==2)
+{
+if (MsgCom == 2)
+{
+MsgCom.Value = " <Subcondition Message= ' изменен(а) на " + (InputValue * koef)+ " "+ EUnits +".'  Value='' Sound='' Severity='3' Enabled='1' SoundEnabled='0' />";
+}
+}
+/*msg = ObjName + ". " + wValue.Description + " " + EUnit + " (предыдущее значение = " + OldValue + " " + EUnit + ")";
+msg = msg.Replace("~", InputValue);
+alarm = alarm.Replace("~", msg);
+alarm = msg;
+AlarmTag = alarm;*/
+
+TimerClose.Active = true;]]>
+			</body>
+		</do-on>
+	</object>
+	<param access-modifier="private" name="init_Keypad_X" display-name="init_Keypad_X" uuid="6d56583b-f35a-4945-869f-9150c53809d4" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="1"/>
+	<param access-modifier="private" name="init_Keypad_Y" display-name="init_Keypad_Y" uuid="b3ded6ff-10ef-459b-97d3-358b554b216a" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="1"/>
+	<init target="WindowY" ver="1" ref="init_Keypad_Y"/>
+	<init target="WindowX" ver="1" ref="init_Keypad_X"/>
+</type>
+

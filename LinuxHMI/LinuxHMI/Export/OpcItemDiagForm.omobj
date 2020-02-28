@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<type access-modifier="private" name="OpcItemDiagForm" display-name="OpcItemDiagForm" uuid="1d4306fe-706f-4074-92fb-c9c61c131e15" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5">
+	<designed target="X" value="0"/>
+	<designed target="Y" value="0"/>
+	<designed target="Rotation" value="0"/>
+	<designed target="Scale" value="1"/>
+	<designed target="Visible" value="true"/>
+	<designed target="Enabled" value="true"/>
+	<designed target="Tooltip" value=""/>
+	<designed target="Width" value="600"/>
+	<designed target="Height" value="210"/>
+	<designed target="PenColor" value="4278190080"/>
+	<designed target="PenStyle" value="0"/>
+	<designed target="PenWidth" value="1"/>
+	<designed target="BrushColor" value="4293980400"/>
+	<designed target="BrushStyle" value="1"/>
+	<designed target="WindowX" value="0"/>
+	<designed target="WindowY" value="0"/>
+	<designed target="WindowWidth" value="1920"/>
+	<designed target="WindowHeight" value="1080"/>
+	<designed target="WindowCaption" value="MainForm"/>
+	<designed target="ShowWindowCaption" value="true"/>
+	<designed target="ShowWindowMinimize" value="true"/>
+	<designed target="ShowWindowMaximize" value="true"/>
+	<designed target="ShowWindowClose" value="true"/>
+	<designed target="WindowSizeMode" value="0"/>
+	<designed target="WindowScalingMode" value="0"/>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="2899cf58-a070-4202-a0a9-cd0e1dd44a04" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="18"/>
+		<designed target="Y" value="16"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip"/>
+		<designed target="Width" value="50"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="Tag:"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="1"/>
+	</object>
+	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="a29f0355-3383-4f88-aecb-19c1acd4ab6a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="18"/>
+		<designed target="Y" value="36"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip"/>
+		<designed target="Width" value="50"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="Value:"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="1"/>
+	</object>
+	<object access-modifier="private" name="Text_3" display-name="Text_3" uuid="5ac6d916-82f3-440e-8f79-7fc6aa85877e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="18"/>
+		<designed target="Y" value="56"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip"/>
+		<designed target="Width" value="50"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="Quality:"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="1"/>
+	</object>
+	<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="3d6ba4ca-9e2f-4820-93a3-3c9b74ebb383" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="18"/>
+		<designed target="Y" value="76"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip"/>
+		<designed target="Width" value="64"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="Timestamp:"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="1"/>
+	</object>
+	<object access-modifier="private" name="Text_5" display-name="Text_5" uuid="87ddf10f-34b2-427e-8dc9-ef0fdd97c252" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="18"/>
+		<designed target="Y" value="96"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip"/>
+		<designed target="Width" value="50"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="Status:"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="1"/>
+	</object>
+	<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="51c95eae-8da0-4c51-89b9-c905271e6066" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1">
+		<designed target="X" value="318"/>
+		<designed target="Y" value="180"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip"/>
+		<designed target="Width" value="75"/>
+		<designed target="Height" value="23"/>
+		<designed target="Text" value="Close"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<do-on access-modifier="private" name="New_handler" display-name="New_handler" form-action="close" event="ButtonPressed"/>
+	</object>
+	<param access-modifier="private" name="refOpcItem" display-name="refOpcItem" uuid="e4e8df0e-67d0-4972-8688-5973f56afed0" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" base-const="true" base-ref="true"/>
+	<object access-modifier="private" name="outTag" display-name="outTag" uuid="167715ab-f10b-438d-a353-c658ba24e2b6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="82"/>
+		<designed target="Y" value="16"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip"/>
+		<designed target="Width" value="501"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="&lt;N/A&gt;"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="1"/>
+		<init target="Text" ref="refOpcItem.Tag"/>
+	</object>
+	<object access-modifier="private" name="outValue" display-name="outValue" uuid="29552b2f-b09b-4006-8ae4-1966019fb1bb" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="82"/>
+		<designed target="Y" value="36"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip"/>
+		<designed target="Width" value="301"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="&lt;N/A&gt;"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="1"/>
+		<init target="Text" ref="refOpcItem.Value"/>
+	</object>
+	<object access-modifier="private" name="outQuality" display-name="outQuality" uuid="bb262a5c-35ce-4fdc-872a-e0a424e31b90" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="82"/>
+		<designed target="Y" value="56"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip"/>
+		<designed target="Width" value="303"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="&lt;N/A&gt;"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="1"/>
+		<init target="Text" ref="refOpcItem.Quality"/>
+	</object>
+	<object access-modifier="private" name="outTimestamp" display-name="outTimestamp" uuid="d59336cc-c0a5-45cd-9763-4734b2dcc13f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="82"/>
+		<designed target="Y" value="76"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip"/>
+		<designed target="Width" value="305"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="&lt;N/A&gt;"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="1"/>
+		<init target="Text" ref="refOpcItem.TimeStamp"/>
+	</object>
+	<object access-modifier="private" name="outStatus" display-name="outStatus" uuid="afddec4a-1a3f-47c5-89a3-344a682bbb8b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="82"/>
+		<designed target="Y" value="96"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip"/>
+		<designed target="Width" value="303"/>
+		<designed target="Height" value="69"/>
+		<designed target="Text" value="&lt;N/A&gt;"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="1"/>
+		<init target="Text" ref="refOpcItem.AdviseStateString"/>
+	</object>
+	<designed target="WindowCloseMode" value="0"/>
+	<designed target="WindowBorderStyle" value="1"/>
+	<designed target="AlwaysOnTop" value="false" ver="1"/>
+	<designed target="WindowState" value="0" ver="1"/>
+	<designed target="MonitorNumber" value="0" ver="1"/>
+	<designed target="WindowPosition" value="0" ver="1"/>
+</type>
+

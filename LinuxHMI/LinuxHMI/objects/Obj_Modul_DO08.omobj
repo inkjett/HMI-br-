@@ -1,0 +1,898 @@
+<type access-modifier="private" name="Obj_Modul_DO08" display-name="Obj_Modul_DO08" uuid="866d1289-55f9-4de0-8e7c-772353c5058c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="75" ver="1"/>
+	<designed target="Height" value="250" ver="1"/>
+	<designed target="RoundingRadius" value="0" ver="1"/>
+	<designed target="PenColor" value="4278190080" ver="1"/>
+	<designed target="PenStyle" value="1" ver="1"/>
+	<designed target="PenWidth" value="1" ver="1"/>
+	<designed target="BrushColor" value="0xff4b4b4b" ver="1"/>
+	<designed target="BrushStyle" value="1" ver="1"/>
+	<object access-modifier="private" name="Modul_DO08_Table_rect" display-name="Modul_DO08_Table_rect" uuid="530c6e0d-0800-4c40-bd6a-25ed4b291aec" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="21.5" ver="1"/>
+		<designed target="Y" value="27.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="190" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffe1e1e1" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect" display-name="Modul_DI08_Table_Row1_rect" uuid="3c41195d-72c1-4078-a273-1d94eefe8f84" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="34.499999999999986" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect_1" display-name="Modul_DI08_Table_Row1_rect_1" uuid="19c3b457-f784-4adc-b2e9-09b828151cfe" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="54.499999999999986" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect_2" display-name="Modul_DI08_Table_Row1_rect_2" uuid="a4b1aa30-9918-451a-8de5-1a10c8663c8f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="74.499999999999986" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect_3" display-name="Modul_DI08_Table_Row1_rect_3" uuid="9e78dbff-dd39-4b4a-9685-cdaaf4037f1c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="94.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect_4" display-name="Modul_DI08_Table_Row1_rect_4" uuid="ee88a07f-afa5-47c5-8a1a-3aa071af62a2" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="114.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect_5" display-name="Modul_DI08_Table_Row1_rect_5" uuid="a0636fda-c0a7-4c06-8ed9-d5a57f003ff6" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="134.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect_6" display-name="Modul_DI08_Table_Row1_rect_6" uuid="6268c1ef-faf7-42b3-b98f-cee93356e6b4" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="154.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect_7" display-name="Modul_DI08_Table_Row1_rect_7" uuid="861fcb98-1733-4a0e-b259-cb861d9e3626" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="174.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect_8" display-name="Modul_DI08_Table_Row1_rect_8" uuid="5f4a5a7f-d5bb-4d96-96ee-0b187b2b0a0b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="4.4999999999999858" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_DO_src" display-name="Modul_DO08_DO_src" uuid="f95db9ab-1bcb-4fd4-ac7f-7513aaaa1bba" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="1">
+		<designed target="Active" value="true" ver="1"/>
+		<init target="ParentSource" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1" value="DO"/>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_ModulErr_src" display-name="Modul_DO08_ModulErr_src" uuid="1fd2c5c7-04f1-4b71-af21-30b8becb2b22" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="1">
+		<designed target="Active" value="true" ver="1"/>
+		<init target="ParentSource" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1" value="Crate"/>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_DO1_opc" display-name="Modul_DO08_DO1_opc" uuid="400f2b5a-7fb9-4f04-95d6-1c58c040cfb0" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Modul_DO08_DO_src"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[Str.ToString(1+(_Modul_DO08_ModulDO_Number-1)*8) + ".State2.ValueOut"]]>
+			</expr>
+		</init>
+	</object>
+	<param access-modifier="private" name="_Modul_DO08_ModulDO_Number" display-name="_Modul_DO08_ModulDO_Number" uuid="9872f533-e38d-44e6-b594-08008ebb20db" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="Modul_DO08_Label_rect" display-name="Modul_DO08_Label_rect" uuid="772924de-f5a6-4887-81f7-8ef35aa1f043" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="9.5" ver="1"/>
+		<designed target="Y" value="225.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="58" ver="1"/>
+		<designed target="Height" value="23.000000000000057" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffffffff" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_DI08_Label_text" display-name="Modul_DI08_Label_text" uuid="37a4f946-9cdf-4b33-bdf2-fba36dfcd02b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="4" ver="1"/>
+			<designed target="Y" value="0" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="50" ver="1"/>
+			<designed target="Height" value="22" ver="1"/>
+			<designed target="Text" value="A1_1" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+			<init target="Text" ver="1">
+				<expr>
+					<![CDATA[_Modul_Label]]>
+				</expr>
+			</init>
+		</object>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_Name_text" display-name="Modul_DO08_Name_text" uuid="e68364eb-cd61-4b7d-84c9-24f6c81b669d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="3.5" ver="1"/>
+		<designed target="Y" value="0.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="69" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="DO 08 011" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xffcaca84" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<param access-modifier="private" name="_Modul_DO08_ModulInCrate_Number" display-name="_Modul_DO08_ModulInCrate_Number" uuid="566c1664-0308-4d95-8b66-ed8a45a446e4" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="Modul_DO08_DI1_rect" display-name="Modul_DO08_DI1_rect" uuid="598f0325-7162-400a-8eb4-f708ee59bca3" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="7.5" ver="1"/>
+		<designed target="Y" value="60.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="10" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_DI08_DI1_text" display-name="Modul_DI08_DI1_text" uuid="d8a9052b-db77-452e-9b50-bdec7da6aaf7" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="24" ver="1"/>
+			<designed target="Y" value="-2.68421" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20.2105" ver="1"/>
+			<designed target="Text" value="1" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Modul_DO08_DO1_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_DO1_opc.Value,false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff4b4b4b]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_DO1_opc.Value,false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<param access-modifier="private" name="_Modul_DO08_Crate_Number" display-name="_Modul_DO08_Crate_Number" uuid="e7cdb8dd-0bd0-468e-a31e-55c804bdb20e" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="Modul_DO08_Err_rect" display-name="Modul_DO08_Err_rect" uuid="cf075712-e004-49f4-a6df-5a24c7740ee0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="7.5" ver="1"/>
+		<designed target="Y" value="30.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="10" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffff0000" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_DI08_Err_text" display-name="Modul_DI08_Err_text" uuid="9dd792ca-992d-4057-9235-bb5439cb686d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="24" ver="1"/>
+			<designed target="Y" value="-3" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="30" ver="1"/>
+			<designed target="Height" value="20.2105" ver="1"/>
+			<designed target="Text" value="ERR" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Modul_DO08_ModulErr_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_ModulErr_opc.Value,false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_ModulErr_opc.Value,false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff4b4b4b]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_ModulErr_opc" display-name="Modul_DO08_ModulErr_opc" uuid="9ba64b6e-9061-4dc2-b7fc-aabee0c9e7a2" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Modul_DO08_ModulErr_src"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[Str.ToString(_Modul_DO08_Crate_Number) + ".Errors.Modul" + Str.ToString(_Modul_DO08_ModulInCrate_Number)]]>
+			</expr>
+		</init>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="MouseEnter">
+		<body kind="om">
+			<![CDATA[here.PenWidth=3;]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="1" event="MouseLeave">
+		<body kind="om">
+			<![CDATA[here.PenWidth=1;]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="1" event="MouseClick" form-action="open-new">
+		<object access-modifier="private" uuid="b112417f-0d18-49bf-9666-a76f691a9b9e" base-type="Popup_Modul_DO08" base-type-id="b5e7e131-35d1-49a8-9a2a-c6119226a4c6" ver="1">
+			<designed target="WindowPosition" value="1" ver="1"/>
+			<init target="_Pp_Modul_DO08_ModulDO_Number" ver="1" ref="Modul_DO08_ModulDO_Number"/>
+			<init target="_Pp_Modul_DO08_Crate_Number" ver="1" ref="Modul_DO08_Crate_Number"/>
+			<init target="_Pp_Modul_DO08_ModulInCrate_Number" ver="1" ref="Modul_DO08_ModulInCrate_Number"/>
+			<designed target="WindowWidth" value="650" ver="1"/>
+			<designed target="WindowHeight" value="341" ver="1"/>
+			<init target="_Pp_Modul_Label" ver="1" ref="Modul_Label"/>
+		</object>
+	</do-on>
+	<object access-modifier="private" name="Modul_DO08_ModulDO_Number" display-name="Modul_DO08_ModulDO_Number" uuid="8382d762-792c-4938-a473-f45c4c24ed44" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="Modul_DO08_ModulInCrate_Number" display-name="Modul_DO08_ModulInCrate_Number" uuid="df440391-247d-4f41-ac5c-825b17cdb180" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="Modul_DO08_Crate_Number" display-name="Modul_DO08_Crate_Number" uuid="5ac832f8-c4fa-4f04-afac-6adb3c08a0c2" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<init target="Modul_DO08_ModulDO_Number" ver="1" ref="_Modul_DO08_ModulDO_Number"/>
+	<init target="Modul_DO08_ModulInCrate_Number" ver="1" ref="_Modul_DO08_ModulInCrate_Number"/>
+	<init target="Modul_DO08_Crate_Number" ver="1" ref="_Modul_DO08_Crate_Number"/>
+	<object access-modifier="private" name="Modul_DO08_DI1_rect_1" display-name="Modul_DO08_DI1_rect_1" uuid="ebab71cf-c254-48a2-88d0-9600bb446ad3" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="7.5" ver="1"/>
+		<designed target="Y" value="80.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="10" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_DI08_DI1_text" display-name="Modul_DI08_DI1_text" uuid="09dc6d0f-8af0-4ae8-ab11-5cfee98cdc38" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="24" ver="1"/>
+			<designed target="Y" value="-2.47368" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20.2105" ver="1"/>
+			<designed target="Text" value="2" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Modul_DO08_DO2_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_DO2_opc.Value,false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff4b4b4b]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_DO2_opc.Value,false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_DI1_rect_2" display-name="Modul_DO08_DI1_rect_2" uuid="597519e5-248b-4f0f-8463-fcfc0e7cbcd6" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="7.5" ver="1"/>
+		<designed target="Y" value="100.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="10" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_DI08_DI1_text" display-name="Modul_DI08_DI1_text" uuid="11e1c3a6-f886-4924-af42-4e62ee6e5c5a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="24" ver="1"/>
+			<designed target="Y" value="-2.26316" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20.2105" ver="1"/>
+			<designed target="Text" value="3" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Modul_DO08_DO3_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_DO3_opc.Value,false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff4b4b4b]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_DO3_opc.Value,false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_DI1_rect_3" display-name="Modul_DO08_DI1_rect_3" uuid="09d8940c-e74c-4863-a536-6fd9c1b1166c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="7.5" ver="1"/>
+		<designed target="Y" value="120.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="10" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_DI08_DI1_text" display-name="Modul_DI08_DI1_text" uuid="a7bdf917-1535-4bdb-80ab-2bcb65be6faa" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="24" ver="1"/>
+			<designed target="Y" value="-2.05263" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20.2105" ver="1"/>
+			<designed target="Text" value="4" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Modul_DO08_DO4_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_DO4_opc.Value,false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff4b4b4b]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_DO4_opc.Value,false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_DI1_rect_4" display-name="Modul_DO08_DI1_rect_4" uuid="0ba2c33a-7b09-4fdc-a0e1-cfae91f43d5b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="7.5" ver="1"/>
+		<designed target="Y" value="140.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="10" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_DI08_DI1_text" display-name="Modul_DI08_DI1_text" uuid="adf49dbb-3b97-4710-93f8-985726837629" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="24" ver="1"/>
+			<designed target="Y" value="-1.84211" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20.2105" ver="1"/>
+			<designed target="Text" value="5" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Modul_DO08_DO5_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_DO5_opc.Value,false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff4b4b4b]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_DO5_opc.Value,false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_DI1_rect_5" display-name="Modul_DO08_DI1_rect_5" uuid="d5445526-8be9-4331-b0d0-03ebb0ac1287" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="7.5" ver="1"/>
+		<designed target="Y" value="160.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="10" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_DI08_DI1_text" display-name="Modul_DI08_DI1_text" uuid="c0e87e6a-31fa-441f-b33b-3975a3334d33" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="24" ver="1"/>
+			<designed target="Y" value="-1.63158" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20.2105" ver="1"/>
+			<designed target="Text" value="6" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Modul_DO08_DO6_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_DO6_opc.Value,false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff4b4b4b]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_DO6_opc.Value,false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_DI1_rect_6" display-name="Modul_DO08_DI1_rect_6" uuid="e5c60b54-b06f-4e21-bb15-f63d436baab3" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="7.5" ver="1"/>
+		<designed target="Y" value="180.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="10" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_DI08_DI1_text" display-name="Modul_DI08_DI1_text" uuid="82e49755-a49c-44c9-b352-505c6b1f0465" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="24" ver="1"/>
+			<designed target="Y" value="-1.42105" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20.2105" ver="1"/>
+			<designed target="Text" value="7" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Modul_DO08_DO7_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_DO7_opc.Value,false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff4b4b4b]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_DO7_opc.Value,false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_DI1_rect_7" display-name="Modul_DO08_DI1_rect_7" uuid="225e563c-3662-4652-be9b-943b943f6075" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="7.5" ver="1"/>
+		<designed target="Y" value="200.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="10" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_DI08_DI1_text" display-name="Modul_DI08_DI1_text" uuid="aa7c0b00-8342-4860-aa16-64a85f44578b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="24" ver="1"/>
+			<designed target="Y" value="-1.21053" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20.2105" ver="1"/>
+			<designed target="Text" value="8" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Modul_DO08_DO8_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_DO8_opc.Value,false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff4b4b4b]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Modul_DO08_DO8_opc.Value,false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_DO2_opc" display-name="Modul_DO08_DO2_opc" uuid="c92644b7-4bc9-4dcc-933e-3a3b8dbb600a" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Modul_DO08_DO_src"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[Str.ToString(2+(_Modul_DO08_ModulDO_Number-1)*8) + ".State2.ValueOut"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_DO3_opc" display-name="Modul_DO08_DO3_opc" uuid="ecb75340-1efc-4870-b689-3d2f40e95880" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Modul_DO08_DO_src"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[Str.ToString(3+(_Modul_DO08_ModulDO_Number-1)*8) + ".State2.ValueOut"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_DO4_opc" display-name="Modul_DO08_DO4_opc" uuid="3c7f9e9e-b49c-47a5-9baa-ad368fd66e75" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Modul_DO08_DO_src"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[Str.ToString(4+(_Modul_DO08_ModulDO_Number-1)*8) + ".State2.ValueOut"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_DO5_opc" display-name="Modul_DO08_DO5_opc" uuid="aeaeb7d4-57b2-4160-9ccb-805ffdf7a902" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Modul_DO08_DO_src"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[Str.ToString(5+(_Modul_DO08_ModulDO_Number-1)*8) + ".State2.ValueOut"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_DO6_opc" display-name="Modul_DO08_DO6_opc" uuid="a8ed97cb-ebc2-43e3-8793-60d5516bedb6" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Modul_DO08_DO_src"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[Str.ToString(6+(_Modul_DO08_ModulDO_Number-1)*8) + ".State2.ValueOut"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_DO7_opc" display-name="Modul_DO08_DO7_opc" uuid="0aa916e4-6f24-4a13-bf9d-d8248e0a2bf3" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Modul_DO08_DO_src"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[Str.ToString(7+(_Modul_DO08_ModulDO_Number-1)*8) + ".State2.ValueOut"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Modul_DO08_DO8_opc" display-name="Modul_DO08_DO8_opc" uuid="a8a2bfe7-9ef1-49d6-9904-f0bd60e25462" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Modul_DO08_DO_src"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[Str.ToString(8+(_Modul_DO08_ModulDO_Number-1)*8) + ".State2.ValueOut"]]>
+			</expr>
+		</init>
+	</object>
+	<param access-modifier="private" name="_PLC_or_IVK" display-name="_PLC_or_IVK" uuid="15706363-038b-46a1-8bda-5d497759ec89" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="PLC_or_IVK" display-name="PLC_or_IVK" uuid="4d7ddf0c-95f1-4c11-bb90-d0560121e69a" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<param access-modifier="private" name="_Modul_Label" display-name="_Modul_Label" uuid="18156808-1d12-4d82-90d1-17c43f6549d4" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="Modul_Label" display-name="Modul_Label" uuid="cc8d7dad-6830-472d-bcd7-d761343e7b73" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<init target="Modul_Label" ver="1" ref="_Modul_Label"/>
+	<init target="PLC_or_IVK" ver="1" ref="_PLC_or_IVK"/>
+</type>
+

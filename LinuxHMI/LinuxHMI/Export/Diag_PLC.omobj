@@ -1,0 +1,161 @@
+<type access-modifier="private" name="Diag_PLC" display-name="Diag_PLC" uuid="30afcac8-897c-4f70-a5da-4c3cd59d6639" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5">
+	<designed target="X" value="0"/>
+	<designed target="Y" value="0"/>
+	<designed target="Rotation" value="0"/>
+	<designed target="Scale" value="1"/>
+	<designed target="Visible" value="true"/>
+	<designed target="Enabled" value="true"/>
+	<designed target="Tooltip" value=""/>
+	<designed target="Width" value="1720"/>
+	<designed target="Height" value="800"/>
+	<designed target="PenColor" value="4278190080"/>
+	<designed target="PenStyle" value="0"/>
+	<designed target="PenWidth" value="1"/>
+	<designed target="BrushColor" value="0xffa0b5e6"/>
+	<designed target="BrushStyle" value="1"/>
+	<designed target="WindowX" value="0"/>
+	<designed target="WindowY" value="0"/>
+	<designed target="WindowWidth" value="1920"/>
+	<designed target="WindowHeight" value="1080"/>
+	<designed target="WindowCaption" value="MainForm"/>
+	<designed target="ShowWindowCaption" value="true"/>
+	<designed target="ShowWindowMinimize" value="true"/>
+	<designed target="ShowWindowMaximize" value="true"/>
+	<designed target="ShowWindowClose" value="true"/>
+	<designed target="AlwaysOnTop" value="false"/>
+	<designed target="WindowSizeMode" value="0"/>
+	<designed target="WindowBorderStyle" value="1"/>
+	<designed target="WindowState" value="0"/>
+	<designed target="WindowScalingMode" value="0"/>
+	<designed target="MonitorNumber" value="0"/>
+	<designed target="WindowPosition" value="0"/>
+	<designed target="WindowCloseMode" value="0"/>
+	<object access-modifier="private" name="txt_SAName_8" display-name="txt_SAName_8" uuid="16e9902b-7288-41c6-97dc-2878a9f57c07" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="693"/>
+		<designed target="Y" value="1.0000000000000071"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="460"/>
+		<designed target="Height" value="51.999999999999986"/>
+		<designed target="Text" value="Диагностика (питание)"/>
+		<designed target="Font" value="Segoe UI,22,-1,5,75,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff63708f"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<object access-modifier="private" name="PLC_Modul_DI_1" display-name="PLC_Modul_DI_1" uuid="dfd3c1a4-2088-4772-99dd-a6c8b85b998f" base-type="PLC_Modul_DI" base-type-id="ce0508c4-2ac4-4d14-8a94-92f1b2e17918" ver="1">
+		<designed target="X" value="348.5" ver="1"/>
+		<designed target="Y" value="181.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="122" ver="1"/>
+		<designed target="Height" value="412" ver="1"/>
+		<init target="_ModulNumberDI" ver="1" value="1"/>
+		<init target="_ModulNumber" ver="1" value="2"/>
+	</object>
+	<object access-modifier="private" name="PLC_Modul_DI_2" display-name="PLC_Modul_DI_2" uuid="0c0887e5-d69f-4d1c-851d-d3168bf81eb5" base-type="PLC_Modul_DI" base-type-id="ce0508c4-2ac4-4d14-8a94-92f1b2e17918" ver="1">
+		<designed target="X" value="468.5" ver="1"/>
+		<designed target="Y" value="181.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="122" ver="1"/>
+		<designed target="Height" value="412" ver="1"/>
+		<init target="_ModulNumberDI" ver="1" value="2"/>
+		<init target="_ModulNumber" ver="1" value="3"/>
+	</object>
+	<object access-modifier="private" name="PLC_Modul_DI_3" display-name="PLC_Modul_DI_3" uuid="ec26d91a-269e-4599-8922-96b6bd74f4d5" base-type="PLC_Modul_DI" base-type-id="ce0508c4-2ac4-4d14-8a94-92f1b2e17918" ver="1">
+		<designed target="X" value="588.5" ver="1"/>
+		<designed target="Y" value="181.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="122" ver="1"/>
+		<designed target="Height" value="412" ver="1"/>
+		<init target="_ModulNumberDI" ver="1" value="3"/>
+		<init target="_ModulNumber" ver="1" value="4"/>
+	</object>
+	<object access-modifier="private" name="PLC_Modul_DI_4" display-name="PLC_Modul_DI_4" uuid="362ef1b6-dd30-4eb0-8f70-6277823428d2" base-type="PLC_Modul_DI" base-type-id="ce0508c4-2ac4-4d14-8a94-92f1b2e17918" ver="1">
+		<designed target="X" value="708.5" ver="1"/>
+		<designed target="Y" value="181.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="122" ver="1"/>
+		<designed target="Height" value="412" ver="1"/>
+		<init target="_ModulNumberDI" ver="1" value="4"/>
+		<init target="_ModulNumber" ver="1" value="5"/>
+	</object>
+	<object access-modifier="private" name="PLC_Modul_DI_5" display-name="PLC_Modul_DI_5" uuid="9e8f1b6b-6f14-433e-8ee1-80a2114a2879" base-type="PLC_Modul_DI" base-type-id="ce0508c4-2ac4-4d14-8a94-92f1b2e17918" ver="1">
+		<designed target="X" value="828.5" ver="1"/>
+		<designed target="Y" value="181.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="122" ver="1"/>
+		<designed target="Height" value="412" ver="1"/>
+		<init target="_ModulNumberDI" ver="1" value="5"/>
+		<init target="_ModulNumber" ver="1" value="6"/>
+	</object>
+	<object access-modifier="private" name="PLC_Modul_DI_6" display-name="PLC_Modul_DI_6" uuid="34417cfa-cfce-4f9f-96c9-a6a25aed687c" base-type="PLC_Modul_DI" base-type-id="ce0508c4-2ac4-4d14-8a94-92f1b2e17918" ver="1">
+		<designed target="X" value="948.5" ver="1"/>
+		<designed target="Y" value="181.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="122" ver="1"/>
+		<designed target="Height" value="412" ver="1"/>
+		<init target="_ModulNumberDI" ver="1" value="6"/>
+		<init target="_ModulNumber" ver="1" value="7"/>
+	</object>
+	<object access-modifier="private" name="PLC_Modul_DO_1" display-name="PLC_Modul_DO_1" uuid="0ddeb8d1-c2e0-40cd-9f3b-73fff016aefa" base-type="PLC_Modul_DO" base-type-id="b7bf90d0-8ae5-4b93-8dde-e2e869354573" ver="1">
+		<designed target="X" value="1069.3333333333333" ver="1"/>
+		<designed target="Y" value="181.33333333333329" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="122" ver="1"/>
+		<designed target="Height" value="412" ver="1"/>
+		<init target="_ModulNumberDO" ver="1" value="1"/>
+		<init target="_ModulNumber" ver="1" value="8"/>
+	</object>
+	<object access-modifier="private" name="PLC_Modul_DO_2" display-name="PLC_Modul_DO_2" uuid="88e522de-5b50-45a6-8611-7e2c0fbe607d" base-type="PLC_Modul_DO" base-type-id="b7bf90d0-8ae5-4b93-8dde-e2e869354573" ver="1">
+		<designed target="X" value="1190.3333333333333" ver="1"/>
+		<designed target="Y" value="181.33333333333326" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="122" ver="1"/>
+		<designed target="Height" value="412" ver="1"/>
+		<init target="_ModulNumberDO" ver="1" value="2"/>
+		<init target="_ModulNumber" ver="1" value="9"/>
+	</object>
+	<object access-modifier="private" name="PLC_Modul_AI_1" display-name="PLC_Modul_AI_1" uuid="78d23319-be41-496d-870f-a9a36b9ca57d" base-type="PLC_Modul_AI" base-type-id="23449214-30e3-4c85-9aa5-9568e6b506f0" ver="1">
+		<designed target="X" value="226.99999999999989" ver="1"/>
+		<designed target="Y" value="180.99999999999994" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="122" ver="1"/>
+		<designed target="Height" value="412" ver="1"/>
+		<init target="_ModulNumber" ver="1" value="1"/>
+	</object>
+	<object access-modifier="private" name="PLC_Modul_Blank_1" display-name="PLC_Modul_Blank_1" uuid="ef539f36-4b75-4871-b760-1614d5a09648" base-type="PLC_Modul_Blank" base-type-id="21286c9b-575a-4511-8ab8-0e818a0aae92" ver="1">
+		<designed target="X" value="1311.6666666666665" ver="1"/>
+		<designed target="Y" value="181" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="122" ver="1"/>
+		<designed target="Height" value="412" ver="1"/>
+		<init target="_ModulNumber" ver="1" value="10"/>
+	</object>
+	<object access-modifier="private" name="PLC_Modul_Blank_2" display-name="PLC_Modul_Blank_2" uuid="4b8c9f53-724b-4e24-babf-68b3a0c311cd" base-type="PLC_Modul_Blank" base-type-id="21286c9b-575a-4511-8ab8-0e818a0aae92" ver="1">
+		<designed target="X" value="1432.333333333333" ver="1"/>
+		<designed target="Y" value="181" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="122" ver="1"/>
+		<designed target="Height" value="412" ver="1"/>
+		<init target="_ModulNumber" ver="1" value="11"/>
+	</object>
+	<object access-modifier="private" name="PLC_Modul_CPU_1" display-name="PLC_Modul_CPU_1" uuid="133c6675-65ea-4e1c-9a48-28ac784ea86b" base-type="PLC_Modul_CPU" base-type-id="065566d8-c58c-4938-9b01-9742695a35ed" ver="1">
+		<designed target="X" value="28.333333333333343" ver="1"/>
+		<designed target="Y" value="181.33333333333326" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="200" ver="1"/>
+		<designed target="Height" value="412" ver="1"/>
+		<init target="_ModulNumber" ver="1" value="0"/>
+	</object>
+	<object access-modifier="private" name="PLC_Modul_RP_1" display-name="PLC_Modul_RP_1" uuid="f2d85b9c-af6d-4399-bede-77db9106762f" base-type="PLC_Modul_RP" base-type-id="d7722d3d-c5f9-40b0-af6b-6895101022d2" ver="1">
+		<designed target="X" value="1554.3333333333333" ver="1"/>
+		<designed target="Y" value="180.66666666666663" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="122" ver="1"/>
+		<designed target="Height" value="412" ver="1"/>
+		<init target="_ModulNumber" ver="1" value="12"/>
+	</object>
+</type>
+

@@ -1,0 +1,35 @@
+<type access-modifier="private" name="Obj_SI_Small" display-name="Obj_SI_Small" uuid="3c88dd7c-362d-44ab-98bd-0f1adf23b643" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="20" ver="1"/>
+	<designed target="Height" value="50" ver="1"/>
+	<designed target="RoundingRadius" value="5" ver="1"/>
+	<designed target="PenColor" value="4278190080" ver="1"/>
+	<designed target="PenStyle" value="1" ver="1"/>
+	<designed target="PenWidth" value="1" ver="1"/>
+	<designed target="BrushColor" value="0xff7d8db3" ver="1"/>
+	<designed target="BrushStyle" value="1" ver="1"/>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="0f0bdfbd-f035-40d1-8778-6bf3a583f7a8" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="-3" ver="1"/>
+		<designed target="Y" value="13" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="29" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="DT" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<init target="Text" ver="1" ref="_SI_Label"/>
+	</object>
+	<param access-modifier="private" name="_SI_Label" display-name="_SI_Label" uuid="f1171ba4-6ec1-4960-bf26-14598b4bf6e7" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+</type>
+

@@ -1,0 +1,141 @@
+<type access-modifier="private" name="Window_close_button" display-name="Window_close_button" uuid="e327359c-667b-485c-9916-fb0f7fd153a8" base-type="Dummy" base-type-id="e4b644cf-f3a8-4d11-82a0-6acc23748e14" ver="3">
+	<designed target="X" value="0" ver="3"/>
+	<designed target="Y" value="0" ver="3"/>
+	<designed target="Rotation" value="0" ver="3"/>
+	<designed target="Scale" value="1" ver="3"/>
+	<designed target="Visible" value="true" ver="3"/>
+	<designed target="Enabled" value="true" ver="3"/>
+	<designed target="Tooltip" value="Закрыть окно" ver="3"/>
+	<init target="Focus" ver="3" value="false"/>
+	<object access-modifier="private" name="Rectangle_base" display-name="Rectangle_base" uuid="43c4da7f-f0f4-4118-87e9-bba516373bdf" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+		<designed target="X" value="0" ver="3"/>
+		<designed target="Y" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="20" ver="3"/>
+		<designed target="Height" value="20" ver="3"/>
+		<designed target="RoundingRadius" value="2" ver="3"/>
+		<designed target="PenColor" value="4278190080" ver="3"/>
+		<designed target="PenStyle" value="0" ver="3"/>
+		<designed target="PenWidth" value="1" ver="3"/>
+		<designed target="BrushColor" value="0xffececec" ver="3"/>
+		<designed target="BrushStyle" value="1" ver="3"/>
+		<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="b99e5462-47a5-4c84-9ce7-62ce63a8e16d" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3">
+			<designed target="X" value="2" ver="3"/>
+			<designed target="Y" value="2" ver="3"/>
+			<designed target="Rotation" value="0" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="true" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="16" ver="3"/>
+			<designed target="Height" value="16" ver="3"/>
+			<designed target="PenColor" value="0xebd66c6c" ver="3"/>
+			<designed target="PenStyle" value="1" ver="3"/>
+			<designed target="PenWidth" value="2" ver="3"/>
+			<designed target="BrushColor" value="4278190080" ver="3"/>
+			<designed target="BrushStyle" value="0" ver="3"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="a8221500-1291-4a46-8f26-fd62b4bbd109" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+				<designed target="X" value="0" ver="3"/>
+				<designed target="Y" value="0" ver="3"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="5fbb86c2-07f5-483b-8917-44fa979cbfa3" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+				<designed target="X" value="16" ver="3"/>
+				<designed target="Y" value="16" ver="3"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="Line_2" display-name="Line_2" uuid="56a46c38-b18c-4d2a-9295-7879a09c62ae" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3">
+			<designed target="X" value="2" ver="3"/>
+			<designed target="Y" value="2" ver="3"/>
+			<designed target="Rotation" value="90" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="true" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="16" ver="3"/>
+			<designed target="Height" value="16" ver="3"/>
+			<designed target="PenColor" value="0xebd66c6c" ver="3"/>
+			<designed target="PenStyle" value="1" ver="3"/>
+			<designed target="PenWidth" value="2" ver="3"/>
+			<designed target="BrushColor" value="4278190080" ver="3"/>
+			<designed target="BrushStyle" value="0" ver="3"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="9069af81-129b-4fc0-9cac-4fbcd97cc748" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+				<designed target="X" value="0" ver="3"/>
+				<designed target="Y" value="0" ver="3"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="3ef65bc6-24ad-423b-a8c2-b4af1dcaa71f" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+				<designed target="X" value="16" ver="3"/>
+				<designed target="Y" value="16" ver="3"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="Rectangle_pen" display-name="Rectangle_pen" uuid="079ba89d-4ac6-440a-962f-ef6a248453af" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+			<designed target="Rotation" value="0" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="true" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="20" ver="3"/>
+			<designed target="Height" value="20" ver="3"/>
+			<designed target="RoundingRadius" value="2" ver="3"/>
+			<designed target="PenColor" value="0xff7788a2" ver="3"/>
+			<designed target="PenStyle" value="1" ver="3"/>
+			<designed target="PenWidth" value="1.5" ver="3"/>
+			<designed target="BrushColor" value="0xffececec" ver="3"/>
+			<designed target="BrushStyle" value="0" ver="3"/>
+		</object>
+		<do-on access-modifier="private" name="Window_close" display-name="Window_close" ver="3" event="MouseClick" form-action="close"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="3" event="MouseEnter">
+			<body kind="om">
+				<![CDATA[this.Rectangle_pen.PenColor = 0xff939393;
+this.Rectangle_pen.RoundingRadius = 2;
+this.Line_1.PenWidth = 3;
+this.Line_2.PenWidth = 3;
+Rectangle_base.BrushColor = 0xfff9f9f9;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="3" event="MouseLeave">
+			<body kind="om">
+				<![CDATA[this.Rectangle_pen.PenColor = 0xff7788a2;
+this.Rectangle_pen.RoundingRadius = 1;
+this.Line_1.PenWidth = 2;
+this.Line_2.PenWidth = 2;
+Rectangle_base.BrushColor = 0xffececec;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="3" event="MousePress">
+			<body kind="om">
+				<![CDATA[this.Line_1.PenWidth = 5;
+this.Line_2.PenWidth = 5;
+this.Line_1.PenColor = 0xebff4040;
+this.Line_2.PenColor = 0xebff4040;
+
+this.Rectangle_pen.PenWidth = 1;
+this.Rectangle_pen.RoundingRadius = 2.5;
+
+Rectangle_base.BrushColor = 0xffffffff;
+
+]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="3" event="MouseRelease">
+			<body kind="om">
+				<![CDATA[this.Line_1.PenWidth = 2;
+this.Line_2.PenWidth = 2;
+this.Line_1.PenColor = 0xebd66c6c;
+this.Line_2.PenColor = 0xebd66c6c;
+
+this.Rectangle_pen.PenWidth = 1.5;
+this.Rectangle_pen.RoundingRadius = 2;
+
+Rectangle_base.BrushColor = 0xffececec;
+]]>
+			</body>
+		</do-on>
+	</object>
+</type>
+

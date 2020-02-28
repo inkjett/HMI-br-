@@ -1,0 +1,1394 @@
+<type access-modifier="private" name="Obj_Valve" display-name="Obj_Valve" uuid="2f5dd257-e2e0-4f3a-ab88-78d959de0e95" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+	<designed target="X" value="0"/>
+	<designed target="Y" value="0"/>
+	<designed target="Rotation" value="0"/>
+	<designed target="Scale" value="1"/>
+	<designed target="Visible" value="true"/>
+	<designed target="Enabled" value="true"/>
+	<designed target="Tooltip" value=""/>
+	<designed target="Width" value="82"/>
+	<designed target="Height" value="88"/>
+	<designed target="RoundingRadius" value="0"/>
+	<designed target="PenColor" value="0xff323232"/>
+	<designed target="PenStyle" value="0"/>
+	<designed target="PenWidth" value="3"/>
+	<designed target="BrushColor" value="4278190080"/>
+	<designed target="BrushStyle" value="0"/>
+	<object access-modifier="private" name="Valve_Body" display-name="Valve_Body" uuid="40bdbe1e-2c36-4a68-9738-fba2d2f61651" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="10" ver="1"/>
+		<designed target="Y" value="9" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="60" ver="1"/>
+		<designed target="Height" value="60" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="0" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+		<object access-modifier="private" name="Valve_Backplate_rect" display-name="Valve_Backplate_rect" uuid="1517bd73-0c6e-49dc-a324-961f4fee0f79" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+			<designed target="X" value="4"/>
+			<designed target="Y" value="25"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="52"/>
+			<designed target="Height" value="20"/>
+			<designed target="RoundingRadius" value="0"/>
+			<designed target="PenColor" value="4278190080"/>
+			<designed target="PenStyle" value="0"/>
+			<designed target="PenWidth" value="1"/>
+			<designed target="BrushColor" value="0xffa0b5e6"/>
+			<designed target="BrushStyle" value="1"/>
+		</object>
+		<object access-modifier="private" name="Valve_Stok_rect" display-name="Valve_Stok_rect" uuid="d8557ae1-3e9d-4aff-b6f1-5e5e0b18b92a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+			<designed target="X" value="26"/>
+			<designed target="Y" value="5"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="8"/>
+			<designed target="Height" value="30"/>
+			<designed target="RoundingRadius" value="0"/>
+			<designed target="PenColor" value="4278190080"/>
+			<designed target="PenStyle" value="1"/>
+			<designed target="PenWidth" value="1"/>
+			<designed target="BrushColor" value="0xff4b4b4b"/>
+			<designed target="BrushStyle" value="1"/>
+		</object>
+		<object access-modifier="private" name="Valve_KlapanRight_line" display-name="Valve_KlapanRight_line" uuid="939d35de-d39a-4b95-9a79-ed84ca230bae" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba">
+			<designed target="X" value="31.75"/>
+			<designed target="Y" value="20.65"/>
+			<designed target="Rotation" value="180"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="30"/>
+			<designed target="Height" value="30"/>
+			<designed target="PenColor" value="4278190080"/>
+			<designed target="PenStyle" value="1"/>
+			<designed target="PenWidth" value="1"/>
+			<designed target="BrushColor" value="0xffffff00"/>
+			<designed target="BrushStyle" value="1"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="d9b630d9-8d7d-4995-b79b-1f417eb37c17" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="0"/>
+				<designed target="Y" value="0"/>
+			</object>
+			<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="3901db15-553f-4214-ba70-9ed7cbb3d42c" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="30"/>
+				<designed target="Y" value="15"/>
+			</object>
+			<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="c7254eb5-bb65-4035-9c0e-887882e00764" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="0"/>
+				<designed target="Y" value="30"/>
+			</object>
+			<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="26e7fb19-2cb3-4232-9b45-c6cf3b181d46" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="0"/>
+				<designed target="Y" value="0"/>
+			</object>
+			<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="1ff352ff-fe7b-4afc-8468-7de8848baa65" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006">
+				<designed target="Period" value="500"/>
+				<designed target="Active" value="false"/>
+				<designed target="PenColor" value="4278190080"/>
+				<designed target="BrushColor" value="0xff000000"/>
+				<do-trace access-modifier="private" target="Active">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Variant.ToUint4(Valve_State_opc,0) == 1 || Variant.ToUint4(Valve_State_opc,0) == 4]]>
+						</condition>
+						<expr>
+							<![CDATA[true]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[!(Variant.ToUint4(Valve_State_opc,0) == 1 || Variant.ToUint4(Valve_State_opc,0) == 4)]]>
+						</condition>
+						<expr>
+							<![CDATA[false]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<designed target="FontColor" value="4278190080" ver="3"/>
+			</object>
+			<do-trace access-modifier="private" target="BrushColor">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Valve_State_opc.Quality < 192]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Valve_State_opc,0) == 0]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Valve_State_opc,0) == 1]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff00ff00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Valve_State_opc,0) == 2]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff00ff00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Valve_State_opc,0) == 3]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffff00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Valve_State_opc,0) == 4]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffff00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Valve_State_opc,0) == 5]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffff00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Valve_State_opc,0) >= 6]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Valve_KlapanLeft_line" display-name="Valve_KlapanLeft_line" uuid="fa16a7ca-048b-4f50-a671-a7d9c73442ec" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba">
+			<designed target="X" value="0.75"/>
+			<designed target="Y" value="20.65"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="30"/>
+			<designed target="Height" value="30"/>
+			<designed target="PenColor" value="4278190080"/>
+			<designed target="PenStyle" value="1"/>
+			<designed target="PenWidth" value="1"/>
+			<designed target="BrushColor" value="0xff00ff00"/>
+			<designed target="BrushStyle" value="1"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="c9470027-cdf4-490f-a25f-93c025ce9670" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="0"/>
+				<designed target="Y" value="0"/>
+			</object>
+			<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="3b536e51-b9cc-440f-9d36-31ae9245bf17" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="30"/>
+				<designed target="Y" value="15"/>
+			</object>
+			<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="54cd5a24-2657-4307-a613-0b87cebc8451" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="0"/>
+				<designed target="Y" value="30"/>
+			</object>
+			<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="ffa5d32c-1527-4733-a84f-93903514a062" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="0"/>
+				<designed target="Y" value="0"/>
+			</object>
+			<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="1cf0c93b-5856-43bd-939f-4259a31388ba" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006">
+				<designed target="Period" value="500"/>
+				<designed target="Active" value="false"/>
+				<designed target="PenColor" value="4278190080"/>
+				<designed target="BrushColor" value="4278190080"/>
+				<do-trace access-modifier="private" target="Active">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Variant.ToUint4(Valve_State_opc.Value,0) == 1 || Variant.ToUint4(Valve_State_opc.Value,0) == 4]]>
+						</condition>
+						<expr>
+							<![CDATA[true]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[!(Variant.ToUint4(Valve_State_opc.Value,0) == 1 || Variant.ToUint4(Valve_State_opc.Value,0) == 4)]]>
+						</condition>
+						<expr>
+							<![CDATA[false]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+			</object>
+			<do-trace access-modifier="private" target="BrushColor">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Valve_State_opc.Quality < 192]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Valve_State_opc,0) == 0]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Valve_State_opc,0) == 1]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff00ff00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Valve_State_opc,0) == 2]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff00ff00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Valve_State_opc,0) == 3]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff00ff00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Valve_State_opc,0) == 4]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffff00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Valve_State_opc,0) == 5]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffff00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Valve_State_opc,0) >= 6]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Valve_KVO_rect" display-name="Valve_KVO_rect" uuid="14c290db-013e-4e3b-8232-0509e91c03c3" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+			<designed target="X" value="0.8"/>
+			<designed target="Y" value="20.65"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="6"/>
+			<designed target="Height" value="30"/>
+			<designed target="RoundingRadius" value="0"/>
+			<designed target="PenColor" value="4278190080"/>
+			<designed target="PenStyle" value="1"/>
+			<designed target="PenWidth" value="1"/>
+			<designed target="BrushColor" value="0xff00ff00"/>
+			<designed target="BrushStyle" value="1"/>
+			<do-trace access-modifier="private" target="BrushColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Valve_KVO_opc.Quality < 192]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_KVO_opc.Value,false) == false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffff00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_KVO_opc.Value,false) == true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff00ff00]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Valve_KVZ_rect" display-name="Valve_KVZ_rect" uuid="8dedddf5-b632-4a76-88ca-f3928c741761" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+			<designed target="X" value="54.6"/>
+			<designed target="Y" value="20.65"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="6"/>
+			<designed target="Height" value="30"/>
+			<designed target="RoundingRadius" value="0"/>
+			<designed target="PenColor" value="4278190080"/>
+			<designed target="PenStyle" value="1"/>
+			<designed target="PenWidth" value="1"/>
+			<designed target="BrushColor" value="0xff00ff00"/>
+			<designed target="BrushStyle" value="1"/>
+			<do-trace access-modifier="private" target="BrushColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Valve_KVZ_opc.Quality < 192]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_KVZ_opc.Value,false) == false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffff00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_KVZ_opc.Value,false) == true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff00ff00]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Valve_Error_Ellipse" display-name="Valve_Error_Ellipse" uuid="389aafbf-a8cb-4fe4-93bc-aa0beea21447" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd">
+			<designed target="X" value="20"/>
+			<designed target="Y" value="0"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="20"/>
+			<designed target="Height" value="20"/>
+			<designed target="PenColor" value="4278190080"/>
+			<designed target="PenStyle" value="1"/>
+			<designed target="PenWidth" value="1"/>
+			<designed target="BrushColor" value="0xff00ff00"/>
+			<designed target="BrushStyle" value="1"/>
+			<designed target="PieAngle" value="360" ver="1"/>
+			<designed target="PieAngleStart" value="360" ver="1"/>
+			<do-trace access-modifier="private" target="BrushColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Valve_Error_opc.Quality < 192 || Valve_Crash_opc.Quality < 192]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_Crash_opc.Value,false) == true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffff0000]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_Error_opc.Value,false) == true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffff00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_Crash_opc.Value,false) == false && Variant.ToBool(Valve_Error_opc.Value,false) == false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff00ff00]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="OriginPoint_1" display-name="OriginPoint_1" uuid="469deeed-21c0-4385-a622-b0a81829f474" base-type="OriginPoint" base-type-id="f9aa9b32-429a-406a-b175-c07b1e2ba470" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="0.59" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Percent_1" display-name="Percent_1" uuid="ba8b2e37-0eba-4668-a6d4-2fc75721e9ac" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="4.4"/>
+			<designed target="Y" value="56.35"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="52"/>
+			<designed target="Height" value="20"/>
+			<designed target="Text" value="100%"/>
+			<designed target="Font" value="Segoe UI,10,-1,5,50,0,0,0,0,0,Обычный"/>
+			<designed target="FontColor" value="4278190080"/>
+			<designed target="TextAlignment" value="132"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<body>
+					<![CDATA[Percent.ValueAsString + "%"]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[ModbusLink.Quality<192]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(ModbusLink.Value,false)==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(ModbusLink.Value,false)==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<init target="Rotation" ver="1">
+				<expr>
+					<![CDATA[(Variant.ToBool(_Valve_Vertical,false)==true)?(90):(0)]]>
+				</expr>
+			</init>
+			<init target="Visible" ver="1" ref="_Valve_EnablePercent"/>
+		</object>
+		<init target="Rotation" ver="1">
+			<expr>
+				<![CDATA[(Variant.ToBool(_Valve_Vertical,false)==true)?(-90):(0)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Valve_Dist_rect" display-name="Valve_Dist_rect" uuid="75459bb0-daf8-453c-a783-e4c4108d0193" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="-1.2"/>
+		<designed target="Y" value="1.65"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="24"/>
+		<designed target="Height" value="24"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="4278190080"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff0000ff"/>
+		<designed target="BrushStyle" value="1"/>
+		<object access-modifier="private" name="Valve_Dist_text" display-name="Valve_Dist_text" uuid="ecaf54de-112f-4426-800e-51ee4052cb68" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="1"/>
+			<designed target="Y" value="1"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="23"/>
+			<designed target="Height" value="20"/>
+			<designed target="Text" value="М"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xffffffff"/>
+			<designed target="TextAlignment" value="132"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Valve_Dist_opc.Quality < 192]]>
+					</condition>
+					<expr>
+						<![CDATA["-"]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_Dist_opc.Value,false) == false]]>
+					</condition>
+					<expr>
+						<![CDATA["М"]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_Dist_opc.Value,false) == true]]>
+					</condition>
+					<expr>
+						<![CDATA["Д"]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Valve_Dist_opc.Quality < 192]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff4b4b4b]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_Dist_opc.Value,false) == false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_Dist_opc.Value,false) == true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+		<init target="Visible" ver="1" ref="_Valve_EnableDist"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Valve_Dist_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Valve_Dist_opc.Value,false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff0000ff]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Valve_Dist_opc.Value,false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Valve_Root_src" display-name="Valve_Root_src" uuid="077ae9a2-79b7-460d-8317-8bdd3a532f1d" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c">
+		<designed target="Active" value="true"/>
+		<init target="ParentSource" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[(_Valve_MPSA==false)?("Valves."+Str.ToString(_Valve_Number)):("Valves_MPSA."+Str.ToString(_Valve_Number))]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Valve_KVO_opc" display-name="Valve_KVO_opc" uuid="b635e7b1-3191-49e7-a16d-5bb4f9195062" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="State1.KVO" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="State1.KVO"/>
+	</object>
+	<object access-modifier="private" name="Valve_KVZ_opc" display-name="Valve_KVZ_opc" uuid="da0382ef-5eca-422e-9bb6-a37b7d0551bf" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="State1.KVZ" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="State1.KVZ"/>
+	</object>
+	<object access-modifier="private" name="Valve_MPO_opc" display-name="Valve_MPO_opc" uuid="1f51ba3a-1e79-4d64-b6cd-a44a2e2dbb16" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="State1.MPO" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="State1.MPO"/>
+	</object>
+	<object access-modifier="private" name="Valve_MPZ_opc" display-name="Valve_MPZ_opc" uuid="0103a63e-2297-401b-9483-4b1b3b2f96d9" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="State1.MPZ" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="State1.MPZ"/>
+	</object>
+	<object access-modifier="private" name="Valve_MVO_opc" display-name="Valve_MVO_opc" uuid="29287020-91a6-4c8c-96ea-8e1db6bdaa2c" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="State1.MVO" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="State1.MVO"/>
+	</object>
+	<object access-modifier="private" name="Valve_State_opc" display-name="Valve_State_opc" uuid="5acc8164-f63d-4666-b820-83b21d40ea65" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="State1.State" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="State1.State"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="MouseEnter">
+		<body kind="javascript">
+			<![CDATA[//Tooltip = State.Tag + ' \n' + ValveName.Tag + '= ' + ValveName.Value;
+if (_Valve_MPSA)
+{
+	this.PenStyle=1;
+}]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" event="MouseClick">
+		<body kind="om">
+			<![CDATA[/*if (OpenPopupToken.Value == true)
+{*/
+	Action_OpenPopup.Invoke();
+/*}
+else
+{
+	Action_AccessDenied.Invoke();
+}*/]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Valve_U_ellipse" display-name="Valve_U_ellipse" uuid="3549adaf-6cc4-4b8a-90e8-7581823d4f03" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd">
+		<designed target="X" value="-2"/>
+		<designed target="Y" value="63.2"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="24"/>
+		<designed target="Height" value="24"/>
+		<designed target="PenColor" value="4278190080"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff00ff00"/>
+		<designed target="BrushStyle" value="1"/>
+		<object access-modifier="private" name="Valve_U_text" display-name="Valve_U_text" uuid="575e9405-1b3f-4a1a-a021-5dbc160e4d7e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="3"/>
+			<designed target="Y" value="3"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="19"/>
+			<designed target="Height" value="20"/>
+			<designed target="Text" value="U"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="4278190080"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Valve_U_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Valve_U_opc.Value,false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Valve_U_opc.Value,false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Valve_MVZ_opc" display-name="Valve_MVZ_opc" uuid="18f468a6-4ae7-4637-848c-6156914e7593" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="State1.MVZ" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="State1.MVZ"/>
+	</object>
+	<object access-modifier="private" name="Action_AccessDenied" display-name="Action_AccessDenied" uuid="79d8c70f-f3d8-4814-8a06-bd31f6c6259f" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95">
+		<designed target="Enabled" value="true"/>
+		<designed target="InvokeTrigger" value="false"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="Invoked" form-action="open-dialog">
+			<object access-modifier="private" uuid="d170957b-c871-466d-8cd7-b27d5fc06b4c" base-type="Valves" base-type-id="fcf7edd1-3d19-47bc-9565-5f667acef4ed"/>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Action_OpenPopup" display-name="Action_OpenPopup" uuid="262a4691-b654-40c1-97ac-dcb46fadf9ae" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95">
+		<designed target="Enabled" value="true"/>
+		<designed target="InvokeTrigger" value="false"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="Invoked" form-action="open-new">
+			<object access-modifier="private" uuid="f2e6f6b6-72f5-4119-95b1-c4e4bac42c82" base-type="ValvePopup" base-type-id="267d6b59-1092-4833-816e-db52e571a042">
+				<designed target="WindowX" value="750"/>
+				<designed target="WindowY" value="700"/>
+				<init target="_Pp_ValveControl_ValveNumber" ver="1" ref="Valve_Number"/>
+				<designed target="Width" value="360" ver="1"/>
+				<designed target="WindowWidth" value="360" ver="1"/>
+				<designed target="WindowPosition" value="1" ver="1"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Valve_MPO_line" display-name="Valve_MPO_line" uuid="22773661-e7ca-425e-b740-663664f232d5" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba">
+		<designed target="X" value="57"/>
+		<designed target="Y" value="10.9"/>
+		<designed target="Rotation" value="270"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="16"/>
+		<designed target="Height" value="16"/>
+		<designed target="PenColor" value="4278190080"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff00ff00"/>
+		<designed target="BrushStyle" value="1"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="d5c26b6e-60cb-49c4-8524-e35598898473" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="e4d359f3-cfab-41b4-9dc3-3117935c4d21" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="16"/>
+			<designed target="Y" value="8"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="fa0e240b-2df3-459b-9baf-cf3e7f359416" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="16"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="67e5089b-2e63-4a48-8ea5-47b321832e6e" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+		</object>
+		<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="c9c59c69-3dfb-4a8c-bccb-5aac90f32de6" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006">
+			<designed target="Period" value="500"/>
+			<designed target="Active" value="false"/>
+			<designed target="PenColor" value="0xffa0b5e6"/>
+			<designed target="BrushColor" value="0xffa0b5e6"/>
+			<do-trace access-modifier="private" target="Active" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Valve_MPO_opc.Quality < 192]]>
+					</condition>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_MPO_opc.Value,false) == false]]>
+					</condition>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_MPO_opc.Value,false) == true]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+		<do-trace access-modifier="private" target="Visible" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Valve_MPO_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Valve_MPO_opc.Value,false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Valve_MPO_opc.Value,false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Valve_MPO_opc.Quality<192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!(Valve_MPO_opc.Quality<192)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Valve_MPZ_line" display-name="Valve_MPZ_line" uuid="e19f1ed3-da0c-4173-a213-8ad23d8a7a29" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba">
+		<designed target="X" value="69"/>
+		<designed target="Y" value="8.9"/>
+		<designed target="Rotation" value="90"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="16"/>
+		<designed target="Height" value="16"/>
+		<designed target="PenColor" value="4278190080"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xffffff00"/>
+		<designed target="BrushStyle" value="1"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="6706b64b-3b52-4be8-88e6-106f70dda804" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="3c8ff834-d52e-4105-9216-dfecf56aed5f" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="16"/>
+			<designed target="Y" value="8"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="75f91904-fe8e-450b-b2a6-95a1b788574d" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="16"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="6c765295-21bd-4111-9e83-5c120617cd6e" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+		</object>
+		<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="7d36155e-b766-4d17-b266-44ada2b68c14" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006">
+			<designed target="Period" value="500"/>
+			<designed target="Active" value="false"/>
+			<designed target="PenColor" value="0xffa0b5e6"/>
+			<designed target="BrushColor" value="0xffa0b5e6"/>
+			<do-trace access-modifier="private" target="Active" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Valve_MPZ_opc.Quality < 192]]>
+					</condition>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_MPZ_opc.Value,false) == false]]>
+					</condition>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_MPZ_opc.Value,false) == true]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+		<do-trace access-modifier="private" target="Visible" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Valve_MPZ_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Valve_MPZ_opc.Value,false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Valve_MPZ_opc.Value,false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Valve_MPO_opc.Quality<192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!(Valve_MPO_opc.Quality<192)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Valve_MV_rect" display-name="Valve_MV_rect" uuid="3e00726a-0658-4430-84e6-05cd4f371f9d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="20.8"/>
+		<designed target="Y" value="34.65"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="40"/>
+		<designed target="Height" value="20"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="4278190080"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xffff0000"/>
+		<designed target="BrushStyle" value="1"/>
+		<object access-modifier="private" name="txt_MV" display-name="txt_MV" uuid="f179bc55-a918-4a35-87d9-64f38eb41d6e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="1"/>
+			<designed target="Y" value="0"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="39"/>
+			<designed target="Height" value="20"/>
+			<designed target="Text" value="МВ"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Valve_MV_opc.Quality < 192 || Valve_MVO_opc.Quality < 192 || Valve_MVZ_opc.Quality < 192]]>
+					</condition>
+					<expr>
+						<![CDATA["---"]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_MV_opc.Value,false) == true]]>
+					</condition>
+					<expr>
+						<![CDATA["МВ"]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_MVO_opc.Value,false) == true && Variant.ToBool(Valve_MVZ_opc.Value,false) == true]]>
+					</condition>
+					<expr>
+						<![CDATA["2МВ"]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_MVO_opc.Value,false) == true]]>
+					</condition>
+					<expr>
+						<![CDATA["МВО"]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Valve_MVZ_opc.Value,false) == true]]>
+					</condition>
+					<expr>
+						<![CDATA["МВЗ"]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+		<do-trace access-modifier="private" target="Visible" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Valve_MVO_opc.Quality < 192 || Valve_MVZ_opc.Quality < 192 || Valve_MV_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Valve_MVO_opc.Value,false) || Variant.ToBool(Valve_MVZ_opc.Value,false) || Variant.ToBool(Valve_MV_opc.Value,false)]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!(Variant.ToBool(Valve_MVO_opc.Value,false) || Variant.ToBool(Valve_MVZ_opc.Value,false) || Variant.ToBool(Valve_MV_opc.Value,false))]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Valve_MV_opc.Quality < 192 || Valve_MVO_opc.Quality < 192 || Valve_MVZ_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Valve_Name_text" display-name="Valve_Name_text" uuid="e2a08516-b099-4f57-b0f4-177e7e77e95f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="47"/>
+		<designed target="Y" value="-13"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="70"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="007.8.2"/>
+		<designed target="Font" value="Sans Serif,14,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+		<init target="Text" ver="1" ref="_ValveName"/>
+	</object>
+	<object access-modifier="private" name="Valve_Imit_ellipse" display-name="Valve_Imit_ellipse" uuid="de2c7028-cd21-4d63-b079-7c7565cade32" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd">
+		<designed target="X" value="55"/>
+		<designed target="Y" value="57.2"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="24"/>
+		<designed target="Height" value="24"/>
+		<designed target="PenColor" value="4278190080"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xffff55ff"/>
+		<designed target="BrushStyle" value="1"/>
+		<object access-modifier="private" name="Valve_Imit_text" display-name="Valve_Imit_text" uuid="53854e9f-9042-4a91-810b-369e0959fca1" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="2"/>
+			<designed target="Y" value="2"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="20"/>
+			<designed target="Height" value="20"/>
+			<designed target="Text" value="И"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="4278190080"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<do-trace access-modifier="private" target="Visible" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Valve_Imit_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Valve_Imit_opc.Value,false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Valve_Imit_opc.Value,false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Valve_Imit_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Valve_Imit_opc.Quality >= 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff00ff]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Valve_Number" display-name="Valve_Number" uuid="d59a23a1-e1e1-4956-a3b2-ad5747617c9f" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<param access-modifier="private" name="_Valve_Number" display-name="_Valve_Number" uuid="90fa43b1-29be-4eba-bfc1-c1093b52546f" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<param access-modifier="private" name="_ValveName" display-name="_ValveName" uuid="cd819673-1480-4196-8c32-5ed2da02658e" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d"/>
+	<param access-modifier="private" name="_Valve_EnableDist" display-name="_Valve_EnableDist" uuid="1cc703ac-4bc7-4df7-84fe-728d9307f1ff" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="1"/>
+	<init target="Valve_Number" ver="1" ref="_Valve_Number"/>
+	<object access-modifier="private" name="Valve_Dist_opc" display-name="Valve_Dist_opc" uuid="6db44080-9f9b-4f77-9dde-83e8e0d8bacc" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="State1.Dist" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="State1.Dist"/>
+	</object>
+	<object access-modifier="private" name="Valve_U_opc" display-name="Valve_U_opc" uuid="44fe3ea8-0300-4f9f-b08b-dffaef94702d" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="State1.U" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="State1.U"/>
+	</object>
+	<object access-modifier="private" name="Valve_Error_opc" display-name="Valve_Error_opc" uuid="8d6c87e8-40dc-42c5-a2fc-9f5855f64daf" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="State1.Error" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="State1.Error"/>
+	</object>
+	<object access-modifier="private" name="Valve_Crash_opc" display-name="Valve_Crash_opc" uuid="28931df9-e5ff-483d-91bf-440276703e3e" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="State1.Crash" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="State1.Crash"/>
+	</object>
+	<object access-modifier="private" name="Valve_Imit_opc" display-name="Valve_Imit_opc" uuid="210fd5e6-0b45-4a25-a555-b3ff1f847802" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="State1.Imit" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="State1.Imit"/>
+	</object>
+	<object access-modifier="private" name="Valve_MV_opc" display-name="Valve_MV_opc" uuid="34a39a98-1a69-4bd5-ba3a-a451233de9a6" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="State1.MV" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="State1.MV"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="1" event="MouseLeave">
+		<body kind="om">
+			<![CDATA[this.PenStyle=0;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Percent" display-name="Percent" uuid="fafa5b71-8fc4-41fb-a483-6a740934b823" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="State1.MV" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="Percent"/>
+	</object>
+	<object access-modifier="private" name="ModbusLink" display-name="ModbusLink" uuid="04c2715c-b5f5-4d8d-93cf-2fb31156aecc" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="State2.ModbusLink"/>
+	</object>
+	<param access-modifier="private" name="_Valve_Vertical" display-name="_Valve_Vertical" uuid="a6a50415-19b4-4937-bd0f-0357c899b5b3" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="1"/>
+	<param access-modifier="private" name="_Valve_MPSA" display-name="_Valve_MPSA" uuid="96fe403a-53d5-4119-93da-17e1e3e0abc7" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="1"/>
+	<param access-modifier="private" name="_Valve_EnablePercent" display-name="_Valve_EnablePercent" uuid="251ae977-b98c-4e10-8eb1-b720f640439e" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="1"/>
+	<object access-modifier="private" name="Flow_line" display-name="Flow_line" uuid="8a15c1be-9d88-4d31-9190-707f7a75d111" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="1">
+		<designed target="X" value="80" ver="1"/>
+		<designed target="Y" value="75" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="10" ver="1"/>
+		<designed target="Height" value="10" ver="1"/>
+		<designed target="PenColor" value="0xffff0000" ver="1"/>
+		<designed target="PenStyle" value="0" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffff0000" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="05261be0-73f4-4bf0-b60b-b7b01f189971" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+			<designed target="X" value="0" ver="1"/>
+			<designed target="Y" value="0" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="71290c71-9074-4be7-9db1-ffbb9f5d6eff" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+			<designed target="X" value="-5" ver="1"/>
+			<designed target="Y" value="10" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="f256c5a9-96cc-4afb-a613-bd9d36ad2e57" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+			<designed target="X" value="5" ver="1"/>
+			<designed target="Y" value="10" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="251c0824-4213-4ffe-a85b-22a803fda39e" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+			<designed target="X" value="0" ver="1"/>
+			<designed target="Y" value="0" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Ellipse_1" display-name="Ellipse_1" uuid="a3ca3d1f-31a7-4c9e-947b-3a3918e859f5" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+			<designed target="X" value="-5" ver="1"/>
+			<designed target="Y" value="7" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="10" ver="1"/>
+			<designed target="Height" value="10" ver="1"/>
+			<designed target="PenColor" value="0xffff0000" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffff0000" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+			<designed target="PieAngle" value="360" ver="1"/>
+			<designed target="PieAngleStart" value="360" ver="1"/>
+			<do-trace access-modifier="private" target="BrushColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Flow.Quality<192]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[!(Flow.Quality<192)]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffff0000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+		<do-trace access-modifier="private" target="Visible" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[FlowControl.Quality<192]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(FlowControl.Value,false)==false]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Flow.Value,false)==false]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Flow.Value,false)==true]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Flow.Quality<192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!(Flow.Quality<192)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Flow" display-name="Flow" uuid="fc4dc2d4-5c15-4baf-86c7-f13dc4914279" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="State1.MV" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="State2.Flow"/>
+	</object>
+	<object access-modifier="private" name="FlowControl" display-name="FlowControl" uuid="dfe9d4a3-70ef-437a-aae8-3e3a2b307a39" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="State1.MV" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="State2.FlowControl"/>
+	</object>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="729fd136-6d10-486a-bf53-9f3ccd3535ee" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="3"/>
+</type>
+

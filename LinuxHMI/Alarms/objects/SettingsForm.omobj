@@ -1,0 +1,2429 @@
+<type access-modifier="private" name="SettingsForm" display-name="Form_1" uuid="82dc7618-130c-486c-840d-5d302f40306b" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="2">
+	<designed target="X" value="0" ver="2"/>
+	<designed target="Y" value="0" ver="2"/>
+	<designed target="Rotation" value="0" ver="2"/>
+	<designed target="Scale" value="1" ver="2"/>
+	<designed target="Visible" value="true" ver="2"/>
+	<designed target="Enabled" value="true" ver="2"/>
+	<designed target="Tooltip" value="" ver="2"/>
+	<designed target="Width" value="710" ver="2"/>
+	<designed target="Height" value="500" ver="2"/>
+	<designed target="PenColor" value="4278190080" ver="2"/>
+	<designed target="PenStyle" value="0" ver="2"/>
+	<designed target="PenWidth" value="1" ver="2"/>
+	<designed target="BrushColor" value="4293980400" ver="2"/>
+	<designed target="BrushStyle" value="1" ver="2"/>
+	<designed target="WindowX" value="0" ver="2"/>
+	<designed target="WindowY" value="0" ver="2"/>
+	<designed target="WindowWidth" value="750" ver="2"/>
+	<designed target="WindowHeight" value="430" ver="2"/>
+	<designed target="WindowCaption" value="Параметры" ver="2"/>
+	<designed target="ShowWindowCaption" value="true" ver="2"/>
+	<designed target="ShowWindowMinimize" value="false" ver="2"/>
+	<designed target="ShowWindowMaximize" value="false" ver="2"/>
+	<designed target="ShowWindowClose" value="true" ver="2"/>
+	<designed target="AlwaysOnTop" value="false" ver="2"/>
+	<designed target="WindowSizeMode" value="1" ver="2"/>
+	<designed target="WindowBorderStyle" value="2" ver="2"/>
+	<designed target="WindowState" value="0" ver="2"/>
+	<designed target="WindowScalingMode" value="0" ver="2"/>
+	<designed target="MonitorNumber" value="0" ver="2"/>
+	<designed target="WindowPosition" value="2" ver="2"/>
+	<designed target="WindowCloseMode" value="0" ver="2"/>
+	<object access-modifier="private" name="RecBottom" display-name="RecBottom" uuid="11856adc-94a1-42dc-89e4-d4f034beb364" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="1" ver="2"/>
+		<designed target="Y" value="462" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="690" ver="2"/>
+		<designed target="Height" value="36" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="4278190080" ver="2"/>
+		<designed target="PenStyle" value="0" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="0xfff0f0f0" ver="2"/>
+		<designed target="BrushStyle" value="1" ver="2"/>
+		<object access-modifier="private" name="Button_Apply" display-name="Button_Apply" uuid="0e8aefb0-4c5d-4fc0-852d-ede638541173" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="2">
+			<designed target="X" value="470" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="false" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="114" ver="2"/>
+			<designed target="Height" value="29" ver="2"/>
+			<designed target="Text" value="Применить" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="2"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="2"/>
+			<designed target="BrushColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="BrushStyle" value="1" ver="2"/>
+			<designed target="OnClickBrushColor" value="0xffa0a0a0" ver="2"/>
+			<designed target="OnClickBrushStyle" value="1" ver="2"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="2"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="2"/>
+			<designed target="OnClickPenStyle" value="1" ver="2"/>
+			<designed target="OnClickPenWidth" value="1" ver="2"/>
+			<designed target="OnHoverPenColor" value="0xff00aaff" ver="2"/>
+			<designed target="OnHoverPenStyle" value="1" ver="2"/>
+			<designed target="OnHoverPenWidth" value="1" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseClick">
+				<body kind="om">
+					<![CDATA[ApplySettingsView();
+ApplySettingsSeverity();
+ApplySettingsPanel();
+pAlarms.Main_panel.private.func_SettingsToFile();
+SettingsSeverityFromObject();
+SettingsViewFromObject();
+SettingsPanelFromObject();
+CheckModify();
+bNotSaved = true;
+]]>
+				</body>
+			</do-on>
+			<designed target="Checkable" value="false" ver="2"/>
+			<do-trace access-modifier="private" target="FontColor" ver="3">
+				<body>
+					<![CDATA[(!bErrorFlag && bModifyed)?(0xff000000):(0xffc0c0c0)]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="3">
+				<body>
+					<![CDATA[(!bErrorFlag && bModifyed)?(true):(false)]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Button_Close" display-name="Button_Close" uuid="2a05640b-9536-4e3a-8847-4e30de07e63c" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="2">
+			<designed target="X" value="590" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="114" ver="2"/>
+			<designed target="Height" value="29" ver="2"/>
+			<designed target="Text" value="Закрыть" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="2"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="2"/>
+			<designed target="BrushColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="BrushStyle" value="1" ver="2"/>
+			<designed target="OnClickBrushColor" value="0xffa0a0a0" ver="2"/>
+			<designed target="OnClickBrushStyle" value="1" ver="2"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="2"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="2"/>
+			<designed target="OnClickPenStyle" value="1" ver="2"/>
+			<designed target="OnClickPenWidth" value="1" ver="2"/>
+			<designed target="OnHoverPenColor" value="0xff00aaff" ver="2"/>
+			<designed target="OnHoverPenStyle" value="1" ver="2"/>
+			<designed target="OnHoverPenWidth" value="1" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseClick" form-by-id="false">
+				<body kind="om">
+					<![CDATA[if (!bErrorFlag && !RecBottom.Button_Apply.Enabled) ApplySettingsView();
+Close();]]>
+				</body>
+			</do-on>
+			<designed target="Checkable" value="false" ver="2"/>
+			<do-trace access-modifier="private" target="Text" ver="3">
+				<body>
+					<![CDATA[(bModifyed)?("Отменить"):("Закрыть")]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Journal" display-name="Journal" uuid="fc24cf19-47ca-4e8b-b8f3-98e7747d22eb" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="3.33333" ver="2"/>
+			<designed target="Y" value="2.66667" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="false" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="Журнал ошибок" ver="2"/>
+			<designed target="Width" value="339.583" ver="2"/>
+			<designed target="Height" value="30.3667" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffb3b3b3" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+			<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="06fac1e4-6dd7-418e-9f2a-62ef3db5bfef" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+				<designed target="X" value="2.80033" ver="2"/>
+				<designed target="Y" value="1.4" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="334.4" ver="2"/>
+				<designed target="Height" value="27.5333" ver="2"/>
+				<designed target="Text" value="" ver="2"/>
+				<designed target="Font" value="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+				<designed target="FontColor" value="4278190080" ver="2"/>
+				<designed target="TextAlignment" value="33" ver="2"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="Button_Save" display-name="Button_Save" uuid="d25524a4-92cd-438b-925b-78e92acdfeeb" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="2">
+			<designed target="X" value="350" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="false" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="114" ver="2"/>
+			<designed target="Height" value="29" ver="2"/>
+			<designed target="Text" value="Сохранить" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="2"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="2"/>
+			<designed target="BrushColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="BrushStyle" value="1" ver="2"/>
+			<designed target="OnClickBrushColor" value="0xffa0a0a0" ver="2"/>
+			<designed target="OnClickBrushStyle" value="1" ver="2"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="2"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="2"/>
+			<designed target="OnClickPenStyle" value="1" ver="2"/>
+			<designed target="OnClickPenWidth" value="1" ver="2"/>
+			<designed target="OnHoverPenColor" value="0xff00aaff" ver="2"/>
+			<designed target="OnHoverPenStyle" value="1" ver="2"/>
+			<designed target="OnHoverPenWidth" value="1" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseClick">
+				<body kind="om">
+					<![CDATA[ApplySettingsView();
+ApplySettingsSeverity();
+ApplySettingsPanel();
+pAlarms.Main_panel.private.func_SettingsToFile();
+CheckModify();
+Close();
+]]>
+				</body>
+			</do-on>
+			<designed target="Checkable" value="false" ver="2"/>
+			<do-trace access-modifier="private" target="Enabled" ver="3">
+				<body>
+					<![CDATA[(!bErrorFlag && (bNotSaved || bModifyed))?(true):(false)]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="FontColor" ver="3">
+				<body>
+					<![CDATA[(!bErrorFlag && (bNotSaved || bModifyed))?(0xff000000):(0xffc0c0c0)]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Button_DefaultSettings" display-name="Button_DefaultSettings" uuid="5b31ab67-cd6b-4c8b-80c2-6d191925e050" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="2">
+			<designed target="X" value="465" ver="2"/>
+			<designed target="Y" value="-451.667" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="false" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="114" ver="2"/>
+			<designed target="Height" value="22.3333" ver="2"/>
+			<designed target="Text" value="По умолчанию" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="2"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="2"/>
+			<designed target="BrushColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="BrushStyle" value="1" ver="2"/>
+			<designed target="OnClickBrushColor" value="0xffa0a0a0" ver="2"/>
+			<designed target="OnClickBrushStyle" value="1" ver="2"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="2"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="2"/>
+			<designed target="OnClickPenStyle" value="1" ver="2"/>
+			<designed target="OnClickPenWidth" value="1" ver="2"/>
+			<designed target="OnHoverPenColor" value="0xff00aaff" ver="2"/>
+			<designed target="OnHoverPenStyle" value="1" ver="2"/>
+			<designed target="OnHoverPenWidth" value="1" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseClick">
+				<body kind="om">
+					<![CDATA[if (IndexSelected == 0) //Устанавливаем настройки по умолчанию для вида
+{
+	Settings.View.Column1.Caption = "Время генерации";
+	Settings.View.Column2.Caption = "Время срабатывания";
+	Settings.View.Column3.Caption = "Время деактивации";
+	Settings.View.Column4.Caption = "Сообщение";
+	Settings.View.Column5.Caption = "Источник события";
+	Settings.View.Column6.Caption = "Важность";
+	Settings.View.Column7.Caption = "Квитировано";
+	Settings.View.Column8.Caption = "Время квитирования";
+	Settings.View.Column9.Caption = "Пользователь";
+	Settings.View.Column10.Caption = "Комментарий квитирования";
+	Settings.View.Column19.Caption = "Качество сигнала";
+	Settings.View.Column20.Caption = "Значение сигнала";
+
+	Settings.View.Column1._Width = String.ToString(145);
+	Settings.View.Column2._Width = String.ToString(145);
+	Settings.View.Column3._Width = String.ToString(145);
+	Settings.View.Column4._Width = String.ToString(700);
+	Settings.View.Column5._Width = String.ToString(100);
+	Settings.View.Column6._Width = String.ToString(100);
+	Settings.View.Column7._Width = String.ToString(100);
+	Settings.View.Column8._Width = String.ToString(130);
+	Settings.View.Column9._Width = String.ToString(100);
+	Settings.View.Column10._Width = String.ToString(100);
+	Settings.View.Column19._Width = String.ToString(100);
+	Settings.View.Column20._Width = String.ToString(100);
+	
+	Settings.View.Column1._Visible = true;
+	Settings.View.Column2._Visible = false;
+	Settings.View.Column3._Visible = false;
+	Settings.View.Column4._Visible = true;
+	Settings.View.Column5._Visible = false;
+	Settings.View.Column6._Visible = false;
+	Settings.View.Column7._Visible = false;
+	Settings.View.Column8._Visible = false;
+	Settings.View.Column9._Visible = false;
+	Settings.View.Column10._Visible = false;
+	Settings.View.Column19._Visible = false;
+	Settings.View.Column20._Visible = false;
+	Settings.View.RowsHeigth =String.ToString(23);
+	
+	CheckModify();
+	Open_Form_0.Invoke();
+}
+if (IndexSelected == 1) //Восстанавливаем настройки по умолчанию для важностей
+{
+	Settings.Severity.Range1.JSON = "667-1000";
+	Settings.Severity.Range1.SoundEnable = true;
+	Settings.Severity.Range1.nSoundRepeats = 0;
+	Settings.Severity.Range1.SoundPriority = 0;
+	
+	Settings.Severity.Range2.JSON = "445-666";
+	Settings.Severity.Range2.SoundEnable = true;
+	Settings.Severity.Range2.nSoundRepeats = 3;
+	Settings.Severity.Range2.SoundPriority = 0;
+	
+	Settings.Severity.Range3.JSON = "223-444";
+	Settings.Severity.Range3.SoundEnable = true;
+	Settings.Severity.Range3.nSoundRepeats = 1;
+	Settings.Severity.Range3.SoundPriority = 0;
+
+	CheckModify();
+	errorRange1 = false;
+	errorRange2 = false;
+	errorRange3 = false;
+	Open_Form_1.Invoke();
+}
+if (IndexSelected == 2) //Восстанавливаем настройки по умолчанию для панелей
+{
+	Settings.Panel.btnSwitchModeHide = false;
+	Settings.Panel.btnSettingsHide = false;
+	Settings.Panel.btnFiltrHide = false;
+	Settings.Panel.btnExportHide = false;
+	Settings.Panel.btnPrintHide = false;
+	Settings.Panel.btnAckSelHide = false;
+	Settings.Panel.btnAckAllHide = false;
+	Settings.Panel.btnClearAllHide = false;
+	Settings.Panel.btnSnapshotHide = false;
+	Settings.Panel.btnSndClearHide = false;
+	Settings.Panel.btnSndNextHide = false;
+	Settings.Panel.btnSndMuteHide = false;
+	Settings.Panel.btnSortHide = false;
+	Settings.Panel.btnLoginHide = false;
+	Settings.Panel.RecHistoryHide = false;
+	
+	CheckModify();
+	Open_Form_2.Invoke();
+}]]>
+				</body>
+			</do-on>
+			<designed target="Checkable" value="false" ver="2"/>
+			<do-trace access-modifier="private" target="Enabled" ver="3">
+				<body>
+					<![CDATA[((bNotDefaultForm0 && IndexSelected == 0)||(bNotDefaultForm1 && IndexSelected == 1)||(bNotDefaultForm2 && IndexSelected == 2))?(true):(false)]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="FontColor" ver="3">
+				<body>
+					<![CDATA[((bNotDefaultForm0 && IndexSelected == 0)||(bNotDefaultForm1 && IndexSelected == 1)||(bNotDefaultForm2 && IndexSelected == 2))?(0xff000000):(0xffc0c0c0)]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Button_CancelChange" display-name="Button_CancelChange" uuid="1b861ffa-95bc-43b3-89a9-36c8b05f3a6f" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="2">
+			<designed target="X" value="585" ver="2"/>
+			<designed target="Y" value="-451.667" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="false" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="114" ver="2"/>
+			<designed target="Height" value="22.3333" ver="2"/>
+			<designed target="Text" value="Отменить изменения" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="2"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="2"/>
+			<designed target="BrushColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="BrushStyle" value="1" ver="2"/>
+			<designed target="OnClickBrushColor" value="0xffa0a0a0" ver="2"/>
+			<designed target="OnClickBrushStyle" value="1" ver="2"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="2"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="2"/>
+			<designed target="PenColor" value="0xff000000" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="2"/>
+			<designed target="OnClickPenStyle" value="1" ver="2"/>
+			<designed target="OnClickPenWidth" value="1" ver="2"/>
+			<designed target="OnHoverPenColor" value="0xff00aaff" ver="2"/>
+			<designed target="OnHoverPenStyle" value="1" ver="2"/>
+			<designed target="OnHoverPenWidth" value="1" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="3" event="MouseClick">
+				<body kind="javascript">
+					<![CDATA[var OperColumn=[];
+var SettingsColumn=[];
+
+if (IndexSelected == 0)//Отменяем изменения для параметров таблицы
+{
+	SettingsViewFromObject();
+	errorWord = 0;
+	Open_Form_0.Invoke();
+	CheckModify();
+	CheckError();
+}
+if (IndexSelected == 1) //Отменяем изменения для важностей
+{
+	SettingsSeverityFromObject();
+	Open_Form_1.Invoke();
+	CheckModify();
+	errorRange1 = false;
+	errorRange2 = false;
+	errorRange3 = false;
+}
+if (IndexSelected == 2) //Отменяем изменения для параметров панелей
+{
+	SettingsPanelFromObject();
+	Open_Form_2.Invoke();
+	CheckModify();
+}
+
+]]>
+				</body>
+			</do-on>
+			<designed target="Checkable" value="false" ver="2"/>
+			<do-trace access-modifier="private" target="Enabled" ver="3">
+				<body>
+					<![CDATA[((bModifyForm0 && IndexSelected == 0)||(bModifyForm1 && IndexSelected == 1)||(bModifyForm2 && IndexSelected == 2))?(true):(false)]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="FontColor" ver="3">
+				<body>
+					<![CDATA[((bModifyForm0 && IndexSelected == 0)||(bModifyForm1 && IndexSelected == 1)||(bModifyForm2 && IndexSelected == 2))?(0xff000000):(0xffc0c0c0)]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="Frame_1" display-name="Frame_1" uuid="46a30cf4-3c2b-4ec9-8610-8922a70d0631" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="2">
+		<designed target="X" value="145.667" ver="2"/>
+		<designed target="Y" value="43" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="560" ver="2"/>
+		<designed target="Height" value="414" ver="2"/>
+		<designed target="PenColor" value="0xff000000" ver="2"/>
+		<designed target="PenStyle" value="1" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<designed target="OverrideScaling" value="false" ver="2"/>
+		<designed target="ShowScrollBars" value="true" ver="2"/>
+		<designed target="MoveByMouse" value="false" ver="2"/>
+	</object>
+	<object access-modifier="private" name="IndexSelected" display-name="IndexSelected" uuid="e9b4a98a-938e-40a4-b6bd-fd463e45d072" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="2"/>
+	<init target="IndexSelected" ver="2" value="0"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Opened">
+		<body kind="om">
+			<![CDATA[SettingsViewFromObject();
+SettingsSeverityFromObject();
+SettingsPanelFromObject();
+Open_Form_0.Invoke();
+Focus = true; //Переводим Focus на форму для обработки нажатия клавиш]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Open_Form_0" display-name="Open_Form_0" uuid="be37dedc-fa17-48ef-bbf3-b43c3f2b88ec" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="2">
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="InvokeTrigger" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Invoked" frame-link="Frame_1" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="d6faa648-d468-43b2-a936-38062c5d48be" base-type="SettingsView" base-type-id="9cb26782-be31-4a0d-a350-9369758ab586" ver="2">
+				<init target="pSettingsForm" ver="3" ref="here"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Rec_Buttons" display-name="Rec_Buttons" uuid="ab97a19c-cc24-47b1-b714-95d54ddec2e4" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="4.33333" ver="2"/>
+		<designed target="Y" value="8.83333" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="139.167" ver="2"/>
+		<designed target="Height" value="450" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="4278190080" ver="2"/>
+		<designed target="PenStyle" value="1" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="0xff000000" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<object access-modifier="private" name="ViewForm" display-name="ViewForm" uuid="9765f8a6-1c89-432c-ac7c-945a27e496ac" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="2">
+			<designed target="X" value="11.2665" ver="2"/>
+			<designed target="Y" value="4.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="119.167" ver="2"/>
+			<designed target="Height" value="29" ver="2"/>
+			<designed target="Text" value="Вид таблицы" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="2"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="2"/>
+			<designed target="BrushColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="BrushStyle" value="1" ver="2"/>
+			<designed target="OnClickBrushColor" value="0xffa0a0a0" ver="2"/>
+			<designed target="OnClickBrushStyle" value="1" ver="2"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="2"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="2"/>
+			<designed target="OnClickPenStyle" value="1" ver="2"/>
+			<designed target="OnClickPenWidth" value="1" ver="2"/>
+			<designed target="OnHoverPenColor" value="0xff808080" ver="2"/>
+			<designed target="OnHoverPenStyle" value="1" ver="2"/>
+			<designed target="OnHoverPenWidth" value="1" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseClick" form-by-id="false">
+				<body kind="om">
+					<![CDATA[Open_Form_0.Invoke();
+IndexSelected = 0;
+
+if (CheckChangeView())
+{
+	RecBottom.Button_CancelChange.Enabled = true;
+	RecBottom.Button_CancelChange.FontColor = 0xff000000;
+}
+else
+{
+	RecBottom.Button_CancelChange.Enabled = false;
+	RecBottom.Button_CancelChange.FontColor = 0xffc0c0c0;
+}
+if (CheckDefaultView()) 
+{
+	RecBottom.Button_DefaultSettings.Enabled = true;
+	RecBottom.Button_DefaultSettings.FontColor = 0xff000000;
+}
+else
+{
+	RecBottom.Button_DefaultSettings.Enabled = false;
+	RecBottom.Button_DefaultSettings.FontColor = 0xffc0c0c0;
+}]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="BrushColor" ver="2">
+				<conditional-expr>
+					<condition>
+						<![CDATA[IndexSelected==0]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xfff0f0f0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="OnHoverBrushColor" ver="2">
+				<conditional-expr>
+					<condition>
+						<![CDATA[IndexSelected==0]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xfff0f0f0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<designed target="Checkable" value="false" ver="2"/>
+			<object access-modifier="private" name="RecBorder_Alarm" display-name="RecBorder_Alarm" uuid="de0b825e-fdb9-4e5f-a782-16f8616243cd" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="0.154833" ver="2"/>
+				<designed target="Y" value="-0.0238095" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="119.167" ver="2"/>
+				<designed target="Height" value="28.9286" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="0xffff0000" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Text_Alarm" display-name="Text_Alarm" uuid="3d629f19-7e23-475e-9075-6d25829d1d87" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+					<designed target="X" value="-6.25" ver="2"/>
+					<designed target="Y" value="6" ver="2"/>
+					<designed target="Rotation" value="0" ver="2"/>
+					<designed target="Scale" value="1" ver="2"/>
+					<designed target="Visible" value="true" ver="2"/>
+					<designed target="Enabled" value="true" ver="2"/>
+					<designed target="Tooltip" value="" ver="2"/>
+					<designed target="Width" value="12.5" ver="2"/>
+					<designed target="Height" value="16.5" ver="2"/>
+					<designed target="Text" value="!" ver="2"/>
+					<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="2"/>
+					<designed target="FontColor" value="0xffff0000" ver="2"/>
+					<designed target="TextAlignment" value="33" ver="2"/>
+				</object>
+				<do-trace access-modifier="private" target="Visible" ver="3">
+					<body>
+						<![CDATA[(bErrorFlag && errorForm0)?(true):(false)]]>
+					</body>
+				</do-trace>
+			</object>
+		</object>
+		<object access-modifier="private" name="SeverityForm" display-name="SeverityForm" uuid="9f7e080c-c974-4811-9347-4aad124481f2" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="2">
+			<designed target="X" value="11.2665" ver="2"/>
+			<designed target="Y" value="39.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="119.167" ver="2"/>
+			<designed target="Height" value="29" ver="2"/>
+			<designed target="Text" value="Важность событий" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="2"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="2"/>
+			<designed target="BrushColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="BrushStyle" value="1" ver="2"/>
+			<designed target="OnClickBrushColor" value="0xffa0a0a0" ver="2"/>
+			<designed target="OnClickBrushStyle" value="1" ver="2"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="2"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="2"/>
+			<designed target="OnClickPenStyle" value="1" ver="2"/>
+			<designed target="OnClickPenWidth" value="1" ver="2"/>
+			<designed target="OnHoverPenColor" value="0xff808080" ver="2"/>
+			<designed target="OnHoverPenStyle" value="1" ver="2"/>
+			<designed target="OnHoverPenWidth" value="1" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseClick" form-by-id="false">
+				<body kind="om">
+					<![CDATA[Open_Form_1.Invoke();
+IndexSelected =1;
+
+if (CheckChangeSeverity()) 
+{
+	RecBottom.Button_CancelChange.Enabled = true;
+	RecBottom.Button_CancelChange.FontColor = 0xff000000;
+}
+else
+{
+	RecBottom.Button_CancelChange.Enabled = false;
+	RecBottom.Button_CancelChange.FontColor = 0xffc0c0c0;
+}
+if (CheckDefaultSeverity()) 
+{
+	RecBottom.Button_DefaultSettings.Enabled = true;
+	RecBottom.Button_DefaultSettings.FontColor = 0xff000000;
+}
+else
+{
+	RecBottom.Button_DefaultSettings.Enabled = false;
+	RecBottom.Button_DefaultSettings.FontColor = 0xffc0c0c0;
+}
+
+]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="BrushColor" ver="2">
+				<conditional-expr>
+					<condition>
+						<![CDATA[IndexSelected==1]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xfff0f0f0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="OnHoverBrushColor" ver="2">
+				<conditional-expr>
+					<condition>
+						<![CDATA[IndexSelected==1]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xfff0f0f0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<designed target="Checkable" value="false" ver="2"/>
+			<object access-modifier="private" name="RecBorder_Alarm" display-name="RecBorder_Alarm" uuid="701e5a52-713e-4129-ba2a-127b6b1eb5da" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="0.154833" ver="2"/>
+				<designed target="Y" value="0.202367" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="119.167" ver="2"/>
+				<designed target="Height" value="28.9286" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="0xffff0000" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Text_Alarm" display-name="Text_Alarm" uuid="f2ba2a65-8326-427c-8b9a-ee8ad35bbe4c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+					<designed target="X" value="-6.25" ver="2"/>
+					<designed target="Y" value="6" ver="2"/>
+					<designed target="Rotation" value="0" ver="2"/>
+					<designed target="Scale" value="1" ver="2"/>
+					<designed target="Visible" value="true" ver="2"/>
+					<designed target="Enabled" value="true" ver="2"/>
+					<designed target="Tooltip" value="" ver="2"/>
+					<designed target="Width" value="12.5" ver="2"/>
+					<designed target="Height" value="16.5" ver="2"/>
+					<designed target="Text" value="!" ver="2"/>
+					<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="2"/>
+					<designed target="FontColor" value="0xffff0000" ver="2"/>
+					<designed target="TextAlignment" value="33" ver="2"/>
+				</object>
+				<do-trace access-modifier="private" target="Visible" ver="3">
+					<body>
+						<![CDATA[(bErrorFlag && errorForm1)?(true):(false)]]>
+					</body>
+				</do-trace>
+			</object>
+		</object>
+		<object access-modifier="private" name="InstrumentPanel" display-name="InstrumentPanel" uuid="91ce7e7a-bd9c-4945-8ddc-601bbbe510ee" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="2">
+			<designed target="X" value="11.2665" ver="2"/>
+			<designed target="Y" value="74.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="119.167" ver="2"/>
+			<designed target="Height" value="29" ver="2"/>
+			<designed target="Text" value="Панель инструментов" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="2"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="2"/>
+			<designed target="BrushColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="BrushStyle" value="1" ver="2"/>
+			<designed target="OnClickBrushColor" value="0xffa0a0a0" ver="2"/>
+			<designed target="OnClickBrushStyle" value="1" ver="2"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="2"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="2"/>
+			<designed target="OnClickPenStyle" value="1" ver="2"/>
+			<designed target="OnClickPenWidth" value="1" ver="2"/>
+			<designed target="OnHoverPenColor" value="0xff808080" ver="2"/>
+			<designed target="OnHoverPenStyle" value="1" ver="2"/>
+			<designed target="OnHoverPenWidth" value="1" ver="2"/>
+			<do-trace access-modifier="private" target="BrushColor" ver="2">
+				<conditional-expr>
+					<condition>
+						<![CDATA[IndexSelected==2
+]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xfff0f0f0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="OnHoverBrushColor" ver="2">
+				<conditional-expr>
+					<condition>
+						<![CDATA[IndexSelected==2]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xfff0f0f0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<designed target="Checkable" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="3" event="MousePress">
+				<body kind="om">
+					<![CDATA[Open_Form_2.Invoke();
+IndexSelected = 2;
+
+if (CheckChangePanel()) 
+{
+	RecBottom.Button_CancelChange.Enabled = true;
+	RecBottom.Button_CancelChange.FontColor = 0xff000000;
+}
+else
+{
+	RecBottom.Button_CancelChange.Enabled = false;
+	RecBottom.Button_CancelChange.FontColor = 0xffc0c0c0;
+}
+if (CheckDefaultPanel()) 
+{
+	RecBottom.Button_DefaultSettings.Enabled = true;
+	RecBottom.Button_DefaultSettings.FontColor = 0xff000000;
+}
+else
+{
+	RecBottom.Button_DefaultSettings.Enabled = false;
+	RecBottom.Button_DefaultSettings.FontColor = 0xffc0c0c0;
+}
+
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="pAlarms" display-name="pAlarms" uuid="d4139187-e360-47a3-b376-dc400ead528f" base-type="Alarms_1" base-type-id="e8a9dba0-e07f-4bfe-95f9-b75887e3f21b" base-const="true" base-ref="true" ver="2"/>
+	<object access-modifier="private" name="Open_Form_1" display-name="Open_Form_1" uuid="e192b380-39f2-4060-b734-2d2f38c4f7ad" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="2">
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="InvokeTrigger" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Invoked" frame-link="Frame_1" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="f76742e3-b6b0-42d2-82f8-37ba999928cd" base-type="SettingsSeverity" base-type-id="4d754945-ea42-4c97-9c9a-2aab992cab7b" ver="2">
+				<init target="pSettingsForm" ver="2" ref="here"/>
+				<init target="bInit" ver="2" value="false"/>
+				<init target="bDefSet" ver="3" value="false"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="bModifyed" display-name="bModifyed" uuid="fe2c3106-09cb-4549-9abe-317b8164ae0f" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="2">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ValueChanged">
+			<body kind="javascript">
+				<![CDATA[//Проверка изменения конфигурации
+/*bModifyedCount++;
+if (bModifyedCount == 1) return; //Необходимо, чтобы не срабатывало при инициализации
+RecBottom.Button_Apply.Enabled = false;
+RecBottom.Button_Save.Enabled = false;
+RecBottom.Button_CancelChange.Enabled = false;
+RecBottom.Button_DefaultSettings.Enabled = false;
+RecBottom.Button_Close.Text = "Закрыть";
+RecBottom.Button_Apply.FontColor = 0xffc0c0c0;
+RecBottom.Button_Save.FontColor = 0xffc0c0c0;
+RecBottom.Button_CancelChange.FontColor = 0xffc0c0c0
+RecBottom.Button_DefaultSettings.FontColor = 0xffc0c0c0;
+
+if (CheckChangeView() || CheckChangeSeverity()) //Проверка изменений в обоих вкладках
+{
+		RecBottom.Button_Apply.Enabled = true;
+		RecBottom.Button_Save.Enabled = true;
+		RecBottom.Button_Apply.FontColor = 0xff000000;
+		RecBottom.Button_Save.FontColor = 0xff000000;
+		
+		RecBottom.Button_Close.Text = "Отменить";
+
+	//Проверяем изменения согласно открытой вкладке
+	if (CheckChangeView() && IndexSelected == 0) 
+	{
+		RecBottom.Button_CancelChange.Enabled = true;
+		RecBottom.Button_CancelChange.FontColor = 0xff000000;
+	}
+	if (CheckChangeSeverity() && IndexSelected == 1) 
+	{
+		RecBottom.Button_CancelChange.Enabled = true;
+		RecBottom.Button_CancelChange.FontColor = 0xff000000;
+	}
+}
+
+//Проверяем настройки по умолчанию согласно открытой вкладке
+if (CheckDefaultView() && IndexSelected == 0) 
+{
+	RecBottom.Button_DefaultSettings.Enabled = true;
+	RecBottom.Button_DefaultSettings.FontColor = 0xff000000;
+}
+if (CheckDefaultSeverity() && IndexSelected == 1) 
+{
+	RecBottom.Button_DefaultSettings.Enabled = true;
+	RecBottom.Button_DefaultSettings.FontColor = 0xff000000;
+}
+*/
+
+]]>
+			</body>
+		</do-on>
+	</object>
+	<init target="bModifyed" ver="2" value="false"/>
+	<object access-modifier="private" name="Settings" display-name="Settings" uuid="972e02c6-0f37-4d6d-af64-7521b9c68350" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="16" ver="2"/>
+		<designed target="Y" value="321" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="false" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="100" ver="2"/>
+		<designed target="Height" value="100" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="4278190080" ver="2"/>
+		<designed target="PenStyle" value="1" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<object access-modifier="private" name="View" display-name="View" uuid="c48e2c33-9075-439a-a7ff-0d446a979720" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="0" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="false" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="100" ver="2"/>
+			<designed target="Height" value="100" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+			<object access-modifier="private" name="Column1" display-name="Column1" uuid="91ca2165-c175-4620-a092-55521069f9cb" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="20" ver="2"/>
+				<designed target="Y" value="20" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Height" value="100" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="4278190080" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Caption" display-name="Caption" uuid="98d41850-8a35-4a8f-bf4e-fff8d33501f7" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="_Visible" display-name="_Visible" uuid="a526fd05-b063-427d-9c1f-140a979e48a0" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+				<init target="_Visible" ver="2" value="true"/>
+				<object access-modifier="private" name="_Width" display-name="_Width" uuid="11be766e-b52b-457e-b1af-346305d56144" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<init target="_Width" ver="2" value="100"/>
+				<designed target="Width" value="100" ver="2"/>
+			</object>
+			<object access-modifier="private" name="Column2" display-name="Column2" uuid="0c8ad127-7a12-4fa7-abc4-06725e1e67cf" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="60" ver="2"/>
+				<designed target="Y" value="60" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Height" value="100" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="4278190080" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="_Width" display-name="_Width" uuid="c09ef902-9250-4b60-bd92-8da0086e1fbd" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<init target="_Width" ver="2" value="100"/>
+				<object access-modifier="private" name="Caption" display-name="Caption" uuid="97fe5516-4c56-4e61-a326-c4a56fe76874" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="_Visible" display-name="_Visible" uuid="41551a2e-0ba0-40f9-9c41-18362907199f" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+				<init target="_Visible" ver="2" value="true"/>
+				<designed target="Width" value="100" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+			</object>
+			<object access-modifier="private" name="Column3" display-name="Column3" uuid="3d5e0b66-06ac-46e3-b969-2022c5668453" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="80" ver="2"/>
+				<designed target="Y" value="80" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Height" value="100" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="4278190080" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="_Width" display-name="_Width" uuid="00965074-7b15-4458-9341-427e35f3faa9" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<init target="_Width" ver="2" value="100"/>
+				<object access-modifier="private" name="Caption" display-name="Caption" uuid="6896a0ab-4a04-46ee-b45b-566b937487f5" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="_Visible" display-name="_Visible" uuid="f0d48a15-2976-4162-a210-4758f0b4ece0" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+				<init target="_Visible" ver="2" value="true"/>
+				<designed target="Width" value="100" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+			</object>
+			<object access-modifier="private" name="Column4" display-name="Column4" uuid="6d1a5b1c-1461-4f5a-83ad-b038f5047501" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="100" ver="2"/>
+				<designed target="Y" value="100" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+				<designed target="Height" value="100" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="4278190080" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="_Width" display-name="_Width" uuid="d285e1b3-5d68-4702-86cc-e0e2bfd3ee50" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<init target="_Width" ver="2" value="100"/>
+				<object access-modifier="private" name="Caption" display-name="Caption" uuid="88895e21-148c-4f40-8caf-f9a6b9cef114" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="_Visible" display-name="_Visible" uuid="933251a4-fe14-4e64-901e-68a384b2f419" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+				<init target="_Visible" ver="2" value="true"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+			</object>
+			<object access-modifier="private" name="Column5" display-name="Column5" uuid="814b8531-34e0-42ff-a376-2df3371cf9b6" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="120" ver="2"/>
+				<designed target="Y" value="120" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+				<designed target="Height" value="100" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="4278190080" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="_Width" display-name="_Width" uuid="045583c5-692f-48b9-9ce4-87f7f6639eab" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<init target="_Width" ver="2" value="100"/>
+				<object access-modifier="private" name="Caption" display-name="Caption" uuid="6d6f1f66-5baf-4378-b177-ba0ab7484d26" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="_Visible" display-name="_Visible" uuid="e634079a-5f5e-4259-ac4c-362e0ba5a1c9" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+				<init target="_Visible" ver="2" value="true"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+			</object>
+			<object access-modifier="private" name="Column6" display-name="Column6" uuid="e33d2fbf-04be-4372-a8c1-dde2b720251e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="140" ver="2"/>
+				<designed target="Y" value="140" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+				<designed target="Height" value="100" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="4278190080" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="_Width" display-name="_Width" uuid="82be5634-4270-44fa-a2bb-66ae8d2ab881" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<init target="_Width" ver="2" value="100"/>
+				<object access-modifier="private" name="Caption" display-name="Caption" uuid="976069ef-a0a5-4247-93bc-081405bb8c4e" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="_Visible" display-name="_Visible" uuid="ce70be24-db3c-4231-b2d6-c96c8ed35de6" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+				<init target="_Visible" ver="2" value="true"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+			</object>
+			<object access-modifier="private" name="Column7" display-name="Column7" uuid="3a924889-a2a6-44dd-a487-fe1161e0bd8e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="160" ver="2"/>
+				<designed target="Y" value="160" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+				<designed target="Height" value="100" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="4278190080" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Caption" display-name="Caption" uuid="341dce15-5b0a-4e75-8bfa-3caf7c5d428d" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="_Visible" display-name="_Visible" uuid="1eff352e-74d6-4921-8ac1-45006b4476f7" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+				<init target="_Visible" ver="2" value="true"/>
+				<object access-modifier="private" name="_Width" display-name="_Width" uuid="c71bc52f-e1e0-4924-843b-e6526a52bf22" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<init target="_Width" ver="2" value="100"/>
+			</object>
+			<object access-modifier="private" name="Column8" display-name="Column8" uuid="873827e0-2981-450e-962c-2df5068a56b0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="180" ver="2"/>
+				<designed target="Y" value="180" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+				<designed target="Height" value="100" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="4278190080" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="_Width" display-name="_Width" uuid="26564ca2-1978-4939-b28f-da2cde85f57a" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="Caption" display-name="Caption" uuid="e0b9f4fa-09b9-4f72-8f80-74a7f7e018e3" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="_Visible" display-name="_Visible" uuid="9e8b686d-4d9e-4c33-9f55-2003f7fa7c2e" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+				<init target="_Width" ver="2" value="100"/>
+				<init target="_Visible" ver="2" value="true"/>
+			</object>
+			<object access-modifier="private" name="Column9" display-name="Column9" uuid="b6400aeb-245d-45e7-9d45-18b647a3d443" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="40" ver="2"/>
+				<designed target="Y" value="40" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+				<designed target="Height" value="100" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="4278190080" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Caption" display-name="Caption" uuid="7e6650a3-8f1f-4d6d-9409-ffebc4253b46" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="_Visible" display-name="_Visible" uuid="3f93ee2e-6f1e-494c-bad3-bd3e41d68df9" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+				<init target="_Visible" ver="2" value="true"/>
+				<object access-modifier="private" name="_Width" display-name="_Width" uuid="031e30f4-3b4c-4371-ae00-ab5ef4886b60" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<init target="_Width" ver="2" value="100"/>
+			</object>
+			<object access-modifier="private" name="RowsHeigth" display-name="RowsHeigth" uuid="c11f8c06-7ffd-4590-8f2e-74e5004e9723" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+			<object access-modifier="private" name="Column10" display-name="Column10" uuid="e726dff1-6fdf-449b-bc4f-2530e294d966" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="60" ver="2"/>
+				<designed target="Y" value="60" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+				<designed target="Height" value="100" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="4278190080" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="_Width" display-name="_Width" uuid="0e4c201c-294f-461e-8bed-95384fa258fe" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="Caption" display-name="Caption" uuid="105416ef-d57e-4798-ae6c-d1b61933cca8" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="_Visible" display-name="_Visible" uuid="5daf392f-f1e3-4648-af40-7fad11951202" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<init target="_Visible" ver="2" value="true"/>
+				<init target="_Width" ver="2" value="100"/>
+				<designed target="Width" value="100" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+			</object>
+			<object access-modifier="private" name="Column19" display-name="Column19" uuid="1e318a3c-c3c8-4277-beb0-6d663b40f158" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="60" ver="2"/>
+				<designed target="Y" value="60" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="Height" value="100" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="4278190080" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="_Width" display-name="_Width" uuid="d4734fe8-9e56-462c-ae90-31e01bbaa6cd" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="Caption" display-name="Caption" uuid="653c7aba-81eb-41eb-ac0a-9f4dac93f675" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="_Visible" display-name="_Visible" uuid="783224b8-3fc4-47dd-89a8-be68f392326b" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+			</object>
+			<object access-modifier="private" name="Column20" display-name="Column20" uuid="c10e0404-a537-4ece-b04d-51abe9f0aee4" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="80" ver="2"/>
+				<designed target="Y" value="80" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="Height" value="100" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="4278190080" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="_Width" display-name="_Width" uuid="c7a3892a-bd58-43d8-9721-f4bb0ff374f9" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="Caption" display-name="Caption" uuid="04a77bd0-03fc-4da2-8a56-880965914b84" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="_Visible" display-name="_Visible" uuid="fe085b94-6f5f-4e12-8589-394809386e64" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="_Width" value="100" ver="2"/>
+				<designed target="_Visible" value="false" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="Severity" display-name="Severity" uuid="1565e68c-7080-4612-a3b5-d2b1cc74bed6" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="0" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="false" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="100" ver="2"/>
+			<designed target="Height" value="100" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+			<object access-modifier="private" name="Range1" display-name="Range1" uuid="ba95aec5-75fa-4289-995b-c78de34811f3" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="20" ver="2"/>
+				<designed target="Y" value="20" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+				<designed target="Height" value="100" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="4278190080" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="SoundEnable" display-name="SoundEnable" uuid="ac0592bc-8a2a-4b08-8780-019e7748107e" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+				<object access-modifier="private" name="nSoundRepeats" display-name="nSoundRepeats" uuid="2c57a0e5-1674-40ba-954c-608a11b36f05" base-type="int2" base-type-id="3534bee3-61d3-4ad6-ac4f-9ad442cb71cf" ver="2"/>
+				<object access-modifier="private" name="SoundPriority" display-name="SoundPriority" uuid="de3a6fc9-45af-47d8-a152-d6a0475a4b1f" base-type="int2" base-type-id="3534bee3-61d3-4ad6-ac4f-9ad442cb71cf" ver="2"/>
+				<object access-modifier="private" name="JSON" display-name="JSON" uuid="37092022-8c16-4890-a6e2-92ebff5afef4" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="JSON_temp" display-name="JSON_temp" uuid="43b30f8b-2932-4bb2-9eaf-5fde7756fe1d" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+			</object>
+			<object access-modifier="private" name="Range2" display-name="Range2" uuid="da784d0b-5cea-490e-a68c-1162723f155d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="60" ver="2"/>
+				<designed target="Y" value="60" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+				<designed target="Height" value="100" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="4278190080" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="SoundEnable" display-name="SoundEnable" uuid="f35529ea-3499-41e5-a67c-34df479a2e16" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+				<object access-modifier="private" name="nSoundRepeats" display-name="nSoundRepeats" uuid="0e452285-d972-40d3-b693-ee82d4b952bc" base-type="int2" base-type-id="3534bee3-61d3-4ad6-ac4f-9ad442cb71cf" ver="2"/>
+				<object access-modifier="private" name="SoundPriority" display-name="SoundPriority" uuid="6e78ecc6-82e4-4b2c-8b47-e581cb9f1282" base-type="int2" base-type-id="3534bee3-61d3-4ad6-ac4f-9ad442cb71cf" ver="2"/>
+				<object access-modifier="private" name="JSON" display-name="JSON" uuid="ef54e582-c72d-4d12-bccc-d93256d9137d" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="JSON_temp" display-name="JSON_temp" uuid="995ef200-2ef7-4997-8738-de14adbc9fae" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+			</object>
+			<object access-modifier="private" name="Range3" display-name="Range3" uuid="f46bc7eb-9a8a-4666-b5c1-3a9e137211f5" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="80" ver="2"/>
+				<designed target="Y" value="80" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+				<designed target="Height" value="100" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="4278190080" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="SoundEnable" display-name="SoundEnable" uuid="3f768e0d-f10e-45aa-8e5a-d26f09a23095" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+				<object access-modifier="private" name="nSoundRepeats" display-name="nSoundRepeats" uuid="0cca6002-e29a-4c4a-8c48-194b3846aff5" base-type="int2" base-type-id="3534bee3-61d3-4ad6-ac4f-9ad442cb71cf" ver="2"/>
+				<object access-modifier="private" name="SoundPriority" display-name="SoundPriority" uuid="dabc102e-471c-4d8c-86e3-3813f81fff99" base-type="int2" base-type-id="3534bee3-61d3-4ad6-ac4f-9ad442cb71cf" ver="2"/>
+				<object access-modifier="private" name="JSON" display-name="JSON" uuid="547750d6-c034-4273-9fb7-65c7e09087ef" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+				<object access-modifier="private" name="JSON_temp" display-name="JSON_temp" uuid="3f038f1e-abad-4242-ba85-a6ed780c45c1" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+			</object>
+			<object access-modifier="private" name="Range4" display-name="Range4" uuid="deb50bfb-9693-4f57-ba92-d0eaa5377e0f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="40" ver="2"/>
+				<designed target="Y" value="40" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="100" ver="2"/>
+				<designed target="Height" value="100" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="4278190080" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="1" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="SoundPriority" display-name="SoundPriority" uuid="a4cf526b-5539-4a96-a859-cb711a284560" base-type="int2" base-type-id="3534bee3-61d3-4ad6-ac4f-9ad442cb71cf" ver="2"/>
+				<object access-modifier="private" name="SoundEnable" display-name="SoundEnable" uuid="7eda5308-c7cb-4552-a44e-0683e4b0f4e2" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+				<object access-modifier="private" name="nSoundRepeats" display-name="nSoundRepeats" uuid="b1408229-b314-404c-b901-60e38ce89929" base-type="int2" base-type-id="3534bee3-61d3-4ad6-ac4f-9ad442cb71cf" ver="2"/>
+				<object access-modifier="private" name="JSON" display-name="JSON" uuid="698f20ca-ff2e-4413-9c6d-284a43494ef4" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="Panel" display-name="Panel" uuid="9403efe5-b339-4996-8872-001b9e0c6097" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+			<designed target="X" value="-50" ver="3"/>
+			<designed target="Y" value="-50" ver="3"/>
+			<designed target="Rotation" value="0" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="false" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="100" ver="3"/>
+			<designed target="Height" value="100" ver="3"/>
+			<designed target="RoundingRadius" value="0" ver="3"/>
+			<designed target="PenColor" value="4278190080" ver="3"/>
+			<designed target="PenStyle" value="1" ver="3"/>
+			<designed target="PenWidth" value="1" ver="3"/>
+			<designed target="BrushColor" value="4278190080" ver="3"/>
+			<designed target="BrushStyle" value="0" ver="3"/>
+			<object access-modifier="private" name="btnSwitchModeHide" display-name="btnSwitchModeHide" uuid="12ccf6d8-a4b1-4012-a7ae-08670f9842b3" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+			<object access-modifier="private" name="btnSettingsHide" display-name="btnSettingsHide" uuid="a20a6001-65b9-4a58-9b95-b8394fd975cf" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+			<object access-modifier="private" name="btnFiltrHide" display-name="btnFiltrHide" uuid="9909b687-066c-43c8-b404-5f046f6b3428" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+			<object access-modifier="private" name="btnExportHide" display-name="btnExportHide" uuid="1267efc9-6f31-4409-8050-e5539a4220d4" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+			<object access-modifier="private" name="btnPrintHide" display-name="btnPrintHide" uuid="9d49dca6-67fd-442d-9043-a5e7caee13a2" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+			<object access-modifier="private" name="btnAckSelHide" display-name="btnAckSelHide" uuid="cef820d3-0db5-47d0-9922-91b8598dcb28" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+			<object access-modifier="private" name="btnAckAllHide" display-name="btnAckAllHide" uuid="fbd5aa65-1e12-42a8-b144-ef750bd9c7bf" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+			<object access-modifier="private" name="btnClearAllHide" display-name="btnClearAllHide" uuid="c1ece187-44ff-4c2b-9dea-32c79763717b" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+			<object access-modifier="private" name="btnSnapshotHide" display-name="btnSnapshotHide" uuid="33a834ea-336e-4a48-b940-7bf20ef4b982" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+			<object access-modifier="private" name="btnSndClearHide" display-name="btnSndClearHide" uuid="5716a34c-bd3b-4b8f-91df-ca25fc9e30b1" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+			<object access-modifier="private" name="btnSndNextHide" display-name="btnSndNextHide" uuid="72d8b86c-33c9-41c9-b34f-a63e48c52b46" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+			<object access-modifier="private" name="btnSndMuteHide" display-name="btnSndMuteHide" uuid="c92d051a-2e5a-44ec-9f12-561b5254e612" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+			<object access-modifier="private" name="btnSortHide" display-name="btnSortHide" uuid="b571c6a5-51df-4fab-a638-f9266dc15b36" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+			<object access-modifier="private" name="btnLoginHide" display-name="btnLoginHide" uuid="f6f88c82-2032-43d4-a9a2-1090f3bc721d" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+			<object access-modifier="private" name="RecHistoryHide" display-name="RecHistoryHide" uuid="cd4d1fb0-5eeb-4193-9d1f-debe71d00041" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+		</object>
+	</object>
+	<do access-modifier="private" name="ApplySettingsView" display-name="ApplySettingsView" ver="2" type="" type-id="">
+		<body kind="om">
+			<![CDATA[// Установки                     ВИД ТАБЛИЦЫ
+//установка значений Colum_1
+pAlarms.Main_tables.Table_Operative_mode.Colum_1.Title=Settings.View.Column1.Caption;
+pAlarms.Main_tables_1.Table_History_mode.Colum_1.Title=Settings.View.Column1.Caption;
+pAlarms.Main_tables.Table_Operative_mode.Colum_1.Hidden=!(Settings.View.Column1._Visible);
+pAlarms.Main_tables_1.Table_History_mode.Colum_1.Hidden=!(Settings.View.Column1._Visible);
+if(String.ToUint4(Settings.View.Column1._Width,0)>0)
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_1.WidthResizeMode=0;
+pAlarms.Main_tables_1.Table_History_mode.Colum_1.WidthResizeMode=0;
+pAlarms.Main_tables.Table_Operative_mode.Colum_1.Width=String.ToUint4(Settings.View.Column1._Width,0);
+pAlarms.Main_tables_1.Table_History_mode.Colum_1.Width=String.ToUint4(Settings.View.Column1._Width,0);
+}
+else
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_1.WidthResizeMode=1;
+pAlarms.Main_tables_1.Table_History_mode.Colum_1.WidthResizeMode=1;
+}
+//
+//установка значений Colum_2
+pAlarms.Main_tables.Table_Operative_mode.Colum_2.Title=Settings.View.Column2.Caption;
+pAlarms.Main_tables_1.Table_History_mode.Colum_2.Title=Settings.View.Column2.Caption;
+pAlarms.Main_tables.Table_Operative_mode.Colum_2.Hidden=!(Settings.View.Column2._Visible);
+pAlarms.Main_tables_1.Table_History_mode.Colum_2.Hidden=!(Settings.View.Column2._Visible);
+if(String.ToUint4(Settings.View.Column2._Width,0)>0)
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_2.WidthResizeMode=0;
+pAlarms.Main_tables_1.Table_History_mode.Colum_2.WidthResizeMode=0;
+pAlarms.Main_tables.Table_Operative_mode.Colum_2.Width=String.ToUint4(Settings.View.Column2._Width,0);
+pAlarms.Main_tables_1.Table_History_mode.Colum_2.Width=String.ToUint4(Settings.View.Column2._Width,0);
+}
+else
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_2.WidthResizeMode=1;
+pAlarms.Main_tables_1.Table_History_mode.Colum_2.WidthResizeMode=1;
+}
+
+//установка значений Colum_3
+pAlarms.Main_tables.Table_Operative_mode.Colum_3.Title=Settings.View.Column3.Caption;
+pAlarms.Main_tables_1.Table_History_mode.Colum_3.Title=Settings.View.Column3.Caption;
+pAlarms.Main_tables.Table_Operative_mode.Colum_3.Hidden=!(Settings.View.Column3._Visible);
+pAlarms.Main_tables_1.Table_History_mode.Colum_3.Hidden=!(Settings.View.Column3._Visible);
+if(String.ToUint4(Settings.View.Column3._Width,0)>0)
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_3.WidthResizeMode=0;
+pAlarms.Main_tables_1.Table_History_mode.Colum_3.WidthResizeMode=0;
+pAlarms.Main_tables.Table_Operative_mode.Colum_3.Width=String.ToUint4(Settings.View.Column3._Width,0);
+pAlarms.Main_tables_1.Table_History_mode.Colum_3.Width=String.ToUint4(Settings.View.Column3._Width,0);
+}
+else
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_3.WidthResizeMode=1;
+pAlarms.Main_tables_1.Table_History_mode.Colum_3.WidthResizeMode=1;
+}
+
+//установка значений Colum_4
+pAlarms.Main_tables.Table_Operative_mode.Colum_4.Title=Settings.View.Column4.Caption;
+pAlarms.Main_tables_1.Table_History_mode.Colum_4.Title=Settings.View.Column4.Caption;
+//pAlarms.Main_tables.Table_Operative_mode.Colum_4.Hidden=!(Settings.View.Column4._Visible);  // всегда должны быть видимы
+//pAlarms.Main_tables_1.Table_History_mode.Colum_4.Hidden=!(Settings.View.Column4._Visible);
+if(String.ToUint4(Settings.View.Column4._Width,0)>0)
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_4.WidthResizeMode=0;
+pAlarms.Main_tables_1.Table_History_mode.Colum_4.WidthResizeMode=0;
+pAlarms.Main_tables.Table_Operative_mode.Colum_4.Width=String.ToUint4(Settings.View.Column4._Width,0);
+pAlarms.Main_tables_1.Table_History_mode.Colum_4.Width=String.ToUint4(Settings.View.Column4._Width,0);
+}
+else
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_4.WidthResizeMode=1;
+pAlarms.Main_tables_1.Table_History_mode.Colum_4.WidthResizeMode=1;
+}
+
+//установка значений Colum_5
+pAlarms.Main_tables.Table_Operative_mode.Colum_5.Title=Settings.View.Column5.Caption;
+pAlarms.Main_tables_1.Table_History_mode.Colum_5.Title=Settings.View.Column5.Caption;
+pAlarms.Main_tables.Table_Operative_mode.Colum_5.Hidden=!(Settings.View.Column5._Visible);
+pAlarms.Main_tables_1.Table_History_mode.Colum_5.Hidden=!(Settings.View.Column5._Visible);
+if(String.ToUint4(Settings.View.Column5._Width,0)>0)
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_5.WidthResizeMode=0;
+pAlarms.Main_tables_1.Table_History_mode.Colum_5.WidthResizeMode=0;
+pAlarms.Main_tables.Table_Operative_mode.Colum_5.Width=String.ToUint4(Settings.View.Column5._Width,0);
+pAlarms.Main_tables_1.Table_History_mode.Colum_5.Width=String.ToUint4(Settings.View.Column5._Width,0);
+}
+else
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_5.WidthResizeMode=1;
+pAlarms.Main_tables_1.Table_History_mode.Colum_5.WidthResizeMode=1;
+}
+
+//установка значений Colum_6
+pAlarms.Main_tables.Table_Operative_mode.Colum_6.Title=Settings.View.Column6.Caption;
+pAlarms.Main_tables_1.Table_History_mode.Colum_6.Title=Settings.View.Column6.Caption;
+pAlarms.Main_tables.Table_Operative_mode.Colum_6.Hidden=!(Settings.View.Column6._Visible);
+pAlarms.Main_tables_1.Table_History_mode.Colum_6.Hidden=!(Settings.View.Column6._Visible);
+if(String.ToUint4(Settings.View.Column6._Width,0)>0)
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_6.WidthResizeMode=0;
+pAlarms.Main_tables_1.Table_History_mode.Colum_6.WidthResizeMode=0;
+pAlarms.Main_tables.Table_Operative_mode.Colum_6.Width=String.ToUint4(Settings.View.Column6._Width,0);
+pAlarms.Main_tables_1.Table_History_mode.Colum_6.Width=String.ToUint4(Settings.View.Column6._Width,0);
+}
+else
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_6.WidthResizeMode=1;
+pAlarms.Main_tables_1.Table_History_mode.Colum_6.WidthResizeMode=1;
+}
+
+//установка значений Colum_7
+pAlarms.Main_tables.Table_Operative_mode.Colum_7.Title=Settings.View.Column7.Caption;
+pAlarms.Main_tables_1.Table_History_mode.Colum_7.Title=Settings.View.Column7.Caption;
+pAlarms.Main_tables.Table_Operative_mode.Colum_7.Hidden=!(Settings.View.Column7._Visible);
+pAlarms.Main_tables_1.Table_History_mode.Colum_7.Hidden=!(Settings.View.Column7._Visible);
+if(String.ToUint4(Settings.View.Column7._Width,0)>0)
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_7.WidthResizeMode=0;
+pAlarms.Main_tables_1.Table_History_mode.Colum_7.WidthResizeMode=0;
+pAlarms.Main_tables.Table_Operative_mode.Colum_7.Width=String.ToUint4(Settings.View.Column7._Width,0);
+pAlarms.Main_tables_1.Table_History_mode.Colum_7.Width=String.ToUint4(Settings.View.Column7._Width,0);
+}
+else
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_7.WidthResizeMode=1;
+pAlarms.Main_tables_1.Table_History_mode.Colum_7.WidthResizeMode=1;
+}
+
+//установка значений Colum_8
+pAlarms.Main_tables.Table_Operative_mode.Colum_8.Title=Settings.View.Column8.Caption;
+pAlarms.Main_tables_1.Table_History_mode.Colum_8.Title=Settings.View.Column8.Caption;
+pAlarms.Main_tables.Table_Operative_mode.Colum_8.Hidden=!(Settings.View.Column8._Visible);
+pAlarms.Main_tables_1.Table_History_mode.Colum_8.Hidden=!(Settings.View.Column8._Visible);
+if(String.ToUint4(Settings.View.Column8._Width,0)>0)
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_8.WidthResizeMode=0;
+pAlarms.Main_tables_1.Table_History_mode.Colum_8.WidthResizeMode=0;
+pAlarms.Main_tables.Table_Operative_mode.Colum_8.Width=String.ToUint4(Settings.View.Column8._Width,0);
+pAlarms.Main_tables_1.Table_History_mode.Colum_8.Width=String.ToUint4(Settings.View.Column8._Width,0);
+}
+else
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_8.WidthResizeMode=1;
+pAlarms.Main_tables_1.Table_History_mode.Colum_8.WidthResizeMode=1;
+}
+
+//установка значений Colum_9
+pAlarms.Main_tables.Table_Operative_mode.Colum_9.Title=Settings.View.Column9.Caption;
+pAlarms.Main_tables_1.Table_History_mode.Colum_9.Title=Settings.View.Column9.Caption;
+pAlarms.Main_tables.Table_Operative_mode.Colum_9.Hidden=!(Settings.View.Column9._Visible);
+pAlarms.Main_tables_1.Table_History_mode.Colum_9.Hidden=!(Settings.View.Column9._Visible);
+if(String.ToUint4(Settings.View.Column9._Width,0)>0)
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_9.WidthResizeMode=0;
+pAlarms.Main_tables_1.Table_History_mode.Colum_9.WidthResizeMode=0;
+pAlarms.Main_tables.Table_Operative_mode.Colum_9.Width=String.ToUint4(Settings.View.Column9._Width,0);
+pAlarms.Main_tables_1.Table_History_mode.Colum_9.Width=String.ToUint4(Settings.View.Column9._Width,0);
+}
+else
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_9.WidthResizeMode=1;
+pAlarms.Main_tables_1.Table_History_mode.Colum_9.WidthResizeMode=1;
+}
+
+//установка значений Colum_10
+pAlarms.Main_tables.Table_Operative_mode.Colum_10.Title=Settings.View.Column10.Caption;
+pAlarms.Main_tables_1.Table_History_mode.Colum_10.Title=Settings.View.Column10.Caption;
+pAlarms.Main_tables.Table_Operative_mode.Colum_10.Hidden=!(Settings.View.Column10._Visible);
+pAlarms.Main_tables_1.Table_History_mode.Colum_10.Hidden=!(Settings.View.Column10._Visible);
+if(String.ToUint4(Settings.View.Column10._Width,0)>0)
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_10.WidthResizeMode=0;
+pAlarms.Main_tables_1.Table_History_mode.Colum_10.WidthResizeMode=0;
+pAlarms.Main_tables.Table_Operative_mode.Colum_10.Width=String.ToUint4(Settings.View.Column10._Width,0);
+pAlarms.Main_tables_1.Table_History_mode.Colum_10.Width=String.ToUint4(Settings.View.Column10._Width,0);
+}
+else
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_10.WidthResizeMode=1;
+pAlarms.Main_tables_1.Table_History_mode.Colum_10.WidthResizeMode=1;
+}
+
+//установка значений Colum_19
+pAlarms.Main_tables.Table_Operative_mode.Colum_19.Title=Settings.View.Column19.Caption;
+pAlarms.Main_tables_1.Table_History_mode.Colum_19.Title=Settings.View.Column19.Caption;
+pAlarms.Main_tables.Table_Operative_mode.Colum_19.Hidden=!(Settings.View.Column19._Visible);
+pAlarms.Main_tables_1.Table_History_mode.Colum_19.Hidden=!(Settings.View.Column19._Visible);
+if(String.ToUint4(Settings.View.Column19._Width,0)>0)
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_19.WidthResizeMode=0;
+pAlarms.Main_tables_1.Table_History_mode.Colum_19.WidthResizeMode=0;
+pAlarms.Main_tables.Table_Operative_mode.Colum_19.Width=String.ToUint4(Settings.View.Column19._Width,0);
+pAlarms.Main_tables_1.Table_History_mode.Colum_19.Width=String.ToUint4(Settings.View.Column19._Width,0);
+}
+else
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_19.WidthResizeMode=1;
+pAlarms.Main_tables_1.Table_History_mode.Colum_19.WidthResizeMode=1;
+}
+
+//установка значений Colum_20
+pAlarms.Main_tables.Table_Operative_mode.Colum_20.Title=Settings.View.Column20.Caption;
+pAlarms.Main_tables_1.Table_History_mode.Colum_20.Title=Settings.View.Column20.Caption;
+pAlarms.Main_tables.Table_Operative_mode.Colum_20.Hidden=!(Settings.View.Column20._Visible);
+pAlarms.Main_tables_1.Table_History_mode.Colum_20.Hidden=!(Settings.View.Column20._Visible);
+if(String.ToUint4(Settings.View.Column20._Width,0)>0)
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_20.WidthResizeMode=0;
+pAlarms.Main_tables_1.Table_History_mode.Colum_20.WidthResizeMode=0;
+pAlarms.Main_tables.Table_Operative_mode.Colum_20.Width=String.ToUint4(Settings.View.Column20._Width,0);
+pAlarms.Main_tables_1.Table_History_mode.Colum_20.Width=String.ToUint4(Settings.View.Column20._Width,0);
+}
+else
+{
+pAlarms.Main_tables.Table_Operative_mode.Colum_20.WidthResizeMode=1;
+pAlarms.Main_tables_1.Table_History_mode.Colum_20.WidthResizeMode=1;
+}
+
+pAlarms.Main_tables.Table_Operative_mode.RowsHeight = String.ToUint4(Settings.View.RowsHeigth,0);//высота строк оперативная таблица
+pAlarms.Main_tables_1.Table_History_mode.RowsHeight = String.ToUint4(Settings.View.RowsHeigth,0);//высота строк историческая таблица
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="ApplySettingsSeverity" display-name="ApplySettingsSeverity" ver="2" type="" type-id="" form-by-id="true">
+		<body kind="javascript">
+			<![CDATA[//Формируем строку важности информационных значений как все незанятые элементы диапазона от остальных значений важности 
+var str = Settings.Severity.Range1.JSON;
+if (str != "")
+{
+	if (Settings.Severity.Range2.JSON != "") str+=","+ Settings.Severity.Range2.JSON;
+	if (Settings.Severity.Range3.JSON != "") str+=","+ Settings.Severity.Range3.JSON;
+}
+else if (Settings.Severity.Range2.JSON != "") str = Settings.Severity.Range2.JSON;
+else if (str != "") str +="," +  Settings.Severity.Range3.JSON;
+		else str = Settings.Severity.Range3.JSON;
+Settings.Severity.Range4.JSON = CheckSeverityRange(str,false);
+
+//Проверяем корректность ввода полей
+var range1 = CheckSeverityRange(Settings.Severity.Range1.JSON,true);
+var range2 = CheckSeverityRange(Settings.Severity.Range2.JSON,true);
+var range3 = CheckSeverityRange(Settings.Severity.Range3.JSON,true);
+var range4 = CheckSeverityRange(Settings.Severity.Range4.JSON,true);
+if (range1 == "error" || range2 == "error" || range3 == "error" || range4 == "error")
+{
+	bErrorFlag = true;
+	//Open_Form_1.Invoke();
+	return;
+}
+
+//Записываем параметры
+pAlarms.Main_tables.Table_Operative_mode.ApAlarmQueue_1.JsonFilter = MakeRequestJSON(Settings.Severity.Range1.JSON);
+pAlarms.Main_panel.private.Range1.SoundEnable   = Settings.Severity.Range1.SoundEnable;
+pAlarms.Main_panel.private.Range1.nSoundRepeats = Settings.Severity.Range1.nSoundRepeats;
+pAlarms.Main_panel.private.Range1.SoundPriority = Settings.Severity.Range1.SoundPriority;
+
+pAlarms.Main_tables.Table_Operative_mode.ApAlarmQueue_2.JsonFilter = MakeRequestJSON(Settings.Severity.Range2.JSON);
+pAlarms.Main_panel.private.Range2.SoundEnable   = Settings.Severity.Range2.SoundEnable;
+pAlarms.Main_panel.private.Range2.nSoundRepeats = Settings.Severity.Range2.nSoundRepeats;
+pAlarms.Main_panel.private.Range2.SoundPriority = Settings.Severity.Range2.SoundPriority;
+
+pAlarms.Main_tables.Table_Operative_mode.ApAlarmQueue_3.JsonFilter = MakeRequestJSON(Settings.Severity.Range3.JSON);
+pAlarms.Main_panel.private.Range3.SoundEnable   = Settings.Severity.Range3.SoundEnable;
+pAlarms.Main_panel.private.Range3.nSoundRepeats = Settings.Severity.Range3.nSoundRepeats;
+pAlarms.Main_panel.private.Range3.SoundPriority = Settings.Severity.Range3.SoundPriority;
+
+pAlarms.Main_tables.Table_Operative_mode.ApAlarmQueue_4.JsonFilter = MakeRequestJSON(Settings.Severity.Range4.JSON);
+pAlarms.Main_panel.private.Range4.SoundEnable   = Settings.Severity.Range4.SoundEnable;
+pAlarms.Main_panel.private.Range4.nSoundRepeats = Settings.Severity.Range4.nSoundRepeats;
+pAlarms.Main_panel.private.Range4.SoundPriority = Settings.Severity.Range4.SoundPriority;
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="ApplySettingsPanel" display-name="ApplySettingsPanel" ver="2" type="" type-id="" form-by-id="true">
+		<body kind="javascript">
+			<![CDATA[pAlarms.Main_panel.ToolBar.btnOperMode.HideFlag.Value = Settings.Panel.btnSwitchModeHide;
+pAlarms.Main_panel.ToolBar.btnHistMode.HideFlag.Value = Settings.Panel.btnSwitchModeHide;
+pAlarms.Main_panel.ToolBar.btnSettings.HideFlag.Value = Settings.Panel.btnSettingsHide;
+pAlarms.Main_panel.ToolBar.btnFiltr.HideFlag.Value = Settings.Panel.btnFiltrHide;
+pAlarms.Main_panel.ToolBar.btnFiltrList.HideFlag.Value = Settings.Panel.btnFiltrHide;
+pAlarms.Main_panel.ToolBar.btnExport.HideFlag.Value = Settings.Panel.btnExportHide;
+pAlarms.Main_panel.ToolBar.btnPrint.HideFlag.Value = Settings.Panel.btnPrintHide;
+pAlarms.Main_panel.ToolBar.btnAckSel.HideFlag.Value = Settings.Panel.btnAckSelHide;
+pAlarms.Main_panel.ToolBar.btnAckAll.HideFlag.Value = Settings.Panel.btnAckAllHide;
+pAlarms.Main_panel.ToolBar.btnClearAll.HideFlag.Value = Settings.Panel.btnClearAllHide;
+pAlarms.Main_panel.ToolBar.btnSnapshot.HideFlag.Value = Settings.Panel.btnSnapshotHide;
+pAlarms.Main_panel.ToolBar.btnSndClear.HideFlag.Value = Settings.Panel.btnSndClearHide;
+pAlarms.Main_panel.ToolBar.btnSndNext.HideFlag.Value = Settings.Panel.btnSndNextHide;
+pAlarms.Main_panel.ToolBar.btnSndMute.HideFlag.Value = Settings.Panel.btnSndMuteHide;
+pAlarms.Main_panel.ToolBar.btnSort.HideFlag.Value = Settings.Panel.btnSortHide;
+pAlarms.Main_panel.ToolBar.btnLogin.HideFlag.Value = Settings.Panel.btnLoginHide;
+pAlarms.Main_panel.ToolBar.RecHistory.HideFlag.Value = Settings.Panel.RecHistoryHide;]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="SettingsSeverityFromObject" display-name="SettingsSeverityFromObject" ver="2" type="" type-id="">
+		<body kind="javascript">
+			<![CDATA[//Функция преобразования JSON объекта в строку
+function JSONtoString(obj)
+{
+	var strOut = "";
+	if (obj != "") obj = JSON.parse(obj); //Проверяем наличие в JSON-строке элементов
+	else return strOut;
+	
+	if (obj.OR != undefined)//Если в JSON-строке больше одного числа, то записываем все значения в строку
+	{
+		for (var i=0; i<obj.OR.length; i++)
+		{
+			if (i > 0) strOut+=",";
+			if (obj.OR[i].severity != undefined) strOut += obj.OR[i].severity;
+			if (obj.OR[i][">="] != undefined) 
+			{
+				strOut += obj.OR[i][">="]["severity"] + "-" + obj.OR[i+1]["<="]["severity"];
+				i++;
+			}
+		}
+	}
+	if (obj.severity != undefined) strOut = obj.severity; //Если в JSON-строке только одно число
+	return strOut;
+}
+
+//Заполняем поля важности фильтра
+var vf = JSONtoString(pAlarms.Main_tables.Table_Operative_mode.ApAlarmQueue_1.JsonFilter);
+Settings.Severity.Range1.JSON = vf.toString();
+Settings.Severity.Range1.JSON_temp = GapToArray(Settings.Severity.Range1.JSON);
+Settings.Severity.Range1.SoundEnable   = pAlarms.Main_panel.private.Range1.SoundEnable;
+Settings.Severity.Range1.nSoundRepeats = pAlarms.Main_panel.private.Range1.nSoundRepeats;
+Settings.Severity.Range1.SoundPriority = pAlarms.Main_panel.private.Range1.SoundPriority;
+
+var vf = JSONtoString(pAlarms.Main_tables.Table_Operative_mode.ApAlarmQueue_2.JsonFilter);
+Settings.Severity.Range2.JSON = vf.toString();
+Settings.Severity.Range2.JSON_temp = GapToArray(Settings.Severity.Range2.JSON);
+Settings.Severity.Range2.SoundEnable   = pAlarms.Main_panel.private.Range2.SoundEnable;
+Settings.Severity.Range2.nSoundRepeats = pAlarms.Main_panel.private.Range2.nSoundRepeats;
+Settings.Severity.Range2.SoundPriority = pAlarms.Main_panel.private.Range2.SoundPriority;
+
+var vf = JSONtoString(pAlarms.Main_tables.Table_Operative_mode.ApAlarmQueue_3.JsonFilter);
+Settings.Severity.Range3.JSON = vf.toString();
+Settings.Severity.Range3.JSON_temp = GapToArray(Settings.Severity.Range3.JSON);
+Settings.Severity.Range3.SoundEnable   = pAlarms.Main_panel.private.Range3.SoundEnable;
+Settings.Severity.Range3.nSoundRepeats = pAlarms.Main_panel.private.Range3.nSoundRepeats;
+Settings.Severity.Range3.SoundPriority = pAlarms.Main_panel.private.Range3.SoundPriority;
+
+var vf = JSONtoString(pAlarms.Main_tables.Table_Operative_mode.ApAlarmQueue_4.JsonFilter);
+Settings.Severity.Range4.JSON = vf.toString();
+Settings.Severity.Range4.SoundEnable   = pAlarms.Main_panel.private.Range4.SoundEnable;
+Settings.Severity.Range4.nSoundRepeats = pAlarms.Main_panel.private.Range4.nSoundRepeats;
+Settings.Severity.Range4.SoundPriority = pAlarms.Main_panel.private.Range4.SoundPriority;
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="SettingsViewFromObject" display-name="SettingsViewFromObject" ver="2" type="" type-id="" form-by-id="true">
+		<body kind="javascript">
+			<![CDATA[var OperColumn=[], SettingsColumn=[], widthColumn=[];
+
+//Если таблица в оперативном режиме, то берем ее параметры, если нет - берем параметры исторической таблицы
+if (pAlarms.ActiveMode == 0)
+{
+	OperColumn[1] = pAlarms.Main_tables.Table_Operative_mode.Colum_1;
+	OperColumn[2] = pAlarms.Main_tables.Table_Operative_mode.Colum_2;
+	OperColumn[3] = pAlarms.Main_tables.Table_Operative_mode.Colum_3;
+	OperColumn[4] = pAlarms.Main_tables.Table_Operative_mode.Colum_4;
+	OperColumn[5] = pAlarms.Main_tables.Table_Operative_mode.Colum_5;
+	OperColumn[6] = pAlarms.Main_tables.Table_Operative_mode.Colum_6;
+	OperColumn[7] = pAlarms.Main_tables.Table_Operative_mode.Colum_7;
+	OperColumn[8] = pAlarms.Main_tables.Table_Operative_mode.Colum_8;
+	OperColumn[9] = pAlarms.Main_tables.Table_Operative_mode.Colum_9;
+	OperColumn[10] = pAlarms.Main_tables.Table_Operative_mode.Colum_10;
+	OperColumn[11] = pAlarms.Main_tables.Table_Operative_mode.Colum_19;
+	OperColumn[12] = pAlarms.Main_tables.Table_Operative_mode.Colum_20;
+}
+else
+{
+	OperColumn[1] = pAlarms.Main_tables_1.Table_History_mode.Colum_1;
+	OperColumn[2] = pAlarms.Main_tables_1.Table_History_mode.Colum_2;
+	OperColumn[3] = pAlarms.Main_tables_1.Table_History_mode.Colum_3;
+	OperColumn[4] = pAlarms.Main_tables_1.Table_History_mode.Colum_4;
+	OperColumn[5] = pAlarms.Main_tables_1.Table_History_mode.Colum_5;
+	OperColumn[6] = pAlarms.Main_tables_1.Table_History_mode.Colum_6;
+	OperColumn[7] = pAlarms.Main_tables_1.Table_History_mode.Colum_7;
+	OperColumn[8] = pAlarms.Main_tables_1.Table_History_mode.Colum_8;
+	OperColumn[9] = pAlarms.Main_tables_1.Table_History_mode.Colum_9;
+	OperColumn[10] = pAlarms.Main_tables_1.Table_History_mode.Colum_10;
+	OperColumn[11] = pAlarms.Main_tables_1.Table_History_mode.Colum_19;
+	OperColumn[12] = pAlarms.Main_tables_1.Table_History_mode.Colum_20;
+}
+
+SettingsColumn[1] = Settings.View.Column1;
+SettingsColumn[2] = Settings.View.Column2;
+SettingsColumn[3] = Settings.View.Column3;
+SettingsColumn[4] = Settings.View.Column4;
+SettingsColumn[5] = Settings.View.Column5;
+SettingsColumn[6] = Settings.View.Column6;
+SettingsColumn[7] = Settings.View.Column7;
+SettingsColumn[8] = Settings.View.Column8;
+SettingsColumn[9] = Settings.View.Column9;
+SettingsColumn[10] = Settings.View.Column10;
+SettingsColumn[11] = Settings.View.Column19;
+SettingsColumn[12] = Settings.View.Column20;
+
+widthColumn[1]=pAlarms.Main_panel.private.widthColumn.Column_1;
+widthColumn[2]=pAlarms.Main_panel.private.widthColumn.Column_2;
+widthColumn[3]=pAlarms.Main_panel.private.widthColumn.Column_3;
+widthColumn[4]=pAlarms.Main_panel.private.widthColumn.Column_4;
+widthColumn[5]=pAlarms.Main_panel.private.widthColumn.Column_5;
+widthColumn[6]=pAlarms.Main_panel.private.widthColumn.Column_6;
+widthColumn[7]=pAlarms.Main_panel.private.widthColumn.Column_7;
+widthColumn[8]=pAlarms.Main_panel.private.widthColumn.Column_8;
+widthColumn[9]=pAlarms.Main_panel.private.widthColumn.Column_9;
+widthColumn[10]=pAlarms.Main_panel.private.widthColumn.Column_10;
+widthColumn[11]=pAlarms.Main_panel.private.widthColumn.Column_19;
+widthColumn[12]=pAlarms.Main_panel.private.widthColumn.Column_20;
+	
+for (let i=1;i<13;i++)
+{
+	SettingsColumn[i].Caption = OperColumn[i].Title;
+	SettingsColumn[i]._Visible = !OperColumn[i].Hidden;
+	if (OperColumn[i].WidthResizeMode == 1) SettingsColumn[i]._Width = 0;
+	else if (SettingsColumn[i]._Visible) SettingsColumn[i]._Width = OperColumn[i].Width;
+	else SettingsColumn[i]._Width = widthColumn[i];
+}
+
+Settings.View.RowsHeigth = pAlarms.Main_tables.Table_Operative_mode.RowsHeight;]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="SettingsPanelFromObject" display-name="SettingsPanelFromObject" ver="2" type="" type-id="" form-by-id="true">
+		<body kind="javascript">
+			<![CDATA[//Считываем параметры панели инструментов и панели состояния
+Settings.Panel.btnSwitchModeHide = pAlarms.Main_panel.ToolBar.btnOperMode.HideFlag.Value;
+Settings.Panel.btnSettingsHide = pAlarms.Main_panel.ToolBar.btnSettings.HideFlag.Value;
+Settings.Panel.btnFiltrHide = pAlarms.Main_panel.ToolBar.btnFiltr.HideFlag.Value;
+Settings.Panel.btnExportHide = pAlarms.Main_panel.ToolBar.btnExport.HideFlag.Value;
+Settings.Panel.btnPrintHide = pAlarms.Main_panel.ToolBar.btnPrint.HideFlag.Value;
+Settings.Panel.btnAckSelHide = pAlarms.Main_panel.ToolBar.btnAckSel.HideFlag.Value;
+Settings.Panel.btnAckAllHide = pAlarms.Main_panel.ToolBar.btnAckAll.HideFlag.Value;
+Settings.Panel.btnClearAllHide = pAlarms.Main_panel.ToolBar.btnClearAll.HideFlag.Value;
+Settings.Panel.btnSnapshotHide = pAlarms.Main_panel.ToolBar.btnSnapshot.HideFlag.Value;
+Settings.Panel.btnSndClearHide = pAlarms.Main_panel.ToolBar.btnSndClear.HideFlag.Value;
+Settings.Panel.btnSndNextHide = pAlarms.Main_panel.ToolBar.btnSndNext.HideFlag.Value;
+Settings.Panel.btnSndMuteHide = pAlarms.Main_panel.ToolBar.btnSndMute.HideFlag.Value;
+Settings.Panel.btnSortHide = pAlarms.Main_panel.ToolBar.btnSort.HideFlag.Value;
+Settings.Panel.btnLoginHide = pAlarms.Main_panel.ToolBar.btnLogin.HideFlag.Value;
+Settings.Panel.RecHistoryHide = pAlarms.Main_panel.ToolBar.RecHistory.HideFlag.Value;
+
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="MakeRequestJSON" display-name="MakeRequestJSON" ver="2" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" form-by-id="true">
+		<param access-modifier="private" name="inputString" display-name="" uuid="94c437ea-dc7c-4590-b340-839d1a301c04" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+		<body kind="javascript">
+			<![CDATA[//Функция преобразует исходную строку в формат JSON
+//определяются логические операторы и происходит поэтапное формирование логических выражений из элементов массива и происходит формирование строки в JSON формате
+var str = inputString;
+var objectInfo = {};
+var JSONStr = '';
+var tempArray =[];
+objectInfo[`OR`] = [];
+
+//Если пустая строка, то возвращаем ""
+if (inputString == "") return "";
+
+//Шаблон диапазона
+var gapPattern = /\d+[-]\d+/;
+
+//Заполняем массив символами строки
+var commonArray = str.split(",");
+
+//Фукнция получения выражения вида ">": { "severity": 10 }"
+function MakeExpression(str,gap)
+{
+	let argument = str.match(/\d+/g);
+	let expression = {};
+	//Если имеем дело с диапазоном
+	if (gap != "") expression = {[gap]: {'severity':parseInt(argument[0])}};
+	else expression = {'severity':parseInt(argument[0])};
+	return expression
+}
+
+//Если элемент всего один и не диапазон
+if (commonArray.length == 1 && !gapPattern.test(commonArray[0])) 
+{
+	JSONStr = JSON.stringify(MakeExpression(commonArray[0],""));
+	log(JSONStr);
+	return JSONStr;
+}
+
+//Формирование JSON-строки
+for (let i = 0; i < commonArray.length; i++)
+{
+	if (gapPattern.test(commonArray[i]))
+	{
+		tempArray = commonArray[i].match(/\d+/g);
+		objectInfo[`OR`].push(MakeExpression(tempArray[0],">="));
+		objectInfo[`OR`].push(MakeExpression(tempArray[1],"<="));
+	}
+	else objectInfo[`OR`].push(MakeExpression(commonArray[i],""));
+}
+
+//записываем объект в виде строки
+JSONStr = JSON.stringify(objectInfo);
+log(JSONStr);
+return JSONStr;]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="CheckSeverityRange" display-name="CheckSeverityRange" ver="2" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<body kind="javascript">
+			<![CDATA[//Функция проверки корректности ввода значений важности и формирования диапазона для информационных сигналов
+var str = inputString;
+var numberArray = [];
+var tempArray = [];
+var informArray = [];
+var commonArray = [];
+var count = 1;
+
+//Инициализируем шаблоны
+//Наличие запятой в конце
+var mask0 = /[,]\s*$/g;
+//Верная запись элементов последовательности
+var mask1 = /[0-9]{1,3}[,]|[0-9]{1,3}$|[0-9]{1,3}[-][0-9]{1,3}[,]|[0-9]{1,3}[-][0-9]{1,3}$|[0-9]{1,3}[-](1000,)|[0-9]{1,3}[-](1000$)|(1000[,])|(1000$)/g;
+//Отсутствие 0
+var mask2 = /^[0]/;
+//Элемент как диапазон
+var gapPattern = /\d+[-]\d+/;
+
+//Проверка на верную запись запроса
+if (mask0.test(str) || mask2.test(str)) return "error";
+str = str.replace(mask1,"");
+if (str.length != 0) return "error";
+//Переопределяем, если проверка прошла, образуем массив элементов и проверяем дальше
+str = inputString;
+//Проверка на случай, если элемент всего один
+if (/^[0-9]{1,3}$/.test(str) || /^[0-9]{1,3}[-][0-9]{1,3}$/.test(str))commonArray[0] = str;
+else commonArray = 	str.split(",");
+if (/[,]/.test(commonArray[commonArray.length-1])) return "error";
+
+//Проверка на верную запись диапазона чисел, запись его чисел в виде элемента массива
+for (let i = 0; i < commonArray.length; i++)
+{
+	if (gapPattern.test(commonArray[i]))
+	{	
+		tempArray = commonArray[i].match(/\d+/g);
+		if (parseInt(tempArray[0]) >= parseInt(tempArray[1])) return "error";
+		while (parseInt(tempArray[0]) <= parseInt(tempArray[1]))
+		{
+			numberArray.push(tempArray[0]);
+			tempArray[0] = parseInt(tempArray[0])+1;
+		}
+	}
+	else numberArray.push(commonArray[i]);
+	tempArray = [];
+}
+
+//Проверяем на совпадения значений в строках фильтра
+for (let i = 0; i < numberArray.length; i++)
+{
+	for (let j = i+1; j < numberArray.length; j++)
+	{
+		if (parseInt(numberArray[i]) == parseInt(numberArray[j])) return "error";
+	}
+}
+//Заполняем значения важности информационных сообщения
+if (!check){
+for (let i = 1; i < 1001; i++)
+{
+	informArray.push(i);
+}
+
+//Сортировка массива
+numberArray.sort(function(a, b) {
+  return a - b;
+});
+
+//Оставляем в иформационных важностях все, которые не были использованы
+for (let i = 0; i < 1000; i++)
+{
+	for (let j = 0; j < numberArray.length; j++)
+	{
+		if (parseInt(informArray[i]) == parseInt(numberArray[j])) informArray.splice(i,1);
+	}
+}
+//Запись элементов в виде диапазона, если они образуют арифметическую прогрессию(сокращение записи)
+if (informArray != null)
+{
+	for (let i = 0; i < informArray.length; i++)
+	{
+		while (parseInt(informArray[i])+count == parseInt(informArray[i+count]))
+		{
+			count++;
+		}
+		if (count > 2)
+		{
+			informArray[i] = informArray[i] + "-" + informArray[i+count-1];
+			informArray.splice(i+1,count-1);
+		}
+		count = 1;
+	}
+}
+str = informArray.toString();
+}
+return str;
+]]>
+		</body>
+		<param access-modifier="private" name="inputString" display-name="" uuid="dad7f6f2-9637-4bf3-93b0-75a2a4fb6519" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+		<param access-modifier="private" name="check" display-name="" uuid="25c6be32-ffaa-448c-b7f1-525dbf594691" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+	</do>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="2" event="Closed">
+		<body kind="om">
+			<![CDATA[//режим измерения ширины ставим в 0 после растягивания столбца для возможности изменения с помощью мыши
+if (pAlarms.Main_tables.Table_Operative_mode.Colum_1.WidthResizeMode!=1) pAlarms.Main_tables.Table_Operative_mode.Colum_1.WidthResizeMode=0;
+if (pAlarms.Main_tables.Table_Operative_mode.Colum_2.WidthResizeMode!=1) pAlarms.Main_tables.Table_Operative_mode.Colum_2.WidthResizeMode=0;
+if (pAlarms.Main_tables.Table_Operative_mode.Colum_3.WidthResizeMode!=1) pAlarms.Main_tables.Table_Operative_mode.Colum_3.WidthResizeMode=0;
+if (pAlarms.Main_tables.Table_Operative_mode.Colum_4.WidthResizeMode!=1) pAlarms.Main_tables.Table_Operative_mode.Colum_4.WidthResizeMode=0;
+if (pAlarms.Main_tables.Table_Operative_mode.Colum_5.WidthResizeMode!=1) pAlarms.Main_tables.Table_Operative_mode.Colum_5.WidthResizeMode=0;
+if (pAlarms.Main_tables.Table_Operative_mode.Colum_6.WidthResizeMode!=1) pAlarms.Main_tables.Table_Operative_mode.Colum_6.WidthResizeMode=0;
+if (pAlarms.Main_tables.Table_Operative_mode.Colum_7.WidthResizeMode!=1) pAlarms.Main_tables.Table_Operative_mode.Colum_7.WidthResizeMode=0;
+if (pAlarms.Main_tables.Table_Operative_mode.Colum_8.WidthResizeMode!=1) pAlarms.Main_tables.Table_Operative_mode.Colum_8.WidthResizeMode=0;
+if (pAlarms.Main_tables.Table_Operative_mode.Colum_9.WidthResizeMode!=1) pAlarms.Main_tables.Table_Operative_mode.Colum_9.WidthResizeMode=0;
+if (pAlarms.Main_tables.Table_Operative_mode.Colum_10.WidthResizeMode!=1) pAlarms.Main_tables.Table_Operative_mode.Colum_10.WidthResizeMode=0;
+if (pAlarms.Main_tables.Table_Operative_mode.Colum_19.WidthResizeMode!=1) pAlarms.Main_tables.Table_Operative_mode.Colum_19.WidthResizeMode=0;
+if (pAlarms.Main_tables.Table_Operative_mode.Colum_20.WidthResizeMode!=1) pAlarms.Main_tables.Table_Operative_mode.Colum_20.WidthResizeMode=0;
+
+if (pAlarms.Main_tables_1.Table_History_mode.Colum_1.WidthResizeMode!=1) pAlarms.Main_tables_1.Table_History_mode.Colum_1.WidthResizeMode=0;
+if (pAlarms.Main_tables_1.Table_History_mode.Colum_2.WidthResizeMode!=1) pAlarms.Main_tables_1.Table_History_mode.Colum_2.WidthResizeMode=0;
+if (pAlarms.Main_tables_1.Table_History_mode.Colum_3.WidthResizeMode!=1) pAlarms.Main_tables_1.Table_History_mode.Colum_3.WidthResizeMode=0;
+if (pAlarms.Main_tables_1.Table_History_mode.Colum_4.WidthResizeMode!=1) pAlarms.Main_tables_1.Table_History_mode.Colum_4.WidthResizeMode=0;
+if (pAlarms.Main_tables_1.Table_History_mode.Colum_5.WidthResizeMode!=1) pAlarms.Main_tables_1.Table_History_mode.Colum_5.WidthResizeMode=0;
+if (pAlarms.Main_tables_1.Table_History_mode.Colum_6.WidthResizeMode!=1) pAlarms.Main_tables_1.Table_History_mode.Colum_6.WidthResizeMode=0;
+if (pAlarms.Main_tables_1.Table_History_mode.Colum_7.WidthResizeMode!=1) pAlarms.Main_tables_1.Table_History_mode.Colum_7.WidthResizeMode=0;
+if (pAlarms.Main_tables_1.Table_History_mode.Colum_8.WidthResizeMode!=1) pAlarms.Main_tables_1.Table_History_mode.Colum_8.WidthResizeMode=0;
+if (pAlarms.Main_tables_1.Table_History_mode.Colum_9.WidthResizeMode!=1) pAlarms.Main_tables_1.Table_History_mode.Colum_9.WidthResizeMode=0;
+if (pAlarms.Main_tables_1.Table_History_mode.Colum_10.WidthResizeMode!=1) pAlarms.Main_tables_1.Table_History_mode.Colum_10.WidthResizeMode=0;
+if (pAlarms.Main_tables_1.Table_History_mode.Colum_19.WidthResizeMode!=1) pAlarms.Main_tables_1.Table_History_mode.Colum_19.WidthResizeMode=0;
+if (pAlarms.Main_tables_1.Table_History_mode.Colum_20.WidthResizeMode!=1) pAlarms.Main_tables_1.Table_History_mode.Colum_20.WidthResizeMode=0;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="6f38ce74-9c28-4c81-baee-cd170494e81f" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="2"/>
+	<object access-modifier="private" name="errorForm0" display-name="errorForm0" uuid="31f2c8b6-5cb7-4c68-9b84-6eb960a6ad53" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+	<object access-modifier="private" name="bNotSaved" display-name="bNotSaved" uuid="8a119391-2eed-4dbc-b75b-71673d28554a" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="2"/>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="3" event="KeyPress">
+		<body kind="om">
+			<![CDATA[vi: uint4 = event.KeyCode;
+if (vi==75) Close();
+]]>
+		</body>
+	</do-on>
+	<do access-modifier="private" name="CheckChangeView" display-name="CheckChangeView" ver="3" type="bool" type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8">
+		<body kind="javascript">
+			<![CDATA[//Функция проверки изменений в конфигурации вида таблицы
+var changed = false;
+var OperColumn=[], SettingsColumn=[], widthColumn=[];
+
+//Если таблица в оперативном режиме, то берем ее параметры, если нет - берем параметры исторической таблицы
+if (pAlarms.ActiveMode == 0)
+{
+	OperColumn[1] = pAlarms.Main_tables.Table_Operative_mode.Colum_1;
+	OperColumn[2] = pAlarms.Main_tables.Table_Operative_mode.Colum_2;
+	OperColumn[3] = pAlarms.Main_tables.Table_Operative_mode.Colum_3;
+	OperColumn[4] = pAlarms.Main_tables.Table_Operative_mode.Colum_4;
+	OperColumn[5] = pAlarms.Main_tables.Table_Operative_mode.Colum_5;
+	OperColumn[6] = pAlarms.Main_tables.Table_Operative_mode.Colum_6;
+	OperColumn[7] = pAlarms.Main_tables.Table_Operative_mode.Colum_7;
+	OperColumn[8] = pAlarms.Main_tables.Table_Operative_mode.Colum_8;
+	OperColumn[9] = pAlarms.Main_tables.Table_Operative_mode.Colum_9;
+	OperColumn[10] = pAlarms.Main_tables.Table_Operative_mode.Colum_10;
+	OperColumn[11] = pAlarms.Main_tables.Table_Operative_mode.Colum_19;
+	OperColumn[12] = pAlarms.Main_tables.Table_Operative_mode.Colum_20;
+	OperColumn[13] = pAlarms.Main_tables.Table_Operative_mode.RowsHeight;
+}
+else
+{
+	OperColumn[1] = pAlarms.Main_tables_1.Table_History_mode.Colum_1;
+	OperColumn[2] = pAlarms.Main_tables_1.Table_History_mode.Colum_2;
+	OperColumn[3] = pAlarms.Main_tables_1.Table_History_mode.Colum_3;
+	OperColumn[4] = pAlarms.Main_tables_1.Table_History_mode.Colum_4;
+	OperColumn[5] = pAlarms.Main_tables_1.Table_History_mode.Colum_5;
+	OperColumn[6] = pAlarms.Main_tables_1.Table_History_mode.Colum_6;
+	OperColumn[7] = pAlarms.Main_tables_1.Table_History_mode.Colum_7;
+	OperColumn[8] = pAlarms.Main_tables_1.Table_History_mode.Colum_8;
+	OperColumn[9] = pAlarms.Main_tables_1.Table_History_mode.Colum_9;
+	OperColumn[10] = pAlarms.Main_tables_1.Table_History_mode.Colum_10;
+	OperColumn[11] = pAlarms.Main_tables_1.Table_History_mode.Colum_19;
+	OperColumn[12] = pAlarms.Main_tables_1.Table_History_mode.Colum_20;
+	OperColumn[13] = pAlarms.Main_tables_1.Table_History_mode.RowsHeight;
+}
+
+SettingsColumn[1] = Settings.View.Column1;
+SettingsColumn[2] = Settings.View.Column2;
+SettingsColumn[3] = Settings.View.Column3;
+SettingsColumn[4] = Settings.View.Column4;
+SettingsColumn[5] = Settings.View.Column5;
+SettingsColumn[6] = Settings.View.Column6;
+SettingsColumn[7] = Settings.View.Column7;
+SettingsColumn[8] = Settings.View.Column8;
+SettingsColumn[9] = Settings.View.Column9;
+SettingsColumn[10] = Settings.View.Column10;
+SettingsColumn[11] = Settings.View.Column19;
+SettingsColumn[12] = Settings.View.Column20;
+SettingsColumn[13] = Settings.View.RowsHeigth;
+
+widthColumn[1]=pAlarms.Main_panel.private.widthColumn.Column_1;
+widthColumn[2]=pAlarms.Main_panel.private.widthColumn.Column_2;
+widthColumn[3]=pAlarms.Main_panel.private.widthColumn.Column_3;
+widthColumn[4]=pAlarms.Main_panel.private.widthColumn.Column_4;
+widthColumn[5]=pAlarms.Main_panel.private.widthColumn.Column_5;
+widthColumn[6]=pAlarms.Main_panel.private.widthColumn.Column_6;
+widthColumn[7]=pAlarms.Main_panel.private.widthColumn.Column_7;
+widthColumn[8]=pAlarms.Main_panel.private.widthColumn.Column_8;
+widthColumn[9]=pAlarms.Main_panel.private.widthColumn.Column_9;
+widthColumn[10]=pAlarms.Main_panel.private.widthColumn.Column_10;
+widthColumn[11]=pAlarms.Main_panel.private.widthColumn.Column_19;
+widthColumn[12]=pAlarms.Main_panel.private.widthColumn.Column_20;
+
+for (let i=1;i<13;i++)
+{
+	if (SettingsColumn[i].Caption != OperColumn[i].Title) changed = true;
+	if (!SettingsColumn[i]._Visible != OperColumn[i].Hidden) changed = true;
+	
+	if (OperColumn[i].WidthResizeMode == 1) if (SettingsColumn[i]._Width != 0) changed = true;
+	if (OperColumn[i].Width == 0) if (SettingsColumn[i]._Width != widthColumn[i]) changed = true;
+	if (OperColumn[i].Width > 0 && OperColumn[i].WidthResizeMode == 0) if (SettingsColumn[i]._Width != OperColumn[i].Width) changed = true;
+}
+if (SettingsColumn[13] != OperColumn[13]) changed = true;
+return changed;
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="CheckChangeSeverity" display-name="CheckChangeSeverity" ver="3" type="bool" type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8">
+		<body kind="javascript">
+			<![CDATA[//Функция проверки изменений в конфигурации важности событий
+var changed = false;
+
+//Функция преобразования JSON объекта в строку
+function JSONtoString(obj)
+{
+	var strOut = "";
+	if (obj != "") obj = JSON.parse(obj); //Проверяем наличие в JSON-строке элементов
+	else return strOut;
+	
+	if (obj.OR != undefined)//Если в JSON-строке больше одного числа, то записываем все значения в строку
+	{
+		for (var i=0; i<obj.OR.length; i++)
+		{
+			if (i > 0) strOut+=",";
+			if (obj.OR[i].severity != undefined) strOut += obj.OR[i].severity;
+			if (obj.OR[i][">="] != undefined) 
+			{
+				strOut += obj.OR[i][">="]["severity"] + "-" + obj.OR[i+1]["<="]["severity"];
+				i++;
+			}
+		}
+	}
+	if (obj.severity != undefined) strOut = obj.severity; //Если в JSON-строке только одно число
+	return strOut;
+}
+
+//Заполняем поля важности фильтра
+var vf = JSONtoString(pAlarms.Main_tables.Table_Operative_mode.ApAlarmQueue_1.JsonFilter);
+if (Settings.Severity.Range1.JSON != vf.toString()) changed = true;
+if (Settings.Severity.Range1.SoundEnable != pAlarms.Main_panel.private.Range1.SoundEnable) changed = true;
+if (Settings.Severity.Range1.nSoundRepeats != pAlarms.Main_panel.private.Range1.nSoundRepeats) changed = true;
+if (Settings.Severity.Range1.SoundPriority != pAlarms.Main_panel.private.Range1.SoundPriority) changed = true;
+
+var vf = JSONtoString(pAlarms.Main_tables.Table_Operative_mode.ApAlarmQueue_2.JsonFilter);
+if (Settings.Severity.Range2.JSON != vf.toString()) changed = true;
+if (Settings.Severity.Range2.SoundEnable != pAlarms.Main_panel.private.Range2.SoundEnable) changed = true;
+if (Settings.Severity.Range2.nSoundRepeats != pAlarms.Main_panel.private.Range2.nSoundRepeats) changed = true;
+if (Settings.Severity.Range2.SoundPriority != pAlarms.Main_panel.private.Range2.SoundPriority) changed = true;
+
+
+var vf = JSONtoString(pAlarms.Main_tables.Table_Operative_mode.ApAlarmQueue_3.JsonFilter);
+if (Settings.Severity.Range3.JSON != vf.toString()) changed = true;
+if (Settings.Severity.Range3.SoundEnable != pAlarms.Main_panel.private.Range3.SoundEnable) changed = true;
+if (Settings.Severity.Range3.nSoundRepeats != pAlarms.Main_panel.private.Range3.nSoundRepeats) changed = true;
+if (Settings.Severity.Range3.SoundPriority != pAlarms.Main_panel.private.Range3.SoundPriority) changed = true;
+
+var vf = JSONtoString(pAlarms.Main_tables.Table_Operative_mode.ApAlarmQueue_4.JsonFilter);
+if (Settings.Severity.Range4.JSON != vf.toString()) changed = true;
+if (Settings.Severity.Range4.SoundEnable != pAlarms.Main_panel.private.Range4.SoundEnable) changed = true;
+if (Settings.Severity.Range4.nSoundRepeats != pAlarms.Main_panel.private.Range4.nSoundRepeats) changed = true;
+if (Settings.Severity.Range4.SoundPriority != pAlarms.Main_panel.private.Range4.SoundPriority) changed = true;
+
+return changed;
+]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="ModifyedCount" display-name="ModifyedCount" uuid="0f49a2f5-d4dc-4b0f-a987-3a15ce2cbaaf" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="3"/>
+	<init target="ModifyedCount" ver="3" value="0"/>
+	<init target="errorForm0" ver="3" value="false"/>
+	<init target="bNotSaved" ver="3" value="false"/>
+	<do access-modifier="private" name="CheckChangePanel" display-name="CheckChangePanel" ver="3" type="bool" type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8">
+		<body kind="javascript">
+			<![CDATA[//Функция проверки изменений в конфигурации кнопок панели
+var changed = false;
+if (Settings.Panel.btnSwitchModeHide != pAlarms.Main_panel.ToolBar.btnOperMode.HideFlag.Value) changed = true;
+if (Settings.Panel.btnSettingsHide != pAlarms.Main_panel.ToolBar.btnSettings.HideFlag.Value) changed = true;
+if (Settings.Panel.btnFiltrHide != pAlarms.Main_panel.ToolBar.btnFiltr.HideFlag.Value) changed = true;
+if (Settings.Panel.btnExportHide != pAlarms.Main_panel.ToolBar.btnExport.HideFlag.Value) changed = true;
+if (Settings.Panel.btnPrintHide != pAlarms.Main_panel.ToolBar.btnPrint.HideFlag.Value) changed = true;
+if (Settings.Panel.btnAckSelHide != pAlarms.Main_panel.ToolBar.btnAckSel.HideFlag.Value) changed = true;
+if (Settings.Panel.btnAckAllHide != pAlarms.Main_panel.ToolBar.btnAckAll.HideFlag.Value) changed = true;
+if (Settings.Panel.btnClearAllHide != pAlarms.Main_panel.ToolBar.btnClearAll.HideFlag.Value) changed = true;
+if (Settings.Panel.btnSnapshotHide != pAlarms.Main_panel.ToolBar.btnSnapshot.HideFlag.Value) changed = true;
+if (Settings.Panel.btnSndClearHide != pAlarms.Main_panel.ToolBar.btnSndClear.HideFlag.Value) changed = true;
+if (Settings.Panel.btnSndNextHide != pAlarms.Main_panel.ToolBar.btnSndNext.HideFlag.Value) changed = true;
+if (Settings.Panel.btnSndMuteHide != pAlarms.Main_panel.ToolBar.btnSndMute.HideFlag.Value) changed = true;
+if (Settings.Panel.btnSortHide != pAlarms.Main_panel.ToolBar.btnSort.HideFlag.Value) changed = true;
+if (Settings.Panel.btnLoginHide != pAlarms.Main_panel.ToolBar.btnLogin.HideFlag.Value) changed = true;
+if (Settings.Panel.RecHistoryHide != pAlarms.Main_panel.ToolBar.RecHistory.HideFlag.Value) changed = true;
+return changed;
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="CheckDefaultView" display-name="CheckDefaultView" ver="3" type="bool" type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8">
+		<body kind="javascript">
+			<![CDATA[//Сверяем настройки с настройками по умолчанию
+var notDef = false;
+if (Settings.View.Column1.Caption != "Время генерации") notDef = true;
+if (Settings.View.Column2.Caption != "Время срабатывания") notDef = true;
+if (Settings.View.Column3.Caption != "Время деактивации") notDef = true;
+if (Settings.View.Column4.Caption != "Сообщение") notDef = true;
+if (Settings.View.Column5.Caption != "Источник события") notDef = true;
+if (Settings.View.Column6.Caption != "Важность") notDef = true;
+if (Settings.View.Column7.Caption != "Квитировано") notDef = true;
+if (Settings.View.Column8.Caption != "Время квитирования") notDef = true;
+if (Settings.View.Column9.Caption != "Пользователь") notDef = true;
+if (Settings.View.Column10.Caption != "Комментарий квитирования") notDef = true;
+if (Settings.View.Column19.Caption != "Качество сигнала") notDef = true;
+if (Settings.View.Column20.Caption != "Значение сигнала") notDef = true;
+
+if (Settings.View.Column1._Width != 145) notDef = true;
+if (Settings.View.Column2._Width != 145) notDef = true;
+if (Settings.View.Column3._Width != 145) notDef = true;
+if (Settings.View.Column4._Width != 700) notDef = true;
+if (Settings.View.Column5._Width != 100) notDef = true;
+if (Settings.View.Column6._Width != 100) notDef = true;
+if (Settings.View.Column7._Width != 100) notDef = true;
+if (Settings.View.Column8._Width != 130) notDef = true;
+if (Settings.View.Column9._Width != 100) notDef = true;
+if (Settings.View.Column10._Width != 100) notDef = true;
+if (Settings.View.Column19._Width != 100) notDef = true;
+if (Settings.View.Column20._Width != 100) notDef = true;
+
+if (!Settings.View.Column1._Visible) notDef = true;
+if (Settings.View.Column2._Visible) notDef = true;
+if (Settings.View.Column3._Visible) notDef = true;
+if (!Settings.View.Column4._Visible) notDef = true;
+if (Settings.View.Column5._Visible) notDef = true;
+if (Settings.View.Column6._Visible) notDef = true;
+if (Settings.View.Column7._Visible) notDef = true;
+if (Settings.View.Column8._Visible) notDef = true;
+if (Settings.View.Column9._Visible) notDef = true;
+if (Settings.View.Column10._Visible) notDef = true;
+if (Settings.View.Column19._Visible) notDef = true;
+if (Settings.View.Column20._Visible) notDef = true;
+
+if (Settings.View.RowsHeigth != 23) notDef = true;
+return notDef;]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="CheckDefaultSeverity" display-name="CheckDefaultSeverity" ver="3" type="bool" type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8">
+		<body kind="javascript">
+			<![CDATA[//Сверяем настройки с настройками по умолчанию
+var notDef = false;
+if (Settings.Severity.Range1.JSON != "667-1000") notDef = true;
+if (!Settings.Severity.Range1.SoundEnable) notDef = true;
+if (Settings.Severity.Range1.nSoundRepeats != "0") notDef = true;
+if (Settings.Severity.Range1.SoundPriority != "0") notDef = true;
+
+if (Settings.Severity.Range2.JSON != "445-666") notDef = true;
+if (!Settings.Severity.Range2.SoundEnable) notDef = true;
+if (Settings.Severity.Range2.nSoundRepeats != "3") notDef = true;
+if (Settings.Severity.Range2.SoundPriority != "0") notDef = true;
+
+if (Settings.Severity.Range3.JSON != "223-444") notDef = true;
+if (!Settings.Severity.Range3.SoundEnable) notDef = true;
+if (Settings.Severity.Range3.nSoundRepeats != "1") notDef = true;
+if (Settings.Severity.Range3.SoundPriority != "0") notDef = true;
+return notDef;]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="errorForm1" display-name="errorForm1" uuid="07da6a03-4886-4c14-b465-34ef468ab11b" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+	<object access-modifier="private" name="errorRange1" display-name="errorRange1" uuid="0f1bccc5-58ac-4ba3-b10f-e1c61391a72c" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+	<object access-modifier="private" name="errorRange2" display-name="errorRange2" uuid="baab0784-e8bb-4fad-b153-8a986c229e91" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+	<object access-modifier="private" name="errorRange3" display-name="errorRange3" uuid="c3f2191b-5256-4f07-8938-1d6576bc23e7" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+	<object access-modifier="private" name="Open_Form_2" display-name="Open_Form_2" uuid="297eac37-6a39-4758-95c6-e03e2209d32d" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="2">
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="InvokeTrigger" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Invoked" frame-link="Frame_1" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="7068562d-c380-4cef-985f-4e5d9a1813f1" base-type="SettingsPanel" base-type-id="2c204548-68af-4a68-bc0f-bcdba77c2510" ver="3">
+				<init target="bDefSet" ver="3" value="false"/>
+				<init target="pSettingsForm" ver="3" ref="here"/>
+				<init target="bInit" ver="3" value="false"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="errorWord" display-name="errorWord" uuid="39a70530-915d-4c67-9409-b66f3ac09451" base-type="int2" base-type-id="3534bee3-61d3-4ad6-ac4f-9ad442cb71cf" ver="3"/>
+	<do access-modifier="private" name="CheckDefaultPanel" display-name="CheckDefaultPanel" ver="3" type="bool" type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8">
+		<body kind="javascript">
+			<![CDATA[//Сверяем настройки с настройками по умолчанию
+var notDef = false;
+
+if (Settings.Panel.btnSwitchModeHide) notDef = true;
+if (Settings.Panel.btnSettingsHide) notDef = true;
+if (Settings.Panel.btnFiltrHide) notDef = true;
+if (Settings.Panel.btnExportHide) notDef = true;
+if (Settings.Panel.btnPrintHide) notDef = true;
+if (Settings.Panel.btnAckSelHide) notDef = true;
+if (Settings.Panel.btnAckAllHide) notDef = true;
+if (Settings.Panel.btnClearAllHide) notDef = true;
+if (Settings.Panel.btnSnapshotHide) notDef = true;
+if (Settings.Panel.btnSndClearHide) notDef = true;
+if (Settings.Panel.btnSndNextHide) notDef = true;
+if (Settings.Panel.btnSndMuteHide) notDef = true;
+if (Settings.Panel.btnSortHide) notDef = true;
+if (Settings.Panel.btnLoginHide) notDef = true;
+if (Settings.Panel.RecHistoryHide) notDef = true;
+
+return notDef;]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="CheckError" display-name="CheckError" ver="3" type="" type-id="">
+		<body kind="javascript">
+			<![CDATA[//Определяем наличие ошибки в формах
+var error = false;
+if (errorWord != 0 || errorForm1) error = true;
+if (errorWord != 0) errorForm0 = true;
+else errorForm0 = false;
+bErrorFlag = error;
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="CheckModify" display-name="CheckModify" ver="3" type="" type-id="">
+		<body kind="javascript">
+			<![CDATA[//Проверка изменения конфигурации
+bModifyed = CheckChangeView() || CheckChangeSeverity() || CheckChangePanel();
+bModifyForm0 = CheckChangeView();
+bModifyForm1 = CheckChangeSeverity();
+bModifyForm2 = CheckChangePanel();
+bNotDefaultForm0 = CheckDefaultView();
+bNotDefaultForm1 = CheckDefaultSeverity();
+bNotDefaultForm2 = CheckDefaultPanel();
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="GapToArray" display-name="GapToArray" ver="3" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<body kind="javascript">
+			<![CDATA[//Преобразование последовательности в массив идущих друг за другом чисел
+var str = inputString;
+var numberArray = [];
+var tempArray = [];
+var commonArray = [];
+var gapPattern = /\d+\s?[-]\s?\d+/;
+
+str = inputString.replace(/[ ]/g,"");
+
+//Проверка на случай, если элемент всего один
+if (/(^\s?[0-9]{1,3}\s?$)|(^\s?[0-9]{1,3}\s?[-]\s?[0-9]{1,3}\s?$|^\s?(1000)$)/.test(str))commonArray[0] = str;
+else commonArray = str.split(",");
+if (/[,]/.test(commonArray[commonArray.length-1])) return "error";
+
+//Проверка на верную запись диапазона чисел, запись его чисел в виде элемента массива
+for (let i = 0; i < commonArray.length; i++)
+{
+	if (gapPattern.test(commonArray[i])) //Если элемент - диапазон чисел, то проверяем его и формируем массив
+	{
+		tempArray = commonArray[i].match(/\d+/g);
+		if (parseInt(tempArray[0]) >= parseInt(tempArray[1])) return "error";
+		while (parseInt(tempArray[0]) <= parseInt(tempArray[1]))
+		{
+			numberArray.push(tempArray[0]);
+			tempArray[0] = parseInt(tempArray[0])+1;
+		}
+	}
+	else numberArray.push(commonArray[i]);
+	tempArray = [];
+}
+return numberArray.join(',');]]>
+		</body>
+		<param access-modifier="private" name="inputString" display-name="" uuid="532690fc-8c14-49ad-a833-0842ad40b89d" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="3"/>
+	</do>
+	<object access-modifier="private" name="selectedIndex" display-name="selectedIndex" uuid="d6dd2a86-7877-4805-a471-eb1d01e473c9" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="3"/>
+	<object access-modifier="private" name="bErrorFlag" display-name="bErrorFlag" uuid="586df308-f979-4fc7-8530-ace6e6a2bdbe" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="3">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="3" event="ValueChanged">
+			<body kind="om">
+				<![CDATA[//Если есть ошибка ввода, блокируем сохранение конфигурации
+/* (value)
+{
+	RecBottom.Button_Apply.Enabled = false;
+	RecBottom.Button_Save.Enabled = false;
+	RecBottom.Button_Apply.FontColor = 0xffc0c0c0;
+	RecBottom.Button_Save.FontColor = 0xffc0c0c0;
+	if (errorWord != 0) Rec_Buttons.ViewForm.RecBorder_Alarm.Visible = true;
+	if (errorForm1) Rec_Buttons.SeverityForm.RecBorder_Alarm.Visible = true;
+}
+else
+{
+	RecBottom.Button_Apply.Enabled = true;
+	RecBottom.Button_Save.Enabled = true;
+	RecBottom.Button_Apply.FontColor = 0xff000000;
+	RecBottom.Button_Save.FontColor = 0xff000000;
+	Rec_Buttons.ViewForm.RecBorder_Alarm.Visible = false;
+	Rec_Buttons.SeverityForm.RecBorder_Alarm.Visible = false;
+}
+*/]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="bModifyForm0" display-name="bModifyForm0" uuid="cd287bc7-8a60-468b-b73c-bd2a349b5d98" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="3"/>
+	<object access-modifier="private" name="bModifyForm1" display-name="bModifyForm1" uuid="1cb1ade3-41ff-4417-95c4-74a635768257" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="3"/>
+	<object access-modifier="private" name="bModifyForm2" display-name="bModifyForm2" uuid="ec3c6f4b-b4bc-401e-8ec9-f7093f3f2336" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="3"/>
+	<object access-modifier="private" name="bNotDefaultForm0" display-name="bNotDefaultForm0" uuid="d92da414-429d-4ab9-b9cc-f49f0ea20053" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="3"/>
+	<object access-modifier="private" name="bNotDefaultForm1" display-name="bNotDefaultForm1" uuid="af001781-dda5-48b7-aa76-dd3cca4b0064" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="3"/>
+	<object access-modifier="private" name="bNotDefaultForm2" display-name="bNotDefaultForm2" uuid="89532fee-5cc4-4a67-b260-32f7d4b3d845" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="3"/>
+</type>
+

@@ -1,0 +1,2339 @@
+<type access-modifier="private" name="Trends" display-name="Dummy_1" uuid="4927a9e8-a353-4525-9bb3-325a9c539806" base-type="Dummy" base-type-id="e4b644cf-f3a8-4d11-82a0-6acc23748e14" ver="2">
+	<designed target="X" value="0" ver="2"/>
+	<designed target="Y" value="0" ver="2"/>
+	<designed target="Rotation" value="0" ver="2"/>
+	<designed target="Scale" value="1" ver="2"/>
+	<designed target="Visible" value="true" ver="2"/>
+	<designed target="Enabled" value="true" ver="2"/>
+	<designed target="Tooltip" value="" ver="2"/>
+	<object access-modifier="private" name="Main_Panel" display-name="Main_Panel" uuid="ee50aea9-a08b-4727-8139-0532f428fe7f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="0" ver="2"/>
+		<designed target="Y" value="3" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="698" ver="2"/>
+		<designed target="Height" value="36" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="4278190080" ver="2"/>
+		<designed target="PenStyle" value="0" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="55090ffe-003a-4083-bc4f-059166b4a159" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="2">
+			<designed target="X" value="1" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="27" ver="2"/>
+			<designed target="Height" value="27" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="ImageFile" value="oper_mode" ver="2"/>
+			<designed target="Active" value="true" ver="2"/>
+			<designed target="CurrentFrameNumber" value="0" ver="2"/>
+			<designed target="Speed" value="1" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseClick">
+				<body kind="om">
+					<![CDATA[if(private.Oper_on==false)
+{
+//описание переменных
+t1:uint8 = private.f_start_time;
+t2:uint8 = DateTime.UtcNow();
+private.Time1 = t1;
+private.Time1=t1;
+TextEdit_1.Visible=false;
+TextEdit_2.Visible=false;
+Image_3.Visible=false;
+Image_8.Visible=false;
+Image_9.Visible=false;
+private.Reper_add=false;
+private.Reper_del=false;
+ComboBox_1.Visible=false;
+private.Hist_on=false;
+private.Oper_on=true;
+Image_1.PenStyle=1;
+Image_2.PenStyle=0;
+History_mode(t1,t2);
+Operative_mode();
+}
+
+]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="2" event="MouseEnter">
+				<body kind="om">
+					<![CDATA[Image_1.PenStyle=1;
+]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="2" event="MouseLeave">
+				<body kind="om">
+					<![CDATA[if(private.Oper_on)
+{
+Image_1.PenStyle=1;
+}
+else
+{
+Image_1.PenStyle=0;
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Image_2" display-name="Image_2" uuid="ab69199d-1948-47f9-9ba1-d7a5a71ada42" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="2">
+			<designed target="X" value="28.5" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="27" ver="2"/>
+			<designed target="Height" value="27" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="ImageFile" value="hist_mode" ver="2"/>
+			<designed target="Active" value="true" ver="2"/>
+			<designed target="CurrentFrameNumber" value="0" ver="2"/>
+			<designed target="Speed" value="1" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseClick">
+				<body kind="om">
+					<![CDATA[if(private.Hist_on==false)
+{
+t1:uint8 = private.f_start_time;
+t2:uint8 = DateTime.UtcNow();
+TextEdit_1.Visible=true;
+TextEdit_2.Visible=true;
+Image_3.Visible=true;
+Image_8.Visible=true;
+Image_9.Visible=true;
+ComboBox_1.Visible=true;
+Main_Charts.Chart_1.Axis_1.Scale = 1;
+History_mode(t1,t2);
+TextEdit_1.Visible=true;
+TextEdit_2.Visible=true;
+Image_3.Visible=true;
+private.Hist_on=true;
+private.Oper_on=false;
+Image_1.PenStyle=0;
+Image_2.PenStyle=1;
+Main_Panel.private.f_current_time=DateTime.UtcNow();
+private.Time1=t1;
+private.Time2=t2;
+}
+
+
+]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="2" event="MouseEnter">
+				<body kind="om">
+					<![CDATA[Image_2.PenStyle=1;
+]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="2" event="MouseLeave">
+				<body kind="om">
+					<![CDATA[if(private.Hist_on)
+{
+Image_2.PenStyle=1;
+}
+else
+{
+Image_2.PenStyle=0;
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="TextEdit_1" display-name="TextEdit_1" uuid="2dc4145b-8ea4-44c3-bc90-c030df31adf6" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="290" ver="2"/>
+			<designed target="Y" value="7" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="133" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="03.04.2019 00:00:00" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<init target="Visible" ver="2" value="false"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_2" display-name="TextEdit_2" uuid="1490397d-b7e6-41fe-93fb-abe18759b743" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="425" ver="2"/>
+			<designed target="Y" value="7" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="133" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="03.04.2019 23:00:00" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<init target="Visible" ver="2" value="false"/>
+		</object>
+		<object access-modifier="private" name="Image_3" display-name="Image_3" uuid="22375a20-8761-4451-9a12-6181441be496" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="2">
+			<designed target="X" value="588" ver="2"/>
+			<designed target="Y" value="2.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="30" ver="2"/>
+			<designed target="Height" value="29" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="ImageFile" value="hist_request" ver="2"/>
+			<designed target="Active" value="true" ver="2"/>
+			<designed target="CurrentFrameNumber" value="0" ver="2"/>
+			<designed target="Speed" value="1" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseClick">
+				<body kind="om">
+					<![CDATA[t1:uint8 = DateTime.Parse(TextEdit_1.Text)-TimeZone();
+t2:uint8 = DateTime.Parse(TextEdit_2.Text)-TimeZone();
+private.Time1=t1;
+private.Time2=t2;
+History_mode(t1,t2);
+]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="2" event="MouseEnter">
+				<body kind="om">
+					<![CDATA[Image_3.PenStyle=1;]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="2" event="MouseLeave">
+				<body kind="om">
+					<![CDATA[Image_3.PenStyle=0;]]>
+				</body>
+			</do-on>
+			<init target="Visible" ver="2" value="false"/>
+		</object>
+		<object access-modifier="private" name="Image_4" display-name="Image_4" uuid="b237a13d-b49d-4aeb-81b3-93f2524df8b4" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="2">
+			<designed target="X" value="136.25" ver="2"/>
+			<designed target="Y" value="1" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="27" ver="2"/>
+			<designed target="Height" value="27" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="ImageFile" value="tab_data" ver="2"/>
+			<designed target="Active" value="true" ver="2"/>
+			<designed target="CurrentFrameNumber" value="0" ver="2"/>
+			<designed target="Speed" value="1" ver="2"/>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="2" event="MouseEnter">
+				<body kind="om">
+					<![CDATA[Image_4.PenStyle=1;]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="2" event="MouseLeave">
+				<body kind="om">
+					<![CDATA[Image_4.PenStyle=0;]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="2" event="MouseClick" form-action="open-new" form-by-id="false">
+				<object access-modifier="private" uuid="813b2acb-1080-416a-acd2-dba1097ce966" base-type="PopUP_Table_trends" base-type-id="4eaa655b-e7df-43ce-a704-693e19fb182e" ver="2">
+					<init target="init_ApSource" ver="2" ref="here.ApSource_1"/>
+					<init target="init_tag" ver="2" ref="Main_Panel.private.tag_for_tab"/>
+					<init target="init_FT_t1" ver="2" ref="Main_Panel.private.Time1"/>
+					<init target="init_FT_t2" ver="2" ref="Main_Panel.private.Time2"/>
+				</object>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Image_5" display-name="Image_5" uuid="74aaabb1-ebe9-4256-becb-198c68f5f0c3" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="2">
+			<designed target="X" value="56" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="27" ver="2"/>
+			<designed target="Height" value="27" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="ImageFile" value="reper_add" ver="2"/>
+			<designed target="Active" value="true" ver="2"/>
+			<designed target="CurrentFrameNumber" value="0" ver="2"/>
+			<designed target="Speed" value="1" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseClick">
+				<body kind="om">
+					<![CDATA[if(private.Reper_add==true)
+{
+private.Reper_add=false;
+Image_5.PenStyle=0;
+}
+else
+{
+private.Reper_add=true;
+Image_5.PenStyle=1;
+}
+if(private.Reper_del==true)
+{
+private.Reper_del=false;
+Image_7.PenStyle=0;
+}
+]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="2" event="MouseEnter">
+				<body kind="om">
+					<![CDATA[Image_5.PenStyle=1;]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="2" event="MouseLeave">
+				<body kind="om">
+					<![CDATA[if(private.Reper_add==true)
+{
+Image_5.PenStyle=1;
+}
+else
+{
+Image_5.PenStyle=0;
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Image_7" display-name="Image_7" uuid="0170a546-4741-44a0-b5eb-a4b507a571a2" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="2">
+			<designed target="X" value="83.5" ver="2"/>
+			<designed target="Y" value="2.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="27" ver="2"/>
+			<designed target="Height" value="27" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="ImageFile" value="reper_del" ver="2"/>
+			<designed target="Active" value="true" ver="2"/>
+			<designed target="CurrentFrameNumber" value="0" ver="2"/>
+			<designed target="Speed" value="1" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseClick">
+				<body kind="om">
+					<![CDATA[/*if(private.Reper_del==true)
+{
+private.Reper_del=false;
+Image_7.PenStyle=0;
+}
+else
+{
+private.Reper_del=true;
+Image_7.PenStyle=1;
+}*/
+if(private.Reper_add==true)
+{
+private.Reper_add=false;
+Image_5.PenStyle=0;
+}
+
+Main_Charts.Chart_1.ControlLine_1.Visible=false;
+Main_Charts.Chart_1.ControlLine_2.Visible=false;
+Main_Charts.Chart_1.ControlLine_3.Visible=false;
+Main_Charts.Chart_1.ControlLine_4.Visible=false;
+Main_Charts.Chart_1.ControlLine_5.Visible=false;
+Main_Charts.Chart_1.ControlLine_6.Visible=false;
+Main_Charts.Chart_1.ControlLine_7.Visible=false;
+Main_Charts.Chart_1.ControlLine_8.Visible=false;
+Main_Charts.Chart_1.ControlLine_9.Visible=false;
+Main_Charts.Chart_1.ControlLine_10.Visible=false;
+private.value_of_lines=0;
+
+
+]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="2" event="MouseEnter">
+				<body kind="om">
+					<![CDATA[Image_7.PenStyle=1;]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="2" event="MouseLeave">
+				<body kind="om">
+					<![CDATA[if(private.Reper_add==true)
+{
+Image_7.PenStyle=1;
+}
+else
+{
+Image_7.PenStyle=0;
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Image_8" display-name="Image_8" uuid="b2c9b0b9-6631-4b41-b36a-f373bea0c0e3" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="2">
+			<designed target="X" value="258.5" ver="2"/>
+			<designed target="Y" value="2.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="27" ver="2"/>
+			<designed target="Height" value="27" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="ImageFile" value="arrow" ver="2"/>
+			<designed target="Active" value="true" ver="2"/>
+			<designed target="CurrentFrameNumber" value="0" ver="2"/>
+			<designed target="Speed" value="1" ver="2"/>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="2" event="MouseEnter">
+				<body kind="om">
+					<![CDATA[Image_8.PenStyle=1;]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="2" event="MouseLeave">
+				<body kind="om">
+					<![CDATA[Image_8.PenStyle=0;]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="2" event="MouseClick">
+				<body kind="om">
+					<![CDATA[t_diff:uint8 = private.Time2-private.Time1;
+t1_new:uint8 = private.Time1-t_diff;
+t2_new:uint8 = private.Time2-t_diff;
+History_mode(t1_new,t2_new);
+private.Time1=t1_new;
+private.Time2=t2_new;]]>
+				</body>
+			</do-on>
+			<init target="Visible" ver="2" value="false"/>
+		</object>
+		<object access-modifier="private" name="Image_9" display-name="Image_9" uuid="0cc2b3e4-23ed-473c-aff1-4a48695c024b" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="2">
+			<designed target="X" value="559.5" ver="2"/>
+			<designed target="Y" value="2.5" ver="2"/>
+			<designed target="Rotation" value="180" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="27" ver="2"/>
+			<designed target="Height" value="27" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="ImageFile" value="arrow" ver="2"/>
+			<designed target="Active" value="true" ver="2"/>
+			<designed target="CurrentFrameNumber" value="0" ver="2"/>
+			<designed target="Speed" value="1" ver="2"/>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="2" event="MouseEnter">
+				<body kind="om">
+					<![CDATA[Image_9.PenStyle=1;]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="2" event="MouseLeave">
+				<body kind="om">
+					<![CDATA[Image_9.PenStyle=0;]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="2" event="MouseClick">
+				<body kind="om">
+					<![CDATA[t_diff:uint8 = private.Time2-private.Time1;
+t1_new:uint8 = private.Time1+t_diff;
+t2_new:uint8 = private.Time2+t_diff;
+History_mode(t1_new,t2_new);
+private.Time1=t1_new;
+private.Time2=t2_new;]]>
+				</body>
+			</do-on>
+			<init target="Visible" ver="2" value="false"/>
+		</object>
+		<object access-modifier="private" name="ComboBox_1" display-name="ComboBox_1" uuid="a6a5a7f1-b6b9-4706-8cb3-e71f50d609c7" base-type="ComboBox" base-type-id="3495bcd2-01f2-4709-b7f4-e9cf6f3a00bc" ver="2">
+			<designed target="X" value="623" ver="2"/>
+			<designed target="Y" value="7" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="64" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Editable" value="false" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="SelectedIndex" value="-1" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="MaxVisibleItems" value="10" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="SelectedChanged">
+				<body kind="om">
+					<![CDATA[if (ComboBox_1.SelectedIndex==0)
+{
+}
+if (ComboBox_1.SelectedIndex==1)
+{
+Main_Charts.Chart_1.Axis_1.Scale = 1;
+t1:uint8 = DateTime.UtcNow()-6000000000;
+t2:uint8 = DateTime.UtcNow();
+History_mode(t1,t2);
+private.Time1=t1;
+private.Time2=t2;
+}
+if (ComboBox_1.SelectedIndex==2)
+{
+Main_Charts.Chart_1.Axis_1.Scale = 1;
+t1:uint8 = DateTime.UtcNow()-18000000000;
+t2:uint8 = DateTime.UtcNow();
+History_mode(t1,t2);
+private.Time1=t1;
+private.Time2=t2;
+}
+if (ComboBox_1.SelectedIndex==3)
+{
+Main_Charts.Chart_1.Axis_1.Scale = 1;
+t1:uint8 = DateTime.UtcNow()-36000000000;
+t2:uint8 = DateTime.UtcNow();
+History_mode(t1,t2);
+private.Time1=t1;
+private.Time2=t2;
+}
+if (ComboBox_1.SelectedIndex==4)
+{
+Main_Charts.Chart_1.Axis_1.Scale = 1;
+t1:uint8 = DateTime.UtcNow()-216000000000;
+t2:uint8 = DateTime.UtcNow();
+History_mode(t1,t2);
+private.Time1=t1;
+private.Time2=t2;
+}
+if (ComboBox_1.SelectedIndex==5)
+{
+Main_Charts.Chart_1.Axis_1.Scale = 1;
+t1:uint8 = DateTime.UtcNow()-432000000000;
+t2:uint8 = DateTime.UtcNow();
+History_mode(t1,t2);
+private.Time1=t1;
+private.Time2=t2;
+}
+if (ComboBox_1.SelectedIndex==6)
+{
+Main_Charts.Chart_1.Axis_1.Scale = 1;
+t1:uint8 = DateTime.UtcNow()-864000000000;
+t2:uint8 = DateTime.UtcNow();
+History_mode(t1,t2);
+private.Time1=t1;
+private.Time2=t2;
+}]]>
+				</body>
+			</do-on>
+			<init target="Visible" ver="2" value="false"/>
+		</object>
+		<object access-modifier="private" name="Image_10" display-name="Image_10" uuid="632ff8e2-5797-4d0b-a471-5c11900864c4" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="2">
+			<designed target="X" value="112.5" ver="2"/>
+			<designed target="Y" value="3.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="27" ver="2"/>
+			<designed target="Height" value="27" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="ImageFile" value="play" ver="2"/>
+			<designed target="Active" value="true" ver="2"/>
+			<designed target="CurrentFrameNumber" value="0" ver="2"/>
+			<designed target="Speed" value="1" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseClick">
+				<body kind="om">
+					<![CDATA[if(private.Play==true)
+{
+private.Play=false;
+Main_Charts.Chart_1.DataSource_1.EnableRT(false);
+Main_Charts.Chart_1.DataSource_2.EnableRT(false);
+Main_Charts.Chart_1.DataSource_3.EnableRT(false);
+Main_Charts.Chart_1.DataSource_4.EnableRT(false);
+Main_Charts.Chart_1.DataSource_5.EnableRT(false);
+Main_Charts.Chart_1.DataSource_6.EnableRT(false);
+Main_Charts.Chart_1.DataSource_7.EnableRT(false);
+Main_Charts.Chart_1.DataSource_8.EnableRT(false);
+Main_Charts.Chart_1.DataSource_9.EnableRT(false);
+Main_Charts.Chart_1.DataSource_10.EnableRT(false);
+Image_10.ImageFile="pause";
+}
+else
+{
+private.Play=true;
+Main_Charts.Chart_1.DataSource_1.EnableRT(true);
+Main_Charts.Chart_1.DataSource_2.EnableRT(true);
+Main_Charts.Chart_1.DataSource_3.EnableRT(true);
+Main_Charts.Chart_1.DataSource_4.EnableRT(true);
+Main_Charts.Chart_1.DataSource_5.EnableRT(true);
+Main_Charts.Chart_1.DataSource_6.EnableRT(true);
+Main_Charts.Chart_1.DataSource_7.EnableRT(true);
+Main_Charts.Chart_1.DataSource_8.EnableRT(true);
+Main_Charts.Chart_1.DataSource_9.EnableRT(true);
+Main_Charts.Chart_1.DataSource_10.EnableRT(true);
+Image_10.ImageFile="play";
+}
+
+
+]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="2" event="MouseEnter">
+				<body kind="om">
+					<![CDATA[Image_10.PenStyle=1;]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="2" event="MouseLeave">
+				<body kind="om">
+					<![CDATA[Image_10.PenStyle=0;]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="ComboBox_2" display-name="ComboBox_2" uuid="dcd3115d-d7a7-460a-a480-12556053ef7d" base-type="ComboBox" base-type-id="3495bcd2-01f2-4709-b7f4-e9cf6f3a00bc" ver="2">
+			<designed target="X" value="172" ver="2"/>
+			<designed target="Y" value="6" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="78" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Editable" value="false" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="SelectedIndex" value="-1" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="MaxVisibleItems" value="10" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="SelectedChanged">
+				<body kind="om">
+					<![CDATA[if (ComboBox_2.SelectedIndex==0)
+{
+private.tag_for_tab = Item_1.Tag;
+}
+if (ComboBox_2.SelectedIndex==1)
+{
+private.tag_for_tab = Item_2.Tag;
+}
+if (ComboBox_2.SelectedIndex==2)
+{
+private.tag_for_tab = Item_3.Tag;
+}
+if (ComboBox_2.SelectedIndex==3)
+{
+private.tag_for_tab = Item_4.Tag;
+}
+if (ComboBox_2.SelectedIndex==4)
+{
+private.tag_for_tab = Item_5.Tag;
+}
+if (ComboBox_2.SelectedIndex==5)
+{
+private.tag_for_tab = Item_6.Tag;
+}
+if (ComboBox_2.SelectedIndex==6)
+{
+private.tag_for_tab = Item_7.Tag;
+}
+if (ComboBox_2.SelectedIndex==7)
+{
+private.tag_for_tab = Item_8.Tag;
+}
+if (ComboBox_2.SelectedIndex==8)
+{
+private.tag_for_tab = Item_9.Tag;
+}
+if (ComboBox_2.SelectedIndex==9)
+{
+private.tag_for_tab = Item_10.Tag;
+}]]>
+				</body>
+			</do-on>
+			<init target="Visible" ver="2" value="true"/>
+		</object>
+		<object access-modifier="private" name="private" display-name="private" uuid="5190bf51-03f3-4bf6-89d2-40bcde69620a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="2.3335" ver="2"/>
+			<designed target="Y" value="380" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="32.333" ver="2"/>
+			<designed target="Height" value="18" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+			<object access-modifier="private" name="FinishRead_3" display-name="FinishRead_3" uuid="a5f8b85f-7c8e-4cf1-a40d-e7ba46ca2cea" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+			<object access-modifier="private" name="FinishRead_4" display-name="FinishRead_4" uuid="58cab571-dae5-4201-b84d-af14abbf8f83" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+			<object access-modifier="private" name="FinishRead_1" display-name="FinishRead_1" uuid="56b49bb5-3904-4318-ad55-5beb8f7a4ce8" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+			<object access-modifier="private" name="FinishRead_2" display-name="FinishRead_2" uuid="032a60a9-9791-4bf0-9480-8c7a265c69f4" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+			<object access-modifier="private" name="FinishRead_5" display-name="FinishRead_5" uuid="ce3a4720-0bbb-45f7-b577-ff2b6b34a078" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+			<object access-modifier="private" name="FinishRead_6" display-name="FinishRead_6" uuid="1cf44f33-9884-4b2f-bf11-d4478de414cc" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+			<object access-modifier="private" name="FinishRead_7" display-name="FinishRead_7" uuid="c8d8e8e5-369e-4313-a8ae-24c4c6a16f70" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+			<object access-modifier="private" name="FinishRead_8" display-name="FinishRead_8" uuid="fb1a22a3-91f1-4a54-9ba0-43b2db68be4b" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+			<object access-modifier="private" name="FinishRead_9" display-name="FinishRead_9" uuid="472ec976-60a4-4a71-a8bd-d9a40276a97b" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+			<object access-modifier="private" name="FinishRead_10" display-name="FinishRead_10" uuid="458d1b90-ec8d-47b8-b171-7130d863c691" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+			<object access-modifier="private" name="f_start_time" display-name="f_start_time" uuid="69cf71aa-5a41-459d-b4e5-67c19fa60654" base-type="uint8" base-type-id="c8ff7701-da6e-4d53-888a-81fa680ff561" ver="2"/>
+			<object access-modifier="private" name="Reper_add" display-name="Reper_add" uuid="eede675b-9a44-4db6-b1b0-84d11b496067" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+			<object access-modifier="private" name="Reper_del" display-name="Reper_del" uuid="db0c8ada-f033-47bd-9a36-35b0b2b56580" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+			<object access-modifier="private" name="value_of_lines" display-name="value_of_lines" uuid="854069a8-b8ec-4a59-8396-a842a478eb4c" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="2"/>
+			<object access-modifier="private" name="Time1" display-name="Time1" uuid="c9006e71-6252-4cec-aa86-093292f8cfae" base-type="uint8" base-type-id="c8ff7701-da6e-4d53-888a-81fa680ff561" ver="2"/>
+			<object access-modifier="private" name="Time2" display-name="Time2" uuid="fd21bc85-24d3-4bfa-b738-7e459eb0220a" base-type="uint8" base-type-id="c8ff7701-da6e-4d53-888a-81fa680ff561" ver="2"/>
+			<object access-modifier="private" name="Hist_on" display-name="Hist_on" uuid="ff8b6c92-efb3-4637-ba26-952082f106b3" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+			<object access-modifier="private" name="Play" display-name="Play" uuid="6e94667b-c0f6-4f4d-938d-8c8df66569e8" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+			<object access-modifier="private" name="Oper_on" display-name="Oper_on" uuid="7dcc5385-1338-4d41-8eab-86b8d4ba9506" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+			<object access-modifier="private" name="f_current_time" display-name="f_current_time" uuid="bea16b41-76c5-4f1c-90ee-2432be5bb3bf" base-type="uint8" base-type-id="c8ff7701-da6e-4d53-888a-81fa680ff561" ver="2"/>
+			<object access-modifier="private" name="tag_for_tab" display-name="tag_for_tab" uuid="aea02c39-a8e1-4e3f-ba8d-3e7bd72408e2" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+			<object access-modifier="private" name="show_menu" display-name="show_menu" uuid="7ccb5f90-1ee2-4473-838d-46793ce4041b" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+			<init target="show_menu" ver="2" ref="Не_отображать_меню"/>
+		</object>
+		<object access-modifier="private" name="LayoutWeight_1" display-name="LayoutWeight_1" uuid="11a36586-122b-4408-84c8-05de512c7faf" base-type="LayoutWeight" base-type-id="8f3d975c-9645-4288-9406-a8dda0527008" ver="2">
+			<designed target="Weight" value="0.1" ver="2"/>
+			<init target="Weight" ver="2">
+				<expr>
+					<![CDATA[$"Не_отображать_меню"?0:0.1]]>
+				</expr>
+			</init>
+		</object>
+	</object>
+	<object access-modifier="private" name="Main_Charts" display-name="Main_Charts" uuid="ee2b04ec-6fd7-427d-9677-a9ff23794828" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="0" ver="2"/>
+		<designed target="Y" value="36.2273" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="700" ver="2"/>
+		<designed target="Height" value="362.273" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="4278190080" ver="2"/>
+		<designed target="PenStyle" value="0" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<object access-modifier="private" name="Chart_1" display-name="Chart_1" uuid="8bf5be2a-a89d-40b2-bc7e-a688c6e7cd75" base-type="Chart" base-type-id="447c3e77-56f5-497c-950c-067da367ad6a" ver="2">
+			<designed target="X" value="1" ver="2"/>
+			<designed target="Y" value="1.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="Чарты" ver="2"/>
+			<designed target="Width" value="697" ver="2"/>
+			<designed target="Height" value="361" ver="2"/>
+			<designed target="CursorPointSize" value="4" ver="2"/>
+			<designed target="CursorLineWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4294967295" ver="2"/>
+			<designed target="CursorColor" value="4288716964" ver="2"/>
+			<designed target="CursorLineBrushStyle" value="2" ver="2"/>
+			<designed target="ShowTimeLine" value="true" ver="2"/>
+			<designed target="ShowLegend" value="true" ver="2"/>
+			<designed target="Font" value="" ver="2"/>
+			<designed target="ZoomX" value="5" ver="2"/>
+			<designed target="ZoomY" value="20" ver="2"/>
+			<designed target="AutoUpdate" value="true" ver="2"/>
+			<object access-modifier="private" name="Axis_1" display-name="Axis_1" uuid="ec0730ab-c80b-485d-91a7-78cf28267b3a" base-type="Axis" base-type-id="790efceb-e3a3-4c3f-b766-9557ba52a4d3" ver="2">
+				<designed target="Color" value="4286611584" ver="2"/>
+				<designed target="Type" value="1" ver="2"/>
+				<designed target="Align" value="1" ver="2"/>
+				<designed target="DataType" value="1" ver="2"/>
+				<designed target="Ticks" value="1" ver="2"/>
+				<designed target="Scale" value="2" ver="2"/>
+				<designed target="ScaleLog" value="false" ver="2"/>
+				<designed target="Unit" value="" ver="2"/>
+				<designed target="UnitPos" value="1" ver="2"/>
+				<designed target="Format" value="%.4g" ver="2"/>
+				<designed target="FormatT" value="hh:mm:ss.zzz
+yyyy-MM-dd" ver="2"/>
+				<designed target="Min" value="116444736000000000" ver="2"/>
+				<designed target="Max" value="116444736000000000" ver="2"/>
+				<designed target="AxisName" value="Время" ver="2"/>
+				<designed target="AxisNamePos" value="0" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="Font" value="" ver="2"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="OnClickValue">
+					<body kind="javascript">
+						<![CDATA[if(private.Reper_add)
+{
+switch (private.value_of_lines)
+{
+case 0:
+Main_Charts.Chart_1.ControlLine_1.Visible=true;
+Main_Charts.Chart_1.ControlLine_1.Value = clickValue;
+private.value_of_lines+=1;
+break;
+case 1:
+Main_Charts.Chart_1.ControlLine_2.Visible=true;
+Main_Charts.Chart_1.ControlLine_2.Value = clickValue;
+private.value_of_lines+=1;
+break;
+case 2:
+Main_Charts.Chart_1.ControlLine_3.Visible=true;
+Main_Charts.Chart_1.ControlLine_3.Value = clickValue;
+private.value_of_lines+=1;
+break;
+case 3:
+Main_Charts.Chart_1.ControlLine_4.Visible=true;
+Main_Charts.Chart_1.ControlLine_4.Value = clickValue;
+private.value_of_lines+=1;
+break;
+case 4:
+Main_Charts.Chart_1.ControlLine_5.Visible=true;
+Main_Charts.Chart_1.ControlLine_5.Value = clickValue;
+private.value_of_lines+=1;
+break;
+case 5:
+Main_Charts.Chart_1.ControlLine_6.Visible=true;
+Main_Charts.Chart_1.ControlLine_6.Value = clickValue;
+private.value_of_lines+=1;
+break;
+case 6:
+Main_Charts.Chart_1.ControlLine_7.Visible=true;
+Main_Charts.Chart_1.ControlLine_7.Value = clickValue;
+private.value_of_lines+=1;
+break;
+case 7:
+Main_Charts.Chart_1.ControlLine_8.Visible=true;
+Main_Charts.Chart_1.ControlLine_8.Value = clickValue;
+private.value_of_lines+=1;
+break;
+case 8:
+Main_Charts.Chart_1.ControlLine_9.Visible=true;
+Main_Charts.Chart_1.ControlLine_9.Value = clickValue;
+private.value_of_lines+=1;
+break;
+case 9:
+Main_Charts.Chart_1.ControlLine_10.Visible=true;
+Main_Charts.Chart_1.ControlLine_10.Value = clickValue;
+private.value_of_lines+=1;
+break;
+}
+}
+
+
+]]>
+					</body>
+				</do-on>
+			</object>
+			<object access-modifier="private" name="Axis_2" display-name="Axis_2" uuid="2d38662e-dd54-4d61-9f9f-b60391cf03c4" base-type="Axis" base-type-id="790efceb-e3a3-4c3f-b766-9557ba52a4d3" ver="2">
+				<designed target="Color" value="4286611584" ver="2"/>
+				<designed target="Type" value="2" ver="2"/>
+				<designed target="Align" value="1" ver="2"/>
+				<designed target="DataType" value="0" ver="2"/>
+				<designed target="Ticks" value="1" ver="2"/>
+				<designed target="Scale" value="2" ver="2"/>
+				<designed target="ScaleLog" value="false" ver="2"/>
+				<designed target="Unit" value="" ver="2"/>
+				<designed target="UnitPos" value="1" ver="2"/>
+				<designed target="Format" value="%.4g" ver="2"/>
+				<designed target="FormatT" value="hh:mm:ss.zzz
+yyyy-MM-dd" ver="2"/>
+				<designed target="Min" value="0" ver="2"/>
+				<designed target="Max" value="0" ver="2"/>
+				<designed target="AxisName" value="Значение" ver="2"/>
+				<designed target="AxisNamePos" value="0" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="Font" value="" ver="2"/>
+				<init target="Max" ver="2" value="500000000"/>
+			</object>
+			<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="90e29911-e150-4faf-ac2e-d6d9514e688b" base-type="Line" base-type-id="3337f550-4fea-4eff-8ef4-2e7b87f33711" ver="2">
+				<designed target="Color" value="0xff0000ff" ver="2"/>
+				<designed target="Title" value="" ver="2"/>
+				<designed target="Unit" value="" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="PointSize" value="3" ver="2"/>
+				<designed target="LineBrushStyle" value="1" ver="2"/>
+				<designed target="BrushOpacity" value="1" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="zOrder" value="100" ver="2"/>
+				<designed target="drawingType" value="0" ver="2"/>
+				<designed target="ColumnNumberTime" value="2" ver="2"/>
+				<designed target="ColumnNumberValue" value="0" ver="2"/>
+				<designed target="ShowActiveControllineLabels" value="true" ver="2"/>
+				<init target="AxisX" ver="2" ref="Axis_1"/>
+				<init target="AxisY" ver="2" ref="Axis_2"/>
+				<init target="DataSource" ver="2" ref="DataSource_1"/>
+			</object>
+			<object access-modifier="private" name="Line_2" display-name="Line_2" uuid="f2212a06-8400-416d-8ab0-ac1079f7f746" base-type="Line" base-type-id="3337f550-4fea-4eff-8ef4-2e7b87f33711" ver="2">
+				<designed target="Color" value="0xffff0000" ver="2"/>
+				<designed target="Title" value="" ver="2"/>
+				<designed target="Unit" value="" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="PointSize" value="3" ver="2"/>
+				<designed target="LineBrushStyle" value="1" ver="2"/>
+				<designed target="BrushOpacity" value="1" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="zOrder" value="100" ver="2"/>
+				<designed target="drawingType" value="0" ver="2"/>
+				<designed target="ColumnNumberTime" value="2" ver="2"/>
+				<designed target="ColumnNumberValue" value="0" ver="2"/>
+				<designed target="ShowActiveControllineLabels" value="true" ver="2"/>
+				<init target="AxisX" ver="2" ref="Axis_1"/>
+				<init target="AxisY" ver="2" ref="Axis_2"/>
+				<init target="DataSource" ver="2" ref="DataSource_2"/>
+			</object>
+			<object access-modifier="private" name="Line_3" display-name="Line_3" uuid="f1d79118-f7c8-4787-9667-10c4b99dae78" base-type="Line" base-type-id="3337f550-4fea-4eff-8ef4-2e7b87f33711" ver="2">
+				<designed target="Color" value="0xff550000" ver="2"/>
+				<designed target="Title" value="" ver="2"/>
+				<designed target="Unit" value="" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="PointSize" value="3" ver="2"/>
+				<designed target="LineBrushStyle" value="1" ver="2"/>
+				<designed target="BrushOpacity" value="1" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="zOrder" value="100" ver="2"/>
+				<designed target="drawingType" value="0" ver="2"/>
+				<designed target="ColumnNumberTime" value="2" ver="2"/>
+				<designed target="ColumnNumberValue" value="0" ver="2"/>
+				<designed target="ShowActiveControllineLabels" value="true" ver="2"/>
+				<init target="AxisX" ver="2" ref="Axis_1"/>
+				<init target="AxisY" ver="2" ref="Axis_2"/>
+				<init target="DataSource" ver="2" ref="DataSource_3"/>
+			</object>
+			<object access-modifier="private" name="Line_4" display-name="Line_4" uuid="26e9f34b-f8d5-4ea2-b0e2-09ca86729759" base-type="Line" base-type-id="3337f550-4fea-4eff-8ef4-2e7b87f33711" ver="2">
+				<designed target="Color" value="0xff55007f" ver="2"/>
+				<designed target="Title" value="" ver="2"/>
+				<designed target="Unit" value="" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="PointSize" value="3" ver="2"/>
+				<designed target="LineBrushStyle" value="1" ver="2"/>
+				<designed target="BrushOpacity" value="1" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="zOrder" value="100" ver="2"/>
+				<designed target="drawingType" value="0" ver="2"/>
+				<designed target="ColumnNumberTime" value="2" ver="2"/>
+				<designed target="ColumnNumberValue" value="0" ver="2"/>
+				<designed target="ShowActiveControllineLabels" value="true" ver="2"/>
+				<init target="AxisX" ver="2" ref="Axis_1"/>
+				<init target="AxisY" ver="2" ref="Axis_2"/>
+				<init target="DataSource" ver="2" ref="DataSource_4"/>
+			</object>
+			<object access-modifier="private" name="Line_5" display-name="Line_5" uuid="aa16bb66-fc44-4c8e-81bb-bdfa57e7cdc0" base-type="Line" base-type-id="3337f550-4fea-4eff-8ef4-2e7b87f33711" ver="2">
+				<designed target="Color" value="0xffffaaff" ver="2"/>
+				<designed target="Title" value="" ver="2"/>
+				<designed target="Unit" value="" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="PointSize" value="3" ver="2"/>
+				<designed target="LineBrushStyle" value="1" ver="2"/>
+				<designed target="BrushOpacity" value="1" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="zOrder" value="100" ver="2"/>
+				<designed target="drawingType" value="0" ver="2"/>
+				<designed target="ColumnNumberTime" value="2" ver="2"/>
+				<designed target="ColumnNumberValue" value="0" ver="2"/>
+				<designed target="ShowActiveControllineLabels" value="true" ver="2"/>
+				<init target="AxisX" ver="2" ref="Axis_1"/>
+				<init target="AxisY" ver="2" ref="Axis_2"/>
+				<init target="DataSource" ver="2" ref="DataSource_5"/>
+			</object>
+			<object access-modifier="private" name="Line_6" display-name="Line_6" uuid="e72355fe-7e15-4ef0-a006-7603f379c443" base-type="Line" base-type-id="3337f550-4fea-4eff-8ef4-2e7b87f33711" ver="2">
+				<designed target="Color" value="0xff00ff00" ver="2"/>
+				<designed target="Title" value="" ver="2"/>
+				<designed target="Unit" value="" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="PointSize" value="3" ver="2"/>
+				<designed target="LineBrushStyle" value="1" ver="2"/>
+				<designed target="BrushOpacity" value="1" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="zOrder" value="100" ver="2"/>
+				<designed target="drawingType" value="0" ver="2"/>
+				<designed target="ColumnNumberTime" value="2" ver="2"/>
+				<designed target="ColumnNumberValue" value="0" ver="2"/>
+				<designed target="ShowActiveControllineLabels" value="true" ver="2"/>
+				<init target="AxisX" ver="2" ref="Axis_1"/>
+				<init target="AxisY" ver="2" ref="Axis_2"/>
+				<init target="DataSource" ver="2" ref="DataSource_6"/>
+			</object>
+			<object access-modifier="private" name="Line_7" display-name="Line_7" uuid="ab406c38-ce26-4660-a954-1ff798821d1a" base-type="Line" base-type-id="3337f550-4fea-4eff-8ef4-2e7b87f33711" ver="2">
+				<designed target="Color" value="0xffaaaa7f" ver="2"/>
+				<designed target="Title" value="" ver="2"/>
+				<designed target="Unit" value="" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="PointSize" value="3" ver="2"/>
+				<designed target="LineBrushStyle" value="1" ver="2"/>
+				<designed target="BrushOpacity" value="1" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="zOrder" value="100" ver="2"/>
+				<designed target="drawingType" value="0" ver="2"/>
+				<designed target="ColumnNumberTime" value="2" ver="2"/>
+				<designed target="ColumnNumberValue" value="0" ver="2"/>
+				<designed target="ShowActiveControllineLabels" value="true" ver="2"/>
+				<init target="AxisX" ver="2" ref="Axis_1"/>
+				<init target="AxisY" ver="2" ref="Axis_2"/>
+				<init target="DataSource" ver="2" ref="DataSource_7"/>
+			</object>
+			<object access-modifier="private" name="Line_8" display-name="Line_8" uuid="42657be6-648d-488f-a470-2dc95fedba09" base-type="Line" base-type-id="3337f550-4fea-4eff-8ef4-2e7b87f33711" ver="2">
+				<designed target="Color" value="0xffff55ff" ver="2"/>
+				<designed target="Title" value="" ver="2"/>
+				<designed target="Unit" value="" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="PointSize" value="3" ver="2"/>
+				<designed target="LineBrushStyle" value="1" ver="2"/>
+				<designed target="BrushOpacity" value="1" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="zOrder" value="100" ver="2"/>
+				<designed target="drawingType" value="0" ver="2"/>
+				<designed target="ColumnNumberTime" value="2" ver="2"/>
+				<designed target="ColumnNumberValue" value="0" ver="2"/>
+				<designed target="ShowActiveControllineLabels" value="true" ver="2"/>
+				<init target="AxisX" ver="2" ref="Axis_1"/>
+				<init target="AxisY" ver="2" ref="Axis_2"/>
+				<init target="DataSource" ver="2" ref="DataSource_8"/>
+			</object>
+			<object access-modifier="private" name="Line_9" display-name="Line_9" uuid="890241cc-992b-4193-895a-4941103efcf4" base-type="Line" base-type-id="3337f550-4fea-4eff-8ef4-2e7b87f33711" ver="2">
+				<designed target="Color" value="0xff005500" ver="2"/>
+				<designed target="Title" value="" ver="2"/>
+				<designed target="Unit" value="" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="PointSize" value="3" ver="2"/>
+				<designed target="LineBrushStyle" value="1" ver="2"/>
+				<designed target="BrushOpacity" value="1" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="zOrder" value="100" ver="2"/>
+				<designed target="drawingType" value="0" ver="2"/>
+				<designed target="ColumnNumberTime" value="2" ver="2"/>
+				<designed target="ColumnNumberValue" value="0" ver="2"/>
+				<designed target="ShowActiveControllineLabels" value="true" ver="2"/>
+				<init target="AxisX" ver="2" ref="Axis_1"/>
+				<init target="AxisY" ver="2" ref="Axis_2"/>
+				<init target="DataSource" ver="2" ref="DataSource_9"/>
+			</object>
+			<object access-modifier="private" name="Line_10" display-name="Line_10" uuid="3377e26c-41bc-44bf-b7f3-819ff58f54db" base-type="Line" base-type-id="3337f550-4fea-4eff-8ef4-2e7b87f33711" ver="2">
+				<designed target="Color" value="0xffffff7f" ver="2"/>
+				<designed target="Title" value="" ver="2"/>
+				<designed target="Unit" value="" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="PointSize" value="3" ver="2"/>
+				<designed target="LineBrushStyle" value="1" ver="2"/>
+				<designed target="BrushOpacity" value="1" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="zOrder" value="100" ver="2"/>
+				<designed target="drawingType" value="0" ver="2"/>
+				<designed target="ColumnNumberTime" value="2" ver="2"/>
+				<designed target="ColumnNumberValue" value="0" ver="2"/>
+				<designed target="ShowActiveControllineLabels" value="true" ver="2"/>
+				<init target="AxisX" ver="2" ref="Axis_1"/>
+				<init target="AxisY" ver="2" ref="Axis_2"/>
+				<init target="DataSource" ver="2" ref="DataSource_10"/>
+			</object>
+			<object access-modifier="private" name="DataSource_1" display-name="DataSource_1" uuid="07eb4cf4-9756-4bf2-8b68-8938ca6a3ce1" base-type="DataSource" base-type-id="22b9b931-37d6-455b-b200-df50e9527bc8" ver="2">
+				<designed target="LengthReserved" value="550000" ver="2"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ReadFinished">
+					<body kind="om">
+						<![CDATA[if((Main_Panel.private.Oper_on==true)&&(Item_1.AdviseState==2))
+{
+if(!Main_Panel.private.FinishRead_1)
+{ 
+
+i:uint4 = 1;
+while(i < 10000000){ i = i+1;}
+	Main_Charts.Chart_1.DataSource_1.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_1.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_1.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_1.ReadRowSetAsync( );
+	Main_Panel.private.FinishRead_1 = true;
+
+} 
+}]]>
+					</body>
+				</do-on>
+				<object access-modifier="private" name="ApItemValueQuery_1" display-name="ApItemValueQuery_1" uuid="172f64d1-96e6-446b-aa47-6e07840c91cf" base-type="ApItemValueQuery" base-type-id="66ce99c8-b124-42cf-b541-4299b9f17462" ver="2">
+					<designed target="Mode" value="1" ver="2"/>
+					<designed target="HistoricalRangeStart" value="0" ver="2"/>
+					<designed target="HistoricalRangeEnd" value="0" ver="2"/>
+					<designed target="Active" value="true" ver="2"/>
+					<designed target="OperativeInterval" value="50000" ver="2"/>
+					<designed target="OperativeBufferSize" value="0" ver="2"/>
+					<init target="Item" ver="2" ref="Item_1"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="DataSource_2" display-name="DataSource_2" uuid="d4467909-7e67-4f8a-b14f-e18c727f8e1c" base-type="DataSource" base-type-id="22b9b931-37d6-455b-b200-df50e9527bc8" ver="2">
+				<designed target="LengthReserved" value="550000" ver="2"/>
+				<object access-modifier="private" name="ApItemValueQuery_1" display-name="ApItemValueQuery_1" uuid="e6182832-316f-466b-92e9-97fb4a8558cb" base-type="ApItemValueQuery" base-type-id="66ce99c8-b124-42cf-b541-4299b9f17462" ver="2">
+					<designed target="Mode" value="1" ver="2"/>
+					<designed target="HistoricalRangeStart" value="0" ver="2"/>
+					<designed target="HistoricalRangeEnd" value="0" ver="2"/>
+					<designed target="Active" value="true" ver="2"/>
+					<designed target="OperativeInterval" value="50000" ver="2"/>
+					<designed target="OperativeBufferSize" value="0" ver="2"/>
+					<init target="Item" ver="2" ref="Item_2"/>
+				</object>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ReadFinished">
+					<body kind="om">
+						<![CDATA[if((Main_Panel.private.Oper_on==true)&&(Item_2.AdviseState==2))
+{
+	if(!Main_Panel.private.FinishRead_2){ 
+
+
+i:uint4 = 1;
+while(i < 10000000){ i = i+1;}
+	Main_Charts.Chart_1.DataSource_2.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_2.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_2.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_2.ReadRowSetAsync( );	
+	Main_Panel.private.FinishRead_2 = true;
+} 
+}]]>
+					</body>
+				</do-on>
+			</object>
+			<object access-modifier="private" name="DataSource_3" display-name="DataSource_3" uuid="bd56df68-de54-4350-b3c7-7dda42c107cd" base-type="DataSource" base-type-id="22b9b931-37d6-455b-b200-df50e9527bc8" ver="2">
+				<designed target="LengthReserved" value="550000" ver="2"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ReadFinished">
+					<body kind="om">
+						<![CDATA[if((Main_Panel.private.Oper_on==true)&&(Item_3.AdviseState==2))
+{
+	if(!Main_Panel.private.FinishRead_3){ 
+
+
+i:uint4 = 1;
+while(i < 10000000){ i = i+1;}
+
+	Main_Charts.Chart_1.DataSource_3.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_3.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_3.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_3.ReadRowSetAsync( );
+	
+	Main_Panel.private.FinishRead_3 = true;
+} 
+}]]>
+					</body>
+				</do-on>
+				<object access-modifier="private" name="ApItemValueQuery_1" display-name="ApItemValueQuery_1" uuid="8102074b-e461-4ed1-a66c-c30dff0c58c2" base-type="ApItemValueQuery" base-type-id="66ce99c8-b124-42cf-b541-4299b9f17462" ver="2">
+					<designed target="Mode" value="1" ver="2"/>
+					<designed target="HistoricalRangeStart" value="0" ver="2"/>
+					<designed target="HistoricalRangeEnd" value="0" ver="2"/>
+					<designed target="Active" value="true" ver="2"/>
+					<designed target="OperativeInterval" value="50000" ver="2"/>
+					<designed target="OperativeBufferSize" value="0" ver="2"/>
+					<init target="Item" ver="2" ref="Item_3"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="DataSource_4" display-name="DataSource_4" uuid="5519b410-4904-4f0d-a0c9-1be7fd230802" base-type="DataSource" base-type-id="22b9b931-37d6-455b-b200-df50e9527bc8" ver="2">
+				<designed target="LengthReserved" value="550000" ver="2"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ReadFinished">
+					<body kind="om">
+						<![CDATA[if((Main_Panel.private.Oper_on==true)&&(Item_4.AdviseState==2))
+{
+	if(!Main_Panel.private.FinishRead_4){ 
+
+
+i:uint4 = 1;
+while(i < 10000000){ i = i+1;}
+
+	Main_Charts.Chart_1.DataSource_4.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_4.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_4.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_4.ReadRowSetAsync( );
+	
+	Main_Panel.private.FinishRead_4 = true;
+} 
+}]]>
+					</body>
+				</do-on>
+				<object access-modifier="private" name="ApItemValueQuery_1" display-name="ApItemValueQuery_1" uuid="720a6f9c-010d-454f-b296-b6dfc0977097" base-type="ApItemValueQuery" base-type-id="66ce99c8-b124-42cf-b541-4299b9f17462" ver="2">
+					<designed target="Mode" value="1" ver="2"/>
+					<designed target="HistoricalRangeStart" value="0" ver="2"/>
+					<designed target="HistoricalRangeEnd" value="0" ver="2"/>
+					<designed target="Active" value="true" ver="2"/>
+					<designed target="OperativeInterval" value="50000" ver="2"/>
+					<designed target="OperativeBufferSize" value="0" ver="2"/>
+					<init target="Item" ver="2" ref="Item_4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="DataSource_5" display-name="DataSource_5" uuid="7d75a2bd-064a-42bc-8a61-57a2488e3fd4" base-type="DataSource" base-type-id="22b9b931-37d6-455b-b200-df50e9527bc8" ver="2">
+				<designed target="LengthReserved" value="550000" ver="2"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ReadFinished">
+					<body kind="om">
+						<![CDATA[if((Main_Panel.private.Oper_on==true)&&(Item_5.AdviseState==2))
+{
+	if(!Main_Panel.private.FinishRead_5){ 
+
+i:uint4 = 1;
+while(i < 10000000){ i = i+1;}
+
+	Main_Charts.Chart_1.DataSource_5.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_5.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_5.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_5.ReadRowSetAsync( );
+	
+	Main_Panel.private.FinishRead_5 = true;
+} 
+}]]>
+					</body>
+				</do-on>
+				<object access-modifier="private" name="ApItemValueQuery_1" display-name="ApItemValueQuery_1" uuid="2dc45040-d545-4959-9c13-3367b053fd32" base-type="ApItemValueQuery" base-type-id="66ce99c8-b124-42cf-b541-4299b9f17462" ver="2">
+					<designed target="Mode" value="1" ver="2"/>
+					<designed target="HistoricalRangeStart" value="0" ver="2"/>
+					<designed target="HistoricalRangeEnd" value="0" ver="2"/>
+					<designed target="Active" value="true" ver="2"/>
+					<designed target="OperativeInterval" value="50000" ver="2"/>
+					<designed target="OperativeBufferSize" value="0" ver="2"/>
+					<init target="Item" ver="2" ref="Item_5"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="DataSource_6" display-name="DataSource_6" uuid="50f5c837-86ec-4a28-bc8c-149a43321beb" base-type="DataSource" base-type-id="22b9b931-37d6-455b-b200-df50e9527bc8" ver="2">
+				<designed target="LengthReserved" value="550000" ver="2"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ReadFinished">
+					<body kind="om">
+						<![CDATA[if((Main_Panel.private.Oper_on==true)&&(Item_6.AdviseState==2))
+{
+	if(!Main_Panel.private.FinishRead_6){ 
+
+
+i:uint4 = 1;
+while(i < 10000000){ i = i+1;}
+
+	Main_Charts.Chart_1.DataSource_6.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_6.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_6.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_6.ReadRowSetAsync( );
+	
+	Main_Panel.private.FinishRead_6 = true;
+} 
+}]]>
+					</body>
+				</do-on>
+				<object access-modifier="private" name="ApItemValueQuery_1" display-name="ApItemValueQuery_1" uuid="b109ce14-f482-4c9c-b74f-4664a936cffe" base-type="ApItemValueQuery" base-type-id="66ce99c8-b124-42cf-b541-4299b9f17462" ver="2">
+					<designed target="Mode" value="1" ver="2"/>
+					<designed target="HistoricalRangeStart" value="0" ver="2"/>
+					<designed target="HistoricalRangeEnd" value="0" ver="2"/>
+					<designed target="Active" value="true" ver="2"/>
+					<designed target="OperativeInterval" value="50000" ver="2"/>
+					<designed target="OperativeBufferSize" value="0" ver="2"/>
+					<init target="Item" ver="2" ref="Item_6"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="DataSource_7" display-name="DataSource_7" uuid="0e90abc1-1363-461e-a157-b02b3a367c4e" base-type="DataSource" base-type-id="22b9b931-37d6-455b-b200-df50e9527bc8" ver="2">
+				<designed target="LengthReserved" value="550000" ver="2"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ReadFinished">
+					<body kind="om">
+						<![CDATA[if((Main_Panel.private.Oper_on==true)&&(Item_7.AdviseState==2))
+{
+	if(!Main_Panel.private.FinishRead_7){ 
+
+
+i:uint4 = 1;
+while(i < 10000000){ i = i+1;}
+
+	Main_Charts.Chart_1.DataSource_7.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_7.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_7.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_7.ReadRowSetAsync( );
+	
+	Main_Panel.private.FinishRead_7 = true;
+} 
+}]]>
+					</body>
+				</do-on>
+				<object access-modifier="private" name="ApItemValueQuery_1" display-name="ApItemValueQuery_1" uuid="ba293025-a8c7-460b-aaaf-153f88234f22" base-type="ApItemValueQuery" base-type-id="66ce99c8-b124-42cf-b541-4299b9f17462" ver="2">
+					<designed target="Mode" value="1" ver="2"/>
+					<designed target="HistoricalRangeStart" value="0" ver="2"/>
+					<designed target="HistoricalRangeEnd" value="0" ver="2"/>
+					<designed target="Active" value="true" ver="2"/>
+					<designed target="OperativeInterval" value="50000" ver="2"/>
+					<designed target="OperativeBufferSize" value="0" ver="2"/>
+					<init target="Item" ver="2" ref="Item_8"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="DataSource_8" display-name="DataSource_8" uuid="ad5d947a-5abf-47c5-81ad-95f47bceae30" base-type="DataSource" base-type-id="22b9b931-37d6-455b-b200-df50e9527bc8" ver="2">
+				<designed target="LengthReserved" value="550000" ver="2"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ReadFinished">
+					<body kind="om">
+						<![CDATA[if((Main_Panel.private.Oper_on==true)&&(Item_8.AdviseState==2))
+{
+	if(!Main_Panel.private.FinishRead_8){ 
+
+
+i:uint4 = 1;
+while(i < 10000000){ i = i+1;}
+
+	Main_Charts.Chart_1.DataSource_8.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_8.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_8.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_8.ReadRowSetAsync( );
+	
+	Main_Panel.private.FinishRead_8 = true;
+}
+} ]]>
+					</body>
+				</do-on>
+				<object access-modifier="private" name="ApItemValueQuery_1" display-name="ApItemValueQuery_1" uuid="9f6a86a6-4f4f-488b-9345-fef1feed7d8a" base-type="ApItemValueQuery" base-type-id="66ce99c8-b124-42cf-b541-4299b9f17462" ver="2">
+					<designed target="Mode" value="1" ver="2"/>
+					<designed target="HistoricalRangeStart" value="0" ver="2"/>
+					<designed target="HistoricalRangeEnd" value="0" ver="2"/>
+					<designed target="Active" value="true" ver="2"/>
+					<designed target="OperativeInterval" value="50000" ver="2"/>
+					<designed target="OperativeBufferSize" value="0" ver="2"/>
+					<init target="Item" ver="2" ref="Item_9"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="DataSource_9" display-name="DataSource_9" uuid="10b1124a-8b0c-4297-87d7-196c4f800faa" base-type="DataSource" base-type-id="22b9b931-37d6-455b-b200-df50e9527bc8" ver="2">
+				<designed target="LengthReserved" value="550000" ver="2"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ReadFinished">
+					<body kind="om">
+						<![CDATA[if((Main_Panel.private.Oper_on==true)&&(Item_9.AdviseState==2))
+{
+	if(!Main_Panel.private.FinishRead_9){ 
+
+
+i:uint4 = 1;
+while(i < 10000000){ i = i+1;}
+
+	Main_Charts.Chart_1.DataSource_9.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_9.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_9.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_9.ReadRowSetAsync( );
+	
+	Main_Panel.private.FinishRead_9 = true;
+} 
+}]]>
+					</body>
+				</do-on>
+				<object access-modifier="private" name="ApItemValueQuery_1" display-name="ApItemValueQuery_1" uuid="81f08b07-a298-4aa9-a3b0-4bf2d368e382" base-type="ApItemValueQuery" base-type-id="66ce99c8-b124-42cf-b541-4299b9f17462" ver="2">
+					<designed target="Mode" value="1" ver="2"/>
+					<designed target="HistoricalRangeStart" value="0" ver="2"/>
+					<designed target="HistoricalRangeEnd" value="0" ver="2"/>
+					<designed target="Active" value="true" ver="2"/>
+					<designed target="OperativeInterval" value="50000" ver="2"/>
+					<designed target="OperativeBufferSize" value="0" ver="2"/>
+					<init target="Item" ver="2" ref="Item_9"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="DataSource_10" display-name="DataSource_10" uuid="d2c4c9ac-c856-4823-9b4a-ad331ba65cdb" base-type="DataSource" base-type-id="22b9b931-37d6-455b-b200-df50e9527bc8" ver="2">
+				<designed target="LengthReserved" value="550000" ver="2"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ReadFinished">
+					<body kind="om">
+						<![CDATA[if((Main_Panel.private.Oper_on==true)&&(Item_10.AdviseState==2))
+{
+	if(!Main_Panel.private.FinishRead_10){ 
+
+
+i:uint4 = 1;
+while(i < 10000000){ i = i+1;}
+
+	Main_Charts.Chart_1.DataSource_10.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_10.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_10.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_10.ReadRowSetAsync( );
+	
+	Main_Panel.private.FinishRead_10 = true;
+} 
+}]]>
+					</body>
+				</do-on>
+				<object access-modifier="private" name="ApItemValueQuery_1" display-name="ApItemValueQuery_1" uuid="7b51602c-30a6-4255-93e3-ce54cbaea7f8" base-type="ApItemValueQuery" base-type-id="66ce99c8-b124-42cf-b541-4299b9f17462" ver="2">
+					<designed target="Mode" value="1" ver="2"/>
+					<designed target="HistoricalRangeStart" value="0" ver="2"/>
+					<designed target="HistoricalRangeEnd" value="0" ver="2"/>
+					<designed target="Active" value="true" ver="2"/>
+					<designed target="OperativeInterval" value="50000" ver="2"/>
+					<designed target="OperativeBufferSize" value="0" ver="2"/>
+					<init target="Item" ver="2" ref="Item_10"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="ControlLine_1" display-name="ControlLine_1" uuid="60b1a123-9ba4-495c-87b0-72710235ad74" base-type="ControlLine" base-type-id="2e433efa-cce5-4c91-a032-e0721a75e119" ver="2">
+				<designed target="Color" value="4286611584" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="Value" value="0" ver="2"/>
+				<designed target="BrushStyle" value="2" ver="2"/>
+				<designed target="BrushOpacity" value="0.5" ver="2"/>
+				<designed target="ShowValues" value="true" ver="2"/>
+				<designed target="BgValuesColor" value="4292006610" ver="2"/>
+				<designed target="BgValuesOpacity" value="0.5" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="Format" value="%.4g" ver="2"/>
+				<designed target="Font" value="" ver="2"/>
+				<init target="Axis" ver="2" ref="Main_Charts.Chart_1.Axis_1"/>
+			</object>
+			<object access-modifier="private" name="ControlLine_2" display-name="ControlLine_2" uuid="52861244-83e3-40b9-8c6d-21662239c2a3" base-type="ControlLine" base-type-id="2e433efa-cce5-4c91-a032-e0721a75e119" ver="2">
+				<designed target="Color" value="4286611584" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="Value" value="0" ver="2"/>
+				<designed target="BrushStyle" value="2" ver="2"/>
+				<designed target="BrushOpacity" value="0.5" ver="2"/>
+				<designed target="ShowValues" value="true" ver="2"/>
+				<designed target="BgValuesColor" value="4292006610" ver="2"/>
+				<designed target="BgValuesOpacity" value="0.5" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="Format" value="%.4g" ver="2"/>
+				<designed target="Font" value="" ver="2"/>
+				<init target="Axis" ver="2" ref="Main_Charts.Chart_1.Axis_1"/>
+			</object>
+			<object access-modifier="private" name="ControlLine_3" display-name="ControlLine_3" uuid="d58dea42-f384-48de-b8bd-85cedd6191cf" base-type="ControlLine" base-type-id="2e433efa-cce5-4c91-a032-e0721a75e119" ver="2">
+				<designed target="Color" value="4286611584" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="Value" value="0" ver="2"/>
+				<designed target="BrushStyle" value="2" ver="2"/>
+				<designed target="BrushOpacity" value="0.5" ver="2"/>
+				<designed target="ShowValues" value="true" ver="2"/>
+				<designed target="BgValuesColor" value="4292006610" ver="2"/>
+				<designed target="BgValuesOpacity" value="0.5" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="Format" value="%.4g" ver="2"/>
+				<designed target="Font" value="" ver="2"/>
+				<init target="Axis" ver="2" ref="Main_Charts.Chart_1.Axis_1"/>
+			</object>
+			<object access-modifier="private" name="ControlLine_4" display-name="ControlLine_4" uuid="7627356a-199f-4159-a1c5-7b8d68b607ed" base-type="ControlLine" base-type-id="2e433efa-cce5-4c91-a032-e0721a75e119" ver="2">
+				<designed target="Color" value="4286611584" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="Value" value="0" ver="2"/>
+				<designed target="BrushStyle" value="2" ver="2"/>
+				<designed target="BrushOpacity" value="0.5" ver="2"/>
+				<designed target="ShowValues" value="true" ver="2"/>
+				<designed target="BgValuesColor" value="4292006610" ver="2"/>
+				<designed target="BgValuesOpacity" value="0.5" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="Format" value="%.4g" ver="2"/>
+				<designed target="Font" value="" ver="2"/>
+				<init target="Axis" ver="2" ref="Main_Charts.Chart_1.Axis_1"/>
+			</object>
+			<object access-modifier="private" name="ControlLine_5" display-name="ControlLine_5" uuid="9a6ab665-74fd-47c8-9c0e-947565041a13" base-type="ControlLine" base-type-id="2e433efa-cce5-4c91-a032-e0721a75e119" ver="2">
+				<designed target="Color" value="4286611584" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="Value" value="0" ver="2"/>
+				<designed target="BrushStyle" value="2" ver="2"/>
+				<designed target="BrushOpacity" value="0.5" ver="2"/>
+				<designed target="ShowValues" value="true" ver="2"/>
+				<designed target="BgValuesColor" value="4292006610" ver="2"/>
+				<designed target="BgValuesOpacity" value="0.5" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="Format" value="%.4g" ver="2"/>
+				<designed target="Font" value="" ver="2"/>
+				<init target="Axis" ver="2" ref="Main_Charts.Chart_1.Axis_1"/>
+			</object>
+			<object access-modifier="private" name="ControlLine_6" display-name="ControlLine_6" uuid="41281b43-d0ea-4997-bb56-9ab49e8e7ea5" base-type="ControlLine" base-type-id="2e433efa-cce5-4c91-a032-e0721a75e119" ver="2">
+				<designed target="Color" value="4286611584" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="Value" value="0" ver="2"/>
+				<designed target="BrushStyle" value="2" ver="2"/>
+				<designed target="BrushOpacity" value="0.5" ver="2"/>
+				<designed target="ShowValues" value="true" ver="2"/>
+				<designed target="BgValuesColor" value="4292006610" ver="2"/>
+				<designed target="BgValuesOpacity" value="0.5" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="Format" value="%.4g" ver="2"/>
+				<designed target="Font" value="" ver="2"/>
+				<init target="Axis" ver="2" ref="Main_Charts.Chart_1.Axis_1"/>
+			</object>
+			<object access-modifier="private" name="ControlLine_7" display-name="ControlLine_7" uuid="75117857-c29b-492f-85be-10c1c933b38b" base-type="ControlLine" base-type-id="2e433efa-cce5-4c91-a032-e0721a75e119" ver="2">
+				<designed target="Color" value="4286611584" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="Value" value="0" ver="2"/>
+				<designed target="BrushStyle" value="2" ver="2"/>
+				<designed target="BrushOpacity" value="0.5" ver="2"/>
+				<designed target="ShowValues" value="true" ver="2"/>
+				<designed target="BgValuesColor" value="4292006610" ver="2"/>
+				<designed target="BgValuesOpacity" value="0.5" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="Format" value="%.4g" ver="2"/>
+				<designed target="Font" value="" ver="2"/>
+				<init target="Axis" ver="2" ref="Main_Charts.Chart_1.Axis_1"/>
+			</object>
+			<object access-modifier="private" name="ControlLine_8" display-name="ControlLine_8" uuid="31ad9714-6dae-454e-8f3d-547b7a863c6d" base-type="ControlLine" base-type-id="2e433efa-cce5-4c91-a032-e0721a75e119" ver="2">
+				<designed target="Color" value="4286611584" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="Value" value="0" ver="2"/>
+				<designed target="BrushStyle" value="2" ver="2"/>
+				<designed target="BrushOpacity" value="0.5" ver="2"/>
+				<designed target="ShowValues" value="true" ver="2"/>
+				<designed target="BgValuesColor" value="4292006610" ver="2"/>
+				<designed target="BgValuesOpacity" value="0.5" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="Format" value="%.4g" ver="2"/>
+				<designed target="Font" value="" ver="2"/>
+				<init target="Axis" ver="2" ref="Main_Charts.Chart_1.Axis_1"/>
+			</object>
+			<object access-modifier="private" name="ControlLine_9" display-name="ControlLine_9" uuid="775e1318-e9ec-41bc-872b-efbc7cba42ec" base-type="ControlLine" base-type-id="2e433efa-cce5-4c91-a032-e0721a75e119" ver="2">
+				<designed target="Color" value="4286611584" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="Value" value="0" ver="2"/>
+				<designed target="BrushStyle" value="2" ver="2"/>
+				<designed target="BrushOpacity" value="0.5" ver="2"/>
+				<designed target="ShowValues" value="true" ver="2"/>
+				<designed target="BgValuesColor" value="4292006610" ver="2"/>
+				<designed target="BgValuesOpacity" value="0.5" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="Format" value="%.4g" ver="2"/>
+				<designed target="Font" value="" ver="2"/>
+				<init target="Axis" ver="2" ref="Main_Charts.Chart_1.Axis_1"/>
+			</object>
+			<object access-modifier="private" name="ControlLine_10" display-name="ControlLine_10" uuid="a954fe41-b3bd-49a2-8d87-2fdd7b33bf83" base-type="ControlLine" base-type-id="2e433efa-cce5-4c91-a032-e0721a75e119" ver="2">
+				<designed target="Color" value="4286611584" ver="2"/>
+				<designed target="LineWidth" value="1" ver="2"/>
+				<designed target="Value" value="0" ver="2"/>
+				<designed target="BrushStyle" value="2" ver="2"/>
+				<designed target="BrushOpacity" value="0.5" ver="2"/>
+				<designed target="ShowValues" value="true" ver="2"/>
+				<designed target="BgValuesColor" value="4292006610" ver="2"/>
+				<designed target="BgValuesOpacity" value="0.5" ver="2"/>
+				<designed target="Visible" value="true" ver="2"/>
+				<designed target="Format" value="%.4g" ver="2"/>
+				<designed target="Font" value="" ver="2"/>
+				<init target="Axis" ver="2" ref="Main_Charts.Chart_1.Axis_1"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="LayoutWeight_1" display-name="LayoutWeight_1" uuid="c9496f20-6cae-430b-9763-a3043be1f108" base-type="LayoutWeight" base-type-id="8f3d975c-9645-4288-9406-a8dda0527008" ver="2">
+			<designed target="Weight" value="1" ver="2"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Timer_start" display-name="Timer_start" uuid="0c70b5e3-99d3-4b22-bcf3-fcd0671bb247" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="2">
+		<designed target="Period" value="1000" ver="2"/>
+		<designed target="Active" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="OnTimer">
+			<body kind="om">
+				<![CDATA[if(Main_Panel.private.show_menu)
+{
+Main_Panel.LayoutWeight_1=0;
+}
+
+//описание и определение переменных
+t1:uint8 = DateTime.UtcNow() - 6000000000;//начало отображения оперативного режима - 10 миунт 
+t2:uint8 = DateTime.UtcNow();
+Main_Panel.private.Time1 = t1; 
+Main_Panel.private.f_start_time = t1;
+Main_Panel.private.Time2 = t2;
+Main_Panel.private.Oper_on = true;
+Main_Panel.private.Hist_on = false;
+Main_Panel.Image_1.PenStyle=1;
+Main_Panel.private.Play=true;
+Main_Panel.private.Reper_add=false;//добавление репера
+Main_Panel.private.value_of_lines=0;// для счета реперных линий
+//
+
+//заполнение комбобокса у исторических данных
+Main_Panel.ComboBox_1.AddItem("Выбор периода");
+Main_Panel.ComboBox_1.AddItem("10 минут");
+Main_Panel.ComboBox_1.AddItem("30 минут");
+Main_Panel.ComboBox_1.AddItem("1 час");
+Main_Panel.ComboBox_1.AddItem("6 часов");
+Main_Panel.ComboBox_1.AddItem("12 часов");
+Main_Panel.ComboBox_1.AddItem("1 сутки");
+//
+
+//отображения линий чартов
+Main_Charts.Chart_1.Line_1.Title=Item_1.Tag; 
+Main_Charts.Chart_1.Line_2.Title=Item_2.Tag;
+Main_Charts.Chart_1.Line_3.Title=Item_3.Tag;
+Main_Charts.Chart_1.Line_4.Title=Item_4.Tag;
+Main_Charts.Chart_1.Line_5.Title=Item_5.Tag;
+Main_Charts.Chart_1.Line_6.Title=Item_6.Tag;
+Main_Charts.Chart_1.Line_7.Title=Item_7.Tag;
+Main_Charts.Chart_1.Line_8.Title=Item_8.Tag;
+Main_Charts.Chart_1.Line_9.Title=Item_9.Tag;
+Main_Charts.Chart_1.Line_10.Title=Item_10.Tag;
+//
+
+//заполнение комбобокса для отображения значения в табличном виде(оставляю только название самого тега) 
+if ((Item_1.Path!="**")&&(Item_1.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_1.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_1.Path);
+temp_path = Str.Remove(Item_1.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_2.Path!="**")&&(Item_2.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_2.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_2.Path);
+temp_path = Str.Remove(Item_2.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_3.Path!="**")&&(Item_3.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_3.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_3.Path);
+temp_path = Str.Remove(Item_3.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_4.Path!="**")&&(Item_4.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_4.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_4.Path);
+temp_path = Str.Remove(Item_4.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_5.Path!="**")&&(Item_5.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_5.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_5.Path);
+temp_path = Str.Remove(Item_5.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_6.Path!="**")&&(Item_6.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_6.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_6.Path);
+temp_path = Str.Remove(Item_6.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_7.Path!="**")&&(Item_7.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_7.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_7.Path);
+temp_path = Str.Remove(Item_7.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_8.Path!="**")&&(Item_8.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_8.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_8.Path);
+temp_path = Str.Remove(Item_8.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_9.Path!="**")&&(Item_9.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_9.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_9.Path);
+temp_path = Str.Remove(Item_9.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_10.Path!="**")&&(Item_10.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_10.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_10.Path);
+temp_path = Str.Remove(Item_10.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+History_mode(t1,t2);//выгрузка данных за 10 минут
+Operative_mode();//переключение в оперативный режим 
+Timer_start.Active=false; // отключение таймера стара формы
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ApSource_1" display-name="ApSource_1" uuid="89ea07ca-eff3-4b92-af5c-fd81a40c14de" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="2">
+		<designed target="Active" value="true" ver="2"/>
+		<init target="Timeout" ver="2" value="1000000"/>
+		<init target="ConnectionEstablishTimeout" ver="2" value="1000000"/>
+		<init target="MaxBufferPoolSize" ver="2" value="1000000"/>
+		<init target="ParentSource" ver="2" ref="int_AP"/>
+	</object>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="75c14620-c8fe-4f07-9141-b0d3b6bac0d1" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="2"/>
+	<object access-modifier="private" name="Item_1" display-name="Item_1" uuid="f29bf862-0d31-4bd3-9801-5e4a989272c5" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="2">
+		<init target="Source" ver="2" ref="ApSource_1"/>
+		<init target="Path" ver="2" value="**"/>
+	</object>
+	<object access-modifier="private" name="Item_2" display-name="Item_2" uuid="cf22285b-db91-4bb1-a7b6-3808869db047" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="2">
+		<init target="Path" ver="2" value="**"/>
+		<init target="Source" ver="2" ref="ApSource_1"/>
+	</object>
+	<object access-modifier="private" name="Item_3" display-name="Item_3" uuid="a8f1fac4-cfd7-46c1-864c-246553371abf" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="2">
+		<init target="Path" ver="2" value="**"/>
+		<init target="Source" ver="2" ref="ApSource_1"/>
+	</object>
+	<object access-modifier="private" name="Item_4" display-name="Item_4" uuid="9df9a007-c5a6-412c-98b3-f1c8b17b02d0" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="2">
+		<init target="Path" ver="2" value="**"/>
+		<init target="Source" ver="2" ref="ApSource_1"/>
+	</object>
+	<object access-modifier="private" name="Item_5" display-name="Item_5" uuid="b4a47526-c3e5-44a5-8a5d-150cceca7c97" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="2">
+		<init target="Path" ver="2" value="**"/>
+		<init target="Source" ver="2" ref="ApSource_1"/>
+	</object>
+	<object access-modifier="private" name="Item_6" display-name="Item_6" uuid="5ff326a6-9f1b-41be-8fef-0cf7c7e22ece" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="2">
+		<init target="Path" ver="2" value="**"/>
+		<init target="Source" ver="2" ref="ApSource_1"/>
+	</object>
+	<object access-modifier="private" name="Item_7" display-name="Item_7" uuid="8ea7ad8a-63a6-4b95-88c1-0ce7ced2d0f8" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="2">
+		<init target="Path" ver="2" value="**"/>
+		<init target="Source" ver="2" ref="ApSource_1"/>
+	</object>
+	<object access-modifier="private" name="Item_8" display-name="Item_8" uuid="c3d691f2-1835-4a60-9f2c-6f9905f30d9f" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="2">
+		<init target="Path" ver="2" value="**"/>
+		<init target="Source" ver="2" ref="ApSource_1"/>
+	</object>
+	<object access-modifier="private" name="Item_9" display-name="Item_9" uuid="1181512a-12c0-4385-8c20-2df4385680a0" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="2">
+		<init target="Path" ver="2" value="**"/>
+		<init target="Source" ver="2" ref="ApSource_1"/>
+	</object>
+	<object access-modifier="private" name="Item_10" display-name="Item_10" uuid="45cdee3d-5f49-4e2b-80d8-3fcff5aef87d" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="2">
+		<init target="Path" ver="2" value="**"/>
+		<init target="Source" ver="2" ref="ApSource_1"/>
+	</object>
+	<object access-modifier="private" name="AP_main" display-name="AP_main" uuid="01917051-4833-40d2-8d04-e35a6b36281d" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="2">
+		<designed target="Active" value="true" ver="2"/>
+		<init target="Location" ver="2" value="127.0.0.1"/>
+		<init target="Port" ver="2" value="4388"/>
+		<init target="HistoryPort" ver="2" value="4950"/>
+		<init target="Timeout" ver="2" value="1000000"/>
+		<init target="ConnectionEstablishTimeout" ver="2" value="1000000"/>
+		<init target="MaxBufferPoolSize" ver="2" value="1000000"/>
+	</object>
+	<param access-modifier="private" name="int_AP" display-name="int_AP" uuid="29a581bf-e2d5-4cc6-a270-e36023b62234" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="2"/>
+	<object access-modifier="private" name="LinearLayout_1" display-name="LinearLayout_1" uuid="60fdd9ea-8890-492d-8298-559973ec8a8a" base-type="LinearLayout" base-type-id="800edd71-7303-408c-890b-8346e98f5718" ver="2">
+		<designed target="Orientation" value="2" ver="2"/>
+		<designed target="Gap" value="0" ver="2"/>
+	</object>
+	<do access-modifier="private" name="ForcedAddItem" display-name="ForcedAddItem" ver="2" type="bool" type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8">
+		<param access-modifier="private" name="path" display-name="" uuid="2a330e59-588d-434c-b646-85d6f5e5e709" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+		<body kind="om">
+			<![CDATA[if(Item_1.Path=="**")
+{
+Item_1.Path=path;
+return true;
+}
+/*else
+{
+Main_Charts.Chart_1.DataSource_1.ApItemValueQuery_1.Active=false;
+Main_Charts.Chart_1.DataSource_1.ApItemValueQuery_1.Reload();
+}*/
+
+if(Item_2.Path=="**")
+{
+Item_2.Path=path;
+return true;
+}
+if(Item_3.Path=="**")
+{
+Item_3.Path=path;
+return true;
+}
+if(Item_4.Path=="**")
+{
+Item_4.Path=path;
+return true;
+}
+if(Item_5.Path=="**")
+{
+Item_5.Path=path;
+return true;
+}
+if(Item_6.Path=="**")
+{
+Item_6.Path=path;
+return true;
+}
+if(Item_7.Path=="**")
+{
+Item_7.Path=path;
+return true;
+}
+if(Item_8.Path=="**")
+{
+Item_8.Path=path;
+return true;
+}
+if(Item_9.Path=="**")
+{
+Item_9.Path=path;
+return true;
+}
+if(Item_10.Path=="**")
+{
+Item_10.Path=path;
+return true;
+}
+return false;]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="SetGraphicColor" display-name="SetGraphicColor" ver="2" type="" type-id="">
+		<param access-modifier="private" name="number_line" display-name="" uuid="52f435be-7089-4119-9d97-91fb7691673a" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="2"/>
+		<param access-modifier="private" name="Color_number" display-name="" uuid="5f83ef11-0f4e-40b8-be6c-b9da54c6cfa5" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+		<body kind="javascript">
+			<![CDATA[switch(number_line)
+{
+case 1:
+Main_Charts.Chart_1.Line_1.Color = Color_number;
+break;
+case 2:
+Main_Charts.Chart_1.Line_2.Color = Color_number;
+break;
+case 3:
+Main_Charts.Chart_1.Line_3.Color = Color_number;
+break;
+case 4:
+Main_Charts.Chart_1.Line_4.Color = Color_number;
+break;
+case 5:
+Main_Charts.Chart_1.Line_5.Color = Color_number;
+break;
+case 6:
+Main_Charts.Chart_1.Line_6.Color = Color_number;
+break;
+case 7:
+Main_Charts.Chart_1.Line_7.Color = Color_number;
+break;
+case 8:
+Main_Charts.Chart_1.Line_8.Color = Color_number;
+break;
+case 9:
+Main_Charts.Chart_1.Line_9.Color = Color_number;
+break;
+case 10:
+Main_Charts.Chart_1.Line_10.Color = Color_number;
+break;
+}
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="Operative_mode" display-name="Operative_mode" ver="2" type="" type-id="">
+		<body kind="om">
+			<![CDATA[if(Item_1.Advised==true)
+{
+	Main_Charts.Chart_1.DataSource_1.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_1.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_1.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_1.ReadRowSetAsync( );
+	Main_Panel.private.FinishRead_1 = true;
+}
+else
+{
+Main_Charts.Chart_1.DataSource_1.ApItemValueQuery_1.Active=false;
+}
+if(Item_2.Advised==true)
+{
+	Main_Charts.Chart_1.DataSource_2.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_2.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_2.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_2.ReadRowSetAsync( );
+	Main_Panel.private.FinishRead_2 = true;
+}
+else
+{
+Main_Charts.Chart_1.DataSource_1.ApItemValueQuery_1.Active=false;
+}
+if(Item_3.Advised==true)
+{
+	Main_Charts.Chart_1.DataSource_3.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_3.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_3.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_3.ReadRowSetAsync( );
+	Main_Panel.private.FinishRead_3 = true;
+}
+else
+{
+Main_Charts.Chart_1.DataSource_3.ApItemValueQuery_1.Active=false;
+DebugTool_1.Log(333);
+}
+if(Item_4.Advised==true)
+{
+	Main_Charts.Chart_1.DataSource_4.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_4.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_4.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_4.ReadRowSetAsync( );
+	Main_Panel.private.FinishRead_4 = true;
+}
+else
+{
+Main_Charts.Chart_1.DataSource_4.ApItemValueQuery_1.Active=false;
+DebugTool_1.Log(444);
+}
+
+if(Item_5.Advised==true)
+{
+	Main_Charts.Chart_1.DataSource_5.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_5.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_5.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_5.ReadRowSetAsync( );
+	Main_Panel.private.FinishRead_5 = true;
+}
+else
+{
+Main_Charts.Chart_1.DataSource_5.ApItemValueQuery_1.Active=false;
+DebugTool_1.Log(555);
+}
+if(Item_6.Advised==true)
+{
+	Main_Charts.Chart_1.DataSource_6.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_6.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_6.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_6.ReadRowSetAsync( );
+	Main_Panel.private.FinishRead_6 = true;
+}
+else
+{
+Main_Charts.Chart_1.DataSource_6.ApItemValueQuery_1.Active=false;
+DebugTool_1.Log(666);
+}
+if(Item_7.Advised==true)
+{
+	Main_Charts.Chart_1.DataSource_7.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_7.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_7.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_7.ReadRowSetAsync( );
+	Main_Panel.private.FinishRead_7 = true;
+}
+else
+{
+Main_Charts.Chart_1.DataSource_7.ApItemValueQuery_1.Active=false;
+DebugTool_1.Log(777);
+}
+if(Item_8.Advised==true)
+{
+	Main_Charts.Chart_1.DataSource_8.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_8.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_8.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_8.ReadRowSetAsync( );
+	Main_Panel.private.FinishRead_8 = true;
+}
+else
+{
+Main_Charts.Chart_1.DataSource_8.ApItemValueQuery_1.Active=false;
+DebugTool_1.Log(888);
+}
+if(Item_9.Advised==true)
+{
+	Main_Charts.Chart_1.DataSource_9.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_9.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_9.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_9.ReadRowSetAsync( );
+	Main_Panel.private.FinishRead_9 = true;
+}
+else
+{
+Main_Charts.Chart_1.DataSource_9.ApItemValueQuery_1.Active=false;
+DebugTool_1.Log(999);
+}
+
+if(Item_10.Advised==true)
+{
+	Main_Charts.Chart_1.DataSource_10.ApItemValueQuery_1.Mode = 2;
+	Main_Charts.Chart_1.DataSource_10.EnableRT(true);
+	Main_Charts.Chart_1.DataSource_10.ApItemValueQuery_1.Reload();
+	Main_Charts.Chart_1.DataSource_10.ReadRowSetAsync( );
+	Main_Panel.private.FinishRead_10 = true;
+}
+else
+{
+Main_Charts.Chart_1.DataSource_10.ApItemValueQuery_1.Active=false;
+}]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="History_mode" display-name="History_mode" ver="2" type="" type-id="">
+		<body kind="om">
+			<![CDATA[if(Item_1.Advised==true)
+{
+Main_Charts.Chart_1.DataSource_1.ApItemValueQuery_1.Mode = 1;
+Main_Charts.Chart_1.DataSource_1.EnableRT(false);
+Main_Charts.Chart_1.DataSource_1.ApItemValueQuery_1.HistoricalRangeStart = t1;
+Main_Charts.Chart_1.DataSource_1.ApItemValueQuery_1.HistoricalRangeEnd = t2;
+Main_Charts.Chart_1.DataSource_1.ApItemValueQuery_1.Reload();
+Main_Charts.Chart_1.DataSource_1.ReadRowSetAsync();
+}
+else
+{
+Main_Charts.Chart_1.DataSource_1.ApItemValueQuery_1.Active=false;
+}
+if(Item_2.Advised==true)
+{
+Main_Charts.Chart_1.DataSource_2.ApItemValueQuery_1.Mode = 1;
+Main_Charts.Chart_1.DataSource_2.EnableRT(false);
+Main_Charts.Chart_1.DataSource_2.ApItemValueQuery_1.HistoricalRangeStart = t1;
+Main_Charts.Chart_1.DataSource_2.ApItemValueQuery_1.HistoricalRangeEnd = t2;
+Main_Charts.Chart_1.DataSource_2.ApItemValueQuery_1.Reload();
+Main_Charts.Chart_1.DataSource_2.ReadRowSetAsync();
+}
+else
+{
+Main_Charts.Chart_1.DataSource_2.ApItemValueQuery_1.Active=false;
+}
+if(Item_3.Advised==true)
+{
+Main_Charts.Chart_1.DataSource_3.ApItemValueQuery_1.Mode = 1;
+Main_Charts.Chart_1.DataSource_3.EnableRT(false);
+Main_Charts.Chart_1.DataSource_3.ApItemValueQuery_1.HistoricalRangeStart = t1;
+Main_Charts.Chart_1.DataSource_3.ApItemValueQuery_1.HistoricalRangeEnd = t2;
+Main_Charts.Chart_1.DataSource_3.ApItemValueQuery_1.Reload();
+Main_Charts.Chart_1.DataSource_3.ReadRowSetAsync();
+}
+else
+{
+Main_Charts.Chart_1.DataSource_3.ApItemValueQuery_1.Active=false;
+DebugTool_1.Log(33);
+}
+if(Item_4.Advised==true)
+{
+Main_Charts.Chart_1.DataSource_4.ApItemValueQuery_1.Mode = 1;
+Main_Charts.Chart_1.DataSource_4.EnableRT(false);
+Main_Charts.Chart_1.DataSource_4.ApItemValueQuery_1.HistoricalRangeStart = t1;
+Main_Charts.Chart_1.DataSource_4.ApItemValueQuery_1.HistoricalRangeEnd = t2;
+Main_Charts.Chart_1.DataSource_4.ApItemValueQuery_1.Reload();
+Main_Charts.Chart_1.DataSource_4.ReadRowSetAsync();
+}
+else
+{
+Main_Charts.Chart_1.DataSource_4.ApItemValueQuery_1.Active=false;
+DebugTool_1.Log(44);
+}
+if(Item_5.Advised==true)
+{
+Main_Charts.Chart_1.DataSource_5.ApItemValueQuery_1.Mode = 1;
+Main_Charts.Chart_1.DataSource_5.EnableRT(false);
+Main_Charts.Chart_1.DataSource_5.ApItemValueQuery_1.HistoricalRangeStart = t1;
+Main_Charts.Chart_1.DataSource_5.ApItemValueQuery_1.HistoricalRangeEnd = t2;
+Main_Charts.Chart_1.DataSource_5.ApItemValueQuery_1.Reload();
+Main_Charts.Chart_1.DataSource_5.ReadRowSetAsync();
+}
+else
+{
+Main_Charts.Chart_1.DataSource_5.ApItemValueQuery_1.Active=false;
+DebugTool_1.Log(55);
+}
+if(Item_6.Advised==true)
+{
+Main_Charts.Chart_1.DataSource_6.ApItemValueQuery_1.Mode = 1;
+Main_Charts.Chart_1.DataSource_6.EnableRT(false);
+Main_Charts.Chart_1.DataSource_6.ApItemValueQuery_1.HistoricalRangeStart = t1;
+Main_Charts.Chart_1.DataSource_6.ApItemValueQuery_1.HistoricalRangeEnd = t2;
+Main_Charts.Chart_1.DataSource_6.ApItemValueQuery_1.Reload();
+Main_Charts.Chart_1.DataSource_6.ReadRowSetAsync();
+}
+else
+{
+Main_Charts.Chart_1.DataSource_6.ApItemValueQuery_1.Active=false;
+DebugTool_1.Log(66);
+}
+if(Item_7.Advised==true)
+{
+Main_Charts.Chart_1.DataSource_7.ApItemValueQuery_1.Mode = 1;
+Main_Charts.Chart_1.DataSource_7.EnableRT(false);
+Main_Charts.Chart_1.DataSource_7.ApItemValueQuery_1.HistoricalRangeStart = t1;
+Main_Charts.Chart_1.DataSource_7.ApItemValueQuery_1.HistoricalRangeEnd = t2;
+Main_Charts.Chart_1.DataSource_7.ApItemValueQuery_1.Reload();
+Main_Charts.Chart_1.DataSource_7.ReadRowSetAsync();
+}
+else
+{
+Main_Charts.Chart_1.DataSource_7.ApItemValueQuery_1.Active=false;
+DebugTool_1.Log(77);
+}
+if(Item_8.Advised==true)
+{
+Main_Charts.Chart_1.DataSource_8.ApItemValueQuery_1.Mode = 1;
+Main_Charts.Chart_1.DataSource_8.EnableRT(false);
+Main_Charts.Chart_1.DataSource_8.ApItemValueQuery_1.HistoricalRangeStart = t1;
+Main_Charts.Chart_1.DataSource_8.ApItemValueQuery_1.HistoricalRangeEnd = t2;
+Main_Charts.Chart_1.DataSource_8.ApItemValueQuery_1.Reload();
+Main_Charts.Chart_1.DataSource_8.ReadRowSetAsync();
+}
+else
+{
+Main_Charts.Chart_1.DataSource_8.ApItemValueQuery_1.Active=false;
+DebugTool_1.Log(88);
+}
+if(Item_9.Advised==true)
+{
+Main_Charts.Chart_1.DataSource_9.ApItemValueQuery_1.Mode = 1;
+Main_Charts.Chart_1.DataSource_9.EnableRT(false);
+Main_Charts.Chart_1.DataSource_9.ApItemValueQuery_1.HistoricalRangeStart = t1;
+Main_Charts.Chart_1.DataSource_9.ApItemValueQuery_1.HistoricalRangeEnd = t2;
+Main_Charts.Chart_1.DataSource_9.ApItemValueQuery_1.Reload();
+Main_Charts.Chart_1.DataSource_9.ReadRowSetAsync();
+
+}
+else
+{
+Main_Charts.Chart_1.DataSource_9.ApItemValueQuery_1.Active=false;
+DebugTool_1.Log(99);
+}
+if(Item_10.Advised==true)
+{
+Main_Charts.Chart_1.DataSource_10.ApItemValueQuery_1.Mode = 1;
+Main_Charts.Chart_1.DataSource_10.EnableRT(false);
+Main_Charts.Chart_1.DataSource_10.ApItemValueQuery_1.HistoricalRangeStart = t1;
+Main_Charts.Chart_1.DataSource_10.ApItemValueQuery_1.HistoricalRangeEnd = t2;
+Main_Charts.Chart_1.DataSource_10.ApItemValueQuery_1.Reload();
+Main_Charts.Chart_1.DataSource_10.ReadRowSetAsync();
+}
+else
+{
+Main_Charts.Chart_1.DataSource_10.ApItemValueQuery_1.Active=false;
+}]]>
+		</body>
+		<param access-modifier="private" name="t1" display-name="" uuid="9a081609-0716-48ce-b830-90416d63b6ae" base-type="uint8" base-type-id="c8ff7701-da6e-4d53-888a-81fa680ff561" ver="2"/>
+		<param access-modifier="private" name="t2" display-name="" uuid="174cb05d-d346-4472-bfd2-d6c5a304fb3f" base-type="uint8" base-type-id="c8ff7701-da6e-4d53-888a-81fa680ff561" ver="2"/>
+	</do>
+	<do access-modifier="private" name="TimeZone" display-name="TimeZone" ver="2" type="uint8" type-id="c8ff7701-da6e-4d53-888a-81fa680ff561">
+		<body kind="om">
+			<![CDATA[time_zone: uint8 = DateTime.Now()-DateTime.UtcNow();
+return (time_zone);]]>
+		</body>
+	</do>
+	<param access-modifier="private" name="Не_отображать_меню" display-name="Не_отображать_меню" uuid="091c1609-69d5-49c2-8b8c-d99dd03ac794" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+	<object access-modifier="private" name="System_Start" display-name="System_Start" uuid="8edf8770-b2f0-4c05-b62e-2169d6a4591c" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="2">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Initialized">
+			<body kind="om">
+				<![CDATA[if(Main_Panel.private.show_menu)
+{
+Main_Charts.Chart_1.Height=397;
+}
+//описание и определение переменных
+t1 :uint8 = DateTime.UtcNow() - 6000000000;//начало отображения оперативного режима 
+t2 :uint8 = DateTime.UtcNow();
+DebugTool_1.Log(t1);
+DebugTool_1.Log(t2);
+Main_Panel.private.Time1 = t1; 
+Main_Panel.private.f_start_time = DateTime.UtcNow()- 6000000000;
+Main_Panel.private.Time2 = t2;
+Main_Panel.private.Oper_on = true;
+Main_Panel.private.Hist_on = false;
+Main_Panel.Image_1.PenStyle=1;
+Main_Panel.private.Play=true;
+Main_Panel.private.Reper_add=false;//добавление репера
+Main_Panel.private.value_of_lines=0;// для счета реперных линий
+//
+
+//заполнение комбобокса у исторических данных
+Main_Panel.ComboBox_1.AddItem("Выбор периода");
+Main_Panel.ComboBox_1.AddItem("10 минут");
+Main_Panel.ComboBox_1.AddItem("30 минут");
+Main_Panel.ComboBox_1.AddItem("1 час");
+Main_Panel.ComboBox_1.AddItem("6 часов");
+Main_Panel.ComboBox_1.AddItem("12 часов");
+Main_Panel.ComboBox_1.AddItem("1 сутки");
+//
+
+//отображения линий чартов
+Main_Charts.Chart_1.Line_1.Title=Item_1.Tag; 
+Main_Charts.Chart_1.Line_2.Title=Item_2.Tag;
+Main_Charts.Chart_1.Line_3.Title=Item_3.Tag;
+Main_Charts.Chart_1.Line_4.Title=Item_4.Tag;
+Main_Charts.Chart_1.Line_5.Title=Item_5.Tag;
+Main_Charts.Chart_1.Line_6.Title=Item_6.Tag;
+Main_Charts.Chart_1.Line_7.Title=Item_7.Tag;
+Main_Charts.Chart_1.Line_8.Title=Item_8.Tag;
+Main_Charts.Chart_1.Line_9.Title=Item_9.Tag;
+Main_Charts.Chart_1.Line_10.Title=Item_10.Tag;
+//
+
+//заполнение комбобокса для отображения значения в табличном виде(оставляю только название самого тега) 
+if ((Item_1.Path!="**")&&(Item_1.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_1.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_1.Path);
+temp_path = Str.Remove(Item_1.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_2.Path!="**")&&(Item_2.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_2.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_2.Path);
+temp_path = Str.Remove(Item_2.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_3.Path!="**")&&(Item_3.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_3.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_3.Path);
+temp_path = Str.Remove(Item_3.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_4.Path!="**")&&(Item_4.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_4.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_4.Path);
+temp_path = Str.Remove(Item_4.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_5.Path!="**")&&(Item_5.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_5.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_5.Path);
+temp_path = Str.Remove(Item_5.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_6.Path!="**")&&(Item_6.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_6.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_6.Path);
+temp_path = Str.Remove(Item_6.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_7.Path!="**")&&(Item_7.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_7.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_7.Path);
+temp_path = Str.Remove(Item_7.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_8.Path!="**")&&(Item_8.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_8.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_8.Path);
+temp_path = Str.Remove(Item_8.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_9.Path!="**")&&(Item_9.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_9.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_9.Path);
+temp_path = Str.Remove(Item_9.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+
+if ((Item_10.Path!="**")&&(Item_10.Advised==true))
+{
+temp_indexOF :int4 = Str.IndexOf(Item_10.Path, ".");
+temp_path :string = "";
+while(temp_indexOF!=(-1))
+{
+temp_leng :int4 = Str.Length(Item_10.Path);
+temp_path = Str.Remove(Item_10.Path, 0,temp_indexOF+1);
+temp_indexOF = Str.IndexOf(temp_path, ".");
+}
+Main_Panel.ComboBox_2.AddItem(temp_path);
+}
+DebugTool_1.Log(t1);
+DebugTool_1.Log(t2);
+History_mode(t1,t2);//выгрузка данных за 10 минут
+//Operative_mode();//переключение в оперативный режим 
+Timer_start.Active=false; // отключение таймера стара формы
+]]>
+			</body>
+		</do-on>
+	</object>
+	<do access-modifier="private" name="Close" display-name="Close" ver="2" type="" type-id="">
+		<body kind="om">
+			<![CDATA[Main_Charts.Chart_1.DataSource_1.EnableRT(false);
+Main_Charts.Chart_1.DataSource_2.EnableRT(false);
+Main_Charts.Chart_1.DataSource_3.EnableRT(false);
+Main_Charts.Chart_1.DataSource_4.EnableRT(false);
+Main_Charts.Chart_1.DataSource_5.EnableRT(false);
+Main_Charts.Chart_1.DataSource_6.EnableRT(false);
+Main_Charts.Chart_1.DataSource_7.EnableRT(false);
+Main_Charts.Chart_1.DataSource_8.EnableRT(false);
+Main_Charts.Chart_1.DataSource_9.EnableRT(false);
+Main_Charts.Chart_1.DataSource_10.EnableRT(false);
+]]>
+		</body>
+	</do>
+</type>
+

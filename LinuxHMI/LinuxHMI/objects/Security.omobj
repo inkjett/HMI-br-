@@ -1,0 +1,33 @@
+<object access-modifier="private" name="Security" display-name="Security" uuid="567e0f12-5865-4fb6-95d1-1e29d97e10c8" base-type="JustDummy" base-type-id="34bc054d-53be-4c82-873b-bd509d7c7c3b" ver="1">
+	<object access-modifier="private" name="WriteUst_booltoken" display-name="WriteUst_booltoken" uuid="fac641a9-96cf-4a14-839f-3c433d54a42d" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="1">
+		<init target="Application" ver="1" value="Alpha.HMI"/>
+		<init target="Right" ver="1" value="WriteUst"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ValueChanged">
+			<body kind="om">
+				<![CDATA[EnableWriteUst.Value=WriteUst_booltoken.Value;]]>
+			</body>
+		</do-on>
+		<init target="SecurityContext" ver="2" ref="unit.Security.SecurityContext"/>
+	</object>
+	<object access-modifier="private" name="StartStop_booltoken" display-name="StartStop_booltoken" uuid="a0638bc7-b57b-4d35-bd8f-16a571148ddb" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="1">
+		<init target="Application" ver="1" value="Alpha.HMI"/>
+		<init target="Right" ver="1" value="StartStop"/>
+		<init target="SecurityContext" ver="2" ref="unit.Security.SecurityContext"/>
+	</object>
+	<object access-modifier="private" name="WriteUstRegul_booltoken" display-name="WriteUstRegul_booltoken" uuid="fcfaf529-624d-4871-a9cc-c6a7b01d9df6" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="1">
+		<init target="Application" ver="1" value="Alpha.HMI"/>
+		<init target="Right" ver="1" value="WriteUstRegul"/>
+		<init target="SecurityContext" ver="2" ref="unit.Security.SecurityContext"/>
+	</object>
+	<object access-modifier="private" name="SecurityContext" display-name="SecurityContext" uuid="056dec0c-98c1-4f79-a5cb-90e692e72bd1" base-type="SecurityContext" base-type-id="d9cb0fff-b70a-4e2d-833d-3f73cf74e0dd" ver="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="CurrentUserChanged">
+			<body kind="om">
+				<![CDATA[unit.Sources.UserToTag(SecurityContext.CurrentUser);]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="EnableWriteUst" display-name="EnableWriteUst" uuid="53684055-6eaf-40bf-8eab-98d43854f7a1" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="1"/>
+	<object access-modifier="private" name="IntControl" display-name="IntControl" uuid="8fa680f6-9494-49b8-af1a-01e1f56b2e1c" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="3"/>
+	<init target="IntControl" ver="3" value="false"/>
+</object>
+

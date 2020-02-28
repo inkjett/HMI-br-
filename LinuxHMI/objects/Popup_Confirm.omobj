@@ -1,0 +1,243 @@
+<type access-modifier="private" name="Popup_Confirm" display-name="Popup_Confirm" uuid="ba572988-a07f-4ec5-8f8f-77d029e31bfc" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="400" ver="1"/>
+	<designed target="Height" value="275" ver="1"/>
+	<designed target="PenColor" value="4278190080" ver="1"/>
+	<designed target="PenStyle" value="0" ver="1"/>
+	<designed target="PenWidth" value="1" ver="1"/>
+	<designed target="BrushColor" value="0xff63708f" ver="1"/>
+	<designed target="BrushStyle" value="1" ver="1"/>
+	<designed target="WindowX" value="737" ver="1"/>
+	<designed target="WindowY" value="240" ver="1"/>
+	<designed target="WindowWidth" value="400" ver="1"/>
+	<designed target="WindowHeight" value="275" ver="1"/>
+	<designed target="WindowCaption" value="Окно подтверждения команды" ver="1"/>
+	<designed target="ShowWindowCaption" value="false" ver="1"/>
+	<designed target="ShowWindowMinimize" value="false" ver="1"/>
+	<designed target="ShowWindowMaximize" value="false" ver="1"/>
+	<designed target="ShowWindowClose" value="true" ver="1"/>
+	<designed target="AlwaysOnTop" value="false" ver="1"/>
+	<designed target="WindowSizeMode" value="0" ver="1"/>
+	<designed target="WindowBorderStyle" value="2" ver="1"/>
+	<designed target="WindowState" value="0" ver="1"/>
+	<designed target="WindowScalingMode" value="0" ver="1"/>
+	<designed target="MonitorNumber" value="0" ver="1"/>
+	<designed target="WindowPosition" value="1" ver="1"/>
+	<designed target="WindowCloseMode" value="0" ver="1"/>
+	<object access-modifier="private" name="Warning2_Text_1" display-name="Warning2_Text_1" uuid="e9b59185-297c-413e-bcf2-fad663b95dcb" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="20" ver="1"/>
+		<designed target="Y" value="66" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="357" ver="1"/>
+		<designed target="Height" value="102" ver="1"/>
+		<designed target="Text" value="Выполнение команды" ver="1"/>
+		<designed target="Font" value="Sans Serif,18,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff272727" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<init target="Text" ver="1" ref="_Text_Description"/>
+	</object>
+	<object access-modifier="private" name="Warning2_Text" display-name="Warning2_Text" uuid="c20ed744-45ab-4936-940f-57a73ba10a74" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="21" ver="1"/>
+		<designed target="Y" value="64" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="357" ver="1"/>
+		<designed target="Height" value="102" ver="1"/>
+		<designed target="Text" value="Выполнение команды" ver="1"/>
+		<designed target="Font" value="Sans Serif,18,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xffffffff" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<init target="Text" ver="1" ref="_Text_Description"/>
+	</object>
+	<object access-modifier="private" name="Confirm2_Text_1" display-name="Confirm2_Text_1" uuid="7308a381-0e5d-4d04-85e8-26e05752212c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="22" ver="1"/>
+		<designed target="Y" value="151" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="357" ver="1"/>
+		<designed target="Height" value="73" ver="1"/>
+		<designed target="Text" value="Подтверждаете выполнение команды?" ver="1"/>
+		<designed target="Font" value="Sans Serif,18,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<init target="Text" ver="1" ref="_Text_Question"/>
+	</object>
+	<object access-modifier="private" name="Confirm2_Text" display-name="Confirm2_Text" uuid="cb8e50a0-31a9-4ee0-b676-a420b03c6649" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="24" ver="1"/>
+		<designed target="Y" value="149" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="357" ver="1"/>
+		<designed target="Height" value="73" ver="1"/>
+		<designed target="Text" value="Подтверждаете выполнение команды?" ver="1"/>
+		<designed target="Font" value="Sans Serif,18,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xffffffff" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<init target="Text" ver="1" ref="_Text_Question"/>
+	</object>
+	<object access-modifier="private" name="Button_Yes" display-name="Button_Yes" uuid="1a6a536d-5cb5-4349-8644-56968316cd53" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="27" ver="1"/>
+		<designed target="Y" value="229" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="160" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<designed target="Text" value="Да" ver="1"/>
+		<designed target="Font" value="Sans Serif,14,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[_Param_OpcItem.Value=Param_Value;
+Close();
+]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_No" display-name="Button_No" uuid="5ba4b04c-69b5-4fc9-b1b9-212e42ce4a6a" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="213" ver="1"/>
+		<designed target="Y" value="229" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="160" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<designed target="Text" value="Нет" ver="1"/>
+		<designed target="Font" value="Sans Serif,14,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[Close();]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Pp_ProtectsConfirmForm_Name_rect" display-name="Pp_ProtectsConfirmForm_Name_rect" uuid="a97a73f9-2d22-48b4-a942-dac37b996a34" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="6" ver="1"/>
+		<designed target="Y" value="38.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="386" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff626262" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffb1c9ff" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Pp__FormName_txt" display-name="Pp__FormName_txt" uuid="dce97715-7884-424b-9171-a328195c339e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="4"/>
+			<designed target="Y" value="2"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="379"/>
+			<designed target="Height" value="25"/>
+			<designed target="Text" value="Подтверждение"/>
+			<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="WindowActivationChanged">
+		<body kind="om">
+			<![CDATA[if (WindowActive == false)
+	{
+		Close();
+	}]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="1" event="Closed">
+		<body kind="om">
+			<![CDATA[//снимаем флаг "незакрывания" родительского окна
+unit.Parameters.isConfirmPopup = false;
+]]>
+		</body>
+	</do-on>
+	<param access-modifier="private" name="_Text_Description" display-name="_Text_Description" uuid="64326d18-e433-4436-9d57-7a399b053680" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<param access-modifier="private" name="_Text_Question" display-name="_Text_Question" uuid="bab544c3-c853-4a1c-826f-db23d0504bb0" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="_Param_OpcItem" display-name="_Param_OpcItem" uuid="087e4232-b002-421a-aec5-0cc35918122e" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" base-const="true" base-ref="true" ver="1"/>
+	<param access-modifier="private" name="_Param_Value" display-name="_Param_Value" uuid="fdc63d21-e607-441d-906d-7a70d73fc9fe" base-type="variant" base-type-id="7d3322c1-a2cf-4732-a957-abd69e3e4b7a" ver="1"/>
+	<object access-modifier="private" name="Param_Value" display-name="Param_Value" uuid="6b8ae2a4-0006-44d7-9cf9-16beced512b2" base-type="variant" base-type-id="7d3322c1-a2cf-4732-a957-abd69e3e4b7a" ver="1"/>
+	<object access-modifier="private" name="Window_close_line_1" display-name="Window_close_line_1" uuid="2dbb5331-af8b-42c9-a719-adf31f22de6f" base-type="Window_close_line" base-type-id="a70c35c1-3cb9-4d9e-8668-ddc931acbcf8" ver="3">
+		<designed target="X" value="1" ver="3"/>
+		<designed target="Y" value="1" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<object access-modifier="private" name="mousePress" display-name="mousePress" uuid="2128cda9-0875-45a7-a906-d884db33144c" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="3"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="3" event="MouseMove">
+			<body kind="om">
+				<![CDATA[if (mousePress) 
+{
+	here.WindowX = ScreenX(MouseX,MouseY) - TypeConvert.ToInt4(Pointer_press_x);
+	here.WindowY = ScreenY(MouseX,MouseY);
+}]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="3" event="MousePress">
+			<body kind="om">
+				<![CDATA[mousePress = true;
+Pointer_press_x = MouseX;
+]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="3" event="MouseRelease">
+			<body kind="om">
+				<![CDATA[mousePress = false;]]>
+			</body>
+		</do-on>
+		<object access-modifier="private" name="Pointer_press_x" display-name="Pointer_press_x" uuid="acb6eef7-d268-4076-a5b5-058539b0f081" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="3"/>
+		<object access-modifier="private" name="notifying_WindowWidth_now" display-name="notifying_WindowWidth_now" uuid="7698b565-199f-44db-9fc4-3f6c5b39333c" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="3">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="3" event="ValueChanged">
+				<body kind="om">
+					<![CDATA[Window_close_line_1.Rectangle_windowline_base.Width = notifying_WindowWidth_now.Value - 2;
+Window_close_line_1.Rectangle_windowline_base.Text_windowname.Width = Window_close_line_1.Rectangle_windowline_base.Width;
+
+Window_close_line_1.Rectangle_windowline_base.Window_close_button_1.X = Window_close_line_1.Rectangle_windowline_base.Width - 22;
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="3" event="Opened">
+		<body kind="om">
+			<![CDATA[Window_close_line_1.Rectangle_windowline_base.Text_windowname.Text = WindowCaption;
+Window_close_line_1.notifying_WindowWidth_now = WindowWidth;
+
+
+
+
+
+]]>
+		</body>
+	</do-on>
+</type>
+

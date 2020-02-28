@@ -1,0 +1,424 @@
+<type access-modifier="private" name="ControlValve" display-name="ControlValve" uuid="267d6b59-1092-4833-816e-db52e571a042" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5">
+	<designed target="X" value="0"/>
+	<designed target="Y" value="0"/>
+	<designed target="Rotation" value="0"/>
+	<designed target="Scale" value="1"/>
+	<designed target="Visible" value="true"/>
+	<designed target="Enabled" value="true"/>
+	<designed target="Tooltip" value=""/>
+	<designed target="Width" value="400"/>
+	<designed target="Height" value="400"/>
+	<designed target="PenColor" value="4278190080"/>
+	<designed target="PenStyle" value="0"/>
+	<designed target="PenWidth" value="1"/>
+	<designed target="BrushColor" value="0xff63708f"/>
+	<designed target="BrushStyle" value="1"/>
+	<designed target="WindowX" value="0"/>
+	<designed target="WindowY" value="0"/>
+	<designed target="WindowWidth" value="400"/>
+	<designed target="WindowHeight" value="400"/>
+	<designed target="WindowCaption" value="MainForm"/>
+	<designed target="ShowWindowCaption" value="true"/>
+	<designed target="ShowWindowMinimize" value="false"/>
+	<designed target="ShowWindowMaximize" value="false"/>
+	<designed target="ShowWindowClose" value="false"/>
+	<designed target="AlwaysOnTop" value="true"/>
+	<designed target="WindowSizeMode" value="0"/>
+	<designed target="WindowBorderStyle" value="2"/>
+	<designed target="WindowState" value="0"/>
+	<designed target="WindowScalingMode" value="0"/>
+	<designed target="MonitorNumber" value="0"/>
+	<designed target="WindowPosition" value="0"/>
+	<designed target="WindowCloseMode" value="0"/>
+	<param access-modifier="private" name="PopupWinX" display-name="PopupWinX" uuid="c9e5817a-1317-4e77-8056-29112cc6a4cb" base-type="int32" base-type-id="74222947-f188-4195-8e0e-e33bd9827255"/>
+	<param access-modifier="private" name="PopupWinY" display-name="PopupWinY" uuid="5a7c4075-982b-4570-b86a-545130b4b3b9" base-type="int32" base-type-id="74222947-f188-4195-8e0e-e33bd9827255"/>
+	<object access-modifier="private" name="Rectangle_8" display-name="Rectangle_8" uuid="d57dd9b9-8c37-4da6-be53-38994383b220" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="10.5" ver="1"/>
+		<designed target="Y" value="196.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="378" ver="1"/>
+		<designed target="Height" value="51" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff383838" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="41b00bcd-771e-4d4c-bb19-4997a92b0aa5" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="10.5" ver="1"/>
+		<designed target="Y" value="61.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="378" ver="1"/>
+		<designed target="Height" value="121" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff383838" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_7" display-name="Rectangle_7" uuid="2ddbc4a5-98cd-4d0a-80b0-c77cfde0ea31" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="10.5" ver="1"/>
+		<designed target="Y" value="263.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="378" ver="1"/>
+		<designed target="Height" value="69" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff383838" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="6249c55c-2adf-43f9-a9de-e24055b68ea0" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="7"/>
+		<designed target="Y" value="5"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="387"/>
+		<designed target="Height" value="39"/>
+		<designed target="Text" value="Наименование задвижки"/>
+		<designed target="Font" value="MS Shell Dlg 2,24,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="0xffffffff"/>
+		<designed target="TextAlignment" value="132"/>
+		<init target="Text" ver="1">
+			<expr>
+				<![CDATA["Задвижка №"+_ValveName]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="btn_CloseWin" display-name="btn_CloseWin" uuid="c5ce17c8-b62d-4c8a-a0d5-13e23bd4de8e" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1">
+		<designed target="X" value="296"/>
+		<designed target="Y" value="345"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="94"/>
+		<designed target="Height" value="43"/>
+		<designed target="Text" value="Закрыть окно"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="ButtonPressed" form-action="close"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="WindowActivationChanged">
+		<body kind="om">
+			<![CDATA[if (WindowActive == false)
+{
+	Close();
+}]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="ValveNumber" display-name="ValveNumber" uuid="9c07f1cf-a855-4521-9044-72177920f701" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="here.ValveRoot"/>
+	</object>
+	<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="6f4532ad-2215-4516-8b49-8d3a2ec17719" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1">
+		<designed target="X" value="24"/>
+		<designed target="Y" value="72"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="146"/>
+		<designed target="Height" value="50"/>
+		<designed target="Text" value="ОТКРЫТЬ"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[CmdOpen = 1;
+/*here.Message = "<Subcondition Type=\"Dynamic\" Message=\"12345\" Value=\"\" Sound=\"\" Severity=\"1\" Enabled=\"1\" SoundEnabled=\"0\" />";*/]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Button_2" display-name="Button_2" uuid="f545031d-2514-476e-be30-f45af29d4bc7" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1">
+		<designed target="X" value="231"/>
+		<designed target="Y" value="72"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="146"/>
+		<designed target="Height" value="50"/>
+		<designed target="Text" value="ЗАКРЫТЬ"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[CmdClose = 1;]]>
+			</body>
+		</do-on>
+	</object>
+	<param access-modifier="private" name="_Messages" display-name="_Messages" uuid="9b0cdf4b-d456-4fbe-bf34-a5b28b740b25" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" base-const="true" base-ref="true"/>
+	<object access-modifier="private" name="Message" display-name="Message" uuid="6b6ab786-ef78-4207-8e89-ecc23baf527d" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<init target="Path" ref="_Messages.Path"/>
+		<init target="Source" ref="_Messages.Source"/>
+	</object>
+	<object access-modifier="private" name="Button_3" display-name="Button_3" uuid="b7c7c556-c015-45a5-9970-9732a61e3f16" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1">
+		<designed target="X" value="129"/>
+		<designed target="Y" value="126"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="146"/>
+		<designed target="Height" value="50"/>
+		<designed target="Text" value="СТОП"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[CmdStop = 1;
+/*here.Message = "<Subcondition Type=\"Dynamic\" Message=\"12345\" Value=\"\" Sound=\"\" Severity=\"1\" Enabled=\"1\" SoundEnabled=\"0\" />";*/]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ValveRoot" display-name="ValveRoot" uuid="e38b5210-5f46-4916-b367-a03e1eaa5c08" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="1">
+		<designed target="Active" value="true" ver="1"/>
+		<designed target="UpdateRate" value="0" ver="1"/>
+		<init target="Location" ver="1" value="localhost"/>
+		<init target="ProgId" ver="1" value="AP.OPCDASErver"/>
+	</object>
+	<param access-modifier="private" name="_ValveNumber" display-name="_ValveNumber" uuid="a91c686f-c698-4d15-a1c8-d7043b9bd82d" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="CmdOpen" display-name="CmdOpen" uuid="d4f9e0ea-8318-4e40-83ef-20497fecc503" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="ValveRoot"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["TU"+Str.ToString((_ValveNumber-1)*10+0)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="CmdClose" display-name="CmdClose" uuid="5baba1e6-ad68-488c-adb1-e365cec13492" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="ValveRoot"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["TU"+Str.ToString((_ValveNumber-1)*10+2)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="CmdStop" display-name="CmdStop" uuid="ffc09570-07d0-43c8-bf0b-8ac0d1c6b010" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="ValveRoot"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["TU"+Str.ToString((_ValveNumber-1)*10+4)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="CmdDebl" display-name="CmdDebl" uuid="f71eb173-6ffc-4fbd-8648-97c90ed7b1a3" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="ValveRoot"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["TU"+Str.ToString((_ValveNumber-1)*10+6)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="CmdImitOn" display-name="CmdImitOn" uuid="d977ada5-5a75-4cb8-bb34-8bd4b88a11e3" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="ValveRoot"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["TU"+Str.ToString((_ValveNumber-1)*10+7)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="CmdImitOff" display-name="CmdImitOff" uuid="faa1e027-57ec-47cb-8e16-a289863e88ad" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="ValveRoot"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["TU"+Str.ToString((_ValveNumber-1)*10+8)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Button_4" display-name="Button_4" uuid="c1dc87d6-1462-4df0-8129-d048e98efe2d" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1">
+		<designed target="X" value="23"/>
+		<designed target="Y" value="275"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="146"/>
+		<designed target="Height" value="50"/>
+		<designed target="Text" value="Включить имитацию"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[CmdImitOn = 1;
+/*here.Message = "<Subcondition Type=\"Dynamic\" Message=\"12345\" Value=\"\" Sound=\"\" Severity=\"1\" Enabled=\"1\" SoundEnabled=\"0\" />";*/]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Button_5" display-name="Button_5" uuid="2d689565-4eab-4eb2-91e4-369f07eedb52" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1">
+		<designed target="X" value="231"/>
+		<designed target="Y" value="275"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="146"/>
+		<designed target="Height" value="50"/>
+		<designed target="Text" value="Выключить имитацию"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[CmdImitOff = 1;
+/*here.Message = "<Subcondition Type=\"Dynamic\" Message=\"12345\" Value=\"\" Sound=\"\" Severity=\"1\" Enabled=\"1\" SoundEnabled=\"0\" />";*/]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Button_6" display-name="Button_6" uuid="6e2f78c5-f78c-4830-8ae2-31e7c656a72a" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1">
+		<designed target="X" value="127"/>
+		<designed target="Y" value="205"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="false"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="146"/>
+		<designed target="Height" value="34"/>
+		<designed target="Text" value="Деблокировать"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[CmdDebl = 1;
+/*here.Message = "<Subcondition Type=\"Dynamic\" Message=\"12345\" Value=\"\" Sound=\"\" Severity=\"1\" Enabled=\"1\" SoundEnabled=\"0\" />";*/]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Rectangle_5" display-name="Rectangle_5" uuid="a737a392-baa4-4512-b67a-e7ff7cfd3e70" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="17.666666666666515"/>
+		<designed target="Y" value="51.999999999999773"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="89.000000000000028"/>
+		<designed target="Height" value="20.666666666666515"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="0xff383838"/>
+		<designed target="PenStyle" value="0"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff63708f"/>
+		<designed target="BrushStyle" value="1"/>
+	</object>
+	<object access-modifier="private" name="txt_DiagGroup_1" display-name="txt_DiagGroup_1" uuid="c5ac5952-a603-4c35-aa5a-7bbbf5350d7b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="19"/>
+		<designed target="Y" value="53.5"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="85"/>
+		<designed target="Height" value="14"/>
+		<designed target="Text" value="Управление"/>
+		<designed target="Font" value="Segoe UI,10,-1,5,75,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff383838"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_6" display-name="Rectangle_6" uuid="94244563-283f-4515-a057-8f51df891846" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="17.666666666666515"/>
+		<designed target="Y" value="252.99999999999977"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="89.000000000000028"/>
+		<designed target="Height" value="20.666666666666515"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="0xff383838"/>
+		<designed target="PenStyle" value="0"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff63708f"/>
+		<designed target="BrushStyle" value="1"/>
+	</object>
+	<object access-modifier="private" name="txt_DiagGroup_2" display-name="txt_DiagGroup_2" uuid="afd9d94c-bdd2-4448-9e66-3e8316bc4b71" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="19"/>
+		<designed target="Y" value="254.5"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="85"/>
+		<designed target="Height" value="14"/>
+		<designed target="Text" value="Имитация"/>
+		<designed target="Font" value="Segoe UI,10,-1,5,75,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff383838"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_9" display-name="Rectangle_9" uuid="5051d249-1234-4420-bd7c-3a08424c3606" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="17.666666666666515"/>
+		<designed target="Y" value="185.99999999999977"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="89.000000000000028"/>
+		<designed target="Height" value="20.666666666666515"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="0xff383838"/>
+		<designed target="PenStyle" value="0"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff63708f"/>
+		<designed target="BrushStyle" value="1"/>
+	</object>
+	<object access-modifier="private" name="txt_DiagGroup_3" display-name="txt_DiagGroup_3" uuid="14b38265-8dea-4702-a25c-8eac63467b7d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="19"/>
+		<designed target="Y" value="187.5"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="85"/>
+		<designed target="Height" value="14"/>
+		<designed target="Text" value="Авария"/>
+		<designed target="Font" value="Segoe UI,10,-1,5,75,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff383838"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<param access-modifier="private" name="_ValveName" display-name="_ValveName" uuid="f51414e2-409a-4083-9da3-604a6f31cfd5" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+</type>
+

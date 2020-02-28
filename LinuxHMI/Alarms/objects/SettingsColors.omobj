@@ -1,0 +1,301 @@
+<type access-modifier="private" name="SettingsColors" display-name="Form_1" uuid="52ec96a1-c9ab-4175-88fb-8243ca3e2480" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="2">
+	<designed target="X" value="0" ver="2"/>
+	<designed target="Y" value="0" ver="2"/>
+	<designed target="Rotation" value="0" ver="2"/>
+	<designed target="Scale" value="1" ver="2"/>
+	<designed target="Visible" value="true" ver="2"/>
+	<designed target="Enabled" value="true" ver="2"/>
+	<designed target="Tooltip" value="" ver="2"/>
+	<designed target="Width" value="560" ver="2"/>
+	<designed target="Height" value="380" ver="2"/>
+	<designed target="PenColor" value="4278190080" ver="2"/>
+	<designed target="PenStyle" value="0" ver="2"/>
+	<designed target="PenWidth" value="1" ver="2"/>
+	<designed target="BrushColor" value="4293980400" ver="2"/>
+	<designed target="BrushStyle" value="1" ver="2"/>
+	<designed target="WindowX" value="0" ver="2"/>
+	<designed target="WindowY" value="0" ver="2"/>
+	<designed target="WindowWidth" value="1920" ver="2"/>
+	<designed target="WindowHeight" value="1080" ver="2"/>
+	<designed target="WindowCaption" value="MainForm" ver="2"/>
+	<designed target="ShowWindowCaption" value="true" ver="2"/>
+	<designed target="ShowWindowMinimize" value="false" ver="2"/>
+	<designed target="ShowWindowMaximize" value="false" ver="2"/>
+	<designed target="ShowWindowClose" value="true" ver="2"/>
+	<designed target="AlwaysOnTop" value="false" ver="2"/>
+	<designed target="WindowSizeMode" value="0" ver="2"/>
+	<designed target="WindowBorderStyle" value="1" ver="2"/>
+	<designed target="WindowState" value="0" ver="2"/>
+	<designed target="WindowScalingMode" value="0" ver="2"/>
+	<designed target="MonitorNumber" value="0" ver="2"/>
+	<designed target="WindowPosition" value="2" ver="2"/>
+	<designed target="WindowCloseMode" value="0" ver="2"/>
+	<object access-modifier="private" name="Table_1" display-name="Table_1" uuid="51831c2d-7f34-4451-91a9-3e24c1757a47" base-type="Table" base-type-id="c65ff4dc-f22b-47d3-9333-72c4e4e5f662" ver="2">
+		<designed target="X" value="6" ver="2"/>
+		<designed target="Y" value="5" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Width" value="548" ver="2"/>
+		<designed target="Height" value="152" ver="2"/>
+		<designed target="RowsHeight" value="30" ver="2"/>
+		<designed target="RowsMaxCount" value="10000" ver="2"/>
+		<designed target="RowsOrder" value="0" ver="2"/>
+		<designed target="Frozen" value="false" ver="2"/>
+		<designed target="SelectionBehavior" value="0" ver="2"/>
+		<designed target="SelectionMode" value="0" ver="2"/>
+		<object access-modifier="private" name="TableColumn_1" display-name="TableColumn_1" uuid="2ea3a679-966c-4302-b20c-5836c41e897e" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="Подуслов" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="1" ver="2"/>
+			<designed target="BackgroundColor" value="4293980400" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="57" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%d" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TableColumn_2" display-name="TableColumn_2" uuid="1f44a973-26bc-4298-8073-7af13f0a4150" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="Важность" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="2" ver="2"/>
+			<designed target="BackgroundColor" value="4293980400" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="57" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%d" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TableColumn_3" display-name="TableColumn_3" uuid="4097a14d-223a-42c3-87d0-df0def2c4cf4" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="Группа" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="3" ver="2"/>
+			<designed target="BackgroundColor" value="4293980400" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="57" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%d" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TableColumn_4" display-name="TableColumn_4" uuid="513fbb71-928b-4d13-9765-df8c0a196a2c" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="Фон" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="4" ver="2"/>
+			<designed target="BackgroundColor" value="4293980400" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="57" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%d" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+			<object access-modifier="private" name="TableDecorator_1" display-name="TableDecorator_1" uuid="845a9df6-1ccc-41b1-b331-74c08143d4de" base-type="TableDecorator" base-type-id="2ff6a2d7-9573-4060-bfea-29c63d61b079" ver="2">
+				<designed target="Name" value="" ver="2"/>
+				<designed target="MinSeverity" value="0" ver="2"/>
+				<designed target="MaxSeverity" value="0" ver="2"/>
+				<designed target="Subcondition" value="Текст1" ver="2"/>
+				<designed target="Acknowledged" value="false" ver="2"/>
+				<designed target="Active" value="true" ver="2"/>
+				<designed target="BackgroundColor" value="0xffff0000" ver="2"/>
+				<designed target="ForegroundColor" value="4278190080" ver="2"/>
+				<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+				<designed target="BlinkEnabled" value="false" ver="2"/>
+				<designed target="BlinkBackgroundColor" value="4293980400" ver="2"/>
+				<designed target="BlinkForegroundColor" value="4278190080" ver="2"/>
+				<designed target="BlinkFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+				<init target="SubconditionRef" ver="2" ref="TableColumn_6"/>
+			</object>
+			<object access-modifier="private" name="TableDecorator_2" display-name="TableDecorator_2" uuid="80695015-b85b-4d24-bec4-6083d2ddef68" base-type="TableDecorator" base-type-id="2ff6a2d7-9573-4060-bfea-29c63d61b079" ver="2">
+				<designed target="Name" value="" ver="2"/>
+				<designed target="MinSeverity" value="0" ver="2"/>
+				<designed target="MaxSeverity" value="0" ver="2"/>
+				<designed target="Subcondition" value="Текст2" ver="2"/>
+				<designed target="Acknowledged" value="false" ver="2"/>
+				<designed target="Active" value="true" ver="2"/>
+				<designed target="BackgroundColor" value="0xff00ffff" ver="2"/>
+				<designed target="ForegroundColor" value="4278190080" ver="2"/>
+				<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+				<designed target="BlinkEnabled" value="false" ver="2"/>
+				<designed target="BlinkBackgroundColor" value="4293980400" ver="2"/>
+				<designed target="BlinkForegroundColor" value="4278190080" ver="2"/>
+				<designed target="BlinkFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+				<init target="SubconditionRef" ver="2" ref="TableColumn_6"/>
+			</object>
+			<object access-modifier="private" name="TableDecorator_3" display-name="TableDecorator_3" uuid="d9522244-ff47-4422-b9d5-e2f3868bcb1d" base-type="TableDecorator" base-type-id="2ff6a2d7-9573-4060-bfea-29c63d61b079" ver="2">
+				<designed target="Name" value="" ver="2"/>
+				<designed target="MinSeverity" value="0" ver="2"/>
+				<designed target="MaxSeverity" value="0" ver="2"/>
+				<designed target="Subcondition" value="Текст3" ver="2"/>
+				<designed target="Acknowledged" value="false" ver="2"/>
+				<designed target="Active" value="true" ver="2"/>
+				<designed target="BackgroundColor" value="0xff00ff00" ver="2"/>
+				<designed target="ForegroundColor" value="4278190080" ver="2"/>
+				<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+				<designed target="BlinkEnabled" value="false" ver="2"/>
+				<designed target="BlinkBackgroundColor" value="4293980400" ver="2"/>
+				<designed target="BlinkForegroundColor" value="4278190080" ver="2"/>
+				<designed target="BlinkFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+				<init target="SubconditionRef" ver="2" ref="TableColumn_6"/>
+			</object>
+			<object access-modifier="private" name="TableDecorator_4" display-name="TableDecorator_4" uuid="91806d45-a3a8-475b-81aa-bba7a2e0842d" base-type="TableDecorator" base-type-id="2ff6a2d7-9573-4060-bfea-29c63d61b079" ver="2">
+				<designed target="Name" value="" ver="2"/>
+				<designed target="MinSeverity" value="0" ver="2"/>
+				<designed target="MaxSeverity" value="0" ver="2"/>
+				<designed target="Subcondition" value="Текст4" ver="2"/>
+				<designed target="Acknowledged" value="false" ver="2"/>
+				<designed target="Active" value="true" ver="2"/>
+				<designed target="BackgroundColor" value="0xffffff00" ver="2"/>
+				<designed target="ForegroundColor" value="4278190080" ver="2"/>
+				<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+				<designed target="BlinkEnabled" value="false" ver="2"/>
+				<designed target="BlinkBackgroundColor" value="4293980400" ver="2"/>
+				<designed target="BlinkForegroundColor" value="4278190080" ver="2"/>
+				<designed target="BlinkFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+				<init target="SubconditionRef" ver="2" ref="TableColumn_6"/>
+			</object>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseDoubleClick">
+				<body kind="om">
+					<![CDATA[]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="TableColumn_5" display-name="TableColumn_5" uuid="a8da52cb-7ec7-46a5-8e3c-5f967c1df7ca" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="Текст" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="5" ver="2"/>
+			<designed target="BackgroundColor" value="4293980400" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="57" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%d" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TableColumn_6" display-name="TableColumn_6" uuid="42dd798c-654b-426e-b586-66cabad4243f" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="Пример" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="6" ver="2"/>
+			<designed target="BackgroundColor" value="4293980400" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="57" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%d" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TableColumn_7" display-name="TableColumn_7" uuid="d1dc1fcd-07c2-4c54-9c7f-06a9aaf29b76" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="Мигание" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="7" ver="2"/>
+			<designed target="BackgroundColor" value="4293980400" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="57" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%d" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TableColumn_8" display-name="TableColumn_8" uuid="24cab923-1214-4605-9c68-4ad79cc003e2" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="Фон миг-я" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="8" ver="2"/>
+			<designed target="BackgroundColor" value="4293980400" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="60" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%d" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TableColumn_9" display-name="TableColumn_9" uuid="615b1e7b-a29a-448a-9cb1-e1e4ee5973a1" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="Текст м-я" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="9" ver="2"/>
+			<designed target="BackgroundColor" value="4293980400" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="60" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%d" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="3c22cf28-a475-441b-98fd-c7b166be20bb" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="2">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Initialized">
+				<body kind="om">
+					<![CDATA[Table_1.AddRow();Table_1.AddRow();Table_1.AddRow();Table_1.AddRow();
+Table_1.SetCellData(0,5,"Текст1");
+Table_1.SetCellData(1,5,"Текст2");
+Table_1.SetCellData(2,5,"Текст3");
+Table_1.SetCellData(3,5,"Текст4");]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+</type>
+

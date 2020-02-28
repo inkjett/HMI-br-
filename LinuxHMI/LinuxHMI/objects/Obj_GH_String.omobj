@@ -1,0 +1,223 @@
+<type access-modifier="private" name="Obj_GH_String" display-name="Obj_GH_String" uuid="20024383-e736-4d77-9ce6-eb9530629008" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="330" ver="1"/>
+	<designed target="Height" value="20" ver="1"/>
+	<designed target="RoundingRadius" value="0" ver="1"/>
+	<designed target="PenColor" value="4278190080" ver="1"/>
+	<designed target="PenStyle" value="1" ver="1"/>
+	<designed target="PenWidth" value="1" ver="1"/>
+	<designed target="BrushColor" value="0xffb1c9ff" ver="1"/>
+	<designed target="BrushStyle" value="1" ver="1"/>
+	<object access-modifier="private" name="GH_F_rect" display-name="GH_F_rect" uuid="01d70bb5-0566-4e59-8fa6-db7407700ae3" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="130" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="100" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffffffff" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+	</object>
+	<object access-modifier="private" name="GH_Q_rect" display-name="GH_Q_rect" uuid="2838491d-1b9d-4336-8c6e-faa7dcc70a76" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="30" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="100" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffffffff" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+	</object>
+	<object access-modifier="private" name="GH_F_txt" display-name="GH_F_txt" uuid="c00b7000-3bca-4d1a-9fdd-6287cbd6d1bf" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="130"/>
+		<designed target="Y" value="0"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="100"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="235.5"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff000000"/>
+		<designed target="TextAlignment" value="132"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[F_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="GH_Num_txt" display-name="GH_Num_txt" uuid="73a824f2-8238-42d2-a020-a24b7dc25f96" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="0"/>
+		<designed target="Y" value="0"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="30"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff000000"/>
+		<designed target="TextAlignment" value="132"/>
+		<init target="Text" ver="1" ref="_String_Num"/>
+	</object>
+	<object access-modifier="private" name="GH_K_rect" display-name="GH_K_rect" uuid="fc1ad004-fa99-4ea3-a5e7-2379710866f4" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="230" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="100" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffffffff" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+	</object>
+	<object access-modifier="private" name="GH_K" display-name="GH_K" uuid="6897ef33-7162-4f77-b63d-952850d262fe" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="230"/>
+		<designed target="Y" value="0"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="100"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="235.5"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff000000"/>
+		<designed target="TextAlignment" value="132"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[K_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="GH_Q_txt" display-name="GH_Q_txt" uuid="da09c434-c591-428e-ae0d-956811b65f99" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="30"/>
+		<designed target="Y" value="0"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="100"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="235.5"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff000000"/>
+		<designed target="TextAlignment" value="132"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Q_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Q_opc" display-name="Q_opc" uuid="ad907529-2656-4772-b072-1cede3e79d57" base-type="ApItemFloat8" base-type-id="237365fa-a3a0-4100-8401-f40e324353da" ver="1">
+		<init target="Source" ver="1" ref="GH_String_Root"/>
+		<init target="Path" ver="1" value="Flow"/>
+	</object>
+	<object access-modifier="private" name="Q_OutputFormatter" display-name="Q_OutputFormatter" uuid="4821c9d9-6105-4605-a711-0f9515719fdd" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Q_opc.Value]]>
+			</body>
+		</do-trace>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="5d5e0039-311e-4a44-8fc6-6b2471a44609" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="1"/>
+		</init>
+	</object>
+	<object access-modifier="private" name="F_opc" display-name="F_opc" uuid="11f20668-6053-4b74-b423-42271e9807ba" base-type="ApItemFloat8" base-type-id="237365fa-a3a0-4100-8401-f40e324353da" ver="1">
+		<init target="Path" ver="1" value="Frequency"/>
+		<init target="Source" ver="1" ref="GH_String_Root"/>
+	</object>
+	<object access-modifier="private" name="K_opc" display-name="K_opc" uuid="2cc0050b-9f0d-42b1-8a71-fa35d316754b" base-type="ApItemFloat8" base-type-id="237365fa-a3a0-4100-8401-f40e324353da" ver="1">
+		<init target="Path" ver="1" value="Factor"/>
+		<init target="Source" ver="1" ref="GH_String_Root"/>
+	</object>
+	<object access-modifier="private" name="F_OutputFormatter" display-name="F_OutputFormatter" uuid="04a4b87b-3035-4b02-87f2-fcfed8890695" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[F_opc.Value]]>
+			</body>
+		</do-trace>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="756f9dd5-d6c3-43f9-b770-bf58baeb29a1" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="1"/>
+		</init>
+	</object>
+	<object access-modifier="private" name="K_OutputFormatter" display-name="K_OutputFormatter" uuid="a95ad7e9-c0cc-4457-9ffe-07bea18f342c" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[K_opc.Value]]>
+			</body>
+		</do-trace>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="b0a00f02-3c1f-4c37-b5ee-027581fa25d7" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="1">
+				<init target="DigitsCount" ver="1" value="5"/>
+			</object>
+		</init>
+	</object>
+	<param access-modifier="private" name="_Line_Num" display-name="_Line_Num" uuid="37780381-b53e-4557-b0a8-581ca17b7f3c" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<param access-modifier="private" name="_String_Num" display-name="_String_Num" uuid="6fdd45fc-363e-487b-87ad-b511511ad4c0" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="GH_Root" display-name="GH_Root" uuid="16df86c7-8bcf-4aef-920b-a1f24077dcb9" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="1">
+		<designed target="Active" value="true" ver="1"/>
+		<init target="ParentSource" ver="1" ref="unit.Sources.IVK_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["Line." + Str.ToString(_Line_Num) + ".GH"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="GH_Count" display-name="GH_Count" uuid="4a0dc0b1-c1d5-4597-b454-75cdc1f88f7a" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="1">
+		<init target="Path" ver="1" value="Count"/>
+		<init target="Source" ver="1" ref="GH_Root"/>
+	</object>
+	<object access-modifier="private" name="GH_String_Root" display-name="GH_String_Root" uuid="c5fd394b-3075-4388-ab30-4bdbf9031701" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="1">
+		<designed target="Active" value="true" ver="1"/>
+		<init target="ParentSource" ver="1" ref="GH_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[Str.ToString(_String_Num)]]>
+			</expr>
+		</init>
+	</object>
+	<do-trace access-modifier="private" target="Visible" ver="1">
+		<body>
+			<![CDATA[GH_Count>=String_Num]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="String_Num" display-name="String_Num" uuid="cc139be8-1e13-4c2c-804b-550f038f7ada" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<init target="String_Num" ver="1" ref="_String_Num"/>
+</type>
+

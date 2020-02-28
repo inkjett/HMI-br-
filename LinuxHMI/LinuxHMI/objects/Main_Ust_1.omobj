@@ -1,0 +1,148 @@
+<type access-modifier="private" name="Main_Ust_1" display-name="Main_Ust_1" uuid="d5cffd18-ca65-4d65-8d09-9739ec707830" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5">
+	<designed target="X" value="0"/>
+	<designed target="Y" value="0"/>
+	<designed target="Rotation" value="0"/>
+	<designed target="Scale" value="1"/>
+	<designed target="Visible" value="true"/>
+	<designed target="Enabled" value="true"/>
+	<designed target="Tooltip" value=""/>
+	<designed target="Width" value="700"/>
+	<designed target="Height" value="430"/>
+	<designed target="PenColor" value="0xff000000"/>
+	<designed target="PenStyle" value="0"/>
+	<designed target="PenWidth" value="1"/>
+	<designed target="BrushColor" value="0xffa0b5e6"/>
+	<designed target="BrushStyle" value="1"/>
+	<designed target="WindowX" value="0"/>
+	<designed target="WindowY" value="0"/>
+	<designed target="WindowWidth" value="700"/>
+	<designed target="WindowHeight" value="600"/>
+	<designed target="WindowCaption" value="MainForm"/>
+	<designed target="ShowWindowCaption" value="true"/>
+	<designed target="ShowWindowMinimize" value="true"/>
+	<designed target="ShowWindowMaximize" value="true"/>
+	<designed target="ShowWindowClose" value="true"/>
+	<designed target="AlwaysOnTop" value="false"/>
+	<designed target="WindowSizeMode" value="0"/>
+	<designed target="WindowBorderStyle" value="1"/>
+	<designed target="WindowState" value="0"/>
+	<designed target="WindowScalingMode" value="0"/>
+	<designed target="MonitorNumber" value="0"/>
+	<designed target="WindowPosition" value="0"/>
+	<designed target="WindowCloseMode" value="0"/>
+	<object access-modifier="private" name="txt_NameForm" display-name="txt_NameForm" uuid="534cf18d-12e5-495e-a77e-948a4bae83f1" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="9"/>
+		<designed target="Y" value="10"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="684"/>
+		<designed target="Height" value="31"/>
+		<designed target="Text" value="Регулирование"/>
+		<designed target="Font" value="Sans Serif,22,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff323232"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_Source_src_1" display-name="Pp_AI_Source_src_1" uuid="9798b419-fc14-4c57-ad15-a0bb66d4248c" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c">
+		<designed target="Active" value="true"/>
+		<init target="ParentSource" ver="1" ref="unit.Sources.PLC_source"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_WriteUst_booltoken_1" display-name="Pp_AI_WriteUst_booltoken_1" uuid="4ad2c641-f3a2-41b0-8f29-1d114dab4c27" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="1">
+		<init target="Application" ver="1" value="Alpha.HMI"/>
+		<init target="Right" ver="1" value="WriteUst"/>
+		<init target="SecurityContext" ver="2" ref="unit.Security.SecurityContext"/>
+	</object>
+	<object access-modifier="private" name="Obj_Ust_AI_PLC_New_1" display-name="Obj_Ust_AI_PLC_New_1" uuid="dedae403-9e65-48f5-a1f3-f43be1d4b379" base-type="Obj_Ust_AI_PLC_New" base-type-id="227a8051-5eea-4727-9f5b-6a2879ce6fc3" ver="1">
+		<designed target="X" value="45" ver="1"/>
+		<designed target="Y" value="328" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="612" ver="1"/>
+		<designed target="Height" value="32" ver="1"/>
+		<init target="Name_init" ver="1" value="Уставки времени вкл./откл. насоса рециркуляции Н-1, сек."/>
+		<init target="_Obj_Number" ver="1" value="1"/>
+		<init target="init_Obj_src" ver="1" ref="Pp_Scheduler_Source_src"/>
+	</object>
+	<object access-modifier="private" name="Pp_Scheduler_Source_src" display-name="Pp_Scheduler_Source_src" uuid="2fcf30d7-0c12-4a97-9868-73f2d305ab29" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c">
+		<designed target="Active" value="true"/>
+		<init target="ParentSource" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1" value="Scheduler"/>
+	</object>
+	<object access-modifier="private" name="Pp_AuxFC_Source_src" display-name="Pp_AuxFC_Source_src" uuid="b3558a47-b90e-4f75-8e5d-e8551ee0998f" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c">
+		<designed target="Active" value="true"/>
+		<init target="ParentSource" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1" value="AuxFC"/>
+	</object>
+	<object access-modifier="private" name="Obj_Ust_AI_PLC_New_2" display-name="Obj_Ust_AI_PLC_New_2" uuid="52ff1511-a0d1-4209-819d-d767ea7f34bc" base-type="Obj_Ust_AI_PLC_New_2" base-type-id="89a14851-37ba-405f-91f2-cacfeb23d48b" ver="1">
+		<designed target="X" value="45" ver="1"/>
+		<designed target="Y" value="179" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="612" ver="1"/>
+		<designed target="Height" value="32" ver="1"/>
+		<init target="init_Obj_src" ver="1" ref="Pp_AuxFC_Source_src"/>
+		<init target="_Obj_Number_name" ver="1" value="2"/>
+		<init target="Name_init" ver="1" value="Уставка по расходу после насоса Н-4, л/ч"/>
+		<init target="_Obj_Number" ver="1" value="4"/>
+	</object>
+	<object access-modifier="private" name="Obj_Ust_AI_PLC_New_3" display-name="Obj_Ust_AI_PLC_New_3" uuid="693c2a50-e3c2-47a3-867b-70fa926bf5cb" base-type="Obj_Ust_AI_PLC_New_2" base-type-id="89a14851-37ba-405f-91f2-cacfeb23d48b" ver="1">
+		<designed target="X" value="45" ver="1"/>
+		<designed target="Y" value="224" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="612" ver="1"/>
+		<designed target="Height" value="32" ver="1"/>
+		<init target="init_Obj_src" ver="1" ref="Pp_AuxFC_Source_src"/>
+		<init target="_Obj_Number_name" ver="1" value="2"/>
+		<init target="Name_init" ver="1" value="Уставка по расходу после насоса Н-5, л/ч"/>
+		<init target="_Obj_Number" ver="1" value="5"/>
+	</object>
+	<object access-modifier="private" name="Obj_TankInWork_3" display-name="Obj_TankInWork_3" uuid="56c15eb6-565d-42ba-8891-e7bc93403e70" base-type="Obj_TankInWork" base-type-id="47f21a66-e8ee-40e8-8fe3-faecb3019b4e" ver="1">
+		<designed target="X" value="498" ver="1"/>
+		<designed target="Y" value="73" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="30" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Tank_Number" ver="1" value="1"/>
+		<designed target="Font" value="Sans Serif,14,-1,5,50,0,0,0,0,0" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Obj_TankInWork_4" display-name="Obj_TankInWork_4" uuid="9fe04cd5-cabe-49d8-a7f8-c1e4302f0319" base-type="Obj_TankInWork" base-type-id="47f21a66-e8ee-40e8-8fe3-faecb3019b4e" ver="1">
+		<designed target="X" value="499" ver="1"/>
+		<designed target="Y" value="113" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="30" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Tank_Number" ver="1" value="2"/>
+		<designed target="Font" value="Sans Serif,14,-1,5,50,0,0,0,0,0" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="115e2a2d-0a9c-40b6-9393-8f813381ba0f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="108" ver="1"/>
+		<designed target="Y" value="77" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="374" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="Емкость Е-1 в работе" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="33" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="fea40e61-4f4d-4821-a63c-e3e38c79febe" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="108" ver="1"/>
+		<designed target="Y" value="118" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="374" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="Емкость Е-2 в работе" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="33" ver="1"/>
+	</object>
+</type>
+

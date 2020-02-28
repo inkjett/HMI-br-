@@ -1,0 +1,17 @@
+<unit uuid="72b64e83-d5d7-4895-8c46-faeddc82ceb8" name="aptestproj" main-form-id="ca01f9c2-25ba-4948-b34b-4b6c540074ad">
+	<object file="Connect.omobj" filter=""/>
+	<object file="Table_trends.omobj" filter="Trends_forms"/>
+	<object file="ChangeColor.omobj" filter="Trends_forms"/>
+	<object file="SettingsPrintTrends.omobj" filter="Trends_forms"/>
+	<object file="popup_LEGEND_menu.omobj" filter="Trends_forms"/>
+	<object file="Form_1.omobj" filter=""/>
+	<object file="ShowMessage.omobj" filter="Trends_forms"/>
+	<object file="Trends.omobj" filter=""/>
+	<object file="ToolButton.omobj" filter=""/>
+	<object file="Blanker.omobj" filter=""/>
+	<object file="popup_LEGEND_menu_1.omobj" filter="Trends_forms"/>
+	<object file="ExportDialog.omobj" filter="Trends_forms"/>
+	<object file="ImportDialog.omobj" filter="Trends_forms"/>
+	<object file="PrintTrends.omobj" filter="Trends_forms"/>
+</unit>
+

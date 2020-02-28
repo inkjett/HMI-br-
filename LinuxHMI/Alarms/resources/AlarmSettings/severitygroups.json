@@ -1,0 +1,1 @@
+[["Severity","{\"OR\":[{\">=\":{\"severity\":667}},{\"<=\":{\"severity\":1000}}]}","{\"OR\":[{\">=\":{\"severity\":445}},{\"<=\":{\"severity\":666}}]}","{\"OR\":[{\">=\":{\"severity\":223}},{\"<=\":{\"severity\":444}}]}","{\"OR\":[{\">=\":{\"severity\":1}},{\"<=\":{\"severity\":222}}]}"],["SoundRange1",true,0,0],["SoundRange2",true,3,0],["SoundRange3",true,1,0]]

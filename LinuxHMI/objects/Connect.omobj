@@ -1,0 +1,13 @@
+<object access-modifier="private" name="Connect" display-name="Connect" uuid="ed4140b1-3f6b-4f49-9d12-fcf324d9b95a" base-type="JustDummy" base-type-id="34bc054d-53be-4c82-873b-bd509d7c7c3b" ver="2">
+	<object access-modifier="private" name="AP_main" display-name="AP_main" uuid="6c80d727-49c8-4672-9d7f-97ff6554cc73" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="2">
+		<designed target="Active" value="true" ver="2"/>
+		<init target="Location" ver="2" value="127.0.0.1"/>
+		<init target="Port" ver="2" value="4388"/>
+		<init target="HistoryPort" ver="2" value="4950"/>
+		<init target="Timeout" ver="2" value="1000"/>
+		<init target="ConnectionEstablishTimeout" ver="2" value="1000"/>
+		<init target="MaxBufferPoolSize" ver="2" value="1000000"/>
+	</object>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="bfe3ce85-1545-44e0-a539-9e225ead5692" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="2"/>
+</object>
+

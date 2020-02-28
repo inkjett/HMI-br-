@@ -1,0 +1,122 @@
+<type access-modifier="private" name="AI_Signal" display-name="AI_Signal" uuid="5fc7b0ff-f259-4edb-9182-9c07f8733cf3" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+	<designed target="X" value="0"/>
+	<designed target="Y" value="0"/>
+	<designed target="Rotation" value="0"/>
+	<designed target="Scale" value="1"/>
+	<designed target="Visible" value="true"/>
+	<designed target="Enabled" value="true"/>
+	<designed target="Tooltip" value=""/>
+	<designed target="Width" value="180"/>
+	<designed target="Height" value="25"/>
+	<designed target="RoundingRadius" value="0"/>
+	<designed target="PenColor" value="4278190080"/>
+	<designed target="PenStyle" value="0"/>
+	<designed target="PenWidth" value="1"/>
+	<designed target="BrushColor" value="4278190080"/>
+	<designed target="BrushStyle" value="0"/>
+	<object access-modifier="private" name="txt_Value" display-name="txt_Value" uuid="33b98157-5b2b-44a6-8f11-34b9377fd05a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="83"/>
+		<designed target="Y" value="3"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="83"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="10,25"/>
+		<designed target="Font" value="MS Shell Dlg 2,16,-1,5,75,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="130"/>
+		<object access-modifier="private" name="AI_Value" display-name="AI_Value" uuid="447845fc-4025-46fa-82ae-1d33b8dd88a0" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c">
+			<designed target="Active" value="true"/>
+			<designed target="UpdateRate" value="0"/>
+			<init target="Location" value="localhost"/>
+			<init target="ProgId" value="AP.OPCDAServer"/>
+			<init target="Path" ref="_Value"/>
+		</object>
+		<object access-modifier="private" name="Value" display-name="Value" uuid="1ba86dec-afc3-416c-9003-3f2b1f1e8cc8" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+			<designed target="Value" value=""/>
+			<init target="Source" ref="AI_Value"/>
+		</object>
+		<do-trace access-modifier="private" target="Text">
+			<body>
+				<![CDATA[Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="txt_Name" display-name="txt_Name" uuid="50436906-947a-47e9-9edd-aaaa261c8780" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="-7"/>
+		<designed target="Y" value="3"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="86.999999999999986"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="AI1="/>
+		<designed target="Font" value="MS Shell Dlg 2,16,-1,5,75,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="130"/>
+		<init target="Text" ref="_Name"/>
+	</object>
+	<param access-modifier="private" name="_Value" display-name="_Value" uuid="a08dec19-a49b-4c33-bd97-72cd1cac0794" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d"/>
+	<param access-modifier="private" name="_Name" display-name="_Name" uuid="21c4f068-a118-4250-bee3-ab0dc3ae1f20" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d"/>
+	<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="b1c735a1-3fe1-4f1e-9463-c5e3051fa4fe" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba">
+		<designed target="X" value="102"/>
+		<designed target="Y" value="29"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="20"/>
+		<designed target="Height" value="20"/>
+		<designed target="PenColor" value="4278190080"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff00aaff"/>
+		<designed target="BrushStyle" value="1"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="ce79125f-282c-4a17-b846-4c9d5f9b69ae" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="ecaa3813-a599-4117-a41e-18712e7392b7" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="10"/>
+			<designed target="Y" value="3"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="5d6847d6-ad1f-4477-a636-5de6557f1f11" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="20"/>
+			<designed target="Y" value="0"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="73a40306-a2d9-47db-a829-750ea44dad94" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="10"/>
+			<designed target="Y" value="20"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="3cdd0d5a-cab0-4623-b7f7-53d0731607d4" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+		</object>
+		<init target="Visible" ver="1" ref="_Arrow"/>
+	</object>
+	<param access-modifier="private" name="_Arrow" display-name="_Arrow" uuid="69eb7dd7-5a63-49f4-bcda-afcbc02ac04e" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="1"/>
+	<object access-modifier="private" name="txt_Name_1" display-name="txt_Name_1" uuid="b514dc49-e982-40b2-a3b1-925237d1b4ea" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="170"/>
+		<designed target="Y" value="3"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="75.999999999999972"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="кг/см³"/>
+		<designed target="Font" value="MS Shell Dlg 2,16,-1,5,75,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+		<init target="Text" ver="1" ref="_EdIzm"/>
+	</object>
+	<param access-modifier="private" name="_EdIzm" display-name="_EdIzm" uuid="19dfc8c4-ef95-4ce7-9393-e5c57b1b42ae" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d"/>
+</type>
+

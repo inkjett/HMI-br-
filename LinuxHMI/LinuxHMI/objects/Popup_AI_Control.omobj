@@ -1,0 +1,3483 @@
+<type access-modifier="private" name="Popup_AI_Control" display-name="Popup_AI_Control" uuid="2cec6a0e-d58c-42f7-a218-fe048c5a985a" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5">
+	<designed target="X" value="0"/>
+	<designed target="Y" value="0"/>
+	<designed target="Rotation" value="0"/>
+	<designed target="Scale" value="1"/>
+	<designed target="Visible" value="true"/>
+	<designed target="Enabled" value="true"/>
+	<designed target="Tooltip" value=""/>
+	<designed target="Width" value="1340"/>
+	<designed target="Height" value="525"/>
+	<designed target="PenColor" value="4278190080"/>
+	<designed target="PenStyle" value="0"/>
+	<designed target="PenWidth" value="1"/>
+	<designed target="BrushColor" value="0xff63708f"/>
+	<designed target="BrushStyle" value="1"/>
+	<designed target="WindowX" value="0"/>
+	<designed target="WindowY" value="0"/>
+	<designed target="WindowWidth" value="1340"/>
+	<designed target="WindowHeight" value="525"/>
+	<designed target="WindowCaption" value="Окно контроля измеряемого параметра"/>
+	<designed target="ShowWindowCaption" value="false"/>
+	<designed target="ShowWindowMinimize" value="false"/>
+	<designed target="ShowWindowMaximize" value="false"/>
+	<designed target="ShowWindowClose" value="true"/>
+	<designed target="AlwaysOnTop" value="true"/>
+	<designed target="WindowSizeMode" value="0"/>
+	<designed target="WindowBorderStyle" value="2"/>
+	<designed target="WindowState" value="0"/>
+	<designed target="WindowScalingMode" value="0"/>
+	<designed target="MonitorNumber" value="0"/>
+	<designed target="WindowPosition" value="0"/>
+	<designed target="WindowCloseMode" value="0"/>
+	<param access-modifier="private" name="PopupWinX" display-name="PopupWinX" uuid="55f88af1-952a-43cd-b2f5-6134f260b2fa" base-type="int32" base-type-id="74222947-f188-4195-8e0e-e33bd9827255"/>
+	<param access-modifier="private" name="PopupWinY" display-name="PopupWinY" uuid="fd74408c-e27d-4835-8f2f-714410d2f85d" base-type="int32" base-type-id="74222947-f188-4195-8e0e-e33bd9827255"/>
+	<object access-modifier="private" name="Pp_AI_ValueElectrGroup_rectangle" display-name="Pp_AI_ValueElectrGroup_rectangle" uuid="a37fd6c1-efbc-497c-a7fa-7d0d2c89252b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="1345.17" ver="1"/>
+		<designed target="Y" value="67.8333" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="267" ver="1"/>
+		<designed target="Height" value="47" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff383838" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+		<object access-modifier="private" name="Rectangle_20" display-name="Rectangle_20" uuid="d8390da6-bcb1-4257-ae6f-5f18d636d0bd" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+			<designed target="X" value="4"/>
+			<designed target="Y" value="-11"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="153"/>
+			<designed target="Height" value="20.6667"/>
+			<designed target="RoundingRadius" value="0"/>
+			<designed target="PenColor" value="0xff383838"/>
+			<designed target="PenStyle" value="0"/>
+			<designed target="PenWidth" value="1"/>
+			<designed target="BrushColor" value="0xff63708f"/>
+			<designed target="BrushStyle" value="1"/>
+		</object>
+		<object access-modifier="private" name="txt_DiagGroup_8" display-name="txt_DiagGroup_8" uuid="7c097ea8-fa2c-4c0d-b17c-28af3899ebb8" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="7.53077"/>
+			<designed target="Y" value="-9.5"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="145.938"/>
+			<designed target="Height" value="16"/>
+			<designed target="Text" value="Значение на модуле"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff383838"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<object access-modifier="private" name="Pp_AI_ElectrValue_rect_1" display-name="Pp_AI_ElectrValue_rect_1" uuid="75b6c9bf-b28e-44ba-9db9-b7f0ecfb21d3" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="6" ver="1"/>
+			<designed target="Y" value="10.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="90" ver="1"/>
+			<designed target="Height" value="30" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="1" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+			<designed target="BrushStyle" value="0" ver="1"/>
+			<object access-modifier="private" name="txt_Value_2" display-name="txt_Value_2" uuid="f806cd07-609a-4bfe-a8bd-15b505fd0ffc" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+				<designed target="X" value="0.5"/>
+				<designed target="Y" value="1.5"/>
+				<designed target="Rotation" value="0"/>
+				<designed target="Scale" value="1"/>
+				<designed target="Visible" value="true"/>
+				<designed target="Enabled" value="true"/>
+				<designed target="Tooltip" value=""/>
+				<designed target="Width" value="88"/>
+				<designed target="Height" value="26"/>
+				<designed target="Text" value="10,25"/>
+				<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0"/>
+				<designed target="FontColor" value="4278190080"/>
+				<designed target="TextAlignment" value="132"/>
+				<do-trace access-modifier="private" target="Text" ver="1">
+					<body>
+						<![CDATA[Pp_AI_ValueElectr_formatter.OutValue]]>
+					</body>
+				</do-trace>
+			</object>
+		</object>
+		<object access-modifier="private" name="txt_Unit_26" display-name="txt_Unit_26" uuid="625f4f8e-9cc5-4aa0-a6d5-59d9db52ab73" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="102"/>
+			<designed target="Y" value="17"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="66"/>
+			<designed target="Height" value="20"/>
+			<designed target="Text" value="мА"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="4278190080"/>
+			<designed target="TextAlignment" value="129"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<body>
+					<![CDATA[Pp_AI_Attributes_Unit2.ValueAsString]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="txt_Unit_27" display-name="txt_Unit_27" uuid="879d4058-9436-4647-b782-180d59d6d825" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="241"/>
+			<designed target="Y" value="350"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="28"/>
+			<designed target="Height" value="20"/>
+			<designed target="Text" value="мА"/>
+			<designed target="Font" value="Segoe UI,12,-1,5,50,0,0,0,0,0,Обычный"/>
+			<designed target="FontColor" value="4278190080"/>
+			<designed target="TextAlignment" value="129"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<body>
+					<![CDATA[Pp_AI_Attributes_Unit2.ValueAsString]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="txt_Unit_28" display-name="txt_Unit_28" uuid="6120b33b-f325-4b20-9c6b-181e9409fc79" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="241"/>
+			<designed target="Y" value="380"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="28"/>
+			<designed target="Height" value="20"/>
+			<designed target="Text" value="мА"/>
+			<designed target="Font" value="Segoe UI,12,-1,5,50,0,0,0,0,0,Обычный"/>
+			<designed target="FontColor" value="4278190080"/>
+			<designed target="TextAlignment" value="129"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<body>
+					<![CDATA[Pp_AI_Attributes_Unit2.ValueAsString]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pp_AI_RangeValidGroup_rect_1" display-name="Pp_AI_RangeValidGroup_rect_1" uuid="97ba0c82-c198-478e-b583-9694a85810df" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="1345.17" ver="1"/>
+		<designed target="Y" value="125.833" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="267" ver="1"/>
+		<designed target="Height" value="47" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff383838" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+		<object access-modifier="private" name="Rectangle_21" display-name="Rectangle_21" uuid="f24d47dd-e098-4d12-943f-93ec61cba75a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+			<designed target="X" value="4.66667"/>
+			<designed target="Y" value="-10"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="109"/>
+			<designed target="Height" value="20.6667"/>
+			<designed target="RoundingRadius" value="0"/>
+			<designed target="PenColor" value="0xff383838"/>
+			<designed target="PenStyle" value="0"/>
+			<designed target="PenWidth" value="1"/>
+			<designed target="BrushColor" value="0xff63708f"/>
+			<designed target="BrushStyle" value="1"/>
+		</object>
+		<object access-modifier="private" name="Pp_AI_KFilt_textedit" display-name="Pp_AI_KFilt_textedit" uuid="1503fa17-4459-4d0b-b46a-8898e066ddaa" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+			<designed target="X" value="151" ver="1"/>
+			<designed target="Y" value="11" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="90" ver="1"/>
+			<designed target="Height" value="30" ver="1"/>
+			<designed target="Text" value="25,7" ver="1"/>
+			<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+			<designed target="HideInput" value="false" ver="1"/>
+			<designed target="PlaceholderText" value="" ver="1"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="EditFinished" ver="1">
+				<body kind="om">
+					<![CDATA[Pp_AI_KFilt_Write_opc.Value=String.ToFloat(Str.Replace(Pp_AI_KFilt_textedit.Text, ".", ","),0);
+Pp_AI_KFilt_textedit.Text=Str.Replace(Pp_AI_KFilt_textedit.Text, ".", ",");]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<body>
+					<![CDATA[Pp_AI_KFilt_formatter.OutValue]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="1">
+				<body>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Pp_AI_EnableFilt_opc.Value,false)==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffe1e1e1]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff7d7d7d]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<designed target="ReadOnly" value="false" ver="2"/>
+		</object>
+		<object access-modifier="private" name="txt_DiagGroup_8" display-name="txt_DiagGroup_8" uuid="23d76e29-888e-4407-8e49-9f00db0cd202" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="6.50633"/>
+			<designed target="Y" value="-8.5"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="106.241"/>
+			<designed target="Height" value="14"/>
+			<designed target="Text" value="Фильтрация"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff383838"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<object access-modifier="private" name="txt_Unit_30" display-name="txt_Unit_30" uuid="a68dd246-dffa-43b1-a6f7-33512552eca6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="92"/>
+			<designed target="Y" value="16"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="55"/>
+			<designed target="Height" value="20"/>
+			<designed target="Text" value="К фильт."/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="4278190080"/>
+			<designed target="TextAlignment" value="129"/>
+		</object>
+		<object access-modifier="private" name="EnableFilt_button" display-name="EnableFilt_button" uuid="65eb9335-dfc8-4872-ace5-16c22f7d9bd5" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="26" ver="1"/>
+			<designed target="Y" value="15" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="22" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="V" ver="1"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Pp_AI_EnableFilt_opc.Value,false)==false]]>
+					</condition>
+					<expr>
+						<![CDATA[""]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Pp_AI_EnableFilt_opc.Value,false)==true]]>
+					</condition>
+					<expr>
+						<![CDATA["V"]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[	//Если фильтрация выключена - включить
+	if (Variant.ToBool(Pp_AI_EnableFilt_opc.Value,false)==false)
+	{
+		Pp_AI_Command_opc.Value = (TypeConvert.ToUint2(256) * TypeConvert.ToUint2(3)) + TypeConvert.ToUint2(Pp_AINumber);	//Запись команды
+	}
+	//Иначе - выключить
+	else
+	{
+		Pp_AI_Command_opc.Value = (TypeConvert.ToUint2(256) * TypeConvert.ToUint2(4)) + TypeConvert.ToUint2(Pp_AINumber);	//Запись команды
+	}]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff7d7d7d]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="1">
+				<body>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+				</body>
+			</do-trace>
+			<designed target="Checkable" value="false" ver="3"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_TechValue" display-name="Rectangle_TechValue" uuid="58f642f5-0084-413e-bb16-a9172737e512" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="1066.17" ver="1"/>
+		<designed target="Y" value="67.8333" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="267" ver="1"/>
+		<designed target="Height" value="47" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff383838" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_ValueTechOut_rect" display-name="Pp_AI_ValueTechOut_rect" uuid="a4ba7eaa-44d0-4e11-8546-286a03bed2ac" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="1173.17" ver="1"/>
+		<designed target="Y" value="78.8333" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_StateNow_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pp_AI_StateNow_opc.Value,0) == 0]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pp_AI_StateNow_opc.Value,0) == 1]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pp_AI_StateNow_opc.Value,0) == 2]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pp_AI_StateNow_opc.Value,0) == 3]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pp_AI_StateNow_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pp_AI_StateNow_opc.Value,0) >= 5]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffffff]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<object access-modifier="private" name="txt_Value_1" display-name="txt_Value_1" uuid="1e2ab56d-96c4-41b8-8ef6-677ce5a78a36" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="0.5"/>
+			<designed target="Y" value="1.5"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="88"/>
+			<designed target="Height" value="26"/>
+			<designed target="Text" value="10,25"/>
+			<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="4278190080"/>
+			<designed target="TextAlignment" value="132"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<body>
+					<![CDATA[Pp_AI_ValueTechOut_formatter.OutValue]]>
+				</body>
+			</do-trace>
+		</object>
+		<do-trace access-modifier="private" target="PenColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_StateLast_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pp_AI_StateNow_opc.Value,0) != 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pp_AI_StateLast_opc.Value,0) == 0]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pp_AI_StateLast_opc.Value,0) == 1]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pp_AI_StateLast_opc.Value,0) == 2]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pp_AI_StateLast_opc.Value,0) == 3]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pp_AI_StateLast_opc.Value,0) >= 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ffff]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="PenWidth" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_StateLast_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[1]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pp_AI_StateNow_opc.Value,0) != 4]]>
+				</condition>
+				<expr>
+					<![CDATA[1]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pp_AI_StateNow_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[2]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Rectangle_Graph" display-name="Rectangle_Graph" uuid="6d921228-7439-4067-a13d-0fe780b8d406" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="3.66667" ver="1"/>
+		<designed target="Y" value="66.3333" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="1060" ver="1"/>
+		<designed target="Height" value="450" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff383838" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+		<object access-modifier="private" name="Button_3" display-name="Button_3" uuid="2bc4a212-676e-4a39-9ced-d3756c6f2059" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="5" ver="1"/>
+			<designed target="Y" value="420" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="120" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="Сброс масштаба" ver="1"/>
+			<designed target="Font" value="Segoe UI,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[//AlphaTrendsAxControl_1.FitToScreen();]]>
+				</body>
+			</do-on>
+			<designed target="Checkable" value="false" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Button_4" display-name="Button_4" uuid="b6a2df5d-b6e7-4882-985b-deaf10bb23de" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="130" ver="1"/>
+			<designed target="Y" value="420" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="120" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="Добавить маркер" ver="1"/>
+			<designed target="Font" value="Segoe UI,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[//AlphaTrendsAxControl_1.AddMarker();]]>
+				</body>
+			</do-on>
+			<designed target="Checkable" value="false" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Button_Oper" display-name="Button_Oper" uuid="3e1c9862-f431-4ff9-999d-efd94e597dbc" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="620" ver="1"/>
+			<designed target="Y" value="420" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="98" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="Оперативный" ver="1"/>
+			<designed target="Font" value="Segoe UI,10,-1,5,75,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[//AlphaTrendsAxControl_1.ActiveMode = 0;
+DebugTool_1.Log("Оперативный");
+Trends_1.ActiveMode=0;
+this.Font="Segoe UI,10,-1,5,75,0,0,0,0,0";
+Button_Hist.Font="Segoe UI,10,-1,5,50,0,0,0,0,0";]]>
+				</body>
+			</do-on>
+			<designed target="Checkable" value="false" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Button_Hist" display-name="Button_Hist" uuid="ebd82eb0-840d-4c62-b440-823445545fd9" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="720" ver="1"/>
+			<designed target="Y" value="420" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="98" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="Исторический" ver="1"/>
+			<designed target="Font" value="Segoe UI,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ButtonPressed">
+				<body kind="javascript">
+					<![CDATA[DebugTool_1.Log("Исторический")
+
+//AlphaTrendsAxControl_1.ActiveMode = 1;
+this.Font="Segoe UI,10,-1,5,75,0,0,0,0,0";
+Button_Oper.Font="Segoe UI,10,-1,5,50,0,0,0,0,0";
+//Установка исторического интервала от данного момента и ранее на 5 минут
+//StartDate: String;
+//EndDate: String;
+//StartDate = CStr(Now - 300);
+//EndDate = CStr(Now);
+//AlphaTrendsAxControl_1.SetHistoricalInterval(StartDate, EndDate);
+//t1:uint8 = DateTime.Parse(TextEdit_1.Text)-TimeZone();
+//t2:uint8 = DateTime.Parse(TextEdit_2.Text)-TimeZone();
+Trends_1.SetActiveMode(1);
+Trends_1.History_mode(Date.now(), Date.now());
+]]>
+				</body>
+			</do-on>
+			<designed target="Checkable" value="false" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Button_5" display-name="Button_5" uuid="b2a9ce56-048e-4275-9a33-87d576fbb473" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="255" ver="1"/>
+			<designed target="Y" value="420" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="120" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="Удалить маркеры" ver="1"/>
+			<designed target="Font" value="Segoe UI,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[Action_RenewTrendRange.Invoke();]]>
+				</body>
+			</do-on>
+			<designed target="Checkable" value="false" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Trends_1" display-name="Trends_1" uuid="6e3a4612-1665-406c-be2d-8e9fb1981186" base-type="Trends" base-type-id="81673f92-ac48-4244-bfe3-ddbdcc98167a" ver="2">
+			<designed target="X" value="3.0152" ver="2"/>
+			<designed target="Y" value="10.151" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Width" value="1051" ver="2"/>
+			<designed target="Height" value="441" ver="2"/>
+			<init target="int_AP" ver="2" ref="unit.Connect.AP_main"/>
+			<init target="LowRange" ver="2" value="0"/>
+			<init target="HighRange" ver="2" value="100"/>
+			<init target="ShowToolbar" ver="3" value="true"/>
+			<init target="ShowLegend" ver="3" value="false"/>
+			<init target="ShowSignalTree" ver="3" value="false"/>
+			<init target="AutoSizeLegend" ver="3" value="true"/>
+			<init target="MaxLineLegendShow" ver="3" value="1"/>
+			<init target="ActiveMode" ver="3" value="0"/>
+			<init target="ShowMarkerLabels" ver="3" value="true"/>
+		</object>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="WindowActivationChanged">
+		<body kind="om">
+			<![CDATA[if (!WindowActive) Close();]]>
+		</body>
+	</do-on>
+	<param access-modifier="private" name="_Messages" display-name="_Messages" uuid="e5477dcf-1a35-4c86-ae50-04bc3f90f204" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" base-const="true" base-ref="true"/>
+	<param access-modifier="private" name="_Pp_AINumber" display-name="_Pp_AINumber" uuid="3a07b02c-cbcb-4c62-8373-4ec709eb9e71" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="Rectangle_5" display-name="Rectangle_5" uuid="3255a8ab-4f17-42f2-b90b-b56be55b6b43" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="1071.34"/>
+		<designed target="Y" value="63.3333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="127.2"/>
+		<designed target="Height" value="9.0667"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="0xff383838"/>
+		<designed target="PenStyle" value="0"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff63708f"/>
+		<designed target="BrushStyle" value="1"/>
+	</object>
+	<object access-modifier="private" name="txt_DiagGroup_1" display-name="txt_DiagGroup_1" uuid="c1c747d0-dd83-4405-998f-dbfef62f04e3" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1060.47"/>
+		<designed target="Y" value="59.6333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="144"/>
+		<designed target="Height" value="14"/>
+		<designed target="Text" value="Текущее значение"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff383838"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<param access-modifier="private" name="_PP_AIName" display-name="_PP_AIName" uuid="155453df-fc4a-4484-aa59-137366b883e4" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="txt_Unit_1" display-name="txt_Unit_1" uuid="6f3865b5-9c19-481c-9787-bb210013a4fd" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1266.67"/>
+		<designed target="Y" value="84.3333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="66"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="кг/см³"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+		<init target="Text" ver="1" ref="_Pp_AIUnit"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_11" display-name="Rectangle_11" uuid="5ca35e7e-9949-46af-849d-e7c673b3996f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="1066.17" ver="1"/>
+		<designed target="Y" value="125.833" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="267" ver="1"/>
+		<designed target="Height" value="47" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff383838" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_12" display-name="Rectangle_12" uuid="ef647467-6090-415e-9225-61189a293db0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="1071.34"/>
+		<designed target="Y" value="121.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="68.8"/>
+		<designed target="Height" value="10.6667"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="0xff383838"/>
+		<designed target="PenStyle" value="0"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff63708f"/>
+		<designed target="BrushStyle" value="1"/>
+	</object>
+	<object access-modifier="private" name="txt_DiagGroup_4" display-name="txt_DiagGroup_4" uuid="e6995ec5-b4ef-4676-b190-03924ec4bb11" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1072.67"/>
+		<designed target="Y" value="116.833"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="62.8"/>
+		<designed target="Height" value="14"/>
+		<designed target="Text" value="Имитация"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff383838"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<object access-modifier="private" name="txt_Unit_2" display-name="txt_Unit_2" uuid="c7be9df1-ddcf-42a5-88fa-e3e61980677f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1265.67"/>
+		<designed target="Y" value="141.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="66"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="кг/см³"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+		<init target="Text" ver="1" ref="_Pp_AIUnit"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_ValueImit_textedit" display-name="Pp_AI_ValueImit_textedit" uuid="251acaf9-0aff-4fbe-aacb-f36900a2b11d" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="1072" ver="1"/>
+		<designed target="Y" value="136" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="Text" value="25,7" ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="EditFinished" ver="1">
+			<body kind="om">
+				<![CDATA[		//Окно подтверждения
+//if (ctrlWndYesNo.wnd("Подтверждаете изменение значения в режиме имитации?") == 1)
+//{
+DebugTool_1.Log(Pp_AI_ValueImit_opc.Quality);
+	//Если качество тега имитации хорошее
+	if (Pp_AI_ValueImit_opc.Quality>=192)
+	{
+	//Pp_AI_ValueImit_Write_opc.Value=String.ToFloat(Pp_AI_ValueImit_textedit.Text,0);	//Запись значения имитации
+	Pp_AI_ValueImit_Write_opc.Value=String.ToFloat(Str.Replace(Pp_AI_ValueImit_textedit.Text, ",", "."),0);	//Запись значения имитации
+	}
+//}]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Pp_AI_ValueImit_formatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Pp_AI_WriteUst_booltoken.Value && Variant.ToBool(Pp_AI_StateImit_opc.Value,false)]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff7d7d7d]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<designed target="ReadOnly" value="false" ver="2"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_ElectrValue_rect" display-name="Pp_AI_ElectrValue_rect" uuid="b0c0f050-e680-421d-9db6-1d64e59b3359" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="1072.17" ver="1"/>
+		<designed target="Y" value="78.8333" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+		<object access-modifier="private" name="txt_Value_2" display-name="txt_Value_2" uuid="780b2b43-efcf-4324-abcd-f12d04789df3" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="0.5"/>
+			<designed target="Y" value="1.5"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="88"/>
+			<designed target="Height" value="26"/>
+			<designed target="Text" value="10,25"/>
+			<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="4278190080"/>
+			<designed target="TextAlignment" value="132"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<body>
+					<![CDATA[Pp_AI_ValueTechIn_formatter.OutValue]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_14" display-name="Rectangle_14" uuid="18909ed1-7c65-4871-82bd-db048af1856e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="1066.17" ver="1"/>
+		<designed target="Y" value="181.833" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="267" ver="1"/>
+		<designed target="Height" value="212.667" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff383838" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_15" display-name="Rectangle_15" uuid="856630d6-74f9-46c0-bbfa-91b8eddc4488" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="1068.34"/>
+		<designed target="Y" value="174.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="51"/>
+		<designed target="Height" value="20.6667"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="0xff383838"/>
+		<designed target="PenStyle" value="0"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff63708f"/>
+		<designed target="BrushStyle" value="1"/>
+	</object>
+	<object access-modifier="private" name="txt_DiagGroup_5" display-name="txt_DiagGroup_5" uuid="2787a48e-55fa-4c0e-89f3-8141a9e6ca8f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1070.67"/>
+		<designed target="Y" value="173.833"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="48"/>
+		<designed target="Height" value="14"/>
+		<designed target="Text" value="Уставки"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff383838"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<object access-modifier="private" name="txt_Unit_3" display-name="txt_Unit_3" uuid="c025fa84-faf5-4006-a51a-8cc2fe458b3d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1263.67"/>
+		<designed target="Y" value="206.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="66"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="кг/см³"/>
+		<designed target="Font" value="Segoe UI,12,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+		<init target="Text" ver="1" ref="_Pp_AIUnit"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax3_textedit" display-name="Pp_AI_UstMax3_textedit" uuid="0ceb82ea-e911-4cbf-b10e-2c190cd53e4e" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="1171" ver="1"/>
+		<designed target="Y" value="201" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="Text" value="35,0" ver="1"/>
+		<designed target="Font" value="Segoe UI,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="EditFinished" ver="1">
+			<body kind="om">
+				<![CDATA[Pp_AI_UstMax3_Write_opc.Value=String.ToFloat(Str.Replace(Pp_AI_UstMax3_textedit.Text, ",", "."),0);]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Pp_AI_UstMax3_formatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Pp_AI_UstMax3_Enable_opc.Value,false)==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffe1e1e1]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff7d7d7d]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<designed target="ReadOnly" value="false" ver="2"/>
+	</object>
+	<object access-modifier="private" name="txt_Unit_4" display-name="txt_Unit_4" uuid="eb97eb44-96b7-40da-b4e6-ed34281d9293" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1070.67"/>
+		<designed target="Y" value="206.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="86"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="Макс.авар."/>
+		<designed target="Font" value="Segoe UI,10,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+	</object>
+	<object access-modifier="private" name="txt_Unit_6" display-name="txt_Unit_6" uuid="0b76b3bd-f560-49c2-8986-3515224315e3" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1070.67"/>
+		<designed target="Y" value="238.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="86"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="Макс.пред."/>
+		<designed target="Font" value="Segoe UI,10,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+	</object>
+	<object access-modifier="private" name="txt_Unit_8" display-name="txt_Unit_8" uuid="460be0a6-4bc3-4a38-bc18-e951f12a0008" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1070.67"/>
+		<designed target="Y" value="270.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="86"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="Макс."/>
+		<designed target="Font" value="Segoe UI,10,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+	</object>
+	<object access-modifier="private" name="txt_Unit_10" display-name="txt_Unit_10" uuid="24632ada-4988-4edb-87b9-3d0f69eb84c6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1070.67"/>
+		<designed target="Y" value="302.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="86"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="Мин."/>
+		<designed target="Font" value="Segoe UI,10,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+	</object>
+	<object access-modifier="private" name="txt_Unit_12" display-name="txt_Unit_12" uuid="08cf213d-3ba4-4be5-9220-d7393317ee75" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1070.67"/>
+		<designed target="Y" value="334.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="86"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="Мин.пред."/>
+		<designed target="Font" value="Segoe UI,10,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+	</object>
+	<object access-modifier="private" name="txt_Unit_14" display-name="txt_Unit_14" uuid="1ec81b77-f16e-4710-b1b6-3f4b8749db1c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1070.67"/>
+		<designed target="Y" value="366.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="86"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="Мин.авар."/>
+		<designed target="Font" value="Segoe UI,10,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_16" display-name="Rectangle_16" uuid="9db5e581-30c7-478c-9440-b7d6eda0839f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="1066.17" ver="1"/>
+		<designed target="Y" value="400.833" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="267" ver="1"/>
+		<designed target="Height" value="79" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff383838" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_17" display-name="Rectangle_17" uuid="b4304203-c86c-46fe-863d-412ac4352e93" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="1071.34"/>
+		<designed target="Y" value="396.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="197"/>
+		<designed target="Height" value="10.6667"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="0xff383838"/>
+		<designed target="PenStyle" value="0"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff63708f"/>
+		<designed target="BrushStyle" value="1"/>
+	</object>
+	<object access-modifier="private" name="txt_DiagGroup_6" display-name="txt_DiagGroup_6" uuid="3dc944bd-2eff-44b0-8255-9300eb505e03" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1071.67"/>
+		<designed target="Y" value="391.833"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="195"/>
+		<designed target="Height" value="14"/>
+		<designed target="Text" value="Диапазон датчика (инженерный)"/>
+		<designed target="Font" value="Segoe UI,10,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="0xff383838"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<object access-modifier="private" name="txt_Unit_17" display-name="txt_Unit_17" uuid="3596b0ce-4512-4ed2-971f-c57337f3fd6f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1070.67"/>
+		<designed target="Y" value="416.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="86"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="Максимум"/>
+		<designed target="Font" value="Segoe UI,10,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+	</object>
+	<object access-modifier="private" name="txt_Unit_18" display-name="txt_Unit_18" uuid="210d5646-0b05-4337-8ec9-9a03c8fb95b2" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1070.67"/>
+		<designed target="Y" value="448.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="86"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="Минимум"/>
+		<designed target="Font" value="Segoe UI,10,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_19" display-name="Rectangle_19" uuid="4f03cab1-0a1d-4a0d-bec7-2383ed79b618" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="9.33337"/>
+		<designed target="Y" value="63.3333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="45"/>
+		<designed target="Height" value="10.6667"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="0xff383838"/>
+		<designed target="PenStyle" value="0"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff63708f"/>
+		<designed target="BrushStyle" value="1"/>
+	</object>
+	<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="540c0cea-4d33-471b-b6ca-a8f793e24aa3" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="1067" ver="1"/>
+		<designed target="Y" value="484" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="267" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="Text" value="Дополнительно" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[if (here.Width>1340)
+{
+	here.Width=1340;
+	here.WindowWidth=1340;
+	here.Window_close_line_1.notifying_WindowWidth_now = here.WindowWidth;
+}
+else
+{
+	here.Width=1640;
+	here.WindowWidth=1640;
+	here.Window_close_line_1.notifying_WindowWidth_now = here.WindowWidth;
+}]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="WindowVertical_line" display-name="WindowVertical_line" uuid="d266bb50-d039-4a37-856a-3cc89c06c29f" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="1">
+		<designed target="X" value="1338.67" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="0" ver="1"/>
+		<designed target="Height" value="525" ver="1"/>
+		<designed target="PenColor" value="0xff1883d7" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="7cbc26d0-497d-4f98-ae1e-579e0ed0972b" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+			<designed target="X" value="0" ver="1"/>
+			<designed target="Y" value="0" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="c48666be-fd12-4057-9b76-9b81e0de6c1a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+			<designed target="X" value="0" ver="1"/>
+			<designed target="Y" value="525" ver="1"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="txt_DiagGroup_7" display-name="txt_DiagGroup_7" uuid="65403786-a646-4e31-86db-9df3b864f891" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="9.66667"/>
+		<designed target="Y" value="58.8333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="43"/>
+		<designed target="Height" value="14"/>
+		<designed target="Text" value="График"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff383838"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<param access-modifier="private" name="_Pp_AIPrecision" display-name="_Pp_AIPrecision" uuid="1e27f056-163c-457d-a3fc-94d312d2c905" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="Pp_AI_Source_src" display-name="Pp_AI_Source_src" uuid="bf163bd1-7059-45f9-8b2e-1d1c3029f8f0" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c">
+		<designed target="Active" value="true"/>
+		<init target="ParentSource" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["AI."+Str.ToString(_Pp_AINumber)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Control_AI_AIUnit" display-name="Control_AI_AIUnit" uuid="2da60df1-fb4e-4fc0-86e6-79a5e18d1e6f" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="Pp_AI_ValueTechOut" display-name="Pp_AI_ValueTechOut" uuid="0e1ba53b-2c16-4643-a142-59b2311c4887" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.ValueTechOut"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_StateImit_opc" display-name="Pp_AI_StateImit_opc" uuid="5227087e-7c67-474c-8fa2-9bd5a7b85483" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.StateImit"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_ValueTechOut_formatter" display-name="Pp_AI_ValueTechOut_formatter" uuid="0816a79e-1ec4-4223-a67c-ca1d765bbfe4" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="05883612-20dc-48f6-9893-2e8dc555aee6" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Pp_AIPrecision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Pp_AI_ValueTechOut]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_AI_StateNow_opc" display-name="Pp_AI_StateNow_opc" uuid="7c1ae660-7bcc-48bf-ac81-2e6e7b763180" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="State.StateNow"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_StateLast_opc" display-name="Pp_AI_StateLast_opc" uuid="7e5ea577-e71c-443c-b785-1a9363aeee34" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="State.StateLast"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_ValueTechIn_formatter" display-name="Pp_AI_ValueTechIn_formatter" uuid="664c297c-a14d-4e35-a394-b8c2bad39513" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="23831525-20cd-4ebc-a7b1-5da56d3fdc1b" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Pp_AIPrecision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Pp_AI_ValueTechIn_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_AI_ValueTechIn_opc" display-name="Pp_AI_ValueTechIn_opc" uuid="3fa9173a-77c8-4283-9b23-e5665faa537c" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.ValueTechIn"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_ValueElectr_formatter" display-name="Pp_AI_ValueElectr_formatter" uuid="fb59a2a8-d502-40d0-bcee-b00fa44b428b" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="a5c2054b-dc64-4474-9ae9-5edb73bc0eda" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Pp_AIPrecision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Pp_AI_ValueElectr_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_AI_ValueElectr_opc" display-name="Pp_AI_ValueElectr_opc" uuid="0debdee2-831b-4deb-9230-a338e5df5ada" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="ElectrValue.ValueElectr"/>
+	</object>
+	<param access-modifier="private" name="_Pp_AIUnit" display-name="_Pp_AIUnit" uuid="6e0ef0c3-fad8-4317-bdd5-327a129a0089" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d"/>
+	<object access-modifier="private" name="Pp_AI_UstMax3_opc" display-name="Pp_AI_UstMax3_opc" uuid="c4e9ee31-66b8-4bff-88e2-41e1ed5870a7" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max3"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax3_formatter" display-name="Pp_AI_UstMax3_formatter" uuid="c4d84686-400e-4f98-bb39-7e74edb9f359" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="b0a38e05-1d08-4003-9d0e-537d3a31c285" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Pp_AIPrecision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Pp_AI_UstMax3_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_AI_Name_rect" display-name="Pp_AI_Name_rect" uuid="8eeef173-dd3e-409e-bc2c-2ff36059f540" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="3.66667" ver="1"/>
+		<designed target="Y" value="26.3333" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="1331" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff626262" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffb1c9ff" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Pp_AuxFC_Name_txt" display-name="Pp_AuxFC_Name_txt" uuid="d5e8a812-015b-4a79-88fb-937e212184ba" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0.333333"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="1331"/>
+			<designed target="Height" value="28.3333"/>
+			<designed target="Text" value="Наименование агрегата"/>
+			<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<body>
+					<![CDATA[Pp_AI_Name_opc.ValueAsString]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pp_AI_ButtonImit_rect" display-name="Pp_AI_ButtonImit_rect" uuid="7241f24f-e7aa-40c8-9bae-56288812a107" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="1172.17" ver="1"/>
+		<designed target="Y" value="136.833" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff323232" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff37678c" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Pump_Mode_Gradient" display-name="Pump_Mode_Gradient" uuid="5a53221d-4234-4213-b11b-f1623f4d25a3" base-type="RadialGradient" base-type-id="ec8b2b95-2c92-44b2-a9aa-3ce4fc0f08b9" ver="1">
+			<designed target="XCenter" value="0.5" ver="1"/>
+			<designed target="YCenter" value="0.5" ver="1"/>
+			<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="0129b16d-6a6b-413a-b2e8-a70c63f5f596" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="0.40000000000000002" ver="1"/>
+				<designed target="Color" value="0xffff00ff" ver="1"/>
+				<do-trace access-modifier="private" target="Color" ver="1">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Pp_AI_StateImit_opc.Quality<192]]>
+						</condition>
+						<expr>
+							<![CDATA[0xffc0c0c0]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[Variant.ToBool(Pp_AI_StateImit_opc.Value,false)==false]]>
+						</condition>
+						<expr>
+							<![CDATA[0xffe1e1e1]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[Variant.ToBool(Pp_AI_StateImit_opc.Value,false)==true]]>
+						</condition>
+						<expr>
+							<![CDATA[0xffff00ff]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="f5b140eb-8861-445c-aabf-924ccec2924a" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="1" ver="1"/>
+				<designed target="Color" value="0xffb4b4b4" ver="1"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="Pp_AuxFC_Mode2_txt" display-name="Pp_AuxFC_Mode2_txt" uuid="677c6ecc-c0e1-4766-a6d5-f3c1fedca8c9" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="3.5" ver="1"/>
+			<designed target="Y" value="5.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="82" ver="1"/>
+			<designed target="Height" value="17" ver="1"/>
+			<designed target="Text" value="Имитация" ver="1"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffe1e1e1]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="MouseEnter" ver="1">
+			<body kind="om">
+				<![CDATA[Pp_AI_ButtonImit_rect.PenWidth=3;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" event="MouseLeave" ver="1">
+			<body kind="om">
+				<![CDATA[Pp_AI_ButtonImit_rect.PenWidth=1;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" event="MouseClick" ver="3">
+			<body kind="om">
+				<![CDATA[//Если качество тега состояния имитации хорошее
+/*if (Pp_AI_StateImit_opc.Quality>=192){
+  unit.Parameters.isConfirmPopup = true;
+//  if (ctrlWndYesNo.wnd("Подтверждаете включение режима имитации?") == 1){  
+    //Если имитация выключена
+    if (Variant.ToBool(Pp_AI_StateImit_opc.Value,false)==false){
+      //Pp_AI_Command_opc.TrySetValue((TypeConvert.ToUint2(256) * TypeConvert.ToUint2(1)) + TypeConvert.ToUint2(Pp_AINumber));	//Запись команды
+//      Confirm_OpcItem.Source=Pp_AI_Command_opc.Source;
+      Confirm_OpcItem.Path=Pp_AI_Command_opc.Path;
+      Confirm_Variant_Value=(TypeConvert.ToUint2(256) * TypeConvert.ToUint2(1)) + TypeConvert.ToUint2(Pp_AINumber);
+      Action_Confirm_ImitOn.Invoke();
+    }
+    //Иначе - выключить
+    else{
+    Pp_AI_Command_opc.Value = (TypeConvert.ToUint2(256) * TypeConvert.ToUint2(2)) + TypeConvert.ToUint2(Pp_AINumber);	//Запись команды
+    }
+//	}
+	//снимаем флаг "незакрывания" родительского окна
+	unit.Parameters.isConfirmPopup = false;
+}*/
+
+if (Pp_AI_StateImit_opc.Quality>=192)
+{
+	if(!Variant.ToBool(Pp_AI_StateImit_opc.Value,false))
+	{
+		Pp_AI_CMD_Imit_opc = true;
+	}
+	else
+	{
+		Pp_AI_CMD_Imit_opc = false;
+	}
+}]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax3_Write_opc" display-name="Pp_AI_UstMax3_Write_opc" uuid="8ce1a786-b09d-4f7f-bcd5-12ba70e90d0e" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max3.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_Command_opc" display-name="Pp_AI_Command_opc" uuid="dc4ddec7-c58f-4b84-a744-f6c4db9dfb75" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1" value="Commands.AICommand"/>
+	</object>
+	<object access-modifier="private" name="Pp_AINumber" display-name="Pp_AINumber" uuid="8b037d57-95a5-4fc2-8935-80d1a79fe562" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="1"/>
+	<init target="Pp_AINumber" ver="1" ref="_Pp_AINumber"/>
+	<object access-modifier="private" name="txt_Unit_19" display-name="txt_Unit_19" uuid="e3670616-3978-4860-b91e-efa86b9b707b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1263.67"/>
+		<designed target="Y" value="238.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="66"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="кг/см³"/>
+		<designed target="Font" value="Segoe UI,12,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+		<init target="Text" ver="1" ref="_Pp_AIUnit"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax2_textedit" display-name="Pp_AI_UstMax2_textedit" uuid="a670c1ee-5779-450b-bae4-bb1e2f81b926" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="1171" ver="1"/>
+		<designed target="Y" value="233" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="Text" value="35,0" ver="1"/>
+		<designed target="Font" value="Segoe UI,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff7d7d7d" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="EditFinished" ver="1">
+			<body kind="om">
+				<![CDATA[Pp_AI_UstMax2_Write_opc.Value=String.ToFloat(Str.Replace(Pp_AI_UstMax2_textedit.Text, ",", "."),0);]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Pp_AI_UstMax2_formatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Pp_AI_UstMax2_Enable_opc.Value,false)==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffe1e1e1]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff7d7d7d]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<designed target="ReadOnly" value="false" ver="2"/>
+	</object>
+	<object access-modifier="private" name="txt_Unit_20" display-name="txt_Unit_20" uuid="258f54d2-cd15-472c-b016-e63fd575d0ba" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1263.67"/>
+		<designed target="Y" value="270.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="66"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="кг/см³"/>
+		<designed target="Font" value="Segoe UI,12,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+		<init target="Text" ver="1" ref="_Pp_AIUnit"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax1_textedit" display-name="Pp_AI_UstMax1_textedit" uuid="5f2a5dbf-d77a-4977-8fd8-84a8be5d4d8e" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="1171" ver="1"/>
+		<designed target="Y" value="265" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="Text" value="35,0" ver="1"/>
+		<designed target="Font" value="Segoe UI,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xffe1e1e1" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="EditFinished" ver="1">
+			<body kind="om">
+				<![CDATA[Pp_AI_UstMax1_Write_opc.Value=String.ToFloat(Str.Replace(Pp_AI_UstMax1_textedit.Text, ",", "."),0);]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Pp_AI_UstMax1_formatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Pp_AI_UstMax1_Enable_opc.Value,false)==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffe1e1e1]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff7d7d7d]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<designed target="ReadOnly" value="false" ver="2"/>
+	</object>
+	<object access-modifier="private" name="txt_Unit_21" display-name="txt_Unit_21" uuid="a86008e7-3278-42d7-9644-b205f45b0878" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1263.67"/>
+		<designed target="Y" value="302.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="66"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="кг/см³"/>
+		<designed target="Font" value="Segoe UI,12,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+		<init target="Text" ver="1" ref="_Pp_AIUnit"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin1_textedit" display-name="Pp_AI_UstMin1_textedit" uuid="a4863a00-bb93-454d-aa4f-d5b3b0fcb33d" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="1171" ver="1"/>
+		<designed target="Y" value="297" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="Text" value="25,7" ver="1"/>
+		<designed target="Font" value="Segoe UI,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xffe1e1e1" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="EditFinished" ver="1">
+			<body kind="om">
+				<![CDATA[Pp_AI_UstMin1_Write_opc.Value=String.ToFloat(Str.Replace(Pp_AI_UstMin1_textedit.Text, ",", "."),0);]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Pp_AI_UstMin1_formatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Pp_AI_UstMin1_Enable_opc.Value,false)==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffe1e1e1]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff7d7d7d]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<designed target="ReadOnly" value="false" ver="2"/>
+	</object>
+	<object access-modifier="private" name="txt_Unit_22" display-name="txt_Unit_22" uuid="c8850ab3-077f-4d3b-b66c-5cae8cdead66" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1263.67"/>
+		<designed target="Y" value="334.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="66"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="кг/см³"/>
+		<designed target="Font" value="Segoe UI,12,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+		<init target="Text" ver="1" ref="_Pp_AIUnit"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin2_textedit" display-name="Pp_AI_UstMin2_textedit" uuid="afd46c05-8f22-4294-96e1-672481f9b426" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="1171" ver="1"/>
+		<designed target="Y" value="329" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="Text" value="25,7" ver="1"/>
+		<designed target="Font" value="Segoe UI,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff7d7d7d" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="EditFinished" ver="1">
+			<body kind="om">
+				<![CDATA[Pp_AI_UstMin2_Write_opc.Value=String.ToFloat(Str.Replace(Pp_AI_UstMin2_textedit.Text, ",", "."),0);]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Pp_AI_UstMin2_formatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Pp_AI_UstMin2_Enable_opc.Value,false)==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffe1e1e1]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff7d7d7d]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<designed target="ReadOnly" value="false" ver="2"/>
+	</object>
+	<object access-modifier="private" name="txt_Unit_23" display-name="txt_Unit_23" uuid="23abbdf8-2579-48c7-a829-809e3e830ae3" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1263.67"/>
+		<designed target="Y" value="366.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="66"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="кг/см³"/>
+		<designed target="Font" value="Segoe UI,12,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+		<init target="Text" ver="1" ref="_Pp_AIUnit"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin3_textedit" display-name="Pp_AI_UstMin3_textedit" uuid="235515ae-be32-4fd3-9802-5707ad83b298" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="1171" ver="1"/>
+		<designed target="Y" value="356" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="Text" value="25,7" ver="1"/>
+		<designed target="Font" value="Segoe UI,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="EditFinished" ver="1">
+			<body kind="om">
+				<![CDATA[Pp_AI_UstMin3_Write_opc.Value=String.ToFloat(Str.Replace(Pp_AI_UstMin3_textedit.Text, ",", "."),0);]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Pp_AI_UstMin3_formatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Pp_AI_UstMin3_Enable_opc.Value,false)==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffe1e1e1]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff7d7d7d]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<designed target="ReadOnly" value="false" ver="2"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax2_opc" display-name="Pp_AI_UstMax2_opc" uuid="6d2bbb62-3217-4bb5-923b-6bee35a69ada" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max2"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax2_formatter" display-name="Pp_AI_UstMax2_formatter" uuid="77c559b5-7302-43ce-aebe-a1c35fe464bc" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="3e825e52-9fc6-4dfc-84ba-18b9cd750a1d" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Pp_AIPrecision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Pp_AI_UstMax2_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax2_Write_opc" display-name="Pp_AI_UstMax2_Write_opc" uuid="0a3097d8-75f4-44a2-8176-f11ade42469a" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max2.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax1_opc" display-name="Pp_AI_UstMax1_opc" uuid="dda0dad3-c03e-4f76-a330-c64dc8ee1b0d" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max1"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax1_formatter" display-name="Pp_AI_UstMax1_formatter" uuid="1d3458d6-cb23-445f-b29f-b85454b15b7c" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="7e5bbcb2-90f2-4564-9300-8dbc65f175f8" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Pp_AIPrecision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Pp_AI_UstMax1_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax1_Write_opc" display-name="Pp_AI_UstMax1_Write_opc" uuid="35c04626-9ec5-4083-99bc-95ca1b58a91f" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max1.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin1_opc" display-name="Pp_AI_UstMin1_opc" uuid="7a5a8364-0420-4a1e-a5f0-f95e94b7f75f" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min1"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin1_formatter" display-name="Pp_AI_UstMin1_formatter" uuid="b3e55339-8dcb-43b8-ad15-0a13173733dd" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="2730ce1d-f18f-49a6-a1f7-67f15e6ee686" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Pp_AIPrecision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Pp_AI_UstMin1_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin1_Write_opc" display-name="Pp_AI_UstMin1_Write_opc" uuid="2a0001db-32fa-475b-88cc-ee7bc0e81144" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min1.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin2_opc" display-name="Pp_AI_UstMin2_opc" uuid="86d98061-2f57-4729-bcef-d3c54e1a2c8e" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min2"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin2_formatter" display-name="Pp_AI_UstMin2_formatter" uuid="d86a0d03-1a6b-4651-9d6c-48ad64620244" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="f4113b2b-d51a-4454-9cc4-8c5a6fd96fba" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Pp_AIPrecision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Pp_AI_UstMin2_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin2_Write_opc" display-name="Pp_AI_UstMin2_Write_opc" uuid="d7caba04-29cd-4deb-889f-eac0a7b2ed77" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min2.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin3_opc" display-name="Pp_AI_UstMin3_opc" uuid="d62c5d90-b2c1-4bd4-a660-bc28ce6d7e8c" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min3"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin3_formatter" display-name="Pp_AI_UstMin3_formatter" uuid="b57ac6a5-5641-4b54-bdcb-48cbf4899015" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="af564ebc-eccc-4cc7-a41a-e76c6f3f7a22" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Pp_AIPrecision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Pp_AI_UstMin3_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin3_Write_opc" display-name="Pp_AI_UstMin3_Write_opc" uuid="65cf18a5-0bdc-42d8-9704-7a1a0f6775b7" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min3.writeValue"/>
+	</object>
+	<object access-modifier="private" name="txt_Unit_24" display-name="txt_Unit_24" uuid="1f3a32f1-0efe-4c19-b92f-b6e7e61a42a9" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1263.67"/>
+		<designed target="Y" value="416.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="66"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="кг/см³"/>
+		<designed target="Font" value="Segoe UI,12,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+		<init target="Text" ver="1" ref="_Pp_AIUnit"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_RangeTechMax_textedit" display-name="Pp_AI_RangeTechMax_textedit" uuid="461ae3b4-3342-4ec3-aea4-1efc72b1c550" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="1171" ver="1"/>
+		<designed target="Y" value="411" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="Text" value="25,7" ver="1"/>
+		<designed target="Font" value="Segoe UI,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="EditFinished" ver="1">
+			<body kind="om">
+				<![CDATA[Pp_AI_RangeTechMax_Write_opc.Value=String.ToFloat(Str.Replace(Pp_AI_RangeTechMax_textedit.Text, ",", "."),0);]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Pp_AI_RangeTechMax_formatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff7d7d7d]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<designed target="ReadOnly" value="false" ver="2"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_RangeTechMax_opc" display-name="Pp_AI_RangeTechMax_opc" uuid="737a5d7e-a7a6-4f48-bcf3-7fc70aea919b" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.TechMax"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[Action_RenewTrendRange.Invoke();]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Pp_AI_RangeTechMax_formatter" display-name="Pp_AI_RangeTechMax_formatter" uuid="70001b93-185d-44d1-9ce6-d796ed3c6a48" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="bf4c9248-f581-41c0-8c0d-e21f00a96fbf" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Pp_AIPrecision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Pp_AI_RangeTechMax_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_AI_RangeTechMax_Write_opc" display-name="Pp_AI_RangeTechMax_Write_opc" uuid="9c147d42-8abe-41d3-bbd2-d6a0ab2add0d" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.TechMax.writeValue"/>
+	</object>
+	<object access-modifier="private" name="txt_Unit_25" display-name="txt_Unit_25" uuid="273641db-c692-400a-85b5-1ff0089e8171" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1263.67"/>
+		<designed target="Y" value="448.333"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="66"/>
+		<designed target="Height" value="20"/>
+		<designed target="Text" value="кг/см³"/>
+		<designed target="Font" value="Segoe UI,12,-1,5,50,0,0,0,0,0,Обычный"/>
+		<designed target="FontColor" value="4278190080"/>
+		<designed target="TextAlignment" value="129"/>
+		<init target="Text" ver="1" ref="_Pp_AIUnit"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_RangeTechMin_textedit" display-name="Pp_AI_RangeTechMin_textedit" uuid="abc53463-8002-4db7-8307-f2ec5ebee44c" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="1171" ver="1"/>
+		<designed target="Y" value="444" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="Text" value="25,7" ver="1"/>
+		<designed target="Font" value="Segoe UI,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="EditFinished" ver="1">
+			<body kind="om">
+				<![CDATA[Pp_AI_RangeTechMin_Write_opc.Value=String.ToFloat(Str.Replace(Pp_AI_RangeTechMin_textedit.Text, ",", "."),0);]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Pp_AI_RangeTechMin_formatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff7d7d7d]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<designed target="ReadOnly" value="false" ver="2"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_RangeTechMin_Write_opc" display-name="Pp_AI_RangeTechMin_Write_opc" uuid="42e3b3fb-dbab-4e47-b6c6-e513e16d1b3a" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.TechMin.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_RangeTechMin_opc" display-name="Pp_AI_RangeTechMin_opc" uuid="bae13c24-45dc-4db9-b38c-1642faf09b41" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.TechMin"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[Action_RenewTrendRange.Invoke();]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Pp_AI_RangeTechMin_formatter" display-name="Pp_AI_RangeTechMin_formatter" uuid="19e6bb0f-5754-4f7d-b65d-dfae03cc12c2" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="b47a3827-eed4-4e09-a6ce-1ae686d4c2f2" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Pp_AIPrecision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Pp_AI_RangeTechMin_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_AI_CommandParametr_opc" display-name="Pp_AI_CommandParametr_opc" uuid="847ce21b-7924-4df9-a253-890604fcb964" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1" value="Commands.AIParametr"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_Name_rect_1" display-name="Pp_AI_Name_rect_1" uuid="52f96bf7-f6ea-45eb-ac1b-8d0f2ffb9f1d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="1343.67" ver="1"/>
+		<designed target="Y" value="26.3333" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="270" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff626262" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffb1c9ff" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Pp_AuxFC_Name_txt" display-name="Pp_AuxFC_Name_txt" uuid="7297ea80-96bb-46bb-b2ef-318de8ee2ebd" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="4"/>
+			<designed target="Y" value="3"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="262"/>
+			<designed target="Height" value="23"/>
+			<designed target="Text" value="Настройка"/>
+			<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstConfigGroup_rectangle" display-name="Pp_AI_UstConfigGroup_rectangle" uuid="3483813e-890b-44b7-a206-596710a6f6c5" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="1345.17" ver="1"/>
+		<designed target="Y" value="183.833" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="267" ver="1"/>
+		<designed target="Height" value="206" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff383838" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+		<object access-modifier="private" name="Rectangle_22" display-name="Rectangle_22" uuid="f4c016ef-3834-4eca-814e-3b09463bca60" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+			<designed target="X" value="4.66667"/>
+			<designed target="Y" value="-8"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="171"/>
+			<designed target="Height" value="13.6667"/>
+			<designed target="RoundingRadius" value="0"/>
+			<designed target="PenColor" value="0xff383838"/>
+			<designed target="PenStyle" value="0"/>
+			<designed target="PenWidth" value="1"/>
+			<designed target="BrushColor" value="0xff63708f"/>
+			<designed target="BrushStyle" value="1"/>
+		</object>
+		<object access-modifier="private" name="txt_DiagGroup_10" display-name="txt_DiagGroup_10" uuid="286aded8-affa-4eb3-be88-0d2c0741f88a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="7.25757"/>
+			<designed target="Y" value="-9"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="165.347"/>
+			<designed target="Height" value="14"/>
+			<designed target="Text" value="Обработка уставок"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff383838"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<object access-modifier="private" name="UstMin3Enable_button" display-name="UstMin3Enable_button" uuid="b8a21494-9aec-4f32-9daf-232b62ed9f8a" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="25" ver="1"/>
+			<designed target="Y" value="174" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="22" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="V" ver="1"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff7d7d7d]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="1">
+				<body>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+				</body>
+			</do-trace>
+			<designed target="Checkable" value="false" ver="3"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[/*if (me.Text == "V")
+{
+	me.Text = "";
+}
+else
+{
+	me.Text = "V";
+}*/]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="UstMin3Enable_button_1" display-name="UstMin3Enable_button_1" uuid="693a8d3a-3086-4865-8d30-2954697bb3e6" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="25" ver="1"/>
+			<designed target="Y" value="142" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="22" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="V" ver="1"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff7d7d7d]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="1">
+				<body>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+				</body>
+			</do-trace>
+			<designed target="Checkable" value="false" ver="3"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[/*if (me.Text == "V")
+{
+	me.Text = "";
+}
+else
+{
+	me.Text = "V";
+}*/]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="UstMin3Enable_button_2" display-name="UstMin3Enable_button_2" uuid="4555acd1-b024-472c-9ea0-786e37b218e4" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="25" ver="1"/>
+			<designed target="Y" value="110" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="22" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="V" ver="1"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff7d7d7d]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="1">
+				<body>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+				</body>
+			</do-trace>
+			<designed target="Checkable" value="false" ver="3"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[/*if (me.Text == "V")
+{
+	me.Text = "";
+}
+else
+{
+	me.Text = "V";
+}*/]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="UstMin3Enable_button_3" display-name="UstMin3Enable_button_3" uuid="e9ba7ef3-bb9d-4a5a-bc31-0e647e428ab1" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="25" ver="1"/>
+			<designed target="Y" value="78" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="22" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="V" ver="1"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff7d7d7d]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="1">
+				<body>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+				</body>
+			</do-trace>
+			<designed target="Checkable" value="false" ver="3"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[/*if (me.Text == "V")
+{
+	me.Text = "";
+}
+else
+{
+	me.Text = "V";
+}*/]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="UstMin3Enable_button_4" display-name="UstMin3Enable_button_4" uuid="3788a717-7aa2-43cd-9bad-f76b4c1d6bdb" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="25" ver="1"/>
+			<designed target="Y" value="46" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="22" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="V" ver="1"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff7d7d7d]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="1">
+				<body>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+				</body>
+			</do-trace>
+			<designed target="Checkable" value="false" ver="3"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[/*if (me.Text == "V")
+{
+	me.Text = "";
+}
+else
+{
+	me.Text = "V";
+}*/]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="UstMin3Enable_button_5" display-name="UstMin3Enable_button_5" uuid="66067508-0955-4843-b6dd-da257e0edcb3" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="25" ver="1"/>
+			<designed target="Y" value="14" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="22" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="V" ver="1"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[/*if (me.Text == "V")
+{
+	me.Text = "";
+	UstDataToSQL();	
+}
+else
+{
+	me.Text = "V";
+		UstDataToSQL();
+}*/]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff7d7d7d]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<designed target="Checkable" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="Enabled" ver="3">
+				<body>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="db461c20-26ae-48af-b704-a93284a318eb" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="3">
+			<designed target="X" value="55" ver="3"/>
+			<designed target="Y" value="14" ver="3"/>
+			<designed target="Rotation" value="0" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="true" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="144" ver="3"/>
+			<designed target="Height" value="20" ver="3"/>
+			<designed target="Text" value="Включение уставки 6" ver="3"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="3"/>
+			<designed target="FontColor" value="4278190080" ver="3"/>
+			<designed target="TextAlignment" value="132" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="f41d6713-2a42-4373-8604-f337f5ddc57d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="3">
+			<designed target="X" value="55" ver="3"/>
+			<designed target="Y" value="46" ver="3"/>
+			<designed target="Rotation" value="0" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="true" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="144" ver="3"/>
+			<designed target="Height" value="20" ver="3"/>
+			<designed target="Text" value="Включение уставки 5" ver="3"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="3"/>
+			<designed target="FontColor" value="4278190080" ver="3"/>
+			<designed target="TextAlignment" value="132" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Text_3" display-name="Text_3" uuid="1a923cdf-f61b-450d-8b8c-e9246e2e2fb1" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="3">
+			<designed target="X" value="55" ver="3"/>
+			<designed target="Y" value="78" ver="3"/>
+			<designed target="Rotation" value="0" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="true" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="144" ver="3"/>
+			<designed target="Height" value="20" ver="3"/>
+			<designed target="Text" value="Включение уставки 4" ver="3"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="3"/>
+			<designed target="FontColor" value="4278190080" ver="3"/>
+			<designed target="TextAlignment" value="132" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="e7ae76fb-8027-4812-84b8-fa1fcebc0a05" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="3">
+			<designed target="X" value="55" ver="3"/>
+			<designed target="Y" value="110" ver="3"/>
+			<designed target="Rotation" value="0" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="true" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="144" ver="3"/>
+			<designed target="Height" value="20" ver="3"/>
+			<designed target="Text" value="Включение уставки 3" ver="3"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="3"/>
+			<designed target="FontColor" value="4278190080" ver="3"/>
+			<designed target="TextAlignment" value="132" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Text_5" display-name="Text_5" uuid="9615f333-3ce5-4111-a49d-1cf167bae55a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="3">
+			<designed target="X" value="55" ver="3"/>
+			<designed target="Y" value="142" ver="3"/>
+			<designed target="Rotation" value="0" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="true" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="144" ver="3"/>
+			<designed target="Height" value="20" ver="3"/>
+			<designed target="Text" value="Включение уставки 2" ver="3"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="3"/>
+			<designed target="FontColor" value="4278190080" ver="3"/>
+			<designed target="TextAlignment" value="132" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Text_6" display-name="Text_6" uuid="f17c3154-2988-4d6f-8489-b0451552607b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="3">
+			<designed target="X" value="55" ver="3"/>
+			<designed target="Y" value="174" ver="3"/>
+			<designed target="Rotation" value="0" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="true" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="144" ver="3"/>
+			<designed target="Height" value="20" ver="3"/>
+			<designed target="Text" value="Включение уставки 1" ver="3"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="3"/>
+			<designed target="FontColor" value="4278190080" ver="3"/>
+			<designed target="TextAlignment" value="132" ver="3"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pp_AI_RangeTechMin_formatter_1" display-name="Pp_AI_RangeTechMin_formatter_1" uuid="cc0a1f8e-645b-49e5-baf3-ddecf7181837" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="ebaa6af9-497d-4b9c-b4ff-681863d73e6a" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Pp_AIPrecision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Pp_AI_RangeTechMin_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_AI_RangeValidGroup_rect" display-name="Pp_AI_RangeValidGroup_rect" uuid="bfa9746c-3690-4d11-a545-640ebc98fcf6" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="1344.17" ver="1"/>
+		<designed target="Y" value="400.833" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="267" ver="1"/>
+		<designed target="Height" value="79" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff383838" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+		<object access-modifier="private" name="Rectangle_21" display-name="Rectangle_21" uuid="b90fffda-6db6-4a89-9939-adf26ec8e57f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+			<designed target="X" value="4.66667"/>
+			<designed target="Y" value="-10"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="209"/>
+			<designed target="Height" value="20.6667"/>
+			<designed target="RoundingRadius" value="0"/>
+			<designed target="PenColor" value="0xff383838"/>
+			<designed target="PenStyle" value="0"/>
+			<designed target="PenWidth" value="1"/>
+			<designed target="BrushColor" value="0xff63708f"/>
+			<designed target="BrushStyle" value="1"/>
+		</object>
+		<object access-modifier="private" name="Pp_AI_RangeValidMax_textedit" display-name="Pp_AI_RangeValidMax_textedit" uuid="a053a753-6b82-4334-8e6b-2465794b3ca6" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+			<designed target="X" value="146" ver="1"/>
+			<designed target="Y" value="11" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="90" ver="1"/>
+			<designed target="Height" value="30" ver="1"/>
+			<designed target="Text" value="25,7" ver="1"/>
+			<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+			<designed target="HideInput" value="false" ver="1"/>
+			<designed target="PlaceholderText" value="" ver="1"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="EditFinished" ver="1">
+				<body kind="om">
+					<![CDATA[Pp_AI_RangeValidMax_Write_opc.Value=Str.Replace(Pp_AI_RangeValidMax_textedit.Text, ",", ".");]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<body>
+					<![CDATA[Pp_AI_RangeValidMax_formatter.OutValue]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="1">
+				<body>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff7d7d7d]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<designed target="ReadOnly" value="false" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Pp_AI_RangeValidMin_textedit" display-name="Pp_AI_RangeValidMin_textedit" uuid="90632a64-5494-4b47-a51f-24735af9cde6" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+			<designed target="X" value="146" ver="1"/>
+			<designed target="Y" value="42" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="90" ver="1"/>
+			<designed target="Height" value="30" ver="1"/>
+			<designed target="Text" value="25,7" ver="1"/>
+			<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+			<designed target="HideInput" value="false" ver="1"/>
+			<designed target="PlaceholderText" value="" ver="1"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="EditFinished" ver="1">
+				<body kind="om">
+					<![CDATA[Pp_AI_RangeValidMin_Write_opc.Value=Str.Replace(Pp_AI_RangeValidMin_textedit.Text, ",", ".");]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<body>
+					<![CDATA[Pp_AI_RangeValidMin_formatter.OutValue]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="1">
+				<body>
+					<![CDATA[Pp_AI_WriteUst_booltoken.Value]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff7d7d7d]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pp_AI_WriteUst_booltoken.Value==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<designed target="ReadOnly" value="false" ver="2"/>
+		</object>
+		<object access-modifier="private" name="txt_Unit_26" display-name="txt_Unit_26" uuid="55b91224-ea81-41c9-ab0a-f7ed5f6ea1fd" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="5"/>
+			<designed target="Y" value="18"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="45"/>
+			<designed target="Height" value="20"/>
+			<designed target="Text" value="Макс."/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="4278190080"/>
+			<designed target="TextAlignment" value="129"/>
+		</object>
+		<object access-modifier="private" name="txt_Unit_27" display-name="txt_Unit_27" uuid="209b5539-cc38-4947-8cc8-d5ccda2ddda3" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="5"/>
+			<designed target="Y" value="50"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="43"/>
+			<designed target="Height" value="20"/>
+			<designed target="Text" value="Мин."/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="4278190080"/>
+			<designed target="TextAlignment" value="129"/>
+		</object>
+		<object access-modifier="private" name="txt_DiagGroup_8" display-name="txt_DiagGroup_8" uuid="aef4c739-4509-4041-a9d6-8afc95dd77d2" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="6"/>
+			<designed target="Y" value="-8.5"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="207"/>
+			<designed target="Height" value="14"/>
+			<designed target="Text" value="Диапазон датчика (электрический)"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff383838"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<object access-modifier="private" name="Pp_AI_RangeValidGroup_rect_1" display-name="Pp_AI_RangeValidGroup_rect_1" uuid="aea016fd-d7d2-4b81-840e-f5f96141ed74" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="44.5" ver="1"/>
+			<designed target="Y" value="11.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="30" ver="1"/>
+			<designed target="Height" value="30" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="0xff000000" ver="1"/>
+			<designed target="PenStyle" value="1" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="4278190080" ver="1"/>
+			<designed target="BrushStyle" value="0" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Pp_AI_RangeValidGroup_rect_2" display-name="Pp_AI_RangeValidGroup_rect_2" uuid="91b6ef36-b9a6-4a1c-89db-84914c995a7c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="44.5" ver="1"/>
+			<designed target="Y" value="44.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="30" ver="1"/>
+			<designed target="Height" value="30" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="0xff000000" ver="1"/>
+			<designed target="PenStyle" value="1" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="4278190080" ver="1"/>
+			<designed target="BrushStyle" value="0" ver="1"/>
+		</object>
+		<object access-modifier="private" name="txt_DiagGroup_8" display-name="txt_DiagGroup_8" uuid="ab48c387-933e-4f5e-be4f-bee0a4428dfc" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="49"/>
+			<designed target="Y" value="19.5"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="22"/>
+			<designed target="Height" value="14"/>
+			<designed target="Text" value="20"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<object access-modifier="private" name="txt_DiagGroup_9" display-name="txt_DiagGroup_9" uuid="004f5be2-2079-436f-9b08-39aed9fe7095" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="49"/>
+			<designed target="Y" value="52.5"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="22"/>
+			<designed target="Height" value="14"/>
+			<designed target="Text" value="4"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<object access-modifier="private" name="txt_Unit_30" display-name="txt_Unit_30" uuid="838a4552-e6ec-468c-9cc4-60540c20488f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="80"/>
+			<designed target="Y" value="17"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="65"/>
+			<designed target="Height" value="20"/>
+			<designed target="Text" value="Макс.дост."/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="4278190080"/>
+			<designed target="TextAlignment" value="129"/>
+		</object>
+		<object access-modifier="private" name="txt_Unit_31" display-name="txt_Unit_31" uuid="36587a84-648c-47e9-ab17-b27729ddd09f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="80"/>
+			<designed target="Y" value="49"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="65"/>
+			<designed target="Height" value="20"/>
+			<designed target="Text" value="Мин.дост."/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="4278190080"/>
+			<designed target="TextAlignment" value="129"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pp_AI_Gist_opc" display-name="Pp_AI_Gist_opc" uuid="b04828f3-301a-4191-957f-667e5be36ad7" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Gist"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_Gist_Write_opc" display-name="Pp_AI_Gist_Write_opc" uuid="80e69a1f-bcb3-45c3-a7c2-1b04176f6f5c" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Gist.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_Gist_formatter" display-name="Pp_AI_Gist_formatter" uuid="f9540f4f-4cfd-4de2-9cb3-8b388d5044b5" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="77095054-2f9f-401a-a273-febfc3dfa525" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Pp_AIPrecision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Pp_AI_Gist_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_AI_KFilt_formatter" display-name="Pp_AI_KFilt_formatter" uuid="3a6f63c3-1fc2-43b9-80e7-2223785ab9fb" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="78d35696-2348-4853-8cd0-fdc6d042bea3" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Pp_AIPrecision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Pp_AI_KFilt_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_AI_KFilt_Write_opc" display-name="Pp_AI_KFilt_Write_opc" uuid="ce624844-e422-41c1-a888-d5944a5e3ca4" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="ElectrValue.K_filt.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_KFilt_opc" display-name="Pp_AI_KFilt_opc" uuid="c39526b5-fe7c-4d27-be99-99826ba5ff7d" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="ElectrValue.K_filt"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_RangeValidMin_opc" display-name="Pp_AI_RangeValidMin_opc" uuid="3327228c-14a5-4e2a-817a-edaf970cb68b" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="ElectrValue.ValidMin"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_RangeValidMin_Write_opc" display-name="Pp_AI_RangeValidMin_Write_opc" uuid="5c564b90-f14a-4f7d-bbcb-34b44c852ce3" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="ElectrValue.ValidMin.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_RangeValidMin_formatter" display-name="Pp_AI_RangeValidMin_formatter" uuid="12219938-8ee0-496e-8a8c-880786199829" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="24bd6ea6-5895-4604-a679-40c5635665d1" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Pp_AIPrecision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Pp_AI_RangeValidMin_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_AI_RangeValidMax_opc" display-name="Pp_AI_RangeValidMax_opc" uuid="94fc6f30-a26a-46ff-a461-007a1aca5549" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="ElectrValue.ValidMax"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_RangeValidMax_Write_opc" display-name="Pp_AI_RangeValidMax_Write_opc" uuid="c348fbe9-1bb4-48c6-9b53-e55a79f5bd86" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="ElectrValue.ValidMax.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_RangeValidMax_formatter" display-name="Pp_AI_RangeValidMax_formatter" uuid="897969b2-1524-42b6-aab9-6e3cc33d684f" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="44ecd1f9-1a3f-4a82-bac3-535efefb2017" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Pp_AIPrecision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Pp_AI_RangeValidMax_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="1" event="Opened">
+		<body kind="om">
+			<![CDATA[/*here.Rectangle_Graph.AlphaTrendsAxControl_1.ShowSources=false;
+//here.Rectangle_Graph.AlphaTrendsAxControl_1.AddItem(Pp_AI_ValueTechOut.Tag,Control_AI_AIUnit,"1");
+Rectangle_Graph.AlphaTrendsAxControl_1.Item=Pp_AI_ValueTechOut.Tag;
+/*Pp_AI_UstConfigGroup_rectangle.UstMin3_Checkbox.State=Variant.ToBool(Pp_AI_UstMin3_Enable_opc.Value,false);*/
+//unit.Sources._Query_2.Value = true;
+
+Rectangle_Graph.Trends_1.ForcedAddItem(Pp_AI_ValueTechOut.Tag,Control_AI_AIUnit,Pp_AI_Name_opc.ValueAsString);
+unit.Sources._Query_2.Value = true;
+//Table_1.SqlQuery_1.Connect();
+/*Table_2.SqlQuery_2.ConnectionString = "driver={MySQL ODBC 5.3 Unicode Driver};server=127.0.0.1;user=root;pwd=1234;database=UVP";
+Table_2.SqlQuery_2.Connect();*/
+
+here.Window_close_line_1.Rectangle_windowline_base.Text_windowname.Text = WindowCaption;
+here.Window_close_line_1.notifying_WindowWidth_now = WindowWidth;]]>
+		</body>
+	</do-on>
+	<init target="Control_AI_AIUnit" ver="1" ref="_Pp_AIUnit"/>
+	<object access-modifier="private" name="Pp_AI_EnableFilt_opc" display-name="Pp_AI_EnableFilt_opc" uuid="49959b0f-5efc-4c6f-ae91-10b784755bc3" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="ElectrValue.K_filt.EnableFilt"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_Name_opc" display-name="Pp_AI_Name_opc" uuid="7880e5ca-8a89-41d0-bba5-9aecb79a04b2" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="Attributes.Name"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_ValueImit_opc" display-name="Pp_AI_ValueImit_opc" uuid="6c58d299-4a04-4252-9c99-76e4c3e5a2a8" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.ValueImit"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[//Rectangle_Graph.AlphaTrendsAxControl_1.HighRange=100;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Pp_AI_ValueImit_Write_opc" display-name="Pp_AI_ValueImit_Write_opc" uuid="788946f6-e9f3-4456-b3ef-a664539254a9" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.ValueImit.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_ValueImit_formatter" display-name="Pp_AI_ValueImit_formatter" uuid="3310f8f1-a20a-4c28-8fce-c53b669a3939" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="bbbc7fb1-3016-4340-a174-a80415973e91" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Pp_AIPrecision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Pp_AI_ValueImit_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin3_Enable_opc" display-name="Pp_AI_UstMin3_Enable_opc" uuid="66711096-7352-4e0e-af67-acedcf33135c" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min3.EnableUst"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin3_Enable_Write_opc" display-name="Pp_AI_UstMin3_Enable_Write_opc" uuid="7f3c10ea-4dcf-43d7-9f9e-a42eb8a2f978" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min3.EnableUst.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin2_Enable_opc" display-name="Pp_AI_UstMin2_Enable_opc" uuid="8373c79b-c67b-4946-a101-fe632eb7fb8d" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min2.EnableUst"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin2_Enable_Write_opc" display-name="Pp_AI_UstMin2_Enable_Write_opc" uuid="87264557-cdf2-4650-bd77-e0c1befa10d0" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min2.EnableUst.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin1_Enable_Write_opc" display-name="Pp_AI_UstMin1_Enable_Write_opc" uuid="aa346d59-df37-4ff6-8bbd-009f804bec22" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min1.EnableUst.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin1_Enable_opc" display-name="Pp_AI_UstMin1_Enable_opc" uuid="a197f403-2a69-460b-b3cb-046ca8c6a79f" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min1.EnableUst"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax1_Enable_Write_opc" display-name="Pp_AI_UstMax1_Enable_Write_opc" uuid="442f4b0a-882c-42bb-9531-5754c4a29109" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max1.EnableUst.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax1_Enable_opc" display-name="Pp_AI_UstMax1_Enable_opc" uuid="072c9dd7-5527-4e3a-922b-35b415267a3c" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max1.EnableUst"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax2_Enable_Write_opc" display-name="Pp_AI_UstMax2_Enable_Write_opc" uuid="7e51d20d-963d-4d06-bc8a-670fa9cc42d8" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max2.EnableUst.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax2_Enable_opc" display-name="Pp_AI_UstMax2_Enable_opc" uuid="2607bb32-e200-49e8-9ee8-da1607232203" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max2.EnableUst"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax3_Enable_Write_opc" display-name="Pp_AI_UstMax3_Enable_Write_opc" uuid="bebe0510-6bcf-4d51-bc89-01016f7c1d6c" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max3.EnableUst.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax3_Enable_opc" display-name="Pp_AI_UstMax3_Enable_opc" uuid="0e8aafe5-c3f2-41df-9fef-9b44276520e6" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max3.EnableUst"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax3_EnableMess_opc" display-name="Pp_AI_UstMax3_EnableMess_opc" uuid="4accf25b-1b4e-4849-958e-4b5692ae80a1" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max3.EnableUstMess"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax3_EnableMess_Write_opc" display-name="Pp_AI_UstMax3_EnableMess_Write_opc" uuid="bb3a53c5-01e5-4b3e-acee-bf67763a121c" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max3.EnableUstMess.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax2_EnableMess_opc" display-name="Pp_AI_UstMax2_EnableMess_opc" uuid="b37e6d7b-a1d6-45e2-a78a-7148db08c743" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max2.EnableUstMess"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax2_EnableMess_Write_opc" display-name="Pp_AI_UstMax2_EnableMess_Write_opc" uuid="aef2b271-3a6d-4b24-88cb-40f8da273904" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max2.EnableUstMess.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax1_EnableMess_opc" display-name="Pp_AI_UstMax1_EnableMess_opc" uuid="31be0792-04fe-4f1c-aace-8ba333f30baf" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max1.EnableUstMess"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax1_EnableMess_Write_opc" display-name="Pp_AI_UstMax1_EnableMess_Write_opc" uuid="d547bfc4-92f7-44f1-b61b-92c0fceb1a8a" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max1.EnableUstMess.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin1_EnableMess_opc" display-name="Pp_AI_UstMin1_EnableMess_opc" uuid="e40e3feb-1623-4ffd-a1e3-58223e8d11f3" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min1.EnableUstMess"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin1_EnableMess_Write_opc" display-name="Pp_AI_UstMin1_EnableMess_Write_opc" uuid="28b73df0-ef29-4c55-9eb8-8a8423838d6e" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min1.EnableUstMess.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin2_EnableMess_opc" display-name="Pp_AI_UstMin2_EnableMess_opc" uuid="2b2b73ab-98f7-40e6-ba09-f736dd5d63f3" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min2.EnableUstMess"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin2_EnableMess_Write_opc" display-name="Pp_AI_UstMin2_EnableMess_Write_opc" uuid="9eb0aaf3-0c5c-4a85-a6c1-e22476ed80bc" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min2.EnableUstMess.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin3_EnableMess_Write_opc" display-name="Pp_AI_UstMin3_EnableMess_Write_opc" uuid="c79554d9-412c-437f-a632-16d4f6b69db1" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min3.EnableUstMess.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMin3_EnableMess_opc" display-name="Pp_AI_UstMin3_EnableMess_opc" uuid="a1e5f699-fe13-4a4b-9fb8-f072bac779a7" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min3.EnableUstMess"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_WriteUst_booltoken" display-name="Pp_AI_WriteUst_booltoken" uuid="70e7fb7d-39a4-48e1-99fd-ea25575ac033" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="1">
+		<init target="Application" ver="1" value="Alpha.HMI"/>
+		<init target="Right" ver="1" value="WriteUst"/>
+		<init target="SecurityContext" ver="2" ref="unit.Security.SecurityContext"/>
+	</object>
+	<object access-modifier="private" name="Action_RenewTrendRange" display-name="Action_RenewTrendRange" uuid="cb8e7787-b9ed-4efb-a7a4-11525a2f6aaa" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="1">
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="InvokeTrigger" value="false" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="Invoked">
+			<body kind="om">
+				<![CDATA[//Установка пределов графика по вертикали по диапазону параметра
+//Rectangle_Graph.AlphaTrendsAxControl_1.HighRange=Variant.ToDouble(Pp_AI_RangeTechMax_opc.Value,100);
+//Rectangle_Graph.AlphaTrendsAxControl_1.LowRange=Variant.ToDouble(Pp_AI_RangeTechMin_opc.Value,0);]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Pp_AI_Attributes_Unit2" display-name="Pp_AI_Attributes_Unit2" uuid="a2693cd6-fd74-4e42-8e61-613ba6cf756d" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="Attributes.Unit2"/>
+	</object>
+	<object access-modifier="private" name="Confirm_OpcItem" display-name="Confirm_OpcItem" uuid="95cdc665-428c-405b-bb0f-7710c7d6b157" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" base-const="true" base-ref="true" ver="1"/>
+	<object access-modifier="private" name="Confirm_Variant_Value" display-name="Confirm_Variant_Value" uuid="ea8fb15f-98c6-41d6-a9be-de44fae876d0" base-type="variant" base-type-id="7d3322c1-a2cf-4732-a957-abd69e3e4b7a" ver="1"/>
+	<object access-modifier="private" name="Action_Confirm_ImitOn" display-name="Action_Confirm_ImitOn" uuid="6301c2bc-0f7f-49ea-8cf6-10968ac2feec" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="1">
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="InvokeTrigger" value="false" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="Invoked" form-action="open-dialog">
+			<object access-modifier="private" uuid="21ecd0b6-d829-4973-bfc5-a6aa18858d46" base-type="Popup_Confirm" base-type-id="ba572988-a07f-4ec5-8f8f-77d029e31bfc" ver="1">
+				<init target="_Text_Description" ver="1" value="При включении режима имитации в качестве имитируемого значения будет принято текущее значение"/>
+				<init target="_Text_Question" ver="1" value="Включить режим имитации?"/>
+				<init target="_Param_OpcItem" ver="1" ref="Pp_AI_Command_opc"/>
+				<init target="Param_Value" ver="1">
+					<expr>
+						<![CDATA[(TypeConvert.ToUint2(256) * TypeConvert.ToUint2(1)) + TypeConvert.ToUint2(Pp_AINumber)]]>
+					</expr>
+				</init>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="2b76634d-7597-4a2d-aa7d-4b16bf4628ca" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="2"/>
+	<object access-modifier="private" name="tAINumber" display-name="tAINumber" uuid="d30fb1a4-0d88-4436-9de6-31a2bf852e18" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="3"/>
+	<object access-modifier="private" name="ActionChangeUst" display-name="ActionChangeUst" uuid="99775708-7953-4761-8215-65972fe4359a" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="2">
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="InvokeTrigger" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="4c5ebf53-efe6-40fa-88a4-af7ebe81873f" base-type="UstChnageParamAI" base-type-id="3bad0573-2b6c-436c-a6dd-feece2f3f6b7" ver="3">
+				<init target="init_CurrentSelectedColum" ver="3" value="0"/>
+				<init target="Popup_AI_Control_1" ver="3" ref="here"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Window_close_line_1" display-name="Window_close_line_1" uuid="15805d3f-4789-4818-8c0f-74f42f530d76" base-type="Window_close_line" base-type-id="a70c35c1-3cb9-4d9e-8668-ddc931acbcf8" ver="3">
+		<designed target="X" value="1" ver="3"/>
+		<designed target="Y" value="1" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<object access-modifier="private" name="mousePress" display-name="mousePress" uuid="e8edac62-1ab6-43df-9a2e-3d0a5bb0976b" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="3"/>
+		<object access-modifier="private" name="Pointer_press_x" display-name="Pointer_press_x" uuid="04d96109-f831-405d-8d6c-021ea5294701" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="3"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="3" event="MousePress">
+			<body kind="om">
+				<![CDATA[mousePress.Value = true;
+Pointer_press_x = MouseX;
+]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="3" event="MouseRelease">
+			<body kind="om">
+				<![CDATA[mousePress.Value = false;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="3" event="MouseMove">
+			<body kind="om">
+				<![CDATA[if (mousePress) 
+{
+	here.WindowX = ScreenX(MouseX,MouseY) - TypeConvert.ToInt4(Pointer_press_x);
+	here.WindowY = ScreenY(MouseX,MouseY);
+}]]>
+			</body>
+		</do-on>
+		<object access-modifier="private" name="notifying_WindowWidth_now" display-name="notifying_WindowWidth_now" uuid="995a8364-e7fa-422f-b2ab-bc4de158224d" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="3">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="3" event="ValueChanged">
+				<body kind="om">
+					<![CDATA[Window_close_line_1.Rectangle_windowline_base.Width = notifying_WindowWidth_now.Value - 2;
+Window_close_line_1.Rectangle_windowline_base.Text_windowname.Width = Window_close_line_1.Rectangle_windowline_base.Width;
+
+Window_close_line_1.Rectangle_windowline_base.Window_close_button_1.X = Window_close_line_1.Rectangle_windowline_base.Width - 22;
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pp_AI_CMD_Imit_opc" display-name="Pp_AI_CMD_Imit_opc" uuid="42c51e81-c63d-4ca9-8c3f-7ef6b723f7c9" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src"/>
+		<init target="Path" ver="1" value="TechValue.ImitIn.writeValue"/>
+	</object>
+</type>
+

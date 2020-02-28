@@ -1,0 +1,241 @@
+<type access-modifier="private" name="Config_ValveTimeUst" display-name="Config_ValveTimeUst" uuid="203070ec-ac4b-4ea3-b21c-9de1629ed527" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5">
+	<designed target="X" value="0"/>
+	<designed target="Y" value="0"/>
+	<designed target="Rotation" value="0"/>
+	<designed target="Scale" value="1"/>
+	<designed target="Visible" value="true"/>
+	<designed target="Enabled" value="true"/>
+	<designed target="Tooltip" value=""/>
+	<designed target="Width" value="1680"/>
+	<designed target="Height" value="530"/>
+	<designed target="PenColor" value="4278190080"/>
+	<designed target="PenStyle" value="0"/>
+	<designed target="PenWidth" value="1"/>
+	<designed target="BrushColor" value="0xffa0b5e6"/>
+	<designed target="BrushStyle" value="1"/>
+	<designed target="WindowX" value="0"/>
+	<designed target="WindowY" value="0"/>
+	<designed target="WindowWidth" value="1920"/>
+	<designed target="WindowHeight" value="1080"/>
+	<designed target="WindowCaption" value="MainForm"/>
+	<designed target="ShowWindowCaption" value="true"/>
+	<designed target="ShowWindowMinimize" value="true"/>
+	<designed target="ShowWindowMaximize" value="true"/>
+	<designed target="ShowWindowClose" value="true"/>
+	<designed target="AlwaysOnTop" value="false"/>
+	<designed target="WindowSizeMode" value="0"/>
+	<designed target="WindowBorderStyle" value="1"/>
+	<designed target="WindowState" value="0"/>
+	<designed target="WindowScalingMode" value="0"/>
+	<designed target="MonitorNumber" value="0"/>
+	<designed target="WindowPosition" value="0"/>
+	<designed target="WindowCloseMode" value="0"/>
+	<object access-modifier="private" name="OpcRoot" display-name="OpcRoot" uuid="d53bf503-2a76-42d6-a010-6e69f9214fa8" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c">
+		<designed target="Active" value="true"/>
+		<designed target="UpdateRate" value="0"/>
+		<init target="Location" value="localhost"/>
+		<init target="ProgId" value="AP.OPCDAServer"/>
+	</object>
+	<object access-modifier="private" name="OpcItemUst1" display-name="OpcItemUst1" uuid="bd8106fd-aad8-4662-acfc-e9e324088285" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OpcRoot"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["AI"+Str.ToString(13+(_ValveNumber-1)*10)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="txt_SAName_6" display-name="txt_SAName_6" uuid="f99d0323-fc7b-45ee-9de3-a7a6a1aa906f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="299"/>
+		<designed target="Y" value="14"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="460"/>
+		<designed target="Height" value="51.999999999999986"/>
+		<designed target="Text" value="Наименование задвижки"/>
+		<designed target="Font" value="Segoe UI,22,-1,5,75,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff63708f"/>
+		<designed target="TextAlignment" value="132"/>
+		<init target="Text" ver="1">
+			<expr>
+				<![CDATA["Задвижка №"+Str.ToString(_ValveNumber)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Valve_Ustavka_1" display-name="Valve_Ustavka_1" uuid="01d39c3a-4a8b-4628-afad-7a1fddb2e689" base-type="Valve_Ustavka" base-type-id="8188e6f6-d711-4947-9bdf-8f9cfeb892c1" ver="1">
+		<designed target="X" value="44" ver="1"/>
+		<designed target="Y" value="96" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="1000" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<init target="OpcItemUst" ver="1" ref="here.OpcItemUst1"/>
+	</object>
+	<object access-modifier="private" name="Valve_Ustavka_2" display-name="Valve_Ustavka_2" uuid="a0e82c9a-aaf6-4932-807a-2c06c186011d" base-type="Valve_Ustavka" base-type-id="8188e6f6-d711-4947-9bdf-8f9cfeb892c1" ver="1">
+		<designed target="X" value="44" ver="1"/>
+		<designed target="Y" value="136" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="1000" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<init target="OpcItemUst" ver="1" ref="here.OpcItemUst2"/>
+	</object>
+	<object access-modifier="private" name="Valve_Ustavka_3" display-name="Valve_Ustavka_3" uuid="7bb975aa-eb54-484b-97d9-e6348c67a311" base-type="Valve_Ustavka" base-type-id="8188e6f6-d711-4947-9bdf-8f9cfeb892c1" ver="1">
+		<designed target="X" value="44" ver="1"/>
+		<designed target="Y" value="176" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="1000" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<init target="OpcItemUst" ver="1" ref="here.OpcItemUst3"/>
+	</object>
+	<object access-modifier="private" name="Valve_Ustavka_4" display-name="Valve_Ustavka_4" uuid="b2a32ed7-048a-4be2-9a0b-788dc4f72403" base-type="Valve_Ustavka" base-type-id="8188e6f6-d711-4947-9bdf-8f9cfeb892c1" ver="1">
+		<designed target="X" value="44" ver="1"/>
+		<designed target="Y" value="216" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="1000" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<init target="OpcItemUst" ver="1" ref="here.OpcItemUst4"/>
+	</object>
+	<object access-modifier="private" name="Valve_Ustavka_5" display-name="Valve_Ustavka_5" uuid="b1ec7848-0b88-4c77-a322-cb0969900a17" base-type="Valve_Ustavka" base-type-id="8188e6f6-d711-4947-9bdf-8f9cfeb892c1" ver="1">
+		<designed target="X" value="44" ver="1"/>
+		<designed target="Y" value="256" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="1000" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<init target="OpcItemUst" ver="1" ref="here.OpcItemUst5"/>
+	</object>
+	<object access-modifier="private" name="Valve_Ustavka_6" display-name="Valve_Ustavka_6" uuid="1775322f-f5a0-41b5-a2db-fd68f6860a74" base-type="Valve_Ustavka" base-type-id="8188e6f6-d711-4947-9bdf-8f9cfeb892c1" ver="1">
+		<designed target="X" value="44" ver="1"/>
+		<designed target="Y" value="296" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="1000" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<init target="OpcItemUst" ver="1" ref="OpcItemUst6"/>
+	</object>
+	<object access-modifier="private" name="Valve_Ustavka_7" display-name="Valve_Ustavka_7" uuid="6acb3d52-f257-47d6-80f3-3b06b3f27ced" base-type="Valve_Ustavka" base-type-id="8188e6f6-d711-4947-9bdf-8f9cfeb892c1" ver="1">
+		<designed target="X" value="44" ver="1"/>
+		<designed target="Y" value="336" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="1000" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<init target="OpcItemUst" ver="1" ref="OpcItemUst7"/>
+	</object>
+	<object access-modifier="private" name="Valve_Ustavka_8" display-name="Valve_Ustavka_8" uuid="42ef4ac3-1c28-4546-987c-bd66cd30dfc6" base-type="Valve_Ustavka" base-type-id="8188e6f6-d711-4947-9bdf-8f9cfeb892c1" ver="1">
+		<designed target="X" value="44" ver="1"/>
+		<designed target="Y" value="376" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="1000" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<init target="OpcItemUst" ver="1" ref="OpcItemUst8"/>
+	</object>
+	<object access-modifier="private" name="Valve_Ustavka_9" display-name="Valve_Ustavka_9" uuid="fd48f4d8-7b2c-4ce3-b7ce-d982947324d9" base-type="Valve_Ustavka" base-type-id="8188e6f6-d711-4947-9bdf-8f9cfeb892c1" ver="1">
+		<designed target="X" value="44" ver="1"/>
+		<designed target="Y" value="416" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="1000" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<init target="OpcItemUst" ver="1" ref="OpcItemUst9"/>
+	</object>
+	<object access-modifier="private" name="Valve_Ustavka_10" display-name="Valve_Ustavka_10" uuid="4760e9d5-2edf-4004-9bad-2ab3330c0299" base-type="Valve_Ustavka" base-type-id="8188e6f6-d711-4947-9bdf-8f9cfeb892c1" ver="1">
+		<designed target="X" value="44" ver="1"/>
+		<designed target="Y" value="456" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="1000" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<init target="OpcItemUst" ver="1" ref="OpcItemUst10"/>
+	</object>
+	<param access-modifier="private" name="_ValveNumber" display-name="_ValveNumber" uuid="6959d4ff-5a22-428e-9431-abd829e5ebfb" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="1"/>
+	<object access-modifier="private" name="OpcItemUst2" display-name="OpcItemUst2" uuid="c84eb5be-0422-47bf-9cff-fd9e626a5d18" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OpcRoot"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["AI"+Str.ToString(14+(_ValveNumber-1)*10)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcItemUst3" display-name="OpcItemUst3" uuid="580081d1-ce02-46da-b8b3-d57f0310051a" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OpcRoot"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["AI"+Str.ToString(15+(_ValveNumber-1)*10)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcItemUst4" display-name="OpcItemUst4" uuid="9aa53c31-b519-4da5-91ab-95ce03b845ae" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OpcRoot"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["AI"+Str.ToString(16+(_ValveNumber-1)*10)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcItemUst5" display-name="OpcItemUst5" uuid="50d90f18-25d4-4ac6-aa43-10f10ebe3468" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OpcRoot"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["AI"+Str.ToString(17+(_ValveNumber-1)*10)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcItemUst6" display-name="OpcItemUst6" uuid="77297119-2db1-4378-bb5b-1b9b6efe72f3" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OpcRoot"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["AI"+Str.ToString(18+(_ValveNumber-1)*10)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcItemUst7" display-name="OpcItemUst7" uuid="1c959bf3-7fae-433c-a1d4-00ce5c684889" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OpcRoot"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["AI"+Str.ToString(19+(_ValveNumber-1)*10)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcItemUst8" display-name="OpcItemUst8" uuid="2b19d63b-3f01-42d4-a124-feab567e1d39" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OpcRoot"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["AI"+Str.ToString(20+(_ValveNumber-1)*10)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcItemUst9" display-name="OpcItemUst9" uuid="cbd6561e-734e-4795-8b8d-ba600868ff4b" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OpcRoot"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["AI"+Str.ToString(21+(_ValveNumber-1)*10)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcItemUst10" display-name="OpcItemUst10" uuid="2b310923-17ea-4891-811d-bdb106e46f82" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OpcRoot"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["AI"+Str.ToString(22+(_ValveNumber-1)*10)]]>
+			</expr>
+		</init>
+	</object>
+</type>
+

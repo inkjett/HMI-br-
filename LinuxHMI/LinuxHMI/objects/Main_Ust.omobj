@@ -1,0 +1,153 @@
+<type access-modifier="private" name="Main_Ust" display-name="Main_Ust" uuid="4d1128a8-93fc-4f87-9a84-83821034f160" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5">
+	<designed target="X" value="0"/>
+	<designed target="Y" value="0"/>
+	<designed target="Rotation" value="0"/>
+	<designed target="Scale" value="1"/>
+	<designed target="Visible" value="true"/>
+	<designed target="Enabled" value="true"/>
+	<designed target="Tooltip" value=""/>
+	<designed target="Width" value="1720"/>
+	<designed target="Height" value="750"/>
+	<designed target="PenColor" value="0xff000000"/>
+	<designed target="PenStyle" value="0"/>
+	<designed target="PenWidth" value="1"/>
+	<designed target="BrushColor" value="0xffa0b5e6"/>
+	<designed target="BrushStyle" value="1"/>
+	<designed target="WindowX" value="0"/>
+	<designed target="WindowY" value="0"/>
+	<designed target="WindowWidth" value="1720"/>
+	<designed target="WindowHeight" value="750"/>
+	<designed target="WindowCaption" value="MainForm"/>
+	<designed target="ShowWindowCaption" value="true"/>
+	<designed target="ShowWindowMinimize" value="true"/>
+	<designed target="ShowWindowMaximize" value="true"/>
+	<designed target="ShowWindowClose" value="true"/>
+	<designed target="AlwaysOnTop" value="false"/>
+	<designed target="WindowSizeMode" value="0"/>
+	<designed target="WindowBorderStyle" value="1"/>
+	<designed target="WindowState" value="0"/>
+	<designed target="WindowScalingMode" value="0"/>
+	<designed target="MonitorNumber" value="0"/>
+	<designed target="WindowPosition" value="0"/>
+	<designed target="WindowCloseMode" value="0"/>
+	<object access-modifier="private" name="txt_NameForm" display-name="txt_NameForm" uuid="d2feb436-af71-4e20-94d4-d678a28bb03e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="9"/>
+		<designed target="Y" value="8"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="1702"/>
+		<designed target="Height" value="53"/>
+		<designed target="Text" value="Уставки"/>
+		<designed target="Font" value="Sans Serif,28,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff323232"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_Source_src_1" display-name="Pp_AI_Source_src_1" uuid="28e6b2d6-6fbf-4ae4-aa66-70afc1e6870c" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c">
+		<designed target="Active" value="true"/>
+		<init target="ParentSource" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["AI."+Str.ToString(1)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Pp_AI_WriteUst_booltoken_1" display-name="Pp_AI_WriteUst_booltoken_1" uuid="1dd5a27b-c1b3-4877-a869-2bfce97f1844" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="1">
+		<init target="Application" ver="1" value="Alpha.HMI"/>
+		<init target="Right" ver="1" value="WriteUst"/>
+		<init target="SecurityContext" ver="2" ref="unit.Security.SecurityContext"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_EnableUst9_opc_1" display-name="Pp_AI_EnableUst9_opc_1" uuid="ec68047a-ec7c-486b-a383-81887d004716" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src_1"/>
+		<init target="Path" ver="1" value="Enable.Enable_Ust.EnableUst9"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_EnableUst8_opc_2" display-name="Pp_AI_EnableUst8_opc_2" uuid="25acec4e-9752-473a-be3e-f49748c7133b" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src_1"/>
+		<init target="Path" ver="1" value="Enable.Enable_Ust.EnableUst8"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_Source_src_2" display-name="Pp_AI_Source_src_2" uuid="98cc0a5d-2c60-4d29-bc7a-ae90bec68ffe" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c">
+		<designed target="Active" value="true"/>
+		<init target="ParentSource" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["AI."+Str.ToString(2)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax3_opc_1" display-name="Pp_AI_UstMax3_opc_1" uuid="72754daa-c8f8-4a80-8607-2bba49d8e08b" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="Ust.Max3"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src_1"/>
+	</object>
+	<object access-modifier="private" name="Ust_Frame" display-name="Ust_Frame" uuid="5a77df8e-9178-470f-8a3f-4f06fc63bfd7" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="1">
+		<designed target="X" value="10" ver="1"/>
+		<designed target="Y" value="140" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="1700" ver="1"/>
+		<designed target="Height" value="600" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+		<designed target="OverrideScaling" value="false" ver="3"/>
+		<designed target="ShowScrollBars" value="true" ver="3"/>
+		<designed target="MoveByMouse" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="fa531d4c-161b-4368-91f1-d641ed70ed5f" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="324" ver="1"/>
+		<designed target="Y" value="96" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="149" ver="1"/>
+		<designed target="Height" value="39" ver="1"/>
+		<designed target="Text" value="Агрегаты" ver="1"/>
+		<designed target="Font" value="Sans Serif,15,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed" frame-link="Ust_Frame" form-action="open-in-frame">
+			<object access-modifier="private" uuid="e21ef9b2-8942-4014-8bc9-05625e746aca" base-type="Ust_Aux" base-type-id="333ef768-20a8-46a0-9d1e-7755129481b6" ver="1"/>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_2" display-name="Button_2" uuid="f64f64e9-af5c-409f-878f-b8f5f581851d" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="12" ver="1"/>
+		<designed target="Y" value="96" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="305" ver="1"/>
+		<designed target="Height" value="39" ver="1"/>
+		<designed target="Text" value="Измеряемые параметры ПЛК" ver="1"/>
+		<designed target="Font" value="Sans Serif,15,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed" frame-link="Ust_Frame" form-action="open-in-frame">
+			<object access-modifier="private" uuid="6968de24-924c-44e9-adb9-a6aaba89220e" base-type="Ust_AI_PLC" base-type-id="1ef6b21d-024d-455a-ab2b-483bef5ee8fd" ver="1">
+				<designed target="Height" value="700" ver="1"/>
+				<designed target="WindowHeight" value="600" ver="1"/>
+			</object>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="Opened" frame-link="Ust_Frame" form-action="open-in-frame">
+		<object access-modifier="private" uuid="e96e1c1f-495e-4731-954b-d6176dabb602" base-type="Ust_AI_PLC" base-type-id="1ef6b21d-024d-455a-ab2b-483bef5ee8fd" ver="1">
+			<designed target="Height" value="700" ver="1"/>
+		</object>
+	</do-on>
+</type>
+

@@ -1,0 +1,249 @@
+<type access-modifier="private" name="Work_AI_PLC" display-name="Work_AI_PLC" uuid="e4fc43d4-0537-47d0-b2c7-f68a21e08674" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5">
+	<designed target="X" value="0"/>
+	<designed target="Y" value="0"/>
+	<designed target="Rotation" value="0"/>
+	<designed target="Scale" value="1"/>
+	<designed target="Visible" value="true"/>
+	<designed target="Enabled" value="true"/>
+	<designed target="Tooltip" value=""/>
+	<designed target="Width" value="1700"/>
+	<designed target="Height" value="675"/>
+	<designed target="PenColor" value="4278190080"/>
+	<designed target="PenStyle" value="0"/>
+	<designed target="PenWidth" value="1"/>
+	<designed target="BrushColor" value="0xffa0b5e6"/>
+	<designed target="BrushStyle" value="1"/>
+	<designed target="WindowX" value="0"/>
+	<designed target="WindowY" value="0"/>
+	<designed target="WindowWidth" value="1700"/>
+	<designed target="WindowHeight" value="650"/>
+	<designed target="WindowCaption" value="MainForm"/>
+	<designed target="ShowWindowCaption" value="true"/>
+	<designed target="ShowWindowMinimize" value="true"/>
+	<designed target="ShowWindowMaximize" value="true"/>
+	<designed target="ShowWindowClose" value="true"/>
+	<designed target="AlwaysOnTop" value="false"/>
+	<designed target="WindowSizeMode" value="0"/>
+	<designed target="WindowBorderStyle" value="1"/>
+	<designed target="WindowState" value="0"/>
+	<designed target="WindowScalingMode" value="0"/>
+	<designed target="MonitorNumber" value="0"/>
+	<designed target="WindowPosition" value="0"/>
+	<designed target="WindowCloseMode" value="0"/>
+	<object access-modifier="private" name="txt_SAName_8" display-name="txt_SAName_8" uuid="207c1de5-4690-4d78-8efd-d529e8cd0da1" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="0"/>
+		<designed target="Y" value="0"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="1720"/>
+		<designed target="Height" value="30"/>
+		<designed target="Text" value="Датчики ПЛК"/>
+		<designed target="Font" value="Sans Serif,20,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff63708f"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<object access-modifier="private" name="Obj_Work_AI_PLC_1" display-name="Obj_Work_AI_PLC_1" uuid="8af0e8c3-6ee1-41bc-9608-6c09562be682" base-type="Obj_Work_AI_PLC" base-type-id="4c7ea89a-c2d0-49c3-9a42-4a0f33674513" ver="1">
+		<designed target="X" value="120" ver="1"/>
+		<designed target="Y" value="95.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<init target="_Obj_Number" ver="1" value="1"/>
+		<init target="_StringNumber" ver="1" value="1"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_33" display-name="Rectangle_33" uuid="d6044e0b-4ffe-48fb-b4c8-adf2a677c0af" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="180" ver="1"/>
+		<designed target="Y" value="60" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="370" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff646464" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff63708f" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Text_16" display-name="Text_16" uuid="82f08414-ed65-42c2-a306-638faf556f65" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="187" ver="1"/>
+		<designed target="Y" value="60" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="363" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<designed target="Text" value="Наименование параметра" ver="1"/>
+		<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xffffffff" ver="1"/>
+		<designed target="TextAlignment" value="129" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_53" display-name="Rectangle_53" uuid="0f578af0-5633-4e32-81f7-c62154cd672c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="120" ver="1"/>
+		<designed target="Y" value="60" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="60" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff646464" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff63708f" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Text_24" display-name="Text_24" uuid="b1f20055-050c-415c-85fb-e7451254d387" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="120" ver="1"/>
+		<designed target="Y" value="60" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="60" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<designed target="Text" value="№" ver="1"/>
+		<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xffffffff" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_55" display-name="Rectangle_55" uuid="7cb849e4-5f17-451a-9f81-ac655d516098" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="550" ver="1"/>
+		<designed target="Y" value="60" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="120" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff646464" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff63708f" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Text_27" display-name="Text_27" uuid="ae080124-04a2-49b7-94f5-cc880cf3aded" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="550" ver="1"/>
+		<designed target="Y" value="60" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="120" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<designed target="Text" value="Наработка" ver="1"/>
+		<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xffffffff" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_56" display-name="Rectangle_56" uuid="7d9260dd-fc69-4626-845b-4beed926c85a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="670" ver="1"/>
+		<designed target="Y" value="60" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff646464" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff63708f" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Text_28" display-name="Text_28" uuid="78a6b440-1336-4312-aa1d-c3a4d7a90bad" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="670" ver="1"/>
+		<designed target="Y" value="60" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<designed target="Text" value="Ед.изм." ver="1"/>
+		<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xffffffff" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Obj_Work_AI_PLC_2" display-name="Obj_Work_AI_PLC_2" uuid="a216938f-c54f-4775-9258-8b580ca55e49" base-type="Obj_Work_AI_PLC" base-type-id="4c7ea89a-c2d0-49c3-9a42-4a0f33674513" ver="1">
+		<designed target="X" value="120" ver="1"/>
+		<designed target="Y" value="130.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<init target="_Obj_Number" ver="1" value="2"/>
+		<init target="_StringNumber" ver="1" value="2"/>
+	</object>
+	<object access-modifier="private" name="Obj_Work_AI_PLC_3" display-name="Obj_Work_AI_PLC_3" uuid="580fb415-d946-4327-b51f-38cf8a15d149" base-type="Obj_Work_AI_PLC" base-type-id="4c7ea89a-c2d0-49c3-9a42-4a0f33674513" ver="1">
+		<designed target="X" value="120" ver="1"/>
+		<designed target="Y" value="165.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<init target="_Obj_Number" ver="1" value="3"/>
+		<init target="_StringNumber" ver="1" value="3"/>
+	</object>
+	<object access-modifier="private" name="Obj_Work_AI_PLC_4" display-name="Obj_Work_AI_PLC_4" uuid="e03565c7-1312-4384-8219-59bd14179cf4" base-type="Obj_Work_AI_PLC" base-type-id="4c7ea89a-c2d0-49c3-9a42-4a0f33674513" ver="1">
+		<designed target="X" value="120" ver="1"/>
+		<designed target="Y" value="200.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<init target="_Obj_Number" ver="1" value="4"/>
+		<init target="_StringNumber" ver="1" value="4"/>
+	</object>
+	<object access-modifier="private" name="Obj_Work_AI_PLC_5" display-name="Obj_Work_AI_PLC_5" uuid="301796cb-641d-4804-a84e-060a8a9326b0" base-type="Obj_Work_AI_PLC" base-type-id="4c7ea89a-c2d0-49c3-9a42-4a0f33674513" ver="1">
+		<designed target="X" value="120" ver="1"/>
+		<designed target="Y" value="235.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<init target="_Obj_Number" ver="1" value="5"/>
+		<init target="_StringNumber" ver="1" value="5"/>
+	</object>
+	<object access-modifier="private" name="Obj_Work_AI_PLC_6" display-name="Obj_Work_AI_PLC_6" uuid="e26c0d58-d706-4c0e-9f48-cb74032ee37f" base-type="Obj_Work_AI_PLC" base-type-id="4c7ea89a-c2d0-49c3-9a42-4a0f33674513" ver="1">
+		<designed target="X" value="120" ver="1"/>
+		<designed target="Y" value="270.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<init target="_Obj_Number" ver="1" value="6"/>
+		<init target="_StringNumber" ver="1" value="6"/>
+	</object>
+	<object access-modifier="private" name="Obj_Work_AI_PLC_7" display-name="Obj_Work_AI_PLC_7" uuid="df3b41e6-ed5a-4370-9973-55672b0794a5" base-type="Obj_Work_AI_PLC" base-type-id="4c7ea89a-c2d0-49c3-9a42-4a0f33674513" ver="1">
+		<designed target="X" value="120" ver="1"/>
+		<designed target="Y" value="305.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<init target="_Obj_Number" ver="1" value="9"/>
+		<init target="_StringNumber" ver="1" value="7"/>
+	</object>
+	<object access-modifier="private" name="Obj_Work_AI_PLC_8" display-name="Obj_Work_AI_PLC_8" uuid="edecbe41-8f06-425c-ba8f-7c484f840b80" base-type="Obj_Work_AI_PLC" base-type-id="4c7ea89a-c2d0-49c3-9a42-4a0f33674513" ver="1">
+		<designed target="X" value="120" ver="1"/>
+		<designed target="Y" value="340.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<init target="_Obj_Number" ver="1" value="16"/>
+		<init target="_StringNumber" ver="1" value="8"/>
+	</object>
+</type>
+

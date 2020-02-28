@@ -1,0 +1,40 @@
+<object access-modifier="private" name="Functions" display-name="Functions" uuid="0fb37033-65e1-45e8-9624-0b403cc06ca9" base-type="JustDummy" base-type-id="34bc054d-53be-4c82-873b-bd509d7c7c3b" ver="1">
+	<do access-modifier="private" name="Select_object" display-name="Select_object" ver="1" type="" type-id="">
+		<body kind="om">
+			<![CDATA[/*if (MouseAction==1)
+{
+	this.PenColor=0xff323232;
+	this.PenWidth=3;
+}
+if (MouseAction==2)
+{
+	this.PenColor=0xff000000;
+	this.PenWidth=1;
+}
+*/]]>
+		</body>
+		<param access-modifier="private" name="MouseAction" display-name="" uuid="c051de07-83d3-448d-98b3-05f7c9b585c1" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="1"/>
+	</do>
+	<object access-modifier="private" name="StartKeyboard" display-name="StartKeyboard" uuid="49d25fcb-04d3-46ac-953e-92219cb5f3ca" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="1">
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="InvokeTrigger" value="false" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="Invoked">
+			<app path="florence" command-line=""/>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="StartSecurityConfigurator" display-name="StartSecurityConfigurator" uuid="1def1821-9a04-4e34-b0e4-92be06b542b5" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="1">
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="InvokeTrigger" value="false" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="Invoked">
+			<app path="C:\Program Files (x86)\Automiq\Alpha.Security\Configurator\alpha.security.configurator.exe" command-line="FileSystemSafeMode"/>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="StartExplorer" display-name="StartExplorer" uuid="49e788a6-80e2-4c39-846d-6d7bf7b80000" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="1">
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="InvokeTrigger" value="false" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="Invoked">
+			<app path="C:\ProjectVU\Scripts\startexplorer.bat" command-line=""/>
+		</do-on>
+	</object>
+</object>
+

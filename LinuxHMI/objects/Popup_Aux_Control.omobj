@@ -1,0 +1,528 @@
+<type access-modifier="private" name="Popup_Aux_Control" display-name="Popup_Aux_Control" uuid="cc13b30c-f407-4041-81c5-2d1845a9c9e5" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5">
+	<designed target="X" value="0"/>
+	<designed target="Y" value="0"/>
+	<designed target="Rotation" value="0"/>
+	<designed target="Scale" value="1"/>
+	<designed target="Visible" value="true"/>
+	<designed target="Enabled" value="true"/>
+	<designed target="Tooltip" value=""/>
+	<designed target="Width" value="460"/>
+	<designed target="Height" value="220"/>
+	<designed target="PenColor" value="4278190080"/>
+	<designed target="PenStyle" value="0"/>
+	<designed target="PenWidth" value="1"/>
+	<designed target="BrushColor" value="0xff63708f"/>
+	<designed target="BrushStyle" value="1"/>
+	<designed target="WindowX" value="0"/>
+	<designed target="WindowY" value="0"/>
+	<designed target="WindowWidth" value="460"/>
+	<designed target="WindowHeight" value="220"/>
+	<designed target="WindowCaption" value="Окно управления агрегатом"/>
+	<designed target="ShowWindowCaption" value="false"/>
+	<designed target="ShowWindowMinimize" value="false"/>
+	<designed target="ShowWindowMaximize" value="false"/>
+	<designed target="ShowWindowClose" value="false"/>
+	<designed target="AlwaysOnTop" value="true"/>
+	<designed target="WindowSizeMode" value="0"/>
+	<designed target="WindowBorderStyle" value="2"/>
+	<designed target="WindowState" value="0"/>
+	<designed target="WindowScalingMode" value="0"/>
+	<designed target="MonitorNumber" value="0"/>
+	<designed target="WindowPosition" value="1"/>
+	<designed target="WindowCloseMode" value="0"/>
+	<object access-modifier="private" name="Pp_PumpControl_GroupControl_rect" display-name="Pp_PumpControl_GroupControl_rect" uuid="13b18078-76cf-45d2-a1b8-a83e52d99e78" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="31" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="450" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff626262" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffb1c9ff" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Pp_PumpControl_GroupControl_rect1_1" display-name="Pp_PumpControl_GroupControl_rect1_1" uuid="45721ba5-22cf-4447-a0df-b82448c55d97" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="10" ver="1"/>
+		<designed target="Y" value="151" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="440" ver="1"/>
+		<designed target="Height" value="60" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xffb4b4b4" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Pp_PumpControl_GroupControl_back_1" display-name="Pp_PumpControl_GroupControl_back_1" uuid="a2647efe-cf64-4cbb-bae1-9694f498a355" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="17.6667"/>
+		<designed target="Y" value="143"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="102"/>
+		<designed target="Height" value="17.6667"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="0xff383838"/>
+		<designed target="PenStyle" value="0"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff63708f"/>
+		<designed target="BrushStyle" value="1"/>
+	</object>
+	<object access-modifier="private" name="Pp_PumpControl_GroupControl_txt_1" display-name="Pp_PumpControl_GroupControl_txt_1" uuid="d1393888-8af5-4624-ac57-e034263340fe" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="19"/>
+		<designed target="Y" value="140.5"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="102"/>
+		<designed target="Height" value="18"/>
+		<designed target="Text" value="Неисправность"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xffb4b4b4"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<object access-modifier="private" name="Pp_PumpControl_GroupControl_rect1" display-name="Pp_PumpControl_GroupControl_rect1" uuid="67b8ea85-a90b-4930-8d1c-68ce00e82694" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="10" ver="1"/>
+		<designed target="Y" value="76" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="440" ver="1"/>
+		<designed target="Height" value="60" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xffb4b4b4" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Pp_PumpControl_GroupControl_back" display-name="Pp_PumpControl_GroupControl_back" uuid="e036375e-a29e-463a-ae13-481d3791c91a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="17.6667"/>
+		<designed target="Y" value="68"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="89"/>
+		<designed target="Height" value="17.6667"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="0xff383838"/>
+		<designed target="PenStyle" value="0"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff63708f"/>
+		<designed target="BrushStyle" value="1"/>
+	</object>
+	<object access-modifier="private" name="Pp_PumpControl_GroupControl_txt" display-name="Pp_PumpControl_GroupControl_txt" uuid="9f035794-ef34-4fee-bace-2b973a91941c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="19"/>
+		<designed target="Y" value="66.5"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="89"/>
+		<designed target="Height" value="18"/>
+		<designed target="Text" value="Управление"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xffb4b4b4"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<object access-modifier="private" name="Pp_PumpControl_PumpName_txt" display-name="Pp_PumpControl_PumpName_txt" uuid="2473e413-e6e5-4bcb-ae5c-a4302696dc6e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="5"/>
+		<designed target="Y" value="31"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="450"/>
+		<designed target="Height" value="30"/>
+		<designed target="Text" value="Наименование агрегата"/>
+		<designed target="Font" value="Sans Serif,14,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff000000"/>
+		<designed target="TextAlignment" value="132"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Pp_Aux_Name_opc.ValueAsString]]>
+			</body>
+		</do-trace>
+	</object>
+	<param access-modifier="private" name="_Pp_PumpControl_PumpNumber" display-name="_Pp_PumpControl_PumpNumber" uuid="2517d6c4-6e17-4d3f-94b6-33d3ea9f4e2f" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="Pp_PumpControl_Cmd_opc" display-name="Pp_PumpControl_Cmd_opc" uuid="d827b51a-7ac0-4184-80f0-9bf1f55c3670" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="AuxCommand" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_PumpControl_CmdRoot_src"/>
+		<init target="Path" ver="1" value="AuxCommand"/>
+	</object>
+	<object access-modifier="private" name="Pp_PumpControl_CmdRoot_src" display-name="Pp_PumpControl_CmdRoot_src" uuid="12cee857-feed-452f-b59d-49f22b310ffa" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="1">
+		<designed target="Active" value="true" ver="1"/>
+		<init target="ParentSource" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1" value="Commands"/>
+	</object>
+	<object access-modifier="private" name="Pp_PumpControl_Root_src" display-name="Pp_PumpControl_Root_src" uuid="f57dc54a-7633-4818-984b-867a7553088b" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="1">
+		<designed target="Active" value="true" ver="1"/>
+		<init target="ParentSource" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["Aux."+Str.ToString(_Pp_PumpControl_PumpNumber)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Pp_PumpControl_WorkState_opc" display-name="Pp_PumpControl_WorkState_opc" uuid="5f625d99-1f2a-4113-99f6-758313a0037c" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="StateWork" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_PumpControl_Root_src"/>
+		<init target="Path" ver="1" value="State.WorkState"/>
+	</object>
+	<object access-modifier="private" name="Pp_PumpControl_PumpNumber" display-name="Pp_PumpControl_PumpNumber" uuid="98a83e24-f287-490c-a9c8-5b9e319022a8" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<init target="Pp_PumpControl_PumpNumber" ver="1" ref="_Pp_PumpControl_PumpNumber"/>
+	<object access-modifier="private" name="Pp_PumpControl_Command1_rect" display-name="Pp_PumpControl_Command1_rect" uuid="0cf0b12d-276b-48fa-8d5b-5416d3535c15" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="15.5" ver="1"/>
+		<designed target="Y" value="84.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="210" ver="1"/>
+		<designed target="Height" value="45" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff323232" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff37678c" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Pump_Mode_Gradient" display-name="Pump_Mode_Gradient" uuid="bc157981-a4aa-482f-92f0-c57926f43a6c" base-type="RadialGradient" base-type-id="ec8b2b95-2c92-44b2-a9aa-3ce4fc0f08b9" ver="1">
+			<designed target="XCenter" value="0.5" ver="1"/>
+			<designed target="YCenter" value="0.5" ver="1"/>
+			<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="320d4f38-d44d-4428-885d-d595dc382eb1" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="0.40000000000000002" ver="1"/>
+				<designed target="Color" value="0xffe1e1e1" ver="1"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="5fd62961-6ffe-459e-a1ee-3effdeadc96f" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="1" ver="1"/>
+				<designed target="Color" value="0xffb4b4b4" ver="1"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="Pp_PumpControl_Command1_txt" display-name="Pp_PumpControl_Command1_txt" uuid="fb8bea70-30c8-4390-a9c4-33e58df25c3b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="75.5" ver="1"/>
+			<designed target="Y" value="8.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="60" ver="1"/>
+			<designed target="Height" value="27" ver="1"/>
+			<designed target="Text" value="ПУСК" ver="1"/>
+			<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[StartStop_BoolToken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff4b4b4b]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="MouseEnter" ver="1">
+			<body kind="om">
+				<![CDATA[this.PenWidth=3;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" event="MouseLeave" ver="1">
+			<body kind="om">
+				<![CDATA[this.PenWidth=1;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" event="MouseClick" ver="1">
+			<body kind="om">
+				<![CDATA[Pp_PumpControl_Cmd_opc.Value = (TypeConvert.ToUint2(256) * TypeConvert.ToUint2(1)) + TypeConvert.ToUint2(Pp_PumpControl_PumpNumber);]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[unit.Security.StartStop_booltoken.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_PumpControl_Command2_rect" display-name="Pp_PumpControl_Command2_rect" uuid="adf30883-d93b-415e-983b-457dda7501e7" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="233.5" ver="1"/>
+		<designed target="Y" value="84.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="210" ver="1"/>
+		<designed target="Height" value="45" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff323232" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff37678c" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Pump_Mode_Gradient" display-name="Pump_Mode_Gradient" uuid="9a55203b-053e-4f00-94d7-3e2b6e860210" base-type="RadialGradient" base-type-id="ec8b2b95-2c92-44b2-a9aa-3ce4fc0f08b9" ver="1">
+			<designed target="XCenter" value="0.5" ver="1"/>
+			<designed target="YCenter" value="0.5" ver="1"/>
+			<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="6f54c216-f679-4fbd-8f7f-fc807af5628c" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="0.40000000000000002" ver="1"/>
+				<designed target="Color" value="0xffe1e1e1" ver="1"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="3f1afce1-3934-486e-9c67-198e4ad6744e" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="1" ver="1"/>
+				<designed target="Color" value="0xffb4b4b4" ver="1"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="Pp_PumpControl_Command2_txt" display-name="Pp_PumpControl_Command2_txt" uuid="6dcbbdc0-c4f5-42e4-84cf-5b3245fa4b7e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="75.5" ver="1"/>
+			<designed target="Y" value="8.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="60" ver="1"/>
+			<designed target="Height" value="27" ver="1"/>
+			<designed target="Text" value="СТОП" ver="1"/>
+			<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[StartStop_BoolToken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff4b4b4b]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="MouseEnter" ver="1">
+			<body kind="om">
+				<![CDATA[Pp_PumpControl_Command2_rect.PenWidth=3;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" event="MouseLeave" ver="1">
+			<body kind="om">
+				<![CDATA[Pp_PumpControl_Command2_rect.PenWidth=1;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" event="MouseClick" ver="1">
+			<body kind="om">
+				<![CDATA[Pp_PumpControl_Cmd_opc.Value = (TypeConvert.ToUint2(256) * TypeConvert.ToUint2(2)) + TypeConvert.ToUint2(Pp_PumpControl_PumpNumber);]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[StartStop_BoolToken.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_PumpControl_Command3_rect" display-name="Pp_PumpControl_Command3_rect" uuid="bf0f3fb9-ebe0-4c6e-8c0e-0a3de43e351f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="124.5" ver="1"/>
+		<designed target="Y" value="159.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="210" ver="1"/>
+		<designed target="Height" value="45" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff323232" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff37678c" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Pump_Mode_Gradient" display-name="Pump_Mode_Gradient" uuid="bf9e8aef-f2dc-4e5c-a46c-22e0017bca64" base-type="RadialGradient" base-type-id="ec8b2b95-2c92-44b2-a9aa-3ce4fc0f08b9" ver="1">
+			<designed target="XCenter" value="0.5" ver="1"/>
+			<designed target="YCenter" value="0.5" ver="1"/>
+			<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="8500c80f-1ac6-415f-832c-879e9eaf5cf3" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="0.40000000000000002" ver="1"/>
+				<designed target="Color" value="0xffe1e1e1" ver="1"/>
+				<do-trace access-modifier="private" target="Color" ver="1">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Pp_PumpControl_Error_opc.Quality < 192]]>
+						</condition>
+						<expr>
+							<![CDATA[0xffe1e1e1]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[Variant.ToBool(Pp_PumpControl_Error_opc.Value, false) == false]]>
+						</condition>
+						<expr>
+							<![CDATA[0xffe1e1e1]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[Variant.ToBool(Pp_PumpControl_Error_opc.Value, false) == true]]>
+						</condition>
+						<expr>
+							<![CDATA[0xffff0000]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="0cb4950f-66af-40a5-8e8a-811d4c91fa48" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="1" ver="1"/>
+				<designed target="Color" value="0xffb4b4b4" ver="1"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="Pp_PumpControl_Command3_txt" display-name="Pp_PumpControl_Command3_txt" uuid="cdcdb61e-cd34-4040-971d-b7d132f88adf" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="5.5" ver="1"/>
+			<designed target="Y" value="8.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="201" ver="1"/>
+			<designed target="Height" value="27" ver="1"/>
+			<designed target="Text" value="Деблокировать" ver="1"/>
+			<designed target="Font" value="Sans Serif,14,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[StartStop_BoolToken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff4b4b4b]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="MouseEnter" ver="1">
+			<body kind="om">
+				<![CDATA[this.PenWidth=3;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" event="MouseLeave" ver="1">
+			<body kind="om">
+				<![CDATA[this.PenWidth=1;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" event="MouseClick" ver="1">
+			<body kind="om">
+				<![CDATA[Pp_PumpControl_Cmd_opc.Value = (TypeConvert.ToUint2(256) * TypeConvert.ToUint2(7)) + TypeConvert.ToUint2(Pp_PumpControl_PumpNumber);]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[StartStop_BoolToken.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pp_PumpControl_Error_opc" display-name="Pp_PumpControl_Error_opc" uuid="5c4e31d2-a815-4300-9205-6420eb5fe417" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="Error" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_PumpControl_Root_src"/>
+		<init target="Path" ver="1" value="State.Error"/>
+	</object>
+	<object access-modifier="private" name="Pp_Aux_Name_opc" display-name="Pp_Aux_Name_opc" uuid="ab6787d1-de2b-4d5f-9a14-121aaec9e972" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="Attributes.Name"/>
+		<init target="Source" ver="1" ref="Pp_PumpControl_Root_src"/>
+	</object>
+	<object access-modifier="private" name="StartStop_BoolToken" display-name="StartStop_BoolToken" uuid="e8cf9451-935e-4825-abf0-2e4b9111cfd1" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="1">
+		<init target="Application" ver="1" value="Alpha.HMI"/>
+		<init target="Right" ver="1" value="StartStop"/>
+		<init target="SecurityContext" ver="2" ref="unit.Security.SecurityContext"/>
+	</object>
+	<object access-modifier="private" name="Window_close_line_1" display-name="Window_close_line_1" uuid="ce69f558-31a2-4be8-9772-3e3aea11e1cc" base-type="Window_close_line" base-type-id="a70c35c1-3cb9-4d9e-8668-ddc931acbcf8" ver="3">
+		<designed target="X" value="1" ver="3"/>
+		<designed target="Y" value="1" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="3" event="MouseRelease">
+			<body kind="om">
+				<![CDATA[mousePress.Value = false;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="3" event="MousePress">
+			<body kind="om">
+				<![CDATA[mousePress.Value = true;
+Pointer_press_x = MouseX;
+]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="3" event="MouseMove">
+			<body kind="om">
+				<![CDATA[if (mousePress.Value) 
+{
+	here.WindowX = ScreenX(MouseX,MouseY) - TypeConvert.ToInt4(Pointer_press_x);
+	here.WindowY = ScreenY(MouseX,MouseY);
+}]]>
+			</body>
+		</do-on>
+		<object access-modifier="private" name="Pointer_press_x" display-name="Pointer_press_x" uuid="75b7f8d8-5e7e-404a-ae94-45b4d6de5c91" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="3"/>
+		<object access-modifier="private" name="mousePress" display-name="mousePress" uuid="e7b3892f-eb7c-4c39-a1cb-67d937c67379" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="3"/>
+		<object access-modifier="private" name="notifying_WindowWidth_now" display-name="notifying_WindowWidth_now" uuid="f2a59145-5b83-4e24-97b5-fe3910bf891f" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="3">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="3" event="ValueChanged">
+				<body kind="om">
+					<![CDATA[Window_close_line_1.Rectangle_windowline_base.Width = notifying_WindowWidth_now.Value - 2;
+Window_close_line_1.Rectangle_windowline_base.Text_windowname.Width = Window_close_line_1.Rectangle_windowline_base.Width;
+
+Window_close_line_1.Rectangle_windowline_base.Window_close_button_1.X = Window_close_line_1.Rectangle_windowline_base.Width - 22;
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="3" event="Opened">
+		<body kind="om">
+			<![CDATA[here.Window_close_line_1.Rectangle_windowline_base.Text_windowname.Text = WindowCaption;
+here.Window_close_line_1.notifying_WindowWidth_now = WindowWidth;]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="3" event="WindowActivationChanged">
+		<body kind="om">
+			<![CDATA[if (!WindowActive) Close();]]>
+		</body>
+	</do-on>
+</type>
+

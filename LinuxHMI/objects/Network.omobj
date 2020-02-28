@@ -1,0 +1,5 @@
+<object access-modifier="private" name="Network" display-name="Network" uuid="82c93ed5-7091-4798-b31e-2e280b7889f9" base-type="JustDummy" base-type-id="34bc054d-53be-4c82-873b-bd509d7c7c3b" ver="1">
+	<object access-modifier="private" name="ARM_NetworkName" display-name="ARM_NetworkName" uuid="513a2b5f-77b9-49ed-8e3d-e406a89cd5e7" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="1"/>
+	<object access-modifier="private" name="ARM_LogicName" display-name="ARM_LogicName" uuid="2d920e13-7b18-4591-a9d7-f1c508369b5e" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="1"/>
+</object>
+

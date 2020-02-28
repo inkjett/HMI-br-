@@ -1,0 +1,857 @@
+<type access-modifier="private" name="Obj_Modul_AO08" display-name="Obj_Modul_AO08" uuid="b99b9c44-5618-43af-b746-5c1baee7add3" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="100" ver="1"/>
+	<designed target="Height" value="300" ver="1"/>
+	<designed target="RoundingRadius" value="3" ver="1"/>
+	<designed target="PenColor" value="4278190080" ver="1"/>
+	<designed target="PenStyle" value="1" ver="1"/>
+	<designed target="PenWidth" value="1" ver="1"/>
+	<designed target="BrushColor" value="0xff1f1f1f" ver="1"/>
+	<designed target="BrushStyle" value="1" ver="1"/>
+	<object access-modifier="private" name="AO1_opc" display-name="AO1_opc" uuid="082ae2e6-99e3-4acf-b948-6e2adcf1cf5d" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[(_PLC_or_IVK=="PLC")?("PLC.AO."+Str.ToString(1+(_ModulAO_Number-1)*8) + ".ValueOut"):((_PLC_or_IVK=="IVK")?("IVK.Modules.AO."+Str.ToString(_ModulAO_Number)+".AO1.Value"):("Error"))]]>
+			</expr>
+		</init>
+		<init target="Source" ver="1" ref="unit.Sources.ASUTP_source"/>
+	</object>
+	<param access-modifier="private" name="_ModulAO_Number" display-name="_ModulAO_Number" uuid="df8db37c-e21a-4d4a-84a2-33fb680e0dd8" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<param access-modifier="private" name="_ModulInCrate_Number" display-name="_ModulInCrate_Number" uuid="84e38ed0-57dd-44e8-8c78-4e9edb7e645c" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<param access-modifier="private" name="_Crate_Number" display-name="_Crate_Number" uuid="dae3499d-eea8-4d4d-8873-0792fabe1cc5" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="MouseEnter">
+		<body kind="om">
+			<![CDATA[here.PenWidth=3;]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="1" event="MouseLeave">
+		<body kind="om">
+			<![CDATA[here.PenWidth=1;]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="1" event="MouseClick" form-action="open-new">
+		<object access-modifier="private" uuid="f2664d7a-9177-4bff-9c80-73bb9d43f789" base-type="Popup_Modul_AO02" base-type-id="1f6849d8-39f6-4e8c-bd38-4844c9622e3b" ver="1">
+			<designed target="WindowPosition" value="1" ver="1"/>
+			<designed target="WindowHeight" value="310" ver="1"/>
+			<init target="_Pp_ModulAO_Number" ver="1" ref="ModulAO_Number"/>
+			<init target="_Pp_ModulInCrate_Number" ver="1" ref="ModulInCrate_Number"/>
+			<init target="_Pp_Crate_Number" ver="1" ref="Crate_Number"/>
+			<init target="_Pp_PLC_or_IVK" ver="1" ref="PLC_or_IVK"/>
+			<init target="_Pp_Modul_Label" ver="1" ref="Modul_Label"/>
+		</object>
+	</do-on>
+	<object access-modifier="private" name="ModulAO_Number" display-name="ModulAO_Number" uuid="d577f744-8074-4cf4-a05b-ea6d8edc1d0a" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="ModulInCrate_Number" display-name="ModulInCrate_Number" uuid="1c491451-4d93-4782-a04f-ec1276e4ec6c" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="Crate_Number" display-name="Crate_Number" uuid="3319be8d-d232-4684-8633-5045309ae4d9" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="AO1_OutputFormatter" display-name="AO1_OutputFormatter" uuid="c1329e63-7340-4375-85a3-22647c498e70" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="c85ef921-207f-4057-bf4c-33cf082db200" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" value="3"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[AO1_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<param access-modifier="private" name="_PLC_or_IVK" display-name="_PLC_or_IVK" uuid="04d437b4-4ae1-4fd8-bd20-5853719d04fd" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="ModulError_opc" display-name="ModulError_opc" uuid="a6c92c1b-7a66-4b43-977f-5e681773aca0" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[(_PLC_or_IVK=="PLC")?("PLC.Crate."+Str.ToString(_Crate_Number) + ".Errors.Modul" + Str.ToString(_ModulInCrate_Number)):((_PLC_or_IVK=="IVK")?("IVK.Modules.AO."+Str.ToString(_ModulAO_Number)+".HwError"):("Error"))]]>
+			</expr>
+		</init>
+		<init target="Source" ver="1" ref="unit.Sources.ASUTP_source"/>
+	</object>
+	<object access-modifier="private" name="AO2_opc" display-name="AO2_opc" uuid="46d46bb0-d23f-43d7-bc68-407b3402c92c" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[(_PLC_or_IVK=="PLC")?("PLC.AO."+Str.ToString(2+(_ModulAO_Number-1)*8) + ".ValueOut"):((_PLC_or_IVK=="IVK")?("IVK.Modules.AO."+Str.ToString(_ModulAO_Number)+".AO2.Value"):("Error"))]]>
+			</expr>
+		</init>
+		<init target="Source" ver="1" ref="unit.Sources.ASUTP_source"/>
+	</object>
+	<object access-modifier="private" name="AO2_OutputFormatter" display-name="AO2_OutputFormatter" uuid="d33820dd-8027-40a4-bed2-672cdfb74b28" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="ae5ff9c5-e235-4d69-bfe7-ab0018166974" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" value="3"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[AO2_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<init target="ModulAO_Number" ver="1" ref="_ModulAO_Number"/>
+	<init target="Crate_Number" ver="1" ref="_Crate_Number"/>
+	<init target="ModulInCrate_Number" ver="1" ref="_ModulInCrate_Number"/>
+	<object access-modifier="private" name="PLC_or_IVK" display-name="PLC_or_IVK" uuid="568341ee-4134-4305-810c-a2bb510147bd" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<init target="PLC_or_IVK" ver="1" ref="_PLC_or_IVK"/>
+	<param access-modifier="private" name="_Modul_Label" display-name="_Modul_Label" uuid="d22065b0-76c8-41fe-b862-38d65d163f0a" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="Modul_Label" display-name="Modul_Label" uuid="3bbcebc2-b198-4d05-8ba0-06583f0a798a" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<init target="Modul_Label" ver="1" ref="_Modul_Label"/>
+	<object access-modifier="private" name="Modul_AO08_Back_rect_1" display-name="Modul_AO08_Back_rect_1" uuid="0a4130ba-c923-4c34-ba2e-2a2c16c055c7" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="140" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff000000" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Modul_AO08_Label_rect_1" display-name="Modul_AO08_Label_rect_1" uuid="f2a85af5-9858-4c92-8eb5-753faaf38993" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="20.5" ver="1"/>
+		<designed target="Y" value="275.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="58" ver="1"/>
+		<designed target="Height" value="23.000000000000057" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffffffff" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_DI08_Label_text" display-name="Modul_DI08_Label_text" uuid="67647e37-8c9d-4ee5-9534-cfd2a5e3f06f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="4" ver="1"/>
+			<designed target="Y" value="1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="50" ver="1"/>
+			<designed target="Height" value="21" ver="1"/>
+			<designed target="Text" value="A1_1" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+			<init target="Text" ver="1">
+				<expr>
+					<![CDATA[_Modul_Label]]>
+				</expr>
+			</init>
+		</object>
+	</object>
+	<object access-modifier="private" name="Modul_AO04_Name_text_1" display-name="Modul_AO04_Name_text_1" uuid="35e313c2-ac28-4a6c-b056-a7fbd6d9d88e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="16.5" ver="1"/>
+		<designed target="Y" value="250.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="69" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="AO 08 011" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xffc8c8c8" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Modul_AO08_Err_rect_1" display-name="Modul_AO08_Err_rect_1" uuid="b975e101-ada9-4b6e-96ce-b9a1a14be65a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="0" ver="1"/>
+		<designed target="Y" value="160" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="100" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffff0000" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_DI08_Err_text" display-name="Modul_DI08_Err_text" uuid="bffa04d5-ff7f-458f-a288-ebbc8b0fab99" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="0" ver="1"/>
+			<designed target="Y" value="0" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="100" ver="1"/>
+			<designed target="Height" value="15" ver="1"/>
+			<designed target="Text" value="НЕИСПРАВНОСТЬ" ver="1"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="0xff000000" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[ModulError_opc.Quality < 192]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff4b4b4b]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == false && PLC_or_IVK=="PLC"]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == true && PLC_or_IVK=="PLC"]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff4b4b4b]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == false && PLC_or_IVK=="IVK"]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff4b4b4b]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == true && PLC_or_IVK=="IVK"]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ModulError_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == false && PLC_or_IVK=="PLC"]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == true && PLC_or_IVK=="PLC"]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff4b4b4b]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == false && PLC_or_IVK=="IVK"]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff4b4b4b]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == true && PLC_or_IVK=="IVK"]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ModulError_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == false && PLC_or_IVK=="PLC"]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == true && PLC_or_IVK=="PLC"]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == false && PLC_or_IVK=="IVK"]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == true && PLC_or_IVK=="IVK"]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ModulError_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == false && PLC_or_IVK=="PLC"]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == true && PLC_or_IVK=="PLC"]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == false && PLC_or_IVK=="IVK"]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == true && PLC_or_IVK=="IVK"]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_AO08_AO1_Value_text" display-name="Modul_AO08_AO1_Value_text" uuid="0d493770-2a11-4272-aaf7-23f89e196025" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="12" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="Text" value="12,012" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff00ff00" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[AO1_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AO1_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!(AO1_opc.Quality < 192)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_AO08_AO2_Value_text" display-name="Modul_AO08_AO2_Value_text" uuid="5967d6c4-40d0-4289-996b-f75e639022ab" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="28" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="Text" value="12,012" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff00ff00" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[AO2_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AO2_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!(AO2_opc.Quality < 192)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_AO08_AO3_Value_text" display-name="Modul_AO08_AO3_Value_text" uuid="7b470b25-002e-45b9-95cc-14eefc41f9ae" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="44" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="Text" value="12,012" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff00ff00" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[AO3_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AO3_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!(AO3_opc.Quality < 192)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_AO08_AO4_Value_text" display-name="Modul_AO08_AO4_Value_text" uuid="5aa0ce36-e9a8-48b0-a750-7e0df155ab25" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="60" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="Text" value="12,012" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff00ff00" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[AO4_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AO4_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!(AO4_opc.Quality < 192)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_AO08_AO5_Value_text" display-name="Modul_AO08_AO5_Value_text" uuid="4c8136d5-01c5-4dc0-a306-15d7a5eb1688" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="76" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="Text" value="12,012" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff00ff00" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[AO5_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AO5_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!(AO5_opc.Quality < 192)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_AO08_AO6_Value_text" display-name="Modul_AO08_AO6_Value_text" uuid="1c6d6390-85ca-4651-abff-844266e9d66d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="92" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="Text" value="12,012" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff00ff00" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[AO6_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AO6_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!(AO6_opc.Quality < 192)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_AO08_AO7_Value_text" display-name="Modul_AO08_AO7_Value_text" uuid="597c2f96-e10e-499a-b0b1-238ab4f6990b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="108" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="Text" value="12,012" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff00ff00" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[AO7_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AO7_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!(AO7_opc.Quality < 192)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_AO08_AO8_Value_text" display-name="Modul_AO08_AO8_Value_text" uuid="100dd80c-f1e9-4a1a-90de-3aa06cf343fa" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="124" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="Text" value="12,012" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff00ff00" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[AO8_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AO8_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!(AO8_opc.Quality < 192)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_AO08_Glass_1" display-name="Modul_AO08_Glass_1" uuid="55d5abd2-8b97-42d7-9a8c-c735f3b364a2" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="0" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="100" ver="1"/>
+		<designed target="Height" value="150" ver="1"/>
+		<designed target="RoundingRadius" value="3" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0x32000000" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="LinearGradient_1" display-name="LinearGradient_1" uuid="ec39f2fd-d4ad-4d48-a7ab-63abd015f027" base-type="LinearGradient" base-type-id="3fca3251-ff83-4d88-b94d-b3ac37a76ba0" ver="1">
+			<designed target="Rotation" value="0" ver="1"/>
+			<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="29c0fc7e-c00e-4239-b992-14c13d64a920" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="0" ver="1"/>
+				<designed target="Color" value="0x64ffffff" ver="1"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="b9213f1f-c893-4b9e-be61-e5f94cd2849b" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="0.10000000000000001" ver="1"/>
+				<designed target="Color" value="0x4b000000" ver="1"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_3" display-name="GradientPoint_3" uuid="479707ee-bf94-4e23-b368-bec1524b74b8" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="0.90000000000000002" ver="1"/>
+				<designed target="Color" value="0x4b000000" ver="1"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_4" display-name="GradientPoint_4" uuid="0bd159f8-1bf0-4945-9d57-bdf59e60c1ef" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="1" ver="1"/>
+				<designed target="Color" value="0x64ffffff" ver="1"/>
+			</object>
+		</object>
+	</object>
+	<object access-modifier="private" name="AO3_opc" display-name="AO3_opc" uuid="7964bd22-1366-4a41-971f-b0d58afc166c" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[(_PLC_or_IVK=="PLC")?("PLC.AO."+Str.ToString(3+(_ModulAO_Number-1)*8) + ".ValueOut"):((_PLC_or_IVK=="IVK")?("IVK.Modules.AO."+Str.ToString(_ModulAO_Number)+".AO3.Value"):("Error"))]]>
+			</expr>
+		</init>
+		<init target="Source" ver="1" ref="unit.Sources.ASUTP_source"/>
+	</object>
+	<object access-modifier="private" name="AO3_OutputFormatter" display-name="AO3_OutputFormatter" uuid="b73f5c1d-68e5-4d92-83fe-6e04b1dc3fda" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="8c22179f-d9b0-432f-8a7a-cfa4443c8aec" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" value="3"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[AO3_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="AO4_opc" display-name="AO4_opc" uuid="4a447469-0e2a-471e-8a0e-09b23f29030b" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[(_PLC_or_IVK=="PLC")?("PLC.AO."+Str.ToString(4+(_ModulAO_Number-1)*8) + ".ValueOut"):((_PLC_or_IVK=="IVK")?("IVK.Modules.AO."+Str.ToString(_ModulAO_Number)+".AO4.Value"):("Error"))]]>
+			</expr>
+		</init>
+		<init target="Source" ver="1" ref="unit.Sources.ASUTP_source"/>
+	</object>
+	<object access-modifier="private" name="AO4_OutputFormatter" display-name="AO4_OutputFormatter" uuid="8a58e46f-aa55-4690-b2ff-1fbeb7fd0ba6" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="7dab996f-53ff-49f1-a262-7991ceb9f51d" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" value="3"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[AO4_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="AO5_opc" display-name="AO5_opc" uuid="7c015136-518f-49da-9fd4-c2d2bf848537" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[(_PLC_or_IVK=="PLC")?("PLC.AO."+Str.ToString(5+(_ModulAO_Number-1)*8) + ".ValueOut"):((_PLC_or_IVK=="IVK")?("IVK.Modules.AO."+Str.ToString(_ModulAO_Number)+".AO5.Value"):("Error"))]]>
+			</expr>
+		</init>
+		<init target="Source" ver="1" ref="unit.Sources.ASUTP_source"/>
+	</object>
+	<object access-modifier="private" name="AO5_OutputFormatter" display-name="AO5_OutputFormatter" uuid="517dec00-cf8f-4806-9f20-8b6cb7692c09" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="7dc2194e-acd0-41b1-ab3a-67173b54f6ce" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" value="3"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[AO5_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="AO6_opc" display-name="AO6_opc" uuid="5c1736e0-1b03-41c1-a3e3-bd9773a26b17" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[(_PLC_or_IVK=="PLC")?("PLC.AO."+Str.ToString(6+(_ModulAO_Number-1)*8) + ".ValueOut"):((_PLC_or_IVK=="IVK")?("IVK.Modules.AO."+Str.ToString(_ModulAO_Number)+".AO6.Value"):("Error"))]]>
+			</expr>
+		</init>
+		<init target="Source" ver="1" ref="unit.Sources.ASUTP_source"/>
+	</object>
+	<object access-modifier="private" name="AO6_OutputFormatter" display-name="AO6_OutputFormatter" uuid="d3724c1d-f6ab-4539-9c8a-275e6ade5d11" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="d63c820d-1229-4707-95fe-2e4413dae39c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" value="3"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[AO6_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="AO7_opc" display-name="AO7_opc" uuid="ddbe578d-0ac1-4ad1-a5f0-f2f22ef4fa17" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[(_PLC_or_IVK=="PLC")?("PLC.AO."+Str.ToString(7+(_ModulAO_Number-1)*8) + ".ValueOut"):((_PLC_or_IVK=="IVK")?("IVK.Modules.AO."+Str.ToString(_ModulAO_Number)+".AO7.Value"):("Error"))]]>
+			</expr>
+		</init>
+		<init target="Source" ver="1" ref="unit.Sources.ASUTP_source"/>
+	</object>
+	<object access-modifier="private" name="AO7_OutputFormatter" display-name="AO7_OutputFormatter" uuid="c95d2b3a-48a8-4a4c-ad4d-aeaf6536fa4e" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="9406b8d8-5c38-4fac-a715-f20ac286e61e" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" value="3"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[AO7_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="AO8_opc" display-name="AO8_opc" uuid="479ca6ae-c3d0-4d87-96ea-9c850423c7f2" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[(_PLC_or_IVK=="PLC")?("PLC.AO."+Str.ToString(8+(_ModulAO_Number-1)*8) + ".ValueOut"):((_PLC_or_IVK=="IVK")?("IVK.Modules.AO."+Str.ToString(_ModulAO_Number)+".AO8.Value"):("Error"))]]>
+			</expr>
+		</init>
+		<init target="Source" ver="1" ref="unit.Sources.ASUTP_source"/>
+	</object>
+	<object access-modifier="private" name="AO8_OutputFormatter" display-name="AO8_OutputFormatter" uuid="06c9b7df-ea99-4b30-982f-fb7c883c7edc" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="4254e2ce-b7fe-4beb-8f0c-96c408c4eea2" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" value="3"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[AO8_opc]]>
+			</body>
+		</do-trace>
+	</object>
+</type>
+

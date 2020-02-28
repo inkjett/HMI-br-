@@ -1,0 +1,14 @@
+<object access-modifier="private" name="Message" display-name="Message" uuid="16c8bba3-48d9-4978-85ed-d311b1d3862b" base-type="JustDummy" base-type-id="34bc054d-53be-4c82-873b-bd509d7c7c3b" ver="1">
+	<do access-modifier="private" name="SendMessage" display-name="SendMessage" ver="1" type="" type-id="">
+		<param access-modifier="private" name="Text" display-name="" uuid="d9f69ff9-bb88-44ef-8cd3-9b6a37693746" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+		<body kind="om">
+			<![CDATA[OperatorMessage_opc.Value="<Subcondition Type='Dynamic' Message='" + Text + "' Sound='snd.wav' Severity='" + Str.ToString(Priority) +"' Enabled='1' SoundEnabled='1' />";]]>
+		</body>
+		<param access-modifier="private" name="Priority" display-name="" uuid="0505dd27-cf1f-4377-b7db-6f9124769986" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	</do>
+	<object access-modifier="private" name="OperatorMessage_opc" display-name="OperatorMessage_opc" uuid="91e6d0b0-698f-4e7b-abb2-779cb363620d" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="1">
+		<init target="Path" ver="1" value="VU_Messages.OperatorMessage.Message"/>
+		<init target="Source" ver="1" ref="unit.Sources.SERVER_source"/>
+	</object>
+</object>
+

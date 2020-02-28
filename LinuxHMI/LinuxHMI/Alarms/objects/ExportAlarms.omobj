@@ -1,0 +1,411 @@
+<type access-modifier="private" name="ExportAlarms" display-name="Form_2_1" uuid="4eaa655b-e7df-43ce-a704-693e19fb182e" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="2">
+	<designed target="X" value="0" ver="2"/>
+	<designed target="Y" value="0" ver="2"/>
+	<designed target="Rotation" value="0" ver="2"/>
+	<designed target="Scale" value="1" ver="2"/>
+	<designed target="Visible" value="true" ver="2"/>
+	<designed target="Enabled" value="true" ver="2"/>
+	<designed target="Tooltip" value="" ver="2"/>
+	<designed target="Width" value="500" ver="2"/>
+	<designed target="Height" value="60" ver="2"/>
+	<designed target="PenColor" value="4278190080" ver="2"/>
+	<designed target="PenStyle" value="0" ver="2"/>
+	<designed target="PenWidth" value="1" ver="2"/>
+	<designed target="BrushColor" value="4293980400" ver="2"/>
+	<designed target="BrushStyle" value="1" ver="2"/>
+	<designed target="WindowX" value="0" ver="2"/>
+	<designed target="WindowY" value="0" ver="2"/>
+	<designed target="WindowWidth" value="1920" ver="2"/>
+	<designed target="WindowHeight" value="1080" ver="2"/>
+	<designed target="WindowCaption" value="Экспорт данных" ver="2"/>
+	<designed target="ShowWindowCaption" value="true" ver="2"/>
+	<designed target="ShowWindowMinimize" value="false" ver="2"/>
+	<designed target="ShowWindowMaximize" value="false" ver="2"/>
+	<designed target="ShowWindowClose" value="true" ver="2"/>
+	<designed target="AlwaysOnTop" value="false" ver="2"/>
+	<designed target="WindowSizeMode" value="2" ver="2"/>
+	<designed target="WindowBorderStyle" value="1" ver="2"/>
+	<designed target="WindowState" value="0" ver="2"/>
+	<designed target="WindowScalingMode" value="0" ver="2"/>
+	<designed target="MonitorNumber" value="0" ver="2"/>
+	<designed target="WindowPosition" value="2" ver="2"/>
+	<designed target="WindowCloseMode" value="0" ver="2"/>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="3b86ac6d-9cd4-4ace-ab0b-fe377a5e3cb9" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="2"/>
+	<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="d234e8d4-a748-4b05-a788-50fca2dda151" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="2">
+		<designed target="X" value="25.5" ver="2"/>
+		<designed target="Y" value="17.5" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="75" ver="2"/>
+		<designed target="Height" value="23" ver="2"/>
+		<designed target="Text" value="ExportToCSV" ver="2"/>
+		<designed target="TextAlignment" value="132" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="2"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="2"/>
+		<designed target="BrushColor" value="4293980400" ver="2"/>
+		<designed target="BrushStyle" value="1" ver="2"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="2"/>
+		<designed target="OnClickBrushStyle" value="1" ver="2"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="2"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="2"/>
+		<designed target="PenColor" value="4278190080" ver="2"/>
+		<designed target="PenStyle" value="1" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="2"/>
+		<designed target="OnClickPenStyle" value="1" ver="2"/>
+		<designed target="OnClickPenWidth" value="1" ver="2"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="2"/>
+		<designed target="OnHoverPenStyle" value="1" ver="2"/>
+		<designed target="OnHoverPenWidth" value="1" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseClick">
+			<body kind="om">
+				<![CDATA[temp_TableText:string="";
+Prec:uint4=1;//количество знаков после запятой
+FolderPath:string=TextEdit_1.Text;
+
+
+// Если папка для примера ещё не создана - создаём
+if( !Files.Exists( FolderPath ) )
+	Files.CreateRecursiveFolder( FolderPath );
+
+/*
+	Вот файл, в который будем писать. Используем CombinePath. Подробнее о нём
+	см. в обработчике открытия формы.
+*/
+filePath:string = Files.CombinePath( FolderPath, TextEdit_2.Text + ".csv");
+DebugTool_1.Log(filePath);
+Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.FirstSelected();
+
+// считываем значения ячеек таблицы по одной, добавляем разделитель точку м запятую и формируем одну большую строку.
+TableText:string="";
+if(Link_Alarms.ActiveMode==0)
+{
+	while (!Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.End())//цикл генерации данных из таблицы
+	{
+		timestring:string="";	
+		if(Link_Alarms.Main_tables.Table_Operative_mode.Colum_1.Hidden==false)
+		{	
+			timestring = DateTime.ToString(Variant.ToUint8(Link_Alarms.Main_tables.Table_Operative_mode.GetCellData(Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.CurrentRow,0),0)+TimeZone());	//Время генерации
+			TableText = TableText+timestring+";";
+		}
+		if(Link_Alarms.Main_tables.Table_Operative_mode.Colum_2.Hidden==false)
+		{	
+			timestring = DateTime.ToString(Variant.ToUint8(Link_Alarms.Main_tables.Table_Operative_mode.GetCellData(Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.CurrentRow,1),0)+TimeZone());	//Время срабатывания
+			TableText = TableText+timestring+";";
+		}
+		if(Link_Alarms.Main_tables.Table_Operative_mode.Colum_3.Hidden==false)
+		{	
+			if(!Variant.IsEmpty(Link_Alarms.Main_tables.Table_Operative_mode.GetCellData(Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.CurrentRow,2)))
+			{
+				timestring = DateTime.ToString(Variant.ToUint8(Link_Alarms.Main_tables.Table_Operative_mode.GetCellData(Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.CurrentRow,2),0)+TimeZone());	//Время дективации
+				TableText = TableText+timestring+";";
+			}
+		}		
+		if(Link_Alarms.Main_tables.Table_Operative_mode.Colum_4.Hidden==false)
+		{		
+			TableText = TableText+Variant.ToString(Link_Alarms.Main_tables.Table_Operative_mode.GetCellData(Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.CurrentRow,3),"")+";";//Сообщение
+		}	
+		if(Link_Alarms.Main_tables.Table_Operative_mode.Colum_5.Hidden==false)
+		{		
+			TableText = TableText+Variant.ToString(Link_Alarms.Main_tables.Table_Operative_mode.GetCellData(Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.CurrentRow,4),"")+";";//Источник
+		}	
+		if(Link_Alarms.Main_tables.Table_Operative_mode.Colum_6.Hidden==false)
+		{			
+			TableText = TableText+Str.ToString(Variant.ToUint8(Link_Alarms.Main_tables.Table_Operative_mode.GetCellData(Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.CurrentRow,5),0))+";";//Важность
+		}	
+		if((Variant.ToBool(Link_Alarms.Main_tables.Table_Operative_mode.GetCellData(Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.CurrentRow,6),false)==true)&&(Link_Alarms.Main_tables.Table_Operative_mode.Colum_7.Hidden==false))	
+		{
+			TableText = TableText+"Да"+";"; // Квитировано
+		}
+		else
+		{
+			TableText = TableText+"Нет"+";";
+		}
+		if(Link_Alarms.Main_tables.Table_Operative_mode.Colum_8.Hidden==false)
+		{		
+			if(Variant.ToUint8(Link_Alarms.Main_tables.Table_Operative_mode.GetCellData(Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.CurrentRow,7),0)!=0)
+			{
+			timestring = DateTime.ToString(Variant.ToUint8(Link_Alarms.Main_tables.Table_Operative_mode.GetCellData(Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.CurrentRow,7),0)+TimeZone());	//Время Квитирования
+			TableText = TableText+";"+timestring;
+			}
+			else
+			{
+			TableText = TableText+";";
+			}
+		}
+		if(Link_Alarms.Main_tables.Table_Operative_mode.Colum_9.Hidden==false)
+		{		
+			TableText = TableText+Variant.ToString(Link_Alarms.Main_tables.Table_Operative_mode.GetCellData(Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.CurrentRow,8),"")+";";//Пользователь
+		}
+		if(Link_Alarms.Main_tables.Table_Operative_mode.Colum_10.Hidden==false)
+		{		
+			TableText = TableText+Variant.ToString(Link_Alarms.Main_tables.Table_Operative_mode.GetCellData(Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.CurrentRow,9),"")+";";//Комментарий
+		}
+		TableText = TableText+"\n";	
+		Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.Next();
+	}
+}
+
+
+if(Link_Alarms.ActiveMode==1)//исторический режим
+{	
+	while (!Link_Alarms.Main_tables_1.Table_History_mode.TableIterator_1.End())//цикл генерации данных из таблицы
+	{
+		timestring:string="";	
+		if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_1.Hidden==false)
+		{	
+			timestring = DateTime.ToString(Variant.ToUint8(Link_Alarms.Main_tables_1.Table_History_mode.GetCellData(Link_Alarms.Main_tables_1.Table_History_mode.TableIterator_1.CurrentRow,0),0)+TimeZone());	//Время генерации
+			TableText = TableText+timestring+";";
+		}
+		if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_2.Hidden==false)
+		{	
+			timestring = DateTime.ToString(Variant.ToUint8(Link_Alarms.Main_tables_1.Table_History_mode.GetCellData(Link_Alarms.Main_tables_1.Table_History_mode.TableIterator_1.CurrentRow,1),0)+TimeZone());	//Время срабатывания
+			TableText = TableText+timestring+";";
+		}
+				if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_3.Hidden==false)
+		{	
+			if(!Variant.IsEmpty(Link_Alarms.Main_tables.Table_Operative_mode.GetCellData(Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.CurrentRow,2)))
+			{
+				timestring = DateTime.ToString(Variant.ToUint8(Link_Alarms.Main_tables.Table_Operative_mode.GetCellData(Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.CurrentRow,2),0)+TimeZone());	//Время дективации
+				TableText = TableText+timestring+";";
+			}
+		}
+		if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_4.Hidden==false)
+		{		
+			TableText = TableText+Variant.ToString(Link_Alarms.Main_tables_1.Table_History_mode.GetCellData(Link_Alarms.Main_tables_1.Table_History_mode.TableIterator_1.CurrentRow,3),"")+";";//Сообщение
+		}	
+		if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_5.Hidden==false)
+		{		
+			TableText = TableText+Variant.ToString(Link_Alarms.Main_tables_1.Table_History_mode.GetCellData(Link_Alarms.Main_tables_1.Table_History_mode.TableIterator_1.CurrentRow,4),"")+";";//Источник
+		}	
+		if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_6.Hidden==false)
+		{			
+			TableText = TableText+Str.ToString(Variant.ToUint8(Link_Alarms.Main_tables_1.Table_History_mode.GetCellData(Link_Alarms.Main_tables_1.Table_History_mode.TableIterator_1.CurrentRow,5),0))+";";//Важность
+		}	
+		if((Variant.ToBool(Link_Alarms.Main_tables_1.Table_History_mode.GetCellData(Link_Alarms.Main_tables_1.Table_History_mode.TableIterator_1.CurrentRow,6),false)==true)&&(Link_Alarms.Main_tables_1.Table_History_mode.Colum_6.Hidden==false))	
+		{
+			TableText = TableText+"Да"+";"; // Квитировано
+		}
+		else
+		{
+			TableText = TableText+"Нет"+";";
+		}
+		if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_8.Hidden==false)
+		{		
+			if(Variant.ToUint8(Link_Alarms.Main_tables_1.Table_History_mode.GetCellData(Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.CurrentRow,7),0)!=0)
+			{
+			timestring = DateTime.ToString(Variant.ToUint8(Link_Alarms.Main_tables.Table_Operative_mode.GetCellData(Link_Alarms.Main_tables.Table_Operative_mode.TableIterator_1.CurrentRow,7),0)+TimeZone());	//Время Квитирования
+			TableText = TableText+";"+timestring;
+			}
+			else
+			{
+			TableText = TableText+";";
+			}
+		}
+		if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_9.Hidden==false)
+		{		
+			TableText = TableText+Variant.ToString(Link_Alarms.Main_tables_1.Table_History_mode.GetCellData(Link_Alarms.Main_tables_1.Table_History_mode.TableIterator_1.CurrentRow,8),"")+";";//Пользователь
+		}
+		if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_10.Hidden==false)
+		{		
+			TableText = TableText+Variant.ToString(Link_Alarms.Main_tables_1.Table_History_mode.GetCellData(Link_Alarms.Main_tables_1.Table_History_mode.TableIterator_1.CurrentRow,9),"")+";";//Комментарий
+		}
+		TableText = TableText+"\n";	
+		Link_Alarms.Main_tables_1.Table_History_mode.TableIterator_1.Next();
+	}
+}
+	
+	if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_1.Hidden==false)//добавление заголовка в записываемый текст
+	{
+		temp_TableText = temp_TableText +  "Время генерации;";
+	}
+	if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_2.Hidden==false)
+	{
+		temp_TableText = temp_TableText +  "Время срабатывания;";
+	}
+	if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_3.Hidden==false)
+	{
+		temp_TableText = temp_TableText +  "Время деактивации;";
+	}	
+	if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_4.Hidden==false)
+	{
+		temp_TableText = temp_TableText +  "Сообщение;";
+	}
+	if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_5.Hidden==false)
+	{
+		temp_TableText = temp_TableText +  "Источник;";
+	}
+	if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_6.Hidden==false)
+	{
+		temp_TableText = temp_TableText +  "Важность;";
+	}
+	if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_7.Hidden==false)
+	{
+		temp_TableText = temp_TableText +  "Квитированно;";
+	}
+	if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_8.Hidden==false)
+	{
+		temp_TableText = temp_TableText +  "Время квитирования;";
+	}
+	if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_9.Hidden==false)
+	{
+		temp_TableText = temp_TableText +  "Пользователь;";
+	}
+	if(Link_Alarms.Main_tables_1.Table_History_mode.Colum_10.Hidden==false)
+	{
+		temp_TableText = temp_TableText +  "Комментарий";
+	}
+	temp_TableText = temp_TableText + "\n";
+	TableText = Str.Insert(TableText,0,temp_TableText);//добавление заголовка в записываемый текст
+
+Link_Alarms.Main_tables_1.Table_History_mode.TableIterator_1.CurrentRow=0; // сброс итератора на 0
+// сохраняем в файл.
+Files.WriteTextFile(filePath, TableText);
+
+]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="2"/>
+	</object>
+	<object access-modifier="private" name="Files" display-name="Files" uuid="435f7ccb-b83a-4c3c-8962-b124cf639d85" base-type="FileSystem" base-type-id="34d744f9-7303-4077-a3f7-9c06c0945512" ver="2"/>
+	<do access-modifier="private" name="ConvertToDate" display-name="ConvertToDate" ver="2" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<param access-modifier="private" name="NewDate" display-name="" uuid="7418a056-d9be-45f0-86dd-c4bc9ea42493" base-type="uint8" base-type-id="c8ff7701-da6e-4d53-888a-81fa680ff561" ver="2"/>
+		<body kind="om">
+			<![CDATA[// преобразуем в локальное время и преобразуем в строку
+NewDate = DateTime.ToLocal(NewDate);
+StringDate: string = DateTime.ToString(NewDate);
+return StringDate;]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="TextEdit_1" display-name="TextEdit_1" uuid="e70638fa-438a-447a-963c-5f65962d7b8f" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<designed target="X" value="213" ver="2"/>
+		<designed target="Y" value="8" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="133" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="C:\\Alpha.Tables\\" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+		<designed target="HideInput" value="false" ver="2"/>
+		<designed target="PlaceholderText" value="" ver="2"/>
+	</object>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="12e74cde-c122-4fa8-a7f7-ead963857bf6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+		<designed target="X" value="138" ver="2"/>
+		<designed target="Y" value="8" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="50" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="Папка" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="33" ver="2"/>
+	</object>
+	<object access-modifier="private" name="TextEdit_2" display-name="TextEdit_2" uuid="ba6a9146-ac00-40b1-ac4e-e469e9e11ba1" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<designed target="X" value="213" ver="2"/>
+		<designed target="Y" value="30" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="133" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="Alarms" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+		<designed target="HideInput" value="false" ver="2"/>
+		<designed target="PlaceholderText" value="" ver="2"/>
+	</object>
+	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="d0e71b6a-153e-427f-87eb-309572981447" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+		<designed target="X" value="138" ver="2"/>
+		<designed target="Y" value="27" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="50" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="Файл" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="33" ver="2"/>
+	</object>
+	<do access-modifier="private" name="TimeZone" display-name="TimeZone" ver="2" type="uint8" type-id="c8ff7701-da6e-4d53-888a-81fa680ff561">
+		<body kind="om">
+			<![CDATA[time_zone: uint8 = DateTime.Now()-DateTime.UtcNow();
+return (time_zone);]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="Link_Alarms" display-name="Link_Alarms" uuid="a2b700d2-94a3-4528-b1a1-273525755f7f" base-type="Alarms_1" base-type-id="e8a9dba0-e07f-4bfe-95f9-b75887e3f21b" base-const="true" base-ref="true" ver="2"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Opened">
+		<body kind="om">
+			<![CDATA[temp_day:string ="";
+temp_month:string ="";
+temp_hour:string="";
+temp_minute:string="";
+if(Str.Length(Str.ToString(DateTime.Day(DateTime.Now())))<2)
+{
+temp_day="0"+Str.ToString(DateTime.Day(DateTime.Now()));
+}
+else
+{
+temp_day=Str.ToString(DateTime.Day(DateTime.Now()));
+}
+
+if(Str.Length(Str.ToString(DateTime.Month(DateTime.Now())))<2)
+{
+temp_month="0"+Str.ToString(DateTime.Month(DateTime.Now()));
+}
+else
+{
+temp_month=Str.ToString(DateTime.Month(DateTime.Now()));
+}
+
+if(Str.Length(Str.ToString(DateTime.Hour(DateTime.Now())))<2)
+{
+temp_hour="0"+Str.ToString(DateTime.Hour(DateTime.Now()));
+}
+else
+{
+temp_hour=Str.ToString(DateTime.Hour(DateTime.Now()));
+}
+
+if(Str.Length(Str.ToString(DateTime.Minute(DateTime.Now())))<2)
+{
+temp_minute="0"+Str.ToString(DateTime.Minute(DateTime.Now()));
+}
+else
+{
+temp_minute=Str.ToString(DateTime.Minute(DateTime.Now()));
+}
+
+fileName:string = "Alarms_" + temp_day + temp_month + Str.ToString(DateTime.Year(DateTime.Now())) + "_" + temp_hour + temp_minute;//генерация имени файла
+TextEdit_2.Text=fileName;
+Focus = true; //Переводим Focus на форму для обработки нажатия клавиш]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="3" event="KeyPress">
+		<body kind="om">
+			<![CDATA[vi: uint4 = event.KeyCode;
+if (vi==75) Close();
+]]>
+		</body>
+	</do-on>
+</type>
+

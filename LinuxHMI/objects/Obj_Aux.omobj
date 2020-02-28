@@ -1,0 +1,1462 @@
+<type access-modifier="private" name="Obj_Aux" display-name="Obj_Aux" uuid="ecf46bc2-e840-46f1-99e2-3a52ebd003fc" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="143" ver="1"/>
+	<designed target="Height" value="108" ver="1"/>
+	<designed target="RoundingRadius" value="0" ver="1"/>
+	<designed target="PenColor" value="4278190080" ver="1"/>
+	<designed target="PenStyle" value="0" ver="1"/>
+	<designed target="PenWidth" value="1" ver="1"/>
+	<designed target="BrushColor" value="4278190080" ver="1"/>
+	<designed target="BrushStyle" value="0" ver="1"/>
+	<object access-modifier="private" name="Rectangle_Left" display-name="Rectangle_Left" uuid="1f5e216d-450f-4da1-a719-620ee21076bb" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="27" ver="1"/>
+		<designed target="Y" value="15" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="56" ver="1"/>
+		<designed target="Height" value="38" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffffff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pump_StateWork_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) == 4 && Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff801400]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) == 2 && Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ffff]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 0]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 1]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 2]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 3]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) >= 5]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="MouseEnter">
+			<body kind="om">
+				<![CDATA[this.PenColor=0xff323232;
+this.PenWidth=3;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="1" event="MouseLeave">
+			<body kind="om">
+				<![CDATA[this.PenWidth=1;
+this.PenColor=0xff000000;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="1" event="MouseClick">
+			<body kind="om">
+				<![CDATA[OpenPopup_Action.Invoke();]]>
+			</body>
+		</do-on>
+		<init target="Visible" ver="1">
+			<expr>
+				<![CDATA[_Pump_Heat_Vent=="Vent" && _Left_Right_Up_Down=="Left"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Rectangle_Right" display-name="Rectangle_Right" uuid="08563029-9ec7-4ad9-893a-a647333d0f75" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="83" ver="1"/>
+		<designed target="Y" value="15" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="56" ver="1"/>
+		<designed target="Height" value="38" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffffff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pump_StateWork_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) == 4 && Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff801400]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) == 2 && Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ffff]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 0]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 1]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 2]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 3]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) >= 5]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="MouseEnter">
+			<body kind="om">
+				<![CDATA[this.PenColor=0xff323232;
+this.PenWidth=3;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="1" event="MouseLeave">
+			<body kind="om">
+				<![CDATA[this.PenWidth=1;
+this.PenColor=0xff000000;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="1" event="MouseClick">
+			<body kind="om">
+				<![CDATA[OpenPopup_Action.Invoke();]]>
+			</body>
+		</do-on>
+		<init target="Visible" ver="1">
+			<expr>
+				<![CDATA[_Pump_Heat_Vent=="Vent" && _Left_Right_Up_Down=="Right"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="7dd6d73b-ec0f-4056-94af-684a049821c2" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="37" ver="1"/>
+		<designed target="Y" value="29" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="91" ver="1"/>
+		<designed target="Height" value="50" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffffff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="0dd526fc-a90f-4069-a442-5e895c962db8" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="1">
+			<designed target="X" value="1" ver="1"/>
+			<designed target="Y" value="46" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="90" ver="1"/>
+			<designed target="Height" value="40" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="1" ver="1"/>
+			<designed target="PenWidth" value="2" ver="1"/>
+			<designed target="BrushColor" value="4278190080" ver="1"/>
+			<designed target="BrushStyle" value="0" ver="1"/>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="dbe02324-17b4-46b2-8ef2-3ccb5451a1b2" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+				<designed target="X" value="0" ver="1"/>
+				<designed target="Y" value="-40" ver="1"/>
+			</object>
+			<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="cf35fd70-6fc5-4ad5-8b1c-d56427232ec5" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+				<designed target="X" value="15" ver="1"/>
+				<designed target="Y" value="-40" ver="1"/>
+			</object>
+			<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="53d3e01d-67b8-490b-b46f-554897e00345" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+				<designed target="X" value="15" ver="1"/>
+				<designed target="Y" value="0" ver="1"/>
+			</object>
+			<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="584ba56b-408d-41ff-b954-562a7dfe3789" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+				<designed target="X" value="30" ver="1"/>
+				<designed target="Y" value="0" ver="1"/>
+			</object>
+			<object access-modifier="private" name="Point_6" display-name="Point_6" uuid="90630d1b-54a5-43a1-957d-ff39c8993f5b" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+				<designed target="X" value="30" ver="1"/>
+				<designed target="Y" value="-40" ver="1"/>
+			</object>
+			<object access-modifier="private" name="Point_7" display-name="Point_7" uuid="90c12515-ac2c-46fa-9821-323e8fa5d375" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+				<designed target="X" value="45" ver="1"/>
+				<designed target="Y" value="-40" ver="1"/>
+			</object>
+			<object access-modifier="private" name="Point_8" display-name="Point_8" uuid="3c950c33-cf9a-435b-9e15-65d173e6c86e" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+				<designed target="X" value="45" ver="1"/>
+				<designed target="Y" value="0" ver="1"/>
+			</object>
+			<object access-modifier="private" name="Point_9" display-name="Point_9" uuid="fd4a2f1d-6d1e-4aee-b98e-46424978dbf2" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+				<designed target="X" value="60" ver="1"/>
+				<designed target="Y" value="0" ver="1"/>
+			</object>
+			<object access-modifier="private" name="Point_10" display-name="Point_10" uuid="a8f62fa2-92c6-4d77-b2f7-43175eb3fcf3" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+				<designed target="X" value="60" ver="1"/>
+				<designed target="Y" value="-40" ver="1"/>
+			</object>
+			<object access-modifier="private" name="Point_11" display-name="Point_11" uuid="58d24063-0290-4a6b-b14e-9078f0c5f2a7" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+				<designed target="X" value="75" ver="1"/>
+				<designed target="Y" value="-40" ver="1"/>
+			</object>
+			<object access-modifier="private" name="Point_12" display-name="Point_12" uuid="b54921de-5db7-4de7-b4ba-cb988f8c8c9c" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+				<designed target="X" value="75" ver="1"/>
+				<designed target="Y" value="0" ver="1"/>
+			</object>
+			<object access-modifier="private" name="Point_13" display-name="Point_13" uuid="d0d87905-c201-411d-afb3-f0b5e13634d9" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="1">
+				<designed target="X" value="90" ver="1"/>
+				<designed target="Y" value="0" ver="1"/>
+			</object>
+		</object>
+		<init target="Visible" ver="1">
+			<expr>
+				<![CDATA[_Pump_Heat_Vent=="Heat"]]>
+			</expr>
+		</init>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pump_StateWork_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) == 4 && Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff801400]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) == 2 && Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ffff]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 0]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 1]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 2]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 3]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) >= 5]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="MouseEnter">
+			<body kind="om">
+				<![CDATA[this.PenColor=0xff323232;
+this.PenWidth=3;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="1" event="MouseLeave">
+			<body kind="om">
+				<![CDATA[this.PenWidth=1;
+this.PenColor=0xff000000;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="1" event="MouseClick">
+			<body kind="om">
+				<![CDATA[OpenPopup_Action.Invoke();]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Pump_Body_ell" display-name="Pump_Body_ell" uuid="5262b4c6-ac24-4b05-8693-6a38011cdeb6" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="42.5" ver="1"/>
+		<designed target="Y" value="15.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="80" ver="1"/>
+		<designed target="Height" value="80" ver="1"/>
+		<designed target="PenColor" value="0xff000000" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffffff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pump_StateWork_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) == 4 && Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff801400]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) == 2 && Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ffff]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 0]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 1]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 2]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 3]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) >= 5]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<object access-modifier="private" name="Pump_TriangleRight_line" display-name="Pump_TriangleRight_line" uuid="12b4418c-67c5-41b4-bbd6-fc717e4c3586" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba">
+			<designed target="X" value="60.75"/>
+			<designed target="Y" value="29.650000000000006"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="15"/>
+			<designed target="Height" value="20"/>
+			<designed target="PenColor" value="4278190080"/>
+			<designed target="PenStyle" value="1"/>
+			<designed target="PenWidth" value="1"/>
+			<designed target="BrushColor" value="0xff000000"/>
+			<designed target="BrushStyle" value="1"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="3e2d8fb8-1017-4abf-a166-fb47182dece4" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="0"/>
+				<designed target="Y" value="0"/>
+			</object>
+			<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="cd612019-8633-4e73-8ad2-4e83d3171cb7" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="15"/>
+				<designed target="Y" value="10"/>
+			</object>
+			<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="31353fef-fafe-4c56-a82b-bab34986dc0c" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="0"/>
+				<designed target="Y" value="20"/>
+			</object>
+			<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="92639502-e756-4d06-960b-f2fdb543b5c3" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="0"/>
+				<designed target="Y" value="0"/>
+			</object>
+			<init target="Visible" ver="1">
+				<expr>
+					<![CDATA[_Left_Right_Up_Down == "Right" && _Pump_Heat_Vent=="Pump"]]>
+				</expr>
+			</init>
+		</object>
+		<object access-modifier="private" name="Pump_TriangleDown_line" display-name="Pump_TriangleDown_line" uuid="152b0aeb-81f2-45fa-b02d-6152d81e25aa" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba">
+			<designed target="X" value="32.865236575894158"/>
+			<designed target="Y" value="57.534763424105847"/>
+			<designed target="Rotation" value="90"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="15"/>
+			<designed target="Height" value="20"/>
+			<designed target="PenColor" value="4278190080"/>
+			<designed target="PenStyle" value="1"/>
+			<designed target="PenWidth" value="1"/>
+			<designed target="BrushColor" value="0xff000000"/>
+			<designed target="BrushStyle" value="1"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="4dbb796a-aef2-4048-9a3e-245d877e727c" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="0"/>
+				<designed target="Y" value="0"/>
+			</object>
+			<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="a21de4ab-81eb-452d-bde8-a3b6fcbdadac" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="15"/>
+				<designed target="Y" value="10"/>
+			</object>
+			<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="b457bd7f-658c-410e-9a82-1f44bee66251" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="0"/>
+				<designed target="Y" value="20"/>
+			</object>
+			<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="e4b26c64-c29d-42f9-a8e9-de854be8bad1" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="0"/>
+				<designed target="Y" value="0"/>
+			</object>
+			<init target="Visible" ver="1">
+				<expr>
+					<![CDATA[_Left_Right_Up_Down == "Down" && _Pump_Heat_Vent=="Pump"]]>
+				</expr>
+			</init>
+		</object>
+		<object access-modifier="private" name="Pump_TriangleLeft_line" display-name="Pump_TriangleLeft_line" uuid="3683c9eb-a638-4921-8e96-5d8917a2cb2f" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba">
+			<designed target="X" value="5.8154414579149289"/>
+			<designed target="Y" value="30.650000000000006"/>
+			<designed target="Rotation" value="180"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="15"/>
+			<designed target="Height" value="20"/>
+			<designed target="PenColor" value="4278190080"/>
+			<designed target="PenStyle" value="1"/>
+			<designed target="PenWidth" value="1"/>
+			<designed target="BrushColor" value="0xff000000"/>
+			<designed target="BrushStyle" value="1"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="a4c52b39-501a-472f-a976-c98125801ced" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="0"/>
+				<designed target="Y" value="0"/>
+			</object>
+			<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="09ae6471-d197-4629-b5be-d4ea23a2707f" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="15"/>
+				<designed target="Y" value="10"/>
+			</object>
+			<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="a48d152a-3b46-4d27-b520-79c8b971f12a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="0"/>
+				<designed target="Y" value="20"/>
+			</object>
+			<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="8adba221-f80e-4747-9a51-d621151e1467" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+				<designed target="X" value="0"/>
+				<designed target="Y" value="0"/>
+			</object>
+			<init target="Visible" ver="1">
+				<expr>
+					<![CDATA[_Left_Right_Up_Down == "Left" && _Pump_Heat_Vent=="Pump"]]>
+				</expr>
+			</init>
+		</object>
+		<object access-modifier="private" name="Pump_BodyBlinker" display-name="Pump_BodyBlinker" uuid="c06fee13-d024-4502-8e13-846efd95cb6b" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="1">
+			<designed target="Period" value="600" ver="1"/>
+			<designed target="Active" value="false" ver="1"/>
+			<designed target="PenColor" value="0xff000000" ver="1"/>
+			<designed target="BrushColor" value="0xffffffff" ver="1"/>
+			<do-trace access-modifier="private" target="Active" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 1 || Variant.ToUint4(Pump_StateWork_opc.Value,0) == 3]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[!(Variant.ToUint4(Pump_StateWork_opc.Value,0) == 1 || Variant.ToUint4(Pump_StateWork_opc.Value,0) == 3)]]>
+					</condition>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="MouseEnter" ver="1">
+			<body kind="om">
+				<![CDATA[//Выделение круглого объекта
+this.PenColor=0xff323232;
+this.PenWidth=3;
+
+//Выделение прямоугольных областей (для вентиляторов)
+here.Rectangle_Left.PenColor=0xff323232;
+here.Rectangle_Left.PenWidth=3;
+here.Rectangle_Right.PenColor=0xff323232;
+here.Rectangle_Right.PenWidth=3;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" event="MouseLeave" ver="1">
+			<body kind="om">
+				<![CDATA[//Снятие выделения круглого объекта
+this.PenWidth=1;
+this.PenColor=0xff000000;
+
+//Снятие выделения прямоугольных областей (для вентиляторов)
+here.Rectangle_Left.PenColor=0xff000000;
+here.Rectangle_Left.PenWidth=1;
+here.Rectangle_Right.PenColor=0xff000000;
+here.Rectangle_Right.PenWidth=1;
+
+]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" event="MouseClick" ver="1">
+			<body kind="om">
+				<![CDATA[OpenPopup_Action.Invoke();]]>
+			</body>
+		</do-on>
+		<init target="Visible" ver="1">
+			<expr>
+				<![CDATA[_Pump_Heat_Vent=="Pump" || _Pump_Heat_Vent=="Vent"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Pump_StateWork_opc" display-name="Pump_StateWork_opc" uuid="9dae6952-e6e8-46df-8f8e-66fea10a7bb6" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["Aux."+Str.ToString(_Pump_Number) + ".State.WorkState"]]>
+			</expr>
+		</init>
+	</object>
+	<param access-modifier="private" name="_Pump_Number" display-name="_Pump_Number" uuid="8f6d1cb2-4e56-4ff8-9899-e7e33ec5afa7" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="1"/>
+	<object access-modifier="private" name="Pump_U_ell" display-name="Pump_U_ell" uuid="68e34f40-9a58-402e-b8f8-cc7963074995" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="29.5" ver="1"/>
+		<designed target="Y" value="82.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="25" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffffff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pump_U_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Pump_U_opc.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Pump_U_opc.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<object access-modifier="private" name="Pump_U_txt" display-name="Pump_U_txt" uuid="a6b6e9f0-2bb6-4d76-a188-d46212f3c52b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="2" ver="1"/>
+			<designed target="Y" value="0" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="22" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="U" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pump_U_opc" display-name="Pump_U_opc" uuid="15721c3a-e374-494f-a1e0-22205cf3e0a5" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="U" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["Aux."+Str.ToString(_Pump_Number)+".State.U"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Pump_U_ell_1" display-name="Pump_U_ell_1" uuid="1493636c-722c-487e-bf3b-eb6f19f98924" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="111.5" ver="1"/>
+		<designed target="Y" value="82.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="25" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffffff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pump_MP_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Pump_MP_opc.Value,false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Pump_MP_opc.Value,false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<object access-modifier="private" name="Pump_U_txt" display-name="Pump_U_txt" uuid="e089a7f8-2450-4a49-9317-21baefb1148a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="2.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="26" ver="1"/>
+			<designed target="Height" value="19" ver="1"/>
+			<designed target="Text" value="ПЧ" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+			<init target="Text" ver="1">
+				<expr>
+					<![CDATA[_ПЧ_МП]]>
+				</expr>
+			</init>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pump_MP_opc" display-name="Pump_MP_opc" uuid="276b2de3-2b4a-48bd-9b6e-79ad88c3825f" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="MP" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["Aux."+Str.ToString(_Pump_Number) + ".State.MP"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Pump_Error_opc" display-name="Pump_Error_opc" uuid="c6c1cc16-1f5a-4e5e-a880-f02bd6471095" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="Crash" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["Aux."+Str.ToString(_Pump_Number) + ".State.Error"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Pump_Mode_rect" display-name="Pump_Mode_rect" uuid="b885f4f6-e733-46fd-91d2-099ca3c84f4b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="15.5" ver="1"/>
+		<designed target="Y" value="-14.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff323232" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff37678c" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Pump_Mode_Gradient" display-name="Pump_Mode_Gradient" uuid="1ba8eb04-6d6b-46ae-a80d-d3af8358ea53" base-type="RadialGradient" base-type-id="ec8b2b95-2c92-44b2-a9aa-3ce4fc0f08b9" ver="1">
+			<designed target="XCenter" value="0.5" ver="1"/>
+			<designed target="YCenter" value="0.5" ver="1"/>
+			<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="d0ea733c-fa09-49bc-a414-256b11d37c6e" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="0.40000000000000002" ver="1"/>
+				<designed target="Color" value="0xffe1e1e1" ver="1"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="233a21a6-8ea9-45ca-94df-24b49c90f32c" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="1" ver="1"/>
+				<designed target="Color" value="0xffb4b4b4" ver="1"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="Pump_Mode_txt" display-name="Pump_Mode_txt" uuid="b21bf05b-0c02-4da4-a2d9-3f57ef199d51" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="1.5" ver="1"/>
+			<designed target="Y" value="2.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="46" ver="1"/>
+			<designed target="Height" value="19" ver="1"/>
+			<designed target="Text" value="ОСН" ver="1"/>
+			<designed target="Font" value="Sans Serif,14,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Pump_Mode_opc.Quality < 192]]>
+					</condition>
+					<expr>
+						<![CDATA["---"]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) == 0]]>
+					</condition>
+					<expr>
+						<![CDATA["---"]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) == 1]]>
+					</condition>
+					<expr>
+						<![CDATA["ОСН"]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) == 2]]>
+					</condition>
+					<expr>
+						<![CDATA["РЕЗ"]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) == 3]]>
+					</condition>
+					<expr>
+						<![CDATA["РУЧ"]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) == 4]]>
+					</condition>
+					<expr>
+						<![CDATA["РЕМ"]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) >= 5]]>
+					</condition>
+					<expr>
+						<![CDATA["---"]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="MouseEnter" ver="1">
+			<body kind="om">
+				<![CDATA[this.PenWidth=3;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" event="MouseLeave" ver="1">
+			<body kind="om">
+				<![CDATA[Pump_Mode_rect.PenWidth=1;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" event="MouseClick" ver="1" form-action="open-new">
+			<object access-modifier="private" uuid="9b0218af-881d-4fe1-890f-61cc2f33c65d" base-type="Pp_PumpMode" base-type-id="ca8893b6-c928-408f-937b-ed4f6c8cc705">
+				<init target="_Pp_PumpMode_PumpNumber" ver="1" ref="Pump_Number"/>
+				<init target="_Pp_Enable_Reserv" ver="1" ref="Enable_Reserv"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Pump_Mode_opc" display-name="Pump_Mode_opc" uuid="28cc4f85-accc-4ed6-9474-00cffa45f3d7" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateControl" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["Aux."+Str.ToString(_Pump_Number) + ".State.WorkMode"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Pump_Number" display-name="Pump_Number" uuid="9dd6a52f-07a2-43a4-b968-bfa7ad543dcb" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<init target="Pump_Number" ver="1" ref="_Pump_Number"/>
+	<param access-modifier="private" name="_Left_Right_Up_Down" display-name="_Left_Right_Up_Down" uuid="d4c1f28a-2ac2-41bd-9ffd-951694c3b0f4" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<param access-modifier="private" name="_Pump_Heat_Vent" display-name="_Pump_Heat_Vent" uuid="af75bb66-2fca-4702-8810-a39ffab00f94" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<param access-modifier="private" name="_ПЧ_МП" display-name="_ПЧ_МП" uuid="1fb0997e-22d1-4a11-8efe-662a0ad5c1d4" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="OpenPopup_Action" display-name="OpenPopup_Action" uuid="2678d32a-d2af-4e1e-b188-3a95d97facc8" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="1">
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="InvokeTrigger" value="false" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="Invoked" form-action="open-new">
+			<object access-modifier="private" uuid="8f4b5f45-3f86-4dbc-94d9-5cde56bf9e84" base-type="Popup_PumpControl" base-type-id="cc13b30c-f407-4041-81c5-2d1845a9c9e5" ver="1">
+				<init target="_Pp_PumpControl_PumpNumber" ver="1" ref="Pump_Number"/>
+				<designed target="Height" value="220" ver="1"/>
+			</object>
+		</do-on>
+	</object>
+	<param access-modifier="private" name="_Enable_Reserv" display-name="_Enable_Reserv" uuid="93614c63-1229-4d3a-88f4-e7656cc1ea2f" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="1"/>
+	<object access-modifier="private" name="Enable_Reserv" display-name="Enable_Reserv" uuid="60724f61-9fe7-4a73-a728-b92eb614eaf5" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="1"/>
+	<init target="Enable_Reserv" ver="1" ref="_Enable_Reserv"/>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="506de6f8-1fcf-4a1c-89f5-1095daf93bb6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="95" ver="1"/>
+		<designed target="Y" value="-10" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="83" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="Н-1" ver="1"/>
+		<designed target="Font" value="Sans Serif,14,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="129" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Pump_Title.ValueAsString]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Pump_Title" display-name="Pump_Title" uuid="a21905c4-2755-483b-a017-b115bd259d66" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateControl" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["Aux."+Str.ToString(_Pump_Number) + ".Attributes.Title"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Rectangle_4" display-name="Rectangle_4" uuid="529a5813-5aec-4054-8837-662d7447ab57" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="87" ver="1"/>
+		<designed target="Y" value="16" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="51" ver="1"/>
+		<designed target="Height" value="36" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="0" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffffff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pump_StateWork_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) == 4 && Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff801400]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) == 2 && Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ffff]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 0]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 1]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 2]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 3]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) >= 5]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="MouseEnter">
+			<body kind="om">
+				<![CDATA[this.PenColor=0xff323232;
+this.PenWidth=3;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="1" event="MouseLeave">
+			<body kind="om">
+				<![CDATA[this.PenWidth=1;
+this.PenColor=0xff000000;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="1" event="MouseClick">
+			<body kind="om">
+				<![CDATA[OpenPopup_Action.Invoke();]]>
+			</body>
+		</do-on>
+		<init target="Visible" ver="1">
+			<expr>
+				<![CDATA[_Pump_Heat_Vent=="Vent" && _Left_Right_Up_Down=="Right"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Pump_TriangleRight_line_1" display-name="Pump_TriangleRight_line_1" uuid="edd1edbe-24a5-4102-86b4-ca061fea261c" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba">
+		<designed target="X" value="117.75"/>
+		<designed target="Y" value="24.65"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="15"/>
+		<designed target="Height" value="20"/>
+		<designed target="PenColor" value="4278190080"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff000000"/>
+		<designed target="BrushStyle" value="1"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="07ff4bc7-f0e9-44ed-9256-98d21001b671" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="c58d6102-4906-40a1-911e-f46eb87798dc" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="15"/>
+			<designed target="Y" value="10"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="73da0f17-244b-4ad3-ae62-39e6bfc0fac6" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="20"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="19e13ead-f4a7-4ec1-9a54-a34909256c1f" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+		</object>
+		<init target="Visible" ver="1">
+			<expr>
+				<![CDATA[_Left_Right_Up_Down == "Right" && _Pump_Heat_Vent=="Vent"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Rectangle_5" display-name="Rectangle_5" uuid="60e1f34e-4f9c-4a9a-9b06-546e35a69bb2" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="28" ver="1"/>
+		<designed target="Y" value="16" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="53" ver="1"/>
+		<designed target="Height" value="37" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="0" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffffff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pump_StateWork_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) == 4 && Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff801400]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_Mode_opc.Value,0) == 2 && Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ffff]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 0]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 1]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 2]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 3]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(Pump_StateWork_opc.Value,0) >= 5]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="MouseEnter">
+			<body kind="om">
+				<![CDATA[this.PenColor=0xff323232;
+this.PenWidth=3;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="1" event="MouseLeave">
+			<body kind="om">
+				<![CDATA[this.PenWidth=1;
+this.PenColor=0xff000000;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="1" event="MouseClick">
+			<body kind="om">
+				<![CDATA[OpenPopup_Action.Invoke();]]>
+			</body>
+		</do-on>
+		<init target="Visible" ver="1">
+			<expr>
+				<![CDATA[_Pump_Heat_Vent=="Vent" && _Left_Right_Up_Down=="Left"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Pump_TriangleLeft_line_1" display-name="Pump_TriangleLeft_line_1" uuid="9993190d-901a-4542-9b65-ca1794e79da2" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba">
+		<designed target="X" value="35.8154"/>
+		<designed target="Y" value="24.65"/>
+		<designed target="Rotation" value="180"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="15"/>
+		<designed target="Height" value="20"/>
+		<designed target="PenColor" value="4278190080"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff000000"/>
+		<designed target="BrushStyle" value="1"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="0c9a0a5a-feb7-449c-9b9b-0dacf89907cf" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="26d949c4-c8ca-4681-8d83-226978b3d00b" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="15"/>
+			<designed target="Y" value="10"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="ceda34b5-56a3-4cff-a158-37f82d6886d4" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="20"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="d9a5a061-df6c-4198-bab2-29da1574898a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+		</object>
+		<init target="Visible" ver="1">
+			<expr>
+				<![CDATA[_Left_Right_Up_Down == "Left" && _Pump_Heat_Vent=="Vent"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Pump_Body_ell_1" display-name="Pump_Body_ell_1" uuid="7523d852-4663-4c67-a114-9c5c726b837f" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="72.5" ver="1"/>
+		<designed target="Y" value="44.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="20" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="PenColor" value="0xff000000" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff000000" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<init target="Visible" ver="1">
+			<expr>
+				<![CDATA[_Pump_Heat_Vent=="Vent"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Pump_TriangleUp_line" display-name="Pump_TriangleUp_line" uuid="8d77f67d-7340-4875-a07b-891b20c5ecf2" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba">
+		<designed target="X" value="75.8652"/>
+		<designed target="Y" value="18.7652"/>
+		<designed target="Rotation" value="270"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="15"/>
+		<designed target="Height" value="20"/>
+		<designed target="PenColor" value="4278190080"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff000000"/>
+		<designed target="BrushStyle" value="1"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="d4fd7545-8cdb-4bae-8886-ab4e02b65b01" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="13f4f147-9f8e-45a6-b18f-9f97fb89b4f6" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="15"/>
+			<designed target="Y" value="10"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="19300b1f-afe7-453d-b2ac-a337f3b57ffc" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="20"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="76e906fd-0d85-441d-94a5-d241b59b20a9" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+		</object>
+		<init target="Visible" ver="1">
+			<expr>
+				<![CDATA[_Left_Right_Up_Down == "Up" && _Pump_Heat_Vent=="Pump"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Pump_Error_rect" display-name="Pump_Error_rect" uuid="89e841d7-c0fa-4fe6-877c-e7786e81a350" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="29.5" ver="1"/>
+		<designed target="Y" value="58.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="107" ver="1"/>
+		<designed target="Height" value="19" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffff0000" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Pump_Error_txt" display-name="Pump_Error_txt" uuid="d41dc53c-e765-4fd4-8d6b-80c1c55a65ef" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="3.5" ver="1"/>
+			<designed target="Y" value="2.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="99" ver="1"/>
+			<designed target="Height" value="13" ver="1"/>
+			<designed target="Text" value="АВАРИЯ" ver="1"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="Visible" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pump_Error_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Pump_Error_opc.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(Pump_Error_opc.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pump_Error_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Pump_Error_opc.Quality >= 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+</type>
+

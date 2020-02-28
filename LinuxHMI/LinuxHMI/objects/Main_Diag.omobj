@@ -1,0 +1,319 @@
+<type access-modifier="private" name="Main_Diag" display-name="Main_Diag" uuid="6614241b-146c-4574-b303-6bcb85f8603d" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5">
+	<designed target="X" value="0"/>
+	<designed target="Y" value="0"/>
+	<designed target="Rotation" value="0"/>
+	<designed target="Scale" value="1"/>
+	<designed target="Visible" value="true"/>
+	<designed target="Enabled" value="true"/>
+	<designed target="Tooltip" value=""/>
+	<designed target="Width" value="1720"/>
+	<designed target="Height" value="775"/>
+	<designed target="PenColor" value="0xff000000"/>
+	<designed target="PenStyle" value="0"/>
+	<designed target="PenWidth" value="1"/>
+	<designed target="BrushColor" value="0xffa0b5e6"/>
+	<designed target="BrushStyle" value="1"/>
+	<designed target="WindowX" value="0"/>
+	<designed target="WindowY" value="0"/>
+	<designed target="WindowWidth" value="1720"/>
+	<designed target="WindowHeight" value="750"/>
+	<designed target="WindowCaption" value="MainForm"/>
+	<designed target="ShowWindowCaption" value="true"/>
+	<designed target="ShowWindowMinimize" value="true"/>
+	<designed target="ShowWindowMaximize" value="true"/>
+	<designed target="ShowWindowClose" value="true"/>
+	<designed target="AlwaysOnTop" value="false"/>
+	<designed target="WindowSizeMode" value="0"/>
+	<designed target="WindowBorderStyle" value="1"/>
+	<designed target="WindowState" value="0"/>
+	<designed target="WindowScalingMode" value="0"/>
+	<designed target="MonitorNumber" value="0"/>
+	<designed target="WindowPosition" value="0"/>
+	<designed target="WindowCloseMode" value="0"/>
+	<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="0649bae3-5655-4af0-8598-ce1254bb71cc" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="85" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="1710" ver="1"/>
+		<designed target="Height" value="685" ver="1"/>
+		<designed target="RoundingRadius" value="5" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="0" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff63708f" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+	</object>
+	<object access-modifier="private" name="txt_NameForm" display-name="txt_NameForm" uuid="aeab0b4e-c4f9-469c-8cca-c91360b288e6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="9"/>
+		<designed target="Y" value="0"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="1720"/>
+		<designed target="Height" value="30"/>
+		<designed target="Text" value="Диагностика"/>
+		<designed target="Font" value="Sans Serif,24,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff63708f"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_Source_src_1" display-name="Pp_AI_Source_src_1" uuid="cca34d93-bfd0-45ba-96ee-c612a5219551" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c">
+		<designed target="Active" value="true"/>
+		<init target="ParentSource" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["AI."+Str.ToString(1)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Pp_AI_WriteUst_booltoken_1" display-name="Pp_AI_WriteUst_booltoken_1" uuid="26d0de14-4210-4f93-9402-96756529dd98" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="1">
+		<init target="Application" ver="1" value="Alpha.HMI"/>
+		<init target="Right" ver="1" value="WriteUst"/>
+		<init target="SecurityContext" ver="2" ref="unit.Security.SecurityContext"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_EnableUst9_opc_1" display-name="Pp_AI_EnableUst9_opc_1" uuid="f101d563-899d-4cde-87e1-a7f06cf349cf" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src_1"/>
+		<init target="Path" ver="1" value="Enable.Enable_Ust.EnableUst9"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_EnableUst8_opc_2" display-name="Pp_AI_EnableUst8_opc_2" uuid="13364d9d-5d02-4595-9fb2-a6bdc4cc91be" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src_1"/>
+		<init target="Path" ver="1" value="Enable.Enable_Ust.EnableUst8"/>
+	</object>
+	<object access-modifier="private" name="Pp_AI_Source_src_2" display-name="Pp_AI_Source_src_2" uuid="83184edf-9017-4e31-9432-b1877fbe16cf" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c">
+		<designed target="Active" value="true"/>
+		<init target="ParentSource" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["AI."+Str.ToString(2)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Pp_AI_UstMax3_opc_1" display-name="Pp_AI_UstMax3_opc_1" uuid="b2a02cbe-7791-4ab7-8e0d-45430d0c467c" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="Ust.Max3"/>
+		<init target="Source" ver="1" ref="Pp_AI_Source_src_1"/>
+	</object>
+	<object access-modifier="private" name="Diag_Frame" display-name="Diag_Frame" uuid="c19dadd7-9924-4b82-9a37-c3a931149971" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="1">
+		<designed target="X" value="10" ver="1"/>
+		<designed target="Y" value="90" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="1700" ver="1"/>
+		<designed target="Height" value="675" ver="1"/>
+		<designed target="PenColor" value="0xff000000" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+		<designed target="OverrideScaling" value="false" ver="3"/>
+		<designed target="ShowScrollBars" value="true" ver="3"/>
+		<designed target="MoveByMouse" value="false" ver="3"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="Opened" frame-link="Diag_Frame" form-action="open-in-frame">
+		<object access-modifier="private" uuid="8101c8e0-d7b7-4a71-a064-025529496fe8" base-type="Diag_SOI" base-type-id="de298a69-a148-4b98-ab77-c9de0663d1bd" ver="1"/>
+	</do-on>
+	<object access-modifier="private" name="DiagSOI_Button" display-name="DiagSOI_Button" uuid="684209f0-f9b9-43c8-9beb-714ad5f06c46" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="13.3333"/>
+		<designed target="Y" value="38.6667"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="170"/>
+		<designed target="Height" value="40"/>
+		<designed target="RoundingRadius" value="3"/>
+		<designed target="PenColor" value="0xff000000"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="2"/>
+		<designed target="BrushColor" value="0xff8495be"/>
+		<designed target="BrushStyle" value="1"/>
+		<object access-modifier="private" name="LinearLayout_1" display-name="LinearLayout_1" uuid="9fd299be-1d72-4005-8260-a542fc975fad" base-type="LinearLayout" base-type-id="800edd71-7303-408c-890b-8346e98f5718">
+			<designed target="Orientation" value="1"/>
+			<designed target="Gap" value="0"/>
+		</object>
+		<object access-modifier="private" name="Button_Text" display-name="Button_Text" uuid="40854e37-bc52-4d21-b45a-10c31e6b6d21" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="170"/>
+			<designed target="Height" value="40"/>
+			<designed target="Text" value="СА УВП"/>
+			<designed target="Font" value="Sans Serif,18,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="MouseEnter">
+			<body kind="om">
+				<![CDATA[this.RadialGradient_1.GradientPoint_1.Color=0xffb2c9ff;
+this.RadialGradient_1.GradientPoint_2.Color=0xffffffff;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="rty" display-name="rty" event="MouseLeave">
+			<body kind="om">
+				<![CDATA[this.RadialGradient_1.GradientPoint_1.Color=0xff667393;
+this.RadialGradient_1.GradientPoint_2.Color=0xffb2c9ff;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" event="MouseClick" frame-link="Diag_Frame" form-action="open-in-frame">
+			<object access-modifier="private" uuid="1ef8f2b4-3d07-409b-a4cd-453d5cbde380" base-type="Diag_SOI" base-type-id="de298a69-a148-4b98-ab77-c9de0663d1bd" ver="1"/>
+		</do-on>
+		<object access-modifier="private" name="RadialGradient_1" display-name="RadialGradient_1" uuid="c30035a6-3930-429c-82de-8a57019acbe2" base-type="RadialGradient" base-type-id="ec8b2b95-2c92-44b2-a9aa-3ce4fc0f08b9">
+			<designed target="XCenter" value="0.5"/>
+			<designed target="YCenter" value="0.5"/>
+			<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="8a605100-12fe-48eb-b043-828fa275c678" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891">
+				<designed target="Position" value="0"/>
+				<designed target="Color" value="0xffb2c9ff"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="d3fd062e-a0e3-44f6-a50e-72ed18b424dd" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891">
+				<designed target="Position" value="1"/>
+				<designed target="Color" value="0xff667393"/>
+			</object>
+		</object>
+	</object>
+	<object access-modifier="private" name="DiagPLC_Button" display-name="DiagPLC_Button" uuid="38b36043-8457-4260-8a3f-ac787ce08b57" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="198.33333333333348"/>
+		<designed target="Y" value="38.666666666666515"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="200"/>
+		<designed target="Height" value="40"/>
+		<designed target="RoundingRadius" value="3"/>
+		<designed target="PenColor" value="0xff000000"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="2"/>
+		<designed target="BrushColor" value="0xff8495be"/>
+		<designed target="BrushStyle" value="1"/>
+		<object access-modifier="private" name="LinearLayout_1" display-name="LinearLayout_1" uuid="59e7d05d-3f0f-4f5f-b6db-8f30f274afcf" base-type="LinearLayout" base-type-id="800edd71-7303-408c-890b-8346e98f5718">
+			<designed target="Orientation" value="1"/>
+			<designed target="Gap" value="0"/>
+		</object>
+		<object access-modifier="private" name="Button_Text" display-name="Button_Text" uuid="8c9de337-d13f-4562-8556-78d8275a3a04" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="200"/>
+			<designed target="Height" value="40"/>
+			<designed target="Text" value="Контроллер"/>
+			<designed target="Font" value="Sans Serif,14,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="MouseEnter">
+			<body kind="om">
+				<![CDATA[this.RadialGradient_1.GradientPoint_1.Color=0xffb2c9ff;
+this.RadialGradient_1.GradientPoint_2.Color=0xffffffff;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="rty" display-name="rty" event="MouseLeave">
+			<body kind="om">
+				<![CDATA[this.RadialGradient_1.GradientPoint_1.Color=0xff667393;
+this.RadialGradient_1.GradientPoint_2.Color=0xffb2c9ff;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" event="MouseClick" frame-link="Diag_Frame" form-action="open-in-frame">
+			<object access-modifier="private" uuid="b486e653-97e9-4a8b-a4f4-b397d83daa72" base-type="Diag_PLC" base-type-id="30afcac8-897c-4f70-a5da-4c3cd59d6639" ver="1"/>
+		</do-on>
+		<object access-modifier="private" name="RadialGradient_1" display-name="RadialGradient_1" uuid="21086894-5c30-4193-bf19-733554e01d03" base-type="RadialGradient" base-type-id="ec8b2b95-2c92-44b2-a9aa-3ce4fc0f08b9">
+			<designed target="XCenter" value="0.5"/>
+			<designed target="YCenter" value="0.5"/>
+			<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="57fd84ad-5af0-4931-af6a-61d8d7323203" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891">
+				<designed target="Position" value="0"/>
+				<designed target="Color" value="0xffb2c9ff"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="e0da7d67-6550-4036-81ef-d96821b4cecd" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891">
+				<designed target="Position" value="1"/>
+				<designed target="Color" value="0xff667393"/>
+			</object>
+		</object>
+	</object>
+	<object access-modifier="private" name="DiagPLC_Button_1" display-name="DiagPLC_Button_1" uuid="b5f959b9-aaca-4338-99ad-64cd28023146" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="622.33333333333348"/>
+		<designed target="Y" value="38.666666666666515"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="200"/>
+		<designed target="Height" value="40"/>
+		<designed target="RoundingRadius" value="3"/>
+		<designed target="PenColor" value="0xff000000"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="2"/>
+		<designed target="BrushColor" value="0xff8495be"/>
+		<designed target="BrushStyle" value="1"/>
+		<object access-modifier="private" name="LinearLayout_1" display-name="LinearLayout_1" uuid="ca938972-f577-4883-8f47-628eecc3545b" base-type="LinearLayout" base-type-id="800edd71-7303-408c-890b-8346e98f5718">
+			<designed target="Orientation" value="1"/>
+			<designed target="Gap" value="0"/>
+		</object>
+		<object access-modifier="private" name="Button_Text" display-name="Button_Text" uuid="e98ef8a5-da44-42cc-806e-2ce53b7e1366" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="200"/>
+			<designed target="Height" value="40"/>
+			<designed target="Text" value="Контроль времени"/>
+			<designed target="Font" value="Sans Serif,14,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="MouseEnter">
+			<body kind="om">
+				<![CDATA[this.RadialGradient_1.GradientPoint_1.Color=0xffb2c9ff;
+this.RadialGradient_1.GradientPoint_2.Color=0xffffffff;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="rty" display-name="rty" event="MouseLeave">
+			<body kind="om">
+				<![CDATA[this.RadialGradient_1.GradientPoint_1.Color=0xff667393;
+this.RadialGradient_1.GradientPoint_2.Color=0xffb2c9ff;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" event="MouseClick" form-action="open-new">
+			<object access-modifier="private" uuid="f0e3340b-a2d8-4775-851a-83a2833ad11b" base-type="Popup_TimeControl" base-type-id="2a5176d3-9c5b-4857-9d19-ee0eebe62a27" ver="1"/>
+		</do-on>
+		<object access-modifier="private" name="RadialGradient_1" display-name="RadialGradient_1" uuid="c8f4b9bc-d10d-42a6-be0a-3d1bd4803257" base-type="RadialGradient" base-type-id="ec8b2b95-2c92-44b2-a9aa-3ce4fc0f08b9">
+			<designed target="XCenter" value="0.5"/>
+			<designed target="YCenter" value="0.5"/>
+			<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="2ec52d81-75ee-4f9b-ac3a-8e6fb966367b" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891">
+				<designed target="Position" value="0"/>
+				<designed target="Color" value="0xffb2c9ff"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="9026b1d0-faa2-4897-ba69-fe31d01161e7" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891">
+				<designed target="Position" value="1"/>
+				<designed target="Color" value="0xff667393"/>
+			</object>
+		</object>
+		<init target="Visible" ver="1" value="true"/>
+	</object>
+</type>
+

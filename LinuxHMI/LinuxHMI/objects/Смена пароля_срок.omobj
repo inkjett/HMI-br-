@@ -1,0 +1,310 @@
+<type access-modifier="private" name="Смена пароля_срок" display-name="Смена пароля_срок" uuid="27741d6d-aba4-406e-8d76-623c3990c2a0" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="340" ver="1"/>
+	<designed target="Height" value="200" ver="1"/>
+	<designed target="PenColor" value="0xff000000" ver="1"/>
+	<designed target="PenStyle" value="0" ver="1"/>
+	<designed target="PenWidth" value="1" ver="1"/>
+	<designed target="BrushColor" value="0xfff0f0f0" ver="1"/>
+	<designed target="BrushStyle" value="1" ver="1"/>
+	<designed target="WindowX" value="0" ver="1"/>
+	<designed target="WindowY" value="0" ver="1"/>
+	<designed target="WindowWidth" value="340" ver="1"/>
+	<designed target="WindowHeight" value="200" ver="1"/>
+	<designed target="WindowCaption" value="Смена пароля" ver="1"/>
+	<designed target="ShowWindowCaption" value="true" ver="1"/>
+	<designed target="ShowWindowMinimize" value="false" ver="1"/>
+	<designed target="ShowWindowMaximize" value="false" ver="1"/>
+	<designed target="ShowWindowClose" value="true" ver="1"/>
+	<designed target="AlwaysOnTop" value="false" ver="1"/>
+	<designed target="WindowSizeMode" value="0" ver="1"/>
+	<designed target="WindowBorderStyle" value="2" ver="1"/>
+	<designed target="WindowState" value="0" ver="1"/>
+	<designed target="WindowScalingMode" value="0" ver="1"/>
+	<designed target="MonitorNumber" value="0" ver="1"/>
+	<designed target="WindowPosition" value="2" ver="1"/>
+	<designed target="WindowCloseMode" value="0" ver="1"/>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="30c1d8c0-b864-4591-aee0-b8f2a838de80" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="16" ver="1"/>
+		<designed target="Y" value="2" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="306" ver="1"/>
+		<designed target="Height" value="39.1429" ver="1"/>
+		<designed target="Text" value="Срок дейстивия пароля истек
+необходимо изменить пароль" ver="1"/>
+		<designed target="Font" value="Sans Serif,11,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<object access-modifier="private" name="PwdEditBox_1" display-name="PwdEditBox_1" uuid="2c4a3132-facf-4749-ab9a-204c89851239" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="184" ver="1"/>
+		<designed target="Y" value="71" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="133" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="Text" value="" ver="1"/>
+		<designed target="Font" value="Sans Serif,9,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<designed target="TextAlignment" value="129" ver="1"/>
+		<designed target="HideInput" value="true" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="PwdEditBox_2" display-name="PwdEditBox_2" uuid="12d63843-9e73-488d-8272-be575de339ef" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="184" ver="1"/>
+		<designed target="Y" value="96" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="133" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="Text" value="" ver="1"/>
+		<designed target="Font" value="Sans Serif,9,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<designed target="TextAlignment" value="129" ver="1"/>
+		<designed target="HideInput" value="true" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="ac09dbab-6d6e-45b7-9d38-6cc1a7bab931" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="117" ver="1"/>
+		<designed target="Y" value="150" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="110" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="Text" value="Авторизация" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[var login = cbUserList.UserList.GetLoginName(cbUserList.SelectedIndex);
+if (PwdEditBox_2.Text == PwdEditBox_3.Text)
+{
+unit.SecurityParams.Global_SecurityContext.AsyncLoginWithPasswordChange(login,PwdEditBox_1,PwdEditBox_2);
+AutoCloseOnLogin=true;
+}
+else
+{
+tInfo.Text = "Введеные пароли не совпадают";
+}
+]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="31dcbfbb-2fb2-41bc-b90f-80fb3567143c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="21.5714" ver="1"/>
+		<designed target="Y" value="73.2857" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="160" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="Введите старый пароль:" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<designed target="TextAlignment" value="129" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="378cfb12-856a-4263-815b-a05529c1adfb" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="21.5714" ver="1"/>
+		<designed target="Y" value="98.2857" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="160" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="Введите новый пароль:" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<designed target="TextAlignment" value="129" ver="1"/>
+	</object>
+	<object access-modifier="private" name="PwdEditBox_3" display-name="PwdEditBox_3" uuid="1a196698-c3f2-4a2f-bb15-eb199489df8a" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="184" ver="1"/>
+		<designed target="Y" value="121" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="133" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="Text" value="" ver="1"/>
+		<designed target="Font" value="Sans Serif,9,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<designed target="TextAlignment" value="129" ver="1"/>
+		<designed target="HideInput" value="true" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Text_5" display-name="Text_5" uuid="2c65a324-d3fd-4d25-a200-64116ace0801" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="21.5714" ver="1"/>
+		<designed target="Y" value="123.286" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="160" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="Подтвердите новый пароль:" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<designed target="TextAlignment" value="129" ver="1"/>
+	</object>
+	<object access-modifier="private" name="tInfo" display-name="tInfo" uuid="92f1a9bc-efa7-443e-a240-0cd291298ca8" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="173" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="333" ver="1"/>
+		<designed target="Height" value="23" ver="1"/>
+		<designed target="Text" value="" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xffff0000" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<object access-modifier="private" name="TimeForClose" display-name="TimeForClose" uuid="cb9b9a9e-d713-4069-87c7-b64eb3d5c33c" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="1">
+		<designed target="Period" value="100" ver="1"/>
+		<designed target="Active" value="false" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="OnTimer" ver="1">
+			<body kind="javascript">
+				<![CDATA[ActionClose.Invoke();]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Text_7" display-name="Text_7" uuid="0567abaa-3e61-4238-8644-bb16ebb1a5db" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="21.5714" ver="1"/>
+		<designed target="Y" value="49.2857" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="160" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="Введите имя пользователя:" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<designed target="TextAlignment" value="129" ver="1"/>
+	</object>
+	<object access-modifier="private" name="cbUserList" display-name="cbUserList" uuid="02c83d62-c24c-4d86-a210-be1a5cc578cd" base-type="ComboBox" base-type-id="3495bcd2-01f2-4709-b7f4-e9cf6f3a00bc" ver="1">
+		<designed target="X" value="184" ver="1"/>
+		<designed target="Y" value="46" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Editable" value="false" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="134" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="Text" value="" ver="1"/>
+		<designed target="SelectedIndex" value="-1" ver="1"/>
+		<designed target="Font" value="Sans Serif,9,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<designed target="MaxVisibleItems" value="10" ver="1"/>
+		<object access-modifier="private" name="UserList" display-name="UserList" uuid="63beb6d1-603b-46b9-a9d6-3323805eee74" base-type="UserList" base-type-id="7d9c142e-8718-4caa-82be-60ea2ec65981" ver="1">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="UpdateFinished" ver="1">
+				<body kind="javascript">
+					<![CDATA[Clear();
+
+var currIndex = -1;
+
+for (var i = 0; i < Count; i++) {
+	var item = GetDisplayName(i);
+
+	AddItem(item);
+
+	if (item == SecurityContext.CurrentUserDisplayName) {
+		currIndex = i;
+	}
+}
+
+if (currIndex > -1) {
+	cbUserList.SelectedIndex = currIndex;
+}]]>
+				</body>
+			</do-on>
+			<init target="SecurityContext" ver="1">
+				<object access-modifier="private" uuid="06385930-f9eb-4a88-be53-792f5ebf8a52" base-type="SecurityContext" base-type-id="d9cb0fff-b70a-4e2d-833d-3f73cf74e0dd" ver="1"/>
+			</init>
+		</object>
+	</object>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="1" event="Opened">
+		<body kind="om">
+			<![CDATA[cbUserList.UserList.BeginUpdate();]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="AutoCloseOnLogin" display-name="AutoCloseOnLogin" uuid="b3438c91-4325-4083-b6c9-b3643a1388a2" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="1"/>
+	<object access-modifier="private" name="SecurityContext" display-name="SecurityContext" uuid="36b2a33c-aa85-4d31-acd9-74653b7d8105" base-type="SecurityContext" base-type-id="d9cb0fff-b70a-4e2d-833d-3f73cf74e0dd" ver="1">
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" event="LoginFailed" ver="1">
+			<body kind="om">
+				<![CDATA[tInfo.Text = LoginError;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" event="LoginRejected" ver="1">
+			<body kind="om">
+				<![CDATA[tInfo.Text = LoginRejectReason;
+]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" event="LoginStarted" ver="1">
+			<body kind="om">
+				<![CDATA[tInfo.Text = "";]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_5" display-name="Handler_5" event="ConnectedChanged" ver="1">
+			<body kind="om">
+				<![CDATA[if (!Connected) {
+	tInfo.Text = Str.Concat("Нет связи: ", ConnectionError);
+}]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_6" display-name="Handler_6" event="CurrentUserChanged" ver="1">
+			<body kind="javascript">
+				<![CDATA[if( !SecurityContext.GuestMode && AutoCloseOnLogin)
+	ActionClose.Invoke();]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ActionClose" display-name="ActionClose" uuid="0de56f02-9081-4d9a-9573-a7c39ea9c616" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" base-const="true" base-ref="true" ver="1"/>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="1" event="Closed">
+		<body kind="om">
+			<![CDATA[/*SecTmp: var = unit.OPCROOT.Tag_CurrentUser.Value;
+TagTmp: var = unit.OPCROOT.SecurityContext.CurrentUser;
+
+if (SecTmp != TagTmp)
+{
+unit.OPCROOT.Tag_CurrentUser = unit.OPCROOT.SecurityContext.CurrentUser;
+}*/]]>
+		</body>
+	</do-on>
+</type>
+

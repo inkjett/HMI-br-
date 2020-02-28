@@ -1,0 +1,1132 @@
+<type access-modifier="private" name="PLC_Modul_DI" display-name="PLC_Modul_DI" uuid="ce0508c4-2ac4-4d14-8a94-92f1b2e17918" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="122" ver="1"/>
+	<designed target="Height" value="412" ver="1"/>
+	<designed target="RoundingRadius" value="0" ver="1"/>
+	<designed target="PenColor" value="4278190080" ver="1"/>
+	<designed target="PenStyle" value="1" ver="1"/>
+	<designed target="PenWidth" value="1" ver="1"/>
+	<designed target="BrushColor" value="4278190080" ver="1"/>
+	<designed target="BrushStyle" value="0" ver="1"/>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="41104ae3-587d-46c2-b564-c8486541b0a0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="0.5" ver="1"/>
+		<designed target="Y" value="0.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="119.99999999999997" ver="1"/>
+		<designed target="Height" value="410.00000000000006" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffdedede" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+	</object>
+	<object access-modifier="private" name="ell_DI_1" display-name="ell_DI_1" uuid="7768e026-f6b7-4056-baee-5e6e41b6b7ec" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="36.5" ver="1"/>
+		<designed target="Y" value="54.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="15" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<object access-modifier="private" name="txt_DI_1" display-name="txt_DI_1" uuid="9f5880b4-6cef-4e1a-862a-61b6f70340c4" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="-13" ver="1"/>
+			<designed target="Y" value="-1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="1" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_1.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_1.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="OPC_Root" display-name="OPC_Root" uuid="9f2d90b4-f3a6-4631-be01-fd28eb1ae0b9" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="1">
+		<designed target="Active" value="true" ver="1"/>
+		<designed target="UpdateRate" value="0" ver="1"/>
+		<init target="Location" ver="1" value="localhost"/>
+		<init target="ProgId" ver="1" value="AP.OPCDAServer"/>
+	</object>
+	<object access-modifier="private" name="OpcDI_1" display-name="OpcDI_1" uuid="117eda0d-68a6-497e-9012-f8dcea177345" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+0)]]>
+			</expr>
+		</init>
+	</object>
+	<param access-modifier="private" name="_ModulNumberDI" display-name="_ModulNumberDI" uuid="00c7b787-9fbf-408e-9c41-24e97cbab6e2" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="18c79b45-9d60-4a11-8205-f5ad7b16de87" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="31.5" ver="1"/>
+		<designed target="Y" value="385.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="58" ver="1"/>
+		<designed target="Height" value="23.000000000000057" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="2" ver="1"/>
+		<designed target="BrushColor" value="0xffffffff" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="092a05ec-e8f3-4daf-b146-5d02e30544b1" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="4" ver="1"/>
+			<designed target="Y" value="2" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="50" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="Text" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+			<init target="Text" ver="1">
+				<expr>
+					<![CDATA["A1_" + Str.ToString(_ModulNumber)]]>
+				</expr>
+			</init>
+		</object>
+	</object>
+	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="0a9375b8-3776-4765-bee4-2572ab197e03" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="34.5" ver="1"/>
+		<designed target="Y" value="12.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="DI-33A" ver="1"/>
+		<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<object access-modifier="private" name="OpcDI_2" display-name="OpcDI_2" uuid="1b8dfde1-af65-496e-9a85-130be3104ce8" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+1)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_3" display-name="OpcDI_3" uuid="3c34d31d-3a1a-4096-9982-6343e0557983" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+2)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="ell_DI_2" display-name="ell_DI_2" uuid="da6b3da7-0254-4a8c-9310-a73f59f30006" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="36.5" ver="1"/>
+		<designed target="Y" value="74.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="15" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<object access-modifier="private" name="txt_DI_1" display-name="txt_DI_1" uuid="a0e41066-1a91-45da-af61-d9f46bf6a0d1" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="-13" ver="1"/>
+			<designed target="Y" value="-1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="2" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_2.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_2.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ell_DI_3" display-name="ell_DI_3" uuid="54781408-e585-4414-8416-53dc13e4e3e4" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="36.5" ver="1"/>
+		<designed target="Y" value="94.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="15" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<object access-modifier="private" name="txt_DI_1" display-name="txt_DI_1" uuid="3546b71d-24bf-4022-bf18-83f6fff9b341" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="-13" ver="1"/>
+			<designed target="Y" value="-1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="3" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_3.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_3.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ell_DI_4" display-name="ell_DI_4" uuid="98b5e148-2944-443c-be0f-1d5e32138fa3" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="36.5" ver="1"/>
+		<designed target="Y" value="114.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="15" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<object access-modifier="private" name="txt_DI_1" display-name="txt_DI_1" uuid="67d46f88-6ecd-4dea-aeb9-80431c6a27a7" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="-13" ver="1"/>
+			<designed target="Y" value="-1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="4" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_4.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_4.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="OpcDI_4" display-name="OpcDI_4" uuid="ef293c09-2dce-4378-8683-9c357d257b98" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+3)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="ell_DI_5" display-name="ell_DI_5" uuid="05a02b38-faee-48e4-872b-66533ef5480e" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="36.5" ver="1"/>
+		<designed target="Y" value="134.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="15" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<object access-modifier="private" name="txt_DI_1" display-name="txt_DI_1" uuid="1d504754-12cc-4b2f-adbd-ffa7baae5ee5" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="-13" ver="1"/>
+			<designed target="Y" value="-1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="5" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_4.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_4.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ell_DI_6" display-name="ell_DI_6" uuid="db9cc432-a82a-45ac-99b5-4a40c88bf19e" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="36.5" ver="1"/>
+		<designed target="Y" value="154.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="15" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<object access-modifier="private" name="txt_DI_1" display-name="txt_DI_1" uuid="df7eb992-638a-4ae1-945e-65da1821d2b3" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="-13" ver="1"/>
+			<designed target="Y" value="-1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="6" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_6.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_6.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ell_DI_7" display-name="ell_DI_7" uuid="378f0668-9c0e-4cec-95f4-23517e13c302" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="36.5" ver="1"/>
+		<designed target="Y" value="174.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="15" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<object access-modifier="private" name="txt_DI_1" display-name="txt_DI_1" uuid="fb0232f9-f71f-47d5-8f2d-266e35cf6fed" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="-13" ver="1"/>
+			<designed target="Y" value="-1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="7" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_7.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_7.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ell_DI_8" display-name="ell_DI_8" uuid="d66a7552-0e6e-438e-819a-2a2bf6516002" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="36.5" ver="1"/>
+		<designed target="Y" value="194.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="15" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<object access-modifier="private" name="txt_DI_1" display-name="txt_DI_1" uuid="3aaeac6d-6955-40a8-b921-766c8e862cce" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="-13" ver="1"/>
+			<designed target="Y" value="-1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="8" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_8.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_8.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ell_DI_9" display-name="ell_DI_9" uuid="d56125da-2deb-4dd3-9c88-91db25dfdd2c" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="62.5" ver="1"/>
+		<designed target="Y" value="54.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="15" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<object access-modifier="private" name="txt_DI_1" display-name="txt_DI_1" uuid="e878bc1f-49d7-42e3-9d20-591a1158466c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="20" ver="1"/>
+			<designed target="Y" value="-1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="9" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_9.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_9.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ell_DI_10" display-name="ell_DI_10" uuid="1e7a7fb4-f5ce-4d9f-a734-3a6c7472d001" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="62.5" ver="1"/>
+		<designed target="Y" value="74.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="15" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<object access-modifier="private" name="txt_DI_1" display-name="txt_DI_1" uuid="01854da6-0070-46fc-9c44-c594ea0ca0fe" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="20" ver="1"/>
+			<designed target="Y" value="-1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="18.999999999999972" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="10" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_10.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_10.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ell_DI_11" display-name="ell_DI_11" uuid="70b43ba4-c5c8-4f3d-b507-a0f4af8f0b8d" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="62.5" ver="1"/>
+		<designed target="Y" value="94.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="15" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<object access-modifier="private" name="txt_DI_1" display-name="txt_DI_1" uuid="e3598d36-878a-43f4-885a-f322a415f19d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="20" ver="1"/>
+			<designed target="Y" value="-1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="18" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="11" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_11.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_11.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ell_DI_12" display-name="ell_DI_12" uuid="a71e18f6-20d9-4d91-9c5f-8ad12b9a96b3" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="62.5" ver="1"/>
+		<designed target="Y" value="114.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="15" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<object access-modifier="private" name="txt_DI_1" display-name="txt_DI_1" uuid="12eecc15-8a51-439c-80f2-eca0f963ce38" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="20" ver="1"/>
+			<designed target="Y" value="-1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="18.999999999999972" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="12" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_12.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_12.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ell_DI_13" display-name="ell_DI_13" uuid="94f8ba15-47fd-4119-9e1c-bad5f1178c1d" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="62.5" ver="1"/>
+		<designed target="Y" value="134.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="15" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<object access-modifier="private" name="txt_DI_1" display-name="txt_DI_1" uuid="eb618733-6442-4265-b94f-b5029272b6b9" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="20" ver="1"/>
+			<designed target="Y" value="-1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="21" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="13" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_13.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_13.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ell_DI_14" display-name="ell_DI_14" uuid="8ceada35-9c00-49bf-97cf-0fc1910f359f" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="62.5" ver="1"/>
+		<designed target="Y" value="154.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="15" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<object access-modifier="private" name="txt_DI_1" display-name="txt_DI_1" uuid="c3598690-6d97-41b7-abb0-9ed2054103c6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="20" ver="1"/>
+			<designed target="Y" value="-1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="18" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="14" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_14.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_14.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ell_DI_15" display-name="ell_DI_15" uuid="e2c19661-b3e9-4e17-b548-ab827273edf2" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="62.5" ver="1"/>
+		<designed target="Y" value="174.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="15" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<object access-modifier="private" name="txt_DI_1" display-name="txt_DI_1" uuid="17755c11-0e3f-4460-a03d-77a8b718f976" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="20" ver="1"/>
+			<designed target="Y" value="-1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="18.999999999999972" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="15" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_15.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_15.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ell_DI_16" display-name="ell_DI_16" uuid="c489ffb9-47e7-49ee-880c-e4ab77404ef7" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="62.5" ver="1"/>
+		<designed target="Y" value="194.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="15" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<object access-modifier="private" name="txt_DI_1" display-name="txt_DI_1" uuid="e654c18f-77fc-4781-a75a-01c25635cdeb" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="20" ver="1"/>
+			<designed target="Y" value="-1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="21" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="16" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_16.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_16.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ell_DI_17" display-name="ell_DI_17" uuid="6a1e4b80-8725-4db7-a33e-65e69f505a3b" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+		<designed target="X" value="63.5" ver="1"/>
+		<designed target="Y" value="254.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="15" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+		<object access-modifier="private" name="txt_DI_1" display-name="txt_DI_1" uuid="d879b161-fe58-4e77-9a8f-1a9bb821384c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="20" ver="1"/>
+			<designed target="Y" value="-1" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="28.000000000000028" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="Link" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_LinkError.Value, false) == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(OpcDI_LinkError.Value, false) == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="OpcDI_5" display-name="OpcDI_5" uuid="fce9bf87-bf00-4f01-a61f-253bc90fdcbe" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+4)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_6" display-name="OpcDI_6" uuid="190c5e81-7923-4d0f-b8fa-e84422803456" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+5)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_7" display-name="OpcDI_7" uuid="6c4d1cff-f0d5-461d-93d3-37b31245fcf1" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+6)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_8" display-name="OpcDI_8" uuid="9d586e47-258a-42fc-a25a-0350d4e48b29" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+7)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_9" display-name="OpcDI_9" uuid="4d94f9f7-7ef0-4a08-955b-16f04ffb8a13" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+8)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_10" display-name="OpcDI_10" uuid="4ca4358c-a9ad-4a44-aa45-4f25ced55b6f" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+9)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_11" display-name="OpcDI_11" uuid="c01b661b-91b3-4860-8826-4ed8a7c9fad2" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+10)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_12" display-name="OpcDI_12" uuid="b0d152ea-8a4d-4582-931c-b6bb387acbb0" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+11)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_13" display-name="OpcDI_13" uuid="685bc5c8-d9e5-46b0-8bb5-5265ff9e880e" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+12)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_14" display-name="OpcDI_14" uuid="107d6346-e65f-43d0-948b-c6539c920ad0" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+13)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_15" display-name="OpcDI_15" uuid="50d0f786-8cf9-4da3-9ccb-81a9170c4ac4" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+14)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_16" display-name="OpcDI_16" uuid="c7d86f49-9703-4535-99cc-0e9442c6e91e" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+15)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_LinkError" display-name="OpcDI_LinkError" uuid="ad0941a0-7518-4adf-b709-f7cf1f8ccb56" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(0+(_ModulNumber-1))]]>
+			</expr>
+		</init>
+	</object>
+	<param access-modifier="private" name="_ModulNumber" display-name="_ModulNumber" uuid="4a3dad04-3eec-4fa3-bc04-bd0681206e4a" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+</type>
+

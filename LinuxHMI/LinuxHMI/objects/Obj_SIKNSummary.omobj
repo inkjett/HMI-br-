@@ -1,0 +1,108 @@
+<type access-modifier="private" name="Obj_SIKNSummary" display-name="Obj_SIKNSummary" uuid="9424dde6-07b6-4b26-bb7c-c0d972bae121" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="100" ver="1"/>
+	<designed target="Height" value="20" ver="1"/>
+	<designed target="Text" value="123456.58" ver="1"/>
+	<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+	<designed target="FontColor" value="4278190080" ver="1"/>
+	<designed target="TextAlignment" value="130" ver="1"/>
+	<do-trace access-modifier="private" target="FontColor" ver="1">
+		<conditional-expr>
+			<condition>
+				<![CDATA[IsString==true && Value_OpcItem_String.Quality>=192]]>
+			</condition>
+			<expr>
+				<![CDATA[0xff000000]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[Legal_OpcItem.Value==false]]>
+			</condition>
+			<expr>
+				<![CDATA[0xffc0c0c0]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[Legal_OpcItem.Value==true]]>
+			</condition>
+			<expr>
+				<![CDATA[0xff000000]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[0xffc0c0c0]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<param access-modifier="private" name="_ParamName" display-name="_ParamName" uuid="60b2131e-cdf0-4981-8a56-be4cd24c7eff" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="Value_OpcItem" display-name="Value_OpcItem" uuid="0caabae4-7d68-4b83-ba4f-1816f42c60db" base-type="ApItemFloat8" base-type-id="237365fa-a3a0-4100-8401-f40e324353da" ver="1">
+		<init target="Source" ver="1" ref="unit.Sources.IVK_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["SIKN_Summary."+_ParamName+".Value"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Legal_OpcItem" display-name="Legal_OpcItem" uuid="7351e40e-7455-4cff-9ed9-bcbe8b2bb751" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="1">
+		<init target="Source" ver="1" ref="unit.Sources.IVK_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["SIKN_Summary."+_ParamName+".Legal"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Value_OutputFormatter" display-name="Value_OutputFormatter" uuid="b0ff5243-cd5f-4285-b0e4-a7b04795bd81" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="507a80d2-8720-4851-981c-85b2c40924e3" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" ref="_Precision"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Value_OpcItem.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<param access-modifier="private" name="_Precision" display-name="_Precision" uuid="5b75e633-a0b4-4ce6-aade-ab723d8d3589" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="Value_OpcItem_String" display-name="Value_OpcItem_String" uuid="8e23f907-70c6-4d13-b355-747fcb3d5ccc" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="1">
+		<init target="Source" ver="1" ref="unit.Sources.IVK_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[(_SIKN_or_BIK=="SIKN")?("SIKN_Summary."+_ParamName+".Value"):("BIK_Summary."+_ParamName)]]>
+			</expr>
+		</init>
+	</object>
+	<param access-modifier="private" name="_IsString" display-name="_IsString" uuid="d1811776-af29-46f7-9e30-142760661d23" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="1"/>
+	<do-trace access-modifier="private" target="Text" ver="1">
+		<conditional-expr>
+			<condition>
+				<![CDATA[IsString==false]]>
+			</condition>
+			<expr>
+				<![CDATA[Value_OutputFormatter]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[IsString==true]]>
+			</condition>
+			<expr>
+				<![CDATA[Value_OpcItem_String.Value]]>
+			</expr>
+		</conditional-expr>
+	</do-trace>
+	<object access-modifier="private" name="IsString" display-name="IsString" uuid="b5204114-eafa-43af-9645-dc0608cb18fe" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="1"/>
+	<init target="IsString" ver="1" ref="_IsString"/>
+	<param access-modifier="private" name="_SIKN_or_BIK" display-name="_SIKN_or_BIK" uuid="e4c1dc86-a5f8-4907-933b-2e6a1fb0e12f" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+</type>
+

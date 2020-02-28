@@ -1,0 +1,153 @@
+<type access-modifier="private" name="popup_LEGEND_menu_1" display-name="попап меню второго уровня" uuid="bccd8ad7-1b24-47bc-829b-4ce887b6ef1f" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="2">
+	<designed target="X" value="0" ver="2"/>
+	<designed target="Y" value="0" ver="2"/>
+	<designed target="Rotation" value="0" ver="2"/>
+	<designed target="Scale" value="1" ver="2"/>
+	<designed target="Visible" value="true" ver="2"/>
+	<designed target="Enabled" value="true" ver="2"/>
+	<designed target="Tooltip" value="" ver="2"/>
+	<designed target="Width" value="150" ver="2"/>
+	<designed target="Height" value="150" ver="2"/>
+	<designed target="PenColor" value="0xff632fff" ver="2"/>
+	<designed target="PenStyle" value="0" ver="2"/>
+	<designed target="PenWidth" value="3" ver="2"/>
+	<designed target="BrushColor" value="4293980400" ver="2"/>
+	<designed target="BrushStyle" value="1" ver="2"/>
+	<designed target="WindowX" value="0" ver="2"/>
+	<designed target="WindowY" value="0" ver="2"/>
+	<designed target="WindowWidth" value="1920" ver="2"/>
+	<designed target="WindowHeight" value="1080" ver="2"/>
+	<designed target="WindowCaption" value="MainForm" ver="2"/>
+	<designed target="ShowWindowCaption" value="false" ver="2"/>
+	<designed target="ShowWindowMinimize" value="false" ver="2"/>
+	<designed target="ShowWindowMaximize" value="false" ver="2"/>
+	<designed target="ShowWindowClose" value="false" ver="2"/>
+	<designed target="AlwaysOnTop" value="true" ver="2"/>
+	<designed target="WindowSizeMode" value="2" ver="2"/>
+	<designed target="WindowBorderStyle" value="2" ver="2"/>
+	<designed target="WindowState" value="0" ver="2"/>
+	<designed target="WindowScalingMode" value="0" ver="2"/>
+	<designed target="MonitorNumber" value="0" ver="2"/>
+	<designed target="WindowPosition" value="0" ver="2"/>
+	<designed target="WindowCloseMode" value="0" ver="2"/>
+	<object access-modifier="private" name="Buttons" display-name="Buttons" uuid="7655bc28-e53a-4bb6-9f6d-d6d064359722" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="2" cardinal="9">
+		<designed target="X" value="4.5" ver="2"/>
+		<designed target="Y" value="46.5" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="137" ver="2"/>
+		<designed target="Height" value="23" ver="2"/>
+		<designed target="Text" value="Item_1" ver="2"/>
+		<designed target="TextAlignment" value="132" ver="2"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="2"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="2"/>
+		<designed target="BrushColor" value="4293980400" ver="2"/>
+		<designed target="BrushStyle" value="1" ver="2"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="2"/>
+		<designed target="OnClickBrushStyle" value="1" ver="2"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="2"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="2"/>
+		<designed target="PenColor" value="0xffff0000" ver="2"/>
+		<designed target="PenStyle" value="0" ver="2"/>
+		<designed target="PenWidth" value="5" ver="2"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="2"/>
+		<designed target="OnClickPenStyle" value="0" ver="2"/>
+		<designed target="OnClickPenWidth" value="1" ver="2"/>
+		<designed target="OnHoverPenColor" value="0xffc0c0c0" ver="2"/>
+		<designed target="OnHoverPenStyle" value="1" ver="2"/>
+		<designed target="OnHoverPenWidth" value="1" ver="2"/>
+		<designed target="Checkable" value="false" ver="2"/>
+		<object access-modifier="private" name="LayoutWeight_1" display-name="LayoutWeight_1" uuid="1c498681-583f-4fd4-89e5-efc768e9c1ff" base-type="LayoutWeight" base-type-id="8f3d975c-9645-4288-9406-a8dda0527008" ver="2" cardinal="1">
+			<designed target="Weight" value="1" ver="2"/>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MousePress">
+			<body kind="om">
+				<![CDATA[pParentMenu.SubMenuChoise = Text;
+pParentMenu.bChoiseSubMenu = false;
+Close();
+// Непосредственно перепривязка оси происходит в обработчике изменений переменной SubMenuChoise окна popup_LEGEND_menu
+
+
+]]>
+			</body>
+		</do-on>
+		<designed target="DisabledFontColor" value="4278190080" ver="3"/>
+		<designed target="DisabledBrushColor" value="4290295218" ver="3"/>
+		<designed target="DisabledBrushStyle" value="1" ver="3"/>
+		<designed target="DisabledPenColor" value="4290295218" ver="3"/>
+		<designed target="DisabledPenStyle" value="1" ver="3"/>
+		<designed target="DisabledPenWidth" value="1" ver="3"/>
+	</object>
+	<object access-modifier="private" name="LinearLayout_1" display-name="LinearLayout_1" uuid="4da4c5ea-471e-413c-93e7-9cd763280769" base-type="LinearLayout" base-type-id="800edd71-7303-408c-890b-8346e98f5718" ver="2">
+		<designed target="Orientation" value="2" ver="2"/>
+		<designed target="Gap" value="0" ver="2"/>
+	</object>
+	<object access-modifier="private" name="bInit" display-name="bInit" uuid="d238ef0b-ca71-4646-bbec-5eaac7a3b947" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+	<object access-modifier="private" name="pTrends" display-name="pTrends" uuid="fef784c8-17ae-47d2-bb60-15acf86679c7" base-type="Trends_1" base-type-id="81673f92-ac48-4244-bfe3-ddbdcc98167a" base-const="true" base-ref="true" ver="2"/>
+	<object access-modifier="private" name="pParentMenu" display-name="pParentMenu" uuid="a077357a-9a57-4ed9-9407-3a99afe50c70" base-type="popup_LEGEND_menu" base-type-id="731d1ce9-ac4c-4005-bffe-733e02562691" base-const="true" base-ref="true" ver="2"/>
+	<object access-modifier="private" name="bClose" display-name="bClose" uuid="e5476e46-97ed-4bda-bffa-9496cf27e50d" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="2"/>
+	<do-trace access-modifier="private" target="bClose" ver="2">
+		<body>
+			<![CDATA[pParentMenu.bCloseSubMenu]]>
+		</body>
+	</do-trace>
+	<init target="bClose" ver="2" value="false"/>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="2" event="Opened">
+		<body kind="om">
+			<![CDATA[i:uint4 = 0;
+while (i<Buttons.Length){
+	if (i<pParentMenu.menu_1_Item_Count){
+		Buttons[i].Text = pParentMenu.menu_1_Item[i];
+//		Buttons[i].Visible = true;
+		Buttons[i].LayoutWeight_1= 1;
+	}else{
+//		Buttons[i].Visible = false;
+		Buttons[i].Text = "";
+		Buttons[i].LayoutWeight_1= 0;
+	}
+	i= i+1;
+}
+Height = pParentMenu.menu_1_Item_Count*30;
+//WindowHeight=pParentMenu.menu_1_Item_Count*30;
+//pTrends.DebugTool_1.Log("Height "+Str.ToString(Height));]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="2" event="MouseLeave">
+		<body kind="om">
+			<![CDATA[pParentMenu.bChoiseSubMenu = false;
+Close();]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="2" event="MouseEnter">
+		<body kind="om">
+			<![CDATA[pParentMenu.bChoiseSubMenu = true;
+]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Timer_1" display-name="Timer_1" uuid="f83a28ce-95cb-4cd9-809a-7b614d38c151" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="2">
+		<designed target="Period" value="500" ver="2"/>
+		<designed target="Active" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="OnTimer">
+			<body kind="om">
+				<![CDATA[if (bClose&& !pParentMenu.bChoiseSubMenu){
+	Close();
+}
+// Процедура закрытия окна меню в случае выхода курсора за пределы окна меню, 
+//	и за пределы кнопки выбора шкалы.
+// Использование таймера обусловлено вероятностью переходного периода при движении между 
+//	окнами основного и подчиненного меню.]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Active" ver="2">
+			<body>
+				<![CDATA[(!pParentMenu.bChoiseSubMenu)&&bClose]]>
+			</body>
+		</do-trace>
+	</object>
+</type>
+

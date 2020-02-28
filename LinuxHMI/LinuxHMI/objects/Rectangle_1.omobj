@@ -1,0 +1,183 @@
+<type access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="d18af1ea-3a23-4643-adfc-414807f188c4" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="100" ver="1"/>
+	<designed target="Height" value="100" ver="1"/>
+	<designed target="RoundingRadius" value="0" ver="1"/>
+	<designed target="PenColor" value="4278190080" ver="1"/>
+	<designed target="PenStyle" value="1" ver="1"/>
+	<designed target="PenWidth" value="1" ver="1"/>
+	<designed target="BrushColor" value="4278190080" ver="1"/>
+	<designed target="BrushStyle" value="0" ver="1"/>
+	<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="c915b937-6953-4ea3-b3d7-4556b1b1fa45" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="48" ver="1"/>
+		<designed target="Y" value="-320" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="140" ver="1"/>
+		<designed target="Height" value="50" ver="1"/>
+		<designed target="RoundingRadius" value="5" ver="1"/>
+		<designed target="PenColor" value="0xff323232" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff485268" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="MouseEnter">
+			<body kind="om">
+				<![CDATA[this.PenWidth=3;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="1" event="MouseLeave">
+			<body kind="om">
+				<![CDATA[this.PenWidth=1;]]>
+			</body>
+		</do-on>
+		<object access-modifier="private" name="Button_Face" display-name="Button_Face" uuid="9a9ffe17-8190-485f-9473-0201525c2da5" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="3" ver="1"/>
+			<designed target="Y" value="3" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="134" ver="1"/>
+			<designed target="Height" value="44" ver="1"/>
+			<designed target="RoundingRadius" value="3" ver="1"/>
+			<designed target="PenColor" value="0xff697696" ver="1"/>
+			<designed target="PenStyle" value="1" ver="1"/>
+			<designed target="PenWidth" value="2" ver="1"/>
+			<designed target="BrushColor" value="0xff889ac3" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Button_Name" display-name="Button_Name" uuid="29520aaa-1aa7-452b-9bff-c31018e75f17" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="28.1818" ver="1"/>
+			<designed target="Y" value="8.54545" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="84" ver="1"/>
+			<designed target="Height" value="33" ver="1"/>
+			<designed target="Text" value="ОСИКН" ver="1"/>
+			<designed target="Font" value="Sans Serif,18,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="c382a420-c9cb-4d1c-a805-1dae5ad1a4d5" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="32" ver="1"/>
+		<designed target="Y" value="-199" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="261" ver="1"/>
+		<designed target="Height" value="66" ver="1"/>
+		<designed target="Text" value="Button" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<object access-modifier="private" name="LinearGradient_1" display-name="LinearGradient_1" uuid="fa936431-5dd1-466d-9328-cf4125740caa" base-type="LinearGradient" base-type-id="3fca3251-ff83-4d88-b94d-b3ac37a76ba0" ver="1">
+			<designed target="Rotation" value="0" ver="1"/>
+			<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="e76ccf31-4440-4917-859e-3df4e2fd287f" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="0" ver="1"/>
+				<designed target="Color" value="0xff000000" ver="1"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="98e658f4-8c60-4c59-8b68-b1389ffd9dd8" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="1" ver="1"/>
+				<designed target="Color" value="0xffffffff" ver="1"/>
+			</object>
+		</object>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="27af11dd-4fde-4c1a-a36b-593d1d0ae131" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="23" ver="1"/>
+		<designed target="Y" value="-102" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="199.00000000000003" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="RoundingRadius" value="5" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="0" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+		<object access-modifier="private" name="LinearLayout_1" display-name="LinearLayout_1" uuid="aae3a022-d814-4e8e-bec1-86c02d19acb9" base-type="LinearLayout" base-type-id="800edd71-7303-408c-890b-8346e98f5718" ver="1">
+			<designed target="Orientation" value="1" ver="1"/>
+			<designed target="Gap" value="0" ver="1"/>
+		</object>
+		<object access-modifier="private" name="LinearGradient_1" display-name="LinearGradient_1" uuid="43845c9b-75a2-4b17-b1c8-35746d36445c" base-type="LinearGradient" base-type-id="3fca3251-ff83-4d88-b94d-b3ac37a76ba0" ver="1">
+			<designed target="Rotation" value="0" ver="1"/>
+			<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="dd34b88d-66cb-4498-873f-23359c26834e" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="0" ver="1"/>
+				<designed target="Color" value="4278190080" ver="1"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="d2c749e0-77d7-48d7-95ae-e5a937f02c67" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="0.20000000000000001" ver="1"/>
+				<designed target="Color" value="4294967295" ver="1"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_3" display-name="GradientPoint_3" uuid="3379c2be-da92-4ce5-87ac-3dab884a57a8" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="1" ver="1"/>
+				<designed target="Color" value="0xff000000" ver="1"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_4" display-name="GradientPoint_4" uuid="2c24690c-6807-4e47-af5b-079152059eb2" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="0.8" ver="1"/>
+				<designed target="Color" value="0xffffffff" ver="1"/>
+			</object>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_3" display-name="Rectangle_3" uuid="285aa679-b91b-4192-8f60-06b0e33f0ddc" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="55.999999999999986" ver="1"/>
+		<designed target="Y" value="-102" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="130" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="RoundingRadius" value="5" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="0" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+		<object access-modifier="private" name="LinearLayout_1" display-name="LinearLayout_1" uuid="01715e5f-e545-4cc9-8243-335d1e9f6bee" base-type="LinearLayout" base-type-id="800edd71-7303-408c-890b-8346e98f5718" ver="1">
+			<designed target="Orientation" value="1" ver="1"/>
+			<designed target="Gap" value="0" ver="1"/>
+		</object>
+		<object access-modifier="private" name="LinearGradient_1" display-name="LinearGradient_1" uuid="79fc2ae1-05b1-4b03-9d1d-d3c3651510a5" base-type="LinearGradient" base-type-id="3fca3251-ff83-4d88-b94d-b3ac37a76ba0" ver="1">
+			<designed target="Rotation" value="90" ver="1"/>
+			<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="75b01b74-db63-4fbc-a5dd-db6599207c31" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="0" ver="1"/>
+				<designed target="Color" value="4278190080" ver="1"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="a90ca384-ac76-49cf-8f71-805d0632a25b" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="0.20000000000000001" ver="1"/>
+				<designed target="Color" value="4294967295" ver="1"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_3" display-name="GradientPoint_3" uuid="dfea15f7-ea8d-4d99-a9d4-c91e2f72a993" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="1" ver="1"/>
+				<designed target="Color" value="0xff000000" ver="1"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_4" display-name="GradientPoint_4" uuid="2db3703e-69eb-4907-bed2-09055481d8e0" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="1">
+				<designed target="Position" value="0.8" ver="1"/>
+				<designed target="Color" value="0xffffffff" ver="1"/>
+			</object>
+		</object>
+	</object>
+</type>
+

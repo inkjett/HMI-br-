@@ -1,0 +1,2716 @@
+<type ver="2" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" base-type="Form" uuid="9cb26782-be31-4a0d-a350-9369758ab586" display-name="Form_1" name="SettingsView" access-modifier="private">
+	<designed target="X" value="0" ver="2"/>
+	<designed target="Y" value="0" ver="2"/>
+	<designed target="Rotation" value="0" ver="2"/>
+	<designed target="Scale" value="1" ver="2"/>
+	<designed target="Visible" value="true" ver="2"/>
+	<designed target="Enabled" value="true" ver="2"/>
+	<designed target="Tooltip" value="" ver="2"/>
+	<designed target="Width" value="560" ver="2"/>
+	<designed target="Height" value="410" ver="2"/>
+	<designed target="PenColor" value="4278190080" ver="2"/>
+	<designed target="PenStyle" value="0" ver="2"/>
+	<designed target="PenWidth" value="1" ver="2"/>
+	<designed target="BrushColor" value="4293980400" ver="2"/>
+	<designed target="BrushStyle" value="1" ver="2"/>
+	<designed target="WindowX" value="0" ver="2"/>
+	<designed target="WindowY" value="0" ver="2"/>
+	<designed target="WindowWidth" value="430" ver="2"/>
+	<designed target="WindowHeight" value="380" ver="2"/>
+	<designed target="WindowCaption" value="Вид таблицы" ver="2"/>
+	<designed target="ShowWindowCaption" value="true" ver="2"/>
+	<designed target="ShowWindowMinimize" value="false" ver="2"/>
+	<designed target="ShowWindowMaximize" value="false" ver="2"/>
+	<designed target="ShowWindowClose" value="true" ver="2"/>
+	<designed target="AlwaysOnTop" value="false" ver="2"/>
+	<designed target="WindowSizeMode" value="0" ver="2"/>
+	<designed target="WindowBorderStyle" value="2" ver="2"/>
+	<designed target="WindowState" value="0" ver="2"/>
+	<designed target="WindowScalingMode" value="0" ver="2"/>
+	<designed target="MonitorNumber" value="0" ver="2"/>
+	<designed target="WindowPosition" value="2" ver="2"/>
+	<designed target="WindowCloseMode" value="0" ver="2"/>
+	<object access-modifier="private" name="private" display-name="private" uuid="ea6c695b-438d-4680-95bc-8f269f14f102" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="51.2857" ver="2"/>
+		<designed target="Y" value="-10.1429" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="9.42857" ver="2"/>
+		<designed target="Height" value="5.42857" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="4278190080" ver="2"/>
+		<designed target="PenStyle" value="0" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="0f80e64b-eb7d-48cd-b97c-4598b49812b8" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="16" ver="2"/>
+		<designed target="Y" value="21" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="530" ver="2"/>
+		<designed target="Height" value="30" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+		<designed target="PenStyle" value="1" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1_1" display-name="Rectangle_1_1" uuid="93af3ad6-ebad-47d0-8318-86942b4ae238" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="128.5" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="251.5" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_2_1" display-name="Rectangle_2_1" uuid="58ded777-215f-41a9-90b0-b506acb3cc0d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="457" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="73" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="6b97ea3b-6e84-46d7-aafd-eb54d3b379b1" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="2.8" ver="2"/>
+			<designed target="Y" value="5.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="126.7" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Время генерации" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_1" display-name="TextEdit_1" uuid="a408eed9-f2fd-49a9-9a07-1edbe5298d63" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="135" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="240" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="0xff000000" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="2" event="EditFinished">
+				<body kind="om">
+					<![CDATA[if (bInit) {
+	pSettingsForm.Settings.View.Column1.Caption = text;
+	pSettingsForm.CheckModify();
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Checkbox_1" display-name="Checkbox_1" uuid="f7361fa6-9f31-43f8-8221-e48d2639df0f" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="2">
+			<designed target="X" value="413" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="17" ver="2"/>
+			<designed target="Height" value="23" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="State" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="StateChanged">
+				<body kind="javascript">
+					<![CDATA[if (bInit){
+	if (countFlagsInternal < countFlags) countFlagsInternal++;
+	else
+	{
+		pSettingsForm.Settings.View.Column1._Visible = state;
+		pSettingsForm.CheckModify();
+	}
+}
+
+
+]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="Enabled" ver="2">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Checkbox_1.State && !Rectangle_2.Checkbox_1.State]]>
+					</condition>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="TextEdit_2" display-name="TextEdit_2" uuid="683da02d-b451-4f4a-9c9e-e2f2afa4823a" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="461" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="48" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<object access-modifier="private" name="RecBorder_Alarm" display-name="RecBorder_Alarm" uuid="2f99ac67-234c-4af8-a494-59a392ca845f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="0" ver="2"/>
+				<designed target="Y" value="0" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="47" ver="2"/>
+				<designed target="Height" value="20" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="0xffff0000" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="2" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="ba02f922-f9e4-45b5-ad09-49cdbd1abea3" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="3">
+					<designed target="X" value="49.8667" ver="3"/>
+					<designed target="Y" value="2.2" ver="3"/>
+					<designed target="Rotation" value="0" ver="3"/>
+					<designed target="Scale" value="1" ver="3"/>
+					<designed target="Visible" value="true" ver="3"/>
+					<designed target="Enabled" value="true" ver="3"/>
+					<designed target="Tooltip" value="Ошибка ввода. Значение параметра должно быть в пределах от 0 до 65535" ver="3"/>
+					<designed target="Width" value="16" ver="3"/>
+					<designed target="Height" value="16" ver="3"/>
+					<designed target="PenColor" value="4278190080" ver="3"/>
+					<designed target="PenStyle" value="0" ver="3"/>
+					<designed target="PenWidth" value="1" ver="3"/>
+					<designed target="ImageFile" value="error.png" ver="3"/>
+					<designed target="Active" value="true" ver="3"/>
+					<designed target="CurrentFrameNumber" value="0" ver="3"/>
+					<designed target="Speed" value="1" ver="3"/>
+				</object>
+			</object>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="javascript">
+					<![CDATA[var errorTrue = 0b1;
+var errorFalse = 0b111111111111110;
+
+if (bInit){
+	RecBorder_Alarm.Visible = false;
+	pSettingsForm.Settings.View.Column1._Width = text;
+	var v = Number.parseInt(text);
+	var mask1 = /[0-9]{1}\d{0,4}/; //регулярное выражения числа от 1 до 99999
+	//удаляем число из строки
+	var str = text.replace(mask1,"");
+	//если в строке что-то осталось или число - не число, то подсвечиваем рамку
+	if (str.length > 0 && str != "" || isNaN(v) || v < 0 || v > 65535) 
+	{
+		RecBorder_Alarm.Visible = true;
+		pSettingsForm.errorWord = pSettingsForm.errorWord | errorTrue;
+	}
+	else pSettingsForm.errorWord = pSettingsForm.errorWord & errorFalse;
+	pSettingsForm.CheckModify();
+	pSettingsForm.CheckError();
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="4bef1ed8-28c9-4bd4-9077-89440ac2e331" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="16" ver="2"/>
+		<designed target="Y" value="51" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="530" ver="2"/>
+		<designed target="Height" value="30" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+		<designed target="PenStyle" value="1" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1_1" display-name="Rectangle_1_1" uuid="54216fc4-50ce-4cd5-8dc5-422f3685529f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="128.5" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="251.5" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_2_1" display-name="Rectangle_2_1" uuid="97404367-2b62-4817-96c9-4445d16340ea" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="457" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="73" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="39559a3d-9d3e-444b-a564-0a00de5417ef" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="2.8" ver="2"/>
+			<designed target="Y" value="5.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="126.7" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Время срабатывания" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_1" display-name="TextEdit_1" uuid="67357402-76b8-4ee0-b2e7-733f57bb1c08" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="135" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="240" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="0xff000000" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="om">
+					<![CDATA[if (bInit) {
+	pSettingsForm.Settings.View.Column2.Caption = text;
+	pSettingsForm.CheckModify();
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Checkbox_1" display-name="Checkbox_1" uuid="d6967c01-7570-4d97-8a65-051990c2e1f9" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="2">
+			<designed target="X" value="413" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="23" ver="2"/>
+			<designed target="Height" value="23" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="State" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="StateChanged">
+				<body kind="javascript">
+					<![CDATA[if (bInit){
+	if (countFlagsInternal < countFlags) countFlagsInternal++;
+	else
+	{
+		pSettingsForm.Settings.View.Column2._Visible = state;
+		pSettingsForm.CheckModify();
+	}
+}]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="Enabled" ver="2">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Checkbox_1.State && !Rectangle_1.Checkbox_1.State]]>
+					</condition>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="TextEdit_2" display-name="TextEdit_2" uuid="bfb4421a-bd14-46f2-9def-79dd3a6278e9" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="461" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="48" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<object access-modifier="private" name="RecBorder_Alarm" display-name="RecBorder_Alarm" uuid="6012c095-fc0c-4a59-8cfb-bf4af1b89a5f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="0" ver="2"/>
+				<designed target="Y" value="0" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="47" ver="2"/>
+				<designed target="Height" value="20" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="0xffff0000" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="2" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="20589405-5e7b-46e1-9722-87770d01e00e" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="3">
+					<designed target="X" value="49.8667" ver="3"/>
+					<designed target="Y" value="2.2" ver="3"/>
+					<designed target="Rotation" value="0" ver="3"/>
+					<designed target="Scale" value="1" ver="3"/>
+					<designed target="Visible" value="true" ver="3"/>
+					<designed target="Enabled" value="true" ver="3"/>
+					<designed target="Tooltip" value="Ошибка ввода. Значение параметра должно быть в пределах от 0 до 65535" ver="3"/>
+					<designed target="Width" value="16" ver="3"/>
+					<designed target="Height" value="16" ver="3"/>
+					<designed target="PenColor" value="4278190080" ver="3"/>
+					<designed target="PenStyle" value="0" ver="3"/>
+					<designed target="PenWidth" value="1" ver="3"/>
+					<designed target="ImageFile" value="error.png" ver="3"/>
+					<designed target="Active" value="true" ver="3"/>
+					<designed target="CurrentFrameNumber" value="0" ver="3"/>
+					<designed target="Speed" value="1" ver="3"/>
+				</object>
+			</object>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="javascript">
+					<![CDATA[var errorTrue = 0b10;
+var errorFalse = 0b111111111111101;
+
+if (bInit){
+	RecBorder_Alarm.Visible = false;
+	pSettingsForm.Settings.View.Column2._Width = text;
+	var v = Number.parseInt(text);
+	var mask1 = /[0-9]{1}\d{0,4}/; //регулярное выражения числа от 1 до 99999
+	//удаляем число из строки
+	var str = text.replace(mask1,"");
+	//если в строке что-то осталось или число - не число, то подсвечиваем рамку
+	if (str.length > 0 && str != "" || isNaN(v) || v < 0 || v > 65535) 
+	{
+		RecBorder_Alarm.Visible = true;
+		pSettingsForm.errorWord = pSettingsForm.errorWord | errorTrue;
+	}
+	else pSettingsForm.errorWord = pSettingsForm.errorWord & errorFalse;
+	pSettingsForm.CheckModify();
+	pSettingsForm.CheckError();
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_3" display-name="Rectangle_3" uuid="130d4932-1cf3-4c8c-9a9e-7ad7375fa43b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="16" ver="2"/>
+		<designed target="Y" value="81" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="530" ver="2"/>
+		<designed target="Height" value="30" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+		<designed target="PenStyle" value="1" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="5e6251bf-6b78-44d5-9747-2bed3e5ae83d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="128.5" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="251.5" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="4e69d871-f837-4920-bfb6-09229884dbdc" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="457" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="73" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="2bf673a3-55eb-48cc-bf23-8562f937ecfb" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="2.8" ver="2"/>
+			<designed target="Y" value="5.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="126.7" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Время деактивации" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_1" display-name="TextEdit_1" uuid="bb5f0f01-9e68-4d08-a2e2-513de604777c" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="135" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="240" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="0xff000000" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="om">
+					<![CDATA[if (bInit) {
+	pSettingsForm.Settings.View.Column3.Caption = text;
+	pSettingsForm.CheckModify();
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Checkbox_1" display-name="Checkbox_1" uuid="d8bc7285-c2da-45bf-b1f5-e887234c4946" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="2">
+			<designed target="X" value="413" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="23" ver="2"/>
+			<designed target="Height" value="23" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="State" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="StateChanged">
+				<body kind="javascript">
+					<![CDATA[if (bInit){
+	if (countFlagsInternal < countFlags) countFlagsInternal++;
+	else
+	{
+		pSettingsForm.Settings.View.Column3._Visible = state;
+		pSettingsForm.CheckModify();
+	}
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="TextEdit_2" display-name="TextEdit_2" uuid="8b9b6b47-26db-4243-b9e1-a60859805375" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="461" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="48" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<object access-modifier="private" name="RecBorder_Alarm" display-name="RecBorder_Alarm" uuid="2fc6b3dd-7dc1-4f6a-a81f-f7060c87435d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="0" ver="2"/>
+				<designed target="Y" value="0" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="47" ver="2"/>
+				<designed target="Height" value="20" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="0xffff0000" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="2" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="c5adf06d-3604-452f-93a3-f1452879911f" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="3">
+					<designed target="X" value="49.8667" ver="3"/>
+					<designed target="Y" value="2.2" ver="3"/>
+					<designed target="Rotation" value="0" ver="3"/>
+					<designed target="Scale" value="1" ver="3"/>
+					<designed target="Visible" value="true" ver="3"/>
+					<designed target="Enabled" value="true" ver="3"/>
+					<designed target="Tooltip" value="Ошибка ввода. Значение параметра должно быть в пределах от 0 до 65535" ver="3"/>
+					<designed target="Width" value="16" ver="3"/>
+					<designed target="Height" value="16" ver="3"/>
+					<designed target="PenColor" value="4278190080" ver="3"/>
+					<designed target="PenStyle" value="0" ver="3"/>
+					<designed target="PenWidth" value="1" ver="3"/>
+					<designed target="ImageFile" value="error.png" ver="3"/>
+					<designed target="Active" value="true" ver="3"/>
+					<designed target="CurrentFrameNumber" value="0" ver="3"/>
+					<designed target="Speed" value="1" ver="3"/>
+				</object>
+			</object>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="javascript">
+					<![CDATA[var errorTrue = 0b100;
+var errorFalse = 0b111111111111011;
+
+if (bInit){
+	RecBorder_Alarm.Visible = false;
+	pSettingsForm.Settings.View.Column3._Width = text;
+	var v = Number.parseInt(text);
+	var mask1 = /[0-9]{1}\d{0,4}/; //регулярное выражения числа от 1 до 99999
+	//удаляем число из строки
+	var str = text.replace(mask1,"");
+	//если в строке что-то осталось или число - не число, то подсвечиваем рамку
+	if (str.length > 0 && str != "" || isNaN(v) || v < 0 || v > 65535) 
+	{
+		RecBorder_Alarm.Visible = true;
+		pSettingsForm.errorWord = pSettingsForm.errorWord | errorTrue;
+	}
+	else pSettingsForm.errorWord = pSettingsForm.errorWord & errorFalse;
+	pSettingsForm.CheckModify();
+	pSettingsForm.CheckError();
+}
+
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_4" display-name="Rectangle_4" uuid="bd34444b-24d6-43cd-bb2f-08fae871d36a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="16" ver="2"/>
+		<designed target="Y" value="111" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="530" ver="2"/>
+		<designed target="Height" value="30" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+		<designed target="PenStyle" value="1" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="5391372c-aa8f-4bc2-9659-faf1d8641a58" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="128.5" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="251.5" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="95eab0ad-28e4-42ee-8605-4bfdb7757724" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="457" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="73" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="14ca9398-f89b-41c5-851b-df8138da4ead" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="2.8" ver="2"/>
+			<designed target="Y" value="5.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="126.7" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Сообщение" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_1" display-name="TextEdit_1" uuid="ca6a16a8-ddd4-436c-b23c-e3027001f522" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="135" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="240" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="0xff000000" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="om">
+					<![CDATA[if (bInit) {
+	pSettingsForm.Settings.View.Column4.Caption = text;
+	pSettingsForm.CheckModify();
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Checkbox_1" display-name="Checkbox_1" uuid="6c8ce639-413f-4db0-8aaa-54bc3c7b8a9b" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="2">
+			<designed target="X" value="413" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="false" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="17" ver="2"/>
+			<designed target="Height" value="23" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="State" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="StateChanged">
+				<body kind="javascript">
+					<![CDATA[if (bInit){
+	if (countFlagsInternal < countFlags) countFlagsInternal++;
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="TextEdit_2" display-name="TextEdit_2" uuid="1143b5ae-6291-4ce9-8e05-b2fc3505393a" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="461" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="48" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<object access-modifier="private" name="RecBorder_Alarm" display-name="RecBorder_Alarm" uuid="3fe96ea8-2715-40d3-831c-4672de23dd7c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="0" ver="2"/>
+				<designed target="Y" value="0" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="47" ver="2"/>
+				<designed target="Height" value="20" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="0xffff0000" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="2" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="900811ad-7544-4ff0-a3ca-66c813f15a2f" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="3">
+					<designed target="X" value="49.8667" ver="3"/>
+					<designed target="Y" value="2.2" ver="3"/>
+					<designed target="Rotation" value="0" ver="3"/>
+					<designed target="Scale" value="1" ver="3"/>
+					<designed target="Visible" value="true" ver="3"/>
+					<designed target="Enabled" value="true" ver="3"/>
+					<designed target="Tooltip" value="Ошибка ввода. Значение параметра должно быть в пределах от 0 до 65535" ver="3"/>
+					<designed target="Width" value="16" ver="3"/>
+					<designed target="Height" value="16" ver="3"/>
+					<designed target="PenColor" value="4278190080" ver="3"/>
+					<designed target="PenStyle" value="0" ver="3"/>
+					<designed target="PenWidth" value="1" ver="3"/>
+					<designed target="ImageFile" value="error.png" ver="3"/>
+					<designed target="Active" value="true" ver="3"/>
+					<designed target="CurrentFrameNumber" value="0" ver="3"/>
+					<designed target="Speed" value="1" ver="3"/>
+				</object>
+			</object>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="3" event="EditFinished">
+				<body kind="javascript">
+					<![CDATA[var errorTrue = 0b1000;
+var errorFalse = 0b111111111110111;
+
+if (bInit){
+	RecBorder_Alarm.Visible = false;
+	pSettingsForm.Settings.View.Column4._Width = text;
+	var v = Number.parseInt(text);
+	var mask1 = /[0-9]{1}\d{0,4}/; //регулярное выражения числа от 1 до 99999
+	//удаляем число из строки
+	var str = text.replace(mask1,"");
+	//если в строке что-то осталось или число - не число, то подсвечиваем рамку
+	if (str.length > 0 && str != "" || isNaN(v) || v < 0 || v > 65535) 
+	{
+		RecBorder_Alarm.Visible = true;
+		pSettingsForm.errorWord = pSettingsForm.errorWord | errorTrue;
+	}
+	else pSettingsForm.errorWord = pSettingsForm.errorWord & errorFalse;
+	pSettingsForm.CheckModify();
+	pSettingsForm.CheckError();
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_5" display-name="Rectangle_5" uuid="666d773d-d906-44ce-823e-651dc5be44fa" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="16" ver="2"/>
+		<designed target="Y" value="141" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="530" ver="2"/>
+		<designed target="Height" value="30" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+		<designed target="PenStyle" value="1" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="db22f910-c2e7-4737-b07d-047da803a26e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="128.5" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="251.5" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="26c7bb18-def7-4bcb-af0a-a3ce680bf2bb" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="457" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="73" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="811699c5-0403-4b72-9ec8-1a5e4fd5055d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="2.8" ver="2"/>
+			<designed target="Y" value="5.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="126.7" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Источник события" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_1" display-name="TextEdit_1" uuid="39a308cf-3e19-43e5-a2bc-3d0756e5d0b3" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="135" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="240" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="0xff000000" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="om">
+					<![CDATA[if (bInit) {
+	pSettingsForm.Settings.View.Column5.Caption = text;
+	pSettingsForm.CheckModify();
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Checkbox_1" display-name="Checkbox_1" uuid="d430d1fa-baf8-4966-a328-f021c2194b9f" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="2">
+			<designed target="X" value="413" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="23" ver="2"/>
+			<designed target="Height" value="23" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="State" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="StateChanged">
+				<body kind="javascript">
+					<![CDATA[if (bInit){
+	if (countFlagsInternal < countFlags) countFlagsInternal++;
+	else
+	{
+		pSettingsForm.Settings.View.Column5._Visible = state;
+		pSettingsForm.CheckModify();
+	}
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="TextEdit_2" display-name="TextEdit_2" uuid="1577f689-3548-4ec3-923b-4484e0c780e5" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="461" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="48" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<object access-modifier="private" name="RecBorder_Alarm" display-name="RecBorder_Alarm" uuid="ede5a7e9-a970-41ec-9b8a-7ca3a688711b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="0" ver="2"/>
+				<designed target="Y" value="0" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="47" ver="2"/>
+				<designed target="Height" value="20" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="0xffff0000" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="2" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="0f7de64b-10d3-4e3a-a62f-0a97bfe3fc88" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="3">
+					<designed target="X" value="49.8667" ver="3"/>
+					<designed target="Y" value="2.2" ver="3"/>
+					<designed target="Rotation" value="0" ver="3"/>
+					<designed target="Scale" value="1" ver="3"/>
+					<designed target="Visible" value="true" ver="3"/>
+					<designed target="Enabled" value="true" ver="3"/>
+					<designed target="Tooltip" value="Ошибка ввода. Значение параметра должно быть в пределах от 0 до 65535" ver="3"/>
+					<designed target="Width" value="16" ver="3"/>
+					<designed target="Height" value="16" ver="3"/>
+					<designed target="PenColor" value="4278190080" ver="3"/>
+					<designed target="PenStyle" value="0" ver="3"/>
+					<designed target="PenWidth" value="1" ver="3"/>
+					<designed target="ImageFile" value="error.png" ver="3"/>
+					<designed target="Active" value="true" ver="3"/>
+					<designed target="CurrentFrameNumber" value="0" ver="3"/>
+					<designed target="Speed" value="1" ver="3"/>
+				</object>
+			</object>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="javascript">
+					<![CDATA[var errorTrue = 0b10000;
+var errorFalse = 0b111111111101111;
+
+if (bInit){
+	RecBorder_Alarm.Visible = false;
+	pSettingsForm.Settings.View.Column5._Width = text;
+	var v = Number.parseInt(text);
+	var mask1 = /[0-9]{1}\d{0,4}/; //регулярное выражения числа от 1 до 99999
+	//удаляем число из строки
+	var str = text.replace(mask1,"");
+	//если в строке что-то осталось или число - не число, то подсвечиваем рамку
+	if (str.length > 0 && str != "" || isNaN(v) || v < 0 || v > 65535) 
+	{
+		RecBorder_Alarm.Visible = true;
+		pSettingsForm.errorWord = pSettingsForm.errorWord | errorTrue;
+	}
+	else pSettingsForm.errorWord = pSettingsForm.errorWord & errorFalse;
+	pSettingsForm.CheckModify();
+	pSettingsForm.CheckError();
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_6" display-name="Rectangle_6" uuid="018dcf6b-beb5-4134-8115-80476bfac966" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="16" ver="2"/>
+		<designed target="Y" value="171" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="530" ver="2"/>
+		<designed target="Height" value="30" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+		<designed target="PenStyle" value="1" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="da7f7eed-4b34-4b9f-af4c-733ed38d5974" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="128.5" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="251.5" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="19affa7f-1ee2-462c-ba03-c6d75427e461" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="457" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="73" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="d5770c62-5eea-4985-a543-6afef6439462" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="2.8" ver="2"/>
+			<designed target="Y" value="5.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="126.7" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Важность" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_1" display-name="TextEdit_1" uuid="f1ea6fd7-df41-4244-81e9-bc68ea311e6e" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="135" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="240" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="0xff000000" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="om">
+					<![CDATA[if (bInit) {
+	pSettingsForm.Settings.View.Column6.Caption = text;
+	pSettingsForm.CheckModify();
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Checkbox_1" display-name="Checkbox_1" uuid="1e3451a6-4f12-4aa1-a8b1-b95dee070055" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="2">
+			<designed target="X" value="413" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="17" ver="2"/>
+			<designed target="Height" value="23" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="State" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="StateChanged">
+				<body kind="javascript">
+					<![CDATA[if (bInit){
+	if (countFlagsInternal < countFlags) countFlagsInternal++;
+	else
+	{
+		pSettingsForm.Settings.View.Column6._Visible = state;
+		pSettingsForm.CheckModify();
+	}
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="TextEdit_2" display-name="TextEdit_2" uuid="f25c95ff-13a6-4afe-ae5b-7f14d728672d" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="461" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="48" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<object access-modifier="private" name="RecBorder_Alarm" display-name="RecBorder_Alarm" uuid="d23fe248-8a34-4204-bca0-f81343268739" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="0" ver="2"/>
+				<designed target="Y" value="0" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="47" ver="2"/>
+				<designed target="Height" value="20" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="0xffff0000" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="2" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="24ee3a08-2290-4fc1-af4e-fabee8992224" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="3">
+					<designed target="X" value="49.8667" ver="3"/>
+					<designed target="Y" value="2.2" ver="3"/>
+					<designed target="Rotation" value="0" ver="3"/>
+					<designed target="Scale" value="1" ver="3"/>
+					<designed target="Visible" value="true" ver="3"/>
+					<designed target="Enabled" value="true" ver="3"/>
+					<designed target="Tooltip" value="Ошибка ввода. Значение параметра должно быть в пределах от 0 до 65535" ver="3"/>
+					<designed target="Width" value="16" ver="3"/>
+					<designed target="Height" value="16" ver="3"/>
+					<designed target="PenColor" value="4278190080" ver="3"/>
+					<designed target="PenStyle" value="0" ver="3"/>
+					<designed target="PenWidth" value="1" ver="3"/>
+					<designed target="ImageFile" value="error.png" ver="3"/>
+					<designed target="Active" value="true" ver="3"/>
+					<designed target="CurrentFrameNumber" value="0" ver="3"/>
+					<designed target="Speed" value="1" ver="3"/>
+				</object>
+			</object>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="javascript">
+					<![CDATA[var errorTrue = 0b100000;
+var errorFalse = 0b111111111011111;
+
+if (bInit){
+	RecBorder_Alarm.Visible = false;
+	pSettingsForm.Settings.View.Column6._Width = text;
+	var v = Number.parseInt(text);
+	var mask1 = /[0-9]{1}\d{0,4}/; //регулярное выражения числа от 1 до 99999
+	//удаляем число из строки
+	var str = text.replace(mask1,"");
+	//если в строке что-то осталось или число - не число, то подсвечиваем рамку
+	if (str.length > 0 && str != "" || isNaN(v) || v < 0 || v > 65535) 
+	{
+		RecBorder_Alarm.Visible = true;
+		pSettingsForm.errorWord = pSettingsForm.errorWord | errorTrue;
+	}
+	else pSettingsForm.errorWord = pSettingsForm.errorWord & errorFalse;
+	pSettingsForm.CheckModify();
+	pSettingsForm.CheckError();
+}
+
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_7" display-name="Rectangle_7" uuid="3488520f-2308-437f-acde-c4c0b25310de" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="16" ver="2"/>
+		<designed target="Y" value="201" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="530" ver="2"/>
+		<designed target="Height" value="30" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+		<designed target="PenStyle" value="1" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="8c59e4d4-1475-4faf-a781-aa8677a1f39f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="128.5" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="251.5" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="d1eeb254-fe85-4815-b2f7-d42eaf6eead5" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="457" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="73" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="09d6d158-c884-46ff-85f3-cc0dfa64d289" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="2.8" ver="2"/>
+			<designed target="Y" value="5.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="126.7" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Квитировано" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_1" display-name="TextEdit_1" uuid="c5b29fbf-3a6f-4c83-b1db-ba3ea441d7ed" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="135" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="240" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="0xff000000" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="om">
+					<![CDATA[if (bInit) {
+	pSettingsForm.Settings.View.Column7.Caption = text;
+	pSettingsForm.CheckModify();
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Checkbox_1" display-name="Checkbox_1" uuid="b712f69c-159a-4142-8475-c009549661a4" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="2">
+			<designed target="X" value="413" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="23" ver="2"/>
+			<designed target="Height" value="23" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="State" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="StateChanged">
+				<body kind="javascript">
+					<![CDATA[if (bInit){
+	if (countFlagsInternal < countFlags) countFlagsInternal++;
+	else
+	{
+		pSettingsForm.Settings.View.Column7._Visible = state;
+		pSettingsForm.CheckModify();
+	}
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="TextEdit_2" display-name="TextEdit_2" uuid="d6810109-e191-48bd-bf2b-89fba932f190" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="461" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="48" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<object access-modifier="private" name="RecBorder_Alarm" display-name="RecBorder_Alarm" uuid="95f20c28-5708-488c-8ca2-2eedbdcca60d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="0" ver="2"/>
+				<designed target="Y" value="0" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="47" ver="2"/>
+				<designed target="Height" value="20" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="0xffff0000" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="2" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="4d81726e-f6ad-4eb8-a2ea-e6f11dacdf80" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="3">
+					<designed target="X" value="49.8667" ver="3"/>
+					<designed target="Y" value="2.2" ver="3"/>
+					<designed target="Rotation" value="0" ver="3"/>
+					<designed target="Scale" value="1" ver="3"/>
+					<designed target="Visible" value="true" ver="3"/>
+					<designed target="Enabled" value="true" ver="3"/>
+					<designed target="Tooltip" value="Ошибка ввода. Значение параметра должно быть в пределах от 0 до 65535" ver="3"/>
+					<designed target="Width" value="16" ver="3"/>
+					<designed target="Height" value="16" ver="3"/>
+					<designed target="PenColor" value="4278190080" ver="3"/>
+					<designed target="PenStyle" value="0" ver="3"/>
+					<designed target="PenWidth" value="1" ver="3"/>
+					<designed target="ImageFile" value="error.png" ver="3"/>
+					<designed target="Active" value="true" ver="3"/>
+					<designed target="CurrentFrameNumber" value="0" ver="3"/>
+					<designed target="Speed" value="1" ver="3"/>
+				</object>
+			</object>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="javascript">
+					<![CDATA[var errorTrue = 0b1000000;
+var errorFalse = 0b111111110111111;
+
+if (bInit){
+	RecBorder_Alarm.Visible = false;
+	pSettingsForm.Settings.View.Column7._Width = text;
+	var v = Number.parseInt(text);
+	var mask1 = /[0-9]{1}\d{0,4}/; //регулярное выражения числа от 1 до 99999
+	//удаляем число из строки
+	var str = text.replace(mask1,"");
+	//если в строке что-то осталось или число - не число, то подсвечиваем рамку
+	if (str.length > 0 && str != "" || isNaN(v) || v < 0 || v > 65535) 
+	{
+		RecBorder_Alarm.Visible = true;
+		pSettingsForm.errorWord = pSettingsForm.errorWord | errorTrue;
+	}
+	else pSettingsForm.errorWord = pSettingsForm.errorWord & errorFalse;
+	pSettingsForm.CheckModify();
+	pSettingsForm.CheckError();
+}
+
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_8" display-name="Rectangle_8" uuid="16ac8d5e-0aba-4eb5-9228-8d4fd602037a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="16" ver="2"/>
+		<designed target="Y" value="231" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="530" ver="2"/>
+		<designed target="Height" value="30" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+		<designed target="PenStyle" value="1" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="b4a6d1a8-2679-4891-a2e0-f9825360f77b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="128.5" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="251.5" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="a229fa6a-4ba2-495e-93d6-6550f432dddb" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="457" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="73" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="90cfbde4-00e2-4243-87d9-1429e9e66a5f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="2.8" ver="2"/>
+			<designed target="Y" value="5.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="126.7" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Время квитирования" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_1" display-name="TextEdit_1" uuid="3770a3b2-e152-4e97-ab54-bf08ebe33663" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="135" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="240" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="0xff000000" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="om">
+					<![CDATA[if (bInit) {
+	pSettingsForm.Settings.View.Column8.Caption = text;
+	pSettingsForm.CheckModify();
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Checkbox_1" display-name="Checkbox_1" uuid="03513d16-7933-4927-bb83-53bdf630ea7b" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="2">
+			<designed target="X" value="413" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="17" ver="2"/>
+			<designed target="Height" value="23" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="State" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="StateChanged">
+				<body kind="javascript">
+					<![CDATA[if (bInit){
+	if (countFlagsInternal < countFlags) countFlagsInternal++;
+	else
+	{
+		pSettingsForm.Settings.View.Column8._Visible = state;
+		pSettingsForm.CheckModify();
+	}
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="TextEdit_2" display-name="TextEdit_2" uuid="acb5231e-0b83-4c33-a335-85c42441b11b" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="461" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="48" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<object access-modifier="private" name="RecBorder_Alarm" display-name="RecBorder_Alarm" uuid="1e4f8e59-9b4c-489a-b4b5-91dade22df8d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="0" ver="2"/>
+				<designed target="Y" value="0" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="47" ver="2"/>
+				<designed target="Height" value="20" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="0xffff0000" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="2" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="c60bc154-db34-464e-9a50-df98aed674d1" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="3">
+					<designed target="X" value="49.8667" ver="3"/>
+					<designed target="Y" value="2.2" ver="3"/>
+					<designed target="Rotation" value="0" ver="3"/>
+					<designed target="Scale" value="1" ver="3"/>
+					<designed target="Visible" value="true" ver="3"/>
+					<designed target="Enabled" value="true" ver="3"/>
+					<designed target="Tooltip" value="Ошибка ввода. Значение параметра должно быть в пределах от 0 до 65535" ver="3"/>
+					<designed target="Width" value="16" ver="3"/>
+					<designed target="Height" value="16" ver="3"/>
+					<designed target="PenColor" value="4278190080" ver="3"/>
+					<designed target="PenStyle" value="0" ver="3"/>
+					<designed target="PenWidth" value="1" ver="3"/>
+					<designed target="ImageFile" value="error.png" ver="3"/>
+					<designed target="Active" value="true" ver="3"/>
+					<designed target="CurrentFrameNumber" value="0" ver="3"/>
+					<designed target="Speed" value="1" ver="3"/>
+				</object>
+			</object>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="javascript">
+					<![CDATA[var errorTrue = 0b10000000;
+var errorFalse = 0b111111101111111;
+
+if (bInit){
+	RecBorder_Alarm.Visible = false;
+	pSettingsForm.Settings.View.Column8._Width = text;
+	var v = Number.parseInt(text);
+	var mask1 = /[0-9]{1}\d{0,4}/; //регулярное выражения числа от 1 до 99999
+	//удаляем число из строки
+	var str = text.replace(mask1,"");
+	//если в строке что-то осталось или число - не число, то подсвечиваем рамку
+	if (str.length > 0 && str != "" || isNaN(v) || v < 0 || v > 65535) 
+	{
+		RecBorder_Alarm.Visible = true;
+		pSettingsForm.errorWord = pSettingsForm.errorWord | errorTrue;
+	}
+	else pSettingsForm.errorWord = pSettingsForm.errorWord & errorFalse;
+	pSettingsForm.CheckModify();
+	pSettingsForm.CheckError();
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_9" display-name="Rectangle_9" uuid="c66d40f1-9fd3-42e6-88a2-cc813919651a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="16" ver="2"/>
+		<designed target="Y" value="261" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="530" ver="2"/>
+		<designed target="Height" value="30" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+		<designed target="PenStyle" value="1" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="8d632088-e092-4486-acc9-500aa6bc3d61" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="128.5" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="251.5" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="f8359a63-248d-4a62-85c2-256d1087a8f8" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="457" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="73" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="a4a08f97-1f2f-402a-964f-1de1929a384f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="2.8" ver="2"/>
+			<designed target="Y" value="5.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="126.7" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Пользователь" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_1" display-name="TextEdit_1" uuid="df1a8755-61cb-44f6-bbd6-2919bc728222" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="135" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="240" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="0xff000000" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="om">
+					<![CDATA[if (bInit) {
+	pSettingsForm.Settings.View.Column9.Caption = text;
+	pSettingsForm.CheckModify();
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Checkbox_1" display-name="Checkbox_1" uuid="3963aac6-ddb0-407c-9703-44a9f33175ba" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="2">
+			<designed target="X" value="413" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="23" ver="2"/>
+			<designed target="Height" value="23" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="State" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="StateChanged">
+				<body kind="javascript">
+					<![CDATA[if (bInit){
+	if (countFlagsInternal < countFlags) countFlagsInternal++;
+	else
+	{
+		pSettingsForm.Settings.View.Column9._Visible = state;
+		pSettingsForm.CheckModify();
+	}
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="TextEdit_2" display-name="TextEdit_2" uuid="aa3379f0-66ad-4339-a0c3-334f3337a81d" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="461" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="48" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<object access-modifier="private" name="RecBorder_Alarm" display-name="RecBorder_Alarm" uuid="55ef73f2-5778-4ac4-90ef-673db5ae19e4" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="0" ver="2"/>
+				<designed target="Y" value="0" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="47" ver="2"/>
+				<designed target="Height" value="20" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="0xffff0000" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="2" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="fd6bde34-0fac-4c05-a6ed-8182205a2b12" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="3">
+					<designed target="X" value="49.8667" ver="3"/>
+					<designed target="Y" value="2.2" ver="3"/>
+					<designed target="Rotation" value="0" ver="3"/>
+					<designed target="Scale" value="1" ver="3"/>
+					<designed target="Visible" value="true" ver="3"/>
+					<designed target="Enabled" value="true" ver="3"/>
+					<designed target="Tooltip" value="Ошибка ввода. Значение параметра должно быть в пределах от 0 до 65535" ver="3"/>
+					<designed target="Width" value="16" ver="3"/>
+					<designed target="Height" value="16" ver="3"/>
+					<designed target="PenColor" value="4278190080" ver="3"/>
+					<designed target="PenStyle" value="0" ver="3"/>
+					<designed target="PenWidth" value="1" ver="3"/>
+					<designed target="ImageFile" value="error.png" ver="3"/>
+					<designed target="Active" value="true" ver="3"/>
+					<designed target="CurrentFrameNumber" value="0" ver="3"/>
+					<designed target="Speed" value="1" ver="3"/>
+				</object>
+			</object>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="javascript">
+					<![CDATA[var errorTrue = 0b100000000;
+var errorFalse = 0b111111011111111;
+
+if (bInit){
+	RecBorder_Alarm.Visible = false;
+	pSettingsForm.Settings.View.Column9._Width = text;
+	var v = Number.parseInt(text);
+	var mask1 = /[0-9]{1}\d{0,4}/; //регулярное выражения числа от 1 до 99999
+	//удаляем число из строки
+	var str = text.replace(mask1,"");
+	//если в строке что-то осталось или число - не число, то подсвечиваем рамку
+	if (str.length > 0 && str != "" || isNaN(v) || v < 0 || v > 65535) 
+	{
+		RecBorder_Alarm.Visible = true;
+		pSettingsForm.errorWord = pSettingsForm.errorWord | errorTrue;
+	}
+	else pSettingsForm.errorWord = pSettingsForm.errorWord & errorFalse;
+	pSettingsForm.CheckModify();
+	pSettingsForm.CheckError();
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_10" display-name="Rectangle_10" uuid="66b5853b-ba06-4774-849d-0463bb9a1489" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="16.15" ver="2"/>
+		<designed target="Y" value="291" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="530" ver="2"/>
+		<designed target="Height" value="30" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+		<designed target="PenStyle" value="1" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="9d88716d-0242-46b1-90b0-11cd25e83dcf" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="128.5" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="251.5" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="c5cd4528-023f-4d20-b402-fca9d304a831" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="456.85" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="73" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="270a6ba8-26a1-4591-a456-b4b16ba05966" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="2.8" ver="2"/>
+			<designed target="Y" value="-0.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="126.7" ver="2"/>
+			<designed target="Height" value="29" ver="2"/>
+			<designed target="Text" value="Комментарий квитирования" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_1" display-name="TextEdit_1" uuid="747330a3-2872-4b50-99c4-c4d5c82e6ac6" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="135" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="240" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="0xff000000" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="om">
+					<![CDATA[if (bInit) {
+	pSettingsForm.Settings.View.Column10.Caption = text;
+	pSettingsForm.CheckModify();
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Checkbox_1" display-name="Checkbox_1" uuid="c14f1a3d-13d7-4d8a-9471-14f947b10a92" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="2">
+			<designed target="X" value="413" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="17" ver="2"/>
+			<designed target="Height" value="23" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="State" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="StateChanged">
+				<body kind="javascript">
+					<![CDATA[if (bInit){
+	if (countFlagsInternal < countFlags) countFlagsInternal++;
+	else
+	{
+		pSettingsForm.Settings.View.Column10._Visible = state;
+		pSettingsForm.CheckModify();
+	}
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="TextEdit_2" display-name="TextEdit_2" uuid="d2eae90e-487c-4167-b65c-dfd6842f5175" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="461" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="48" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<object access-modifier="private" name="RecBorder_Alarm" display-name="RecBorder_Alarm" uuid="59367991-4000-43cb-8e1e-43cd3dced955" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="0" ver="2"/>
+				<designed target="Y" value="0" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="47" ver="2"/>
+				<designed target="Height" value="20" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="0xffff0000" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="2" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="dc655c84-3fb3-4f9e-8e36-004b45ce9314" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="3">
+					<designed target="X" value="49.8667" ver="3"/>
+					<designed target="Y" value="2.2" ver="3"/>
+					<designed target="Rotation" value="0" ver="3"/>
+					<designed target="Scale" value="1" ver="3"/>
+					<designed target="Visible" value="true" ver="3"/>
+					<designed target="Enabled" value="true" ver="3"/>
+					<designed target="Tooltip" value="Ошибка ввода. Значение параметра должно быть в пределах от 0 до 65535" ver="3"/>
+					<designed target="Width" value="16" ver="3"/>
+					<designed target="Height" value="16" ver="3"/>
+					<designed target="PenColor" value="4278190080" ver="3"/>
+					<designed target="PenStyle" value="0" ver="3"/>
+					<designed target="PenWidth" value="1" ver="3"/>
+					<designed target="ImageFile" value="error.png" ver="3"/>
+					<designed target="Active" value="true" ver="3"/>
+					<designed target="CurrentFrameNumber" value="0" ver="3"/>
+					<designed target="Speed" value="1" ver="3"/>
+				</object>
+			</object>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="javascript">
+					<![CDATA[var errorTrue = 0b1000000000;
+var errorFalse = 0b111110111111111;
+
+if (bInit){
+	RecBorder_Alarm.Visible = false;
+	pSettingsForm.Settings.View.Column10._Width = text;
+	var v = Number.parseInt(text);
+	var mask1 = /[0-9]{1}\d{0,4}/; //регулярное выражения числа от 1 до 99999
+	//удаляем число из строки
+	var str = text.replace(mask1,"");
+	//если в строке что-то осталось или число - не число, то подсвечиваем рамку
+	if (str.length > 0 && str != "" || isNaN(v) || v < 0 || v > 65535) 
+	{
+		RecBorder_Alarm.Visible = true;
+		pSettingsForm.errorWord = pSettingsForm.errorWord | errorTrue;
+	}
+	else pSettingsForm.errorWord = pSettingsForm.errorWord & errorFalse;
+	pSettingsForm.CheckModify();
+	pSettingsForm.CheckError();
+}
+
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_11" display-name="Rectangle_11" uuid="88e9c2c6-bb10-4c94-b243-79122ee645b6" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="16.15" ver="2"/>
+		<designed target="Y" value="321" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="530" ver="2"/>
+		<designed target="Height" value="30" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+		<designed target="PenStyle" value="1" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="e4acd13e-7166-4f89-9447-34dd368c7633" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="128.5" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="251.5" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="00b8d9a5-e5b9-4322-85b4-7929d4361bf3" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="456.85" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="73" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="e6d6b411-05dd-4314-ab31-0b3e6cf03db2" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="2.8" ver="2"/>
+			<designed target="Y" value="-0.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="126.7" ver="2"/>
+			<designed target="Height" value="29" ver="2"/>
+			<designed target="Text" value="Качество сигнала" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_1" display-name="TextEdit_1" uuid="10ccbe58-4b42-43c5-851a-c1c998d7b8f4" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="135" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="240" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="0xff000000" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="om">
+					<![CDATA[if (bInit) {
+	pSettingsForm.Settings.View.Column19.Caption = text;
+	pSettingsForm.CheckModify();
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Checkbox_1" display-name="Checkbox_1" uuid="de3d545e-49d7-4043-a40a-9bf987092049" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="2">
+			<designed target="X" value="413" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="17" ver="2"/>
+			<designed target="Height" value="23" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="State" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="StateChanged">
+				<body kind="javascript">
+					<![CDATA[if (bInit){
+	if (countFlagsInternal < countFlags) countFlagsInternal++;
+	else
+	{
+		pSettingsForm.Settings.View.Column19._Visible = state;
+		pSettingsForm.CheckModify();
+	}
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="TextEdit_2" display-name="TextEdit_2" uuid="67164927-44c0-4e67-b35b-585b467dbf6b" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="461" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="48" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<object access-modifier="private" name="RecBorder_Alarm" display-name="RecBorder_Alarm" uuid="82712c61-9a49-4069-99fe-c84d3f1de9d0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="0" ver="2"/>
+				<designed target="Y" value="0" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="47" ver="2"/>
+				<designed target="Height" value="20" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="0xffff0000" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="2" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="2db60779-db2a-4a14-95b2-2933db1533df" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="3">
+					<designed target="X" value="49.8667" ver="3"/>
+					<designed target="Y" value="2.2" ver="3"/>
+					<designed target="Rotation" value="0" ver="3"/>
+					<designed target="Scale" value="1" ver="3"/>
+					<designed target="Visible" value="true" ver="3"/>
+					<designed target="Enabled" value="true" ver="3"/>
+					<designed target="Tooltip" value="Ошибка ввода. Значение параметра должно быть в пределах от 0 до 65535" ver="3"/>
+					<designed target="Width" value="16" ver="3"/>
+					<designed target="Height" value="16" ver="3"/>
+					<designed target="PenColor" value="4278190080" ver="3"/>
+					<designed target="PenStyle" value="0" ver="3"/>
+					<designed target="PenWidth" value="1" ver="3"/>
+					<designed target="ImageFile" value="error.png" ver="3"/>
+					<designed target="Active" value="true" ver="3"/>
+					<designed target="CurrentFrameNumber" value="0" ver="3"/>
+					<designed target="Speed" value="1" ver="3"/>
+				</object>
+			</object>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="javascript">
+					<![CDATA[var errorTrue = 0b10000000000;
+var errorFalse = 0b111101111111111;
+
+if (bInit){
+	RecBorder_Alarm.Visible = false;
+	pSettingsForm.Settings.View.Column19._Width = text;
+	var v = Number.parseInt(text);
+	var mask1 = /[0-9]{1}\d{0,4}/; //регулярное выражения числа от 1 до 99999
+	//удаляем число из строки
+	var str = text.replace(mask1,"");
+	//если в строке что-то осталось или число - не число, то подсвечиваем рамку
+	if (str.length > 0 && str != "" || isNaN(v) || v < 0 || v > 65535) 
+	{
+		RecBorder_Alarm.Visible = true;
+		pSettingsForm.errorWord = pSettingsForm.errorWord | errorTrue;
+	}
+	else pSettingsForm.errorWord = pSettingsForm.errorWord & errorFalse;
+	pSettingsForm.CheckModify();
+	pSettingsForm.CheckError();
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_12" display-name="Rectangle_12" uuid="be5df08f-66cc-4212-9766-a7914cf329d9" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="16.15" ver="2"/>
+		<designed target="Y" value="351" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="530" ver="2"/>
+		<designed target="Height" value="30" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+		<designed target="PenStyle" value="1" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="071f325f-e9d3-4c97-bafa-a49a30f5d127" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="128.5" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="251.5" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="0416e6e1-5040-4d17-b209-42a4316b6914" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="456.85" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="73" ver="2"/>
+			<designed target="Height" value="30" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffc0c0c0" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="6493857c-cae7-4cd7-b139-1cdaa63ee976" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="2.8" ver="2"/>
+			<designed target="Y" value="-0.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="126.7" ver="2"/>
+			<designed target="Height" value="29" ver="2"/>
+			<designed target="Text" value="Значение сигнала" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_1" display-name="TextEdit_1" uuid="f5d7e5e1-a4dc-4c7f-8ad6-e965c93fbd10" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="135" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="240" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="0xff000000" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="om">
+					<![CDATA[if (bInit) {
+	pSettingsForm.Settings.View.Column20.Caption = text;
+	pSettingsForm.CheckModify();
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Checkbox_1" display-name="Checkbox_1" uuid="48d87c86-f3b9-4375-9f83-173ca3623a7e" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="2">
+			<designed target="X" value="413" ver="2"/>
+			<designed target="Y" value="3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="17" ver="2"/>
+			<designed target="Height" value="23" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="State" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="StateChanged">
+				<body kind="javascript">
+					<![CDATA[if (bInit){
+	if (countFlagsInternal < countFlags) countFlagsInternal++;
+	else
+	{
+		pSettingsForm.Settings.View.Column20._Visible = state;
+		pSettingsForm.CheckModify();
+	}
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="TextEdit_2" display-name="TextEdit_2" uuid="3e1d3339-800f-4631-bcc6-910ce99d7649" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="461" ver="2"/>
+			<designed target="Y" value="5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="48" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="132" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<object access-modifier="private" name="RecBorder_Alarm" display-name="RecBorder_Alarm" uuid="0f8b42ed-f9d9-4e52-bab5-89ea0add1bb6" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="0" ver="2"/>
+				<designed target="Y" value="0" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="47" ver="2"/>
+				<designed target="Height" value="20" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="0xffff0000" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="2" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="d5824fe7-25f9-40fd-a8fc-fd4d780a2e25" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="3">
+					<designed target="X" value="49.8667" ver="3"/>
+					<designed target="Y" value="2.2" ver="3"/>
+					<designed target="Rotation" value="0" ver="3"/>
+					<designed target="Scale" value="1" ver="3"/>
+					<designed target="Visible" value="true" ver="3"/>
+					<designed target="Enabled" value="true" ver="3"/>
+					<designed target="Tooltip" value="Ошибка ввода. Значение параметра должно быть в пределах от 0 до 65535" ver="3"/>
+					<designed target="Width" value="16" ver="3"/>
+					<designed target="Height" value="16" ver="3"/>
+					<designed target="PenColor" value="4278190080" ver="3"/>
+					<designed target="PenStyle" value="0" ver="3"/>
+					<designed target="PenWidth" value="1" ver="3"/>
+					<designed target="ImageFile" value="error.png" ver="3"/>
+					<designed target="Active" value="true" ver="3"/>
+					<designed target="CurrentFrameNumber" value="0" ver="3"/>
+					<designed target="Speed" value="1" ver="3"/>
+				</object>
+			</object>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="javascript">
+					<![CDATA[var errorTrue = 0b100000000000;
+var errorFalse = 0b111011111111111;
+
+if (bInit){
+	RecBorder_Alarm.Visible = false;
+	pSettingsForm.Settings.View.Column20._Width = text;
+	var v = Number.parseInt(text);
+	var mask1 = /[0-9]{1}\d{0,4}/; //регулярное выражения числа от 1 до 99999
+	//удаляем число из строки
+	var str = text.replace(mask1,"");
+	//если в строке что-то осталось или число - не число, то подсвечиваем рамку
+	if (str.length > 0 && str != "" || isNaN(v) || v < 0 || v > 65535) 
+	{
+		RecBorder_Alarm.Visible = true;
+		pSettingsForm.errorWord = pSettingsForm.errorWord | errorTrue;
+	}
+	else pSettingsForm.errorWord = pSettingsForm.errorWord & errorFalse;
+	pSettingsForm.CheckModify();
+	pSettingsForm.CheckError();
+}
+
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="3978af7c-e1c6-4f2d-8d52-f948cc411c6c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+		<designed target="X" value="18" ver="2"/>
+		<designed target="Y" value="-3" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="126.7" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="Описание" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+	</object>
+	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="277f31f3-4681-4dfa-87e9-e0f23db02e0d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+		<designed target="X" value="153.65" ver="2"/>
+		<designed target="Y" value="-3" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="126.7" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="Заголовок" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+	</object>
+	<object access-modifier="private" name="Text_3" display-name="Text_3" uuid="4719af76-7918-405e-9a59-9ee2b9d6600a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+		<designed target="X" value="487.05" ver="2"/>
+		<designed target="Y" value="-3" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="48.0333" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="Ширина" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+	</object>
+	<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="7ab65836-0eda-42af-b691-8a9815b86df3" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+		<designed target="X" value="403.017" ver="2"/>
+		<designed target="Y" value="-3.33333" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="66.7666" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="Показывать" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+	</object>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="11c0b087-0c08-4101-a27c-5e9e12c947d8" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="2"/>
+	<object access-modifier="private" name="Text_5" display-name="Text_5" uuid="dae3ae7e-9cdb-48ce-9381-120d6f185c22" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+		<designed target="X" value="17.3167" ver="2"/>
+		<designed target="Y" value="388.833" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="126.7" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="Высота строки:" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+	</object>
+	<object access-modifier="private" name="TextEdit_3" display-name="TextEdit_3" uuid="2a67b8fc-2eb0-4817-bdfd-181c225134d3" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<designed target="X" value="151" ver="2"/>
+		<designed target="Y" value="389" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="Значение параметра должно быть в пределах от 4 до 200" ver="2"/>
+		<designed target="Width" value="48" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="0xff000000" ver="2"/>
+		<designed target="TextAlignment" value="132" ver="2"/>
+		<designed target="HideInput" value="false" ver="2"/>
+		<designed target="PlaceholderText" value="" ver="2"/>
+		<designed target="ReadOnly" value="false" ver="2"/>
+		<object access-modifier="private" name="RecBorder_Alarm" display-name="RecBorder_Alarm" uuid="57babcda-c66f-4a73-9da7-788c31d58ce7" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="0" ver="2"/>
+			<designed target="Y" value="0" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="false" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="47" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="0xffff0000" ver="2"/>
+			<designed target="PenStyle" value="1" ver="2"/>
+			<designed target="PenWidth" value="2" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+			<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="4236ce94-dbea-4ed2-8f2f-d9a22fe1fa7c" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="3">
+				<designed target="X" value="49.8667" ver="3"/>
+				<designed target="Y" value="2.2" ver="3"/>
+				<designed target="Rotation" value="0" ver="3"/>
+				<designed target="Scale" value="1" ver="3"/>
+				<designed target="Visible" value="true" ver="3"/>
+				<designed target="Enabled" value="true" ver="3"/>
+				<designed target="Tooltip" value="Ошибка ввода. Значение параметра должно быть в пределах от 4 до 200" ver="3"/>
+				<designed target="Width" value="16" ver="3"/>
+				<designed target="Height" value="16" ver="3"/>
+				<designed target="PenColor" value="4278190080" ver="3"/>
+				<designed target="PenStyle" value="0" ver="3"/>
+				<designed target="PenWidth" value="1" ver="3"/>
+				<designed target="ImageFile" value="error.png" ver="3"/>
+				<designed target="Active" value="true" ver="3"/>
+				<designed target="CurrentFrameNumber" value="0" ver="3"/>
+				<designed target="Speed" value="1" ver="3"/>
+			</object>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+			<body kind="javascript">
+				<![CDATA[var errorTrue = 0b1000000000000;
+var errorFalse = 0b110111111111111;
+
+if (bInit){
+	RecBorder_Alarm.Visible = false;
+	pSettingsForm.Settings.View.RowsHeigth = text;
+	var v = Number.parseInt(text);
+	var mask1 = /[0-9]{1}\d{0,4}/; //регулярное выражения числа от 1 до 99999
+	//удаляем число из строки
+	var str = text.replace(mask1,"");
+	//если в строке что-то осталось или число - не число, то подсвечиваем рамку
+	if (str.length > 0 && str != "" || isNaN(v) || v < 4 || v > 200) 
+	{
+		RecBorder_Alarm.Visible = true;
+		pSettingsForm.errorWord = pSettingsForm.errorWord | errorTrue;
+	}
+	else pSettingsForm.errorWord = pSettingsForm.errorWord & errorFalse;
+	pSettingsForm.CheckModify();
+	pSettingsForm.CheckError();
+}
+
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="pSettingsForm" display-name="pSettingsForm" uuid="295f8129-fe8c-40f2-80db-31952a613b9f" base-type="SettingsForm" base-type-id="82dc7618-130c-486c-840d-5d302f40306b" base-const="true" base-ref="true" ver="2"/>
+	<object access-modifier="private" name="bInit" display-name="bInit" uuid="f552ac4d-ba5f-496b-bb65-8929cf259f0d" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+	<init target="bInit" ver="2" value="false"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Opened">
+		<body kind="javascript">
+			<![CDATA[var errorWord = pSettingsForm.errorWord; //Слово ошибок
+countFlags = 0;//Общий счетчик изменений состояния checkBox
+countFlagsInternal = 0; //Внутренний счетчик изменений состояния checkBox
+
+//Заполняем поле "Заголовок"
+Rectangle_1.TextEdit_1.Text = pSettingsForm.Settings.View.Column1.Caption;
+Rectangle_2.TextEdit_1.Text = pSettingsForm.Settings.View.Column2.Caption;
+Rectangle_3.TextEdit_1.Text = pSettingsForm.Settings.View.Column3.Caption;
+Rectangle_4.TextEdit_1.Text = pSettingsForm.Settings.View.Column4.Caption;
+Rectangle_5.TextEdit_1.Text = pSettingsForm.Settings.View.Column5.Caption;
+Rectangle_6.TextEdit_1.Text = pSettingsForm.Settings.View.Column6.Caption;
+Rectangle_7.TextEdit_1.Text = pSettingsForm.Settings.View.Column7.Caption;
+Rectangle_8.TextEdit_1.Text = pSettingsForm.Settings.View.Column8.Caption;
+Rectangle_9.TextEdit_1.Text = pSettingsForm.Settings.View.Column9.Caption;
+Rectangle_10.TextEdit_1.Text = pSettingsForm.Settings.View.Column10.Caption;
+Rectangle_11.TextEdit_1.Text = pSettingsForm.Settings.View.Column19.Caption;
+Rectangle_12.TextEdit_1.Text = pSettingsForm.Settings.View.Column20.Caption;
+
+//Заполняем поле "Ширина"
+Rectangle_1.TextEdit_2.Text = pSettingsForm.Settings.View.Column1._Width;
+Rectangle_2.TextEdit_2.Text = pSettingsForm.Settings.View.Column2._Width;
+Rectangle_3.TextEdit_2.Text = pSettingsForm.Settings.View.Column3._Width;
+Rectangle_4.TextEdit_2.Text = pSettingsForm.Settings.View.Column4._Width;
+Rectangle_5.TextEdit_2.Text = pSettingsForm.Settings.View.Column5._Width;
+Rectangle_6.TextEdit_2.Text = pSettingsForm.Settings.View.Column6._Width;
+Rectangle_7.TextEdit_2.Text = pSettingsForm.Settings.View.Column7._Width;
+Rectangle_8.TextEdit_2.Text = pSettingsForm.Settings.View.Column8._Width;
+Rectangle_9.TextEdit_2.Text = pSettingsForm.Settings.View.Column9._Width;
+Rectangle_10.TextEdit_2.Text = pSettingsForm.Settings.View.Column10._Width;
+Rectangle_11.TextEdit_2.Text = pSettingsForm.Settings.View.Column19._Width;
+Rectangle_12.TextEdit_2.Text = pSettingsForm.Settings.View.Column20._Width;
+
+//Заполняем поле "Показывать"
+Rectangle_1.Checkbox_1.State = pSettingsForm.Settings.View.Column1._Visible;
+Rectangle_2.Checkbox_1.State = pSettingsForm.Settings.View.Column2._Visible;
+Rectangle_3.Checkbox_1.State = pSettingsForm.Settings.View.Column3._Visible;
+Rectangle_4.Checkbox_1.State = pSettingsForm.Settings.View.Column4._Visible;
+Rectangle_5.Checkbox_1.State = pSettingsForm.Settings.View.Column5._Visible;
+Rectangle_6.Checkbox_1.State = pSettingsForm.Settings.View.Column6._Visible;
+Rectangle_7.Checkbox_1.State = pSettingsForm.Settings.View.Column7._Visible;
+Rectangle_8.Checkbox_1.State = pSettingsForm.Settings.View.Column8._Visible;
+Rectangle_9.Checkbox_1.State = pSettingsForm.Settings.View.Column9._Visible;
+Rectangle_10.Checkbox_1.State = pSettingsForm.Settings.View.Column10._Visible;
+Rectangle_11.Checkbox_1.State = pSettingsForm.Settings.View.Column19._Visible;
+Rectangle_12.Checkbox_1.State = pSettingsForm.Settings.View.Column20._Visible;
+
+//Заполняем countFlags для того, чтобы учитывать изменения состояний только по действиям пользователя
+if (pSettingsForm.Settings.View.Column1._Visible == true) countFlags += 1;
+if (pSettingsForm.Settings.View.Column2._Visible == true) countFlags += 1;
+if (pSettingsForm.Settings.View.Column3._Visible == true) countFlags += 1;
+if (pSettingsForm.Settings.View.Column4._Visible == true) countFlags += 1;
+if (pSettingsForm.Settings.View.Column5._Visible == true) countFlags += 1;
+if (pSettingsForm.Settings.View.Column6._Visible == true) countFlags += 1;
+if (pSettingsForm.Settings.View.Column7._Visible == true) countFlags += 1;
+if (pSettingsForm.Settings.View.Column8._Visible == true) countFlags += 1;
+if (pSettingsForm.Settings.View.Column9._Visible == true) countFlags += 1;
+if (pSettingsForm.Settings.View.Column10._Visible == true) countFlags += 1;
+if (pSettingsForm.Settings.View.Column19._Visible == true) countFlags += 1;
+if (pSettingsForm.Settings.View.Column20._Visible == true) countFlags += 1;
+
+TextEdit_3.Text = pSettingsForm.Settings.View.RowsHeigth;
+//Проверяем наличие ошибок
+if (errorWord != 0)
+{
+	if ((errorWord & 0x1) == 0x1) Rectangle_1.TextEdit_2.RecBorder_Alarm.Visible = true;
+	if ((errorWord & 0x2) == 0x2) Rectangle_2.TextEdit_2.RecBorder_Alarm.Visible = true;
+	if ((errorWord & 0x4) == 0x4) Rectangle_3.TextEdit_2.RecBorder_Alarm.Visible = true;
+	if ((errorWord & 0x8) == 0x8) Rectangle_4.TextEdit_2.RecBorder_Alarm.Visible = true;
+	if ((errorWord & 0x10) == 0x10) Rectangle_5.TextEdit_2.RecBorder_Alarm.Visible = true;
+	if ((errorWord & 0x20) == 0x20) Rectangle_6.TextEdit_2.RecBorder_Alarm.Visible = true;
+	if ((errorWord & 0x40) == 0x40) Rectangle_7.TextEdit_2.RecBorder_Alarm.Visible = true;
+	if ((errorWord & 0x80) == 0x80) Rectangle_8.TextEdit_2.RecBorder_Alarm.Visible = true;
+	if ((errorWord & 0x100) == 0x100) Rectangle_9.TextEdit_2.RecBorder_Alarm.Visible = true;
+	if ((errorWord & 0x200) == 0x200) Rectangle_10.TextEdit_2.RecBorder_Alarm.Visible = true;
+	if ((errorWord & 0x400) == 0x400) Rectangle_11.TextEdit_2.RecBorder_Alarm.Visible = true;
+	if ((errorWord & 0x800) == 0x800) Rectangle_12.TextEdit_2.RecBorder_Alarm.Visible = true;
+	if ((errorWord & 0x1000) == 0x1000) TextEdit_3.RecBorder_Alarm.Visible = true;
+}
+bInit = true;//Разрешение на обработку формами своих значений
+Focus = true; //Переводим Focus на форму для обработки нажатия клавиш
+pSettingsForm.CheckModify();
+
+
+
+]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="bError" display-name="bError" uuid="91facddf-caf0-414b-a1f3-f92882570dc8" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="2"/>
+	<object access-modifier="private" name="countFlags" display-name="countFlags" uuid="0a6587f7-462b-4ae8-a8e1-505c158899c2" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="2"/>
+	<object access-modifier="private" name="countFlagsInternal" display-name="countFlagsInternal" uuid="88c63d94-c973-4477-b3cc-8247a9bb82d9" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="2"/>
+	<object access-modifier="private" name="bDefSet" display-name="bDefSet" uuid="88160e2d-8f78-4532-9e1c-f75f59e2fcf2" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="2"/>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="3" event="KeyPress">
+		<body kind="om">
+			<![CDATA[vi: uint4 = event.KeyCode;
+if (vi==75) pSettingsForm.Close();
+]]>
+		</body>
+	</do-on>
+</type>
+

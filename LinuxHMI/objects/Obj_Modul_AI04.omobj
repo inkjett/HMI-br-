@@ -1,0 +1,731 @@
+<type access-modifier="private" name="Obj_Modul_AI04" display-name="Obj_Modul_AI04" uuid="1763d21b-a0e7-48b3-bbbc-315d72358a16" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="75" ver="1"/>
+	<designed target="Height" value="250" ver="1"/>
+	<designed target="RoundingRadius" value="0" ver="1"/>
+	<designed target="PenColor" value="4278190080" ver="1"/>
+	<designed target="PenStyle" value="1" ver="1"/>
+	<designed target="PenWidth" value="1" ver="1"/>
+	<designed target="BrushColor" value="0xff4b4b4b" ver="1"/>
+	<designed target="BrushStyle" value="1" ver="1"/>
+	<object access-modifier="private" name="Modul_AI04_Table_rect" display-name="Modul_AI04_Table_rect" uuid="c3131098-fbc5-40cb-b157-1db5cb24a8fb" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="21.5" ver="1"/>
+		<designed target="Y" value="27.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="50" ver="1"/>
+		<designed target="Height" value="190" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffe1e1e1" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect" display-name="Modul_DI08_Table_Row1_rect" uuid="d4f1afcb-ad80-45a6-844f-fd104d4ffac7" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="34.499999999999986" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect_1" display-name="Modul_DI08_Table_Row1_rect_1" uuid="764e27f9-b2ca-405f-b0a8-13784d8fd4da" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="54.499999999999986" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect_2" display-name="Modul_DI08_Table_Row1_rect_2" uuid="5b0268b9-0a2a-44a4-8165-1436e2f69445" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="74.499999999999986" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect_3" display-name="Modul_DI08_Table_Row1_rect_3" uuid="b6d2cf87-53d8-4328-bc41-be5624112b54" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="94.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect_4" display-name="Modul_DI08_Table_Row1_rect_4" uuid="30a9b717-9c80-4af1-9788-88816c46f400" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="114.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect_5" display-name="Modul_DI08_Table_Row1_rect_5" uuid="cbb4543d-596b-47fe-ab9e-988f24df3d66" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="134.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect_6" display-name="Modul_DI08_Table_Row1_rect_6" uuid="496740fd-b6cc-494b-9ae8-71bb5ae61bcd" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="154.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect_7" display-name="Modul_DI08_Table_Row1_rect_7" uuid="930b7da2-79cd-44da-8ec3-1e040e82633d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="174.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_DI08_Table_Row1_rect_8" display-name="Modul_DI08_Table_Row1_rect_8" uuid="724e629f-d69d-4702-8524-392aacefc2a3" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="0.5" ver="1"/>
+			<designed target="Y" value="4.4999999999999858" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="49" ver="1"/>
+			<designed target="Height" value="12" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="4278190080" ver="1"/>
+			<designed target="PenStyle" value="0" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="0xffafafaf" ver="1"/>
+			<designed target="BrushStyle" value="1" ver="1"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="AI1_opc" display-name="AI1_opc" uuid="157ba264-d647-47d9-a017-21cfb19de4b5" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[(_PLC_or_IVK=="PLC")?("PLC.AI."+Str.ToString(1+(_ModulAI_Number-1)*4) + ".ElectrValue.ValueElectr"):((_PLC_or_IVK=="IVK")?("IVK.Modules.AI."+Str.ToString(_ModulAI_Number)+".AI1.Value"):("Error"))]]>
+			</expr>
+		</init>
+		<init target="Source" ver="1" ref="unit.Sources.ASUTP_source"/>
+	</object>
+	<param access-modifier="private" name="_ModulAI_Number" display-name="_ModulAI_Number" uuid="cd3c2557-27a6-41d5-a955-76a0e76d208d" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="Modul_AI04_Label_rect" display-name="Modul_AI04_Label_rect" uuid="44313d92-41b9-45f4-bd14-9d92467d7953" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="9.5" ver="1"/>
+		<designed target="Y" value="225.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="58" ver="1"/>
+		<designed target="Height" value="23.000000000000057" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffffffff" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_DI08_Label_text" display-name="Modul_DI08_Label_text" uuid="9949d896-0712-49e3-b61d-8a44b66ff04b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="4" ver="1"/>
+			<designed target="Y" value="0" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="50" ver="1"/>
+			<designed target="Height" value="22" ver="1"/>
+			<designed target="Text" value="A1_1" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+			<init target="Text" ver="1">
+				<expr>
+					<![CDATA[_Modul_Label]]>
+				</expr>
+			</init>
+		</object>
+	</object>
+	<object access-modifier="private" name="Modul_AI04_Name_text" display-name="Modul_AI04_Name_text" uuid="784adc39-ad15-4f2c-b39e-5f0a8b877a09" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="3.5" ver="1"/>
+		<designed target="Y" value="0.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="69" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="AI 04 011" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xffcaca84" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<param access-modifier="private" name="_ModulInCrate_Number" display-name="_ModulInCrate_Number" uuid="c3a4cb56-c7f5-460e-b1c1-aa1af2a3a675" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="Modul_AI04_AI1_rect" display-name="Modul_AI04_AI1_rect" uuid="9c6b54ac-8c81-41ec-a2d6-2d158156356b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="21" ver="1"/>
+		<designed target="Y" value="61.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="49" ver="1"/>
+		<designed target="Height" value="12" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff000000" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_AI04_AI1_text" display-name="Modul_AI04_AI1_text" uuid="a3ffaf3e-dbd6-44a0-8055-c6e38dd189a5" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="-13" ver="1"/>
+			<designed target="Y" value="-3" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="1" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_AI04_AI1_Value_text" display-name="Modul_AI04_AI1_Value_text" uuid="1b79252c-da4e-4616-b1e7-eac78c7c55bf" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="4" ver="1"/>
+			<designed target="Y" value="-2" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="42" ver="1"/>
+			<designed target="Height" value="15" ver="1"/>
+			<designed target="Text" value="12,01" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="0xff00ff00" ver="1"/>
+			<designed target="TextAlignment" value="130" ver="1"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<body>
+					<![CDATA[AI1_OutputFormatter.OutValue]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[AI1_opc.Quality < 192]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[!(AI1_opc.Quality < 192)]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff00ff00]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+	</object>
+	<param access-modifier="private" name="_Crate_Number" display-name="_Crate_Number" uuid="495956f1-acdb-43b7-a64e-8f448ef43d8c" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="Modul_AI04_Err_rect" display-name="Modul_AI04_Err_rect" uuid="66c42463-c026-4914-a262-a46132da8e7e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="7.5" ver="1"/>
+		<designed target="Y" value="30.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="10" ver="1"/>
+		<designed target="Height" value="15" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffff0000" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_DI08_Err_text" display-name="Modul_DI08_Err_text" uuid="3783efe3-b1b9-474d-a7f8-bb8791c526d2" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="24" ver="1"/>
+			<designed target="Y" value="-3" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="30" ver="1"/>
+			<designed target="Height" value="22" ver="1"/>
+			<designed target="Text" value="ERR" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ModulError_opc.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == false && PLC_or_IVK=="PLC"]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == true && PLC_or_IVK=="PLC"]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff4b4b4b]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == false && PLC_or_IVK=="IVK"]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff4b4b4b]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToBool(ModulError_opc.Value,false) == true && PLC_or_IVK=="IVK"]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ModulError_opc" display-name="ModulError_opc" uuid="c185f4b5-4367-4140-a897-85cccfa3d4ef" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[(_PLC_or_IVK=="PLC")?("PLC.Crate."+Str.ToString(_Crate_Number) + ".Errors.Modul" + Str.ToString(_ModulInCrate_Number)):((_PLC_or_IVK=="IVK")?("IVK.Modules.AI."+Str.ToString(_ModulAI_Number)+".HwError"):("Error"))]]>
+			</expr>
+		</init>
+		<init target="Source" ver="1" ref="unit.Sources.ASUTP_source"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="MouseEnter">
+		<body kind="om">
+			<![CDATA[here.PenWidth=3;]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="1" event="MouseLeave">
+		<body kind="om">
+			<![CDATA[here.PenWidth=1;]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="1" event="MouseClick" form-action="open-new">
+		<object access-modifier="private" uuid="92cae853-c9c6-4dfd-bd8e-dfedd931d19e" base-type="Popup_Modul_AI04" base-type-id="41711a16-9eb0-4f2f-8fa7-9b0247f2e974" ver="1">
+			<designed target="WindowPosition" value="1" ver="1"/>
+			<init target="_Pp_ModulAI_Number" ver="1" ref="ModulAI_Number"/>
+			<init target="_Pp_Crate_Number" ver="1" ref="Crate_Number"/>
+			<init target="_Pp_ModulInCrate_Number" ver="1" ref="ModulInCrate_Number"/>
+			<init target="_Pp_PLC_or_IVK" ver="1" ref="PLC_or_IVK"/>
+			<init target="_Pp_Modul_Label" ver="1" ref="Modul_Label"/>
+		</object>
+	</do-on>
+	<object access-modifier="private" name="AI1_OutputFormatter" display-name="AI1_OutputFormatter" uuid="50c21efd-e0a5-4ab6-996a-2f94ed1fab20" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="ddf3b61b-a91b-446a-bbce-98c7acba523a" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" value="3"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[AI1_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Modul_AI04_AI1_rect_1" display-name="Modul_AI04_AI1_rect_1" uuid="c7794679-e584-4baf-a7f2-41c2186e49f2" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="21" ver="1"/>
+		<designed target="Y" value="81.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="49" ver="1"/>
+		<designed target="Height" value="12" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff000000" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_AI04_AI1_text" display-name="Modul_AI04_AI1_text" uuid="5d6eec42-8b6d-43b3-ae16-3b48691bf2ac" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="-13" ver="1"/>
+			<designed target="Y" value="-3" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="2" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_AI04_AI1_Value_text" display-name="Modul_AI04_AI1_Value_text" uuid="6c8eb724-7b7f-432d-926a-44ef33adbde4" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="4" ver="1"/>
+			<designed target="Y" value="-2" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="42" ver="1"/>
+			<designed target="Height" value="15" ver="1"/>
+			<designed target="Text" value="12,02" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="0xff00ff00" ver="1"/>
+			<designed target="TextAlignment" value="130" ver="1"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<body>
+					<![CDATA[AI2_OutputFormatter.OutValue]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[AI2_opc.Quality < 192]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[!(AI2_opc.Quality < 192)]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff00ff00]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="Modul_AI04_AI1_rect_2" display-name="Modul_AI04_AI1_rect_2" uuid="4d5ace18-9a67-4c9c-a3ae-c08ab3261ae3" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="21" ver="1"/>
+		<designed target="Y" value="101.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="49" ver="1"/>
+		<designed target="Height" value="12" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff000000" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_AI04_AI1_text" display-name="Modul_AI04_AI1_text" uuid="5f166ee7-f9e2-4de7-953e-38fdcefc8457" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="-13" ver="1"/>
+			<designed target="Y" value="-3" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="3" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_AI04_AI1_Value_text" display-name="Modul_AI04_AI1_Value_text" uuid="0c5d6a86-6827-42ba-90fe-ca1a51c37149" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="4" ver="1"/>
+			<designed target="Y" value="-2" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="42" ver="1"/>
+			<designed target="Height" value="15" ver="1"/>
+			<designed target="Text" value="12,03" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="0xff00ff00" ver="1"/>
+			<designed target="TextAlignment" value="130" ver="1"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<body>
+					<![CDATA[AI3_OutputFormatter.OutValue]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[AI3_opc.Quality < 192]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[!(AI3_opc.Quality < 192)]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff00ff00]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="Modul_AI04_AI1_rect_3" display-name="Modul_AI04_AI1_rect_3" uuid="718f4d84-6083-44b2-ab80-4d0e70c9a34c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="21" ver="1"/>
+		<designed target="Y" value="121.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="49" ver="1"/>
+		<designed target="Height" value="12" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff000000" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Modul_AI04_AI1_text" display-name="Modul_AI04_AI1_text" uuid="dc9de628-82e1-469e-9f2d-aa80d307bbcf" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="-13" ver="1"/>
+			<designed target="Y" value="-3" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="13" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="4" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="33" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Modul_AI04_AI1_Value_text" display-name="Modul_AI04_AI1_Value_text" uuid="c7693c4e-e038-42a0-bab5-6c5ca20693f9" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="4" ver="1"/>
+			<designed target="Y" value="-2" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="42" ver="1"/>
+			<designed target="Height" value="15" ver="1"/>
+			<designed target="Text" value="12,04" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="0xff00ff00" ver="1"/>
+			<designed target="TextAlignment" value="130" ver="1"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<body>
+					<![CDATA[AI4_OutputFormatter.OutValue]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[AI4_opc.Quality < 192]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[!(AI4_opc.Quality < 192)]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff00ff00]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="AI2_opc" display-name="AI2_opc" uuid="44179ffc-506c-44aa-8a1e-2114c3fa9968" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[(_PLC_or_IVK=="PLC")?("PLC.AI."+Str.ToString(2+(_ModulAI_Number-1)*4) + ".ElectrValue.ValueElectr"):((_PLC_or_IVK=="IVK")?("IVK.Modules.AI."+Str.ToString(_ModulAI_Number)+".AI2.Value"):("Error"))]]>
+			</expr>
+		</init>
+		<init target="Source" ver="1" ref="unit.Sources.ASUTP_source"/>
+	</object>
+	<object access-modifier="private" name="AI2_OutputFormatter" display-name="AI2_OutputFormatter" uuid="62c6cfe5-d7c8-4139-9038-68564743944a" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="c8cdc68a-77dc-41da-81f8-9d66568aa859" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" value="3"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[AI2_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="AI3_opc" display-name="AI3_opc" uuid="0f9d4d17-7925-4681-a171-30656fc3fc70" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[(_PLC_or_IVK=="PLC")?("PLC.AI."+Str.ToString(3+(_ModulAI_Number-1)*4) + ".ElectrValue.ValueElectr"):((_PLC_or_IVK=="IVK")?("IVK.Modules.AI."+Str.ToString(_ModulAI_Number)+".AI3.Value"):("Error"))]]>
+			</expr>
+		</init>
+		<init target="Source" ver="1" ref="unit.Sources.ASUTP_source"/>
+	</object>
+	<object access-modifier="private" name="AI3_OutputFormatter" display-name="AI3_OutputFormatter" uuid="c25a6c00-ca3a-441f-9405-62abd679e800" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="8394276a-9e2d-451a-b8cd-11475d3f2abb" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" value="3"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[AI3_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="AI4_opc" display-name="AI4_opc" uuid="4ff2eee5-232a-418f-8814-bc7c373cf0f6" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA[(_PLC_or_IVK=="PLC")?("PLC.AI."+Str.ToString(4+(_ModulAI_Number-1)*4) + ".ElectrValue.ValueElectr"):((_PLC_or_IVK=="IVK")?("IVK.Modules.AI."+Str.ToString(_ModulAI_Number)+".AI4.Value"):("Error"))]]>
+			</expr>
+		</init>
+		<init target="Source" ver="1" ref="unit.Sources.ASUTP_source"/>
+	</object>
+	<object access-modifier="private" name="AI4_OutputFormatter" display-name="AI4_OutputFormatter" uuid="1bccd703-2b1b-4c31-82ac-06c747a8f96a" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="6b732c0d-6eef-4a0a-857c-a1590f3a6328" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e">
+				<init target="DigitsCount" ver="1" value="3"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[AI4_opc]]>
+			</body>
+		</do-trace>
+	</object>
+	<param access-modifier="private" name="_PLC_or_IVK" display-name="_PLC_or_IVK" uuid="37ce4928-6cdd-480d-aab1-764cac5be962" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="PLC_or_IVK" display-name="PLC_or_IVK" uuid="2096fbea-1131-401f-a30c-348f5d678b89" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="ModulAI_Number" display-name="ModulAI_Number" uuid="73b98b7f-9061-4cca-91eb-2dc6b8f51efa" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="ModulInCrate_Number" display-name="ModulInCrate_Number" uuid="91909ae4-8c6c-4e52-8343-2f4f565ea74f" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="Crate_Number" display-name="Crate_Number" uuid="4dfc5c04-0f2d-484a-8426-9969ea5db2d0" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<init target="ModulAI_Number" ver="1" ref="_ModulAI_Number"/>
+	<init target="ModulInCrate_Number" ver="1" ref="_ModulInCrate_Number"/>
+	<init target="Crate_Number" ver="1" ref="_Crate_Number"/>
+	<init target="PLC_or_IVK" ver="1" ref="_PLC_or_IVK"/>
+	<param access-modifier="private" name="_Modul_Label" display-name="_Modul_Label" uuid="141bb277-2b46-470a-96e9-64c040f8820e" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="Modul_Label" display-name="Modul_Label" uuid="966a1f67-bc72-4cca-aaed-b5ecd6de9a04" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<init target="Modul_Label" ver="1" ref="_Modul_Label"/>
+</type>
+

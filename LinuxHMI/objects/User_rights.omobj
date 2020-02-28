@@ -1,0 +1,535 @@
+<type access-modifier="private" name="User_rights" display-name="Form_1" uuid="99f1e15d-8729-4389-ba5d-1ddea17ee666" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="2">
+	<designed target="X" value="0" ver="2"/>
+	<designed target="Y" value="0" ver="2"/>
+	<designed target="Rotation" value="0" ver="2"/>
+	<designed target="Scale" value="1" ver="2"/>
+	<designed target="Visible" value="true" ver="2"/>
+	<designed target="Enabled" value="true" ver="2"/>
+	<designed target="Tooltip" value="" ver="2"/>
+	<designed target="Width" value="590" ver="2"/>
+	<designed target="Height" value="349" ver="2"/>
+	<designed target="PenColor" value="4278190080" ver="2"/>
+	<designed target="PenStyle" value="0" ver="2"/>
+	<designed target="PenWidth" value="1" ver="2"/>
+	<designed target="BrushColor" value="4293980400" ver="2"/>
+	<designed target="BrushStyle" value="1" ver="2"/>
+	<designed target="WindowX" value="0" ver="2"/>
+	<designed target="WindowY" value="0" ver="2"/>
+	<designed target="WindowWidth" value="590" ver="2"/>
+	<designed target="WindowHeight" value="349" ver="2"/>
+	<designed target="WindowCaption" value="MainForm" ver="2"/>
+	<designed target="ShowWindowCaption" value="true" ver="2"/>
+	<designed target="ShowWindowMinimize" value="true" ver="2"/>
+	<designed target="ShowWindowMaximize" value="true" ver="2"/>
+	<designed target="ShowWindowClose" value="true" ver="2"/>
+	<designed target="AlwaysOnTop" value="false" ver="2"/>
+	<designed target="WindowSizeMode" value="0" ver="2"/>
+	<designed target="WindowBorderStyle" value="1" ver="2"/>
+	<designed target="WindowState" value="0" ver="2"/>
+	<designed target="WindowScalingMode" value="0" ver="2"/>
+	<designed target="MonitorNumber" value="0" ver="2"/>
+	<designed target="WindowPosition" value="0" ver="2"/>
+	<designed target="WindowCloseMode" value="0" ver="2"/>
+	<object access-modifier="private" name="Table_1" display-name="Table_1" uuid="c15407b5-b974-4fea-870e-fb340a913c72" base-type="Table" base-type-id="c65ff4dc-f22b-47d3-9333-72c4e4e5f662" ver="2">
+		<designed target="X" value="1" ver="2"/>
+		<designed target="Y" value="-1" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Width" value="589" ver="2"/>
+		<designed target="Height" value="350" ver="2"/>
+		<designed target="RowsHeight" value="30" ver="2"/>
+		<designed target="RowsMaxCount" value="10000" ver="2"/>
+		<designed target="RowsOrder" value="0" ver="2"/>
+		<designed target="Frozen" value="false" ver="2"/>
+		<designed target="SelectionBehavior" value="0" ver="2"/>
+		<designed target="SelectionMode" value="3" ver="2"/>
+		<object access-modifier="private" name="TableColumn_TypeRight" display-name="TableColumn_TypeRight" uuid="ba33bc66-9490-4b27-978a-4a71d3e60be4" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="Тип" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="4293980400" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="35" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%d" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+			<object access-modifier="private" name="TableDecorator_ColorBool" display-name="TableDecorator_ColorBool" uuid="59a5bc18-1a0f-432b-a247-9c6fe635be1b" base-type="TableDecorator" base-type-id="2ff6a2d7-9573-4060-bfea-29c63d61b079" ver="2">
+				<designed target="Name" value="" ver="2"/>
+				<designed target="MinSeverity" value="0" ver="2"/>
+				<designed target="MaxSeverity" value="0" ver="2"/>
+				<designed target="Subcondition" value="B" ver="2"/>
+				<designed target="Acknowledged" value="false" ver="2"/>
+				<designed target="Active" value="false" ver="2"/>
+				<designed target="BackgroundColor" value="0xff9999ff" ver="2"/>
+				<designed target="ForegroundColor" value="4278190080" ver="2"/>
+				<designed target="Font" value="MS Shell Dlg 2,8,-1,5,75,0,0,0,0,0,Полужирный" ver="2"/>
+				<designed target="BlinkEnabled" value="false" ver="2"/>
+				<designed target="BlinkBackgroundColor" value="4293980400" ver="2"/>
+				<designed target="BlinkForegroundColor" value="4278190080" ver="2"/>
+				<designed target="BlinkFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+				<init target="SubconditionRef" ver="2" ref="TableColumn_TypeRight"/>
+			</object>
+			<object access-modifier="private" name="TableDecorator_ColorString" display-name="TableDecorator_ColorString" uuid="fa58e2c0-49ca-4578-bc13-11472473e8d6" base-type="TableDecorator" base-type-id="2ff6a2d7-9573-4060-bfea-29c63d61b079" ver="2">
+				<designed target="Name" value="" ver="2"/>
+				<designed target="MinSeverity" value="0" ver="2"/>
+				<designed target="MaxSeverity" value="0" ver="2"/>
+				<designed target="Subcondition" value="S" ver="2"/>
+				<designed target="Acknowledged" value="false" ver="2"/>
+				<designed target="Active" value="false" ver="2"/>
+				<designed target="BackgroundColor" value="0xffe0872d" ver="2"/>
+				<designed target="ForegroundColor" value="0xff000000" ver="2"/>
+				<designed target="Font" value="MS Shell Dlg 2,8,-1,5,75,0,0,0,0,0,Полужирный" ver="2"/>
+				<designed target="BlinkEnabled" value="false" ver="2"/>
+				<designed target="BlinkBackgroundColor" value="4293980400" ver="2"/>
+				<designed target="BlinkForegroundColor" value="4278190080" ver="2"/>
+				<designed target="BlinkFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+				<init target="SubconditionRef" ver="2" ref="TableColumn_TypeRight"/>
+			</object>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="JsonFilter" value="" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TableColumn_NameRight" display-name="TableColumn_NameRight" uuid="f119521d-8847-4c27-a8f9-0b48095f4c84" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="Право" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="4293980400" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="100" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%d" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+			<object access-modifier="private" name="TableDecorator_Zagolovok" display-name="TableDecorator_Zagolovok" uuid="dd7d2527-b54a-48fb-84b8-091ad1229617" base-type="TableDecorator" base-type-id="2ff6a2d7-9573-4060-bfea-29c63d61b079" ver="2">
+				<designed target="Name" value="" ver="2"/>
+				<designed target="MinSeverity" value="0" ver="2"/>
+				<designed target="MaxSeverity" value="0" ver="2"/>
+				<designed target="Subcondition" value=" " ver="2"/>
+				<designed target="Acknowledged" value="false" ver="2"/>
+				<designed target="Active" value="false" ver="2"/>
+				<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+				<designed target="ForegroundColor" value="4278190080" ver="2"/>
+				<designed target="Font" value="MS Shell Dlg 2,8,-1,5,75,0,0,0,0,0,Полужирный" ver="2"/>
+				<designed target="BlinkEnabled" value="false" ver="2"/>
+				<designed target="BlinkBackgroundColor" value="4293980400" ver="2"/>
+				<designed target="BlinkForegroundColor" value="4278190080" ver="2"/>
+				<designed target="BlinkFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+				<init target="SubconditionRef" ver="2" ref="TableColumn_TypeRight"/>
+			</object>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="JsonFilter" value="" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TableColumn_Rights" display-name="TableColumn_Rights" uuid="6393ea33-25e5-4782-9e8b-0b30a27fbe19" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="Значение" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="4293980400" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="100" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%d" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+			<object access-modifier="private" name="TableDecorator_ColorTrue" display-name="TableDecorator_ColorTrue" uuid="35feddbf-b338-46ca-b3df-7e55c44155ad" base-type="TableDecorator" base-type-id="2ff6a2d7-9573-4060-bfea-29c63d61b079" ver="2">
+				<designed target="Name" value="" ver="2"/>
+				<designed target="MinSeverity" value="0" ver="2"/>
+				<designed target="MaxSeverity" value="0" ver="2"/>
+				<designed target="Subcondition" value="T" ver="2"/>
+				<designed target="Acknowledged" value="false" ver="2"/>
+				<designed target="Active" value="false" ver="2"/>
+				<designed target="BackgroundColor" value="0xff55ff7f" ver="2"/>
+				<designed target="ForegroundColor" value="0xff000000" ver="2"/>
+				<designed target="Font" value="MS Shell Dlg 2,8,-1,5,75,0,0,0,0,0,Полужирный" ver="2"/>
+				<designed target="BlinkEnabled" value="false" ver="2"/>
+				<designed target="BlinkBackgroundColor" value="4293980400" ver="2"/>
+				<designed target="BlinkForegroundColor" value="4278190080" ver="2"/>
+				<designed target="BlinkFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+				<init target="SubconditionRef" ver="2" ref="TableColumn_Rights"/>
+			</object>
+			<object access-modifier="private" name="TableDecorator_ColorFalse" display-name="TableDecorator_ColorFalse" uuid="0db7c663-85c6-4908-9a81-75a0398f45c8" base-type="TableDecorator" base-type-id="2ff6a2d7-9573-4060-bfea-29c63d61b079" ver="2">
+				<designed target="Name" value="" ver="2"/>
+				<designed target="MinSeverity" value="0" ver="2"/>
+				<designed target="MaxSeverity" value="0" ver="2"/>
+				<designed target="Subcondition" value="F" ver="2"/>
+				<designed target="Acknowledged" value="false" ver="2"/>
+				<designed target="Active" value="false" ver="2"/>
+				<designed target="BackgroundColor" value="0xffff0000" ver="2"/>
+				<designed target="ForegroundColor" value="0xff000000" ver="2"/>
+				<designed target="Font" value="MS Shell Dlg 2,8,-1,5,75,0,0,0,0,0,Полужирный" ver="2"/>
+				<designed target="BlinkEnabled" value="false" ver="2"/>
+				<designed target="BlinkBackgroundColor" value="4293980400" ver="2"/>
+				<designed target="BlinkForegroundColor" value="4278190080" ver="2"/>
+				<designed target="BlinkFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+				<init target="SubconditionRef" ver="2" ref="TableColumn_Rights"/>
+			</object>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseDoubleClick">
+				<body kind="om">
+					<![CDATA[if(unit.Global_Params.ConfigurationAccess.Value)
+{
+	if (Variant.ToString(Table_1.GetCellData(row,2),"Nan")!=" ")
+	{
+		if (Variant.ToString(Table_1.GetCellData(row,1),"Nan")=="PasswordComplexity")
+		{
+			unit.Global_Params.param_AppID = Variant.ToString(Table_1.GetCellData(row,4),"Nan");
+			unit.Global_Params.param_tokenID = Variant.ToString(Table_1.GetCellData(row,1),"Nan");
+			Action_PassComlexity.Invoke();
+		}	
+		else
+		{
+			if (Variant.ToString(Table_1.GetCellData(row,2),"Nan")=="T")
+			{
+				Table_1.SetCellData(row,2,"F");
+				unit.SecurityParams.SecurityManagerCurrentUser.ChangeRight(Variant.ToString(Table_1.GetCellData(row,4),"Nan"),Variant.ToString(Table_1.GetCellData(row,1), "Nan"),"FALSE","TRUE");
+			}
+			else
+			{
+				if (Variant.ToString(Table_1.GetCellData(row,2),"Nan")=="F")
+				{
+					Table_1.SetCellData(row,2,"T");
+					unit.SecurityParams.SecurityManagerCurrentUser.ChangeRight(Variant.ToString(Table_1.GetCellData(row,4),"Nan"),Variant.ToString(Table_1.GetCellData(row,1), "Nan"),"TRUE","FALSE");
+				}	
+				else
+				{
+					if (Variant.ToString(Table_1.GetCellData(row,2),"Nan")=="Неопределено")
+					{
+						Table_1.SetCellData(row,2,"T");
+						unit.SecurityParams.SecurityManagerCurrentUser.ChangeRight(Variant.ToString(Table_1.GetCellData(row,4),"Nan"),Variant.ToString(Table_1.GetCellData(row,1), "Nan"),"TRUE","FALSE");
+					}
+					else
+					{
+						if ((Variant.ToString(Table_1.GetCellData(row,3),"Nan")!="T")&&(Variant.ToString(Table_1.GetCellData(row,3),"Nan")!="F"))
+						{
+							unit.Global_Params.param_AppID = Variant.ToString(Table_1.GetCellData(row,4),"Nan");
+							unit.Global_Params.param_tokenID = Variant.ToString(Table_1.GetCellData(row,1),"Nan");
+							unit.Global_Params.param_CurValue = Variant.ToString(Table_1.GetCellData(row,3),"Nan");
+							Action_ChangeStringRights.Invoke();
+						}		
+					}
+				}
+			}
+		}
+	}
+}]]>
+				</body>
+			</do-on>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="JsonFilter" value="" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TableColumn_EffRight" display-name="TableColumn_EffRight" uuid="65729714-d956-42b9-b6d5-e0244faa22c6" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="Эффективное значение" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="4293980400" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="160" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%d" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+			<object access-modifier="private" name="TableDecorator_ColorTrue" display-name="TableDecorator_ColorTrue" uuid="6777a23d-3246-4a53-990b-553636e435a0" base-type="TableDecorator" base-type-id="2ff6a2d7-9573-4060-bfea-29c63d61b079" ver="2">
+				<designed target="Name" value="" ver="2"/>
+				<designed target="MinSeverity" value="0" ver="2"/>
+				<designed target="MaxSeverity" value="0" ver="2"/>
+				<designed target="Subcondition" value="T" ver="2"/>
+				<designed target="Acknowledged" value="false" ver="2"/>
+				<designed target="Active" value="false" ver="2"/>
+				<designed target="BackgroundColor" value="0xff55ff7f" ver="2"/>
+				<designed target="ForegroundColor" value="0xff000000" ver="2"/>
+				<designed target="Font" value="MS Shell Dlg 2,8,-1,5,75,0,0,0,0,0,Полужирный" ver="2"/>
+				<designed target="BlinkEnabled" value="false" ver="2"/>
+				<designed target="BlinkBackgroundColor" value="4293980400" ver="2"/>
+				<designed target="BlinkForegroundColor" value="4278190080" ver="2"/>
+				<designed target="BlinkFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+				<init target="SubconditionRef" ver="2" ref="TableColumn_EffRight"/>
+			</object>
+			<object access-modifier="private" name="TableDecorator_ColorFalse" display-name="TableDecorator_ColorFalse" uuid="54ac4369-88b6-4119-9a28-3a03c1db8250" base-type="TableDecorator" base-type-id="2ff6a2d7-9573-4060-bfea-29c63d61b079" ver="2">
+				<designed target="Name" value="" ver="2"/>
+				<designed target="MinSeverity" value="0" ver="2"/>
+				<designed target="MaxSeverity" value="0" ver="2"/>
+				<designed target="Subcondition" value="F" ver="2"/>
+				<designed target="Acknowledged" value="false" ver="2"/>
+				<designed target="Active" value="false" ver="2"/>
+				<designed target="BackgroundColor" value="0xffff0000" ver="2"/>
+				<designed target="ForegroundColor" value="0xff000000" ver="2"/>
+				<designed target="Font" value="MS Shell Dlg 2,8,-1,5,75,0,0,0,0,0,Полужирный" ver="2"/>
+				<designed target="BlinkEnabled" value="false" ver="2"/>
+				<designed target="BlinkBackgroundColor" value="4293980400" ver="2"/>
+				<designed target="BlinkForegroundColor" value="4278190080" ver="2"/>
+				<designed target="BlinkFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+				<init target="SubconditionRef" ver="2" ref="TableColumn_EffRight"/>
+			</object>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="JsonFilter" value="" ver="2"/>
+			<designed target="SortingEnabled" value="false" ver="3"/>
+			<designed target="SortOrder" value="0" ver="3"/>
+			<designed target="SortPriority" value="0" ver="3"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+		</object>
+		<object access-modifier="private" name="TableColumn_AppID" display-name="TableColumn_AppID" uuid="3a75d5cd-9689-41a4-b14a-90e29c78ff89" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value=" " ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="4293980400" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="100" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="true" ver="2"/>
+			<designed target="NumberFormat" value="%d" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="JsonFilter" value="" ver="2"/>
+		</object>
+		<object access-modifier="private" name="param_AppID" display-name="param_AppID" uuid="f8bcdc39-60e6-472c-8cd0-1c7afa6994be" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+		<object access-modifier="private" name="param_tokenID" display-name="param_tokenID" uuid="fd8e1761-9bea-4ee8-bd90-45774b3d742b" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+		<object access-modifier="private" name="param_CurValue" display-name="param_CurValue" uuid="e9f69d8d-0c2b-44f3-b4d2-004f8ada672c" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+		<object access-modifier="private" name="param_CurValue_int" display-name="param_CurValue_int" uuid="bf73812f-361b-4756-be17-d28f4cf0963b" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="2"/>
+		<designed target="LatestRowTracking" value="false" ver="2"/>
+	</object>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="9e963623-35ee-4e2f-998b-8dfab55424e8" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="2"/>
+	<do access-modifier="private" name="RightsToTable" display-name="RightsToTable" ver="2" type="" type-id="">
+		<body kind="javascript">
+			<![CDATA[DebugTool_1.Log(unit.SecurityParams.SecurityManagerCurrentUser.GetRights(AppID));
+var Rights = JSON.parse(unit.SecurityParams.SecurityManagerCurrentUser.GetRights(AppID)); //распарсенная строка
+var EffectiveRights = JSON.parse(unit.SecurityParams.SecurityManagerCurrentUser.GetEffectiveRights(AppID)); // распарсенная строка эффетивных прав
+var RowsCount = Table_1.GetRowsCount(); // текуще количество строк в таблице
+//цикл заполнения таблицы правами
+for (var i=0; i<Rights.data.length; i++) 
+	{
+		Table_1.AddRow();
+		if (JSON.stringify(Rights.data[i].tokenType).replace('"','').replace('"','') == "bool" ) // изменяем bool на B
+		{
+			var temp_type = "B"
+			Table_1.SetCellData(RowsCount+i,0,temp_type);// тип права
+		}
+		if (JSON.stringify(Rights.data[i].tokenType).replace('"','').replace('"','') == "string" ) // изменяем bool на S
+		{
+			var temp_type = "S"
+			Table_1.SetCellData(RowsCount+i,0,temp_type);// тип права
+		}
+	
+		Table_1.SetCellData(RowsCount+i,1,JSON.stringify(Rights.data[i].tokenName).replace('"','').replace('"',''));//название права
+	
+		// проверям право на значение true 
+
+		if ((JSON.stringify(Rights.data[i].tokenValueAllow).replace('"','').replace('"','') == "TRUE")&&(JSON.stringify(Rights.data[i].ownerId).replace('"','').replace('"','') == unit.SecurityParams.CurentUserSeleted)) 
+		{
+			var temp_Allow = "T"
+			Table_1.SetCellData(RowsCount+i,2,temp_Allow);//заполннение ячейки права
+			Table_1.GetCellData(RowsCount+i,2);
+		}
+		else
+			{
+					// проверям право на значение false 
+				if ((JSON.stringify(Rights.data[i].tokenValueAllow).replace('"','').replace('"','') == "FALSE")&&(JSON.stringify(Rights.data[i].ownerId).replace('"','').replace('"','') == unit.SecurityParams.CurentUserSeleted)) 
+				{
+					var temp_Allow = "F"
+					Table_1.SetCellData(RowsCount+i,2,temp_Allow);//заполннение ячейки права
+					Table_1.GetCellData(RowsCount+i,2);
+				}
+				else
+				{
+					if ((JSON.stringify(Rights.data[i].ownerId).replace('"','').replace('"','') == unit.SecurityParams.CurentUserSeleted)) // проверка на текущего пользователя
+					{
+						Table_1.param_CurValue_int = Number(JSON.stringify(Rights.data[i].tokenValueAllow).replace('"','').replace('"',''),"0");
+						if (JSON.parse(unit.SecurityParams.StringRights(JSON.stringify(Rights.data[i].tokenName).replace('"','').replace('"',''),JSON.stringify(Rights.data[i].tokenValueAllow).replace('"','').replace('"',''))).RightName != "Nan")
+						{
+							Table_1.SetCellData(RowsCount+i,2,JSON.parse(unit.SecurityParams.StringRights(JSON.stringify(Rights.data[i].tokenName).replace('"','').replace('"',''),JSON.stringify(Rights.data[i].tokenValueAllow).replace('"','').replace('"',''))).tokenValueAllow);
+						}
+						else
+						{
+							Table_1.SetCellData(RowsCount+i,2,JSON.stringify(Rights.data[i].tokenValueAllow).replace('"','').replace('"',''));
+						}
+					}
+					else
+					{
+						Table_1.SetCellData(RowsCount+i,2," ");//заполннение ячейки права
+					}
+				}
+			}
+
+				// проверям право на оба false 
+		if (((JSON.stringify(Rights.data[i].tokenValueAllow).replace('"','').replace('"','') == "FALSE")&&(JSON.stringify(Rights.data[i].tokenValueDeny).replace('"','').replace('"','') == "FALSE"))&&((JSON.stringify(Rights.data[i].ownerId).replace('"','').replace('"','') == unit.SecurityParams.CurentUserSeleted)) ) 
+		{
+			var temp_Allow = "Неопределено"
+			Table_1.SetCellData(RowsCount+i,2,temp_Allow);//заполннение ячейки права
+		}
+	
+		// проверям на эффективное право
+		if (JSON.stringify(EffectiveRights.data[i].tokenValueAllow).replace('"','').replace('"','') == "TRUE" ) 
+		{
+			var temp_EffAllow = "T"
+			Table_1.SetCellData(RowsCount+i,3,temp_EffAllow);//заполннение ячейки эффетивного права
+		}
+		else
+			{
+				if (JSON.stringify(EffectiveRights.data[i].tokenValueAllow).replace('"','').replace('"','') == "FALSE" ) 
+					{
+						var temp_EffAllow = "F"
+						Table_1.SetCellData(RowsCount+i,3,temp_EffAllow);//заполннение ячейки эффетивного права
+					}
+				else
+					{
+						Table_1.SetCellData(RowsCount+i,3,(JSON.stringify(EffectiveRights.data[i].tokenValueAllow).replace('"','').replace('"','')));
+						if (JSON.parse(unit.SecurityParams.StringRights(JSON.stringify(EffectiveRights.data[i].tokenName).replace('"','').replace('"',''),JSON.stringify(EffectiveRights.data[i].tokenValueAllow).replace('"','').replace('"',''))).RightName != "Nan")
+						{
+							Table_1.SetCellData(RowsCount+i,3,JSON.parse(unit.SecurityParams.StringRights(JSON.stringify(EffectiveRights.data[i].tokenName).replace('"','').replace('"',''),JSON.stringify(EffectiveRights.data[i].tokenValueAllow).replace('"','').replace('"',''))).tokenValueAllow);
+							if (JSON.stringify(EffectiveRights.data[i].tokenName).replace('"','').replace('"','')=="PasswordComplexity")		//проверка на правило и замена на преобразованое значени  - Сложность пароля (нужно для заполнения тултипа и регулярного выражения)
+							{	
+								unit.SecurityParams.CurComplexity = Number(JSON.stringify(EffectiveRights.data[i].tokenValueAllow).replace('"','').replace('"',''),"0");								
+							}
+						}	
+					}
+			}
+			Table_1.SetCellData(RowsCount+i,4,JSON.stringify(EffectiveRights.data[i].appName).replace('"','').replace('"',''));
+	}
+]]>
+		</body>
+		<param access-modifier="private" name="AppID" display-name="" uuid="57a3766a-86a0-4cde-a003-7139d65945d2" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+	</do>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="2" event="Closed">
+		<body kind="om">
+			<![CDATA[Table_1.ClearData();]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="2" event="WindowActivationChanged">
+		<body kind="om">
+			<![CDATA[Table_1.ClearData();]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Action_1" display-name="Action_1" uuid="1438ae61-9416-4272-b401-ae8c0430cf9b" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="2">
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="InvokeTrigger" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Invoked">
+			<body kind="javascript">
+				<![CDATA[var JSON_appID = JSON.parse(FGetApplications_List.Value);
+Table_1.ClearData();
+//зполнение таблицы паравами
+for (var i=0;i<JSON_appID.data.length;i++ )
+{
+	var temp_rowcount = Table_1.GetRowsCount();
+	Table_1.AddRow();
+	Table_1.SetCellData(temp_rowcount,0," ");
+	Table_1.SetCellData(temp_rowcount,1,JSON.stringify(JSON_appID.data[i].appID).replace('"','').replace('"',''))//строка с названием приложения
+	RightsToTable(JSON_appID.data[i].appID);//вызов функции заполнения правами конкретного приложения
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="9876100f-190a-43b3-870e-b33bc72ae692" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="2">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Initialized">
+			<body kind="om">
+				<![CDATA[//Action_1.Invoke();
+tempCount=0;
+//FGetApplicationsList="";
+//FGetApplicationsList = unit.SecurityParams.SecurityManagerCurrentUser.GetApplicationsList();]]>
+			</body>
+		</do-on>
+	</object>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="2" event="Opened">
+		<body kind="om">
+			<![CDATA[Table_1.ClearData();
+unit.SecurityParams.PassComplexity="";
+unit.SecurityParams.tempCount=0;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="FUserRightUpdate" display-name="FUserRightUpdate" uuid="476d19a6-df00-49ed-b2aa-747298ad0085" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="2">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ValueChanged">
+			<body kind="om">
+				<![CDATA[if (me==true)
+{
+	Table_1.ClearData();
+	Action_1.Invoke();
+	unit.SecurityParams.UserRightUpdate=false;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<do-trace access-modifier="private" target="FUserRightUpdate" ver="2">
+		<body>
+			<![CDATA[unit.SecurityParams.UserRightUpdate]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="FGetApplications_List" display-name="FGetApplications_List" uuid="a14da31d-7319-4edb-97c5-b7efac9f7d81" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="2">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ValueChanged">
+			<body kind="om">
+				<![CDATA[if(value!="")
+{
+Action_1.Invoke();
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="FUseGroupUpdate" display-name="FUseGroupUpdate" uuid="8a196481-e3d5-4409-9828-3f088f7a74d4" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="2"/>
+	<do-trace access-modifier="private" target="FUseGroupUpdate" ver="2">
+		<body>
+			<![CDATA[unit.SecurityParams.UseGroupUpdate]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="FGetApplications_List" ver="2">
+		<body>
+			<![CDATA[unit.SecurityParams.GetApplications_List]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="tempCount" display-name="tempCount" uuid="4a2b43dc-25ea-4a98-a7c5-9273347eca50" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="2"/>
+	<object access-modifier="private" name="Action_ChangeStringRights" display-name="Action_ChangeStringRights" uuid="249095ad-793a-4aa3-935d-e82c352a1a8e" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="2">
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="InvokeTrigger" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="3d587713-5f2b-4739-a6a8-af3bd8be22cb" base-type="ChangeUserStringRight" base-type-id="91547974-2db8-4dd5-b900-e36d0c67c7fc" ver="2">
+				<init target="init_AppID" ver="2" ref="unit.Global_Params.param_AppID"/>
+				<init target="init_tokenID " ver="2" ref="unit.Global_Params.param_tokenID"/>
+				<init target="init_param_CurValue" ver="2" ref="unit.Global_Params.param_CurValue"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Action_PassComlexity" display-name="Action_PassComlexity" uuid="fd06ba82-f5c3-4a30-a42f-889543fae9c3" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="2">
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="InvokeTrigger" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="1baf78e8-c75f-4bd3-a479-44a845602430" base-type="ChangePassComplexity" base-type-id="4abb6432-13a9-4d96-8709-c7744af44bd3" ver="2">
+				<init target="init_AppID" ver="2" ref="unit.Global_Params.param_AppID"/>
+				<init target="init_tokenID " ver="2" ref="unit.Global_Params.param_tokenID"/>
+				<init target="init_false(Group)true(user)" ver="2" value="true"/>
+				<init target="init_param_CurValue" ver="2" ref="unit.Global_Params.valuePasswordComplexity"/>
+			</object>
+		</do-on>
+	</object>
+</type>
+

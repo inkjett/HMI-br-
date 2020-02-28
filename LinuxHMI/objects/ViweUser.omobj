@@ -1,0 +1,957 @@
+<type access-modifier="private" name="ViweUser" display-name="ViweUser" uuid="eccb8038-dc89-402f-9ca2-388bef3f9eab" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="2">
+	<designed target="X" value="0" ver="2"/>
+	<designed target="Y" value="0" ver="2"/>
+	<designed target="Rotation" value="0" ver="2"/>
+	<designed target="Scale" value="1" ver="2"/>
+	<designed target="Visible" value="true" ver="2"/>
+	<designed target="Enabled" value="true" ver="2"/>
+	<designed target="Tooltip" value="" ver="2"/>
+	<designed target="Width" value="205" ver="2"/>
+	<designed target="Height" value="340" ver="2"/>
+	<designed target="PenColor" value="4278190080" ver="2"/>
+	<designed target="PenStyle" value="0" ver="2"/>
+	<designed target="PenWidth" value="1" ver="2"/>
+	<designed target="BrushColor" value="4293980400" ver="2"/>
+	<designed target="BrushStyle" value="1" ver="2"/>
+	<designed target="WindowX" value="0" ver="2"/>
+	<designed target="WindowY" value="0" ver="2"/>
+	<designed target="WindowWidth" value="205" ver="2"/>
+	<designed target="WindowHeight" value="340" ver="2"/>
+	<designed target="WindowCaption" value="MainForm" ver="2"/>
+	<designed target="ShowWindowCaption" value="true" ver="2"/>
+	<designed target="ShowWindowMinimize" value="true" ver="2"/>
+	<designed target="ShowWindowMaximize" value="true" ver="2"/>
+	<designed target="ShowWindowClose" value="true" ver="2"/>
+	<designed target="AlwaysOnTop" value="false" ver="2"/>
+	<designed target="WindowSizeMode" value="0" ver="2"/>
+	<designed target="WindowBorderStyle" value="2" ver="2"/>
+	<designed target="WindowState" value="0" ver="2"/>
+	<designed target="WindowScalingMode" value="0" ver="2"/>
+	<designed target="MonitorNumber" value="0" ver="2"/>
+	<designed target="WindowPosition" value="3" ver="2"/>
+	<designed target="WindowCloseMode" value="0" ver="2"/>
+	<object access-modifier="private" name="TextEdit_login" display-name="TextEdit_login" uuid="c61df7f2-c6f6-489e-be58-112b6af53be9" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<designed target="X" value="98" ver="2"/>
+		<designed target="Y" value="9" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="100" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+		<designed target="HideInput" value="false" ver="2"/>
+		<designed target="PlaceholderText" value="" ver="2"/>
+		<object access-modifier="private" name="InputValidator_1" display-name="InputValidator_1" uuid="f51edcbe-ef9a-4ec2-9b20-838d375e98da" base-type="InputValidator" base-type-id="d3926631-8c96-4ca0-b80c-d1953fff515c" ver="2">
+			<designed target="Input" value="" ver="2"/>
+			<init target="ValidationType" ver="2">
+				<object access-modifier="private" uuid="d99823a9-cf39-43cd-bf51-d56b9b641bf8" base-type="NativeValidationRegex" base-type-id="aa199343-4d4b-4a86-ba57-076fd145fe99" ver="2">
+					<designed target="PartialValidPattern" value="" ver="2"/>
+					<designed target="ValidPattern" value="" ver="2"/>
+					<init target="ValidPattern" ver="2" value="^.{1,99}$"/>
+				</object>
+			</init>
+			<do-trace access-modifier="private" target="Input" ver="2">
+				<body>
+					<![CDATA[TextEdit_login.Text]]>
+				</body>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ResultChanged">
+				<body kind="om">
+					<![CDATA[if(me.Result!=2)
+{
+TextEdit_login.Rectangle_1.PenStyle=1;
+TextEdit_login.Rectangle_1.PenColor=0xffff0000;
+}
+else
+{
+TextEdit_login.Rectangle_1.PenStyle=0;
+TextEdit_login.Rectangle_1.PenColor=0xff000000;
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="9626dc37-0342-4885-a8d7-aeefeb3e1f07" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="-0.25" ver="2"/>
+			<designed target="Y" value="-0.5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="100" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_login" display-name="Text_login" uuid="b619fa5c-aea1-43ef-95ed-85996c336204" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="-90" ver="2"/>
+			<designed target="Y" value="-2.25" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="50" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Логин" ver="2"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<designed target="ReadOnly" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+			<body kind="om">
+				<![CDATA[unit.SecurityParams.SecurityManagerCurrentUser.Login = me.Text;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Text" ver="2">
+			<body>
+				<![CDATA[unit.SecurityParams.CurrentUser_Login]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ReadOnly" ver="2">
+			<body>
+				<![CDATA[!unit.Global_Params.ConfigurationAccess.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextEdit_Famil" display-name="TextEdit_Famil" uuid="4b6c8be6-e3ee-40ca-8c62-b1f17f8a6c0b" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<designed target="X" value="98" ver="2"/>
+		<designed target="Y" value="32" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="100" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+		<designed target="HideInput" value="false" ver="2"/>
+		<designed target="PlaceholderText" value="" ver="2"/>
+		<object access-modifier="private" name="InputValidator_1" display-name="InputValidator_1" uuid="2e1d0bbb-4f6a-4c7d-9906-c17fa3f7323f" base-type="InputValidator" base-type-id="d3926631-8c96-4ca0-b80c-d1953fff515c" ver="2">
+			<designed target="Input" value="" ver="2"/>
+			<init target="ValidationType" ver="2">
+				<object access-modifier="private" uuid="be689949-7d07-446d-9dd1-4bff5cfc6f12" base-type="NativeValidationRegex" base-type-id="aa199343-4d4b-4a86-ba57-076fd145fe99" ver="2">
+					<designed target="PartialValidPattern" value="" ver="2"/>
+					<designed target="ValidPattern" value="" ver="2"/>
+					<init target="ValidPattern" ver="2" value="^.{1,40}$"/>
+				</object>
+			</init>
+			<do-trace access-modifier="private" target="Input" ver="2">
+				<body>
+					<![CDATA[TextEdit_Famil.Text]]>
+				</body>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ResultChanged">
+				<body kind="om">
+					<![CDATA[if(me.Result!=2)
+{
+Rectangle_1.PenStyle=1;
+Rectangle_1.PenColor=0xffff0000;
+}
+else
+{
+Rectangle_1.PenStyle=0;
+Rectangle_1.PenColor=0xff000000;
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="bb20ffea-453f-45b6-aed8-16b1fc5d8654" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="-0.0357" ver="2"/>
+			<designed target="Y" value="-0.428567" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="100" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_login_1" display-name="Text_login_1" uuid="a790c63d-867c-4dcf-b9de-efcfb64e7937" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="-90" ver="2"/>
+			<designed target="Y" value="-2.75" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="83.5" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Фамилия" ver="2"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<do-trace access-modifier="private" target="Text" ver="2">
+			<body>
+				<![CDATA[unit.SecurityParams.CurrentUser_Surname]]>
+			</body>
+		</do-trace>
+		<designed target="ReadOnly" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+			<body kind="om">
+				<![CDATA[unit.SecurityParams.SecurityManagerCurrentUser.Surname = me.Text;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="ReadOnly" ver="2">
+			<body>
+				<![CDATA[!unit.Global_Params.ConfigurationAccess.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextEdit_Name" display-name="TextEdit_Name" uuid="f3a0452f-8fd2-4521-9e6c-652da177a1fb" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<designed target="X" value="98" ver="2"/>
+		<designed target="Y" value="55" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="100" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+		<designed target="HideInput" value="false" ver="2"/>
+		<designed target="PlaceholderText" value="" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="d5f38b93-2977-4010-9df1-205dae6eeb0c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="-0.0357" ver="2"/>
+			<designed target="Y" value="-0.428567" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="100" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_login_1" display-name="Text_login_1" uuid="e0913c60-2c09-4b33-a187-4b8fd80b83b4" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="-90" ver="2"/>
+			<designed target="Y" value="-2.75" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="79.75" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Имя" ver="2"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<designed target="ReadOnly" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+			<body kind="om">
+				<![CDATA[unit.SecurityParams.SecurityManagerCurrentUser.Name = me.Text;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Text" ver="2">
+			<body>
+				<![CDATA[unit.SecurityParams.CurrentUser_Name]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ReadOnly" ver="2">
+			<body>
+				<![CDATA[!unit.Global_Params.ConfigurationAccess.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextEdit_Otchest" display-name="TextEdit_Otchest" uuid="7179f91e-0833-4215-ad29-47d48cdee2f4" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<designed target="X" value="98" ver="2"/>
+		<designed target="Y" value="78" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="100" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+		<designed target="HideInput" value="false" ver="2"/>
+		<designed target="PlaceholderText" value="" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="c463338f-0844-495a-b1e5-b0a075ef15c0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="-0.0357" ver="2"/>
+			<designed target="Y" value="-0.428567" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="100" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_login_1" display-name="Text_login_1" uuid="a4ca088c-7272-4142-a31a-716c0ab7bf2f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="-90" ver="2"/>
+			<designed target="Y" value="-2.75" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="79.75" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Отчество" ver="2"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<do-trace access-modifier="private" target="Text" ver="2">
+			<body>
+				<![CDATA[unit.SecurityParams.CurrentUser_MidName]]>
+			</body>
+		</do-trace>
+		<designed target="ReadOnly" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+			<body kind="om">
+				<![CDATA[unit.SecurityParams.SecurityManagerCurrentUser.MidName = me.Text;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="ReadOnly" ver="2">
+			<body>
+				<![CDATA[!unit.Global_Params.ConfigurationAccess.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextEdit_ViweName" display-name="TextEdit_ViweName" uuid="bf00916c-fc5e-44f6-af10-e5c9872dc23b" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<designed target="X" value="98" ver="2"/>
+		<designed target="Y" value="101" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="100" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+		<designed target="HideInput" value="false" ver="2"/>
+		<designed target="PlaceholderText" value="" ver="2"/>
+		<object access-modifier="private" name="InputValidator_1" display-name="InputValidator_1" uuid="8bfd82bf-4b85-47bb-b6cf-86a6d111cd94" base-type="InputValidator" base-type-id="d3926631-8c96-4ca0-b80c-d1953fff515c" ver="2">
+			<designed target="Input" value="" ver="2"/>
+			<init target="ValidationType" ver="2">
+				<object access-modifier="private" uuid="2bbc8f03-4718-4c33-a29e-71e54f5b1564" base-type="NativeValidationRegex" base-type-id="aa199343-4d4b-4a86-ba57-076fd145fe99" ver="2">
+					<designed target="PartialValidPattern" value="" ver="2"/>
+					<designed target="ValidPattern" value="" ver="2"/>
+					<init target="ValidPattern" ver="2" value="^.{1,40}$"/>
+				</object>
+			</init>
+			<do-trace access-modifier="private" target="Input" ver="2">
+				<body>
+					<![CDATA[TextEdit_ViweName.Text]]>
+				</body>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ResultChanged">
+				<body kind="om">
+					<![CDATA[if(me.Result!=2)
+{
+Rectangle_1.PenStyle=1;
+Rectangle_1.PenColor=0xffff0000;
+}
+else
+{
+Rectangle_1.PenStyle=0;
+Rectangle_1.PenColor=0xff000000;
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="b54fabfe-1a50-459b-8b6b-d9e815ad3005" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="-0.0357" ver="2"/>
+			<designed target="Y" value="-0.428567" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="100" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_login_1" display-name="Text_login_1" uuid="6768abfa-bf67-4e04-87f9-30533e3e4477" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="-90" ver="2"/>
+			<designed target="Y" value="-2.75" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="89.4167" ver="2"/>
+			<designed target="Height" value="24.6667" ver="2"/>
+			<designed target="Text" value="Отображаемое имя" ver="2"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<do-trace access-modifier="private" target="Text" ver="2">
+			<body>
+				<![CDATA[unit.SecurityParams.CurrentUser_DispalyName]]>
+			</body>
+		</do-trace>
+		<designed target="ReadOnly" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+			<body kind="om">
+				<![CDATA[unit.SecurityParams.SecurityManagerCurrentUser.DispalyName =  me.Text;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="ReadOnly" ver="2">
+			<body>
+				<![CDATA[!unit.Global_Params.ConfigurationAccess.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextEdit_Dolgnost" display-name="TextEdit_Dolgnost" uuid="53a295a5-6b8a-46f7-b5de-a0cf2e62f3b0" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<designed target="X" value="98" ver="2"/>
+		<designed target="Y" value="124" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="100" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+		<designed target="HideInput" value="false" ver="2"/>
+		<designed target="PlaceholderText" value="" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="f236e132-e8e4-4ac1-a7ba-e62abc05fe24" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="-0.0357" ver="2"/>
+			<designed target="Y" value="-0.428567" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="100" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_login_1" display-name="Text_login_1" uuid="cf9198a9-461b-4d14-a366-12e27e005c63" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="-90" ver="2"/>
+			<designed target="Y" value="-2.75" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="79.75" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Должность" ver="2"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<do-trace access-modifier="private" target="Text" ver="2">
+			<body>
+				<![CDATA[unit.SecurityParams.CurrentUser_Position]]>
+			</body>
+		</do-trace>
+		<designed target="ReadOnly" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+			<body kind="om">
+				<![CDATA[unit.SecurityParams.SecurityManagerCurrentUser.Position =  me.Text;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="ReadOnly" ver="2">
+			<body>
+				<![CDATA[!unit.Global_Params.ConfigurationAccess.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextEdit_Unit" display-name="TextEdit_Unit" uuid="ac2bdb03-09fc-42e0-a0e2-29415e1bb1ec" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<designed target="X" value="98" ver="2"/>
+		<designed target="Y" value="147" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="100" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+		<designed target="HideInput" value="false" ver="2"/>
+		<designed target="PlaceholderText" value="" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="01e773fc-2ca9-4004-af1a-23cb38013b08" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="-0.0357" ver="2"/>
+			<designed target="Y" value="-0.428567" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="100" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_login_1" display-name="Text_login_1" uuid="d94171e9-7e34-44f1-b2d7-ff0c86a95f73" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="-90" ver="2"/>
+			<designed target="Y" value="-1.75" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="82.25" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Подразделение" ver="2"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<do-trace access-modifier="private" target="Text" ver="2">
+			<body>
+				<![CDATA[unit.SecurityParams.CurrentUser_Unit]]>
+			</body>
+		</do-trace>
+		<designed target="ReadOnly" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+			<body kind="om">
+				<![CDATA[unit.SecurityParams.SecurityManagerCurrentUser.Unit =  me.Text;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="ReadOnly" ver="2">
+			<body>
+				<![CDATA[!unit.Global_Params.ConfigurationAccess.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextEdit_Mail" display-name="TextEdit_Mail" uuid="71a6d04e-42f5-4f9d-82c7-9bf19668961b" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<designed target="X" value="98" ver="2"/>
+		<designed target="Y" value="170" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="100" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+		<designed target="HideInput" value="false" ver="2"/>
+		<designed target="PlaceholderText" value="" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="9fa6efff-c7ca-4a09-b417-7cbe36b17505" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="-0.0357" ver="2"/>
+			<designed target="Y" value="-0.428567" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="100" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_login_1" display-name="Text_login_1" uuid="25be0357-649d-40b2-bb49-505f8d246b9a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="-90" ver="2"/>
+			<designed target="Y" value="-2.75" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="79.75" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Адрес почты" ver="2"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<do-trace access-modifier="private" target="Text" ver="2">
+			<body>
+				<![CDATA[unit.SecurityParams.CurrentUser_Email]]>
+			</body>
+		</do-trace>
+		<designed target="ReadOnly" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+			<body kind="om">
+				<![CDATA[unit.SecurityParams.SecurityManagerCurrentUser.Email =  me.Text;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="ReadOnly" ver="2">
+			<body>
+				<![CDATA[!unit.Global_Params.ConfigurationAccess.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextEdit_Phone" display-name="TextEdit_Phone" uuid="63e052a0-6a9d-4faf-b607-50c60d20eaf3" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<designed target="X" value="98" ver="2"/>
+		<designed target="Y" value="193" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="100" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+		<designed target="HideInput" value="false" ver="2"/>
+		<designed target="PlaceholderText" value="" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="06b6796b-d0ea-428f-a782-e3f77cd30aa5" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="-0.0357" ver="2"/>
+			<designed target="Y" value="-0.428567" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="100" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_login_1" display-name="Text_login_1" uuid="2184a2d7-816c-4c8f-a014-20452ae5af79" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="-90" ver="2"/>
+			<designed target="Y" value="-2.75" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="79.75" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Телефон" ver="2"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<do-trace access-modifier="private" target="Text" ver="2">
+			<body>
+				<![CDATA[unit.SecurityParams.CurrentUser_Phone]]>
+			</body>
+		</do-trace>
+		<designed target="ReadOnly" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+			<body kind="om">
+				<![CDATA[unit.SecurityParams.SecurityManagerCurrentUser.Phone =  me.Text;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="ReadOnly" ver="2">
+			<body>
+				<![CDATA[!unit.Global_Params.ConfigurationAccess.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextEdit_DopInfo" display-name="TextEdit_DopInfo" uuid="da3180ba-1d67-4ec3-a15f-64634c406143" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<designed target="X" value="98" ver="2"/>
+		<designed target="Y" value="216" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="100" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+		<designed target="HideInput" value="false" ver="2"/>
+		<designed target="PlaceholderText" value="" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="43d81587-f6aa-49d3-954b-00560d195fe0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="-0.0357" ver="2"/>
+			<designed target="Y" value="-0.428567" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="100" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_login_1" display-name="Text_login_1" uuid="6a5527ea-297f-42b8-94ae-db46164af50e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="-90" ver="2"/>
+			<designed target="Y" value="-2" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="87.9167" ver="2"/>
+			<designed target="Height" value="23.75" ver="2"/>
+			<designed target="Text" value="Дополнительные сведения" ver="2"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<do-trace access-modifier="private" target="Text" ver="2">
+			<body>
+				<![CDATA[unit.SecurityParams.CurrentUser_Comment]]>
+			</body>
+		</do-trace>
+		<designed target="ReadOnly" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+			<body kind="om">
+				<![CDATA[unit.SecurityParams.SecurityManagerCurrentUser.Comment =  me.Text;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="ReadOnly" ver="2">
+			<body>
+				<![CDATA[!unit.Global_Params.ConfigurationAccess.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextEdit_Group" display-name="TextEdit_Group" uuid="e74d9e9e-f092-41e8-a25e-f610f5ad2c33" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<designed target="X" value="98" ver="2"/>
+		<designed target="Y" value="238" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="100" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+		<designed target="HideInput" value="false" ver="2"/>
+		<designed target="PlaceholderText" value="" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="b6e3ecc7-1232-4ce9-8718-7f3c3b8c653d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="-0.321414" ver="2"/>
+			<designed target="Y" value="-0.428567" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="101.714" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_login_1" display-name="Text_login_1" uuid="d8c65c9c-d1d4-410b-a30f-3975004f5aa5" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="-90" ver="2"/>
+			<designed target="Y" value="-1" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="89.25" ver="2"/>
+			<designed target="Height" value="23.75" ver="2"/>
+			<designed target="Text" value="Группы" ver="2"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<do-trace access-modifier="private" target="Text" ver="2">
+			<body>
+				<![CDATA[unit.SecurityParams.CurrentUser_Group]]>
+			</body>
+		</do-trace>
+		<designed target="ReadOnly" value="true" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="TextChanged">
+			<body kind="om">
+				<![CDATA[if(Str.IndexOf(me.Text,",")==-1)
+{
+Rectangle_1.PenStyle=0;
+Rectangle_1.PenColor=0xff000000;
+unit.SecurityParams.CanSave=true;
+}
+else
+{
+Rectangle_1.PenStyle=1;
+Rectangle_1.PenColor=0xffff0000;
+unit.SecurityParams.CanSave=false;
+}]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="ReadOnly" ver="2">
+			<body>
+				<![CDATA[!unit.Global_Params.ConfigurationAccess.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextEdit_Roles" display-name="TextEdit_Roles" uuid="902e27b6-4d7a-43d2-b5f1-aa8257305075" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+		<designed target="X" value="97" ver="2"/>
+		<designed target="Y" value="260" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="100" ver="2"/>
+		<designed target="Height" value="20" ver="2"/>
+		<designed target="Text" value="" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+		<designed target="HideInput" value="false" ver="2"/>
+		<designed target="PlaceholderText" value="" ver="2"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="ee2bf0d1-4e39-4d5a-9a9a-bebff5bb5940" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+			<designed target="X" value="-0.0357" ver="2"/>
+			<designed target="Y" value="-0.428567" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="100" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="RoundingRadius" value="0" ver="2"/>
+			<designed target="PenColor" value="4278190080" ver="2"/>
+			<designed target="PenStyle" value="0" ver="2"/>
+			<designed target="PenWidth" value="1" ver="2"/>
+			<designed target="BrushColor" value="4278190080" ver="2"/>
+			<designed target="BrushStyle" value="0" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_login_1" display-name="Text_login_1" uuid="a6fbee50-3f25-4e8f-94d8-b12443cf2d37" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="-89" ver="2"/>
+			<designed target="Y" value="-1" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="82.9167" ver="2"/>
+			<designed target="Height" value="23.75" ver="2"/>
+			<designed target="Text" value="Роли" ver="2"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+		</object>
+		<designed target="ReadOnly" value="false" ver="2"/>
+		<do-trace access-modifier="private" target="ReadOnly" ver="2">
+			<body>
+				<![CDATA[!unit.Global_Params.ConfigurationAccess.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Opened">
+		<body kind="om">
+			<![CDATA[unit.SecurityParams.SecurityManagerCurrentUser.Load(unit.SecurityParams.CurentUserSeleted);]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Checkbox_1" display-name="Checkbox_1" uuid="a3a96a2f-92f5-4653-8cff-ca3f8659f491" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="2">
+		<designed target="X" value="17" ver="2"/>
+		<designed target="Y" value="300" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="23" ver="2"/>
+		<designed target="Height" value="25" ver="2"/>
+		<designed target="Text" value="" ver="2"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="State" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="StateChanged">
+			<body kind="om">
+				<![CDATA[if(me.Focus==true)
+{
+unit.SecurityParams.ForcePassChange = Checkbox_1.State;
+}]]>
+			</body>
+		</do-on>
+		<init target="State" ver="2" ref="unit.SecurityParams.ForcePassChange"/>
+		<do-trace access-modifier="private" target="Enabled" ver="2">
+			<body>
+				<![CDATA[unit.Global_Params.ConfigurationAccess.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="711cde54-67a7-4cbc-b764-255d4663daa1" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+		<designed target="X" value="38.5" ver="2"/>
+		<designed target="Y" value="294" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="160.5" ver="2"/>
+		<designed target="Height" value="43.5" ver="2"/>
+		<designed target="Text" value="Требовать смены пароля при следующем входе в систему" ver="2"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+	</object>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="21cae456-ae10-49ca-81ad-46755425ef81" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="2"/>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="2" event="Closed">
+		<body kind="om">
+			<![CDATA[unit.SecurityParams.CanSave=true;]]>
+		</body>
+	</do-on>
+</type>
+

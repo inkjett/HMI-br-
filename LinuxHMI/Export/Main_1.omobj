@@ -1,0 +1,388 @@
+<type access-modifier="private" name="Main_1" display-name="Main_1" uuid="b12b3a66-614c-42d4-a1b3-5ed5b209feda" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5">
+	<designed target="X" value="0"/>
+	<designed target="Y" value="0"/>
+	<designed target="Rotation" value="0"/>
+	<designed target="Scale" value="1"/>
+	<designed target="Visible" value="true"/>
+	<designed target="Enabled" value="true"/>
+	<designed target="Tooltip" value=""/>
+	<designed target="Width" value="1920"/>
+	<designed target="Height" value="1080"/>
+	<designed target="PenColor" value="4278190080"/>
+	<designed target="PenStyle" value="0"/>
+	<designed target="PenWidth" value="1"/>
+	<designed target="BrushColor" value="0xff63708f"/>
+	<designed target="BrushStyle" value="1"/>
+	<designed target="WindowX" value="0"/>
+	<designed target="WindowY" value="0"/>
+	<designed target="WindowWidth" value="1920"/>
+	<designed target="WindowHeight" value="1080"/>
+	<designed target="WindowCaption" value="MainForm"/>
+	<designed target="ShowWindowCaption" value="true"/>
+	<designed target="ShowWindowMinimize" value="true"/>
+	<designed target="ShowWindowMaximize" value="true"/>
+	<designed target="ShowWindowClose" value="true"/>
+	<designed target="AlwaysOnTop" value="false"/>
+	<designed target="WindowSizeMode" value="0"/>
+	<designed target="WindowBorderStyle" value="0"/>
+	<designed target="WindowState" value="2"/>
+	<designed target="WindowScalingMode" value="0"/>
+	<designed target="MonitorNumber" value="0"/>
+	<designed target="WindowPosition" value="0"/>
+	<designed target="WindowCloseMode" value="0"/>
+	<object access-modifier="private" name="Rectangle_3" display-name="Rectangle_3" uuid="d918ecf5-21a8-43a5-ba8f-4e9fed8f2a2e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="1725"/>
+		<designed target="Y" value="705.33333333333326"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="190"/>
+		<designed target="Height" value="144.66666666666652"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="0xff383838"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="4278190080"/>
+		<designed target="BrushStyle" value="0"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_4" display-name="Rectangle_4" uuid="64ef2e03-e54f-444f-a9d6-f420c96d6c08" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="1730.6666666666665"/>
+		<designed target="Y" value="695.99999999999989"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="87"/>
+		<designed target="Height" value="20.666666666666515"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="0xff383838"/>
+		<designed target="PenStyle" value="0"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff63708f"/>
+		<designed target="BrushStyle" value="1"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="b0fc6896-be21-4a97-a284-895a4d016c0d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="1725"/>
+		<designed target="Y" value="5"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="190"/>
+		<designed target="Height" value="90"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="0xff383838"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="4278190080"/>
+		<designed target="BrushStyle" value="0"/>
+	</object>
+	<object access-modifier="private" name="Frame_1" display-name="Frame_1" uuid="41c659b5-c7d7-4188-976f-799555a64854" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6">
+		<designed target="X" value="0"/>
+		<designed target="Y" value="100"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="1720"/>
+		<designed target="Height" value="800"/>
+		<designed target="PenColor" value="4278190080"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xffa0b5e6"/>
+		<designed target="BrushStyle" value="1"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="Opened" frame-link="Frame_1" form-action="open-in-frame">
+		<object access-modifier="private" uuid="cd8263ba-ff69-4464-b081-ff2f89f6ca68" base-type="Valves" base-type-id="fcf7edd1-3d19-47bc-9565-5f667acef4ed"/>
+	</do-on>
+	<object access-modifier="private" name="txt_SAName_2" display-name="txt_SAName_2" uuid="53ee12b8-2281-4b39-ac70-91ca0f55c523" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="695"/>
+		<designed target="Y" value="9.0000000000000071"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="460"/>
+		<designed target="Height" value="51.999999999999986"/>
+		<designed target="Text" value='ЛУ "Холмогоры - Клин"'/>
+		<designed target="Font" value="Segoe UI,22,-1,5,75,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff000000"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<object access-modifier="private" name="txt_SAName_3" display-name="txt_SAName_3" uuid="e5ddf8ba-3b7f-4306-a301-2af9f823abfe" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="693"/>
+		<designed target="Y" value="8.0000000000000071"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="460"/>
+		<designed target="Height" value="51.999999999999986"/>
+		<designed target="Text" value='ЛУ "Холмогоры - Клин"'/>
+		<designed target="Font" value="Segoe UI,22,-1,5,75,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xffa0b5e6"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<object access-modifier="private" name="txt_SAName_4" display-name="txt_SAName_4" uuid="144a6eb7-a8ee-46fd-ada6-355a3b1e2d95" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="695"/>
+		<designed target="Y" value="45.000000000000007"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="460"/>
+		<designed target="Height" value="51.999999999999986"/>
+		<designed target="Text" value="КП 103"/>
+		<designed target="Font" value="Segoe UI,22,-1,5,75,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff000000"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<object access-modifier="private" name="txt_SAName_5" display-name="txt_SAName_5" uuid="3173d7bc-2d6e-4544-9718-829faaaaa5b7" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="693"/>
+		<designed target="Y" value="44.000000000000007"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="460"/>
+		<designed target="Height" value="51.999999999999986"/>
+		<designed target="Text" value="КП 103"/>
+		<designed target="Font" value="Segoe UI,22,-1,5,75,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xffa0b5e6"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<object access-modifier="private" name="rect_btnKP" display-name="rect_btnKP" uuid="ae03e0c6-63a4-4efc-8737-e018addc2767" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="140"/>
+		<designed target="Y" value="10.333333333333336"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="100"/>
+		<designed target="Height" value="80"/>
+		<designed target="RoundingRadius" value="3"/>
+		<designed target="PenColor" value="0xff000000"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="2"/>
+		<designed target="BrushColor" value="0xff8495be"/>
+		<designed target="BrushStyle" value="1"/>
+		<object access-modifier="private" name="LinearLayout_1" display-name="LinearLayout_1" uuid="f663790f-fd38-4a36-b8d2-b117cc5d8c13" base-type="LinearLayout" base-type-id="800edd71-7303-408c-890b-8346e98f5718">
+			<designed target="Orientation" value="1"/>
+			<designed target="Gap" value="0"/>
+		</object>
+		<object access-modifier="private" name="Text_KP" display-name="Text_KP" uuid="a56ca45f-7c6f-44fa-8238-973d770b5d64" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="100"/>
+			<designed target="Height" value="80"/>
+			<designed target="Text" value="КП"/>
+			<designed target="Font" value="Segoe UI,20,-1,5,75,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="MouseEnter">
+			<body kind="om">
+				<![CDATA[this.RadialGradient_1.GradientPoint_1.Color=0xffb2c9ff;
+this.RadialGradient_1.GradientPoint_2.Color=0xffffffff;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="rty" display-name="rty" event="MouseLeave">
+			<body kind="om">
+				<![CDATA[this.RadialGradient_1.GradientPoint_1.Color=0xff667393;
+this.RadialGradient_1.GradientPoint_2.Color=0xffb2c9ff;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" event="MouseClick" frame-link="Frame_1" form-action="open-in-frame">
+			<object access-modifier="private" uuid="792e104a-4e55-41c1-9fe3-ab9d026ea915" base-type="Valves" base-type-id="fcf7edd1-3d19-47bc-9565-5f667acef4ed"/>
+		</do-on>
+		<object access-modifier="private" name="RadialGradient_1" display-name="RadialGradient_1" uuid="a6ac9475-6d3e-4e99-a372-1567532ac298" base-type="RadialGradient" base-type-id="ec8b2b95-2c92-44b2-a9aa-3ce4fc0f08b9">
+			<designed target="XCenter" value="0.5"/>
+			<designed target="YCenter" value="0.5"/>
+			<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="b2790468-de16-4dc6-a912-e9b5b09a49e5" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891">
+				<designed target="Position" value="0"/>
+				<designed target="Color" value="0xffb2c9ff"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="025338e5-0d3f-4735-af3d-caacf66db3a7" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891">
+				<designed target="Position" value="1"/>
+				<designed target="Color" value="0xff667393"/>
+			</object>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="90239ee8-4c77-41f8-bf20-a6e738e77f53" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138">
+		<designed target="X" value="9"/>
+		<designed target="Y" value="17"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="120"/>
+		<designed target="Height" value="75"/>
+		<designed target="PenColor" value="4278190080"/>
+		<designed target="PenStyle" value="0"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="ImageFile" value="TN"/>
+	</object>
+	<object access-modifier="private" name="txt_Date" display-name="txt_Date" uuid="a70e2deb-03d6-48c3-90d9-44215757a0e6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1741"/>
+		<designed target="Y" value="56"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="163"/>
+		<designed target="Height" value="30"/>
+		<designed target="Text" value="16:02:2017"/>
+		<designed target="Font" value="MS Shell Dlg 2,16,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xffa0b5e6"/>
+		<designed target="TextAlignment" value="132"/>
+		<object access-modifier="private" name="OutputFormatter_Date" display-name="OutputFormatter_Date" uuid="65fa061a-c248-4742-a35e-85d5899d0c9f" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32">
+			<designed target="InValue" value=""/>
+			<init target="Format">
+				<object access-modifier="private" uuid="53212541-5773-41e6-a0f5-3e114fdb8c84" base-type="FormatDateTime" base-type-id="353d14bd-bf52-4abb-8d4c-3b2541bb0de2">
+					<init target="LocalTime" value="false"/>
+					<init target="DateTimeFormat" value="dd.MM.yyyy"/>
+				</object>
+			</init>
+		</object>
+		<do-trace access-modifier="private" target="Text">
+			<body>
+				<![CDATA[OutputFormatter_Date.OutValue]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="txt_Time" display-name="txt_Time" uuid="26600f5a-4ec3-433b-97af-3f612eebd47f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1741"/>
+		<designed target="Y" value="17"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="163"/>
+		<designed target="Height" value="30"/>
+		<designed target="Text" value="17:02:20"/>
+		<designed target="Font" value="MS Shell Dlg 2,22,-1,5,75,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xffb3cbff"/>
+		<designed target="TextAlignment" value="132"/>
+		<object access-modifier="private" name="OutputFormatter_Time" display-name="OutputFormatter_Time" uuid="67abccb5-aff5-45c7-b31b-4c9a41524706" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32">
+			<designed target="InValue" value=""/>
+			<init target="Format">
+				<object access-modifier="private" uuid="398117c9-216d-4d65-8834-eafca53a1b81" base-type="FormatDateTime" base-type-id="353d14bd-bf52-4abb-8d4c-3b2541bb0de2">
+					<init target="LocalTime" value="true"/>
+					<init target="DateTimeFormat" value="HH:mm:ss"/>
+				</object>
+			</init>
+		</object>
+		<do-trace access-modifier="private" target="Text">
+			<body>
+				<![CDATA[OutputFormatter_Time.OutValue]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="tmr_DateTime" display-name="tmr_DateTime" uuid="1c211a9f-7443-4641-b39e-52e1452e3dbb" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a">
+		<designed target="Period" value="1000"/>
+		<designed target="Active" value="true"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="OnTimer">
+			<body kind="javascript">
+				<![CDATA[txt_Date.OutputFormatter_Date.InValue = tmr_DateTime.Now;
+txt_Time.OutputFormatter_Time.InValue = tmr_DateTime.Now;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="rect_btnDiagLTM" display-name="rect_btnDiagLTM" uuid="9b14f49b-b6ea-4d54-a51b-8394d28ebf3b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="1735"/>
+		<designed target="Y" value="729.66666666666652"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="170"/>
+		<designed target="Height" value="50"/>
+		<designed target="RoundingRadius" value="3"/>
+		<designed target="PenColor" value="0xff000000"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="2"/>
+		<designed target="BrushColor" value="0xff8495be"/>
+		<designed target="BrushStyle" value="1"/>
+		<object access-modifier="private" name="LinearLayout_1" display-name="LinearLayout_1" uuid="7f578ce2-e619-471e-a63a-196e4ffd57b6" base-type="LinearLayout" base-type-id="800edd71-7303-408c-890b-8346e98f5718">
+			<designed target="Orientation" value="1"/>
+			<designed target="Gap" value="0"/>
+		</object>
+		<object access-modifier="private" name="Text_KP" display-name="Text_KP" uuid="e51c41ce-cd33-4d78-b677-62dae528ad14" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="170"/>
+			<designed target="Height" value="50"/>
+			<designed target="Text" value="Питание"/>
+			<designed target="Font" value="Segoe UI,20,-1,5,75,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="MouseEnter">
+			<body kind="om">
+				<![CDATA[this.RadialGradient_1.GradientPoint_1.Color=0xffb2c9ff;
+this.RadialGradient_1.GradientPoint_2.Color=0xffffffff;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="rty" display-name="rty" event="MouseLeave">
+			<body kind="om">
+				<![CDATA[this.RadialGradient_1.GradientPoint_1.Color=0xff667393;
+this.RadialGradient_1.GradientPoint_2.Color=0xffb2c9ff;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" event="MouseClick" frame-link="Frame_1" form-action="open-in-frame">
+			<object access-modifier="private" uuid="db69d871-d7c6-493d-b4af-cc9c204a0416" base-type="Diag_LTM" base-type-id="bb59afd8-f1ab-4360-91ba-bf60cb5dc7ce"/>
+		</do-on>
+		<object access-modifier="private" name="RadialGradient_1" display-name="RadialGradient_1" uuid="6a6e0c2c-e016-49d7-b880-2f02789f09b5" base-type="RadialGradient" base-type-id="ec8b2b95-2c92-44b2-a9aa-3ce4fc0f08b9">
+			<designed target="XCenter" value="0.5"/>
+			<designed target="YCenter" value="0.5"/>
+			<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="85b19337-ebaa-4d06-831d-59ca58915f87" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891">
+				<designed target="Position" value="0"/>
+				<designed target="Color" value="0xffb2c9ff"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="ccbaaba5-4d66-47de-a974-b25e51817745" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891">
+				<designed target="Position" value="1"/>
+				<designed target="Color" value="0xff667393"/>
+			</object>
+		</object>
+	</object>
+	<object access-modifier="private" name="txt_DiagGroup" display-name="txt_DiagGroup" uuid="bad8d58c-3425-40b7-b56e-14f87a7c5055" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="1732"/>
+		<designed target="Y" value="697.5"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="85"/>
+		<designed target="Height" value="14"/>
+		<designed target="Text" value="Диагностика"/>
+		<designed target="Font" value="Segoe UI,10,-1,5,75,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff383838"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+</type>
+

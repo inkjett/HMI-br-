@@ -1,0 +1,579 @@
+<type ver="2" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" base-type="Form" uuid="4d754945-ea42-4c97-9c9a-2aab992cab7b" display-name="SettingsColors_1" name="SettingsSeverity" access-modifier="private">
+	<designed target="X" value="0" ver="2"/>
+	<designed target="Y" value="0" ver="2"/>
+	<designed target="Rotation" value="0" ver="2"/>
+	<designed target="Scale" value="1" ver="2"/>
+	<designed target="Visible" value="true" ver="2"/>
+	<designed target="Enabled" value="true" ver="2"/>
+	<designed target="Tooltip" value="" ver="2"/>
+	<designed target="Width" value="560" ver="2"/>
+	<designed target="Height" value="380" ver="2"/>
+	<designed target="PenColor" value="4278190080" ver="2"/>
+	<designed target="PenStyle" value="0" ver="2"/>
+	<designed target="PenWidth" value="1" ver="2"/>
+	<designed target="BrushColor" value="0xfff0f0f0" ver="2"/>
+	<designed target="BrushStyle" value="1" ver="2"/>
+	<designed target="WindowX" value="0" ver="2"/>
+	<designed target="WindowY" value="0" ver="2"/>
+	<designed target="WindowWidth" value="1920" ver="2"/>
+	<designed target="WindowHeight" value="1080" ver="2"/>
+	<designed target="WindowCaption" value="MainForm" ver="2"/>
+	<designed target="ShowWindowCaption" value="true" ver="2"/>
+	<designed target="ShowWindowMinimize" value="false" ver="2"/>
+	<designed target="ShowWindowMaximize" value="false" ver="2"/>
+	<designed target="ShowWindowClose" value="true" ver="2"/>
+	<designed target="AlwaysOnTop" value="false" ver="2"/>
+	<designed target="WindowSizeMode" value="0" ver="2"/>
+	<designed target="WindowBorderStyle" value="1" ver="2"/>
+	<designed target="WindowState" value="0" ver="2"/>
+	<designed target="WindowScalingMode" value="0" ver="2"/>
+	<designed target="MonitorNumber" value="0" ver="2"/>
+	<designed target="WindowPosition" value="2" ver="2"/>
+	<designed target="WindowCloseMode" value="0" ver="2"/>
+	<object access-modifier="private" name="RecBorder" display-name="RecBorder" uuid="740f6785-40a3-4737-8178-7bf4a8147d92" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+		<designed target="X" value="11.5" ver="2"/>
+		<designed target="Y" value="12.5" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="535" ver="2"/>
+		<designed target="Height" value="361.666" ver="2"/>
+		<designed target="RoundingRadius" value="0" ver="2"/>
+		<designed target="PenColor" value="0xff323232" ver="2"/>
+		<designed target="PenStyle" value="0" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="BrushColor" value="4278190080" ver="2"/>
+		<designed target="BrushStyle" value="0" ver="2"/>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="25621c74-fc39-4088-8259-d0e32fd2269b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="15" ver="2"/>
+			<designed target="Y" value="31" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="63" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Значения" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="33" ver="2"/>
+		</object>
+		<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="118422d6-1883-4b17-b444-b715dfd9ba3a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="15" ver="2"/>
+			<designed target="Y" value="-3" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="55" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Группа" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="33" ver="2"/>
+		</object>
+		<object access-modifier="private" name="ComboBox_1" display-name="ComboBox_1" uuid="0c821d1c-ec4d-44e4-a344-894d6bd58f32" base-type="ComboBox" base-type-id="3495bcd2-01f2-4709-b7f4-e9cf6f3a00bc" ver="2">
+			<designed target="X" value="96" ver="2"/>
+			<designed target="Y" value="-5" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="418" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Editable" value="false" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="SelectedIndex" value="-1" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="MaxVisibleItems" value="10" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="SelectedChanged">
+				<body kind="javascript">
+					<![CDATA[var vf
+switch (selected) {
+	case 0: if (pSettingsForm.Settings.Severity.Range1.JSON != "")
+		 vf = pSettingsForm.Settings.Severity.Range1.JSON; 
+		Checkbox_1.State  = pSettingsForm.Settings.Severity.Range1.SoundEnable;
+		TextEdit_Repeat.Text   = pSettingsForm.Settings.Severity.Range1.nSoundRepeats;
+		TextEdit_Priority.Text = pSettingsForm.Settings.Severity.Range1.SoundPriority;
+		break;
+	case 1: if (pSettingsForm.Settings.Severity.Range2.JSON != "")
+		vf = pSettingsForm.Settings.Severity.Range2.JSON; 
+		Checkbox_1.State  = pSettingsForm.Settings.Severity.Range2.SoundEnable;
+		TextEdit_Repeat.Text   = pSettingsForm.Settings.Severity.Range2.nSoundRepeats;
+		TextEdit_Priority.Text = pSettingsForm.Settings.Severity.Range2.SoundPriority;
+		break;
+	case 2: if (pSettingsForm.Settings.Severity.Range3.JSON != "")
+		vf = pSettingsForm.Settings.Severity.Range3.JSON; 
+		Checkbox_1.State  = pSettingsForm.Settings.Severity.Range3.SoundEnable;
+		TextEdit_Repeat.Text   = pSettingsForm.Settings.Severity.Range3.nSoundRepeats;
+		TextEdit_Priority.Text = pSettingsForm.Settings.Severity.Range3.SoundPriority;
+		break;
+}
+
+if (TextEdit_Repeat.Text == "" || TextEdit_Repeat.Text == "0") TextEdit_Priority.Enabled = false;
+else TextEdit_Priority.Enabled = true;
+
+TextEdit_Value.Text = vf;
+if (bInit) pSettingsForm.selectedIndex = SelectedIndex; //Запоминаем выбранное положение
+CheckRange();
+]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Checkbox_1" display-name="Checkbox_1" uuid="9ce62a23-b76e-4d08-a9f5-1753f81f5c4d" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="2">
+			<designed target="X" value="96" ver="2"/>
+			<designed target="Y" value="62" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="418" ver="2"/>
+			<designed target="Height" value="17" ver="2"/>
+			<designed target="Text" value="Проигрывать звуки" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="State" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="StateChanged">
+				<body kind="javascript">
+					<![CDATA[if (bInit)
+{
+	if (countFlagsInternal < 1) countFlagsInternal++;
+	else
+	{
+		switch (ComboBox_1.SelectedIndex) 
+		{
+			case 0: 
+				if (pSettingsForm.Settings.Severity.Range1.SoundEnable != state) pSettingsForm.bModifyed = true;
+				pSettingsForm.Settings.Severity.Range1.SoundEnable = state;
+				break;
+			case 1: 
+				if (pSettingsForm.Settings.Severity.Range2.SoundEnable != state) pSettingsForm.bModifyed = true;
+				pSettingsForm.Settings.Severity.Range2.SoundEnable = state;
+				break;
+			case 2: 
+				if (pSettingsForm.Settings.Severity.Range3.SoundEnable != state) pSettingsForm.bModifyed = true;
+				pSettingsForm.Settings.Severity.Range3.SoundEnable = state;
+				break;
+		}
+		pSettingsForm.CheckModify();
+	}
+}
+
+
+]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="TextEdit_Repeat" display-name="TextEdit_Repeat" uuid="c4c5adca-5f58-4fc6-9d9b-981f302c0453" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="256" ver="2"/>
+			<designed target="Y" value="92" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="41" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="0" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="javascript">
+					<![CDATA[if (text == "" || text == "0") TextEdit_Priority.Enabled = false;
+else TextEdit_Priority.Enabled = true;
+if (bInit){
+	switch (ComboBox_1.SelectedIndex) {
+	case 0: pSettingsForm.Settings.Severity.Range1.nSoundRepeats = text; break;
+	case 1: pSettingsForm.Settings.Severity.Range2.nSoundRepeats = text; break;
+	case 2: pSettingsForm.Settings.Severity.Range3.nSoundRepeats = text; break;
+	}
+	pSettingsForm.CheckModify();
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Text_3" display-name="Text_3" uuid="21530a6e-c52b-4582-9963-2d868a937bc6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="96" ver="2"/>
+			<designed target="Y" value="94" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="128" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Количество повторов" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="33" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_Priority" display-name="TextEdit_Priority" uuid="463fe20c-97ba-4292-9e8f-428586b3d6aa" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="256" ver="2"/>
+			<designed target="Y" value="125" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="41" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="0" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="EditFinished">
+				<body kind="javascript">
+					<![CDATA[if (bInit){
+	switch (ComboBox_1.SelectedIndex) {
+	case 0: pSettingsForm.Settings.Severity.Range1.SoundPriority = text; break;
+	case 1: pSettingsForm.Settings.Severity.Range2.SoundPriority = text; break;
+	case 2: pSettingsForm.Settings.Severity.Range3.SoundPriority = text; break;
+	case 3: pSettingsForm.Settings.Severity.Range4.SoundPriority = text; break;
+	}
+	pSettingsForm.CheckModify();
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="c459f20c-7f10-44ad-9ecb-1bed1812b8fd" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+			<designed target="X" value="96" ver="2"/>
+			<designed target="Y" value="127" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="150.667" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="Приоритет проигрывания" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Обычный" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="33" ver="2"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_Value" display-name="TextEdit_Value" uuid="61c8f4ae-9053-4dcf-aa63-0774e2cbc6d7" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="2">
+			<designed target="X" value="96" ver="2"/>
+			<designed target="Y" value="28" ver="2"/>
+			<designed target="Rotation" value="0" ver="2"/>
+			<designed target="Scale" value="1" ver="2"/>
+			<designed target="Visible" value="true" ver="2"/>
+			<designed target="Enabled" value="true" ver="2"/>
+			<designed target="Tooltip" value="" ver="2"/>
+			<designed target="Width" value="418" ver="2"/>
+			<designed target="Height" value="20" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="FontColor" value="4278190080" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="HideInput" value="false" ver="2"/>
+			<designed target="PlaceholderText" value="" ver="2"/>
+			<designed target="ReadOnly" value="false" ver="2"/>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="3" event="EditFinished">
+				<body kind="javascript">
+					<![CDATA[//провека допустимости значений
+if (bInit)
+{
+	var Values = TextEdit_Value.Text;
+	//Записываем значение в соответствующее поле
+	switch (ComboBox_1.SelectedIndex)
+	{
+		case 0:
+			pSettingsForm.Settings.Severity.Range1.JSON = Values;
+			break;
+		case 1: 
+			pSettingsForm.Settings.Severity.Range2.JSON = Values;
+			break;
+		case 2: 
+			pSettingsForm.Settings.Severity.Range3.JSON = Values;
+			break;
+	}
+
+CheckRange(); //Функция проверки корректности значений полей
+pSettingsForm.CheckModify();
+}
+return;
+
+
+]]>
+				</body>
+			</do-on>
+			<object access-modifier="private" name="RecBorder_Alarm" display-name="RecBorder_Alarm" uuid="d4286311-fa77-4e01-93c7-5e104f71cff1" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="2">
+				<designed target="X" value="0" ver="2"/>
+				<designed target="Y" value="0" ver="2"/>
+				<designed target="Rotation" value="0" ver="2"/>
+				<designed target="Scale" value="1" ver="2"/>
+				<designed target="Visible" value="false" ver="2"/>
+				<designed target="Enabled" value="true" ver="2"/>
+				<designed target="Tooltip" value="" ver="2"/>
+				<designed target="Width" value="418" ver="2"/>
+				<designed target="Height" value="20" ver="2"/>
+				<designed target="RoundingRadius" value="0" ver="2"/>
+				<designed target="PenColor" value="0xffff0000" ver="2"/>
+				<designed target="PenStyle" value="1" ver="2"/>
+				<designed target="PenWidth" value="2" ver="2"/>
+				<designed target="BrushColor" value="4278190080" ver="2"/>
+				<designed target="BrushStyle" value="0" ver="2"/>
+				<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="57a18acf-df3f-43b7-b903-da491bce5049" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="3">
+					<designed target="X" value="421" ver="3"/>
+					<designed target="Y" value="2" ver="3"/>
+					<designed target="Rotation" value="0" ver="3"/>
+					<designed target="Scale" value="1" ver="3"/>
+					<designed target="Visible" value="true" ver="3"/>
+					<designed target="Enabled" value="true" ver="3"/>
+					<designed target="Tooltip" value="" ver="3"/>
+					<designed target="Width" value="16" ver="3"/>
+					<designed target="Height" value="16" ver="3"/>
+					<designed target="PenColor" value="4278190080" ver="3"/>
+					<designed target="PenStyle" value="0" ver="3"/>
+					<designed target="PenWidth" value="1" ver="3"/>
+					<designed target="ImageFile" value="error.png" ver="3"/>
+					<designed target="Active" value="true" ver="3"/>
+					<designed target="CurrentFrameNumber" value="0" ver="3"/>
+					<designed target="Speed" value="1" ver="3"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="9a4f4162-cec5-43e6-a3b7-7561bd49453d" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="2">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Initialized">
+			<body kind="om">
+				<![CDATA[RecBorder.ComboBox_1.AddItem("Особой важности");
+RecBorder.ComboBox_1.AddItem("Важные");
+RecBorder.ComboBox_1.AddItem("Значительные");
+RecBorder.ComboBox_1.SelectedIndex = pSettingsForm.selectedIndex;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="pSettingsForm" display-name="pSettingsForm" uuid="154ed3c9-1bc5-4dc4-91aa-eb806a884fe6" base-type="SettingsForm" base-type-id="82dc7618-130c-486c-840d-5d302f40306b" base-const="true" base-ref="true" ver="2"/>
+	<object access-modifier="private" name="bInit" display-name="bInit" uuid="8f31882f-6270-4aef-bf27-14fb146f191b" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Opened">
+		<body kind="om">
+			<![CDATA[countFlagsInternal = 0; //Внутренний счетчик изменений состояния checkBox
+if (RecBorder.TextEdit_Repeat.Text == "" || RecBorder.TextEdit_Repeat.Text == "0") RecBorder.TextEdit_Priority.Enabled = false;
+else RecBorder.TextEdit_Priority.Enabled = true;
+bInit=true;
+Focus = true; //Переводим Focus на форму для обработки нажатия клавиш
+
+]]>
+		</body>
+	</do-on>
+	<do access-modifier="private" name="CheckSeverityRange" display-name="CheckSeverityRange" ver="2" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<body kind="javascript">
+			<![CDATA[//Функция проверки корректности ввода значений важности и формирования диапазона для информационных сигналов
+var str = inputString;
+var numberArray = [];
+var tempArray = [];
+var informArray = [];
+var commonArray = [];
+var count = 1;
+
+//Инициализируем шаблоны
+//Наличие запятой в конце
+var mask0 = /[,]\s*$/g;
+//Верная запись элементов последовательности
+var mask1 = /\s?[0-9]{1,3}\s?[,]|\s?[0-9]{1,3}\s?$|\s?[0-9]{1,3}\s?[-]\s?[0-9]{1,3}\s?[,]|\s?[0-9]{1,3}\s?[-]\s?[0-9]{1,3}\s?$|\s?[0-9]{1,3}\s?[-]\s?(1000)|(\s?1000\s?[,])|(\s?1000)/g;
+//Поиск 0 и >1000
+var mask2 = /(^[0])|([,][0][-])|([-][0])|([,][0]$)|([1-9][0-9][0-9][1-9]{1,}|[0-9]{5,})/g;
+//Элемент как диапазон
+var gapPattern = /\d+\s?[-]\s?\d+/;
+
+//Проверка на верную запись запроса
+//Проверка, что пробелов не больше 1
+if (/[ ]{2,}/g.test(str)) return "errorSyntax";
+//Избавляемся от пробелов
+str = str.replace(/[ ]/g,"");
+//Проверка шаблонов
+if (mask0.test(str) || mask2.test(str)) return "errorSyntax";
+str = str.replace(mask1,"");
+if (str.length != 0) return "errorSyntax";
+//Переопределяем, если проверка прошла, образуем массив элементов и проверяем дальше
+str = inputString.replace(/[ ]/g,"");
+
+//Проверка на случай, если элемент всего один
+if (/(^\s?[0-9]{1,3}\s?$)|(^\s?[0-9]{1,3}\s?[-]\s?[0-9]{1,3}\s?$|^\s?(1000)$)/.test(str))commonArray[0] = str;
+else commonArray = str.split(",");
+if (/[,]/.test(commonArray[commonArray.length-1])) return "errorSyntax";
+
+//Проверка на верную запись диапазона чисел, запись его чисел в виде элемента массива
+for (let i = 0; i < commonArray.length; i++)
+{
+	if (gapPattern.test(commonArray[i])) //Если элемент - диапазон чисел, то проверяем его и формируем массив
+	{
+		tempArray = commonArray[i].match(/\d+/g);
+		if (parseInt(tempArray[0]) >= parseInt(tempArray[1])) return "errorValues";
+		while (parseInt(tempArray[0]) <= parseInt(tempArray[1]))
+		{
+			numberArray.push(tempArray[0]);
+			tempArray[0] = parseInt(tempArray[0])+1;
+		}
+	}
+	else numberArray.push(commonArray[i]);
+	tempArray = [];
+}
+
+//Проверяем на совпадения значений в строках фильтра
+for (let i = 0; i < numberArray.length; i++)
+{
+	for (let j = i+1; j < numberArray.length; j++)
+	{
+		if (parseInt(numberArray[i]) == parseInt(numberArray[j])) return "match";
+	}
+}
+
+if (check) return numberArray.toString();//Если стоит только проверка корректности ввода, то возвращаем обработанный массив
+//Дальше идет генерация важностей информационных сообщений
+//Заполняем значения важности информационных сообщения
+for (let i = 1; i < 1001; i++)
+{
+	informArray.push(i);
+}
+
+//Сортировка массива
+numberArray.sort(function(a, b) {
+  return a - b;
+});
+
+//Оставляем в иформационных важностях все, которые не были использованы
+for (let i = 0; i < 1000; i++)
+{
+	for (let j = 0; j < numberArray.length; j++)
+	{
+		if (parseInt(informArray[i]) == parseInt(numberArray[j])) informArray.splice(i,1);
+	}
+}
+//Запись элементов в виде диапазона, если они образуют арифметическую прогрессию(сокращение записи)
+if (informArray != null)
+{
+	for (let i = 0; i < informArray.length; i++)
+	{
+		while (parseInt(informArray[i])+count == parseInt(informArray[i+count]))
+		{
+			count++;
+		}
+		if (count > 2)
+		{
+			informArray[i] = informArray[i] + "-" + informArray[i+count-1];
+			informArray.splice(i+1,count-1);
+		}
+		count = 1;
+	}
+}
+return informArray.toString();
+
+
+
+]]>
+		</body>
+		<param access-modifier="private" name="inputString" display-name="" uuid="dad7f6f2-9637-4bf3-93b0-75a2a4fb6519" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+		<param access-modifier="private" name="check" display-name="" uuid="25c6be32-ffaa-448c-b7f1-525dbf594691" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="2"/>
+	</do>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="e911ba51-8b71-4bc6-a492-08349460c136" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="2"/>
+	<do access-modifier="private" name="CheckAllMatch" display-name="CheckAllMatch" ver="3" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<body kind="javascript">
+			<![CDATA[//Функция проверки совпадений диапазонов полей
+var range1 = str1;
+var range2 = str2;
+var range3 = str3;
+//Функция проверки совпадений элементов в массиве
+function CheckMatch(str)
+{
+	let commonArray = str.split(",");
+	//Проверяем массив чисел на совпадения
+	for (let i = 0; i < commonArray.length; i++)
+	{
+		for (let j = i+1; j < commonArray.length; j++)
+		{
+			if (parseInt(commonArray[i]) == parseInt(commonArray[j])) return true;
+		}
+	}
+	return false;
+}
+
+switch (numberRange)
+{
+	case 0:
+		if (CheckMatch(range1 + "," + range2) && !/[A-Za-z]/g.test(range1 + "," + range2)) return "Важные";
+		if (CheckMatch(range1 + "," + range3) && !/[A-Za-z]/g.test(range1 + "," + range3)) return "Значительные";
+		break;
+	case 1:
+		if (CheckMatch(range2 + "," + range1)&& !/[A-Za-z]/g.test(range2 + "," + range1)) return "Особой важности";
+		if (CheckMatch(range2 + "," + range3)&& !/[A-Za-z]/g.test(range2 + "," + range3)) return "Значительные";
+		break;
+	case 2:
+		if (CheckMatch(range3 + "," + range1)&& !/[A-Za-z]/g.test(range3 + "," + range1)) return "Особой важности";
+		if (CheckMatch(range3 + "," + range2)&& !/[A-Za-z]/g.test(range3 + "," + range2)) return "Важные";
+		break;
+}
+return "";]]>
+		</body>
+		<param access-modifier="private" name="numberRange" display-name="" uuid="df194299-ed1a-4b48-ac7b-312e322b2e9a" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="3"/>
+		<param access-modifier="private" name="str1" display-name="" uuid="0059c20f-b404-47e1-a559-ee71be048402" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="3"/>
+		<param access-modifier="private" name="str2" display-name="" uuid="b0781fb3-253e-4192-81b8-8897ed501580" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="3"/>
+		<param access-modifier="private" name="str3" display-name="" uuid="f69ea44d-e0eb-4703-a5f7-de1c27463bbc" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="3"/>
+	</do>
+	<object access-modifier="private" name="bDefSet" display-name="bDefSet" uuid="b237e9fa-8a11-4cdc-9889-d8a90e62ab37" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="2"/>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="3" event="KeyPress">
+		<body kind="om">
+			<![CDATA[vi: uint4 = event.KeyCode;
+if (vi==75) pSettingsForm.Close();
+]]>
+		</body>
+	</do-on>
+	<do access-modifier="private" name="CheckRange" display-name="CheckRange" ver="3" type="" type-id="" form-by-id="true">
+		<body kind="javascript">
+			<![CDATA[//Функция проверки корректности значений полей
+var errorStr = "";
+var errorMatch = "";
+var range = [], range = [], error = ["","",""];
+var selectedIndex = RecBorder.ComboBox_1.SelectedIndex;
+if (selectedIndex < 0) return;
+
+range[0] = pSettingsForm.Settings.Severity.Range1;
+range[1] = pSettingsForm.Settings.Severity.Range2;
+range[2] = pSettingsForm.Settings.Severity.Range3;
+
+//Проверяем поле на наличие ошибки
+if (range[selectedIndex].JSON != "") range[selectedIndex].JSON_temp = CheckSeverityRange(range[selectedIndex].JSON, true);
+if (range[selectedIndex].JSON_temp == "errorSyntax") error[selectedIndex] = "Ошибка ввода. Допустим ввод только чисел от 1 до 1000, дефиса, пробела и запятой";//Проверка правильности ввода значения поля
+if (range[selectedIndex].JSON_temp == "errorValues") error[selectedIndex] = "Ошибка ввода. Некорректное задание диапазона";//Проверка, что в записи диапазона числа идут от меньшего к большему
+if (range[selectedIndex].JSON_temp == "match") error[selectedIndex] = "Ошибка ввода. Значения введённого диапазона пересекаются";//Проверка, что значения полей не пересекаются
+
+errorMatch = CheckAllMatch(selectedIndex,range[0].JSON_temp,range[1].JSON_temp,range[2].JSON_temp);//Проверка отсутствия совпадения диапазонов всех полей важности
+if (errorMatch != "") error[selectedIndex] = "Ошибка ввода. Значения группы \"" + RecBorder.ComboBox_1.GetItem(selectedIndex) + "\" совпадают со значениями группы \"" + errorMatch + "\"";
+
+//Записываем хинт ошибки выбранного поля важности (если есть)
+errorStr = error[selectedIndex]; 
+RecBorder.TextEdit_Value.RecBorder_Alarm.Image_1.Tooltip = errorStr;
+
+//Запоминаем ошибку (если есть)
+if (selectedIndex == 0) pSettingsForm.errorRange1 = /./.test(error[0]);
+if (selectedIndex == 1) pSettingsForm.errorRange2 = /./.test(error[1]);
+if (selectedIndex == 2) pSettingsForm.errorRange3 = /./.test(error[2]);
+
+//Определяем видимость красной рамки по выбранному полю и наличия ошибок в нем
+RecBorder.TextEdit_Value.RecBorder_Alarm.Visible = (((selectedIndex == 0) && error[0] != "") || ((selectedIndex == 1) && error[1] != "")|| ((selectedIndex == 2) && error[2] != ""));
+
+pSettingsForm.errorForm1 = pSettingsForm.errorRange1 | pSettingsForm.errorRange2 | pSettingsForm.errorRange3;
+pSettingsForm.CheckError();
+return;
+
+]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="selectedIndex" display-name="selectedIndex" uuid="5b5e59d6-8b6a-4c69-9f09-4e35686ec972" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="3"/>
+	<object access-modifier="private" name="countFlagsInternal" display-name="countFlagsInternal" uuid="97075498-d954-46d4-8184-44d22802f5ac" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="2"/>
+</type>
+

@@ -1,0 +1,390 @@
+<type access-modifier="private" name="AlarmForm" display-name="AlarmForm" uuid="ca91cd95-03f3-4c02-ac0d-660502266a91" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="1300" ver="1"/>
+	<designed target="Height" value="500" ver="1"/>
+	<designed target="PenColor" value="4278190080" ver="1"/>
+	<designed target="PenStyle" value="0" ver="1"/>
+	<designed target="PenWidth" value="1" ver="1"/>
+	<designed target="BrushColor" value="4293980400" ver="1"/>
+	<designed target="BrushStyle" value="1" ver="1"/>
+	<designed target="WindowX" value="0" ver="1"/>
+	<designed target="WindowY" value="0" ver="1"/>
+	<designed target="WindowWidth" value="1300" ver="1"/>
+	<designed target="WindowHeight" value="500" ver="1"/>
+	<designed target="WindowCaption" value="Alarms" ver="1"/>
+	<designed target="ShowWindowCaption" value="true" ver="1"/>
+	<designed target="ShowWindowMinimize" value="true" ver="1"/>
+	<designed target="ShowWindowMaximize" value="true" ver="1"/>
+	<designed target="ShowWindowClose" value="true" ver="1"/>
+	<designed target="AlwaysOnTop" value="false" ver="1"/>
+	<designed target="WindowSizeMode" value="0" ver="1"/>
+	<designed target="WindowBorderStyle" value="1" ver="1"/>
+	<designed target="WindowState" value="0" ver="1"/>
+	<designed target="WindowScalingMode" value="0" ver="1"/>
+	<designed target="MonitorNumber" value="0" ver="1"/>
+	<designed target="WindowPosition" value="1" ver="1"/>
+	<designed target="WindowCloseMode" value="0" ver="1"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="Opened">
+		<body kind="javascript">
+			<![CDATA[var fromDate = new Date();
+fromDate.Day = fromDate.setDate(fromDate.getDate() - 1);
+var toDate = new Date();
+AlphaAlarmsAxControl.SetHistoricalInterval(fromDate, toDate); // параметр запуска, при котором по умолчанию будет установлен исторический режим с сообщениями за последние сутки
+AlphaAlarmsAxControl.ActiveMode = 1;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="filterButton" display-name="filterButton" uuid="10419e99-1be8-47e5-91f3-b1d0c4e66989" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="947" ver="1"/>
+		<designed target="Y" value="240" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="95" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="Text" value="Filter" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[var tempFilterString = []; //буфер для хранения приоритетов
+var counter = 0; //счётчик чекбоксов
+if (CheckboxUltraLow.State == true) //если выбран чекбокс, по плюсуем счётчик, и вписываем строку с запросом в буфер
+{
+	tempFilterString[counter] = "(Severity <= 250) AND (Severity >= 0)";
+	counter++;
+}
+if (CheckboxLow.State == true) //если выбран чекбокс, по плюсуем счётчик, и вписываем строку с запросом в буфер
+{
+	tempFilterString[counter] = "(Severity <= 500) AND (Severity >= 250)";
+	counter++;
+}
+if (CheckboxMiddle.State == true) //если выбран чекбокс, по плюсуем счётчик, и вписываем строку с запросом в буфер
+{
+	tempFilterString[counter] = "(Severity <= 750) AND (Severity >= 500)";
+	counter++;
+}
+if (CheckboxHigh.State == true) //если выбран чекбокс, по плюсуем счётчик, и вписываем строку с запросом в буфер
+{
+	tempFilterString[counter] = "(Severity <= 1000) AND (Severity >= 750)";
+	counter++;
+}
+
+if (counter == 0) //если ничего не выбрано, то устанавливаем строку запроса по умолчанию
+{
+	filterString = "(Severity <= 1000) AND (Severity >= 0)";
+}
+else
+{
+	if (counter == 1) //если выбран всего один элемент, то устанавливаем запрос по умолчанию
+	{
+		filterString = tempFilterString[0];
+	}
+	else //если больше, то строим строку запроса, т.к. там несколько запросов, их нужно объединить в скобки
+	{
+		filterString = "(";
+		for (var i = 0; i < counter; i++)
+		{
+			filterString += tempFilterString[i];
+			if (i != (counter - 1)) //если элемент не последний, то собираем строку запроса
+			{
+				filterString += " OR ";
+			}
+		}
+		filterString += ")"; // если элемент послений, то закрываем строку запроса
+	}
+}
+filterString += " AND (Message LIKE '*" + requestEdit.Text + "*')"; //добавляем строку с проверкой Message события, вне зависимости от того, задан фильтр, или нет
+//идём применять фильтры
+ApplyFilter.Invoke(); ]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="clearFilterButton" display-name="clearFilterButton" uuid="21157e9c-835f-46bb-b9b2-6cb70baa6da1" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="1061" ver="1"/>
+		<designed target="Y" value="240" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="95" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="Text" value="Clear" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[//чистим фильтры, которые установили
+fromDateEditType.resetDate.Invoke();
+toDateEditType.resetDate.Invoke();
+requestEdit.Text = "";
+CheckboxHigh.State = false;
+CheckboxMiddle.State = false;
+CheckboxLow.State = false;
+CheckboxUltraLow.State = false; ]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="resetFilterButton" display-name="resetFilterButton" uuid="ffc7caaa-8dcb-44c5-8dd5-c2cf26c4c0cb" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="1175" ver="1"/>
+		<designed target="Y" value="240" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="95" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="Text" value="Reset" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[//сбрасываем, и отключаем фильтры
+fromDateEditType.resetDate.Invoke();
+toDateEditType.resetDate.Invoke();
+requestEdit.Text = "";
+CheckboxHigh.State = false;
+CheckboxMiddle.State = false;
+CheckboxLow.State = false;
+CheckboxUltraLow.State = false;
+AlphaAlarmsAxControl.FilterActive = false;
+AlphaAlarmsAxControl.IsAdvancedFilterActive = false;
+AlphaAlarmsAxControl.SetAdvancedRequestFilter("");
+var fromDate = new Date();
+fromDate.Day = fromDate.setDate(fromDate.getDate() - 1);
+var toDate = new Date();
+AlphaAlarmsAxControl.SetHistoricalInterval(fromDate, toDate); // параметр запуска, при котором по умолчанию будет установлен исторический режим с сообщениями за последние сутки
+AlphaAlarmsAxControl.ActiveMode = 1;]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="fromDateText" display-name="fromDateText" uuid="3616a07e-b8c4-484d-b671-c95e38e1a7d2" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="947" ver="1"/>
+		<designed target="Y" value="11" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="53.0592" ver="1"/>
+		<designed target="Height" value="23" ver="1"/>
+		<designed target="Text" value="from Date" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="33" ver="1"/>
+	</object>
+	<object access-modifier="private" name="toDateText" display-name="toDateText" uuid="77c22c19-d48e-4586-9e5d-73f84f335f52" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="947" ver="1"/>
+		<designed target="Y" value="46" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="53.0592" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="to Date" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="33" ver="1"/>
+	</object>
+	<object access-modifier="private" name="requestText" display-name="requestText" uuid="8874b22b-789d-4ff9-a52e-afe2156d47ab" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="947" ver="1"/>
+		<designed target="Y" value="81" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="53.0592" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="Request" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="33" ver="1"/>
+	</object>
+	<object access-modifier="private" name="requestEdit" display-name="requestEdit" uuid="7ce2882f-b26b-4d09-b922-f73de8b88ba2" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="1002" ver="1"/>
+		<designed target="Y" value="77" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="268" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="Text" value="" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="129" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="Enter Your request" ver="1"/>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="CheckboxHigh" display-name="CheckboxHigh" uuid="be9a4dec-5407-4d38-86d7-773900a45c2b" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="1">
+		<designed target="X" value="1003" ver="1"/>
+		<designed target="Y" value="113" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="140" ver="1"/>
+		<designed target="Height" value="23" ver="1"/>
+		<designed target="Text" value="High" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="State" value="false" ver="1"/>
+	</object>
+	<object access-modifier="private" name="CheckboxMiddle" display-name="CheckboxMiddle" uuid="31125a04-a7bf-4b98-b0ce-c4ad5d5d57b9" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="1">
+		<designed target="X" value="1003" ver="1"/>
+		<designed target="Y" value="141" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="140" ver="1"/>
+		<designed target="Height" value="23" ver="1"/>
+		<designed target="Text" value="Middle" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="State" value="false" ver="1"/>
+	</object>
+	<object access-modifier="private" name="priorityText" display-name="priorityText" uuid="c0f10f9b-594d-4014-a9f4-1ca388ae9ac7" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="947" ver="1"/>
+		<designed target="Y" value="114" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="53.0592" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="Priority" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="33" ver="1"/>
+	</object>
+	<object access-modifier="private" name="CheckboxLow" display-name="CheckboxLow" uuid="df4ff7e0-c1c1-4f39-987d-c60013b02cd6" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="1">
+		<designed target="X" value="1003" ver="1"/>
+		<designed target="Y" value="170" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="140" ver="1"/>
+		<designed target="Height" value="23" ver="1"/>
+		<designed target="Text" value="Low" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="State" value="false" ver="1"/>
+	</object>
+	<object access-modifier="private" name="CheckboxUltraLow" display-name="CheckboxUltraLow" uuid="1cf05784-ae1f-49c8-9f31-7945c98f93ef" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="1">
+		<designed target="X" value="1003" ver="1"/>
+		<designed target="Y" value="198" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="140" ver="1"/>
+		<designed target="Height" value="23" ver="1"/>
+		<designed target="Text" value="UltraLow" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="State" value="false" ver="1"/>
+	</object>
+	<object access-modifier="private" name="ApplyFilter" display-name="ApplyFilter" uuid="ee0e10f6-3ac5-4d9d-84c2-8c55d3ade418" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="1">
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="InvokeTrigger" value="false" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="Invoked">
+			<body kind="javascript">
+				<![CDATA[AlphaAlarmsAxControl.SetAdvancedRequestFilter(filterString); //установка фильтра для исторического режима
+AlphaAlarmsAxControl.SetAdvancedFilter(filterString); //установка фильтра для оперативного режима
+AlphaAlarmsAxControl.IsAdvancedFilterActive = true; //активация фильтра
+AlphaAlarmsAxControl.FilterActive = true; //активация фильтра
+var fromDateJS = new Date(); //создаём метки времени
+var toDateJS = new Date();
+//перекладываем в них значения переменных, которые мы спарсили ранее
+fromDateJS.setFullYear(fromDateEditType.editYear.Text);
+fromDateJS.setMonth((fromDateEditType.editMonth.Text - 1), fromDateEditType.editDate.Text); //месяц задаётся с 0 до 11, поэтому отнимаем 1, плюс в параметрах можно сразу указать дату
+fromDateJS.setHours(fromDateEditType.editHours.Text);
+fromDateJS.setMinutes(fromDateEditType.editMinutes.Text);
+fromDateJS.setSeconds(fromDateEditType.editSeconds.Text);
+
+toDateJS.setFullYear(toDateEditType.editYear.Text);
+toDateJS.setMonth((toDateEditType.editMonth.Text - 1), toDateEditType.editDate.Text); //месяц задаётся с 0 до 11, поэтому отнимаем 1, плюс в параметрах можно сразу указать дату
+toDateJS.setHours(toDateEditType.editHours.Text);
+toDateJS.setMinutes(toDateEditType.editMinutes.Text);
+toDateJS.setSeconds(toDateEditType.editSeconds.Text);
+//проверяем в экзеплярах типа, всё ли в порядке с датой?
+if ((fromDateEditType.checkDate == true) && (toDateEditType.checkDate == true))
+{
+	checkDate = true;
+}
+else
+{
+	checkDate = false;
+}
+//если всё в порядке, то проверяем хронологию
+if (checkDate == true)
+{
+	if (fromDateJS < toDateJS) // если соблюдён хронологический порядок
+	{
+		checkDate = true; //то всё хорошо
+	}
+	else
+	{
+		checkDate = false; //всё плохо, желательно перепроверить дату
+	}
+}
+//в зависимости от результата, устанавливаем либо интервал по умолчанию, либо заданый
+if (checkDate == true) //если метки времени в правильном хронологическом порядке
+{
+	AlphaAlarmsAxControl.SetHistoricalInterval(fromDateJS, toDateJS); //устанавливаем временной интервал в Alarms
+}
+else
+{	
+	var fromDate = new Date();
+	fromDate.Day = fromDate.setDate(fromDate.getDate() - 1);
+	var toDate = new Date();
+	AlphaAlarmsAxControl.SetHistoricalInterval(fromDate, toDate);  //сбрасываем период запроса истории
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="filterString" display-name="filterString" uuid="2863516d-4018-4f52-8130-ae26a344ec49" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="checkDate" display-name="checkDate" uuid="bc484181-e0fc-48b2-bd35-383a9c3c0779" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="1"/>
+	<object access-modifier="private" name="fromDateEditType" display-name="fromDateEditType" uuid="7db1d5bb-0374-485a-83d4-dd0d1d7583dd" base-type="dateEditorCombo" base-type-id="953d0828-2a60-4c5d-8817-ddfcc606e917" ver="1">
+		<designed target="X" value="1002.69" ver="1"/>
+		<designed target="Y" value="10" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+	</object>
+	<object access-modifier="private" name="toDateEditType" display-name="toDateEditType" uuid="9a6311a5-94d2-4d77-925f-1d8022e3f02c" base-type="dateEditorCombo" base-type-id="953d0828-2a60-4c5d-8817-ddfcc606e917" ver="1">
+		<designed target="X" value="1002.6867007672636" ver="1"/>
+		<designed target="Y" value="43.646341463414643" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Alarms_1" display-name="Alarms_1" uuid="bfc147f8-1053-454f-a295-3aaa3303aa91" base-type="Alarms" base-type-id="e8a9dba0-e07f-4bfe-95f9-b75887e3f21b" ver="2">
+		<designed target="X" value="0" ver="2"/>
+		<designed target="Y" value="11" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Width" value="941" ver="3"/>
+		<designed target="Height" value="600" ver="3"/>
+	</object>
+</type>
+

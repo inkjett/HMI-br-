@@ -1,0 +1,265 @@
+<type access-modifier="private" name="PLC_Modul_CPU" display-name="PLC_Modul_CPU" uuid="065566d8-c58c-4938-9b01-9742695a35ed" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="200" ver="1"/>
+	<designed target="Height" value="412" ver="1"/>
+	<designed target="RoundingRadius" value="0" ver="1"/>
+	<designed target="PenColor" value="4278190080" ver="1"/>
+	<designed target="PenStyle" value="1" ver="1"/>
+	<designed target="PenWidth" value="1" ver="1"/>
+	<designed target="BrushColor" value="4278190080" ver="1"/>
+	<designed target="BrushStyle" value="0" ver="1"/>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="83fc0cd3-ae30-4115-8328-bbf1275b7b68" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="0.5" ver="1"/>
+		<designed target="Y" value="0.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="198" ver="1"/>
+		<designed target="Height" value="410.00000000000006" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffdedede" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+	</object>
+	<object access-modifier="private" name="OPC_Root" display-name="OPC_Root" uuid="c0abe803-9e3a-45f4-9a3e-05cd52617392" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="1">
+		<designed target="Active" value="true" ver="1"/>
+		<designed target="UpdateRate" value="0" ver="1"/>
+		<init target="Location" ver="1" value="localhost"/>
+		<init target="ProgId" ver="1" value="AP.OPCDAServer"/>
+	</object>
+	<object access-modifier="private" name="OpcDI_1" display-name="OpcDI_1" uuid="1b8a6bf0-90e3-4ffb-a16d-19c83165fc7a" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+0)]]>
+			</expr>
+		</init>
+	</object>
+	<param access-modifier="private" name="_ModulNumberDI" display-name="_ModulNumberDI" uuid="da77240e-f651-45b0-b58d-3943f4288fae" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="7f6e48bc-8447-42e8-84a3-d618b465cc3f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="31.5" ver="1"/>
+		<designed target="Y" value="385.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="58" ver="1"/>
+		<designed target="Height" value="23.000000000000057" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="4278190080" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="2" ver="1"/>
+		<designed target="BrushColor" value="0xffffffff" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="7a85da73-9293-4be0-b2e4-7d918b046537" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+			<designed target="X" value="4" ver="1"/>
+			<designed target="Y" value="2" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="50" ver="1"/>
+			<designed target="Height" value="20" ver="1"/>
+			<designed target="Text" value="Text" ver="1"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="132" ver="1"/>
+			<init target="Text" ver="1">
+				<expr>
+					<![CDATA["A1_" + Str.ToString(_ModulNumberDI)]]>
+				</expr>
+			</init>
+		</object>
+	</object>
+	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="fce3520d-a4bb-4438-8d2e-bca8381cb3b4" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="26.5" ver="1"/>
+		<designed target="Y" value="12.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="70" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="CPU-32A" ver="1"/>
+		<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<object access-modifier="private" name="OpcDI_2" display-name="OpcDI_2" uuid="9ff5e922-90b8-4d50-ac67-2e9cda049d0b" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+1)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_3" display-name="OpcDI_3" uuid="d0faa511-e968-4d94-8dc8-9f84c8ff7a6d" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+2)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_4" display-name="OpcDI_4" uuid="1a5a09e8-8e48-4f2d-b9c4-158e7d174a10" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+3)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_5" display-name="OpcDI_5" uuid="0fdbb9bc-7af1-4f25-9a84-56e79875a5eb" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+4)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_6" display-name="OpcDI_6" uuid="19d985d8-f062-41c4-8501-89c311c5deac" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+5)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_7" display-name="OpcDI_7" uuid="aa0dcec0-9a4f-4d8c-a4e4-be748f1cf99c" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+6)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_8" display-name="OpcDI_8" uuid="0a7169db-7a79-4fd7-aa9c-dcc0d5a43d1f" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+7)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_9" display-name="OpcDI_9" uuid="b947c4aa-6479-42be-ae3c-46b38292c22f" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+8)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_10" display-name="OpcDI_10" uuid="a89fb018-2796-4abd-a7f9-3b9f17ae97cd" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+9)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_11" display-name="OpcDI_11" uuid="31456f63-eb97-4d42-bddf-d67b006c5e00" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+10)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_12" display-name="OpcDI_12" uuid="821ac1c1-678c-42ef-a1de-c0f10286bad9" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+11)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_13" display-name="OpcDI_13" uuid="18d8f20e-30c2-451b-83ac-9e2d831e4c1e" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+12)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_14" display-name="OpcDI_14" uuid="db789800-3802-43df-a417-f12c8ab6928a" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+13)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_15" display-name="OpcDI_15" uuid="01465b35-1757-4c61-8d88-755d37932eea" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+14)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_16" display-name="OpcDI_16" uuid="15ce0fce-82ca-451d-85d1-600ab1b9604c" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(40+(_ModulNumberDI-1)*16+15)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="OpcDI_LinkError" display-name="OpcDI_LinkError" uuid="ab061f17-980e-470f-8e6a-3d47a1441f6e" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="OPC_Root"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["DI"+Str.ToString(0+(_ModulNumber-1))]]>
+			</expr>
+		</init>
+	</object>
+	<param access-modifier="private" name="_ModulNumber" display-name="_ModulNumber" uuid="90751cc5-3b84-4816-980f-dd343b03d8c3" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+</type>
+

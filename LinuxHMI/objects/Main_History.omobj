@@ -1,0 +1,886 @@
+<type access-modifier="private" name="Main_History" display-name="Main_History" uuid="4b8eba97-7ffc-48c7-a3e9-5e6413f39647" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5">
+	<designed target="X" value="0"/>
+	<designed target="Y" value="0"/>
+	<designed target="Rotation" value="0"/>
+	<designed target="Scale" value="1"/>
+	<designed target="Visible" value="true"/>
+	<designed target="Enabled" value="true"/>
+	<designed target="Tooltip" value=""/>
+	<designed target="Width" value="1720"/>
+	<designed target="Height" value="775"/>
+	<designed target="PenColor" value="0xff000000"/>
+	<designed target="PenStyle" value="0"/>
+	<designed target="PenWidth" value="1"/>
+	<designed target="BrushColor" value="0xffa0b5e6"/>
+	<designed target="BrushStyle" value="1"/>
+	<designed target="WindowX" value="0"/>
+	<designed target="WindowY" value="0"/>
+	<designed target="WindowWidth" value="1720"/>
+	<designed target="WindowHeight" value="750"/>
+	<designed target="WindowCaption" value="MainForm"/>
+	<designed target="ShowWindowCaption" value="true"/>
+	<designed target="ShowWindowMinimize" value="true"/>
+	<designed target="ShowWindowMaximize" value="true"/>
+	<designed target="ShowWindowClose" value="true"/>
+	<designed target="AlwaysOnTop" value="false"/>
+	<designed target="WindowSizeMode" value="0"/>
+	<designed target="WindowBorderStyle" value="1"/>
+	<designed target="WindowState" value="0"/>
+	<designed target="WindowScalingMode" value="0"/>
+	<designed target="MonitorNumber" value="0"/>
+	<designed target="WindowPosition" value="0"/>
+	<designed target="WindowCloseMode" value="0"/>
+	<object access-modifier="private" name="txt_NameForm" display-name="txt_NameForm" uuid="91e45ae0-3b0f-4090-b267-9b6d4e84108e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="0"/>
+		<designed target="Y" value="0"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="1720"/>
+		<designed target="Height" value="40"/>
+		<designed target="Text" value="Архивный журнал событий"/>
+		<designed target="Font" value="Sans Serif,22,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff63708f"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="Opened">
+		<body kind="javascript">
+			<![CDATA[/*var starttime = new Date();
+starttime.Hours = starttime.setHours(starttime.getHours() - 24);
+var endtime = new Date();
+AlphaAlarmsAxControl_1.SetHistoricalInterval(starttime, endtime);*/
+ApplyFilter.Invoke();]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="filterButton" display-name="filterButton" uuid="7c2f49ea-9ba9-469f-abf9-d08b26a15140" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="1385" ver="1"/>
+		<designed target="Y" value="384" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="330" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="Применить фильтр" ver="1"/>
+		<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[
+//--------------------------------------------------------------------------------------------------------------
+// Формируем строки запроса для важности
+
+var tempFilterString = []; //буфер для хранения приоритетов
+var counter = 0; //счётчик чекбоксов
+
+if (Group_Priority.CheckboxUltraLow.State == true) //если выбран чекбокс, то плюсуем счётчик, и вписываем строку с запросом в буфер
+{
+	tempFilterString[counter] = "{\"AND\":[{\">=\":{\"severity\":0}},{\"<=\":{\"severity\":222}}]}"; //"\"Severity\" : \"<= 0\" AND \"Severity\" : \">= 222\"";
+	counter++;
+}
+
+if (Group_Priority.CheckboxLow.State == true) //если выбран чекбокс, по плюсуем счётчик, и вписываем строку с запросом в буфер
+{
+	tempFilterString[counter] = "{\"AND\":[{\">=\":{\"severity\":223}},{\"<=\":{\"severity\":444}}]}";
+	counter++;
+}
+
+if (Group_Priority.CheckboxMiddle.State == true) //если выбран чекбокс, по плюсуем счётчик, и вписываем строку с запросом в буфер
+{
+	tempFilterString[counter] = "{\"AND\":[{\">=\":{\"severity\":445}},{\"<=\":{\"severity\":666}}]}";
+	counter++;
+}
+
+if (Group_Priority.CheckboxHigh.State == true) //если выбран чекбокс, по плюсуем счётчик, и вписываем строку с запросом в буфер
+{
+	tempFilterString[counter] = "{\"AND\":[{\">=\":{\"severity\":667}},{\"<=\":{\"severity\":1000}}]}";
+	counter++;
+}
+
+//------------------------------------------------------------------------------------------------------------------
+// Формируем запрос важности значений
+
+if (counter == 0) //если ничего не выбрано, то устанавливаем строку запроса по умолчанию
+{
+filterString = "{\"AND\":[{\">=\":{\"severity\":0}},{\"<=\":{\"severity\":1000}}]}";
+}
+else
+{
+	if (counter == 1) //если выбран всего один элемент, то устанавливаем запрос по умолчанию
+	{
+		filterString = tempFilterString[0];
+	}
+	else //если больше, то строим строку запроса, т.к. там несколько запросов, их нужно объединить в скобки
+	{
+		filterString = "{\"OR\":[";
+		for (var i = 0; i < counter; i++)
+		{
+			filterString += tempFilterString[i];
+			if (i != (counter - 1)) //если элемент не последний, то собираем строку запроса с помощью запятой
+			{
+				filterString += ",";
+			}
+		}
+		filterString += "]}"; // если элемент послений, то закрываем строку запроса
+	}
+}
+
+
+//-----------------------------------------------------------------------------------------------------------------------
+// Расширяем запрос для принятия сообщений
+
+if (Group_String.requestEdit.Text != "") // Если есть текст
+{
+	messageRequest = "{\"message\":" + "\"" + "*" + Group_String.requestEdit.Text + "*" + "\"" + "}"
+}
+else // если нет текста, то отправляем в message *
+{
+	messageRequest = "{\"message\":\"*\"}"
+}
+
+filterString = "{\"AND\":[" + filterString + "," + messageRequest + "]}"; //Объединяем запрос важности и текста
+
+here.Alarms_1.SetAdvancedRequestFilterAsJson(filterString);
+
+
+ApplyFilter.Invoke();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="2"/>
+	</object>
+	<object access-modifier="private" name="clearFilterButton" display-name="clearFilterButton" uuid="27a52ab0-fc5a-4c2b-96fe-15af0ed636c7" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="1385" ver="1"/>
+		<designed target="Y" value="95" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="330" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="Очистить условия" ver="1"/>
+		<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[//чистим фильтры, которые установили
+//fromDateEditType.resetDate.Invoke();
+//toDateEditType.resetDate.Invoke();
+Group_String.requestEdit.Text = "";
+Group_Priority.CheckboxHigh.State = false;
+Group_Priority.CheckboxMiddle.State = false;
+Group_Priority.CheckboxLow.State = false;
+Group_Priority.CheckboxUltraLow.State = false; ]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="resetFilterButton" display-name="resetFilterButton" uuid="9561d2b6-558a-490a-bc7b-92e74b3ec4ef" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="1385" ver="1"/>
+		<designed target="Y" value="50" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="330" ver="1"/>
+		<designed target="Height" value="40" ver="1"/>
+		<designed target="Text" value="Сброс (за последние сутки)" ver="1"/>
+		<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[//Сброс начальной и конечной дат
+Group_Date.From_DateTimeCombo.resetDate.Invoke();
+Group_Date.To_DateTimeCombo.resetDate.Invoke();
+/*
+Group_String.requestEdit.Text = "";
+Group_Priority.CheckboxHigh.State = false;
+Group_Priority.CheckboxMiddle.State = false;
+Group_Priority.CheckboxLow.State = false;
+Group_Priority.CheckboxUltraLow.State = false;
+AlphaAlarmsAxControl.FilterActive = false;
+AlphaAlarmsAxControl.IsAdvancedFilterActive = false;
+AlphaAlarmsAxControl.SetAdvancedRequestFilter("");
+
+var fromDate = new Date();
+fromDate.Day = fromDate.setDate(fromDate.getDate() - 1);
+var toDate = new Date();
+here.Alarms_1.SetHistoricalInterval(fromDate, toDate); // параметр запуска, при котором по умолчанию будет установлен исторический режим с сообщениями за последние сутки
+*/]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="priorityText" display-name="priorityText" uuid="4837a6aa-0a48-47ca-ac60-0d81e7be2621" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="1098.33" ver="1"/>
+		<designed target="Y" value="-62" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="53.0592" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="Priority" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="33" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Group_Priority" display-name="Group_Priority" uuid="64124238-69b1-4de6-adcd-83c71120bd70" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="1385"/>
+		<designed target="Y" value="233"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="330"/>
+		<designed target="Height" value="95"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="0xff383838"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="4278190080"/>
+		<designed target="BrushStyle" value="0"/>
+		<object access-modifier="private" name="Rectangle_6" display-name="Rectangle_6" uuid="c0353b97-cf8d-410a-901c-29dffa5feaf5" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+			<designed target="X" value="6"/>
+			<designed target="Y" value="-8"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="70"/>
+			<designed target="Height" value="16"/>
+			<designed target="RoundingRadius" value="0"/>
+			<designed target="PenColor" value="0xff383838"/>
+			<designed target="PenStyle" value="0"/>
+			<designed target="PenWidth" value="1"/>
+			<designed target="BrushColor" value="0xffa0b5e6"/>
+			<designed target="BrushStyle" value="1"/>
+		</object>
+		<object access-modifier="private" name="txt_DiagGroup_1" display-name="txt_DiagGroup_1" uuid="f90bb29a-2592-4a00-8f1e-5e22e76c0f22" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="6.66667"/>
+			<designed target="Y" value="-9.66667"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="70"/>
+			<designed target="Height" value="16"/>
+			<designed target="Text" value="Приоритет"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff383838"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<object access-modifier="private" name="CheckboxHigh" display-name="CheckboxHigh" uuid="3fa63595-476a-4928-89da-99cfdbfd964d" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="1">
+			<designed target="X" value="5" ver="1"/>
+			<designed target="Y" value="10" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="100" ver="1"/>
+			<designed target="Height" value="23" ver="1"/>
+			<designed target="Text" value="Высокий" ver="1"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="State" value="false" ver="1"/>
+		</object>
+		<object access-modifier="private" name="CheckboxMiddle" display-name="CheckboxMiddle" uuid="468f7318-208f-43df-b100-831c766c8774" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="1">
+			<designed target="X" value="5" ver="1"/>
+			<designed target="Y" value="30" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="100" ver="1"/>
+			<designed target="Height" value="23" ver="1"/>
+			<designed target="Text" value="Средний" ver="1"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="State" value="false" ver="1"/>
+		</object>
+		<object access-modifier="private" name="CheckboxLow" display-name="CheckboxLow" uuid="06d5bd5c-a003-4d44-8436-a4b15ff4d6c0" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="1">
+			<designed target="X" value="5" ver="1"/>
+			<designed target="Y" value="50" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="100" ver="1"/>
+			<designed target="Height" value="23" ver="1"/>
+			<designed target="Text" value="Низкий" ver="1"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="State" value="false" ver="1"/>
+		</object>
+		<object access-modifier="private" name="CheckboxUltraLow" display-name="CheckboxUltraLow" uuid="8a3ab198-e3df-4285-b5ef-c73a971dac73" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="1">
+			<designed target="X" value="5" ver="1"/>
+			<designed target="Y" value="70" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="100" ver="1"/>
+			<designed target="Height" value="23" ver="1"/>
+			<designed target="Text" value="Прочие" ver="1"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="State" value="false" ver="1"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Group_String" display-name="Group_String" uuid="4cb06ed9-c470-47fe-a425-a0bc990480d6" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="1385"/>
+		<designed target="Y" value="338"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="330"/>
+		<designed target="Height" value="40"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="0xff383838"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="4278190080"/>
+		<designed target="BrushStyle" value="0"/>
+		<object access-modifier="private" name="Rectangle_6" display-name="Rectangle_6" uuid="9f465548-444a-42c7-a088-4520b83c8ea4" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+			<designed target="X" value="5"/>
+			<designed target="Y" value="-8"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="40"/>
+			<designed target="Height" value="16"/>
+			<designed target="RoundingRadius" value="0"/>
+			<designed target="PenColor" value="0xff383838"/>
+			<designed target="PenStyle" value="0"/>
+			<designed target="PenWidth" value="1"/>
+			<designed target="BrushColor" value="0xffa0b5e6"/>
+			<designed target="BrushStyle" value="1"/>
+		</object>
+		<object access-modifier="private" name="txt_DiagGroup_1" display-name="txt_DiagGroup_1" uuid="c3adcd52-1713-4833-bd1b-04ead4c5320a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="5.66667"/>
+			<designed target="Y" value="-9.66667"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="40"/>
+			<designed target="Height" value="16"/>
+			<designed target="Text" value="Текст"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff383838"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<object access-modifier="private" name="requestEdit" display-name="requestEdit" uuid="b449568a-512d-4934-b33c-8d6244be9aae" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+			<designed target="X" value="5" ver="1"/>
+			<designed target="Y" value="10" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="320" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="" ver="1"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<designed target="TextAlignment" value="129" ver="1"/>
+			<designed target="HideInput" value="false" ver="1"/>
+			<designed target="PlaceholderText" value="Введите строку поиска" ver="1"/>
+			<designed target="ReadOnly" value="false" ver="3"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Group_Date" display-name="Group_Date" uuid="47321e46-48ce-493c-8c83-9fe4e21bc92f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+		<designed target="X" value="1385"/>
+		<designed target="Y" value="143"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="330"/>
+		<designed target="Height" value="80"/>
+		<designed target="RoundingRadius" value="0"/>
+		<designed target="PenColor" value="0xff383838"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="4278190080"/>
+		<designed target="BrushStyle" value="0"/>
+		<object access-modifier="private" name="Rectangle_6" display-name="Rectangle_6" uuid="9a147238-0e5e-427c-a384-e3cdde854e15" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
+			<designed target="X" value="6"/>
+			<designed target="Y" value="-8"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="90"/>
+			<designed target="Height" value="16"/>
+			<designed target="RoundingRadius" value="0"/>
+			<designed target="PenColor" value="0xff383838"/>
+			<designed target="PenStyle" value="0"/>
+			<designed target="PenWidth" value="1"/>
+			<designed target="BrushColor" value="0xffa0b5e6"/>
+			<designed target="BrushStyle" value="1"/>
+		</object>
+		<object access-modifier="private" name="txt_DiagGroup_1" display-name="txt_DiagGroup_1" uuid="b74f12a4-ef01-4345-9a79-933e3936acaa" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="5.66667"/>
+			<designed target="Y" value="-9.66667"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="90"/>
+			<designed target="Height" value="16"/>
+			<designed target="Text" value="Диапазон дат"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff383838"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<object access-modifier="private" name="To_DateTimeCombo" display-name="To_DateTimeCombo" uuid="73528215-979b-45bf-9543-0428c21c319f" base-type="DateTimeCombo" base-type-id="6e2eea30-385f-4294-b922-8fd35b6fbf6e" ver="1">
+			<designed target="X" value="30" ver="1"/>
+			<designed target="Y" value="45.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<init target="FromDate" ver="1" value="false"/>
+		</object>
+		<object access-modifier="private" name="txt_DiagGroup_2" display-name="txt_DiagGroup_2" uuid="1390c480-a417-418f-add3-544ee19dd47b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="5.66667"/>
+			<designed target="Y" value="16.3333"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="34"/>
+			<designed target="Height" value="16"/>
+			<designed target="Text" value="C"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff383838"/>
+			<designed target="TextAlignment" value="129"/>
+		</object>
+		<object access-modifier="private" name="txt_DiagGroup_3" display-name="txt_DiagGroup_3" uuid="72cf387e-b331-458a-a344-43e985d2028a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="5.66667"/>
+			<designed target="Y" value="51.3333"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="34"/>
+			<designed target="Height" value="16"/>
+			<designed target="Text" value="По"/>
+			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff383838"/>
+			<designed target="TextAlignment" value="129"/>
+		</object>
+		<object access-modifier="private" name="From_DateTimeCombo" display-name="From_DateTimeCombo" uuid="76623def-13da-479b-adcd-65f0a3ce21d3" base-type="DateTimeCombo" base-type-id="6e2eea30-385f-4294-b922-8fd35b6fbf6e" ver="1">
+			<designed target="X" value="30" ver="1"/>
+			<designed target="Y" value="10.5" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<init target="FromDate" ver="1" value="true"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="ApplyFilter" display-name="ApplyFilter" uuid="0dad9bb8-a433-4f98-b617-f6fd04b071ae" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="1">
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="InvokeTrigger" value="false" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="Invoked">
+			<body kind="javascript">
+				<![CDATA[//Вводим дату для запроса
+here.Alarms_1.Main_panel.ToolBar.RecHistory.DayMonthYear_start.Text = Group_Date.From_DateTimeCombo.Day_ComboBox.Text + "." + Group_Date.From_DateTimeCombo.Month_ComboBox.Text + "." + Group_Date.From_DateTimeCombo.Year_ComboBox.Text;
+
+here.Alarms_1.Main_panel.ToolBar.RecHistory.Time_start.Text = Group_Date.From_DateTimeCombo.Hour_ComboBox.Text + ":" + Group_Date.From_DateTimeCombo.Min_ComboBox.Text + ":" + Group_Date.From_DateTimeCombo.Sec_ComboBox.Text;
+
+here.Alarms_1.Main_panel.ToolBar.RecHistory.DayMonthYear_final.Text = Group_Date.To_DateTimeCombo.Day_ComboBox.Text + "." + Group_Date.To_DateTimeCombo.Month_ComboBox.Text + "." + Group_Date.To_DateTimeCombo.Year_ComboBox.Text;
+
+here.Alarms_1.Main_panel.ToolBar.RecHistory.Time_final.Text = Group_Date.To_DateTimeCombo.Hour_ComboBox.Text + ":" + Group_Date.To_DateTimeCombo.Min_ComboBox.Text + ":" + Group_Date.To_DateTimeCombo.Sec_ComboBox.Text;
+
+
+//Выполняем запрос
+here.Alarms_1.Main_panel.private.LoadHistory()
+
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="filterString" display-name="filterString" uuid="944f3727-c649-4aeb-8239-31fd47d67cfe" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="checkDate" display-name="checkDate" uuid="e22afcda-e4c8-4cce-ab40-a904ba94e3b9" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="1"/>
+	<object access-modifier="private" name="PrintAndExport_BoolToken" display-name="PrintAndExport_BoolToken" uuid="574f160b-59c8-49c7-ac7f-815ae395a1af" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="1">
+		<init target="Application" ver="1" value="Alpha.HMI"/>
+		<init target="Right" ver="1" value="PrintAndExport"/>
+		<init target="SecurityContext" ver="2" ref="unit.Security.SecurityContext"/>
+	</object>
+	<object access-modifier="private" name="Alarms_1" display-name="Alarms_1" uuid="c42a7807-9f18-491f-9016-42e7a78cea96" base-type="Alarms" base-type-id="e8a9dba0-e07f-4bfe-95f9-b75887e3f21b" ver="3">
+		<designed target="X" value="28" ver="3"/>
+		<designed target="Y" value="50" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Width" value="1346" ver="3"/>
+		<designed target="Height" value="704" ver="3"/>
+		<init target="CurrentEventsAvailable" ver="3" value="false"/>
+		<init target="EventHistoryAvailable" ver="3" value="true"/>
+		<init target="init_ApSource" ver="3" ref="unit.Sources.SERVER_source"/>
+		<init target="AcknowledgmentDoubleClick" ver="3" value="false"/>
+		<init target="RequestAcknowledgmentComment" ver="3" value="false"/>
+		<init target="AcknowledgmentAvailable" ver="3" value="false"/>
+		<init target="ClearingCurrentEventsAvailable" ver="3" value="false"/>
+		<init target="EditingSettingsAvailable" ver="3" value="true"/>
+		<init target="ExportDataAvailability" ver="3" value="true"/>
+		<init target="FilterAvailable" ver="3" value="true"/>
+		<init target="SoundPlaybackManagmentAvailable" ver="3" value="false"/>
+		<init target="SnapshotAvailable" ver="3" value="true"/>
+		<init target="UseAlphaSecurity" ver="3" value="true"/>
+		<init target="DontAcknowEventsIfNotRequiring" ver="3" value="true"/>
+		<init target="DisplayAcknowledgeInColumn" ver="3" value="false"/>
+		<init target="RequestEventsStart" ver="3" value="false"/>
+		<init target="AllowActionInSourceColumn" ver="3" value="true"/>
+		<init target="PrintingAvailable" ver="3" value="true"/>
+		<init target="FollowLatestEvent" ver="3" value="false"/>
+		<init target="DisplayToolbarAtStartup" ver="3" value="true"/>
+		<init target="Mute" ver="3" value="true"/>
+		<init target="ActiveMode" ver="3" value="1"/>
+		<init target="EventTableSortAvailability" ver="3" value="true"/>
+		<init target="FileSystemAccess" ver="3" value="true"/>
+		<init target="AllowAckSequence" ver="3" value="false"/>
+		<init target="DisplayStatePanelAtStartup" ver="3" value="true"/>
+		<init target="DisplayToolbar" ver="3" value="true"/>
+		<init target="DisplayStatePanel" ver="3" value="true"/>
+	</object>
+	<object access-modifier="private" name="messageRequest" display-name="messageRequest" uuid="a21b1572-9f87-4bdc-8ab4-de5c377801c2" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="3"/>
+	<do access-modifier="private" name="MakeRequestJSON" display-name="MakeRequestJSON" ver="2" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<body kind="javascript">
+			<![CDATA[//Функция преобразует исходную строк в формат JSON: проводит поиск по шаблонам и составляет массив элементов, затем применяется обратная польская запись для определения порядка действий;
+//определяются логические операторы и происходит поэтапное формирование логических выражений из элементов массива и происходит формирование строки в json формате
+var resultArray = [];
+var operatorArray = [];
+var gravityPrev = 0;
+var gravity = 0;
+var objectInfo = {};
+var prevPrevElem = '';
+var prevElem = '';
+var jsonStr = '';
+var elementPattern;
+var signPattern;
+var argumentPattern;
+var commonArrayStr;
+var operatorPattern;
+var tempArray =[];
+try{
+//Проверка корректности ввода поля
+if (source == "severity") if (!CheckValueInt(inputString)) return "error";
+if (source == "time") if (!CheckValueDateTime(inputString)) return "error";
+if (source == "message") if (!CheckValueString(inputString)) return "error";
+
+//Инициализируем шаблон на поиск операторов, чисел и операндов
+if (source == "severity")elementPattern = elementPattern = /[(]|[)]|(НЕ)|(ИЛИ)|(И)|[&]|[|]|[!<>=\d*]+/igu;
+else elementPattern = /[)]\s*(И)\s*[!]*(НЕ)*\s*[(]|[)]\s*(ИЛИ)\s*[!]*(НЕ)*\s*[(]|[)]\s*(&)\s*[!]*(НЕ)*\s*[(]|[)]\s*(\|)\s*[!]*(НЕ)*\s*[(]/g;
+//Шаблон логического оператора
+if (source == "severity") operatorPattern = /([(]|[)])|([&])|([ИЛИ]+)|([|])|(И)|(НЕ)|([!](?![=]))/;
+else operatorPattern = /^\s*([&])\s*$|^\s*(ИЛИ)\s*$|(^\s*[|]\s*$)|^\s*(И)\s*$|^\s*(НЕ)\s*$|(^\s*[!]\s*$)/;
+
+//Шаблон знака
+if (source == "severity")signPattern = /([!><=]+)/g;
+else signPattern = /([=]*)/g;
+//Шаблон числа
+var numberPattern = /(\d+)/g;
+//Шаблон аргумента
+if (source == "severity") argumentPattern = /(\d+)/;
+else argumentPattern = /(.*)/;
+//Шаблон массива
+var arrayPattern = /object/;
+//Заполняем массив символами строки
+var commonArray = inputString.match(elementPattern);
+
+//Обработка входной строки в случае работы с фильтром сообщений и источника
+if (source != "severity")
+{	
+	//Логические операторы обозначаем знаками ^^, для разделения строки и записи в массив
+	let temp = inputString.replace(elementPattern,'^$&^');
+	tempArray = temp.split("^");
+		//Если отсутствуют логические элементы
+	if (tempArray.length == 1) 
+	{
+		//Если есть отрицание
+		if (/[!]\s*[(]|(НЕ)\s*[(]/.test(tempArray[0])) 
+		{
+			if (/[!]\s*[(]/.test(tempArray[0])) 
+			{
+				tempArray[0] = tempArray[0].replace(/[!]/,"")
+				tempArray.splice(0,0,"!");
+			}
+			if (/(НЕ)\s*[(]/g.test(tempArray[0])) 
+			{
+				tempArray[0] = tempArray[0].replace(/(НЕ)/,"")
+				tempArray.splice(0,0,"НЕ");
+			}
+			tempArray[1] = tempArray[1].replace(/^[(]/,"");
+			tempArray[1] = tempArray[1].replace(/[)]$/,"");
+			
+			if (!/[""].+[""]/g.test(tempArray[1])) tempArray[1] = tempArray[1].replace(/[А-Яа-яA-Za-z]+/,"*$&*");
+			else tempArray[1] = tempArray[1].replace(/["]["]/g,"");
+		}
+		else
+		{
+			if (!/[""].+[""]/g.test(tempArray[0])) tempArray[0] = tempArray[0].replace(/[А-Яа-яA-Za-z]+/,"*$&*");
+			else tempArray[0] = tempArray[0].replace(/["]["]/g,"");
+		}
+	}
+	else{
+	for (let i = 0; i < tempArray.length; i++)
+	{
+		//Если элемент - логический оператор
+		if (elementPattern.test(tempArray[i])) 
+		{	
+			//удаляем скобки
+			tempArray[i] = tempArray[i].replace(/[)(]/g,"");
+			tempArray[i-1] = tempArray[i-1].replace(/^[(]/,"");
+			tempArray[i+1] = tempArray[i+1].replace(/[)]$/,"");
+			//В случае, если стоят двойные "", то элемент идет как точное соответствие
+			if (!/[""].+[""]/g.test(tempArray[i-1])) tempArray[i-1] = tempArray[i-1].replace(/[А-Яа-яA-Za-z]+/,"*$&*");
+			else tempArray[i-1] = tempArray[i-1].replace(/["]["]/g,"");
+			if (!/[""].+[""]/g.test(tempArray[i+1]) && i == tempArray.length -2) tempArray[i+1] = tempArray[i+1].replace(/[А-Яа-яA-Za-z]+/,"*$&*");
+			else tempArray[i+1] = tempArray[i+1].replace(/["]["]/g,"");
+			//Обработка отрицаний
+			if (/[!]/g.test(tempArray[i])) 
+			{
+				tempArray[i] = tempArray[i].replace(/[!]/,"");
+				tempArray.splice(i+1,0,"!");
+			}
+			if (/НЕ/g.test(tempArray[i])) 
+			{
+				tempArray[i] = tempArray[i].replace(/НЕ/,"");
+				tempArray.splice(i+1,0,"НЕ");
+			}
+		}
+		else
+		{
+			//Обработка отрицаний
+			if (/[!][(]/g.test(tempArray[i])) 
+			{
+				tempArray[i] = tempArray[i].replace(/[!]/,"");
+				tempArray.splice(i,0,"!");
+			}
+			if (/(НЕ)[(]/g.test(tempArray[i])) 
+			{
+				tempArray[i] = tempArray[i].replace(/НЕ/,"");
+				tempArray.splice(i,0,"НЕ");
+			}
+		}
+	}
+	}
+	commonArray = tempArray;
+}
+
+//Если пустая строка, то возвращаем 0
+if (commonArray == null) return "error";
+
+//Функция опеределения веса оператора
+function GravityValue(gravity)
+{
+	switch(gravity)
+	{
+		case 'И':
+		case '&':
+			gravity = 2;
+			break;
+		case 'ИЛИ':
+		case '|':
+			gravity = 1;
+			break;
+		case '(':
+			gravity = 4;
+			break;
+		case ')':
+			gravity = 5;
+			break;
+		case 'НЕ':
+		case '!':
+			gravity = 3;
+			break;
+	}
+	return gravity;
+}
+
+//Фукнция получения выражения вида ">": { "severity": 10 }"
+function MakeExpression(str)
+{
+	let sign;
+	let number;
+	let argument = str.match(argumentPattern);
+	let expression = {};
+	//Если фильтр по Важности, то заполняем строку в одном формате, если по Исчтонику и Сообщениям, то по другому
+	if (source == 'severity')
+	{
+	 sign = str.match(signPattern);
+	 expression = {[sign[0]]: {[source]:parseInt(argument)}};
+	}
+	else expression = {[source]:argument[0].toString().trim()};
+	return expression
+}
+
+//Проходим поэлементно массив
+for (let i = 0; i < commonArray.length; i++)
+{	
+	//Если элемент - логический оператор
+	if (operatorPattern.test(commonArray[i]))
+	{
+		commonArray[i] = commonArray[i].trim();
+		gravity = GravityValue(commonArray[i]);
+		//В случае, если "("
+		if (gravity == 4) 
+		{
+			operatorArray.push(commonArray[i]);
+			continue;
+		}
+
+		//В случае, если ")" - скобка закрылась
+		if (gravity == 5)
+		{
+			let bracketIndex = operatorArray.lastIndexOf("(", operatorArray.length-1)
+			//Операторы, что былт в скобках, записываем в результирующий массив
+			while (operatorArray.length - 1 != bracketIndex)resultArray.push(operatorArray.pop());
+			operatorArray.pop();
+		}
+	
+		//В случае, если предыдущий оператор имеет больший вес - записываем в результирующий массив кроме случае со ()
+		if (operatorArray.length != null) gravityPrev = GravityValue(operatorArray[operatorArray.length-1]);
+		while (gravityPrev >= gravity && gravityPrev != 4 && gravityPrev != 5 && operatorArray.length != 0)
+		{
+			resultArray.push(operatorArray.pop());
+			gravityPrev = GravityValue(operatorArray[operatorArray.length-1]);
+		}
+		
+		//")" - не записываем
+		if (gravity != 5) operatorArray.push(commonArray[i]);
+	}
+	else resultArray.push(commonArray[i]);
+	
+	//Если массив кончился - записываем остатки операндов в результирующий массив
+	if (i == commonArray.length - 1)
+	{
+		while (operatorArray.length != 0)
+		{
+			resultArray.push(operatorArray.pop());
+		}
+	}
+}
+
+//Формирование JSON-строки
+for (let i = 0; i < resultArray.length; i++)
+{
+	//Если всего один элемент в массиве, то выводим только это условие
+	if (resultArray.length == 1)if (!arrayPattern.test(resultArray[i]))jsonStr = MakeExpression(resultArray[i]);
+	
+	//Если условий несколько
+	if (operatorPattern.test(resultArray[i]) && resultArray.length > 1)
+	{
+		let notExpression;
+		let operator = resultArray[i].match(/[&]|[|]|[!]|(ИЛИ)+|(И)|(НЕ)/);
+		switch(operator[0])
+		{
+			case '&':
+			case 'И':
+				operator = 'AND';
+				break;
+			case '|':
+			case 'ИЛИ':
+				operator = 'OR';
+				break;
+			case '!':
+			case 'НЕ':
+				operator = 'NOT';
+				//В случае, если есть отрицание, применяем к скобкам или выражению
+				if (!arrayPattern.test(resultArray[i-1]))prevElem = MakeExpression(resultArray[i-1]);
+				else prevElem = resultArray[i-1];
+				notExpression = {'NOT': prevElem};
+				jsonStr = JSON.stringify(notExpression);
+				jsonStr = JSON.parse(jsonStr);
+				resultArray.splice(i-1, 2, jsonStr);
+				i-= 1;
+				objectInfo = {};
+				continue;
+		}
+		
+		//Считываем элемент i-2 и i-1, если это не объекты - преобразуем
+		if (!arrayPattern.test(resultArray[i-2]))prevPrevElem = MakeExpression(resultArray[i-2]);
+		else prevPrevElem = resultArray[i-2];
+		if (!arrayPattern.test(resultArray[i-1]))prevElem = MakeExpression(resultArray[i-1]);
+		else prevElem = resultArray[i-1];
+
+		//Создаем объект с именем оператора, который является массивом и заполняем его
+		objectInfo[`${operator}`] = [];
+		objectInfo[objectInfo[`${operator}`].push(prevPrevElem)];
+		objectInfo[objectInfo[`${operator}`].push(prevElem)];
+		
+		//записываем объект в виде строки
+		jsonStr = JSON.stringify(objectInfo);
+		jsonStr = JSON.parse(jsonStr);
+		
+		//Заменяем элементы i-2 и i-1 на полученное выражение
+		resultArray.splice(i-2, 3, jsonStr);
+		i-= 2;
+		objectInfo = {};
+		
+		//В случае последнего прохода строку не обнуляем
+		if (i >= 2) jsonStr = '';
+	}
+}
+jsonStr = JSON.stringify(jsonStr);
+if (jsonStr == '""') throw 'myException';
+log(jsonStr);
+return jsonStr;
+}
+catch(err)
+{
+	return "error";
+}]]>
+		</body>
+		<param access-modifier="private" name="inputString" display-name="" uuid="94c437ea-dc7c-4590-b340-839d1a301c04" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+		<param access-modifier="private" name="source" display-name="" uuid="2d748526-a04e-4371-be05-dfed3fc08435" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+	</do>
+</type>
+

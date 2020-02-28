@@ -1,0 +1,692 @@
+<type access-modifier="private" name="Popup_Modul_DI32" display-name="Popup_Modul_DI32" uuid="710f14e6-bce4-4d34-b212-f0b61380854e" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5">
+	<designed target="X" value="0"/>
+	<designed target="Y" value="0"/>
+	<designed target="Rotation" value="0"/>
+	<designed target="Scale" value="1"/>
+	<designed target="Visible" value="true"/>
+	<designed target="Enabled" value="true"/>
+	<designed target="Tooltip" value=""/>
+	<designed target="Width" value="1300"/>
+	<designed target="Height" value="550"/>
+	<designed target="PenColor" value="4278190080"/>
+	<designed target="PenStyle" value="0"/>
+	<designed target="PenWidth" value="1"/>
+	<designed target="BrushColor" value="0xff63708f"/>
+	<designed target="BrushStyle" value="1"/>
+	<designed target="WindowX" value="0"/>
+	<designed target="WindowY" value="0"/>
+	<designed target="WindowWidth" value="600"/>
+	<designed target="WindowHeight" value="340"/>
+	<designed target="WindowCaption" value="Окно диагностики модуля дискретного ввода"/>
+	<designed target="ShowWindowCaption" value="true"/>
+	<designed target="ShowWindowMinimize" value="false"/>
+	<designed target="ShowWindowMaximize" value="false"/>
+	<designed target="ShowWindowClose" value="true"/>
+	<designed target="AlwaysOnTop" value="true"/>
+	<designed target="WindowSizeMode" value="0"/>
+	<designed target="WindowBorderStyle" value="2"/>
+	<designed target="WindowState" value="0"/>
+	<designed target="WindowScalingMode" value="0"/>
+	<designed target="MonitorNumber" value="0"/>
+	<designed target="WindowPosition" value="0"/>
+	<designed target="WindowCloseMode" value="0"/>
+	<object access-modifier="private" name="Pp_Modul_DI08_TableRow0_rect" display-name="Pp_Modul_DI08_TableRow0_rect" uuid="1590b1ca-e74b-4d80-88af-2a34e17db4b3" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="40" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="24" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xffb4b4b4" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff8b9dc8" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Pp_Modul_DI08_TableRow0_text" display-name="Pp_Modul_DI08_TableRow0_text" uuid="47cf6bfe-e1b5-4fb0-8323-20fd464f22a5" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="104"/>
+			<designed target="Y" value="4.5"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="145"/>
+			<designed target="Height" value="14"/>
+			<designed target="Text" value="Наименование сигнала"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="129"/>
+		</object>
+		<object access-modifier="private" name="Pp_Modul_DI08_TableRow0_State_text" display-name="Pp_Modul_DI08_TableRow0_State_text" uuid="af6e1872-e716-44ef-a4d0-fc6539012c4f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="1"/>
+			<designed target="Y" value="3.5"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="40"/>
+			<designed target="Height" value="15"/>
+			<designed target="Text" value="Канал"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<object access-modifier="private" name="Pp_Modul_DI08_TableRow0_Clemm_rect" display-name="Pp_Modul_DI08_TableRow0_Clemm_rect" uuid="5b02fc33-aede-4ccc-976c-81f2090d8ea0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="530" ver="1"/>
+			<designed target="Y" value="0" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="110" ver="1"/>
+			<designed target="Height" value="24" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="0xffb4b4b4" ver="1"/>
+			<designed target="PenStyle" value="1" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="4278190080" ver="1"/>
+			<designed target="BrushStyle" value="0" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Pp_Modul_DI08_TableRow0_Clemm_text" display-name="Pp_Modul_DI08_TableRow0_Clemm_text" uuid="8a22e03f-c81a-46a8-8b74-07da40e7ced6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="530"/>
+			<designed target="Y" value="3.5"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="110"/>
+			<designed target="Height" value="14"/>
+			<designed target="Text" value="Клеммы"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<object access-modifier="private" name="Pp_Modul_DI08_TableRow0_Clemm_rect_2" display-name="Pp_Modul_DI08_TableRow0_Clemm_rect_2" uuid="f6ea754a-a5f5-4101-871c-7724ef960eb2" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="40" ver="1"/>
+			<designed target="Y" value="0" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="60" ver="1"/>
+			<designed target="Height" value="24" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="0xffb4b4b4" ver="1"/>
+			<designed target="PenStyle" value="1" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="4278190080" ver="1"/>
+			<designed target="BrushStyle" value="0" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Pp_Modul_DI08_TableRow0_State_text_1" display-name="Pp_Modul_DI08_TableRow0_State_text_1" uuid="49035322-bf4c-4148-abad-234198a1479d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="42"/>
+			<designed target="Y" value="3.5"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="59"/>
+			<designed target="Height" value="15"/>
+			<designed target="Text" value="Значение"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" event="WindowActivationChanged">
+		<body kind="om">
+			<![CDATA[if (WindowActive == false)
+{
+	Close();
+}]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Pp_Modul_DI08_Name_rect" display-name="Pp_Modul_DI08_Name_rect" uuid="ec516e66-7c19-4cb7-bbde-03cbffcffa76" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="1290" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff626262" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffb1c9ff" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Pp_Modul_DI08_Name_txt" display-name="Pp_Modul_DI08_Name_txt" uuid="9de6efac-64e9-435a-b75e-9882ebfce888" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="0"/>
+			<designed target="Y" value="0"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="1290"/>
+			<designed target="Height" value="30"/>
+			<designed target="Text" value="A1_1"/>
+			<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+			<init target="Text" ver="1">
+				<expr>
+					<![CDATA[_Pp_Modul_Label]]>
+				</expr>
+			</init>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pp_Modul_D_src" display-name="Pp_Modul_D_src" uuid="d3e9aef0-70f7-48b7-9c03-ab4706d333b1" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="1">
+		<designed target="Active" value="true" ver="1"/>
+		<init target="ParentSource" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1" value="DI"/>
+	</object>
+	<param access-modifier="private" name="_Pp_ModulDI_Number" display-name="_Pp_ModulDI_Number" uuid="e6766ff5-5750-4896-ac1d-9d331851557a" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<param access-modifier="private" name="_Pp_Modul_Label" display-name="_Pp_Modul_Label" uuid="7a22ab41-ac05-4cf0-ad72-337da5a922fd" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="1"/>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_1" display-name="SubObj_DigitalSignalRow_1" uuid="04c8cc06-87d2-47f1-9487-cc78c5fd754e" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="64" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="1"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_2" display-name="SubObj_DigitalSignalRow_2" uuid="e251a9d1-b2f5-4803-b401-d0351e0314fb" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="94" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="2"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_3" display-name="SubObj_DigitalSignalRow_3" uuid="fbde5f43-3e8d-4aee-aa7d-1a4ce4011039" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="124" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="3"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_4" display-name="SubObj_DigitalSignalRow_4" uuid="b4aa1bd1-5a8b-486e-b7b7-6943f67ff516" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="154" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="4"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_5" display-name="SubObj_DigitalSignalRow_5" uuid="d51dde4a-ff8a-45e4-8791-e0787c97e07b" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="184" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="5"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_6" display-name="SubObj_DigitalSignalRow_6" uuid="725c56d6-95d5-4211-b910-cb8ed02ce88e" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="214" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="6"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_7" display-name="SubObj_DigitalSignalRow_7" uuid="3f213235-817f-43fa-8fca-21a505ecc2ce" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="244" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="7"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_8" display-name="SubObj_DigitalSignalRow_8" uuid="eca52d1f-c4ad-4036-a424-8afe5ca5f6c4" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="274" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="8"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_9" display-name="SubObj_DigitalSignalRow_9" uuid="36dcf85f-221b-4836-9ed2-aa79ed6fcdfa" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="304" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="9"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_10" display-name="SubObj_DigitalSignalRow_10" uuid="76d9c0d8-9cb4-4204-a82f-3682c0fc5509" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="334" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="10"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_11" display-name="SubObj_DigitalSignalRow_11" uuid="e0506346-97af-44a5-8d13-4a2d6b09964c" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="364" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="11"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_12" display-name="SubObj_DigitalSignalRow_12" uuid="374c4a34-5e1b-48ec-878f-d77d705b4303" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="394" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="12"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_13" display-name="SubObj_DigitalSignalRow_13" uuid="bbc54571-7138-485e-9762-abec69fde91d" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="424" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="13"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_14" display-name="SubObj_DigitalSignalRow_14" uuid="55a64404-97a1-4838-95b5-ded0cfb07c35" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="454" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="14"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_15" display-name="SubObj_DigitalSignalRow_15" uuid="01dcfa59-3052-4407-9b91-cdd096347e0e" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="484" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="15"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_16" display-name="SubObj_DigitalSignalRow_16" uuid="417da79b-1e53-4cf2-873f-17d9891f9067" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="514" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="16"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="Pp_Modul_DI08_TableRow0_rect_1" display-name="Pp_Modul_DI08_TableRow0_rect_1" uuid="65826c64-8ec4-4a16-a313-5866dbe0ce5c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="654" ver="1"/>
+		<designed target="Y" value="40" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="24" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xffb4b4b4" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff8b9dc8" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Pp_Modul_DI08_TableRow0_text" display-name="Pp_Modul_DI08_TableRow0_text" uuid="c9c1629d-7c2f-49ad-b143-32c0a248498c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="104"/>
+			<designed target="Y" value="4.5"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="145"/>
+			<designed target="Height" value="14"/>
+			<designed target="Text" value="Наименование сигнала"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="129"/>
+		</object>
+		<object access-modifier="private" name="Pp_Modul_DI08_TableRow0_State_text" display-name="Pp_Modul_DI08_TableRow0_State_text" uuid="a8ed7a53-30b2-4c96-aa9f-0b2d51ec2a95" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="1"/>
+			<designed target="Y" value="3.5"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="40"/>
+			<designed target="Height" value="15"/>
+			<designed target="Text" value="Канал"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<object access-modifier="private" name="Pp_Modul_DI08_TableRow0_Clemm_rect" display-name="Pp_Modul_DI08_TableRow0_Clemm_rect" uuid="0d0b94f0-e54d-40ec-ae7b-6d5c13b9fdeb" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="530" ver="1"/>
+			<designed target="Y" value="0" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="110" ver="1"/>
+			<designed target="Height" value="24" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="0xffb4b4b4" ver="1"/>
+			<designed target="PenStyle" value="1" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="4278190080" ver="1"/>
+			<designed target="BrushStyle" value="0" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Pp_Modul_DI08_TableRow0_Clemm_text" display-name="Pp_Modul_DI08_TableRow0_Clemm_text" uuid="99365793-312f-4249-a035-3210671c0bda" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="530"/>
+			<designed target="Y" value="3.5"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="110"/>
+			<designed target="Height" value="14"/>
+			<designed target="Text" value="Клеммы"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+		<object access-modifier="private" name="Pp_Modul_DI08_TableRow0_Clemm_rect_2" display-name="Pp_Modul_DI08_TableRow0_Clemm_rect_2" uuid="03fe35b9-2e2d-4361-95bf-c7644b166a9b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+			<designed target="X" value="40" ver="1"/>
+			<designed target="Y" value="0" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="60" ver="1"/>
+			<designed target="Height" value="24" ver="1"/>
+			<designed target="RoundingRadius" value="0" ver="1"/>
+			<designed target="PenColor" value="0xffb4b4b4" ver="1"/>
+			<designed target="PenStyle" value="1" ver="1"/>
+			<designed target="PenWidth" value="1" ver="1"/>
+			<designed target="BrushColor" value="4278190080" ver="1"/>
+			<designed target="BrushStyle" value="0" ver="1"/>
+		</object>
+		<object access-modifier="private" name="Pp_Modul_DI08_TableRow0_State_text_1" display-name="Pp_Modul_DI08_TableRow0_State_text_1" uuid="8966d82c-2095-488c-ab02-0195f1218669" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="42"/>
+			<designed target="Y" value="3.5"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="59"/>
+			<designed target="Height" value="15"/>
+			<designed target="Text" value="Значение"/>
+			<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_17" display-name="SubObj_DigitalSignalRow_17" uuid="3a52111d-3019-41c2-974e-15b0355ead46" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="654" ver="1"/>
+		<designed target="Y" value="64" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="17"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_18" display-name="SubObj_DigitalSignalRow_18" uuid="7d813f9b-b90e-4724-8e83-6a623d595e95" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="654" ver="1"/>
+		<designed target="Y" value="94" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="18"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_19" display-name="SubObj_DigitalSignalRow_19" uuid="d976f243-1e4d-47f8-9f34-ff326392760d" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="654" ver="1"/>
+		<designed target="Y" value="124" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="19"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_20" display-name="SubObj_DigitalSignalRow_20" uuid="8c45dfe3-39f7-460d-a25e-61f709f332a9" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="654" ver="1"/>
+		<designed target="Y" value="154" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="20"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_21" display-name="SubObj_DigitalSignalRow_21" uuid="80b46fc7-bf99-4f5a-82c2-be7926331a85" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="654" ver="1"/>
+		<designed target="Y" value="184" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="21"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_22" display-name="SubObj_DigitalSignalRow_22" uuid="2eaec527-ae10-4f68-9d39-a9dad4fb4c9f" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="654" ver="1"/>
+		<designed target="Y" value="214" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="22"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_23" display-name="SubObj_DigitalSignalRow_23" uuid="75335671-7b04-41f9-b6b4-eef3ed43d68e" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="654" ver="1"/>
+		<designed target="Y" value="244" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="23"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_24" display-name="SubObj_DigitalSignalRow_24" uuid="fd19961f-fcd8-4747-a6e1-caeb2de9e387" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="654" ver="1"/>
+		<designed target="Y" value="274" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="24"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_25" display-name="SubObj_DigitalSignalRow_25" uuid="e03c0e3b-93a3-45b0-9a46-8ed831b78c23" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="654" ver="1"/>
+		<designed target="Y" value="304" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="25"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_26" display-name="SubObj_DigitalSignalRow_26" uuid="65ef65bd-2b77-4552-9743-5307b8b1d242" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="654" ver="1"/>
+		<designed target="Y" value="334" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="26"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_27" display-name="SubObj_DigitalSignalRow_27" uuid="74e76934-a153-4e86-baec-1fbe99779b31" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="654" ver="1"/>
+		<designed target="Y" value="364" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="27"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_28" display-name="SubObj_DigitalSignalRow_28" uuid="f381414c-8489-4751-b4c2-62e61fd74eae" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="654" ver="1"/>
+		<designed target="Y" value="394" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="28"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_29" display-name="SubObj_DigitalSignalRow_29" uuid="52088ce3-b477-4a7c-9ed6-35de52ed8285" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="654" ver="1"/>
+		<designed target="Y" value="424" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="29"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_30" display-name="SubObj_DigitalSignalRow_30" uuid="528f0661-9a88-4353-b329-36d5a52fbb5a" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="654" ver="1"/>
+		<designed target="Y" value="454" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="30"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_31" display-name="SubObj_DigitalSignalRow_31" uuid="7d6ebe53-0cf0-499c-9731-25cc66faf2cd" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="654" ver="1"/>
+		<designed target="Y" value="484" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="31"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+	<object access-modifier="private" name="SubObj_DigitalSignalRow_32" display-name="SubObj_DigitalSignalRow_32" uuid="f649deb2-546e-4195-8609-829f8591d448" base-type="SubObj_DigitalSignalRow" base-type-id="026b3d26-f3fd-455f-bbce-098d08e54f2a" ver="1">
+		<designed target="X" value="654" ver="1"/>
+		<designed target="Y" value="514" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="640" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<init target="_Signals_InModul" ver="1" value="32"/>
+		<init target="_Signal_NumberInModul" ver="1" value="32"/>
+		<init target="_ModulD_Number" ver="1" ref="_Pp_ModulDI_Number"/>
+		<init target="_Signal_src" ver="1" ref="Pp_Modul_D_src"/>
+		<init target="_ValuePath" ver="1" value=".State.Value"/>
+	</object>
+</type>
+

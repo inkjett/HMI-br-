@@ -1,0 +1,27 @@
+<unit uuid="9c421d3c-9afc-4370-a1a9-e30a9a870181" name="Tables" main-form-id="c39634de-00e5-46fc-b9cf-c281448376c9">
+	<object file="Start_Form.omobj" filter=""/>
+	<object file="SettingsView.omobj" filter="TableForms"/>
+	<object file="FilterRequestForm.omobj" filter="TableForms"/>
+	<object file="ExportAlarms.omobj" filter="TableForms"/>
+	<object file="CommentAck.omobj" filter="TableForms"/>
+	<object file="ShowMessage.omobj" filter="TableForms"/>
+	<object file="SettingsForm.omobj" filter="TableForms"/>
+	<object file="SettingsColors.omobj" filter="TableForms"/>
+	<object file="SettingsSeverity.omobj" filter="TableForms"/>
+	<object file="PrintForm.omobj" filter="TableForms"/>
+	<object file="PrintFormSettings.omobj" filter="TableForms"/>
+	<object file="Alarms.omobj" filter=""/>
+	<object file="Blanker.omobj" filter=""/>
+	<object file="ToolButton.omobj" filter=""/>
+	<object file="FilterViewForm.omobj" filter="TableForms"/>
+	<object file="SortForm.omobj" filter="TableForms"/>
+	<object file="DropList.omobj" filter="TableForms"/>
+	<object file="SettingsPanel.omobj" filter="TableForms"/>
+	<object file="AuthorizationForm.omobj" filter="TableForms"/>
+	<object file="CalendarForm.omobj" filter="TableForms"/>
+	<object file="Calendar.omobj" filter=""/>
+	<object file="ContextMenu.omobj" filter="TableForms"/>
+	<object file="MenuItem.omobj" filter=""/>
+	<object file="Line.omobj" filter=""/>
+</unit>
+

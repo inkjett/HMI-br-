@@ -1,0 +1,1341 @@
+<type access-modifier="private" name="UstIzmirParam" display-name="Form_1" uuid="c6817578-6bab-49c0-a701-88cb4a3b3395" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="2">
+	<designed target="X" value="0" ver="2"/>
+	<designed target="Y" value="0" ver="2"/>
+	<designed target="Rotation" value="0" ver="2"/>
+	<designed target="Scale" value="1" ver="2"/>
+	<designed target="Visible" value="true" ver="2"/>
+	<designed target="Enabled" value="true" ver="2"/>
+	<designed target="Tooltip" value="" ver="2"/>
+	<designed target="Width" value="1720" ver="2"/>
+	<designed target="Height" value="775" ver="2"/>
+	<designed target="PenColor" value="4278190080" ver="2"/>
+	<designed target="PenStyle" value="0" ver="2"/>
+	<designed target="PenWidth" value="1" ver="2"/>
+	<designed target="BrushColor" value="0xffa0b5e6" ver="2"/>
+	<designed target="BrushStyle" value="1" ver="2"/>
+	<designed target="WindowX" value="0" ver="2"/>
+	<designed target="WindowY" value="0" ver="2"/>
+	<designed target="WindowWidth" value="1720" ver="2"/>
+	<designed target="WindowHeight" value="775" ver="2"/>
+	<designed target="WindowCaption" value="Уставки" ver="2"/>
+	<designed target="ShowWindowCaption" value="true" ver="2"/>
+	<designed target="ShowWindowMinimize" value="true" ver="2"/>
+	<designed target="ShowWindowMaximize" value="true" ver="2"/>
+	<designed target="ShowWindowClose" value="true" ver="2"/>
+	<designed target="AlwaysOnTop" value="false" ver="2"/>
+	<designed target="WindowSizeMode" value="0" ver="2"/>
+	<designed target="WindowBorderStyle" value="1" ver="2"/>
+	<designed target="WindowState" value="0" ver="2"/>
+	<designed target="WindowScalingMode" value="0" ver="2"/>
+	<designed target="MonitorNumber" value="0" ver="2"/>
+	<designed target="WindowPosition" value="1" ver="2"/>
+	<designed target="WindowCloseMode" value="0" ver="2"/>
+	<object access-modifier="private" name="Table_1" display-name="Table_1" uuid="a326751c-9437-4ce2-8b34-39537480f4ad" base-type="Table" base-type-id="c65ff4dc-f22b-47d3-9333-72c4e4e5f662" ver="2">
+		<designed target="X" value="4" ver="2"/>
+		<designed target="Y" value="69" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Width" value="1702" ver="2"/>
+		<designed target="Height" value="699" ver="2"/>
+		<designed target="RowsHeight" value="30" ver="2"/>
+		<designed target="RowsMaxCount" value="10000" ver="2"/>
+		<designed target="RowsOrder" value="0" ver="2"/>
+		<designed target="Frozen" value="false" ver="2"/>
+		<designed target="SelectionBehavior" value="0" ver="2"/>
+		<designed target="SelectionMode" value="3" ver="2"/>
+		<object access-modifier="private" name="ColumnName" display-name="ColumnName" uuid="5366acc3-ee77-452c-8a41-dd05c87439f6" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="30" ver="2"/>
+			<designed target="WidthResizeMode" value="1" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%10.3g" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="JsonFilter" value="" ver="2"/>
+			<designed target="SortingEnabled" value="false" ver="2"/>
+			<designed target="SortOrder" value="0" ver="2"/>
+			<designed target="SortPriority" value="0" ver="2"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="BackgroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff5f5f5f]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Column1" display-name="Column1" uuid="d0eaf148-5677-4d91-b118-af586589aab5" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="31" ver="2"/>
+			<designed target="WidthResizeMode" value="3" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%.g" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="27" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseDoubleClick">
+				<body kind="om">
+					<![CDATA[DebugTool_1.Log(WriteUst_booltoken.Value);
+if (WriteUst_booltoken.Value == true)
+	{
+	CurrentSelectedParam = Variant.ToDouble(GetCellData(row),0);
+	CurrentSelectedRow = row;
+	CurrentSelectedColum = 1;
+	ActionChangeUst.Invoke();
+	}]]>
+				</body>
+			</do-on>
+			<designed target="JsonFilter" value="" ver="3"/>
+			<designed target="SortingEnabled" value="false" ver="3"/>
+			<designed target="SortOrder" value="0" ver="3"/>
+			<designed target="SortPriority" value="0" ver="3"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="BackgroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff5f5f5f]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Column2" display-name="Column2" uuid="5de69b49-15cb-48ff-bf6f-174ab07cc0c5" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="31" ver="2"/>
+			<designed target="WidthResizeMode" value="3" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%.g" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="27" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseDoubleClick">
+				<body kind="om">
+					<![CDATA[if (WriteUst_booltoken.Value == true)
+	{
+	CurrentSelectedParam = Variant.ToDouble(GetCellData(row),0);
+	CurrentSelectedRow = row;
+	CurrentSelectedColum = 2;
+	ActionChangeUst.Invoke();
+	}]]>
+				</body>
+			</do-on>
+			<designed target="JsonFilter" value="" ver="3"/>
+			<designed target="SortingEnabled" value="false" ver="3"/>
+			<designed target="SortOrder" value="0" ver="3"/>
+			<designed target="SortPriority" value="0" ver="3"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="BackgroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff5f5f5f]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Column3" display-name="Column3" uuid="56e886f2-0c8c-4182-b751-7dbf206305a2" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="31" ver="2"/>
+			<designed target="WidthResizeMode" value="3" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%.g" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="27" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseDoubleClick">
+				<body kind="om">
+					<![CDATA[if (WriteUst_booltoken.Value == true)
+	{
+	CurrentSelectedParam = Variant.ToDouble(GetCellData(row),0);
+	CurrentSelectedRow = row;
+	CurrentSelectedColum = 3;
+	ActionChangeUst.Invoke();
+	}]]>
+				</body>
+			</do-on>
+			<designed target="JsonFilter" value="" ver="3"/>
+			<designed target="SortingEnabled" value="false" ver="3"/>
+			<designed target="SortOrder" value="0" ver="3"/>
+			<designed target="SortPriority" value="0" ver="3"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="BackgroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff5f5f5f]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Column4" display-name="Column4" uuid="27e434c9-4527-48df-8f2a-12b90dba9385" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="31" ver="2"/>
+			<designed target="WidthResizeMode" value="3" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%.g" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="27" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseDoubleClick">
+				<body kind="om">
+					<![CDATA[if (WriteUst_booltoken.Value == true)
+	{
+	CurrentSelectedParam = Variant.ToDouble(GetCellData(row),0);
+	CurrentSelectedRow = row;
+	CurrentSelectedColum = 4;
+	ActionChangeUst.Invoke();
+	}]]>
+				</body>
+			</do-on>
+			<designed target="JsonFilter" value="" ver="3"/>
+			<designed target="SortingEnabled" value="false" ver="3"/>
+			<designed target="SortOrder" value="0" ver="3"/>
+			<designed target="SortPriority" value="0" ver="3"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="BackgroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff5f5f5f]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Column5" display-name="Column5" uuid="e38751b9-8f13-4e49-87b9-2047a4a0e56e" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="31" ver="2"/>
+			<designed target="WidthResizeMode" value="3" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%.g" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="27" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseDoubleClick">
+				<body kind="om">
+					<![CDATA[if (WriteUst_booltoken.Value == true)
+	{
+	CurrentSelectedParam = Variant.ToDouble(GetCellData(row),0);
+	CurrentSelectedRow = row;
+	CurrentSelectedColum = 5;
+	ActionChangeUst.Invoke();
+	}]]>
+				</body>
+			</do-on>
+			<designed target="JsonFilter" value="" ver="3"/>
+			<designed target="SortingEnabled" value="false" ver="3"/>
+			<designed target="SortOrder" value="0" ver="3"/>
+			<designed target="SortPriority" value="0" ver="3"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="BackgroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff5f5f5f]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Column6" display-name="Column6" uuid="8610f278-0fae-42d0-8393-535ab38ac4cb" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="31" ver="2"/>
+			<designed target="WidthResizeMode" value="3" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%.g" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="27" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseDoubleClick">
+				<body kind="om">
+					<![CDATA[if (WriteUst_booltoken.Value == true)
+	{
+	CurrentSelectedParam = Variant.ToDouble(GetCellData(row),0);
+	CurrentSelectedRow = row;
+	CurrentSelectedColum = 6;
+	ActionChangeUst.Invoke();
+	}]]>
+				</body>
+			</do-on>
+			<designed target="JsonFilter" value="" ver="3"/>
+			<designed target="SortingEnabled" value="false" ver="3"/>
+			<designed target="SortOrder" value="0" ver="3"/>
+			<designed target="SortPriority" value="0" ver="3"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="BackgroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff5f5f5f]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="ReadFinished">
+			<body kind="om">
+				<![CDATA[if(NumCount<14)
+{
+	MaxMinParametrs(TypeConvert.ToUint4(RowCount));
+	Table_1.SetCellData(TypeConvert.ToUint4(RowCount),0,ArrayOfNames.GetAt(TypeConvert.ToUint4(NumCount)));
+	RowCount = RowCount+1;
+	NumCount = NumCount+1;	
+	DataFromSQL(NumCount);
+}
+else
+{
+	MaxMinParametrs(TypeConvert.ToUint4(RowCount));
+	Table_1.SetCellData(TypeConvert.ToUint4(RowCount),0,ArrayOfNames.GetAt(TypeConvert.ToUint4(NumCount)));
+}
+]]>
+			</body>
+		</do-on>
+		<object access-modifier="private" name="Column8" display-name="Column8" uuid="5bff84ea-15ac-4a03-ba17-b84d9be7cf39" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="InALRangeMin" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="31" ver="2"/>
+			<designed target="WidthResizeMode" value="3" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%.g" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="27" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseDoubleClick">
+				<body kind="om">
+					<![CDATA[if (WriteUst_booltoken.Value == true)
+	{
+	CurrentSelectedParam = Variant.ToDouble(GetCellData(row),0);
+	CurrentSelectedRow = row;
+	CurrentSelectedColum = 7;
+	ActionChangeUst.Invoke();
+	}]]>
+				</body>
+			</do-on>
+			<designed target="JsonFilter" value="" ver="3"/>
+			<designed target="SortingEnabled" value="false" ver="3"/>
+			<designed target="SortOrder" value="0" ver="3"/>
+			<designed target="SortPriority" value="0" ver="3"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="BackgroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff5f5f5f]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Column7" display-name="Column7" uuid="cbbe944b-1ba0-4f83-bcb9-100cbcf88ac1" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="InALRangeMax" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="31" ver="2"/>
+			<designed target="WidthResizeMode" value="3" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%.g" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="27" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseDoubleClick">
+				<body kind="om">
+					<![CDATA[if (WriteUst_booltoken.Value == true)
+	{
+	CurrentSelectedParam = Variant.ToDouble(GetCellData(row),0);
+	CurrentSelectedRow = row;
+	CurrentSelectedColum = 8;
+	ActionChangeUst.Invoke();
+	}]]>
+				</body>
+			</do-on>
+			<designed target="JsonFilter" value="" ver="3"/>
+			<designed target="SortingEnabled" value="false" ver="3"/>
+			<designed target="SortOrder" value="0" ver="3"/>
+			<designed target="SortPriority" value="0" ver="3"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="BackgroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff5f5f5f]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Column9" display-name="Column9" uuid="9a5bf4a3-fef2-44de-8641-5947059bb62a" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="RecalcValueMin" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="31" ver="2"/>
+			<designed target="WidthResizeMode" value="3" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%.g" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="27" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseDoubleClick">
+				<body kind="om">
+					<![CDATA[if (WriteUst_booltoken.Value == true)
+	{
+	CurrentSelectedParam = Variant.ToDouble(GetCellData(row),0);
+	CurrentSelectedRow = row;
+	CurrentSelectedColum = 9;
+	ActionChangeUst.Invoke();
+	}]]>
+				</body>
+			</do-on>
+			<designed target="JsonFilter" value="" ver="3"/>
+			<designed target="SortingEnabled" value="false" ver="3"/>
+			<designed target="SortOrder" value="0" ver="3"/>
+			<designed target="SortPriority" value="0" ver="3"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="BackgroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff5f5f5f]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Column10" display-name="Column10" uuid="c421e93a-21c5-4865-9d90-1455c3cfb15f" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="RecalcValueMax" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="31" ver="2"/>
+			<designed target="WidthResizeMode" value="3" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%.g" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="27" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseDoubleClick">
+				<body kind="om">
+					<![CDATA[if (WriteUst_booltoken.Value == true)
+	{
+	CurrentSelectedParam = Variant.ToDouble(GetCellData(row),0);
+	CurrentSelectedRow = row;
+	CurrentSelectedColum = 10;
+	ActionChangeUst.Invoke();
+	}]]>
+				</body>
+			</do-on>
+			<designed target="JsonFilter" value="" ver="3"/>
+			<designed target="SortingEnabled" value="false" ver="3"/>
+			<designed target="SortOrder" value="0" ver="3"/>
+			<designed target="SortPriority" value="0" ver="3"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="BackgroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff5f5f5f]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Column11" display-name="Column11" uuid="98751817-4d7c-4c4c-8255-e3b81f66f00b" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="Gist" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="31" ver="2"/>
+			<designed target="WidthResizeMode" value="3" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="false" ver="2"/>
+			<designed target="NumberFormat" value="%.g" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="27" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseDoubleClick">
+				<body kind="om">
+					<![CDATA[if (WriteUst_booltoken.Value == true)
+	{
+	CurrentSelectedParam = Variant.ToDouble(GetCellData(row),0);
+	CurrentSelectedRow = row;
+	CurrentSelectedColum = 11;
+	ActionChangeUst.Invoke();
+	}]]>
+				</body>
+			</do-on>
+			<designed target="JsonFilter" value="" ver="3"/>
+			<designed target="SortingEnabled" value="false" ver="3"/>
+			<designed target="SortOrder" value="0" ver="3"/>
+			<designed target="SortPriority" value="0" ver="3"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="BackgroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff5f5f5f]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="ColumnUst" display-name="ColumnUst" uuid="bfa646a7-fd88-4195-af42-47c57f009556" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="Ust" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="Ust" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="0" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="true" ver="2"/>
+			<designed target="NumberFormat" value="%.f" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="JsonFilter" value="" ver="3"/>
+			<designed target="SortingEnabled" value="false" ver="3"/>
+			<designed target="SortOrder" value="0" ver="3"/>
+			<designed target="SortPriority" value="0" ver="3"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="BackgroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff5f5f5f]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="ColumnUstEnable" display-name="ColumnUstEnable" uuid="8279df00-0693-498d-abc2-802cc4a0aef6" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="UstEnable" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="UstEnable" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="0" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="true" ver="2"/>
+			<designed target="NumberFormat" value="%10.0f" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="JsonFilter" value="" ver="3"/>
+			<designed target="SortingEnabled" value="false" ver="3"/>
+			<designed target="SortOrder" value="0" ver="3"/>
+			<designed target="SortPriority" value="0" ver="3"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="BackgroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff5f5f5f]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="ColumnUstEnableMsg" display-name="ColumnUstEnableMsg" uuid="bc84239c-961a-416b-bd32-bf71e5c3500a" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="UstEnableMsg" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="UstEnableMsg" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="0" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="true" ver="2"/>
+			<designed target="NumberFormat" value="%10.0f" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="JsonFilter" value="" ver="3"/>
+			<designed target="SortingEnabled" value="false" ver="3"/>
+			<designed target="SortOrder" value="0" ver="3"/>
+			<designed target="SortPriority" value="0" ver="3"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="BackgroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff5f5f5f]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Column12" display-name="Column12" uuid="a4c075cd-4168-4ee2-9690-416ae63b185b" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="K_filt" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="K_filt" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="0" ver="2"/>
+			<designed target="WidthResizeMode" value="3" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="true" ver="2"/>
+			<designed target="NumberFormat" value="%10.3g" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="JsonFilter" value="" ver="3"/>
+			<designed target="SortingEnabled" value="false" ver="3"/>
+			<designed target="SortOrder" value="0" ver="3"/>
+			<designed target="SortPriority" value="0" ver="3"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="BackgroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff5f5f5f]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="SqlQuery_1" display-name="SqlQuery_1" uuid="ae8f53b1-2def-4449-b9b5-e8dc9944a442" base-type="SqlQuery" base-type-id="18184150-650f-4039-bafd-fb9161a71168" ver="2">
+			<designed target="ConnectionString" value="" ver="2"/>
+			<designed target="Text" value="" ver="2"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="OnConnectionStateChanged">
+				<body kind="om">
+					<![CDATA[DebugTool_1.Log(stateAsString);
+DataFromSQL(NumCount);]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="ColumnNum" display-name="ColumnNum" uuid="c03672cb-22db-4988-aa96-1b540aedceae" base-type="TableColumn" base-type-id="109c05c5-8dcf-4a8f-aedd-5bb547cca2d4" ver="2">
+			<designed target="Title" value="Num" ver="2"/>
+			<designed target="Description" value="" ver="2"/>
+			<designed target="Id" value="Num" ver="2"/>
+			<designed target="Index" value="0" ver="2"/>
+			<designed target="BackgroundColor" value="0xfff0f0f0" ver="2"/>
+			<designed target="ForegroundColor" value="4278190080" ver="2"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
+			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
+			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
+			<designed target="Width" value="0" ver="2"/>
+			<designed target="WidthResizeMode" value="0" ver="2"/>
+			<designed target="Emptiable" value="true" ver="2"/>
+			<designed target="Hidden" value="true" ver="2"/>
+			<designed target="NumberFormat" value="%d" ver="2"/>
+			<designed target="TimeFormat" value="dd.MM.yyyy hh:mm:ss.zzz" ver="2"/>
+			<designed target="TypeCode" value="4" ver="2"/>
+			<designed target="TextAlignment" value="129" ver="2"/>
+			<designed target="JsonFilter" value="" ver="2"/>
+			<designed target="SortingEnabled" value="false" ver="3"/>
+			<designed target="SortOrder" value="0" ver="3"/>
+			<designed target="SortPriority" value="0" ver="3"/>
+			<designed target="WordWrap" value="false" ver="3"/>
+			<do-trace access-modifier="private" target="BackgroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffffff]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffc0c0c0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="3">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WriteUst_booltoken.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff5f5f5f]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="CurrentSelectedParam" display-name="CurrentSelectedParam" uuid="285941db-cdb4-44e6-9a7e-6c8030b72f76" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="2"/>
+		<object access-modifier="private" name="CurrentSelectedRow" display-name="CurrentSelectedRow" uuid="a58651dd-6f45-4a9d-acb2-04dfa82060d7" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="2"/>
+		<object access-modifier="private" name="CurrentSelectedColum" display-name="CurrentSelectedColum" uuid="092c1871-6566-432d-8c58-247258f50be2" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="2"/>
+		<designed target="LatestRowTracking" value="false" ver="2"/>
+	</object>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="c45a7930-0453-4ed8-968a-b8d42bb7a421" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="2"/>
+	<do access-modifier="private" name="DataFromSQL" display-name="DataFromSQL" ver="2" type="" type-id="">
+		<body kind="om">
+			<![CDATA[
+Table_1.SqlQuery_1.Text = "SELECT CAST(Ust as char(255)) as Ust, CAST(UstEnable as char(255)) as UstEnable, CAST(UstEnableMsg as char(255)) as UstEnableMsg, Num, K_filt, RecalcValueMin, RecalcValueMax, InALRangeMin, InALRangeMax, Gist FROM tAI where Num="+Str.ToString(NumId);
+Table_1.SqlQuery_1.Prepare();
+Table_1.SqlQuery_1.Execute();
+Table_1.ReadDataAsync();]]>
+		</body>
+		<param access-modifier="private" name="NumId" display-name="" uuid="27b5c1c7-0816-484a-9167-fd1b8ffcae11" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="2"/>
+	</do>
+	<object access-modifier="private" name="NumCount" display-name="NumCount" uuid="bd38619f-83e1-42b6-bd55-c0da6b741183" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="2"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Opened">
+		<body kind="om">
+			<![CDATA[NumCount=1;
+RowCount=0;
+ArrayOfNames.SetAt(0,"temp");
+ArrayOfNames.SetAt(1,"Давление после Н2 [РТ1]");
+ArrayOfNames.SetAt(2,"Давление после Н4 [РТ3]");
+ArrayOfNames.SetAt(3,"Давление после Н1 [РТ5]");
+ArrayOfNames.SetAt(4,"Частота вращения двигателя насоса Н4 [FT101]");
+ArrayOfNames.SetAt(5,"Загазованность ");
+ArrayOfNames.SetAt(6,"Уровень в емкости 1");
+ArrayOfNames.SetAt(7,"Давление после Н3 [РТ2]");
+ArrayOfNames.SetAt(8,"Давление после Н5 [РТ4]");
+ArrayOfNames.SetAt(9,"Расход [P]");
+ArrayOfNames.SetAt(10,"Частота вращения двигателя насоса Н45[FT102]");
+ArrayOfNames.SetAt(11,"Загазованность [QT2]");
+ArrayOfNames.SetAt(12,"Уровень в емкости 2");
+ArrayOfNames.SetAt(13,"Температура в ШСА [TT915]");
+ArrayOfNames.SetAt(14,"Температура в ШП [TT916]");
+
+Table_1.ColumnName.Title ="Название";
+Table_1.Column1.Title = "Минимальный\nаварийный";
+Table_1.Column2.Title = "Минимальный\nпредупредительный";
+Table_1.Column3.Title = "Минимальный";
+Table_1.Column4.Title = "Максимальный";
+Table_1.Column5.Title = "Максимальный\nпредупредительны";
+Table_1.Column6.Title = "Максимальный\nаварийны";
+Table_1.Column7.Title = "Верхняяграница\nзоны достоверности";
+Table_1.Column8.Title = "Нижняя граница\nзоны достоверности";
+Table_1.Column9.Title = "Инженерный\nминимум";
+Table_1.Column10.Title = "Инженерный\nмаксимум";
+Table_1.Column11.Title = "Гистерезис";
+Table_1.SqlQuery_1.ConnectionString = "driver={MySQL ODBC 5.3 Driver};server=192.168.249.1;user=root;pwd=psgrandpass;database=UVP;charset=utf8";
+Table_1.SqlQuery_1.Connect();
+]]>
+		</body>
+	</do-on>
+	<do access-modifier="private" name="MaxMinParametrs" display-name="MaxMinParametrs" ver="2" type="" type-id="">
+		<body kind="om">
+			<![CDATA[JSONstring: string;
+tempString: string;
+ustStart: int4;
+ustEnd: int4;
+ustArrayLenght: int4;
+//забираем из сигнала строку в JSON
+JSONstring = Variant.ToString(Table_1.GetCellData(NumID,12),"Nan"); //формат: {"MinMax":[2.3,17.32,11.6,64.05,34.99,162.03,44.65,23.123,11.22,-32.76,1.33,7.98]}
+//получаем позицию [, следующим символом начинается перечисление уставок
+ustStart = Str.IndexOf(JSONstring, "[") + 1;
+//получаем позицию ]
+ustEnd = Str.IndexOf(JSONstring, "]");
+//вычисляем длину строки с уставками
+ustArrayLenght = ustEnd - ustStart;
+//получаем строку с уставками в переменную
+tempString = Str.SubString(JSONstring, ustStart, ustArrayLenght);
+//Удаляем три первых числа в строке JSON
+tempString = Str.Remove(tempString, 0, (Str.IndexOf(tempString, ",")) + 1); 
+tempString = Str.Remove(tempString, 0, (Str.IndexOf(tempString, ",")) + 1);
+tempString = Str.Remove(tempString, 0, (Str.IndexOf(tempString, ",")) + 1);
+Table_1.SetCellData(NumID,1,TypeConvert.ToFloat(Str.ToDouble(Str.SubString(tempString, 0, (Str.IndexOf(tempString, ","))), -1)));
+tempString = Str.Remove(tempString, 1, (Str.IndexOf(tempString, ",")) + 1);
+Table_1.SetCellData(NumID,2,TypeConvert.ToFloat(Str.ToDouble(Str.SubString(tempString, 0, (Str.IndexOf(tempString, ","))), -1)));
+tempString = Str.Remove(tempString, 2, (Str.IndexOf(tempString, ",")) + 1);
+Table_1.SetCellData(NumID,3,TypeConvert.ToFloat(Str.ToDouble(Str.SubString(tempString, 0, (Str.IndexOf(tempString, ","))), -1)));
+tempString = Str.Remove(tempString, 3, (Str.IndexOf(tempString, ",")) + 1);
+Table_1.SetCellData(NumID,4,TypeConvert.ToFloat(Str.ToDouble(Str.SubString(tempString, 0, (Str.IndexOf(tempString, ","))), -1)));
+tempString = Str.Remove(tempString, 4, (Str.IndexOf(tempString, ",")) + 1);
+Table_1.SetCellData(NumID,5,TypeConvert.ToFloat(Str.ToDouble(Str.SubString(tempString, 0, (Str.IndexOf(tempString, ","))), -1)));
+tempString = Str.Remove(tempString, 5, (Str.IndexOf(tempString, ",")) + 1);
+Table_1.SetCellData(NumID,6,TypeConvert.ToFloat(Str.ToDouble(Str.SubString(tempString, 0, (Str.IndexOf(tempString, ","))), -1)));]]>
+		</body>
+		<param access-modifier="private" name="NumID" display-name="" uuid="2ff4164a-4b9a-4ce2-9f02-fbe0fd9240c6" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="2"/>
+	</do>
+	<object access-modifier="private" name="ArrayOfNames" display-name="ArrayOfNames" uuid="d555cf0a-e263-44be-95a5-1f0a3d8cabf8" base-type="array_string" base-type-id="460abcd2-e6a2-49d2-8962-704d0b4ea024" ver="2">
+		<init target="Length" ver="2" value="15"/>
+	</object>
+	<object access-modifier="private" name="RowCount" display-name="RowCount" uuid="6626d63e-7d02-4eae-9840-354668503580" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="2"/>
+	<object access-modifier="private" name="ActionChangeUst" display-name="ActionChangeUst" uuid="45653ca3-169e-463e-80e5-60937ba10bad" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="2">
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="InvokeTrigger" value="false" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="4ea3603d-cac2-4de8-a61f-d61f78ac5904" base-type="UstChnageParam" base-type-id="aa682273-5591-414f-8cc7-dcc9c9e5d5cd" ver="2">
+				<init target="init_param" ver="2" ref="Table_1.CurrentSelectedParam"/>
+				<init target="UstIzmirParam_1" ver="2" ref="here"/>
+				<init target="init_CurrentSelectedColum" ver="2" ref="Table_1.CurrentSelectedColum"/>
+				<init target="init_CurrentSelectedRow" ver="3" ref="Table_1.CurrentSelectedRow"/>
+			</object>
+		</do-on>
+	</object>
+	<do access-modifier="private" name="DataToCell" display-name="DataToCell" ver="2" type="" type-id="">
+		<body kind="om">
+			<![CDATA[Table_1.SetCellData(TableRow,TableColum,Str.ToDouble(TableValue,0));]]>
+		</body>
+		<param access-modifier="private" name="TableRow" display-name="" uuid="8d1a7a8d-aa9f-473d-a08d-1108d59332c7" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="2"/>
+		<param access-modifier="private" name="TableColum" display-name="" uuid="7b242868-de10-4657-a748-0d4f6a0bc578" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="2"/>
+		<param access-modifier="private" name="TableValue" display-name="" uuid="8e8e0c80-4189-464b-bd1a-43a0ac148bc7" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+	</do>
+	<do access-modifier="private" name="DataToSQL" display-name="DataToSQL" ver="2" type="" type-id="">
+		<body kind="om">
+			<![CDATA[//собираем JSON строку для записи в контроллер, внутри сборщика так же проверяем на плохое качество, логика такая же, как и в первой строке кода (Ust)
+// Заводим переменную, в которой будем накапливать JSON-строку для столбца Ust
+temp_RowId:uint4=0;
+json: string = "\"{""\"MinMax""\":[";
+json += ("0,");
+json += ("0,");
+json += ("0,");
+json += Str.ToString(Variant.ToFloat((Table_1.GetCellData(RowData,1)),0)) +  ",";
+json += Str.ToString(Variant.ToFloat((Table_1.GetCellData(RowData,2)),0)) +  ",";
+json += Str.ToString(Variant.ToFloat((Table_1.GetCellData(RowData,3)),0)) +  ",";
+json += Str.ToString(Variant.ToFloat((Table_1.GetCellData(RowData,4)),0)) +  ",";
+json += Str.ToString(Variant.ToFloat((Table_1.GetCellData(RowData,5)),0)) +  ",";
+json += Str.ToString(Variant.ToFloat((Table_1.GetCellData(RowData,6)),0)) +  ",";
+json += ("0,");
+json += ("0,");
+json += ("0");
+// Завершаем JSON
+json += "]}\"";
+//DebugTool_1.Log(Str.ToString(Variant.ToFloat((Table_1.GetCellData(RowId,7)),0)));
+//DebugTool_1.Log("UPDATE tAI SET Ust="+json+", InALRangeMin="+ Str.ToString(Variant.ToFloat((Table_1.GetCellData(RowData,7)),0))+", InALRangeMax="+ Str.ToString(Variant.ToFloat((Table_1.GetCellData(RowData,8)),0))+", RecalcValueMin=" + Str.ToString(Variant.ToFloat((Table_1.GetCellData(RowData,9)),0))+", RecalcValueMax="+Str.ToString(Variant.ToFloat((Table_1.GetCellData(RowData,10)),0))+", Gist="+Str.ToString(Variant.ToFloat((Table_1.GetCellData(RowData,11)),0))+" WHERE Num=" +Str.ToString(RowId));
+Table_1.SqlQuery_1.ConnectionString = "Driver = MySQL ODBC 5.3 Driver; Server = 192.168.249.1; uid = root; pwd = psgrandpass; database = UVP";
+Table_1.SqlQuery_1.Connect();
+Table_1.SqlQuery_1.Text = "UPDATE tAI SET Ust="+json+", InALRangeMin="+ Str.ToString(Variant.ToFloat((Table_1.GetCellData(RowData,7)),0))+", InALRangeMax="+ Str.ToString(Variant.ToFloat((Table_1.GetCellData(RowData,8)),0))+", RecalcValueMin=" + Str.ToString(Variant.ToFloat((Table_1.GetCellData(RowData,9)),0))+", RecalcValueMax="+Str.ToString(Variant.ToFloat((Table_1.GetCellData(RowData,10)),0))+", Gist="+Str.ToString(Variant.ToFloat((Table_1.GetCellData(RowData,11)),0))+" WHERE Num=" +Str.ToString(RowId);
+Table_1.SqlQuery_1.Execute();]]>
+		</body>
+		<param access-modifier="private" name="RowId" display-name="" uuid="27b5c1c7-0816-484a-9167-fd1b8ffcae11" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="2"/>
+		<param access-modifier="private" name="RowData" display-name="" uuid="5de8e7d4-9010-42f1-ad00-408ed7b710e9" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="2"/>
+	</do>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="f1538567-bec1-46d9-894a-560767858468" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="2">
+		<designed target="X" value="15" ver="2"/>
+		<designed target="Y" value="12.8" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="543.2" ver="2"/>
+		<designed target="Height" value="49.6" ver="2"/>
+		<designed target="Text" value="Уставки измеряемых параметров" ver="2"/>
+		<designed target="Font" value="Sans Serif,24,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="TextAlignment" value="129" ver="2"/>
+	</object>
+	<object access-modifier="private" name="WriteUst_booltoken" display-name="WriteUst_booltoken" uuid="945e5755-b822-459f-8c1d-5a1103ff99f6" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="1">
+		<init target="Application" ver="1" value="Alpha.HMI"/>
+		<init target="Right" ver="1" value="WriteUst"/>
+		<init target="SecurityContext" ver="2" ref="unit.Security.SecurityContext"/>
+	</object>
+	<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="3c48e892-ff83-46f1-a5bb-66dd80433c92" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="2">
+		<designed target="X" value="591.5" ver="2"/>
+		<designed target="Y" value="29.5" ver="2"/>
+		<designed target="Rotation" value="0" ver="2"/>
+		<designed target="Scale" value="1" ver="2"/>
+		<designed target="Visible" value="true" ver="2"/>
+		<designed target="Enabled" value="true" ver="2"/>
+		<designed target="Tooltip" value="" ver="2"/>
+		<designed target="Width" value="75" ver="2"/>
+		<designed target="Height" value="23" ver="2"/>
+		<designed target="Checkable" value="false" ver="2"/>
+		<designed target="Text" value="Печать" ver="2"/>
+		<designed target="TextAlignment" value="132" ver="2"/>
+		<designed target="Font" value="Sans Serif,11,-1,5,50,0,0,0,0,0" ver="2"/>
+		<designed target="FontColor" value="4278190080" ver="2"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="2"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="2"/>
+		<designed target="BrushColor" value="4293913575" ver="2"/>
+		<designed target="BrushStyle" value="1" ver="2"/>
+		<designed target="OnClickBrushColor" value="4288650650" ver="2"/>
+		<designed target="OnClickBrushStyle" value="1" ver="2"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="2"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="2"/>
+		<designed target="PenColor" value="4278190080" ver="2"/>
+		<designed target="PenStyle" value="1" ver="2"/>
+		<designed target="PenWidth" value="1" ver="2"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="2"/>
+		<designed target="OnClickPenStyle" value="1" ver="2"/>
+		<designed target="OnClickPenWidth" value="1" ver="2"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="2"/>
+		<designed target="OnHoverPenStyle" value="1" ver="2"/>
+		<designed target="OnHoverPenWidth" value="1" ver="2"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="2" event="MouseClick">
+			<body kind="om">
+				<![CDATA[Table_1.PrintDialog();]]>
+			</body>
+		</do-on>
+		<designed target="DisabledFontColor" value="4278190080" ver="3"/>
+		<designed target="DisabledBrushColor" value="4290295218" ver="3"/>
+		<designed target="DisabledBrushStyle" value="1" ver="3"/>
+		<designed target="DisabledPenColor" value="4290295218" ver="3"/>
+		<designed target="DisabledPenStyle" value="1" ver="3"/>
+		<designed target="DisabledPenWidth" value="1" ver="3"/>
+	</object>
+</type>
+

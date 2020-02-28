@@ -1,0 +1,350 @@
+<type access-modifier="private" name="DropList" display-name="Form_1" uuid="da6d7b24-1a01-4745-80e8-01a4a02c9624" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="3">
+	<designed target="X" value="0" ver="3"/>
+	<designed target="Y" value="0" ver="3"/>
+	<designed target="Rotation" value="0" ver="3"/>
+	<designed target="Scale" value="1" ver="3"/>
+	<designed target="Visible" value="true" ver="3"/>
+	<designed target="Enabled" value="true" ver="3"/>
+	<designed target="Tooltip" value="" ver="3"/>
+	<designed target="Width" value="135" ver="3"/>
+	<designed target="Height" value="45" ver="3"/>
+	<designed target="PenColor" value="4278190080" ver="3"/>
+	<designed target="PenStyle" value="0" ver="3"/>
+	<designed target="PenWidth" value="1" ver="3"/>
+	<designed target="BrushColor" value="4293980400" ver="3"/>
+	<designed target="BrushStyle" value="1" ver="3"/>
+	<designed target="WindowX" value="0" ver="3"/>
+	<designed target="WindowY" value="0" ver="3"/>
+	<designed target="WindowWidth" value="136" ver="3"/>
+	<designed target="WindowHeight" value="46" ver="3"/>
+	<designed target="WindowCaption" value="MainForm" ver="3"/>
+	<designed target="ShowWindowCaption" value="false" ver="3"/>
+	<designed target="ShowWindowMinimize" value="true" ver="3"/>
+	<designed target="ShowWindowMaximize" value="true" ver="3"/>
+	<designed target="ShowWindowClose" value="true" ver="3"/>
+	<designed target="AlwaysOnTop" value="false" ver="3"/>
+	<designed target="WindowSizeMode" value="0" ver="3"/>
+	<designed target="WindowBorderStyle" value="0" ver="3"/>
+	<designed target="WindowState" value="0" ver="3"/>
+	<designed target="WindowScalingMode" value="0" ver="3"/>
+	<designed target="MonitorNumber" value="0" ver="3"/>
+	<designed target="WindowPosition" value="0" ver="3"/>
+	<designed target="WindowCloseMode" value="0" ver="3"/>
+	<object access-modifier="private" name="MenuRequestFilter" display-name="MenuRequestFilter" uuid="b3dc2cc4-75d8-4439-99a3-0fc58fb21963" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+		<designed target="X" value="2.66667" ver="3"/>
+		<designed target="Y" value="-88" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="132" ver="3"/>
+		<designed target="Height" value="41.2727" ver="3"/>
+		<designed target="RoundingRadius" value="0" ver="3"/>
+		<designed target="PenColor" value="4278190080" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="1" ver="3"/>
+		<designed target="BrushColor" value="4278190080" ver="3"/>
+		<designed target="BrushStyle" value="0" ver="3"/>
+		<object access-modifier="private" name="List" display-name="List" uuid="3289b448-ced8-4557-90bb-420ac421cc83" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+			<designed target="Rotation" value="0" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="true" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="132" ver="3"/>
+			<designed target="Height" value="41.4545" ver="3"/>
+			<designed target="RoundingRadius" value="0" ver="3"/>
+			<designed target="PenColor" value="4278190080" ver="3"/>
+			<designed target="PenStyle" value="1" ver="3"/>
+			<designed target="PenWidth" value="1" ver="3"/>
+			<designed target="BrushColor" value="0xffffffff" ver="3"/>
+			<designed target="BrushStyle" value="1" ver="3"/>
+			<object access-modifier="private" name="WithoutFilter" display-name="WithoutFilter" uuid="5b2afe1e-b496-454d-b11d-016ddb85f013" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+				<designed target="X" value="3.04921" ver="3"/>
+				<designed target="Y" value="1.28429" ver="3"/>
+				<designed target="Rotation" value="0" ver="3"/>
+				<designed target="Scale" value="1" ver="3"/>
+				<designed target="Visible" value="true" ver="3"/>
+				<designed target="Enabled" value="true" ver="3"/>
+				<designed target="Tooltip" value="" ver="3"/>
+				<designed target="Width" value="126.889" ver="3"/>
+				<designed target="Height" value="18.9842" ver="3"/>
+				<designed target="RoundingRadius" value="0" ver="3"/>
+				<designed target="PenColor" value="0xff8f8f6b" ver="3"/>
+				<designed target="PenStyle" value="0" ver="3"/>
+				<designed target="PenWidth" value="1" ver="3"/>
+				<designed target="BrushColor" value="0xffffffff" ver="3"/>
+				<designed target="BrushStyle" value="1" ver="3"/>
+				<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="d2064033-e882-4288-829a-a57c4ea83b62" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="3">
+					<designed target="X" value="0" ver="3"/>
+					<designed target="Y" value="0" ver="3"/>
+					<designed target="Rotation" value="0" ver="3"/>
+					<designed target="Scale" value="1" ver="3"/>
+					<designed target="Visible" value="true" ver="3"/>
+					<designed target="Enabled" value="true" ver="3"/>
+					<designed target="Tooltip" value="" ver="3"/>
+					<designed target="Width" value="126.889" ver="3"/>
+					<designed target="Height" value="18.9842" ver="3"/>
+					<designed target="Text" value="Без фильтра" ver="3"/>
+					<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="3"/>
+					<designed target="FontColor" value="4278190080" ver="3"/>
+					<designed target="TextAlignment" value="132" ver="3"/>
+				</object>
+				<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="3" event="MouseEnter">
+					<body kind="om">
+						<![CDATA[PenStyle = 1;]]>
+					</body>
+				</do-on>
+				<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="3" event="MouseLeave">
+					<body kind="om">
+						<![CDATA[PenStyle = 0;]]>
+					</body>
+				</do-on>
+				<do-on access-modifier="private" name="Handler_6" display-name="Handler_6" ver="3" event="MouseClick">
+					<body kind="om">
+						<![CDATA[Alarms.SetAdvancedRequestFilterAsJson("");
+Alarms.Main_panel.private.LoadHistory();
+Close();]]>
+					</body>
+				</do-on>
+			</object>
+			<object access-modifier="private" name="FiltrForm" display-name="FiltrForm" uuid="c17e5903-e8d6-4940-a658-37a5225f7d4e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+				<designed target="X" value="3.04921" ver="3"/>
+				<designed target="Y" value="21.6549" ver="3"/>
+				<designed target="Rotation" value="0" ver="3"/>
+				<designed target="Scale" value="1" ver="3"/>
+				<designed target="Visible" value="true" ver="3"/>
+				<designed target="Enabled" value="true" ver="3"/>
+				<designed target="Tooltip" value="" ver="3"/>
+				<designed target="Width" value="126.889" ver="3"/>
+				<designed target="Height" value="18.9842" ver="3"/>
+				<designed target="RoundingRadius" value="0" ver="3"/>
+				<designed target="PenColor" value="0xff8f8f6b" ver="3"/>
+				<designed target="PenStyle" value="0" ver="3"/>
+				<designed target="PenWidth" value="1" ver="3"/>
+				<designed target="BrushColor" value="0xffffffff" ver="3"/>
+				<designed target="BrushStyle" value="1" ver="3"/>
+				<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="3858746c-5584-48e7-93a8-4e4f41e5d126" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="3">
+					<designed target="X" value="0" ver="3"/>
+					<designed target="Y" value="0" ver="3"/>
+					<designed target="Rotation" value="0" ver="3"/>
+					<designed target="Scale" value="1" ver="3"/>
+					<designed target="Visible" value="true" ver="3"/>
+					<designed target="Enabled" value="true" ver="3"/>
+					<designed target="Tooltip" value="" ver="3"/>
+					<designed target="Width" value="126.889" ver="3"/>
+					<designed target="Height" value="18.9842" ver="3"/>
+					<designed target="Text" value="Запрос с фильтрацией" ver="3"/>
+					<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="3"/>
+					<designed target="FontColor" value="4278190080" ver="3"/>
+					<designed target="TextAlignment" value="132" ver="3"/>
+				</object>
+				<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="3" event="MouseEnter">
+					<body kind="om">
+						<![CDATA[PenStyle = 1;]]>
+					</body>
+				</do-on>
+				<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="3" event="MouseLeave">
+					<body kind="om">
+						<![CDATA[PenStyle = 0;]]>
+					</body>
+				</do-on>
+				<do-on access-modifier="private" name="Handler_5" display-name="Handler_5" ver="3" event="MouseClick">
+					<body kind="om">
+						<![CDATA[Alarms.Main_panel.private.Action_RequestFilterForm.Invoke();]]>
+					</body>
+				</do-on>
+			</object>
+		</object>
+	</object>
+	<object access-modifier="private" name="Alarms" display-name="Alarms" uuid="1000e0ff-f669-4d1c-b1af-4b37cf33cde9" base-type="Alarms" base-type-id="e8a9dba0-e07f-4bfe-95f9-b75887e3f21b" base-const="true" base-ref="true" ver="3"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="3" event="WindowActivationChanged">
+		<body kind="javascript">
+			<![CDATA[if (!WindowActive) Close();]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="OpenFiltrForm" display-name="OpenFiltrForm" uuid="69cbb68c-9474-4194-9276-4abbd2d04d27" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="3"/>
+	<do access-modifier="private" name="TimeZone" display-name="TimeZone" ver="2" type="uint8" type-id="c8ff7701-da6e-4d53-888a-81fa680ff561">
+		<body kind="om">
+			<![CDATA[time_zone: uint8 = DateTime.Now()-DateTime.UtcNow();
+return (time_zone);]]>
+		</body>
+	</do>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="3" event="Opened">
+		<body kind="javascript">
+			<![CDATA[//Выбираем, какое меню будет отображаться:
+//(ListChoise == 0) - фильтр отображения,
+//(ListChoise == 1) - фильтр запроса.
+
+switch (ListChoise)
+{
+	case 0:
+		MenuViewFilter.X = 0;
+		MenuViewFilter.Y = 0;
+		WindowWidth = MenuViewFilter.Width + 4;
+		WindowHeight = MenuViewFilter.Height + 4;
+		Width = MenuViewFilter.Width +2;
+		Height = MenuViewFilter.Height +2;
+		break;
+	case 1:
+		MenuRequestFilter.X = 0;
+		MenuRequestFilter.Y = 0;
+		WindowWidth = MenuRequestFilter.Width + 4;
+		WindowHeight = MenuRequestFilter.Height + 4;
+		Width = MenuRequestFilter.Width +2;
+		Height = MenuRequestFilter.Height +2;
+		break;
+}
+]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="MenuViewFilter" display-name="MenuViewFilter" uuid="1097b5b3-da88-47d9-994e-aae9b2aa7257" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+		<designed target="X" value="139.6" ver="3"/>
+		<designed target="Y" value="-87.8363" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="132" ver="3"/>
+		<designed target="Height" value="41.2727" ver="3"/>
+		<designed target="RoundingRadius" value="0" ver="3"/>
+		<designed target="PenColor" value="4278190080" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="1" ver="3"/>
+		<designed target="BrushColor" value="4278190080" ver="3"/>
+		<designed target="BrushStyle" value="0" ver="3"/>
+		<object access-modifier="private" name="List" display-name="List" uuid="f685af44-ee62-4847-a94c-23c428b42846" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+			<designed target="Rotation" value="0" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="true" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="132" ver="3"/>
+			<designed target="Height" value="41.4545" ver="3"/>
+			<designed target="RoundingRadius" value="0" ver="3"/>
+			<designed target="PenColor" value="4278190080" ver="3"/>
+			<designed target="PenStyle" value="1" ver="3"/>
+			<designed target="PenWidth" value="1" ver="3"/>
+			<designed target="BrushColor" value="0xffffffff" ver="3"/>
+			<designed target="BrushStyle" value="1" ver="3"/>
+			<object access-modifier="private" name="WithoutFilter" display-name="WithoutFilter" uuid="c50e4dbf-b77f-44ff-8a69-40a8ab834091" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+				<designed target="X" value="3.04921" ver="3"/>
+				<designed target="Y" value="1.28429" ver="3"/>
+				<designed target="Rotation" value="0" ver="3"/>
+				<designed target="Scale" value="1" ver="3"/>
+				<designed target="Visible" value="true" ver="3"/>
+				<designed target="Enabled" value="true" ver="3"/>
+				<designed target="Tooltip" value="" ver="3"/>
+				<designed target="Width" value="126.889" ver="3"/>
+				<designed target="Height" value="18.9842" ver="3"/>
+				<designed target="RoundingRadius" value="0" ver="3"/>
+				<designed target="PenColor" value="0xff8f8f6b" ver="3"/>
+				<designed target="PenStyle" value="0" ver="3"/>
+				<designed target="PenWidth" value="1" ver="3"/>
+				<designed target="BrushColor" value="0xffffffff" ver="3"/>
+				<designed target="BrushStyle" value="1" ver="3"/>
+				<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="645ff160-cf84-4c91-b3f0-d38cfed76fc2" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="3">
+					<designed target="X" value="0" ver="3"/>
+					<designed target="Y" value="0" ver="3"/>
+					<designed target="Rotation" value="0" ver="3"/>
+					<designed target="Scale" value="1" ver="3"/>
+					<designed target="Visible" value="true" ver="3"/>
+					<designed target="Enabled" value="true" ver="3"/>
+					<designed target="Tooltip" value="" ver="3"/>
+					<designed target="Width" value="126.889" ver="3"/>
+					<designed target="Height" value="18.9842" ver="3"/>
+					<designed target="Text" value="Без фильтра" ver="3"/>
+					<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="3"/>
+					<designed target="FontColor" value="4278190080" ver="3"/>
+					<designed target="TextAlignment" value="132" ver="3"/>
+				</object>
+				<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="3" event="MouseEnter">
+					<body kind="om">
+						<![CDATA[PenStyle = 1;]]>
+					</body>
+				</do-on>
+				<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="3" event="MouseLeave">
+					<body kind="om">
+						<![CDATA[PenStyle = 0;]]>
+					</body>
+				</do-on>
+				<do-on access-modifier="private" name="Handler_6" display-name="Handler_6" ver="3" event="MouseClick">
+					<body kind="javascript">
+						<![CDATA[var TableColumnID = [];
+TableColumnID[1] = Alarms.Main_tables.Table_Operative_mode.Colum_1.Id;
+TableColumnID[2] = Alarms.Main_tables.Table_Operative_mode.Colum_2.Id;
+TableColumnID[3] = Alarms.Main_tables.Table_Operative_mode.Colum_3.Id;
+TableColumnID[4] = Alarms.Main_tables.Table_Operative_mode.Colum_4.Id;
+TableColumnID[5] = Alarms.Main_tables.Table_Operative_mode.Colum_5.Id;
+TableColumnID[6] = Alarms.Main_tables.Table_Operative_mode.Colum_6.Id;
+TableColumnID[7] = Alarms.Main_tables.Table_Operative_mode.Colum_7.Id;
+TableColumnID[8] = Alarms.Main_tables.Table_Operative_mode.Colum_8.Id;
+TableColumnID[9] = Alarms.Main_tables.Table_Operative_mode.Colum_9.Id;
+TableColumnID[10] = Alarms.Main_tables.Table_Operative_mode.Colum_10.Id;
+
+for (let i = 0; i < TableColumnID.length; i++)
+{
+	Alarms.SetAdvancedFilterAsJson(TableColumnID[i],"");
+}
+Close();]]>
+					</body>
+				</do-on>
+			</object>
+			<object access-modifier="private" name="FiltrForm" display-name="FiltrForm" uuid="06332aef-9885-4bfa-877f-07b5b7ee5b5e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+				<designed target="X" value="3.04921" ver="3"/>
+				<designed target="Y" value="21.6549" ver="3"/>
+				<designed target="Rotation" value="0" ver="3"/>
+				<designed target="Scale" value="1" ver="3"/>
+				<designed target="Visible" value="true" ver="3"/>
+				<designed target="Enabled" value="true" ver="3"/>
+				<designed target="Tooltip" value="" ver="3"/>
+				<designed target="Width" value="126.889" ver="3"/>
+				<designed target="Height" value="18.9842" ver="3"/>
+				<designed target="RoundingRadius" value="0" ver="3"/>
+				<designed target="PenColor" value="0xff8f8f6b" ver="3"/>
+				<designed target="PenStyle" value="0" ver="3"/>
+				<designed target="PenWidth" value="1" ver="3"/>
+				<designed target="BrushColor" value="0xffffffff" ver="3"/>
+				<designed target="BrushStyle" value="1" ver="3"/>
+				<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="2414fd2b-a664-4f93-b377-18cc7c2d003a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="3">
+					<designed target="X" value="0" ver="3"/>
+					<designed target="Y" value="0" ver="3"/>
+					<designed target="Rotation" value="0" ver="3"/>
+					<designed target="Scale" value="1" ver="3"/>
+					<designed target="Visible" value="true" ver="3"/>
+					<designed target="Enabled" value="true" ver="3"/>
+					<designed target="Tooltip" value="" ver="3"/>
+					<designed target="Width" value="126.889" ver="3"/>
+					<designed target="Height" value="18.9842" ver="3"/>
+					<designed target="Text" value="Фильтр пользователя" ver="3"/>
+					<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="3"/>
+					<designed target="FontColor" value="4278190080" ver="3"/>
+					<designed target="TextAlignment" value="132" ver="3"/>
+				</object>
+				<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="3" event="MouseEnter">
+					<body kind="om">
+						<![CDATA[PenStyle = 1;]]>
+					</body>
+				</do-on>
+				<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="3" event="MouseLeave">
+					<body kind="om">
+						<![CDATA[PenStyle = 0;]]>
+					</body>
+				</do-on>
+				<do-on access-modifier="private" name="Handler_5" display-name="Handler_5" ver="3" event="MousePress">
+					<body kind="om">
+						<![CDATA[Alarms.Main_panel.private.Action_ViewFilterForm.Invoke();]]>
+					</body>
+				</do-on>
+			</object>
+		</object>
+	</object>
+	<object access-modifier="private" name="ListChoise" display-name="ListChoise" uuid="704d7fa2-5979-4e49-9b79-2335609812c9" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="3"/>
+</type>
+

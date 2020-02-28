@@ -1,0 +1,64 @@
+<object access-modifier="private" name="Sources" display-name="Sources" uuid="ecddd59c-70cb-4039-a042-dd0fa44e4b2c" base-type="JustDummy" base-type-id="34bc054d-53be-4c82-873b-bd509d7c7c3b" ver="1">
+	<object access-modifier="private" name="PLC_source" display-name="PLC_source" uuid="2eae4954-b8dd-42c0-81a6-4b6ca086694d" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="1">
+		<designed target="Active" value="true" ver="1"/>
+		<init target="Path" ver="1" value="PLC"/>
+		<init target="ParentSource" ver="1" ref="ASUTP_source"/>
+	</object>
+	<object access-modifier="private" name="IVK_source" display-name="IVK_source" uuid="c9701be3-dbd1-4f88-88ce-88dc485ad2f8" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="1">
+		<designed target="Active" value="true" ver="1"/>
+		<init target="Path" ver="1" value="IVK"/>
+		<init target="ParentSource" ver="1" ref="ASUTP_source"/>
+	</object>
+	<object access-modifier="private" name="ASUTP_source" display-name="ASUTP_source" uuid="b010add0-9ce2-4818-8b58-edeb6f4e495a" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="1">
+		<designed target="Active" value="true" ver="1"/>
+		<init target="Path" ver="1" value="ASUTP"/>
+		<init target="ParentSource" ver="1" ref="SERVER_source"/>
+	</object>
+	<object access-modifier="private" name="SERVER_source" display-name="SERVER_source" uuid="bd459c1e-d415-475e-b489-c031a3bc70ae" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="1">
+		<designed target="Active" value="true" ver="1"/>
+		<init target="Location" ver="1" value="127.0.0.1"/>
+		<init target="Port" ver="2" value="4388"/>
+		<init target="HistoryPort" ver="2" value="4950"/>
+		<init target="Timeout" ver="2" value="1000"/>
+		<init target="ConnectionEstablishTimeout" ver="2" value="1000"/>
+		<init target="MaxBufferPoolSize" ver="2" value="1000000"/>
+	</object>
+	<object access-modifier="private" name="_Query_2" display-name="_Query_2" uuid="7ef461b3-c3fa-46ae-b3c9-a6d2e08c73de" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="1">
+		<init target="Path" ver="1" value="Service.Modules.SqlConnector.Источник 1.Запрос 2.MakeQuery_Command"/>
+		<init target="Source" ver="1" ref="unit.Sources.SERVER_source"/>
+	</object>
+	<object access-modifier="private" name="_Query_27" display-name="_Query_27" uuid="1247335d-510f-4ce0-9314-432ccd92c69a" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="1">
+		<init target="Path" ver="1" value="Service.Modules.SqlConnector.Источник 1.Запрос 27.MakeQuery_Command"/>
+		<init target="Source" ver="1" ref="unit.Sources.SERVER_source"/>
+	</object>
+	<object access-modifier="private" name="_Query_44" display-name="_Query_44" uuid="0be99d24-7f4a-4ea0-a5ec-e3449346965b" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="1">
+		<init target="Path" ver="1" value="Service.Modules.SqlConnector.Источник 1.Запрос 44.MakeQuery_Command"/>
+		<init target="Source" ver="1" ref="unit.Sources.SERVER_source"/>
+	</object>
+	<object access-modifier="private" name="_Query_55" display-name="_Query_55" uuid="8fc444b1-8ff5-4640-b017-03fef86f38cd" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="1">
+		<init target="Path" ver="1" value="Service.Modules.SqlConnector.Источник 1.Запрос 55.MakeQuery_Command"/>
+		<init target="Source" ver="1" ref="unit.Sources.SERVER_source"/>
+	</object>
+	<object access-modifier="private" name="_Query_66" display-name="_Query_66" uuid="f8ec19d8-50d8-44f9-9b61-0be1a526897b" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="1">
+		<init target="Path" ver="1" value="Service.Modules.SqlConnector.Источник 1.Запрос 66.MakeQuery_Command"/>
+		<init target="Source" ver="1" ref="unit.Sources.SERVER_source"/>
+	</object>
+	<object access-modifier="private" name="CurrentUserTag" display-name="CurrentUserTag" uuid="4d0806d4-5e3d-46da-931f-69858ad7353a" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="1">
+		<init target="Path" ver="1" value="MsgParams.CurrentUser"/>
+		<init target="Source" ver="1" ref="unit.Sources.SERVER_source"/>
+	</object>
+	<object access-modifier="private" name="CurrentaARMTag" display-name="CurrentaARMTag" uuid="1872f570-b390-496a-a89c-8cccc15d6a53" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="1">
+		<init target="Path" ver="1" value="MsgParams.ARM"/>
+		<init target="Source" ver="1" ref="unit.Sources.SERVER_source"/>
+	</object>
+	<do access-modifier="private" name="UserToTag" display-name="UserToTag" ver="2" type="" type-id="">
+		<body kind="javascript">
+			<![CDATA[if(CurrentUserTag.Value !=NameUserString)
+{
+CurrentUserTag.Value = NameUserString;
+}]]>
+		</body>
+		<param access-modifier="private" name="NameUserString" display-name="" uuid="41c5f97d-9f3d-4c51-96eb-bd566ff82c67" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="2"/>
+	</do>
+</object>
+

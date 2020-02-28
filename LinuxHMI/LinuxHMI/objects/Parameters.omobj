@@ -1,0 +1,7 @@
+<object access-modifier="private" name="Parameters" display-name="Parameters" uuid="5118296b-bf69-4e3d-a2d7-b0b753755197" base-type="JustDummy" base-type-id="34bc054d-53be-4c82-873b-bd509d7c7c3b" ver="1">
+	<object access-modifier="private" name="IsOperMessageSmall_notifying_bool" display-name="IsOperMessageSmall_notifying_bool" uuid="c97b1b63-8c0d-49e8-a350-69ba9f862160" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="1"/>
+	<init target="IsOperMessageSmall_notifying_bool" ver="1" value="true"/>
+	<object access-modifier="private" name="isConfirmPopup" display-name="isConfirmPopup" uuid="4e80d7a8-4795-4f6f-960b-780ebcf91f2d" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="1"/>
+	<object access-modifier="private" name="inputFromKeyboard" display-name="inputFromKeyboard" uuid="7077e31b-6736-4539-97fe-880c7f287ad6" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="2"/>
+</object>
+

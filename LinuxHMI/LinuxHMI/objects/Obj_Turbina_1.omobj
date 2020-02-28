@@ -1,0 +1,180 @@
+<type access-modifier="private" name="Obj_Turbina_1" display-name="Obj_Turbina_1" uuid="761914ba-ae78-4fd9-b9de-73cc7aea614d" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="50" ver="1"/>
+	<designed target="Height" value="50" ver="1"/>
+	<designed target="PenColor" value="4278190080" ver="1"/>
+	<designed target="PenStyle" value="1" ver="1"/>
+	<designed target="PenWidth" value="1" ver="1"/>
+	<designed target="BrushColor" value="0xff7d8db3" ver="1"/>
+	<designed target="BrushStyle" value="1" ver="1"/>
+	<designed target="PieAngle" value="360" ver="1"/>
+	<designed target="PieAngleStart" value="360" ver="1"/>
+	<object access-modifier="private" name="Timer_1" display-name="Timer_1" uuid="8d165cc5-1d4b-489d-8158-adfca469bccc" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="1">
+		<designed target="Period" value="50" ver="1"/>
+		<designed target="Active" value="true" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="OnTimer">
+			<body kind="om">
+				<![CDATA[here.Sector1.Rotation=here.Sector1.Rotation+10;
+here.Sector2.Rotation=here.Sector2.Rotation+10;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Active" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AI_StateNow_opc.Quality<192]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Is_Rotate==false]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(AI_StateNow_opc,4)<4]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<param access-modifier="private" name="_AI_Number" display-name="_AI_Number" uuid="6a718569-bf09-4e78-abd1-9673bf9eb9bc" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="1"/>
+	<object access-modifier="private" name="AI_Source_src" display-name="AI_Source_src" uuid="c0538d92-dec4-4fd3-bc22-1bfaa563f259" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c">
+		<designed target="Active" value="true"/>
+		<init target="ParentSource" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["AI."+Str.ToString(_AI_Number)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="AI_StateNow_opc" display-name="AI_StateNow_opc" uuid="48bcc85c-af54-477a-a8d8-84fbe40e917e" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="State.StateNow"/>
+		<init target="Source" ver="1" ref="AI_Source_src"/>
+	</object>
+	<object access-modifier="private" name="Sector1" display-name="Sector1" uuid="e1ba2a60-88e3-43b3-b4e4-f71485bb08d5" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd">
+		<designed target="X" value="0"/>
+		<designed target="Y" value="0"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="50"/>
+		<designed target="Height" value="50"/>
+		<designed target="PenColor" value="4278190080"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff000000"/>
+		<designed target="BrushStyle" value="1"/>
+		<designed target="PieAngle" value="90" ver="1"/>
+		<designed target="PieAngleStart" value="45" ver="1"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AI_StateNow_opc.Quality<192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(AI_StateNow_opc.Value,4)>=4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(AI_StateNow_opc.Value,4)<4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Sector2" display-name="Sector2" uuid="24a0384d-869e-4a40-b969-5eb90cbaaa9b" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd">
+		<designed target="X" value="0"/>
+		<designed target="Y" value="0"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="50"/>
+		<designed target="Height" value="50"/>
+		<designed target="PenColor" value="4278190080"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff000000"/>
+		<designed target="BrushStyle" value="1"/>
+		<designed target="PieAngle" value="90" ver="1"/>
+		<designed target="PieAngleStart" value="225" ver="1"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AI_StateNow_opc.Quality<192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(AI_StateNow_opc.Value,4)>=4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Variant.ToUint4(AI_StateNow_opc.Value,4)<4]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ellipse_2" display-name="Ellipse_2" uuid="7684644c-4038-4462-8891-4c20baf752cd" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd">
+		<designed target="X" value="8.6666666666667425"/>
+		<designed target="Y" value="8.6666666666667425"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="33"/>
+		<designed target="Height" value="33"/>
+		<designed target="PenColor" value="4278190080"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xff7d8db3"/>
+		<designed target="BrushStyle" value="1"/>
+		<designed target="PieAngle" value="360" ver="1"/>
+		<designed target="PieAngleStart" value="360" ver="1"/>
+	</object>
+	<param access-modifier="private" name="_Is_Rotate" display-name="_Is_Rotate" uuid="ea4850b9-f6a4-4594-9843-36b948967681" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="1"/>
+	<object access-modifier="private" name="Is_Rotate" display-name="Is_Rotate" uuid="706baa25-f86f-4a50-88af-ae101cd60e06" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="1"/>
+	<init target="Is_Rotate" ver="1" ref="_Is_Rotate"/>
+</type>
+

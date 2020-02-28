@@ -1,0 +1,51 @@
+<type access-modifier="private" name="DI_Signal_gray_green" display-name="DI_Signal_gray_green" uuid="02bbe715-ec69-477e-9399-8137bdda8d45" base-type="DI_Signal_gray_green" base-type-id="f8401e35-eb54-40ba-9009-2a902f1c7846">
+	<object access-modifier="private" name="DI_State_1" display-name="DI_State_1" uuid="3c28278f-304e-4bbe-8db2-15013e699572" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd">
+		<designed target="X" value="20"/>
+		<designed target="Y" value="3"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="20"/>
+		<designed target="Height" value="20"/>
+		<designed target="PenColor" value="4278190080"/>
+		<designed target="PenStyle" value="1"/>
+		<designed target="PenWidth" value="1"/>
+		<designed target="BrushColor" value="0xffffffff"/>
+		<designed target="BrushStyle" value="1"/>
+		<do-trace access-modifier="private" target="BrushColor">
+			<conditional-expr>
+				<condition>
+					<![CDATA[DI_Tag.Quality < 192]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[DI_Tag == 0]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[DI_Tag == 1]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xffc0c0c0]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<init target="_DI_Tag2" value="0"/>
+</type>
+

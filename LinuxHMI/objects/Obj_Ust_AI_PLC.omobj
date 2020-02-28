@@ -1,0 +1,1592 @@
+<type access-modifier="private" name="Obj_Ust_AI_PLC" display-name="Obj_Ust_AI_PLC" uuid="5a82ffde-531a-486e-b50a-058fc3571db1" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="1600" ver="1"/>
+	<designed target="Height" value="32" ver="1"/>
+	<designed target="RoundingRadius" value="0" ver="1"/>
+	<designed target="PenColor" value="4278190080" ver="1"/>
+	<designed target="PenStyle" value="0" ver="1"/>
+	<designed target="PenWidth" value="1" ver="1"/>
+	<designed target="BrushColor" value="4278190080" ver="1"/>
+	<designed target="BrushStyle" value="0" ver="1"/>
+	<object access-modifier="private" name="TextEdit_1" display-name="TextEdit_1" uuid="eb291775-41a4-437e-b0fa-a716281d6fb0" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="610" ver="1"/>
+		<designed target="Y" value="-4" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="91" ver="1"/>
+		<designed target="Height" value="36" ver="1"/>
+		<designed target="Text" value="TechMin" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="130" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Ust_TechMin_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Obj_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="EditFinished">
+			<body kind="om">
+				<![CDATA[if (Ust_TechMin_opc.Quality>=192)
+{
+	Ust_TechMin_opc_write.Value=Str.Replace(this.Text, ".", ",");	//Запись значения
+	this.Text = "****";
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<param access-modifier="private" name="_Obj_Number" display-name="_Obj_Number" uuid="f8a500ea-033b-46fd-87e8-1a3803bcc3b6" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="1"/>
+	<object access-modifier="private" name="Obj_src" display-name="Obj_src" uuid="1a7778ba-e42e-45de-add7-6c959d5b08c6" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c">
+		<designed target="Active" value="true"/>
+		<init target="ParentSource" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1">
+			<expr>
+				<![CDATA["AI."+Str.ToString(_Obj_Number)]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Ust_TechMax_opc" display-name="Ust_TechMax_opc" uuid="6dd64677-9046-43c4-a240-e2353638c205" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="TechValue.TechMax"/>
+	</object>
+	<object access-modifier="private" name="Ust_TechMax_opc_write" display-name="Ust_TechMax_opc_write" uuid="6afa9ae6-e59d-44e7-877c-a880d761110f" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="AI"/>
+	</object>
+	<object access-modifier="private" name="Ust_TechMax_OutputFormatter" display-name="Ust_TechMax_OutputFormatter" uuid="c04b8fed-f530-491b-9026-fd6bfb536182" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="bb5086c0-48e3-447e-93b4-bc4e2ee88103" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="1">
+				<init target="DigitsCount" ver="1" value="0"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Ust_TechMax_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ust_TechMin_opc" display-name="Ust_TechMin_opc" uuid="59eff5ac-903b-49ba-bee9-b85038341028" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="TechValue.TechMin"/>
+	</object>
+	<object access-modifier="private" name="Ust_TechMin_opc_write" display-name="Ust_TechMin_opc_write" uuid="deb3ce7b-7289-4517-b973-690459374f88" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="TechValue.TechMin.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Ust_TechMin_OutputFormatter" display-name="Ust_TechMin_OutputFormatter" uuid="1984a6af-effa-4862-8012-e37c99d12ddc" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="d8e73d31-e4e0-47cc-813b-8027dc3684d3" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="1">
+				<init target="DigitsCount" ver="1" value="0"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Ust_TechMin_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextEdit_2" display-name="TextEdit_2" uuid="29d3a38e-d827-40f8-bd01-f2777a9b000d" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="700" ver="1"/>
+		<designed target="Y" value="-4" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="91" ver="1"/>
+		<designed target="Height" value="36" ver="1"/>
+		<designed target="Text" value="TechMax" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="130" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Ust_TechMax_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Obj_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="EditFinished">
+			<body kind="om">
+				<![CDATA[if (Ust_TechMax_opc.Quality>=192)
+{
+	Ust_TechMax_opc_write.Value=Str.Replace(this.Text, ".", ",");	//Запись значения
+	this.Text = "****";
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="TextEdit_3" display-name="TextEdit_3" uuid="153fc75f-b9bc-4b59-a239-2443787fd6b0" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="430" ver="1"/>
+		<designed target="Y" value="-4" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="91" ver="1"/>
+		<designed target="Height" value="36" ver="1"/>
+		<designed target="Text" value="ValidMin" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="130" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Ust_ValidMin_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Obj_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="EditFinished">
+			<body kind="om">
+				<![CDATA[if (Ust_ValidMin_opc.Quality>=192)
+{
+	Ust_ValidMin_opc_write.Value=Str.Replace(this.Text, ".", ",");	//Запись значения
+	this.Text = "****";
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="TextEdit_4" display-name="TextEdit_4" uuid="62a5483e-3be5-4a30-8201-8a20bcd348c2" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="520" ver="1"/>
+		<designed target="Y" value="-4" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="91" ver="1"/>
+		<designed target="Height" value="36" ver="1"/>
+		<designed target="Text" value="ValidMax" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="130" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Ust_ValidMax_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Obj_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="EditFinished">
+			<body kind="om">
+				<![CDATA[if (Ust_ValidMax_opc.Quality>=192)
+{
+	Ust_ValidMax_opc_write.Value=Str.Replace(this.Text, ".", ",");	//Запись значения
+	this.Text = "****";
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="TextEdit_5" display-name="TextEdit_5" uuid="e42b82a3-4e30-49de-b249-ab9bc55b2a0d" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="790" ver="1"/>
+		<designed target="Y" value="-4" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="91" ver="1"/>
+		<designed target="Height" value="36" ver="1"/>
+		<designed target="Text" value="UstMin3" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="130" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Ust_UstMin3_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Obj_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<object access-modifier="private" name="UstMin3Enable_button" display-name="UstMin3Enable_button" uuid="69a4aa3e-335d-4d02-83a9-c145945d78f5" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="4" ver="1"/>
+			<designed target="Y" value="6" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="23" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="V" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==false]]>
+					</condition>
+					<expr>
+						<![CDATA[""]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==true]]>
+					</condition>
+					<expr>
+						<![CDATA["V"]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[if (Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==false)
+{
+	Ust_UstMax3_Enable_Write_opc.Value=true;
+}
+else
+{
+	Ust_UstMax3_Enable_Write_opc.Value=false;
+}]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff7d7d7d]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="1">
+				<body>
+					<![CDATA[Obj_WriteUst_booltoken.Value]]>
+				</body>
+			</do-trace>
+			<designed target="Checkable" value="false" ver="3"/>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="EditFinished">
+			<body kind="om">
+				<![CDATA[if (Ust_UstMin3_opc.Quality>=192)
+{
+	Ust_UstMin3_opc_write.Value=Str.Replace(this.Text, ".", ",");	//Запись значения
+	this.Text = "****";
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="TextEdit_6" display-name="TextEdit_6" uuid="2242778a-be70-4969-83ce-baa7cc69452d" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="1330" ver="1"/>
+		<designed target="Y" value="-4" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="91" ver="1"/>
+		<designed target="Height" value="36" ver="1"/>
+		<designed target="Text" value="Gist" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="130" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Ust_Gist_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Obj_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="EditFinished">
+			<body kind="om">
+				<![CDATA[if (Ust_Gist_opc.Quality>=192)
+{
+	Ust_Gist_opc_write.Value=Str.Replace(this.Text, ".", ",");	//Запись значения
+	this.Text = "****";
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="TextEdit_7" display-name="TextEdit_7" uuid="e68b0e8e-3ca7-4b6e-b66c-6c7bbe3a127a" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="1420" ver="1"/>
+		<designed target="Y" value="-4" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="91" ver="1"/>
+		<designed target="Height" value="36" ver="1"/>
+		<designed target="Text" value="K_Filt" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="130" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Ust_Filt_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Obj_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="EditFinished">
+			<body kind="om">
+				<![CDATA[if (Ust_Filt_opc.Quality>=192)
+{
+	Ust_Filt_opc_write.Value=Str.Replace(this.Text, ".", ",");	//Запись значения
+	this.Text = "****";
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="4ab6eb22-9205-47d6-a9d4-e0adfa270e68" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="60" ver="1"/>
+		<designed target="Y" value="-4" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="370.99999999999989" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff646464" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="4278190080" ver="1"/>
+		<designed target="BrushStyle" value="0" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="f599ed63-dfb0-4576-9241-ae7fbd4c74c1" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="65" ver="1"/>
+		<designed target="Y" value="-3" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="361" ver="1"/>
+		<designed target="Height" value="32" ver="1"/>
+		<designed target="Text" value="НП - Мгновенный расход нефти/нефтепродукта в точке МН/МНПП2 (при наличии) (AI21)" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="129" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Obj_Name_opc.ValueAsString]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Rectangle_12" display-name="Rectangle_12" uuid="856e9b1b-fadf-4dd1-87ff-edffbf3c6c21" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="0.66666666666651508" ver="1"/>
+		<designed target="Y" value="-4" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="60" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff646464" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff63708f" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Text_12" display-name="Text_12" uuid="ebcf339a-7b7d-454b-9e3e-d9be69bff49e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="4.66667" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="51" ver="1"/>
+		<designed target="Height" value="27" ver="1"/>
+		<designed target="Text" value="1" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xffffffff" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<init target="Text" ver="1" ref="_Obj_Number"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_13" display-name="Rectangle_13" uuid="a141f720-33c1-4325-8c7b-3d6ddb48accc" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="1510.6666666666665" ver="1"/>
+		<designed target="Y" value="-4" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="90" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff646464" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xff63708f" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Text_13" display-name="Text_13" uuid="589e8c00-a35e-48cc-af51-61537b01cd3a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="1515.67" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="81" ver="1"/>
+		<designed target="Height" value="27" ver="1"/>
+		<designed target="Text" value="c" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xffffffff" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Obj_Unit_opc.ValueAsString]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Obj_Name_opc" display-name="Obj_Name_opc" uuid="22169730-2c25-4885-8759-e66bdcdd010a" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="Attributes.Name"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+	</object>
+	<object access-modifier="private" name="TextEdit_8" display-name="TextEdit_8" uuid="8ba5eedb-a92b-4549-9a51-a7d5125ac9cc" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="880" ver="1"/>
+		<designed target="Y" value="-4" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="91" ver="1"/>
+		<designed target="Height" value="36" ver="1"/>
+		<designed target="Text" value="UstMin3" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="130" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Ust_UstMin2_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Obj_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<object access-modifier="private" name="UstMin2Enable_button" display-name="UstMin2Enable_button" uuid="b7da2cc8-12f2-4c28-934c-bcaf7ea7344e" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="4" ver="1"/>
+			<designed target="Y" value="6" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="23" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="V" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==false]]>
+					</condition>
+					<expr>
+						<![CDATA[""]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==true]]>
+					</condition>
+					<expr>
+						<![CDATA["V"]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[if (Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==false)
+{
+	Ust_UstMax3_Enable_Write_opc.Value=true;
+}
+else
+{
+	Ust_UstMax3_Enable_Write_opc.Value=false;
+}]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff7d7d7d]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="1">
+				<body>
+					<![CDATA[Obj_WriteUst_booltoken.Value]]>
+				</body>
+			</do-trace>
+			<designed target="Checkable" value="false" ver="3"/>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="EditFinished">
+			<body kind="om">
+				<![CDATA[if (Ust_UstMin2_opc.Quality>=192)
+{
+	Ust_UstMin2_opc_write.Value=Str.Replace(this.Text, ".", ",");	//Запись значения
+	this.Text = "****";
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="TextEdit_9" display-name="TextEdit_9" uuid="67a8fdf5-9779-43aa-898c-11451fbdba07" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="970" ver="1"/>
+		<designed target="Y" value="-4" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="91" ver="1"/>
+		<designed target="Height" value="36" ver="1"/>
+		<designed target="Text" value="UstMin1" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="130" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Ust_UstMin1_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Obj_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<object access-modifier="private" name="UstMin1Enable_button" display-name="UstMin1Enable_button" uuid="a6e2169e-d1ed-457d-9268-d267add956b4" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="4" ver="1"/>
+			<designed target="Y" value="6" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="23" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="V" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==false]]>
+					</condition>
+					<expr>
+						<![CDATA[""]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==true]]>
+					</condition>
+					<expr>
+						<![CDATA["V"]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[if (Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==false)
+{
+	Ust_UstMax3_Enable_Write_opc.Value=true;
+}
+else
+{
+	Ust_UstMax3_Enable_Write_opc.Value=false;
+}]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff7d7d7d]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="1">
+				<body>
+					<![CDATA[Obj_WriteUst_booltoken.Value]]>
+				</body>
+			</do-trace>
+			<designed target="Checkable" value="false" ver="3"/>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="EditFinished">
+			<body kind="om">
+				<![CDATA[if (Ust_UstMin1_opc.Quality>=192)
+{
+	Ust_UstMin1_opc_write.Value=Str.Replace(this.Text, ".", ",");	//Запись значения
+	this.Text = "****";
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="TextEdit_10" display-name="TextEdit_10" uuid="7a84b0ef-fb67-449f-8985-b0bc0efe6016" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="1060" ver="1"/>
+		<designed target="Y" value="-4" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="91" ver="1"/>
+		<designed target="Height" value="36" ver="1"/>
+		<designed target="Text" value="UstMax1" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="130" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Ust_UstMax1_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Obj_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<object access-modifier="private" name="UstMax1Enable_button_" display-name="UstMax1Enable_button_" uuid="12a347ea-f7a1-40dc-b1a7-93a09cb0535b" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="4" ver="1"/>
+			<designed target="Y" value="6" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="23" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="V" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==false]]>
+					</condition>
+					<expr>
+						<![CDATA[""]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==true]]>
+					</condition>
+					<expr>
+						<![CDATA["V"]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[if (Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==false)
+{
+	Ust_UstMax3_Enable_Write_opc.Value=true;
+}
+else
+{
+	Ust_UstMax3_Enable_Write_opc.Value=false;
+}]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff7d7d7d]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="1">
+				<body>
+					<![CDATA[Obj_WriteUst_booltoken.Value]]>
+				</body>
+			</do-trace>
+			<designed target="Checkable" value="false" ver="3"/>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="EditFinished">
+			<body kind="om">
+				<![CDATA[if (Ust_UstMax1_opc.Quality>=192)
+{
+	Ust_UstMax1_opc_write.Value=Str.Replace(this.Text, ".", ",");	//Запись значения
+	this.Text = "****";
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="TextEdit_11" display-name="TextEdit_11" uuid="347ef7d0-b897-45a8-8882-2c9e1a15bfc6" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="1150" ver="1"/>
+		<designed target="Y" value="-4" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="91" ver="1"/>
+		<designed target="Height" value="36" ver="1"/>
+		<designed target="Text" value="UstMax2" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="130" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Ust_UstMax2_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Obj_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<object access-modifier="private" name="UstMax2Enable_button" display-name="UstMax2Enable_button" uuid="a318aa7f-97ba-4bc0-b471-7bdd5d95ea17" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="4" ver="1"/>
+			<designed target="Y" value="6" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="23" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="V" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==false]]>
+					</condition>
+					<expr>
+						<![CDATA[""]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==true]]>
+					</condition>
+					<expr>
+						<![CDATA["V"]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[if (Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==false)
+{
+	Ust_UstMax3_Enable_Write_opc.Value=true;
+}
+else
+{
+	Ust_UstMax3_Enable_Write_opc.Value=false;
+}]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff7d7d7d]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="1">
+				<body>
+					<![CDATA[Obj_WriteUst_booltoken.Value]]>
+				</body>
+			</do-trace>
+			<designed target="Checkable" value="false" ver="3"/>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="EditFinished">
+			<body kind="om">
+				<![CDATA[if (Ust_UstMax2_opc.Quality>=192)
+{
+	Ust_UstMax2_opc_write.Value=Str.Replace(this.Text, ".", ",");	//Запись значения
+	this.Text = "****";
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="TextEdit_12" display-name="TextEdit_12" uuid="e2f949fa-6264-47a8-9224-0bde0da010fb" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="1240" ver="1"/>
+		<designed target="Y" value="-4" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="91" ver="1"/>
+		<designed target="Height" value="36" ver="1"/>
+		<designed target="Text" value="UstMax3" ver="1"/>
+		<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="130" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-trace access-modifier="private" target="Text" ver="1">
+			<body>
+				<![CDATA[Ust_UstMax3_OutputFormatter.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Enabled" ver="1">
+			<body>
+				<![CDATA[Obj_WriteUst_booltoken.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="1">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff646464]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<object access-modifier="private" name="UstMax3Enable_button" display-name="UstMax3Enable_button" uuid="bea7fd16-4060-4f54-955a-85123ab305cb" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+			<designed target="X" value="4" ver="1"/>
+			<designed target="Y" value="6" ver="1"/>
+			<designed target="Rotation" value="0" ver="1"/>
+			<designed target="Scale" value="1" ver="1"/>
+			<designed target="Visible" value="true" ver="1"/>
+			<designed target="Enabled" value="true" ver="1"/>
+			<designed target="Tooltip" value="" ver="1"/>
+			<designed target="Width" value="23" ver="1"/>
+			<designed target="Height" value="25" ver="1"/>
+			<designed target="Text" value="V" ver="1"/>
+			<designed target="Font" value="Sans Serif,10,-1,5,50,0,0,0,0,0" ver="1"/>
+			<designed target="FontColor" value="4278190080" ver="1"/>
+			<do-trace access-modifier="private" target="Text" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==false]]>
+					</condition>
+					<expr>
+						<![CDATA[""]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==true]]>
+					</condition>
+					<expr>
+						<![CDATA["V"]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[if (Variant.ToBool(Ust_UstMax3_Enable_opc.Value,false)==false)
+{
+	Ust_UstMax3_Enable_Write_opc.Value=true;
+}
+else
+{
+	Ust_UstMax3_Enable_Write_opc.Value=false;
+}]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="FontColor" ver="1">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Obj_WriteUst_booltoken.Value==false]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff7d7d7d]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Obj_WriteUst_booltoken.Value==true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="1">
+				<body>
+					<![CDATA[Obj_WriteUst_booltoken.Value]]>
+				</body>
+			</do-trace>
+			<designed target="Checkable" value="false" ver="3"/>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="EditFinished">
+			<body kind="om">
+				<![CDATA[if (Ust_UstMax3_opc.Quality>=192)
+{
+	Ust_UstMax3_opc_write.Value=Str.Replace(this.Text, ".", ",");	//Запись значения
+	this.Text = "****";
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Obj_WriteUst_booltoken" display-name="Obj_WriteUst_booltoken" uuid="7132d10e-8859-449b-ae44-82805c7193bd" base-type="BoolToken" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="1">
+		<init target="Application" ver="1" value="Alpha.HMI"/>
+		<init target="Right" ver="1" value="WriteUst"/>
+		<init target="SecurityContext" ver="2" ref="unit.Security.SecurityContext"/>
+	</object>
+	<object access-modifier="private" name="Ust_ValidMin_opc" display-name="Ust_ValidMin_opc" uuid="0d444833-a8d9-4cb7-8976-5207d240087a" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="ElectrValue.ValidMin"/>
+	</object>
+	<object access-modifier="private" name="Ust_ValidMin_opc_write" display-name="Ust_ValidMin_opc_write" uuid="2145a9e7-5f41-45dc-b088-7adff0934dab" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="ElectrValue.ValidMin.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Ust_ValidMin_OutputFormatter" display-name="Ust_ValidMin_OutputFormatter" uuid="49fd11ab-e5d9-4716-97dd-7b92096dac7d" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="d8c79498-81e9-408e-84e2-53d976136798" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="1">
+				<init target="DigitsCount" ver="1" value="0"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Ust_ValidMin_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ust_ValidMax_opc" display-name="Ust_ValidMax_opc" uuid="c42ecf15-fae8-4c4c-a9c0-f47d4a77955d" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="ElectrValue.ValidMax"/>
+	</object>
+	<object access-modifier="private" name="Ust_ValidMax_opc_write" display-name="Ust_ValidMax_opc_write" uuid="e5384b7f-9d51-43bd-a577-da5633d64412" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="ElectrValue.ValidMax.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Ust_ValidMax_OutputFormatter" display-name="Ust_ValidMax_OutputFormatter" uuid="e54b0876-7bf8-423c-ac9a-5080b84affd0" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="38cc779e-1b1e-4277-83fb-f99bb0b9c2af" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="1">
+				<init target="DigitsCount" ver="1" value="0"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Ust_ValidMax_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ust_UstMin3_opc" display-name="Ust_UstMin3_opc" uuid="a950d108-016e-4d88-a598-a7ed945a44b2" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min3"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMin3_opc_write" display-name="Ust_UstMin3_opc_write" uuid="33fcb08a-3c44-4f55-b736-cfef97e069f2" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min3.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMin3_OutputFormatter" display-name="Ust_UstMin3_OutputFormatter" uuid="41209377-01fd-4652-90e4-56572c68207d" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="2719f6d8-188a-447e-8e86-c638f6e2a2aa" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="1">
+				<init target="DigitsCount" ver="1" value="0"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Ust_UstMin3_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ust_UstMin2_opc" display-name="Ust_UstMin2_opc" uuid="235b96ab-bacf-43de-aa7b-d9a7a1030d65" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min2"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMin2_opc_write" display-name="Ust_UstMin2_opc_write" uuid="d74de551-a8cd-42ad-a7b3-0c9d4e9cff13" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min2.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMin2_OutputFormatter" display-name="Ust_UstMin2_OutputFormatter" uuid="8ce2f1b5-fb11-470c-bda8-f926f5112b28" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="32df7520-0faa-4c0a-96ce-c8b1868fc91c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="1">
+				<init target="DigitsCount" ver="1" value="0"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Ust_UstMin2_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ust_UstMin1_opc" display-name="Ust_UstMin1_opc" uuid="999e64e0-8895-4788-8842-3a03e5950407" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min1"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMin1_opc_write" display-name="Ust_UstMin1_opc_write" uuid="0fd7e762-398c-4343-b75a-99e948abe4a8" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min1.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMin1_OutputFormatter" display-name="Ust_UstMin1_OutputFormatter" uuid="12112436-3ba4-40e7-8cd8-f3c6386ac35a" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="d8c1ed8b-4e85-451a-8509-3b1ec41b0cd0" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="1">
+				<init target="DigitsCount" ver="1" value="0"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Ust_UstMin1_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ust_UstMax1_opc" display-name="Ust_UstMax1_opc" uuid="afe2a390-0e06-4585-a106-68e3151fa132" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max1"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMax1_opc_write" display-name="Ust_UstMax1_opc_write" uuid="bbc1245c-5f72-4c9d-b71b-7c397c7f85d4" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max1.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMax1_OutputFormatter" display-name="Ust_UstMax1_OutputFormatter" uuid="31a11ace-d40b-420c-9a62-7ef51b0117d4" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="d8bad6db-023b-4743-9f06-f54bbbaae31a" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="1">
+				<init target="DigitsCount" ver="1" value="0"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Ust_UstMax1_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ust_UstMax2_opc" display-name="Ust_UstMax2_opc" uuid="3635a2c0-211f-4224-a3b9-e4e1f4c62a39" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max2"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMax2_opc_write" display-name="Ust_UstMax2_opc_write" uuid="b16d84c2-26c8-44d7-bf81-27d9e9e29567" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max2.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMax2_OutputFormatter" display-name="Ust_UstMax2_OutputFormatter" uuid="7ec22d28-2c76-4c7d-a38f-3548ebc8dc6e" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="0ed928de-bfad-46f2-9588-0336c0d9c774" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="1">
+				<init target="DigitsCount" ver="1" value="0"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Ust_UstMax2_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ust_UstMax3_opc" display-name="Ust_UstMax3_opc" uuid="6eafe54e-8e05-4201-9551-4242676c1073" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max3"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMax3_opc_write" display-name="Ust_UstMax3_opc_write" uuid="44a76244-eb85-4ef1-b434-dcdf05d68335" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max3.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMax3_OutputFormatter" display-name="Ust_UstMax3_OutputFormatter" uuid="8331a363-f722-4c4b-9682-e71a1916cf2f" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="66709886-b0b4-418b-91a4-da7fb125389b" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="1">
+				<init target="DigitsCount" ver="1" value="0"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Ust_UstMax3_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ust_Gist_opc" display-name="Ust_Gist_opc" uuid="5c97c6a3-ed62-46c6-b9bd-e61134fada6d" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Gist.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Ust_Gist_opc_write" display-name="Ust_Gist_opc_write" uuid="dd9e2ab6-23c6-43f7-8f67-a5b3ec216d9b" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Gist.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Ust_Gist_OutputFormatter" display-name="Ust_Gist_OutputFormatter" uuid="fce119d3-52b0-4dc9-aab9-3c3adfbaae9b" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="ae1fb58a-9604-456c-834d-f4b90233ae89" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="1">
+				<init target="DigitsCount" ver="1" value="0"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Ust_Gist_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ust_Filt_opc" display-name="Ust_Filt_opc" uuid="a1835cec-ad07-425a-8c99-40e9f47c4301" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="ElectrValue.K_filt"/>
+	</object>
+	<object access-modifier="private" name="Ust_Filt_opc_write" display-name="Ust_Filt_opc_write" uuid="2ccc28e0-b33a-4207-9d4f-f6720c915320" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="StateWork" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="ElectrValue.K_filt.writeValue"/>
+	</object>
+	<object access-modifier="private" name="Ust_Filt_OutputFormatter" display-name="Ust_Filt_OutputFormatter" uuid="a1855081-922c-44eb-8e0c-7f5f422848e3" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="cd6bc761-a2ac-4793-b128-ed12f227d1ba" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="1">
+				<init target="DigitsCount" ver="1" value="0"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="1">
+			<body>
+				<![CDATA[Ust_Filt_opc.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ust_UstMin3_Enable_opc" display-name="Ust_UstMin3_Enable_opc" uuid="88659b85-cbf6-46da-aa0a-fd5f9a6ad135" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min3.EnableUst"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMin3_Enable_Write_opc" display-name="Ust_UstMin3_Enable_Write_opc" uuid="b63d8591-cc09-48a2-8ce5-9cd6a89dd7f3" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min3.EnableUst.writeValue"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMin2_Enable_opc" display-name="Ust_UstMin2_Enable_opc" uuid="79e072f4-156d-4422-b434-e9643961ceed" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min2.EnableUst"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMin2_Enable_Write_opc" display-name="Ust_UstMin2_Enable_Write_opc" uuid="a9204da4-7342-4fb4-a43b-a460f1279818" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min2.EnableUst.writeValue"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMin1_Enable_Write_opc" display-name="Ust_UstMin1_Enable_Write_opc" uuid="ae8df9a6-0aa5-46c4-8b4f-01542c8db5ba" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min1.EnableUst.writeValue"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMin1_Enable_opc" display-name="Ust_UstMin1_Enable_opc" uuid="be206e69-68e7-445c-b933-55bbd15a8819" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Min1.EnableUst"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMax1_Enable_Write_opc" display-name="Ust_UstMax1_Enable_Write_opc" uuid="d1a75227-1040-4923-b570-5af25acc3c62" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max1.EnableUst.writeValue"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMax1_Enable_opc" display-name="Ust_UstMax1_Enable_opc" uuid="c4cd5b9e-8398-424a-b8e2-8d0702134d2f" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max1.EnableUst"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMax2_Enable_Write_opc" display-name="Ust_UstMax2_Enable_Write_opc" uuid="cdac2b39-aae5-4fa7-b30d-7a1aa38a4fe9" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max2.EnableUst.writeValue"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMax2_Enable_opc" display-name="Ust_UstMax2_Enable_opc" uuid="78de22b1-d1da-41db-93c6-744fdf05b6b3" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max2.EnableUst"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMax3_Enable_Write_opc" display-name="Ust_UstMax3_Enable_Write_opc" uuid="77eb026b-ad1b-46f4-8339-7cf1d2f3356b" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max3.EnableUst.writeValue"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+	</object>
+	<object access-modifier="private" name="Ust_UstMax3_Enable_opc" display-name="Ust_UstMax3_Enable_opc" uuid="a32082cd-02f3-4d7e-a0e3-7240ea3a6112" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Path" ver="1" value="TechValue.Ust.Max3.EnableUst"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+	</object>
+	<object access-modifier="private" name="Obj_Unit_opc" display-name="Obj_Unit_opc" uuid="dd0300e2-052b-4c79-8316-225915419080" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
+		<designed target="Value" value=""/>
+		<designed target="Path" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Obj_src"/>
+		<init target="Path" ver="1" value="Attributes.Unit"/>
+	</object>
+</type>
+

@@ -1,0 +1,198 @@
+<type access-modifier="private" name="Popup_Protects" display-name="Popup_Protects" uuid="4bc090a5-c5a3-4bf6-a1ed-2d27c0dde99a" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="767" ver="1"/>
+	<designed target="Height" value="360" ver="1"/>
+	<designed target="PenColor" value="4278190080" ver="1"/>
+	<designed target="PenStyle" value="0" ver="1"/>
+	<designed target="PenWidth" value="1" ver="1"/>
+	<designed target="BrushColor" value="0xff63708f" ver="1"/>
+	<designed target="BrushStyle" value="1" ver="1"/>
+	<designed target="WindowX" value="370" ver="1"/>
+	<designed target="WindowY" value="113" ver="1"/>
+	<designed target="WindowWidth" value="767" ver="1"/>
+	<designed target="WindowHeight" value="360" ver="1"/>
+	<designed target="WindowCaption" value="Окно контроля защит" ver="1"/>
+	<designed target="ShowWindowCaption" value="false" ver="1"/>
+	<designed target="ShowWindowMinimize" value="false" ver="1"/>
+	<designed target="ShowWindowMaximize" value="false" ver="1"/>
+	<designed target="ShowWindowClose" value="true" ver="1"/>
+	<designed target="AlwaysOnTop" value="false" ver="1"/>
+	<designed target="WindowSizeMode" value="0" ver="1"/>
+	<designed target="WindowBorderStyle" value="2" ver="1"/>
+	<designed target="WindowState" value="0" ver="1"/>
+	<designed target="WindowScalingMode" value="0" ver="1"/>
+	<designed target="MonitorNumber" value="0" ver="1"/>
+	<designed target="WindowPosition" value="0" ver="1"/>
+	<designed target="WindowCloseMode" value="0" ver="1"/>
+	<object access-modifier="private" name="TypeProtectParam_1" display-name="TypeProtectParam_1" uuid="2d9c17c5-4433-4859-9094-dc27cf91abbb" base-type="TypeProtectParam" base-type-id="40929fc3-e0c2-4408-ac94-ff6d73043dc6" ver="1">
+		<designed target="X" value="41" ver="1"/>
+		<designed target="Y" value="65" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="708" ver="1"/>
+		<designed target="Height" value="32" ver="1"/>
+		<init target="_Pp_ProtectNumber" ver="1" value="1"/>
+	</object>
+	<object access-modifier="private" name="Pp_ProtectsForm_Name_rect" display-name="Pp_ProtectsForm_Name_rect" uuid="0abedfc5-baf7-4e49-bbd8-0ab0796cf107" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="5" ver="1"/>
+		<designed target="Y" value="30" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="757" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff626262" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffb1c9ff" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Pp__FormName_txt" display-name="Pp__FormName_txt" uuid="543ec4dc-b70e-4928-aec5-9d18b49ac16e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="4"/>
+			<designed target="Y" value="3"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="750"/>
+			<designed target="Height" value="23"/>
+			<designed target="Text" value="Карта защит"/>
+			<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="WindowActivationChanged">
+		<body kind="om">
+			<![CDATA[if ((WindowActive == false) && (unit.Parameters.isConfirmPopup == false))
+	{
+		Close();
+	}]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="TypeProtectParam_2" display-name="TypeProtectParam_2" uuid="3f76d3dc-9b39-4758-9ba8-b83cd58a3c6a" base-type="TypeProtectParam" base-type-id="40929fc3-e0c2-4408-ac94-ff6d73043dc6" ver="1">
+		<designed target="X" value="41" ver="1"/>
+		<designed target="Y" value="97" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="708" ver="1"/>
+		<designed target="Height" value="32" ver="1"/>
+		<init target="_Pp_ProtectNumber" ver="1" value="2"/>
+		<init target="ProtectNumber_UI" ver="1" ref="_Pp_ProtectNumber"/>
+	</object>
+	<object access-modifier="private" name="TypeProtectParam_3" display-name="TypeProtectParam_3" uuid="de571b11-d343-4c11-95e1-27797d18b740" base-type="TypeProtectParam" base-type-id="40929fc3-e0c2-4408-ac94-ff6d73043dc6" ver="1">
+		<designed target="X" value="41" ver="1"/>
+		<designed target="Y" value="129" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="708" ver="1"/>
+		<designed target="Height" value="32" ver="1"/>
+		<init target="_Pp_ProtectNumber" ver="1" value="3"/>
+	</object>
+	<object access-modifier="private" name="TypeProtectParam_4" display-name="TypeProtectParam_4" uuid="270f8262-4d40-4f99-865d-33c7558d3aa8" base-type="TypeProtectParam" base-type-id="40929fc3-e0c2-4408-ac94-ff6d73043dc6" ver="1">
+		<designed target="X" value="41" ver="1"/>
+		<designed target="Y" value="161" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="708" ver="1"/>
+		<designed target="Height" value="32" ver="1"/>
+		<init target="_Pp_ProtectNumber" ver="1" value="4"/>
+	</object>
+	<object access-modifier="private" name="TypeProtectParam_5" display-name="TypeProtectParam_5" uuid="70ce53e8-32e3-4139-a45b-2d40652228f3" base-type="TypeProtectParam" base-type-id="40929fc3-e0c2-4408-ac94-ff6d73043dc6" ver="1">
+		<designed target="X" value="41" ver="1"/>
+		<designed target="Y" value="193" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="708" ver="1"/>
+		<designed target="Height" value="32" ver="1"/>
+		<init target="_Pp_ProtectNumber" ver="1" value="5"/>
+	</object>
+	<object access-modifier="private" name="TypeProtectParam_6" display-name="TypeProtectParam_6" uuid="e5678289-9e2b-495b-a5e0-0186a391b2c5" base-type="TypeProtectParam" base-type-id="40929fc3-e0c2-4408-ac94-ff6d73043dc6" ver="1">
+		<designed target="X" value="41" ver="1"/>
+		<designed target="Y" value="225" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="708" ver="1"/>
+		<designed target="Height" value="32" ver="1"/>
+		<init target="_Pp_ProtectNumber" ver="1" value="6"/>
+	</object>
+	<object access-modifier="private" name="TypeProtectParam_7" display-name="TypeProtectParam_7" uuid="a4ced942-3dc4-43d2-81e2-35119fbeace7" base-type="TypeProtectParam" base-type-id="40929fc3-e0c2-4408-ac94-ff6d73043dc6" ver="1">
+		<designed target="X" value="41" ver="1"/>
+		<designed target="Y" value="257" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="708" ver="1"/>
+		<designed target="Height" value="32" ver="1"/>
+		<init target="_Pp_ProtectNumber" ver="1" value="7"/>
+	</object>
+	<object access-modifier="private" name="TypeProtectParam_9" display-name="TypeProtectParam_9" uuid="b6526faa-4e4f-423f-a632-6c4653837b0b" base-type="TypeProtectParam" base-type-id="40929fc3-e0c2-4408-ac94-ff6d73043dc6" ver="1">
+		<designed target="X" value="41" ver="1"/>
+		<designed target="Y" value="289" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="708" ver="1"/>
+		<designed target="Height" value="32" ver="1"/>
+		<init target="_Pp_ProtectNumber" ver="1" value="8"/>
+	</object>
+	<object access-modifier="private" name="TypeProtectParam_10" display-name="TypeProtectParam_10" uuid="be8bd64e-5f57-4fe0-9da4-d38ea07bb275" base-type="TypeProtectParam" base-type-id="40929fc3-e0c2-4408-ac94-ff6d73043dc6" ver="1">
+		<designed target="X" value="41" ver="1"/>
+		<designed target="Y" value="321" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="708" ver="1"/>
+		<designed target="Height" value="32" ver="1"/>
+		<init target="_Pp_ProtectNumber" ver="1" value="9"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="3" event="Opened">
+		<body kind="om">
+			<![CDATA[Window_close_line_1.Rectangle_windowline_base.Text_windowname.Text = WindowCaption;
+Window_close_line_1.notifying_WindowWidth_now = WindowWidth;
+
+
+
+
+
+]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Window_close_line_1" display-name="Window_close_line_1" uuid="253289f2-a978-4f4a-bcd7-f0feb459fac5" base-type="Window_close_line" base-type-id="a70c35c1-3cb9-4d9e-8668-ddc931acbcf8" ver="3">
+		<designed target="X" value="1" ver="3"/>
+		<designed target="Y" value="1" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<object access-modifier="private" name="mousePress" display-name="mousePress" uuid="dfd062bf-3685-4446-bd14-2481bd2ea80c" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="3"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="3" event="MouseMove">
+			<body kind="om">
+				<![CDATA[if (mousePress) 
+{
+	here.WindowX = ScreenX(MouseX,MouseY) - TypeConvert.ToInt4(Pointer_press_x);
+	here.WindowY = ScreenY(MouseX,MouseY);
+}]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="3" event="MousePress">
+			<body kind="om">
+				<![CDATA[mousePress = true;
+Pointer_press_x = MouseX;
+]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="3" event="MouseRelease">
+			<body kind="om">
+				<![CDATA[mousePress = false;]]>
+			</body>
+		</do-on>
+		<object access-modifier="private" name="Pointer_press_x" display-name="Pointer_press_x" uuid="36bf1d97-24c6-4e3a-864e-14cbbbbeb3f7" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="3"/>
+		<object access-modifier="private" name="notifying_WindowWidth_now" display-name="notifying_WindowWidth_now" uuid="2c22a5a7-3a25-46e6-bc2b-91e3c1cbc7ed" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="3">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="3" event="ValueChanged">
+				<body kind="om">
+					<![CDATA[Window_close_line_1.Rectangle_windowline_base.Width = notifying_WindowWidth_now.Value - 2;
+Window_close_line_1.Rectangle_windowline_base.Text_windowname.Width = Window_close_line_1.Rectangle_windowline_base.Width;
+
+Window_close_line_1.Rectangle_windowline_base.Window_close_button_1.X = Window_close_line_1.Rectangle_windowline_base.Width - 22;
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+</type>
+

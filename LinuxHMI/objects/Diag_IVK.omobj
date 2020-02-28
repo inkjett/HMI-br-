@@ -1,0 +1,285 @@
+<type access-modifier="private" name="Diag_IVK" display-name="Diag_IVK" uuid="c61a6f7a-8283-474b-96a4-f38058a30f35" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5">
+	<designed target="X" value="0"/>
+	<designed target="Y" value="0"/>
+	<designed target="Rotation" value="0"/>
+	<designed target="Scale" value="1"/>
+	<designed target="Visible" value="true"/>
+	<designed target="Enabled" value="true"/>
+	<designed target="Tooltip" value=""/>
+	<designed target="Width" value="1700"/>
+	<designed target="Height" value="675"/>
+	<designed target="PenColor" value="4278190080"/>
+	<designed target="PenStyle" value="0"/>
+	<designed target="PenWidth" value="1"/>
+	<designed target="BrushColor" value="0xffa0b5e6"/>
+	<designed target="BrushStyle" value="1"/>
+	<designed target="WindowX" value="0"/>
+	<designed target="WindowY" value="0"/>
+	<designed target="WindowWidth" value="1700"/>
+	<designed target="WindowHeight" value="650"/>
+	<designed target="WindowCaption" value="MainForm"/>
+	<designed target="ShowWindowCaption" value="true"/>
+	<designed target="ShowWindowMinimize" value="true"/>
+	<designed target="ShowWindowMaximize" value="true"/>
+	<designed target="ShowWindowClose" value="true"/>
+	<designed target="AlwaysOnTop" value="false"/>
+	<designed target="WindowSizeMode" value="0"/>
+	<designed target="WindowBorderStyle" value="1"/>
+	<designed target="WindowState" value="0"/>
+	<designed target="WindowScalingMode" value="0"/>
+	<designed target="MonitorNumber" value="0"/>
+	<designed target="WindowPosition" value="0"/>
+	<designed target="WindowCloseMode" value="0"/>
+	<object access-modifier="private" name="txt_SAName_8" display-name="txt_SAName_8" uuid="33fd8789-4b3e-4c76-9dcf-1ea63d36abf7" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+		<designed target="X" value="0"/>
+		<designed target="Y" value="0"/>
+		<designed target="Rotation" value="0"/>
+		<designed target="Scale" value="1"/>
+		<designed target="Visible" value="true"/>
+		<designed target="Enabled" value="true"/>
+		<designed target="Tooltip" value=""/>
+		<designed target="Width" value="1720"/>
+		<designed target="Height" value="30"/>
+		<designed target="Text" value="Контроллер измерительно-вычислительный"/>
+		<designed target="Font" value="Sans Serif,20,-1,5,50,0,0,0,0,0"/>
+		<designed target="FontColor" value="0xff63708f"/>
+		<designed target="TextAlignment" value="132"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_AI04_3" display-name="Obj_Modul_AI04_3" uuid="a0b5eb59-5031-454b-812e-121706c6fcd7" base-type="Obj_Modul_AI04" base-type-id="1763d21b-a0e7-48b3-bbbc-315d72358a16" ver="1">
+		<designed target="X" value="212.16666666666674" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulAI_Number" ver="1" value="1"/>
+		<init target="_ModulInCrate_Number" ver="1" value="3"/>
+		<init target="_Crate_Number" ver="1" value="1"/>
+		<init target="_PLC_or_IVK" ver="1" value="IVK"/>
+		<init target="_Modul_Label" ver="1" value="A1_3"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_AI04_4" display-name="Obj_Modul_AI04_4" uuid="22d2f1ed-3872-4d84-bcaf-94bf813928ef" base-type="Obj_Modul_AI04" base-type-id="1763d21b-a0e7-48b3-bbbc-315d72358a16" ver="1">
+		<designed target="X" value="288.16666666666674" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulAI_Number" ver="1" value="2"/>
+		<init target="_ModulInCrate_Number" ver="1" value="4"/>
+		<init target="_Crate_Number" ver="1" value="1"/>
+		<init target="_PLC_or_IVK" ver="1" value="IVK"/>
+		<init target="_Modul_Label" ver="1" value="A1_4"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_AI04_5" display-name="Obj_Modul_AI04_5" uuid="3c8db8e7-0213-4aba-adbd-6a94da65eb52" base-type="Obj_Modul_AI04" base-type-id="1763d21b-a0e7-48b3-bbbc-315d72358a16" ver="1">
+		<designed target="X" value="364.16666666666674" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulAI_Number" ver="1" value="3"/>
+		<init target="_ModulInCrate_Number" ver="1" value="5"/>
+		<init target="_Crate_Number" ver="1" value="1"/>
+		<init target="_PLC_or_IVK" ver="1" value="IVK"/>
+		<init target="_Modul_Label" ver="1" value="A1_5"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_AI04_6" display-name="Obj_Modul_AI04_6" uuid="530f0c0b-27f7-43c9-8308-44f68b9f9aa6" base-type="Obj_Modul_AI04" base-type-id="1763d21b-a0e7-48b3-bbbc-315d72358a16" ver="1">
+		<designed target="X" value="440.16666666666674" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulAI_Number" ver="1" value="4"/>
+		<init target="_ModulInCrate_Number" ver="1" value="6"/>
+		<init target="_Crate_Number" ver="1" value="1"/>
+		<init target="_PLC_or_IVK" ver="1" value="IVK"/>
+		<init target="_Modul_Label" ver="1" value="A1_6"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_CP01_1" display-name="Obj_Modul_CP01_1" uuid="9a27191d-00c7-465b-bb43-a7675bb3b09a" base-type="Obj_Modul_CP01" base-type-id="1c436386-f124-43ca-b191-dbc962751dfa" ver="1">
+		<designed target="X" value="1276.8333333333333" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_PLC_or_IVK" ver="1" value="IVK"/>
+		<init target="_ModulInCrate_Number" ver="1" value="17"/>
+		<init target="_Modul_Label" ver="1" value="A1_17"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_CP01_2" display-name="Obj_Modul_CP01_2" uuid="7b9c072a-ec0f-48a9-9f6d-398d0291947b" base-type="Obj_Modul_CP01" base-type-id="1c436386-f124-43ca-b191-dbc962751dfa" ver="1">
+		<designed target="X" value="1352.8333333333333" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulCP_Number" ver="1" value="2"/>
+		<init target="_ModulInCrate_Number" ver="1" value="18"/>
+		<init target="_Modul_Label" ver="1" value="A1_18"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_CP01_3" display-name="Obj_Modul_CP01_3" uuid="233efc3b-32f2-4173-ab2c-5981bd3d84e3" base-type="Obj_Modul_CP01" base-type-id="1c436386-f124-43ca-b191-dbc962751dfa" ver="1">
+		<designed target="X" value="1428.8333333333333" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulCP_Number" ver="1" value="3"/>
+		<init target="_ModulInCrate_Number" ver="1" value="19"/>
+		<init target="_Modul_Label" ver="1" value="A1_19"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_AI04_9" display-name="Obj_Modul_AI04_9" uuid="601b986a-bd11-4f92-84bd-a687f714099d" base-type="Obj_Modul_AI04" base-type-id="1763d21b-a0e7-48b3-bbbc-315d72358a16" ver="1">
+		<designed target="X" value="516.16666666666674" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulAI_Number" ver="1" value="5"/>
+		<init target="_ModulInCrate_Number" ver="1" value="7"/>
+		<init target="_Crate_Number" ver="1" value="1"/>
+		<init target="_PLC_or_IVK" ver="1" value="IVK"/>
+		<init target="_Modul_Label" ver="1" value="A1_7"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_AI04_10" display-name="Obj_Modul_AI04_10" uuid="a9e61744-18c7-4d85-a369-88fba97eaee9" base-type="Obj_Modul_AI04" base-type-id="1763d21b-a0e7-48b3-bbbc-315d72358a16" ver="1">
+		<designed target="X" value="592.167" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulAI_Number" ver="1" value="6"/>
+		<init target="_ModulInCrate_Number" ver="1" value="8"/>
+		<init target="_Crate_Number" ver="1" value="1"/>
+		<init target="_PLC_or_IVK" ver="1" value="IVK"/>
+		<init target="_Modul_Label" ver="1" value="A1_8"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_AI04_11" display-name="Obj_Modul_AI04_11" uuid="62ee1412-99dc-4596-a060-421181a2fc3e" base-type="Obj_Modul_AI04" base-type-id="1763d21b-a0e7-48b3-bbbc-315d72358a16" ver="1">
+		<designed target="X" value="668.16666666666674" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulAI_Number" ver="1" value="7"/>
+		<init target="_ModulInCrate_Number" ver="1" value="9"/>
+		<init target="_Crate_Number" ver="1" value="1"/>
+		<init target="_PLC_or_IVK" ver="1" value="IVK"/>
+		<init target="_Modul_Label" ver="1" value="A1_9"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_DA01_1" display-name="Obj_Modul_DA01_1" uuid="74a7f356-06a2-4338-a66c-a65084dc5640" base-type="Obj_Modul_DA01" base-type-id="ce8239aa-a664-4bab-91be-9c73f21a3628" ver="1">
+		<designed target="X" value="820.5" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulDA_Number" ver="1" value="1"/>
+		<init target="_ModulInCrate_Number" ver="1" value="11"/>
+		<init target="_Crate_Number" ver="1" value="1"/>
+		<init target="_PLC_or_IVK" ver="1" value="IVK"/>
+		<init target="_Modul_Label" ver="1" value="A1_11"/>
+		<init target="_Enable_Counter" ver="1" value="false"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_DA01_2" display-name="Obj_Modul_DA01_2" uuid="e8dd4259-7cc1-4178-a486-5214815e8dc8" base-type="Obj_Modul_DA01" base-type-id="ce8239aa-a664-4bab-91be-9c73f21a3628" ver="1">
+		<designed target="X" value="896.5" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulDA_Number" ver="1" value="2"/>
+		<init target="_ModulInCrate_Number" ver="1" value="12"/>
+		<init target="_Crate_Number" ver="1" value="1"/>
+		<init target="_PLC_or_IVK" ver="1" value="IVK"/>
+		<init target="_Modul_Label" ver="1" value="A1_12"/>
+		<init target="_Enable_Counter" ver="1" value="false"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_DA01_3" display-name="Obj_Modul_DA01_3" uuid="4969aaf5-c81a-4c91-9e28-e1a5fe1057eb" base-type="Obj_Modul_DA01" base-type-id="ce8239aa-a664-4bab-91be-9c73f21a3628" ver="1">
+		<designed target="X" value="972.5" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulDA_Number" ver="1" value="3"/>
+		<init target="_ModulInCrate_Number" ver="1" value="13"/>
+		<init target="_Crate_Number" ver="1" value="1"/>
+		<init target="_PLC_or_IVK" ver="1" value="IVK"/>
+		<init target="_Modul_Label" ver="1" value="A1_13"/>
+		<init target="_Enable_Counter" ver="1" value="false"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_DA01_4" display-name="Obj_Modul_DA01_4" uuid="317e9abd-a02f-435a-bce5-52d8b1dbc218" base-type="Obj_Modul_DA01" base-type-id="ce8239aa-a664-4bab-91be-9c73f21a3628" ver="1">
+		<designed target="X" value="1048.5" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulDA_Number" ver="1" value="4"/>
+		<init target="_ModulInCrate_Number" ver="1" value="14"/>
+		<init target="_Crate_Number" ver="1" value="1"/>
+		<init target="_PLC_or_IVK" ver="1" value="IVK"/>
+		<init target="_Modul_Label" ver="1" value="A1_14"/>
+		<init target="_Enable_Counter" ver="1" value="false"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_DA01_5" display-name="Obj_Modul_DA01_5" uuid="4c82d840-797a-45de-9784-7ee13ad34f5d" base-type="Obj_Modul_DA01" base-type-id="ce8239aa-a664-4bab-91be-9c73f21a3628" ver="1">
+		<designed target="X" value="1124.5" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulDA_Number" ver="1" value="5"/>
+		<init target="_ModulInCrate_Number" ver="1" value="15"/>
+		<init target="_Crate_Number" ver="1" value="1"/>
+		<init target="_PLC_or_IVK" ver="1" value="IVK"/>
+		<init target="_Modul_Label" ver="1" value="A1_15"/>
+		<init target="_Enable_Counter" ver="1" value="false"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_DA01_6" display-name="Obj_Modul_DA01_6" uuid="135f4488-b418-4344-a968-b80829bf7213" base-type="Obj_Modul_DA01" base-type-id="ce8239aa-a664-4bab-91be-9c73f21a3628" ver="1">
+		<designed target="X" value="1200.5" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulDA_Number" ver="1" value="6"/>
+		<init target="_ModulInCrate_Number" ver="1" value="16"/>
+		<init target="_Crate_Number" ver="1" value="1"/>
+		<init target="_PLC_or_IVK" ver="1" value="IVK"/>
+		<init target="_Modul_Label" ver="1" value="A1_16"/>
+		<init target="Enable_Counter" ver="1" ref="_Enable_Counter"/>
+		<init target="_Enable_Counter" ver="1" value="false"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_CP01_4" display-name="Obj_Modul_CP01_4" uuid="8ece4572-42bc-42af-8591-8d389ec41d07" base-type="Obj_Modul_CP01" base-type-id="1c436386-f124-43ca-b191-dbc962751dfa" ver="1">
+		<designed target="X" value="1504.8333333333333" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulCP_Number" ver="1" value="4"/>
+		<init target="_ModulInCrate_Number" ver="1" value="20"/>
+		<init target="_Modul_Label" ver="1" value="A1_20"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_CP01_5" display-name="Obj_Modul_CP01_5" uuid="ce7263db-81e6-424e-986e-8a45fe361db9" base-type="Obj_Modul_CP01" base-type-id="1c436386-f124-43ca-b191-dbc962751dfa" ver="1">
+		<designed target="X" value="1580.8333333333333" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulInCrate_Number" ver="1" value="21"/>
+		<init target="_ModulCP_Number" ver="1" value="5"/>
+		<init target="_Modul_Label" ver="1" value="A1_21"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_PP00_1" display-name="Obj_Modul_PP00_1" uuid="f4bca296-98d7-4efd-bacf-d1bdd5a69740" base-type="Obj_Modul_PP00" base-type-id="750bb365-8bd0-4e6c-95a2-83518580046b" ver="1">
+		<designed target="X" value="136.5" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_ModulInCrate_Number" ver="1" value="2"/>
+		<init target="_Crate_Number" ver="1" value="1"/>
+		<init target="_PLC_or_IVK" ver="1" value="IVK"/>
+		<init target="_ModulPP_Number" ver="1" value="1"/>
+	</object>
+	<object access-modifier="private" name="Obj_Modul_AO02_1" display-name="Obj_Modul_AO02_1" uuid="c7134bf9-cf39-435f-9bc0-440e6f6d1632" base-type="Obj_Modul_AO02" base-type-id="0da7fbac-6d3f-4f90-bb1b-58e321f1d939" ver="1">
+		<designed target="X" value="744.5" ver="1"/>
+		<designed target="Y" value="122" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Width" value="75" ver="1"/>
+		<designed target="Height" value="250" ver="1"/>
+		<init target="_PLC_or_IVK" ver="1" value="IVK"/>
+		<init target="_ModulAO_Number" ver="1" value="1"/>
+		<init target="_ModulInCrate_Number" ver="1" value="6"/>
+		<init target="_Crate_Number" ver="1" value="1"/>
+		<init target="_Modul_Label" ver="1" value="A1_10"/>
+	</object>
+</type>
+

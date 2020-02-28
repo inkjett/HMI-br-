@@ -1,0 +1,487 @@
+<type access-modifier="private" name="dateEditorCombo" display-name="dateEditorCombo" uuid="953d0828-2a60-4c5d-8817-ddfcc606e917" base-type="Dummy" base-type-id="e4b644cf-f3a8-4d11-82a0-6acc23748e14" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<object access-modifier="private" name="editDate" display-name="editDate" uuid="201f90ad-8ad3-4759-b77d-644505c43eb1" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="0" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="20" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="Text" value="" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xff000000" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="TextChanged">
+			<body kind="om">
+				<![CDATA[dateString = editDate.Text + "." + editMonth.Text + "." + editYear.Text + " " + editHours.Text + ":" + editMinutes.Text + ":" + editSeconds.Text;
+InputFormatterDate.InValue = dateString; //проверяем формат ввода даты
+if (InputFormatterDate.FormatError == false)
+{
+	checkDate = true;
+	editDate.FontColor = 0xff000000;
+	editMonth.FontColor = 0xff000000;
+	editYear.FontColor = 0xff000000;
+	editHours.FontColor = 0xff000000;
+	editMinutes.FontColor = 0xff000000;
+	editSeconds.FontColor = 0xff000000;
+	editMS.FontColor = 0xff000000;
+}
+else
+{	
+	checkDate = false;	
+	editDate.FontColor = 0xffff0000;
+	editMonth.FontColor = 0xffff0000;
+	editYear.FontColor = 0xffff0000;
+	editHours.FontColor = 0xffff0000;
+	editMinutes.FontColor = 0xffff0000;
+	editSeconds.FontColor = 0xffff0000;
+	editMS.FontColor = 0xffff0000;
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="dot" display-name="dot" uuid="d03ca2ef-ee03-4ffa-a05a-13f5436b91a6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="20" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="5" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="." ver="1"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<object access-modifier="private" name="editMonth" display-name="editMonth" uuid="af63069c-8b31-416d-8da6-071bbe0c1745" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="25" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="20" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="Text" value="" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="TextChanged">
+			<body kind="om">
+				<![CDATA[dateString = editDate.Text + "." + editMonth.Text + "." + editYear.Text + " " + editHours.Text + ":" + editMinutes.Text + ":" + editSeconds.Text;
+InputFormatterDate.InValue = dateString; //проверяем формат ввода даты
+if (InputFormatterDate.FormatError == false)
+{
+	checkDate = true;
+	editDate.FontColor = 0xff000000;
+	editMonth.FontColor = 0xff000000;
+	editYear.FontColor = 0xff000000;
+	editHours.FontColor = 0xff000000;
+	editMinutes.FontColor = 0xff000000;
+	editSeconds.FontColor = 0xff000000;
+	editMS.FontColor = 0xff000000;
+}
+else
+{	
+	checkDate = false;	
+	editDate.FontColor = 0xffff0000;
+	editMonth.FontColor = 0xffff0000;
+	editYear.FontColor = 0xffff0000;
+	editHours.FontColor = 0xffff0000;
+	editMinutes.FontColor = 0xffff0000;
+	editSeconds.FontColor = 0xffff0000;
+	editMS.FontColor = 0xffff0000;
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="dot_1" display-name="dot_1" uuid="67368bc5-c801-47c9-8ff1-8edec22fd077" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="45" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="5" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="." ver="1"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<object access-modifier="private" name="editYear" display-name="editYear" uuid="97954ca8-411e-4296-b56d-5e165c4cdd15" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="50" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="30" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="Text" value="" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="TextChanged">
+			<body kind="om">
+				<![CDATA[dateString = editDate.Text + "." + editMonth.Text + "." + editYear.Text + " " + editHours.Text + ":" + editMinutes.Text + ":" + editSeconds.Text;
+InputFormatterDate.InValue = dateString; //проверяем формат ввода даты
+if (InputFormatterDate.FormatError == false)
+{
+	checkDate = true;
+	editDate.FontColor = 0xff000000;
+	editMonth.FontColor = 0xff000000;
+	editYear.FontColor = 0xff000000;
+	editHours.FontColor = 0xff000000;
+	editMinutes.FontColor = 0xff000000;
+	editSeconds.FontColor = 0xff000000;
+	editMS.FontColor = 0xff000000;
+}
+else
+{	
+	checkDate = false;	
+	editDate.FontColor = 0xffff0000;
+	editMonth.FontColor = 0xffff0000;
+	editYear.FontColor = 0xffff0000;
+	editHours.FontColor = 0xffff0000;
+	editMinutes.FontColor = 0xffff0000;
+	editSeconds.FontColor = 0xffff0000;
+	editMS.FontColor = 0xffff0000;
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="editHours" display-name="editHours" uuid="8febad90-154f-4a3a-a7da-75b732b4343b" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="95" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="20" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="Text" value="" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="TextChanged">
+			<body kind="om">
+				<![CDATA[dateString = editDate.Text + "." + editMonth.Text + "." + editYear.Text + " " + editHours.Text + ":" + editMinutes.Text + ":" + editSeconds.Text;
+InputFormatterDate.InValue = dateString; //проверяем формат ввода даты
+if (InputFormatterDate.FormatError == false)
+{
+	checkDate = true;
+	editDate.FontColor = 0xff000000;
+	editMonth.FontColor = 0xff000000;
+	editYear.FontColor = 0xff000000;
+	editHours.FontColor = 0xff000000;
+	editMinutes.FontColor = 0xff000000;
+	editSeconds.FontColor = 0xff000000;
+	editMS.FontColor = 0xff000000;
+}
+else
+{	
+	checkDate = false;	
+	editDate.FontColor = 0xffff0000;
+	editMonth.FontColor = 0xffff0000;
+	editYear.FontColor = 0xffff0000;
+	editHours.FontColor = 0xffff0000;
+	editMinutes.FontColor = 0xffff0000;
+	editSeconds.FontColor = 0xffff0000;
+	editMS.FontColor = 0xffff0000;
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="868beb82-b8e6-4c0d-8f50-eef5924c9f30" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="115" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="5" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value=":" ver="1"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<object access-modifier="private" name="editMinutes" display-name="editMinutes" uuid="a19d7c9d-0fab-42e0-9a0b-ac780d343a28" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="120" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="20" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="Text" value="" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="TextChanged">
+			<body kind="om">
+				<![CDATA[dateString = editDate.Text + "." + editMonth.Text + "." + editYear.Text + " " + editHours.Text + ":" + editMinutes.Text + ":" + editSeconds.Text;
+InputFormatterDate.InValue = dateString; //проверяем формат ввода даты
+if (InputFormatterDate.FormatError == false)
+{
+	checkDate = true;
+	editDate.FontColor = 0xff000000;
+	editMonth.FontColor = 0xff000000;
+	editYear.FontColor = 0xff000000;
+	editHours.FontColor = 0xff000000;
+	editMinutes.FontColor = 0xff000000;
+	editSeconds.FontColor = 0xff000000;
+	editMS.FontColor = 0xff000000;
+}
+else
+{	
+	checkDate = false;	
+	editDate.FontColor = 0xffff0000;
+	editMonth.FontColor = 0xffff0000;
+	editYear.FontColor = 0xffff0000;
+	editHours.FontColor = 0xffff0000;
+	editMinutes.FontColor = 0xffff0000;
+	editSeconds.FontColor = 0xffff0000;
+	editMS.FontColor = 0xffff0000;
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="8fb41e39-0bac-404d-b113-7ae1097a3332" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="140" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="5" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value=":" ver="1"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<object access-modifier="private" name="editSeconds" display-name="editSeconds" uuid="0ad303f8-5ab8-4a58-a6e4-2da71a3b040c" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="145" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="20" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="Text" value="" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="TextChanged">
+			<body kind="om">
+				<![CDATA[dateString = editDate.Text + "." + editMonth.Text + "." + editYear.Text + " " + editHours.Text + ":" + editMinutes.Text + ":" + editSeconds.Text;
+InputFormatterDate.InValue = dateString; //проверяем формат ввода даты
+if (InputFormatterDate.FormatError == false)
+{
+	checkDate = true;
+	editDate.FontColor = 0xff000000;
+	editMonth.FontColor = 0xff000000;
+	editYear.FontColor = 0xff000000;
+	editHours.FontColor = 0xff000000;
+	editMinutes.FontColor = 0xff000000;
+	editSeconds.FontColor = 0xff000000;
+	editMS.FontColor = 0xff000000;
+}
+else
+{	
+	checkDate = false;	
+	editDate.FontColor = 0xffff0000;
+	editMonth.FontColor = 0xffff0000;
+	editYear.FontColor = 0xffff0000;
+	editHours.FontColor = 0xffff0000;
+	editMinutes.FontColor = 0xffff0000;
+	editSeconds.FontColor = 0xffff0000;
+	editMS.FontColor = 0xffff0000;
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="dot_2" display-name="dot_2" uuid="a1a0b878-fbc8-492c-87a1-d62e2d4d0a7a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="165" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="5" ver="1"/>
+		<designed target="Height" value="20" ver="1"/>
+		<designed target="Text" value="." ver="1"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<object access-modifier="private" name="editMS" display-name="editMS" uuid="10e4750a-8797-4a29-87f6-d8b5b2ab4f41" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="1">
+		<designed target="X" value="170" ver="1"/>
+		<designed target="Y" value="0" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="25" ver="1"/>
+		<designed target="Height" value="25" ver="1"/>
+		<designed target="Text" value="" ver="1"/>
+		<designed target="Font" value="Sans Serif,8,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+		<designed target="HideInput" value="false" ver="1"/>
+		<designed target="PlaceholderText" value="" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="TextChanged">
+			<body kind="om">
+				<![CDATA[dateString = editDate.Text + "." + editMonth.Text + "." + editYear.Text + " " + editHours.Text + ":" + editMinutes.Text + ":" + editSeconds.Text;
+InputFormatterDate.InValue = dateString; //проверяем формат ввода даты
+if (InputFormatterDate.FormatError == false)
+{
+	checkDate = true;
+	editDate.FontColor = 0xff000000;
+	editMonth.FontColor = 0xff000000;
+	editYear.FontColor = 0xff000000;
+	editHours.FontColor = 0xff000000;
+	editMinutes.FontColor = 0xff000000;
+	editSeconds.FontColor = 0xff000000;
+	editMS.FontColor = 0xff000000;
+}
+else
+{	
+	checkDate = false;	
+	editDate.FontColor = 0xffff0000;
+	editMonth.FontColor = 0xffff0000;
+	editYear.FontColor = 0xffff0000;
+	editHours.FontColor = 0xffff0000;
+	editMinutes.FontColor = 0xffff0000;
+	editSeconds.FontColor = 0xffff0000;
+	editMS.FontColor = 0xffff0000;
+}]]>
+			</body>
+		</do-on>
+		<designed target="ReadOnly" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="InputFormatterDate" display-name="InputFormatterDate" uuid="2bd73e60-bb24-48c7-ab2f-340a0ab6b306" base-type="InputFormatter" base-type-id="01ee9a1b-486d-4fb5-895a-82a979766d19" ver="1">
+		<designed target="InValue" value="" ver="1"/>
+		<init target="Format" ver="1">
+			<object access-modifier="private" uuid="0d459619-3981-40e8-83d2-429f9e213720" base-type="FormatDateTime" base-type-id="353d14bd-bf52-4abb-8d4c-3b2541bb0de2" ver="1">
+				<init target="DateTimeFormat" ver="1" value="d.M.yyyy H:m:s"/>
+			</object>
+		</init>
+	</object>
+	<object access-modifier="private" name="dateString" display-name="dateString" uuid="fcfe59f0-16a7-4a62-93e7-7b33751547ce" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="1"/>
+	<object access-modifier="private" name="checkDate" display-name="checkDate" uuid="8fba7624-cc45-4459-b4e6-9259355f843f" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="1"/>
+	<object access-modifier="private" name="resetDate" display-name="resetDate" uuid="1ca91cb0-69e8-467f-9a38-a648450e56e4" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="1">
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="InvokeTrigger" value="false" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="Invoked">
+			<body kind="om">
+				<![CDATA[editDate.Text = Str.ToString(DateTime.Day(DateTime.Now()));
+editMonth.Text = Str.ToString(DateTime.Month(DateTime.Now()));
+editYear.Text = Str.ToString(DateTime.Year(DateTime.Now()));
+editHours.Text = Str.ToString(DateTime.Hour(DateTime.Now()));
+editMinutes.Text = Str.ToString(DateTime.Minute(DateTime.Now()));
+editSeconds.Text = Str.ToString(DateTime.Second(DateTime.Now()));
+editMS.Text = Str.ToString(DateTime.MSecond(DateTime.Now()));]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Initializer" display-name="Initializer" uuid="a6641cdf-75bb-44f4-b885-96ea7ecc3c47" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="Initialized">
+			<body kind="om">
+				<![CDATA[if (DateTime.Day(DateTime.Now()) < 10)
+{
+	editDate.Text = "0" + Str.ToString(DateTime.Day(DateTime.Now()));
+}
+else
+{
+	editDate.Text = Str.ToString(DateTime.Day(DateTime.Now()));
+}
+if (DateTime.Month(DateTime.Now()) < 10)
+{
+	editMonth.Text = "0" + Str.ToString(DateTime.Month(DateTime.Now()));
+}
+else
+{
+	editMonth.Text = Str.ToString(DateTime.Month(DateTime.Now()));
+}
+editYear.Text = Str.ToString(DateTime.Year(DateTime.Now()));
+if (DateTime.Hour(DateTime.Now()) < 10)
+{
+	editHours.Text = "0" + Str.ToString(DateTime.Hour(DateTime.Now()));
+}
+else
+{
+	editHours.Text = Str.ToString(DateTime.Hour(DateTime.Now()));
+}
+if (DateTime.Minute(DateTime.Now()) < 10)
+{
+	editMinutes.Text = "0" + Str.ToString(DateTime.Minute(DateTime.Now()));
+}
+else
+{
+	editMinutes.Text = Str.ToString(DateTime.Minute(DateTime.Now()));
+}
+if (DateTime.Second(DateTime.Now()) < 10)
+{
+	editSeconds.Text = "0" + Str.ToString(DateTime.Second(DateTime.Now()));
+}
+else
+{
+	editSeconds.Text = Str.ToString(DateTime.Second(DateTime.Now()));
+}
+if (DateTime.MSecond(DateTime.Now()) < 10)
+{
+	editMS.Text = "0" + Str.ToString(DateTime.MSecond(DateTime.Now()));
+}
+else
+{
+	editMS.Text = Str.ToString(DateTime.MSecond(DateTime.Now()));
+}]]>
+			</body>
+		</do-on>
+	</object>
+</type>
+

@@ -1,0 +1,238 @@
+<type access-modifier="private" name="Popup_ConfirmDemask" display-name="Popup_ConfirmDemask" uuid="4ec46760-70c5-48c9-a328-82a980e09d9b" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="1">
+	<designed target="X" value="0" ver="1"/>
+	<designed target="Y" value="0" ver="1"/>
+	<designed target="Rotation" value="0" ver="1"/>
+	<designed target="Scale" value="1" ver="1"/>
+	<designed target="Visible" value="true" ver="1"/>
+	<designed target="Enabled" value="true" ver="1"/>
+	<designed target="Tooltip" value="" ver="1"/>
+	<designed target="Width" value="400" ver="1"/>
+	<designed target="Height" value="275" ver="1"/>
+	<designed target="PenColor" value="4278190080" ver="1"/>
+	<designed target="PenStyle" value="0" ver="1"/>
+	<designed target="PenWidth" value="1" ver="1"/>
+	<designed target="BrushColor" value="0xff63708f" ver="1"/>
+	<designed target="BrushStyle" value="1" ver="1"/>
+	<designed target="WindowX" value="737" ver="1"/>
+	<designed target="WindowY" value="240" ver="1"/>
+	<designed target="WindowWidth" value="400" ver="1"/>
+	<designed target="WindowHeight" value="275" ver="1"/>
+	<designed target="WindowCaption" value="Окно подтверждения команды" ver="1"/>
+	<designed target="ShowWindowCaption" value="false" ver="1"/>
+	<designed target="ShowWindowMinimize" value="false" ver="1"/>
+	<designed target="ShowWindowMaximize" value="false" ver="1"/>
+	<designed target="ShowWindowClose" value="true" ver="1"/>
+	<designed target="AlwaysOnTop" value="false" ver="1"/>
+	<designed target="WindowSizeMode" value="0" ver="1"/>
+	<designed target="WindowBorderStyle" value="2" ver="1"/>
+	<designed target="WindowState" value="0" ver="1"/>
+	<designed target="WindowScalingMode" value="0" ver="1"/>
+	<designed target="MonitorNumber" value="0" ver="1"/>
+	<designed target="WindowPosition" value="1" ver="1"/>
+	<designed target="WindowCloseMode" value="0" ver="1"/>
+	<object access-modifier="private" name="Warning_Text" display-name="Warning_Text" uuid="b254c06a-f220-427d-947e-e28ba0c45519" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="21" ver="1"/>
+		<designed target="Y" value="67" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="357" ver="1"/>
+		<designed target="Height" value="112" ver="1"/>
+		<designed target="Text" value="Снятие режима маскирования приведет к срабатыванию защиты." ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Warning2_Text" display-name="Warning2_Text" uuid="b02936fe-66de-4402-80df-617d68f39a2a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="22" ver="1"/>
+		<designed target="Y" value="65" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="357" ver="1"/>
+		<designed target="Height" value="112" ver="1"/>
+		<designed target="Text" value="Снятие режима маскирования приведет к срабатыванию защиты." ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xffffffff" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Confirm_Text" display-name="Confirm_Text" uuid="045a6549-38e7-405f-b0cf-01e8ce461748" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="23" ver="1"/>
+		<designed target="Y" value="168" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="357" ver="1"/>
+		<designed target="Height" value="52" ver="1"/>
+		<designed target="Text" value="Снять режим маскирования?" ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Confirm2_Text" display-name="Confirm2_Text" uuid="dd9ef3f7-2d0c-4cca-b6a8-3c74c25d3a05" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="1">
+		<designed target="X" value="25" ver="1"/>
+		<designed target="Y" value="166" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="357" ver="1"/>
+		<designed target="Height" value="52" ver="1"/>
+		<designed target="Text" value="Снять режим маскирования?" ver="1"/>
+		<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="0xffffffff" ver="1"/>
+		<designed target="TextAlignment" value="132" ver="1"/>
+	</object>
+	<object access-modifier="private" name="Button_Yes" display-name="Button_Yes" uuid="c313eb99-5526-41c2-aae4-c1e22f4fc47b" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="28" ver="1"/>
+		<designed target="Y" value="230" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="160" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<designed target="Text" value="Да" ver="1"/>
+		<designed target="Font" value="Sans Serif,14,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[OpcProtectCommand = (TypeConvert.ToUint2(256) * TypeConvert.ToUint2(4)) + TypeConvert.ToUint2(_TypeProtectParam.ProtectNumber_UI);
+Close();]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="Button_No" display-name="Button_No" uuid="3857e176-d71c-424e-baac-dadc031f0565" base-type="Button" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="1">
+		<designed target="X" value="214" ver="1"/>
+		<designed target="Y" value="230" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="160" ver="1"/>
+		<designed target="Height" value="35" ver="1"/>
+		<designed target="Text" value="Нет" ver="1"/>
+		<designed target="Font" value="Sans Serif,14,-1,5,50,0,0,0,0,0" ver="1"/>
+		<designed target="FontColor" value="4278190080" ver="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[Close();]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="3"/>
+	</object>
+	<object access-modifier="private" name="OpcProtectCommand" display-name="OpcProtectCommand" uuid="80241129-bb39-4ee4-bc07-ae7f505bba76" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="1">
+		<init target="Source" ver="1" ref="unit.Sources.PLC_source"/>
+		<init target="Path" ver="1" value="Commands.ProtectCommand"/>
+	</object>
+	<object access-modifier="private" name="_TypeProtectParam" display-name="_TypeProtectParam" uuid="63d45ab1-0fff-402f-aa7d-ab6f964b24d6" base-type="TypeProtectParam" base-type-id="40929fc3-e0c2-4408-ac94-ff6d73043dc6" base-const="true" base-ref="true" ver="1"/>
+	<object access-modifier="private" name="Pp_ProtectsConfirmForm_Name_rect" display-name="Pp_ProtectsConfirmForm_Name_rect" uuid="c9619a9d-20e7-458b-9e05-1eda4b6841d9" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
+		<designed target="X" value="7" ver="1"/>
+		<designed target="Y" value="39.5" ver="1"/>
+		<designed target="Rotation" value="0" ver="1"/>
+		<designed target="Scale" value="1" ver="1"/>
+		<designed target="Visible" value="true" ver="1"/>
+		<designed target="Enabled" value="true" ver="1"/>
+		<designed target="Tooltip" value="" ver="1"/>
+		<designed target="Width" value="386" ver="1"/>
+		<designed target="Height" value="30" ver="1"/>
+		<designed target="RoundingRadius" value="0" ver="1"/>
+		<designed target="PenColor" value="0xff626262" ver="1"/>
+		<designed target="PenStyle" value="1" ver="1"/>
+		<designed target="PenWidth" value="1" ver="1"/>
+		<designed target="BrushColor" value="0xffb1c9ff" ver="1"/>
+		<designed target="BrushStyle" value="1" ver="1"/>
+		<object access-modifier="private" name="Pp__FormName_txt" display-name="Pp__FormName_txt" uuid="ba27490f-3be8-4404-ac5f-67d553cbc612" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f">
+			<designed target="X" value="4"/>
+			<designed target="Y" value="3"/>
+			<designed target="Rotation" value="0"/>
+			<designed target="Scale" value="1"/>
+			<designed target="Visible" value="true"/>
+			<designed target="Enabled" value="true"/>
+			<designed target="Tooltip" value=""/>
+			<designed target="Width" value="379"/>
+			<designed target="Height" value="23"/>
+			<designed target="Text" value="Подтверждение"/>
+			<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0"/>
+			<designed target="FontColor" value="0xff000000"/>
+			<designed target="TextAlignment" value="132"/>
+		</object>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="1" event="WindowActivationChanged">
+		<body kind="om">
+			<![CDATA[if (WindowActive == false)
+	{
+		Close();
+	}]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="1" event="Closed">
+		<body kind="om">
+			<![CDATA[//снимаем флаг "незакрывания" родительского окна
+unit.Parameters.isConfirmPopup = false;
+]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="3" event="Opened">
+		<body kind="om">
+			<![CDATA[Window_close_line_1.Rectangle_windowline_base.Text_windowname.Text = WindowCaption;
+Window_close_line_1.notifying_WindowWidth_now = WindowWidth;
+
+
+
+
+
+]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Window_close_line_1" display-name="Window_close_line_1" uuid="da8164b2-b501-4825-8f7e-dc13b569f8ff" base-type="Window_close_line" base-type-id="a70c35c1-3cb9-4d9e-8668-ddc931acbcf8" ver="3">
+		<designed target="X" value="1" ver="3"/>
+		<designed target="Y" value="1" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<object access-modifier="private" name="mousePress" display-name="mousePress" uuid="59d4299a-0e5a-4d96-8ae0-29f7651e7d51" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="3"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="3" event="MouseMove">
+			<body kind="om">
+				<![CDATA[if (mousePress) 
+{
+	here.WindowX = ScreenX(MouseX,MouseY) - TypeConvert.ToInt4(Pointer_press_x);
+	here.WindowY = ScreenY(MouseX,MouseY);
+}]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="3" event="MousePress">
+			<body kind="om">
+				<![CDATA[mousePress = true;
+Pointer_press_x = MouseX;
+]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="3" event="MouseRelease">
+			<body kind="om">
+				<![CDATA[mousePress = false;]]>
+			</body>
+		</do-on>
+		<object access-modifier="private" name="Pointer_press_x" display-name="Pointer_press_x" uuid="fe1e72a2-ffbd-480e-b409-aced39df8db1" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="3"/>
+		<object access-modifier="private" name="notifying_WindowWidth_now" display-name="notifying_WindowWidth_now" uuid="0638250e-6cc4-414c-8c4f-b80a53e791e3" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="3">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="3" event="ValueChanged">
+				<body kind="om">
+					<![CDATA[Window_close_line_1.Rectangle_windowline_base.Width = notifying_WindowWidth_now.Value - 2;
+Window_close_line_1.Rectangle_windowline_base.Text_windowname.Width = Window_close_line_1.Rectangle_windowline_base.Width;
+
+Window_close_line_1.Rectangle_windowline_base.Window_close_button_1.X = Window_close_line_1.Rectangle_windowline_base.Width - 22;
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+</type>
+
