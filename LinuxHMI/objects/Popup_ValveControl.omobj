@@ -193,12 +193,6 @@
 		<init target="ParentSource" ver="1" ref="unit.Sources.PLC_source"/>
 		<init target="Path" ver="1" value="Valves"/>
 	</object>
-	<object access-modifier="private" name="Pp_ValveControl_Command_opc" display-name="Pp_ValveControl_Command_opc" uuid="d4f9e0ea-8318-4e40-83ef-20497fecc503" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630">
-		<designed target="Value" value=""/>
-		<designed target="Path" value="ValveCommand" ver="1"/>
-		<init target="Source" ver="1" ref="Pp_ValveControl_Command_src"/>
-		<init target="Path" ver="1" value="ValveCommand"/>
-	</object>
 	<object access-modifier="private" name="Pp_ValveControl_Name_rect_1" display-name="Pp_ValveControl_Name_rect_1" uuid="5d315cd3-06b1-47f9-bea8-bdf2479fae6d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
 		<designed target="X" value="5" ver="1"/>
 		<designed target="Y" value="29" ver="1"/>
@@ -229,11 +223,7 @@
 			<designed target="Font" value="Sans Serif,16,-1,5,50,0,0,0,0,0"/>
 			<designed target="FontColor" value="0xff000000"/>
 			<designed target="TextAlignment" value="132"/>
-			<do-trace access-modifier="private" target="Text" ver="1">
-				<body>
-					<![CDATA[ValveObject.Description]]>
-				</body>
-			</do-trace>
+			<init target="Text" ver="3" ref="_Pp_Valve_Title"/>
 		</object>
 	</object>
 	<object access-modifier="private" name="Pp_ValveControl_CommandOpen_rect" display-name="Pp_ValveControl_CommandOpen_rect" uuid="aa3cb234-0356-4b0b-b9cb-5fc3923f346b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="1">
@@ -309,7 +299,8 @@
 		</do-on>
 		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" event="MouseClick" ver="1">
 			<body kind="om">
-				<![CDATA[Pp_ValveControl_Command_opc.Value = (TypeConvert.ToUint2(256) * TypeConvert.ToUint2(1)) + TypeConvert.ToUint2(Pp_ValveControl_ValveNumber);]]>
+				<![CDATA[//Pp_ValveControl_Command_opc.Value = (TypeConvert.ToUint2(256) * TypeConvert.ToUint2(1)) + TypeConvert.ToUint2(Pp_ValveControl_ValveNumber);
+Pp_ValveControl_Command_opc.Value = 1;]]>
 			</body>
 		</do-on>
 		<do-trace access-modifier="private" target="Enabled" ver="1">
@@ -393,7 +384,8 @@
 		</do-on>
 		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" event="MouseClick" ver="1">
 			<body kind="om">
-				<![CDATA[Pp_ValveControl_Command_opc.Value = (TypeConvert.ToUint2(256) * TypeConvert.ToUint2(2)) + TypeConvert.ToUint2(Pp_ValveControl_ValveNumber);]]>
+				<![CDATA[//Pp_ValveControl_Command_opc.Value = (TypeConvert.ToUint2(256) * TypeConvert.ToUint2(2)) + TypeConvert.ToUint2(Pp_ValveControl_ValveNumber);
+Pp_ValveControl_Command_opc.Value = 2;]]>
 			</body>
 		</do-on>
 		<do-trace access-modifier="private" target="Enabled" ver="1">
@@ -475,7 +467,8 @@
 		</do-on>
 		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" event="MouseClick" ver="1">
 			<body kind="om">
-				<![CDATA[Pp_ValveControl_Command_opc.Value = (TypeConvert.ToUint2(256) * TypeConvert.ToUint2(3)) + TypeConvert.ToUint2(Pp_ValveControl_ValveNumber);]]>
+				<![CDATA[//Pp_ValveControl_Command_opc.Value = (TypeConvert.ToUint2(256) * TypeConvert.ToUint2(3)) + TypeConvert.ToUint2(Pp_ValveControl_ValveNumber);
+Pp_ValveControl_Command_opc.Value =  3;]]>
 			</body>
 		</do-on>
 		<do-trace access-modifier="private" target="Enabled" ver="1">
@@ -1305,5 +1298,7 @@ Pointer_press_x = MouseX;
 			</body>
 		</do-on>
 	</object>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="05a39c57-03b9-4920-80a4-83eb7470de16" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="3"/>
+	<object access-modifier="private" name="Pp_ValveControl_Command_opc" display-name="Pp_ValveControl_Command_opc" uuid="47decfe1-143a-4a97-9445-9abca95333d9" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" base-const="true" base-ref="true" ver="3"/>
 </type>
 

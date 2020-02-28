@@ -353,7 +353,7 @@
 			</do-trace>
 		</object>
 		<object access-modifier="private" name="Valve_KVZ_rect" display-name="Valve_KVZ_rect" uuid="8dedddf5-b632-4a76-88ca-f3928c741761" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca">
-			<designed target="X" value="54.6"/>
+			<designed target="X" value="55.6"/>
 			<designed target="Y" value="20.65"/>
 			<designed target="Rotation" value="0"/>
 			<designed target="Scale" value="1"/>
@@ -769,6 +769,8 @@ else
 				<designed target="Width" value="360" ver="1"/>
 				<designed target="WindowWidth" value="360" ver="1"/>
 				<designed target="WindowPosition" value="1" ver="1"/>
+				<init target="_Pp_Valve_Title" ver="3" ref="Valve_Name_text.Text"/>
+				<init target="Pp_ValveControl_Command_opc" ver="3" ref="Valve_Commands"/>
 			</object>
 		</do-on>
 	</object>
@@ -1018,21 +1020,13 @@ else
 			<designed target="Font" value="Sans Serif,12,-1,5,50,0,0,0,0,0"/>
 			<designed target="FontColor" value="0xff000000"/>
 			<designed target="TextAlignment" value="132"/>
-			<do-trace access-modifier="private" target="Text" ver="1">
+			<do-trace access-modifier="private" target="Text" ver="3">
 				<conditional-expr>
 					<condition>
-						<![CDATA[Valve_MV_opc.Quality < 192 || Valve_MVO_opc.Quality < 192 || Valve_MVZ_opc.Quality < 192]]>
+						<![CDATA[Valve_MVO_opc.Quality < 192 || Valve_MVZ_opc.Quality < 192]]>
 					</condition>
 					<expr>
 						<![CDATA["---"]]>
-					</expr>
-				</conditional-expr>
-				<conditional-expr>
-					<condition>
-						<![CDATA[Variant.ToBool(Valve_MV_opc.Value,false) == true]]>
-					</condition>
-					<expr>
-						<![CDATA["МВ"]]>
 					</expr>
 				</conditional-expr>
 				<conditional-expr>
@@ -1061,10 +1055,10 @@ else
 				</conditional-expr>
 			</do-trace>
 		</object>
-		<do-trace access-modifier="private" target="Visible" ver="1">
+		<do-trace access-modifier="private" target="Visible" ver="3">
 			<conditional-expr>
 				<condition>
-					<![CDATA[Valve_MVO_opc.Quality < 192 || Valve_MVZ_opc.Quality < 192 || Valve_MV_opc.Quality < 192]]>
+					<![CDATA[Valve_MVO_opc.Quality < 192 || Valve_MVZ_opc.Quality < 192]]>
 				</condition>
 				<expr>
 					<![CDATA[true]]>
@@ -1072,7 +1066,7 @@ else
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[Variant.ToBool(Valve_MVO_opc.Value,false) || Variant.ToBool(Valve_MVZ_opc.Value,false) || Variant.ToBool(Valve_MV_opc.Value,false)]]>
+					<![CDATA[Variant.ToBool(Valve_MVO_opc.Value,false) || Variant.ToBool(Valve_MVZ_opc.Value,false)]]>
 				</condition>
 				<expr>
 					<![CDATA[true]]>
@@ -1080,7 +1074,7 @@ else
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[!(Variant.ToBool(Valve_MVO_opc.Value,false) || Variant.ToBool(Valve_MVZ_opc.Value,false) || Variant.ToBool(Valve_MV_opc.Value,false))]]>
+					<![CDATA[!Variant.ToBool(Valve_MVO_opc.Value,false) && !Variant.ToBool(Valve_MVZ_opc.Value,false)]]>
 				</condition>
 				<expr>
 					<![CDATA[false]]>
@@ -1390,5 +1384,11 @@ else
 		<init target="Path" ver="1" value="State2.FlowControl"/>
 	</object>
 	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="729fd136-6d10-486a-bf53-9f3ccd3535ee" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="3"/>
+	<object access-modifier="private" name="Valve_Commands" display-name="Valve_Commands" uuid="199c10c6-7fcf-4e24-94c7-2fe74dd295ae" base-type="ApItem" base-type-id="9bc9fdb8-ccbc-45af-b711-95945c17a630" ver="1">
+		<designed target="Path" value="State1.Imit" ver="1"/>
+		<designed target="Value" value="" ver="1"/>
+		<init target="Source" ver="1" ref="Valve_Root_src"/>
+		<init target="Path" ver="1" value="CmdFull.writeValue"/>
+	</object>
 </type>
 

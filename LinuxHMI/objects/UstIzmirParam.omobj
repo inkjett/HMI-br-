@@ -111,7 +111,7 @@
 			<designed target="TitleBackgroundColor" value="4293980400" ver="2"/>
 			<designed target="TitleForegroundColor" value="4278190080" ver="2"/>
 			<designed target="TitleFont" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="2"/>
-			<designed target="Width" value="31" ver="2"/>
+			<designed target="Width" value="20" ver="2"/>
 			<designed target="WidthResizeMode" value="3" ver="2"/>
 			<designed target="Emptiable" value="true" ver="2"/>
 			<designed target="Hidden" value="false" ver="2"/>
