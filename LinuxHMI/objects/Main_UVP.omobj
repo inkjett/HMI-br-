@@ -554,7 +554,7 @@
 		<designed target="Width" value="80" ver="1"/>
 		<designed target="Height" value="30" ver="1"/>
 		<init target="_Title" ver="1" value="P"/>
-		<init target="_AI_Number" ver="1" value="9"/>
+		<init target="_AI_Number" ver="1" value="2"/>
 		<init target="_AI_Precision" ver="1" value="2"/>
 		<init target="SQLAINumber" ver="3" value="7"/>
 	</object>
@@ -1018,7 +1018,7 @@
 		<init target="_AuxFC_MP_DINumber" ver="1" value="38"/>
 	</object>
 	<object access-modifier="private" name="Obj_Valve_1" display-name="Obj_Valve_1" uuid="ed061bba-9553-4af1-aee0-ba921230caaa" base-type="Obj_Valve" base-type-id="2f5dd257-e2e0-4f3a-ab88-78d959de0e95" ver="3">
-		<designed target="X" value="405" ver="3"/>
+		<designed target="X" value="351" ver="3"/>
 		<designed target="Y" value="214" ver="3"/>
 		<designed target="Rotation" value="0" ver="3"/>
 		<designed target="Width" value="82" ver="3"/>
@@ -1026,6 +1026,16 @@
 		<init target="_Valve_Number" ver="3" value="1"/>
 		<init target="_Valve_MPSA" ver="3" value="false"/>
 		<init target="_ValveName" ver="3" value="Valve1"/>
+	</object>
+	<object access-modifier="private" name="Obj_Valve_2" display-name="Obj_Valve_2" uuid="1b01a466-1c1a-46a9-99c9-ba0bd20508fb" base-type="Obj_Valve" base-type-id="2f5dd257-e2e0-4f3a-ab88-78d959de0e95" ver="3">
+		<designed target="X" value="352" ver="3"/>
+		<designed target="Y" value="388" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Width" value="82" ver="3"/>
+		<designed target="Height" value="88" ver="3"/>
+		<init target="_Valve_Number" ver="3" value="2"/>
+		<init target="_Valve_MPSA" ver="3" value="false"/>
+		<init target="_ValveName" ver="3" value="Valve2"/>
 	</object>
 </type>
 

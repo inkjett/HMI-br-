@@ -468,7 +468,7 @@ Pp_ValveControl_Command_opc.Value = 2;]]>
 		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" event="MouseClick" ver="1">
 			<body kind="om">
 				<![CDATA[//Pp_ValveControl_Command_opc.Value = (TypeConvert.ToUint2(256) * TypeConvert.ToUint2(3)) + TypeConvert.ToUint2(Pp_ValveControl_ValveNumber);
-Pp_ValveControl_Command_opc.Value =  3;]]>
+Pp_ValveControl_Command_opc.Value =  5;]]>
 			</body>
 		</do-on>
 		<do-trace access-modifier="private" target="Enabled" ver="1">
